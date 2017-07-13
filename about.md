@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I'm a software developer living in Italy with my beautiful wife, my great son, and my two (female) cats.
+**I'm a software developer living in Italy with my beautiful wife, my great son, and my two (female) cats.**
 
 I've always been fascinated by computers since the age of movies like *War Games*.
 My very first computer was the very popular [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64) that my father bought to me and placed
