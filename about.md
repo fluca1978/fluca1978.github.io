@@ -26,7 +26,18 @@ Today I use both Linux and BSD as my own operating systems.
 Being a Linux/BSD user meant to me I embraced the *Open Source* culture to the point I believe it is the **only sane way of producing software**.
 Of course this does not mean I will do and accept only Open Source jobs and tasks, I can work comfortably even in environments where the code (and/or data) must be kept not-public.
 
-## Me by achievements
+So here's a brief description about *me*.
+
+- [Me by Achievements](#achievements)
+- [Me by Skills](#skills)
+- [Me by Username](#username)
+- [Me by Projects](#projects)
+- [Me by Blog](#blog)
+- [Me by Social Networks](#social)
+- [Me by Believings](#believings)
+
+## Me by Achievements
+<a name="achievements"></a>
 
 There was a time when I thought achievements were really important.
 Today I look back and truly believe
@@ -53,6 +64,7 @@ In the archery world (when I was young):
 * bronze medal at the individual national championships, twice: 1994, 1996
 
 ## Me by Skills
+<a name="skills"></a>
 
 Not a complete enumration, but this is what I use on an almost regular basis:
 
@@ -68,6 +80,7 @@ Not a complete enumration, but this is what I use on an almost regular basis:
 Feel free to search for `fluca1978` on the forums, mailing list, IRC to validate the above.
 
 ## Me by Username
+<a name="username"></a>
 
 My public username is **`fluca1978`** and it has been since a lot, allowing for you to scout the net searching for my very first steps.
 I strongly believe in keeping the username the same to let other people know my achievements and experience, as well as a way to prove
@@ -84,6 +97,7 @@ Interestingly, I waited for my [archery career to stop before having a fully cus
 ![fluca quiver](/images/quiver.jpg)
 
 ## Me by Projects
+<a name="projects"></a>
 
 Nothing really interesting here.
 Today I have very little time to start-up a project from scratch, and so I try to help (a little) existings ones.
@@ -105,11 +119,13 @@ More in general I tend to keep all my projects on [GitHub](https://github.com/fl
 
 
 ## Me by Blog
+<a name="blog"></a>
 
 In the blog you will find random thoughts pretty much on computer science related topics.
 I do write sometime personal things, but tend not to do it very often.
 
-## Me by Social
+## Me by Social Networks
+<a name="social"></a>
 
 No way!
 
@@ -117,6 +133,7 @@ I do not use social networks,
 I don't like them, so if you need to get in touch with me *drop me an email or a phone call*.
 
 ## Me by Believings
+<a name="believings"></a>
 
 I do believe in *Open Source*.
 
