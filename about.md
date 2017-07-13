@@ -24,7 +24,7 @@ After a few years I met [OpenBSD](http://www.openbsd.org) and [FreeBSD](http://w
 Today I use both Linux and BSD as my own operating systems.
 
 Being a Linux/BSD user meant to me I embraced the *Open Source* culture to the point I believe it is the **only sane way of producing software**.
-
+Of course this does not mean I will do and accept only Open Source jobs and tasks, I can work comfortably even in environments where the code (and/or data) must be kept not-public.
 
 ## Me by achievements
 
