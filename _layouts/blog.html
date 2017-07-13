@@ -18,14 +18,16 @@
 
   <body>
 
-
-    <div class="intro-header">
+      <div class="intro-header">
       <div class="container">
         <div class="post-heading">
             <h1>{{page.title}}</h1>
-            <span class="meta">Posted by <a href="{{ site.baseurl }}/about"> {{page.author}}
+            <span class="meta">Posted by <a href="{{ site.baseurl }}/about"> <strong>{{page.author}}</strong>
             </a> on {{ page.date | date: "%B %e, %Y" }}
-            <a href="{{ site.baseurl }}/"> { Return to Blog }</a>
+            <br/>
+            <a href="{{ site.baseurl }}/">
+                { Return to <strong>HOME</strong> }
+            </a>
             </span>
         </div>
 
