@@ -67,6 +67,22 @@ Not a complete enumration, but this is what I use on an almost regular basis:
 
 Feel free to search for `fluca1978` on the forums, mailing list, IRC to validate the above.
 
+## Me by Username
+
+My public username is **`fluca1978`** and it has been since a lot, allowing for you to scout the net searching for my very first steps.
+I strongly believe in keeping the username the same to let other people know my achievements and experience, as well as a way to prove
+how long I was around on a particular subject.
+
+The choice of the username has a particular meaning. When I was a child and was learning to write, I used to sign my homeworks with
+`F.Luca`, where of course the capital `F` was for **F**errari. Having fun on me, my parents were used to read the whole string without themseparating dot, composing therefore `FLuca` and calling me with such nickname.
+When it was time to set up my first internet account, as you can imagine, there was no combination of name and surname available for me, as well as there was no available `fluca`: in both cases I had to add a postfix number to say my account from another. Therefore I decided to place my year of birth, `1978`, which interestingly is the minimal and only set of numbers that I need to write my whole `d-m-y` birthday.
+
+And that is how **`fluca1978`** took the field. Since then I changed a lot of account managers and service providers, so chances are you can find my username tied to different services, but you can be sure that account is mine.
+
+Interestingly, I waited for my [archery career to stop before having a fully customized quiver](http://fluca1978.blogspot.it/2009/01/dragoon-took-field.html) with my nickname on it. Please consider this does not include the number because, well, in archery the nickname does not care.
+
+![fluca quiver](/images/quiver.jpg)
+
 ## Me by Projects
 
 Nothing really interesting here.
