@@ -13,7 +13,7 @@
       text-decoration: none;
     	cursor: pointer;
       &:hover{
-        color: darken($navbar-hover-color,20);
+          color: $green;
       }
     }
 }
@@ -31,7 +31,7 @@
         a {
          color: $hl-color;
          &:hover{
-           color: darken($hl-color,20);
+             color: darken($hl-color,20);
          }
      }
  }
@@ -101,8 +101,10 @@ button.button-primary:focus {
 */
 
 .intro-header {
-  border-top: 5px solid white;
+    border-top: 5px solid white;
+    // main color in the header bar
   background-color:$mono-color;
+
 }
 
 .intro-header .post-heading {
