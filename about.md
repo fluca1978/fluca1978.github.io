@@ -54,17 +54,18 @@ In the archery world (when I was young):
 
 ## Me by Skills
 
-Not a complete enumration, but this is what I use on a regular basis:
+Not a complete enumration, but this is what I use on an almost regular basis:
 
 * **Java** - 15+ years;
 * **Perl** - 15+ years;
-* **PostgreSQL** - 10 years;
-* **Linux** - 18 years
-* **BSD** - 5 years
-* **Emacs** - 18 years (it was my default editor since day one)
+* **PostgreSQL** - 10+ years;
+* **Linux** - 18+ years
+* **BSD** - 5+ years
+* **Emacs** - 18+ years (it was my default editor since day one and yes, I don't know `vi`)
 * **Git**, **Fossil** - 5+ years, and of course I know and I used older systems
+* **C++** and **Qt** - no production experience, let's say I can manage them
 
-But please, feel free to search for `fluca1978` on the forums, mailing list, IRC for an evaluation of the above.
+Feel free to search for `fluca1978` on the forums, mailing list, IRC to validate the above.
 
 ## Me by Projects
 
