@@ -28,13 +28,18 @@ Being a Linux/BSD user meant to me I embraced the *Open Source* culture to the p
 
 ## Me by achievements
 
-My main academic achievements:
+There was a time when I thought achievements were really important.
+Today I look back and truly believe
+that is much more important to *demonstrate on the field my value, and not on a piece of paper*.
+By the way, if you are interested, the following is an uncomplete list.
 
-* Master Degree in Computer Science, University of Modena and Reggio Emilia, final vote `110/110 with lode`, 2002
-* PhD in Computer Science, University of Modena and Reggio Emilia, 2005
+In the academic world:
+
+* Master Degree in Computer Science, University of Modena and Reggio Emilia, final vote `110/110 with honours`, year 2002
+* PhD in Computer Science, University of Modena and Reggio Emilia, year 2005
 * Adjunct Professor, [Nipissing University](http://www.nipissingu.ca/), years 2011-2014
-* lecturer at the University of Modena and Reggio Emilia for several courses including Java, OOP, operating systems
-* lecturer at local high schools for HTML, Javascript, networking
+* lecturer at the University of Modena and Reggio Emilia for several courses including `Java, OOP, operating systems`, years 2003-2006
+* lecturer at local high schools for `HTML, Javascript, networking`, years 2009-2014`
 
 In the computer science world:
 
@@ -90,7 +95,9 @@ I do write sometime personal things, but tend not to do it very often.
 ## Me by Social
 
 No way!
-I do not use social networks, I don't like them, so if you need to get in touch with me drop me an email or a phone call.
+
+I do not use social networks,
+I don't like them, so if you need to get in touch with me *drop me an email or a phone call*.
 
 ## Me by Believings
 
