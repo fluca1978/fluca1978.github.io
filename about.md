@@ -6,6 +6,8 @@ permalink: /about/
 
 **I'm a software developer living in Italy with my beautiful wife, my great son, and my two (female) cats.**
 
+![fluca1978](/images/main/lucaMain.png)
+
 I've always been fascinated by computers since the age of movies like *War Games*.
 My very first computer was the very popular [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64) that my father bought to me and placed
 into a wardrobe with an old CRT television. I wrote a few programs using the [BASIC](https://en.wikipedia.org/wiki/Commodore_BASIC) language, and did not found it very fun.
