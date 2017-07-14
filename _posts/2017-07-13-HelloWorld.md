@@ -2,6 +2,8 @@
 layout: post
 title:  Hello World (again!)
 author: Luca Ferrari
+categories: blog, cat1, cat2
+permalink: /:year/:month/:day/:title.html
 ---
 A very short introduction to this new site.
 

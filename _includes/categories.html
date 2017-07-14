@@ -1,0 +1,16 @@
+{% assign categories = page.categories | split_str: ","   %}
+{% assign main_category = categories | first %}
+
+<div class="categories">
+    Categories:
+
+    {% for cat in categories %}
+       {% if cat == main_category %}
+          <strong>{{ cat  }}</strong>
+       {% else %}
+         {{ cat  }}
+       {% endif %}
+   {% endfor %}
+
+    </strong>
+</div>
