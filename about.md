@@ -94,7 +94,7 @@ And that is how **`fluca1978`** took the field. Since then I changed a lot of ac
 
 Interestingly, I waited for my [archery career to stop before having a fully customized quiver](http://fluca1978.blogspot.it/2009/01/dragoon-took-field.html) with my nickname on it. Please consider this does not include the number because, well, in archery the nickname does not care.
 
-![fluca quiver](/images/quiver.jpg)
+![fluca quiver](/images/main/quiver.jpg)
 
 ## Me by Projects
 <a name="projects"></a>
