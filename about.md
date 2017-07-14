@@ -34,14 +34,14 @@ So here's a brief description about *me*.
 - [Me by Projects](#projects)
 - [Me by Blog](#blog)
 - [Me by Social Networks](#social)
-- [Me by Believings](#believings)
+- [Me by Beliefs](#believings)
 
 ## Me by Achievements
 <a name="achievements"></a>
 
 There was a time when I thought achievements were really important.
 Today I look back and truly believe
-that is much more important to *demonstrate on the field my value, and not on a piece of paper*.
+that is much more important to *demonstrate my value on the field, not on a piece of paper*.
 By the way, if you are interested, the following is an uncomplete list.
 
 In the academic world:
@@ -61,21 +61,35 @@ In the computer science world:
 In the archery world (when I was young):
 
 * regional champion FITA, FIELD, INDOOR (several times)
-* bronze medal at the individual national championships, twice: 1994, 1996
+* medals at the  national championships, twice bronze individual: 1994, 1996; silver and bronze team: 1994
 
 ## Me by Skills
 <a name="skills"></a>
 
-Not a complete enumration, but this is what I use on an almost regular basis:
+Not a complete enumeration, but this is what I use on an almost regular basis:
 
 * **Java** - 15+ years;
 * **Perl** - 15+ years;
 * **PostgreSQL** - 10+ years;
 * **Linux** - 18+ years
-* **BSD** - 5+ years
 * **Emacs** - 18+ years (it was my default editor since day one and yes, I don't know `vi`)
 * **Git**, **Fossil** - 5+ years, and of course I know and I used older systems
+* **SQLite** - 2+ years
+* **BSD** - 5+ years
+
+
+There was a time when I was more a *sysadmin* than a developer, and back in those days I used:
+
+* **FreNAS** - a good solution for home and business storages
+* **pfSense** - as main firewall solution
+* **netflow** - lot of data to shut up users
+
+And on an irregular basis, i.e., not for production but for personal use:
+
 * **C++** and **Qt** - no production experience, let's say I can manage them
+* **Digikam** and **Gimp** - because we all need to keep clean our phot collection
+* **VirtualBox** - a good virtualization solution for testing other systems
+
 
 Feel free to search for `fluca1978` on the forums, mailing list, IRC to validate the above.
 
@@ -88,7 +102,7 @@ how long I was around on a particular subject.
 
 The choice of the username has a particular meaning. When I was a child and was learning to write, I used to sign my homeworks with
 `F.Luca`, where of course the capital `F` was for **F**errari. Having fun on me, my parents were used to read the whole string without themseparating dot, composing therefore `FLuca` and calling me with such nickname.
-When it was time to set up my first internet account, as you can imagine, there was no combination of name and surname available for me, as well as there was no available `fluca`: in both cases I had to add a postfix number to say my account from another. Therefore I decided to place my year of birth, `1978`, which interestingly is the minimal and only set of numbers that I need to write my whole `d-m-y` birthday.
+When it was time to set up my first internet account, as you can imagine, there was no combination of name and surname available for me, so I switched to old nickname, but there was no available `fluca` as well: in both cases I had to add a postfix number to say my account from another. Therefore I decided to place my year of birth, `1978`, which interestingly is the minimal and only set of numbers that I need to write my whole `d-m-y` birthday.
 
 And that is how **`fluca1978`** took the field. Since then I changed a lot of account managers and service providers, so chances are you can find my username tied to different services, but you can be sure that account is mine.
 
@@ -132,8 +146,8 @@ No way!
 I do not use social networks,
 I don't like them, so if you need to get in touch with me *drop me an email or a phone call*.
 
-## Me by Believings
-<a name="believings"></a>
+## Me by Beliefs
+<a name="beliefs"></a>
 
 I do believe in *Open Source*.
 
@@ -143,7 +157,7 @@ I do believe in *humanity*, *honesty* and *personal values*.
 
 I do believe in *free culture*, in the sense that everyone should help each other to learn new things without secrets or speculation.
 
-I'm catholic, but I'm working on this.
+I'm catholic, but not a blind believer.
 
 ## Contact me
 
