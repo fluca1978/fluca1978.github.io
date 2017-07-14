@@ -27,3 +27,11 @@ More in general I tend to keep all my projects on [GitHub](https://github.com/fl
 I did participate in the **CPAN Pull Request Challenge** 2015 and **Hacktoberfest 2016**. I really encourage anyone else in participating in projects like those because they can teach you a lot and your time will not be wasted onto a not-so-used piece of code.
 
 I co-founded and directed the **[Italian PostgreSQL Users' Group (ITPUG)](http://www.itpug.org)** and have actively organized almost all [PGDay.IT](http://www.pgday.it) events, introducing (not by myself) also the concept of *ITPUG Lab*.
+
+
+Talking about past academic projects, I've been member of the followings:
+
+- **MENSA (Methodologies for the Engineering of complex Software systems: Agent-based approach)**, years 2007-2008;
+- **IS-MANET: Infrastrutture per reti ad-hoc mobili**, progetto CNR-MIUR, years 2003-2005;
+- **Fiducia e Diritto nella società dell’Informazione: Promozione e Tutela Giuridica della Fiducia nel Mercato, nelle Istituzioni e nell’Infrastruttura Tecnologica**, progetto PRIN del MIUR, years 2004-2005.
+- **LAICA: Laboratorio di Ambient Intelligence per una Città Amica**, progetto europeo in collaborazione con il comune di Reggio Emilia, years 2005-2006.
