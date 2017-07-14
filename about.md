@@ -44,7 +44,7 @@ So here's a brief description about *me*.
 There was a time when I thought achievements were really important.
 Today I look back and truly believe
 that is much more important to *demonstrate my value on the field, not on a piece of paper*.
-By the way, if you are interested, the following is an uncomplete list.
+By the way, if you are interested, the following is an partial list.
 
 In the academic world:
 
@@ -53,17 +53,21 @@ In the academic world:
 * Adjunct Professor, [Nipissing University](http://www.nipissingu.ca/), years 2011-2014
 * lecturer at the University of Modena and Reggio Emilia for several courses including `Java, OOP, operating systems`, years 2003-2006
 * lecturer at local high schools for `HTML, Javascript, networking`, years 2009-2014`
+* BSD Certification, year 2013
 
 In the computer science world:
 
 * co-founder of the [Italian PostgreSQL Users Group](http://www.itpug.org), president between 2013-2015
 * [BSD Magazine](https://bsdmag.org/) writer and reviewer
-* lecturer at several PGDay.IT and LinuxDay events
+* speaker at several [PGDay.IT](http://www.pgday.it) and LinuxDay events
 
 In the archery world (when I was young):
 
 * regional champion FITA, FIELD, INDOOR (several times)
 * medals at the  national championships, twice bronze individual: 1994, 1996; silver and bronze team: 1994
+
+
+You could also be interested in the [papers page](/papers).
 
 ## Me by Skills
 <a name="skills"></a>
@@ -73,37 +77,41 @@ Not a complete enumeration, but this is what I use on an almost regular basis:
 * **Java** - 15+ years;
 * **Perl** - 15+ years;
 * **PostgreSQL** - 10+ years;
-* **Linux** - 18+ years
-* **Emacs** - 18+ years (it was my default editor since day one and yes, I don't know `vi`)
-* **Git**, **Fossil** - 5+ years, and of course I know and I used older systems
-* **SQLite** - 2+ years
-* **BSD** - 5+ years
+* **Linux** - 18+ years;
+* **Emacs** - 18+ years (it was my default editor since day one and yes, I don't know `vi`);
+* **Git**, **Fossil** - 5+ years, and of course I know and I used older systems;
+* **SQLite** - 2+ years;
+* **BSD** - 5+ years;
+* **PHP** - 9+ years;
 
 
 There was a time when I was more a *sysadmin* than a developer, and back in those days I used:
 
-* **FreNAS** - a good solution for home and business storages
-* **pfSense** - as main firewall solution
-* **netflow** - lot of data to shut up users
+* **FreNAS** - a good solution for home and business storages;
+* **pfSense** - as main firewall solution;
+* **netflow** - lot of data to shut up users;
+* **OpenLDAP**, **Samba**, **NFS**, **Netatalk** - because you have to manage a lot of different systems;
 
 And on an irregular basis, i.e., not for production but for personal use:
 
-* **C++** and **Qt** - no production experience, let's say I can manage them
-* **Digikam** and **Gimp** - because we all need to keep clean our phot collection
-* **VirtualBox** - a good virtualization solution for testing other systems
+* **C++** and **Qt** - no production experience, let's say I can manage them;
+* **Digikam** and **Gimp** - because we all need to keep clean our photo collection;
+* **VirtualBox** - a good virtualization solution for testing other systems;
+* **LibreOffice**, **Org-mode**, **LaTeX** - because my documents should look good;
 
 
-Feel free to search for `fluca1978` on the forums, mailing list, IRC to validate the above.
+Feel free to search for **`fluca1978`** on the forums, mailing lists, IRC channles to validate the above.
+
 
 ## Me by Username
 <a name="username"></a>
 
-My public username is **`fluca1978`** and it has been since a lot, allowing for you to scout the net searching for my very first steps.
+My public username is **`fluca1978`** and it has been for a while, allowing for you to scout the net searching for my very first steps.
 I strongly believe in keeping the username the same to let other people know my achievements and experience, as well as a way to prove
 how long I was around on a particular subject.
 
 The choice of the username has a particular meaning. When I was a child and was learning to write, I used to sign my homeworks with
-`F.Luca`, where of course the capital `F` was for **F**errari. Having fun on me, my parents were used to read the whole string without themseparating dot, composing therefore `FLuca` and calling me with such nickname.
+`F.Luca`, where of course the capital `F` was for **F**errari. Having fun on me, my parents were used to read the whole string without the separating dot, making therefore it `FLuca` and calling me with such nickname.
 When it was time to set up my first internet account, as you can imagine, there was no combination of name and surname available for me, so I switched to old nickname, but there was no available `fluca` as well: in both cases I had to add a postfix number to say my account from another. Therefore I decided to place my year of birth, `1978`, which interestingly is the minimal and only set of numbers that I need to write my whole `d-m-y` birthday.
 
 And that is how **`fluca1978`** took the field. Since then I changed a lot of account managers and service providers, so chances are you can find my username tied to different services, but you can be sure that account is mine.
@@ -125,7 +133,7 @@ For a detailed view on what I can consider *projects* see the [projects page](/p
 <a name="blog"></a>
 
 In the blog you will find random thoughts pretty much on computer science related topics.
-I do write sometime personal things, but tend not to do it very often.
+I do write sometime personal things, but not very often.
 
 ## Me by Social Networks
 <a name="social"></a>
