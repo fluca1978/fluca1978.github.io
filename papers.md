@@ -7,7 +7,7 @@ permalink: /papers/
 
 This is an almost complete list of all my papers, both on my research activity as well as other computer science activity.
 
-Please note I've placed the special placeholder *et al.* on papers I'm not sure I cannot post here names, but you can easily find the complete
+Please note I've placed the special placeholder *et al.* on papers I don't like to post here author names, but you can easily find the complete
 bibliography entry searching the web.
 
 
