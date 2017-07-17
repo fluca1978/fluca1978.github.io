@@ -1,0 +1,13 @@
+---
+layout: post
+title: Interessante spiegazione di vacuum e autovacuum
+date: '2016-11-10T21:50:00.000+01:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2016-11-10T21:50:11.944+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1672466162503270806
+blogger_orig_url: http://fluca1978.blogspot.com/2016/11/interessante-spiegazione-di-vacuum-e.html
+---
+
+Sembra quasi un argomento da novellino: PostgreSQL deve usare la procedura di vacuum per mantenere la struttura dati (su disco) pulita e ordinata, in altre parole efficiente.<br />La necessità di vacuum è dovuta all'implementazione del sistema MVCC, non proprietario di PostgreSQL e usato anche in altri RDBMS. Spesso si accusa vacuum di essere uno degli svantaggi di PostgreSQL, senza considerare i vantaggi di MVCC.<br />Consiglio caldamente la lettura di <a href="https://www.citusdata.com/blog/2016/11/04/autovacuum-not-the-enemy/">questo articolo</a>, ben strutturato, che dettaglia la necessità di vacuum nonché come ottimizzare il demone di autovacuum al fine di mantenere buone prestazioni anche in un database di grosse dimensioni.<br /><br /><br /><br /><div><br /></div>

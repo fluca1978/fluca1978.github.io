@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'psql: fermarsi al primo errore'
+date: '2010-01-07T12:33:00.003+01:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2010-01-07T12:36:19.568+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7612749505109602093
+blogger_orig_url: http://fluca1978.blogspot.com/2010/01/psql-fermarsi-al-primo-errore.html
+---
+
+Il terminale interattivo di PostgreSQL, psql, consente di eseguire un file di comandi SQL in sequenza con il comando speciale <span style="font-style: italic;">\i nomeFile</span>. Tuttavia se tale file contiene degli errori psql continuerà a processare il file (anche se i comandi non verranno applicati a causa del fallimento della transazione corrente). Come risultato si vedranno passare sullo schermo una serie di messaggi di errore causati dal primo errore rilevato nel file. E' possibile dire a psql di fermarsi al primo errore rilevato nel file mediante il comando speciale<br /><br /><span style="font-style: italic;"><blockquote>\set ON_ERROR_STOP</blockquote></span><br /><br />da lanciare prima dell'esecuzione del file comandi tramite \i.

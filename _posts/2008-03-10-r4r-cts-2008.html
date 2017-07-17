@@ -1,0 +1,13 @@
+---
+layout: post
+title: R4R @ CTS 2008
+date: '2008-03-10T14:36:00.000+01:00'
+author: Luca Ferrari
+tags:
+- research
+modified_time: '2008-03-10T14:53:25.834+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-6658962001006951470
+blogger_orig_url: http://fluca1978.blogspot.com/2008/03/r4r-cts-2008.html
+---
+
+I'm happy to announce that a paper I wrote has been accepted at the <a href="http://cisedu.us/cis/cts/08/">The 2008 International Symposium on Collaborative  Technologies and Systems (CTS 2008).</a><br />The paper titled <span style="font-style: italic;">Binding Agent Roles to Environments: the R4R approach </span>describes an approach based on Aspect Oriented Programming that focuses on the role deployment. The idea is that, at the time of the role deployment to a specific host/platform, roles must be integrated in the environment rules and policies. This means, for example, that some role actions must be executed accordingly to the above rules.<br /><br />Such rules are specified thru a set of annotations that express which actions must be performed before and/or after a role action. In this way, the host administrator can define a set of rules that will be transparently applied to the roles and to the agents that are going to execute them.<br /><br />The integrative actions executed before and/or after a role action are called <span style="font-style: italic;">preconditions</span> and <span style="font-style: italic;">postconditions</span> respectively. To ease the adoption of pre and post conditions, R4R exploits the concept of resource, an entity tied to the environment/context where the role is exploited, that provides a set of actions used as <span style="font-style: italic;">integration points</span>. Only the resource actions (that are a subset of the role one) can be extended with the pre and post conditions, while normal role actions cannot. This choice allows role developers to be sure that there actions that will never be re-adapted by an environmental rule, while others could be integrated and adapted with such rules. Please note that, thanks to R4R, it is possible to implement reactions to role actions, something similar to reactive tuple spaces.<br /><br />I suggest everyone interested in this approach to read the paper in the CTS 2008 prooceedings.

@@ -1,0 +1,14 @@
+---
+layout: post
+title: Variabili di ambiente esportate con export
+date: '2008-02-10T14:11:00.000+01:00'
+author: Luca Ferrari
+tags:
+- linux
+- università
+modified_time: '2008-02-10T16:30:11.414+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1540364706251079130
+blogger_orig_url: http://fluca1978.blogspot.com/2008/02/variabili-di-ambiente-esportate-con.html
+---
+
+Molto spesso gli studenti dei corsi di Sistemi Operativi dell'Università degli Studi di Modena e Reggio Emilia mi hanno chiesto chiarimenti circa il funzionamento di <span style="font-style: italic;">export</span> per l'esportazione delle variabili.<br /><br />Il comando <span style="font-style: italic;">export</span> consente di esportare una variabile definita in un processo shell per i sottoshell che saranno generati da essi. L'esportazione è simile alla semantica della fork(2) quando le variabili sono copiate da un processo padre a quello figlio. Si noti che la copia/esportazione si ha per valore in avanti, ossia dal padre al figlio, e non dai processi figli verso quello padre. In altre parole, al momento dell'export viene copiata la variabile nello shell figlio, ma i due valori restano indipendenti. Questo significa che se lo shell figlio modifica il valore, il padre non vede la modifca. E' facile verificare questo con una coppia di script:<br /><br /><pre>#!/bin/bash<br /># script1.sh (script padre)<br /><br />VAR1="variabile1"<br />echo "Script1 : $VAR1"<br />export VAR1<br />./script2.sh<br />echo "Script1 : $VAR1"<br /><br /><br />#!/bin/bash<br /># script2.sh (script figlio)<br />echo "Script2 : $VAR1"<br />VAR1="Variabile2"<br />echo "Script2 : $VAR1"<br /></pre><br /><br />Come si può notare lo script1.sh definisce una variabile, la esporta, invoca un processo figlio e controlla nuovamente il valore della variabile. L'esecuzione di tale script produce il seguente output:<br /><br /><pre>Script1 : variabile1<br />Script2 : variabile1<br />Script2 : Variabile2<br />Script1 : variabile1</pre><br />Come si può notare, lo script1.sh vede sempre e solo il valore originale della variabile VAR1, anche se quest'ultima è stata modificata dallo script2.sh. Questo è dovuto proprio al fatto che l'export funziona dal padre al figlio e non viceversa.

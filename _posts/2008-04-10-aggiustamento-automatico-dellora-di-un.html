@@ -1,0 +1,13 @@
+---
+layout: post
+title: Aggiustamento automatico dell'ora di un server Ubuntu
+date: '2008-04-10T17:49:00.000+02:00'
+author: Luca Ferrari
+tags:
+- linux
+modified_time: '2008-04-10T17:52:21.491+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5900111138172305842
+blogger_orig_url: http://fluca1978.blogspot.com/2008/04/aggiustamento-automatico-dellora-di-un.html
+---
+
+Ho sempre usato <span style="font-style: italic;">ntpdate</span> per la sincronizzazione dell'ora dei server, e Ubuntu fornisce il pacchetto nei suoi repository ufficiali. Una rapida occhiata a <span style="font-style: italic;">/etc/ntp.conf</span> mi ha mostrato un file di configurazione corretto, tuttavia la sincronizzazione dell'orologio non funziona di default. Infatti è necessario inserire l'aggiornamento fra i task giornalieri, ad esempio con i comandi:<br /><br /><span style="font-style: italic;">echo "sudo ntpdate ntp.ubuntu.com" > /etc/cron.daily/ntpdate</span><br /><span style="font-style: italic;">chmod 755 /etc/cron.daily/ntpdate</span><br /><br />Mi domanda come mai Ubuntu, che fornisce pacchetti preconfigurati in modo eccellente, non abbia sistemato questo piccolo dettaglio per fare in modo che la sincronizzazione venisse abilitata in automatico.

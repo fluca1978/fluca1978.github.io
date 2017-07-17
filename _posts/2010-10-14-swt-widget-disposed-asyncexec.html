@@ -1,0 +1,15 @@
+---
+layout: post
+title: SWT Widget Disposed & asyncExec
+date: '2010-10-14T21:00:00.000+02:00'
+author: Luca Ferrari
+tags:
+- eclipse
+- swt
+- java
+modified_time: '2010-10-14T21:00:04.725+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-998345595367692194
+blogger_orig_url: http://fluca1978.blogspot.com/2010/10/swt-widget-disposed-asyncexec.html
+---
+
+<div style="text-align: justify;">Quando si eseguono operazioni time-consuming in una applicazione SWT occorre che queste siano eseguite fuori dal thread grafico, pena il freeze dell'interfaccia grafica. SWT mette a disposizione due metodi per l'esecuzione di task lunghi:</div><ul style="text-align: justify;"><li>i <i>job</i>, simili a dei thread Java contengono il codice da eseguire secondo una politica di schedulazione (anche immediata)</li><li>gli <i>sync/asyncExec</i>, ossia l'esecuzione di un <i>Runnable</i> appena il thread grafico (UI Thread) può</li></ul><div style="text-align: justify;">I due approcci, seppur simili,hanno un utilizzo piuttosto differente: i job vengono usati per tutto quello che è prevalentemente non-UI e che non aggiornerà l'interfaccia grafica, mentre gli xxxExec sono per quei processi che richiedono un aggiornamento costante dell'interfaccia grafica, ad esempio per riportare il progresso di una operazione.</div><div style="text-align: justify;">Il problema degli <i>asyncExec</i> è che potrebbero venire schedulati per l'esecuzione dopo il disposal di un widget, cosa che si verifica ad esempio quando l'applicazione viene chiusa. In questo caso viene generata una eccezione <i>SWTException</i> che indica appunto che era rimasto in coda un qualche <i>Runnable</i> per l'esecuzione ma che il thread UI non ha fatto in tempo ad eseguirlo prima della chiusura del widget:</div><div style="text-align: justify;"><span class="MsgBodyText"><pre><span class="MsgBodyText"><pre>&nbsp;</pre><pre>org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)&nbsp;<br /></pre></span></pre></span></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Per ovviare al problema, ogni <i>asyncExec</i> deve testare la validità del widget sopra il quale opera prima di effettuare le modifiche. Si noti che non basta controllare la validità del widget prima della schedulazione del <i>Runnable</i>, poiché questo problema si verifica in base alla capacità del thread UI di schedulare i Runnable e questa non è nota a priori. I <i>Control</i> dispongono tutti di un metodo <i>isDisposed()</i>, che non è però esposto in un <i>Viewer</i>, perciò se si opera con questi ultimi occorre prima recuperare il <i>Control</i> interno (<i>getControl()</i>) e testare quest'ultimo.</div><br /><br /><br /><br /><span class="MsgBodyText"></span><br /><span class="MsgBodyText"><pre><span class="MsgBodyText"><pre></pre></span></pre><pre></pre><pre>&nbsp;</pre></span>

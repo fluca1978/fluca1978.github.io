@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Leopard e Netatalk: problema di permessi'
+date: '2008-03-11T12:25:00.001+01:00'
+author: Luca Ferrari
+tags:
+- linux
+modified_time: '2008-03-14T10:13:04.160+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2678498340038257008
+blogger_orig_url: http://fluca1978.blogspot.com/2008/03/leopard-e-netatalk-problema-di-permessi.html
+---
+
+Ho perso diverso tempo cercando di capire come mai un file/cartella creato da un Apple OS X Leopard su una share Netatalk (2.0.3) venisse creato con i permessi<br /><br /><div style="text-align: center;"><span style="font-style: italic;">rwx--S---<br /><br /></span></div>indipendentemente dalla umask impostata per quell'utente.<br />Non ho trovato nessuna opzione di configurazione di Leopard per la gestione dei permessi usati nella creazione di un file su una share afp, ma sono riuscito ad arginare il problema utilizzando l'opzione <span style="font-style: italic;">upriv</span> di Netatalk.<br />Questa opzione forza la creazione dei file con gli stessi permessi Unix del server sul quale Netatalk è ospitato, e quindi con l'umask relativa all'utente con il quale il Mac OS X si è autenticato.<br />E' sufficiente impostare quindi l'opzione per ogni share nel modo seguente:<br /><br />/mnt/data/share "MyShare" options:nostat allow:myUser  rwlist:myUser <span style="font-weight: bold;">options:upriv<br /><br /></span><span>Va precisato che, qualora si fossero usati permessi di tipo <span style="font-style: italic;">g+s</span> sulle cartelle al fine di forzare uno specifico gruppo condiviso, è necessario rimuovere tale permesso e aggiustare i gruppi opportunamente.</span><span style="font-weight: bold;"><br /></span>

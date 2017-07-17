@@ -1,0 +1,14 @@
+---
+layout: post
+title: Rust, Gnome & friends
+date: '2017-04-09T15:10:00.000+02:00'
+author: Luca Ferrari
+tags:
+- gnome
+- programmazione
+modified_time: '2017-04-09T15:10:01.436+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8030659500523416378
+blogger_orig_url: http://fluca1978.blogspot.com/2017/04/rust-gnome-friends.html
+---
+
+<div style="text-align: justify;">C'è un certo <i>momentum</i> attorno al linguaggio di programmazione <a href="https://www.rust-lang.org/en-US/">Rust</a>.<br />Premetto che non ho mai utilizzato Rust nemmeno per il classico "Hello World", tuttavia ho provato a leggere la documentazione<br />e devo essere sincero: mi pare un linguaggio abbastanza complesso e pieno di keyword e di <i>trabocchetti</i> che non sono propri<br />di un linguaggio che si propone come un <i>C migliorato</i>.<br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Ad ogni modo pare che il team <a href="https://people.gnome.org/~federico/news-2017-04.html#rust-gnome-hackfest-1">Gnome voglia passare a Rust</a> per l'implementazione delle librerie e della infrastruttura ad oggetti<br />del famoso desktop. O meglio, si vuole <i>pluggare</i> componenti Rust nel sistema ad oggetti GTK+. Conosco GTK+, anche se sono molti<br />anni che non lo "utilizzo" da vicino: l'idea è bella ed elegante e si basa sulla costruzione di un sistema OOP puramente in C.<br />E riesce bene nello scopo, a patto di ricordarsi alcune regole <i>boilerplate</i> per la definizione dei nuovi tipi (classi).<br />Evidentemente, proponendosi Rust come un <i>super-C ad oggetti</i>, l'idea del team Gnome è quella di usare Rust per ridurre il codice<br />boilerplate pur mantenendo la dorsale GTK+ (per ovvia retrocompatibilità).<br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Francamente non mi pare che Gnome negli ultimi anni si sia mosso nelle giuste direzioni, e questa di Rust mi sembra l'ennesima<br />"cantonata" dettata quasi piu' dalla moda che non da problematiche tecnologiche. GTK+ è un sistema solido, testato, affermato<br />e modificarlo adesso creando una sorta di <i>super-binding</i> per Rust rischia di confondere i programmatori e creare piu' incompatibilità<br />rispetto ai problemi risolti. Sono sicuro che Gnome ha valutato molto bene vantaggi e svantaggi di questo approccio, e la mia resta<br />una pura riflessione personale, ma onestamente trovo abbastanza complesso e poco elegante il linguaggio scelto.<br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Da ultimo, per una visione piu' simile alla mia, si legga questo interessante articolo <a href="http://www.tedunangst.com/flak/post/thoughts-on-replacement-languages">sull'adozione di nuovi linguaggi (fra i quali Rust).</a><br /></div>

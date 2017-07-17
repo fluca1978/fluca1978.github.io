@@ -1,0 +1,14 @@
+---
+layout: post
+title: Maxine linkage/JNI errors
+date: '2010-08-31T21:46:00.001+02:00'
+author: Luca Ferrari
+tags:
+- maxine
+- java
+modified_time: '2010-08-31T21:46:00.694+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2791454549305759749
+blogger_orig_url: http://fluca1978.blogspot.com/2010/08/maxine-linkagejni-errors.html
+---
+
+<div style="text-align: justify;">After a source update of the Maxine's Mercurial clone, I was unable to run the virtual machine again. The machine exited with signal 11, even after a clean-build. I increased the debug messages and discovered the error:</div><div style="text-align: justify;"><br /></div><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: left;"><span style="font-size: x-small;">loadSymbol(0x7f887f161128, "nativeSetGlobalThreadAndGCLock")<br />loadSymbol(0x7f887f161128, "nativeSetGlobalThreadAndGCLock") = (nil)<br />Error message: /sviluppo/java/src/maxine-<br />hg/maxine/Native/generated/linux/maxvm:<br />&nbsp;undefined symbol: nativeSetGlobalThreadAndGCLock<br />SIGNAL: 11 [SIGSEGV]</span></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Thanks to the <a href="http://kenai.com/projects/maxine/lists/users/archive/2010-08/message/52">help on the mailing list</a>, I was able to find that the <i>libjvm.so</i> I was using was older than the Maxine executable I compiled, so there was a name clash on some variables. Here there is how I solved the problem:</div><ol style="text-align: justify;"><li>do a <i>max clean</i> to remove all generated objects;</li><li>remove the whole content of the <i>Native/generated/linux</i> directory;</li><li>do a <i>max build</i> to rebuild the virtual machine;</li><li>launch again the boot image generator to get the <i>maxine.vm</i> image into the <i>Native/generated/linux</i> directory. </li></ol>

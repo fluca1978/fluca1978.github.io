@@ -1,0 +1,13 @@
+---
+layout: post
+title: Smontare cartelle SMB bloccate
+date: '2008-05-05T18:08:00.000+02:00'
+author: Luca Ferrari
+tags:
+- linux
+modified_time: '2008-05-05T18:11:23.683+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5338990042308459064
+blogger_orig_url: http://fluca1978.blogspot.com/2008/05/smontare-cartelle-smb-bloccate.html
+---
+
+Mi è capitato spesso di avere condivisioni SMB montate da un server Linux in locale che, per problemi di stabilità della rete, risultassero bloccate. Qualsiasi operazione di apertura/lettura/scrittura di un file risultava in un I/O error. Smontare la cartella risultava impossibile poiché altri processi stavano tendando di aprire file sulla condivisione, e nemmeno un <span style="font-style: italic;">umount -f</span> riusciva nello scopo.<br /><br />Ho poi scoperto che l'opzione <span style="font-style: italic;">-l</span> di <span style="font-style: italic;">umount</span> funziona per il mio scopo: con quella opzione il kernel viene ingannato, nel senso che pensa che il filesystem sia stato smontato, anche se le ultime sincronizzazioni con il file system remoto non sono avvenute. In questo modo è possibile procedere ad un remount immediato e ottenere il file system nuovamente funzionante.<br /><br />Un'opzione pericolosa, ma utile in diverse situazioni!

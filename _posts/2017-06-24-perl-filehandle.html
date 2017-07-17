@@ -1,0 +1,13 @@
+---
+layout: post
+title: Perl _ filehandle
+date: '2017-06-24T16:39:00.000+02:00'
+author: Luca Ferrari
+tags:
+- perl
+modified_time: '2017-06-24T16:39:17.830+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-913309956081200447
+blogger_orig_url: http://fluca1978.blogspot.com/2017/06/perl-filehandle.html
+---
+
+Leggendo la documentazione di <a href="http://search.cpan.org/~xsawyerx/perl-5.26.0/ext/File-Find/lib/File/Find.pm"></a><a href="https://www.blogger.com/:Find">:Find</a> mi sono accorto di una frase nella sezione di esempio:<br /><br /><br /><blockquote>the "_" is a magical filehandle<br />that caches the information from the preceding "stat()", "lstat()", or<br />filetest.<br /></blockquote><br />e così incuriosito sono andato subito ad approfondire nella documentazione di <code>stat</code>:<br /><br /><br /><blockquote>If "stat" is passed the special filehandle consisting of an<br />underline, no stat is done, but the current contents of the stat<br />structure from the last "stat", "lstat", or filetest are returned.<br /></blockquote><br />Diciamo che <code>_</code>, a differenza della variabile <i>topic</i> non è una vera variabile ma un segnaposto particolare che viene interpretato come <i>accesso alla cache</i> dell'ultima operazione <i>stat</i> effettuata. E' facile costruire un esempio che mostri questi:<br /><br /><br /><div class="org-src-container"><br /><pre class="src src-perl">#!env perl<br /><br />use v5.20;<br /><br />my $file_name = $0; # myself<br /><br />my @stat_values   = stat $file_name;<br />my @cached_values = stat _;<br /><br />say "Same values for $file_name!" if ( $stat_values[1] == $cached_values[1] # inode<br />           &amp;&amp; $stat_values[7] == $cached_values[7] # size<br />           &amp;&amp; $stat_values[8] == $cached_values[8]  ); # atime<br /></pre></div><br />Lo stesso utilizzo non può essere effettuato con <code>File::stat</code>, che infatti riporta nella documentazione:<br /><br /><br /><blockquote>As of Perl 5.8.0 after using this module you cannot use the implicit $_ or<br />the special filehandle "_" with stat() or lstat(), trying to do so leads<br />into strange errors.<br /></blockquote>

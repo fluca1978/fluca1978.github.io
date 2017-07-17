@@ -1,0 +1,14 @@
+---
+layout: post
+title: Call vs Execution Join Point
+date: '2008-12-15T15:26:00.000+01:00'
+author: Luca Ferrari
+tags:
+- aspectj
+- java
+modified_time: '2008-12-15T15:32:04.119+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2826932371271302613
+blogger_orig_url: http://fluca1978.blogspot.com/2008/12/call-vs-execution-join-point.html
+---
+
+Si sente spesso parlare di differenza fra i join point di <span style="font-style: italic;">call</span> e di <span style="font-style: italic;">execution</span>, tanto che la domanda è molto spesso fatta da chi è alle prime armi con l'AOP e AspectJ. Per chiarezza occorre ricordare che mentre un <span style="font-style: italic;">call</span> "osserva" il codice dal lato chiamante (quindi un <span style="font-style: italic;">this</span> punta all'oggetto che invoca un metodo), un <span style="font-style: italic;">execution</span> "osserva" il codice dal lato chiamato (quindi un <span style="font-style: italic;">this</span> punta all'oggetto sul quale il metodo è invocato). Tuttavia esiste un'ulteriore differenza, sottile e subdola e che potrebbe lasciare sconcertati quando si utilizza la reflection: un <span style="font-style: italic;">execution</span> join point, dovendo essere sul lato del codice chiamato, viene sempre messo <span style="font-style: italic;">inline</span> con il codice stesso. Questo significa che anche se la chiamata al metodo avviene tramite reflection il <span style="font-style: italic;">join-point</span> verrà processato. Diverso il caso invece per <span style="font-style: italic;">call</span>, che non può essere messo inline (si avrebbe un contesto differente) e che quindi viene normalmente bypassato dall'uso della reflection. In altre parole, se si vuole gestire un join point di tipo <span style="font-style: italic;">call</span> occorre prevedere tutte le chiamate dirette al metodo e anche quelle che eventualmente vengono fatte tramite reflection.

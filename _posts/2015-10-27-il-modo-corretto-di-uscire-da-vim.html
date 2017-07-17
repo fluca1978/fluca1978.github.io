@@ -1,0 +1,13 @@
+---
+layout: post
+title: Il modo corretto di uscire da Vi(m)
+date: '2015-10-27T22:38:00.000+01:00'
+author: Luca Ferrari
+tags:
+- programmazione
+modified_time: '2015-10-27T22:38:00.839+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7486658293566054974
+blogger_orig_url: http://fluca1978.blogspot.com/2015/10/il-modo-corretto-di-uscire-da-vim.html
+---
+
+<div style="text-align: justify;">C'è una maglietta promozionale per Vim che riporta un comando errato, che trovo molto spesso anche nei manuali all'editor dedicati.</div><div class="separator" style="clear: both; text-align: center;"><a href="http://www.freewear.org/images/release_candidates/vim_espalda.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://www.freewear.org/images/release_candidates/vim_espalda.png" height="226" width="320" /></a></div><br /><br /><div style="text-align: justify;">Spesso si trova, come metodo di uscita "sicura" dall'editor di fornire il comando ':wq!', che significa <i>'scrittura'</i> (w) <i>'forzata'</i> (!) ed <i>'uscita'</i> (q); in altre parole si salva il file corrente e si esce.</div><div style="text-align: justify;">Qual'è il problema? Che la scrittura forzata aggiorna i metadati del file anche quando questo non è stato modificato, mandando quindi in confusione programmi che digeriscono questi metadati (es. make). Il metodo corretto per uscire dall'editor è usare '<i>ZZ</i>', che si preoccupa di salvare i file non salvati che sono stati modificati, lasciando inalterati gli altri.</div>

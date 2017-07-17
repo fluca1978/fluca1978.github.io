@@ -1,0 +1,13 @@
+---
+layout: post
+title: portsnap patch to use fetch (instead of wget)
+date: '2012-11-28T17:37:00.000+01:00'
+author: Luca Ferrari
+tags:
+- freebsd
+modified_time: '2012-11-28T17:37:00.760+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3421017199637036741
+blogger_orig_url: http://fluca1978.blogspot.com/2012/11/portsnap-patch-to-use-fetch-instead-of.html
+---
+
+<div style="text-align: justify;">I did some review to my micro <i>portsnap</i> patch, thanks also to the suggestion on the FreeBSD forums and -stable mailing list.</div><div style="text-align: justify;">In particular, as someone pointed out, using <i>wget(1)</i> is not a good idea because it is not part of the base system and requires an admin to manually install it from ports or packages. That is not a big deal in my opinion, and it is the reason why I made a change so that it was possible to configure, using <i>/etc/portsnap.conf</i>, a way to specify that wget(1) was required. To make it even clearer, I also created a function <i>check_downloader</i> that is used to check the presence of the program executable used to download stuff (either <i>phttpget</i> or <i>wget</i>).</div><div style="text-align: justify;">I was not fully happy with such patch, but I have not a better idea until s<a href="http://docs.freebsd.org/cgi/getmsg.cgi?fetch=475718+0+current/freebsd-stable">omeone on the -stable mailing list</a> pointed out that FreeBSD (of course!) has already a downloader: <a href="http://www.freebsd.org/cgi/man.cgi?query=fetch&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+9.0-RELEASE&amp;arch=default&amp;format=html">fetch(1)</a>. </div><div style="text-align: justify;"></div><div style="text-align: justify;">The problem with <i>fetch(1)</i> is that it requires a full URL while portsnap was internally dealing with clean server names. </div><div style="text-align: justify;">So I reverted the patch in order to avoid using <i>wget(1)</i> and to use <i>fetch(1)</i> by means of a flag in /etc/portsnap.conf and introduced a new variable in the internal portsnap implementation, <i>SERVER_PROTOCOL</i>, that simply handles "http" in the case of the usage of <i>fetch(1)</i>.</div><div style="text-align: justify;">The patch has moved into another path within my repository and is available <a href="https://github.com/fluca1978/fluca1978-coding-bits/tree/master/sh/freebsd-only/portsnap">here</a>.</div><br />

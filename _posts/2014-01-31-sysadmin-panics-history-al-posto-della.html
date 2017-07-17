@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Sysadmin panics: history al posto della documentazione'
+date: '2014-01-31T18:50:00.000+01:00'
+author: Luca Ferrari
+tags:
+- sysadmin panics
+modified_time: '2014-01-31T18:50:00.437+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5933900026539303516
+blogger_orig_url: http://fluca1978.blogspot.com/2014/01/sysadmin-panics-history-al-posto-della.html
+---
+
+Non ho mai fatto molto affidamento sulla history della shell, in parte perché sono troppo pigro per cercare nella history, in parte perché non tutte le shell si comportano in maniera analoga riguarda l'history e infine perché invece che ricercare e ripetere lunghi comandi cerco sempre di realizzare degli script.<br />Ma quella che vado a narrare è una storia che mi capitò diversi anni fa quando l'history venne usata per spiarmi. Eh si, perché invece che domandarmi come si facesse a fare determinate cose, un mio ex collega penso' bene di usare l'history di account condiviso per imparare e controllare le mie azioni.<br />Ok, ci sono due errori qui: il primo è quello di avere un account condiviso, ma ogni tanto serve un compromesso; il secondo è quello di lasciare la storia attiva su un account appunto condiviso, ma ogni tanto si deve concedere fiducia al genere umano.<br />Ma quando ho capito che, invece che leggere la documentazione che ogni volta scrivevo e manutenevo, il collega pigro non faceva altro che consultare l'history e ripetere a scimmia i comandi senza nemmeno capirli, decisi di prendere provvedimenti. Il primo e ovvio fu quello di rimbalzare l'history a <i>/dev/null</i>, e magicamente tutte le sessioni precedenti si svuotarono dei loro comandi. Oggi dovessi trovarmi nella stessa situazione userei un "trucco" ancora migliore e maggiormente impenetrabile.<br />Ad ogni modo il rimbalzo di <i>/dev/null</i> non fu sufficiente a sviare l'ex collega dalle intenzioni maliziose, a tal punto che lo trovai che spiava le mie sessioni interattive direttamente guardando il mio monitor e usando il tracking dei miei processi...<br /><u><i>Ma leggere la documentazione e le istruzioni che fornivo non era piu' facile?</i></u>

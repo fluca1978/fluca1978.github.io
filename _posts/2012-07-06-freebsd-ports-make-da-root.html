@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'FreeBSD & ports: make da root'
+date: '2012-07-06T15:30:00.000+02:00'
+author: Luca Ferrari
+tags:
+- freebsd
+modified_time: '2012-07-06T15:30:00.802+02:00'
+thumbnail: http://4.bp.blogspot.com/-W-_SyWuSL4U/T_bRFBSP39I/AAAAAAAAAmM/4bRH6navXaI/s72-c/opensolaris1.png
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7662474892591134238
+blogger_orig_url: http://fluca1978.blogspot.com/2012/07/freebsd-ports-make-da-root.html
+---
+
+<div style="text-align: justify;">Si è sempre consigliato di non compilare dei sorgenti con le credenziali di amministratore. La ragione è che gli script di compilazione, <i>make, cmake, configure, </i>e altri possono essere molto complessi e nascondere comandi maliziosi o pericolosi.</div><div style="text-align: justify;">Eppure su FreeBSD l'installazione di un port richiede le credenziali di root, e se si tenta di eseguire anche un semplice <i>make</i> da utente normale si viene bloccati con una richiesta di elevazione di privilegi.</div><div style="text-align: justify;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-W-_SyWuSL4U/T_bRFBSP39I/AAAAAAAAAmM/4bRH6navXaI/s1600/opensolaris1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="41" src="http://4.bp.blogspot.com/-W-_SyWuSL4U/T_bRFBSP39I/AAAAAAAAAmM/4bRH6navXaI/s400/opensolaris1.png" width="400" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Il motivo è semplice: l'installazione di un port potrebbe richiedere l'installazione di altri port. Anche la semplice compilazione potrebbe richiedere l'installazione di altre dipendenze- Ne consegue che per poter effettuare un processo automatizzato la compilazione di un port deve avvenire con credenziali di amministratore, altrimenti ad ogni dipendenza il processo si arresterebbe aspettando l'input dell'amministratore per eseguire una installazione.</div><div style="text-align: justify;">Inoltre al momento dell'installazione devono essere create le entry nel repository dei pacchetti (<i>/var/db/packages</i>), che è appunto proprietà esclusiva del super utente.</div>

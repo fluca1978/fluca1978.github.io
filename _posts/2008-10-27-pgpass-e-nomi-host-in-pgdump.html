@@ -1,0 +1,13 @@
+---
+layout: post
+title: ".pgpass e nomi host in pg_dump"
+date: '2008-10-27T09:41:00.001+01:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2008-10-27T09:51:16.300+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3527988906777800299
+blogger_orig_url: http://fluca1978.blogspot.com/2008/10/pgpass-e-nomi-host-in-pgdump.html
+---
+
+Ho scoperto quasi per caso che l'utility <span style="font-style: italic;">pg_dump</span> quando usa il file <span style="font-style: italic;">.pgpass</span> per l'accesso trasparente ad un database non tiene in considerazione di eventuali nomi host o alias. In altre parole, se all'interno del file <span style="font-style: italic;">.pgpass</span> l'host viene specificato con un indirizzo IP, nella riga di comando pg_dump non si può specificare il nome host, poiché il file <span style="font-style: italic;">.pgpass</span> viene testato con una comparazione secca sul testo che compare nella posizione dell'host e il testo passato sulla riga di comando.

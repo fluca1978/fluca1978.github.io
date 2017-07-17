@@ -1,0 +1,14 @@
+---
+layout: post
+title: Linux si avvicina a DTrace (?)
+date: '2011-03-09T19:28:00.000+01:00'
+author: Luca Ferrari
+tags:
+- linux
+- opensolaris
+modified_time: '2011-03-09T19:28:40.547+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8562555460989339157
+blogger_orig_url: http://fluca1978.blogspot.com/2011/03/linux-si-avvicina-dtrace.html
+---
+
+<div style="text-align: justify;">Il kernel di Linux include ora una funzionalita' per molti versi paragonabile a DTrace di (Open)Solaris (e derivati): la tracing API. L'idea della tracing API e' quella di inserire dei marcaposto nel codice del kernel per agganciare puntatori a funzione che verranno invocati al raggiungimento delle probes (sonde) nel kernel stesso. Sostanzialmente si tratta di un meccanismo ad eventi per il kernel. L'API viene divisa sostanzialmente in due parti:</div><ul><li>trace points: ovvero dichiarazione delle sonde. Mediante una serie di macro si possono definire funzioni generiche (con relativi parametri) e invocare tali funzioni in punti dle codice del kernel. Le funzioni non faranno altro che andare a richiamare i listener agganciati alle sonde.</li><li>trace events: sono un API di livello piu' alto costruita sui tracepoints. Sostanzialmente un evento e' un trace point con in piu' dei dati (contenuti in una struttura) che puo' essere esaminata lato utente. L'idea e' che quando scatta l'evento la struttura dati venga copiata con dei dati forniti da del codice (es. un modulo caricato).</li></ul><div style="text-align: justify;"><br />In userspace occorre abilitare il tracing editando i file del sysfs sotto alla directory kernel/debug/tracing inserendo il classico 1 negli eventi (o nei sottosistemi) per abilitare il tracing. A questo punto si avra' una printk() gratuita per l'evento abilitato, o se si e' scritto un proprio evento si avra' l'esecuzione del codice di tracing specificato.<br />Si e' ancora abbastanza lontani dalla potenza di DTrace, anche se strumenti quali perf promettono molto bene, ad ogni modo penso che questa sia una bella mossa da parte del kernel Linux che potrebbe portarlo ancora piu' pesantemente a sostituire quei sistemi enterprise che stanno difendendo con i denti la loro posizione. Per maggiori informazioni si veda <a href="http://netsplit.com/2011/03/07/tracing-on-linux/">questo ottimo articolo</a>.</div>
