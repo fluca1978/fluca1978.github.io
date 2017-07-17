@@ -2,7 +2,8 @@
 layout: post
 title:  Hello World (again!)
 author: Luca Ferrari
-categories: blog
+tags:
+- blog
 permalink: /:year/:month/:day/:title.html
 ---
 A very short introduction to this new site.
