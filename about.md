@@ -35,6 +35,7 @@ So here's a brief description about *me*.
 - [Me by Username](#username)
 - [Me by Projects](#projects)
 - [Me by Blog](#blog)
+- [Me by Emacs or Vi](#emacs)
 - [Me by Social Networks](#social)
 - [Me by Beliefs](#believings)
 
@@ -134,6 +135,22 @@ For a detailed view on what I can consider *projects* see the [projects page](/p
 
 In the blog you will find random thoughts pretty much on computer science related topics.
 I do write sometime personal things, but not very often.
+
+The main language for this blog will be *english*, but please consider it is not my main language, so be aware of errors,
+typos and false-friends ahead!
+I will write in italian stuff that does make sense only in such language, i.e., localized material, but not technical stuff.
+
+
+## Me by Emacs or Vi
+<a name="emacs"></a>
+
+In the case you are interested in the *holy-war* of computer science, here it is my list of choices:
+
+- Emacs or Vi? **Emacs** since day one;
+- Gnome or KDE? **KDE** since version 1;
+- Firefox or ... ? **Firefox**;
+- Thunderbird or ... ? **KMail** when I was using a mail client, today I read all my emails via web;
+- Bash or Bourne? **zsh** as interactive, **Bourne** for scripting (one day I will learn *pdksh*!);
 
 ## Me by Social Networks
 <a name="social"></a>
