@@ -93,6 +93,43 @@ bibliography entry searching the web.
  April 2004
 
 ## Online Journals
+
+- L. Ferrari,
+**Reacting to Panic**,
+`BSD Magazine`,
+Volume 6 n.3 2013, issue 03/2013(44)
+- L. Ferrari,
+**PostgreSQL: Users and Permissions Managements**,
+`BSD Magazine`,
+Volume 6 n. 1, issue 01/2013(42)
+- L. Ferrari,
+**PostgreSQL: schemas**,
+`BSD Magazine`,
+Volume 5 n. 12, issue 12/2012(41) 1898-9144
+- L. Ferrari,
+**PgDay.IT 2012**,
+`BSD Magazine`,
+Volume 5 n. 12, issue 12/2012(41) 1898-9144
+- L. Ferrari,
+**An Introduction to Code Mobility and its Security Concerns**,
+`PenTest Magazine, Extra issue on Mobile Security`,
+Volume 2 N. 4 ISSN 2084-1116, Issue 04/2012(08)
+- L. Ferrari,
+**PostgreSQL: Indexes (part 2)**,
+ `BSD Magazine`,
+ Volume 5 n. 11, issue 11/2012(40) 1898-9144
+- L. Ferrari,
+**PostgreSQL: Indexes (part 1)**,
+`BSD Magazine`,
+Volume 5 n. 10, issue 10/2012(39) 1898-9144
+- L. Ferrari,
+**PostgreSQL: Partitioning (part 2)**,
+`BSD Magazine`,
+Volume 5 n. 9, issue 09/2012(38) 1898-9144
+- L. Ferrari,
+**PostgreSQL: Partitioning (part 1)**,
+`BSD Magazine`,
+Volume 5, n.8, issue 08/2012(37) 1898-9144
 - L. Ferrari,
  **PostgreSQL: Server Side Programming (part 2)**,
  `BSD Magazine`,
@@ -123,8 +160,6 @@ bibliography entry searching the web.
  `BSD Magazine`,
  Volume 5 n. 1,
  issue 01/2012(30) 1898-9144
-
-
 
 ## International Conference Proceedings
 ### 2011
