@@ -20,4 +20,6 @@ Well, it is no secret I've eyesight problems and my eyes are getting bad on a da
 
 Yeah, I know, I can use *org-mode* to post to a blogger platform, and this is what I'm doing since more than an year, but why not try a new technology stack?
 
-My old blog is available at [fluca1978.blogspot.com](http://fluca1978.blogspot.com), but I hope to integrate it back here for readers' comfort.
+My old blog is available at [fluca1978.blogspot.com](http://fluca1978.blogspot.com);
+on date 2017-07-17 the old posts have been migrated and integrated into this blog. Please be patitent because
+the stylesheets will not the be same and some link could be broken.
