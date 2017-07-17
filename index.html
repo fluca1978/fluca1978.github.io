@@ -14,6 +14,16 @@ layout: default
       </div>
       {% endif %}
 
+
+      <div class="entry">
+          Tags:
+          {% for tag in post.tags %}
+          {% if tag != blank %}
+          {{ tag }},
+          {% endif %}
+          {% endfor %}
+      </div>
+
       <a href="{{ site.baseurl }}{{ post.url }}" class="button button-primary">read {{ post.title }}</a>
     </article>
   {% endfor %}
