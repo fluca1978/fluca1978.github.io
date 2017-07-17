@@ -1,0 +1,21 @@
+{% assign categories_counter = page.tags | size %}
+
+{% if categories_counter >= 1 %}
+
+
+  <div class="categories">
+      Tags:
+
+      {% for cat in page.tags %}
+         {% if cat == page.tags[0] %}
+            <strong>{{ cat  }}</strong>
+            {% else %}
+            ,
+           {{ cat  }}
+            {% endif %}
+
+     {% endfor %}
+
+      </strong>
+  </div>
+{% endif %}
