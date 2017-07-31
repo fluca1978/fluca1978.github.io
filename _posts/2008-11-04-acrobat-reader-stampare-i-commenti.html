@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Acrobat Reader: stampare i commenti'
+date: '2008-11-04T13:04:00.000+01:00'
+author: Luca Ferrari
+tags:
+- windows
+modified_time: '2008-11-04T13:10:03.289+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-6859185840935803594
+blogger_orig_url: http://fluca1978.blogspot.com/2008/11/acrobat-reader-stampare-i-commenti.html
+---
+
+Mi è capitato di dover stampare un documento PDF contenente dei commenti, che nella visualizzazione compaiono come popup, ma che in stampa vengono solo marcati come <span style="font-style: italic;">segnalini</span> privi di contenuto. Dopo un po' di esperimenti ho capito che con <span style="font-style: italic;">Okular</span> non avevo modo di stampare i commenti, così da un computer Windows ho provato con Acrobat Reader...ma niente! Il risultato era sempre lo stesso. E parlo di Acrobat Reader 9, non un reader datato. Ebbene ho trovato che modificando la chiave di registro <span style="font-style: italic;">HKEY_CURRENT_USER\Software\ADOBE\Acrobat Reader\9.0\Annots\cPrefs\bprintCommentPopups </span>da 0 a 1 il programma stampa i popup con le note. Certo non è una stampa molto <span style="font-style: italic;">pulita</span>, poiché i popup vengono stampati in posizioni "random" sopra al testo, ma è meglio di niente.<br />Sicuramente l'Adobe potrebbe migliorare le opzioni del suo diffusissimo Reader per supportare meglio i commenti. Anche un'opzione per stampare i commenti nell'ultima pagina, un po' come fossero delle note numerate.

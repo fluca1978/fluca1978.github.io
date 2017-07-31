@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'JSF: associazione programmatica di un managed bean'
+date: '2011-01-28T20:02:00.000+01:00'
+author: Luca Ferrari
+tags:
+- jsf
+- java
+modified_time: '2011-01-28T20:02:00.697+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4478047843645983816
+blogger_orig_url: http://fluca1978.blogspot.com/2011/01/jsf-associazione-programmatica-di-un.html
+---
+
+<div style="text-align: justify;">E' possibile registrare un bean in un contesto JSF programmaticamente (e quindi non solo usando <i>faces-config.xml</i>) con semplici righe di codice:<br /><br /><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">// ottengo la applicazione web JSF</span><br style="font-family: &quot;Courier New&quot;,Courier,monospace;" /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">FacesContext facesContext &nbsp;&nbsp;&nbsp; = FacesContext.getCurrentInstance();</span><br style="font-family: &quot;Courier New&quot;,Courier,monospace;" /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">Application webApplication &nbsp;&nbsp;&nbsp; = facesContext.getApplication();</span><br style="font-family: &quot;Courier New&quot;,Courier,monospace;" /><br style="font-family: &quot;Courier New&quot;,Courier,monospace;" /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">String beanValueBindingID =&nbsp; "#{myBean}";</span><br style="font-family: &quot;Courier New&quot;,Courier,monospace;" /><br style="font-family: &quot;Courier New&quot;,Courier,monospace;" /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">// creo il binding</span><br style="font-family: &quot;Courier New&quot;,Courier,monospace;" /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">ValueBinding valueBinding = w</span></span></div><div style="text-align: justify;"><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">&nbsp;&nbsp;&nbsp; ebApplication.createValueBinding( beanValueBindingID );</span><br style="font-family: &quot;Courier New&quot;,Courier,monospace;" /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">valueBinding.setValue(facesContext, beanToManage );</span></span><br /><br />Nell'esempio di cui sopra l'oggetto <i>beanToManage</i> viene associato all'applicazione Web con nome <i>mybean</i> e quindi puo' essere usato nelle taglib delle pagine JSP.</div>

@@ -1,0 +1,14 @@
+---
+layout: post
+title: Analizzare le annotazioni a runtime
+date: '2008-03-17T15:35:00.000+01:00'
+author: Luca Ferrari
+tags:
+- università
+- java
+modified_time: '2008-03-17T15:57:38.807+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5709320720420558864
+blogger_orig_url: http://fluca1978.blogspot.com/2008/03/analizzare-le-annotazioni-runtime.html
+---
+
+Una cosa non sempre chiara è che in Java, le annotazioni vengono implementate a run-time mediante delle classi particolari che implementano l'interfaccia di annotazione. Questo significa che, a run-time, non esiste una classe del tipo specifico dell'annotazione, bensì una classe (tipicamente un <span style="font-style: italic;">proxy</span>) costruito ad hoc per funzionare come una annotazione, ma che di fatto non è un tipo annotazione.<br /><br />Questo significa che a run-time non si può operare direttamente sulla Class di una Annotation, ma occorre utilizzare il metodo <span style="font-style: italic;">getAnnotationType() </span>della Annotation stessa. Tale metodo ritorna l'oggetto Class della annotazione così come è stata definita nel codice, e ciò consente anche di accedere alle annotazioni applicate alle annotazioni stesse.

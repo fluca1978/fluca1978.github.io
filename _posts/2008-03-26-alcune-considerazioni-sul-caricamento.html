@@ -1,0 +1,15 @@
+---
+layout: post
+title: Alcune considerazioni sul caricamento delle classi
+date: '2008-03-26T12:12:00.000+01:00'
+author: Luca Ferrari
+tags:
+- università
+- programmazione
+- java
+modified_time: '2008-09-08T13:50:56.516+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-751120139674015487
+blogger_orig_url: http://fluca1978.blogspot.com/2008/03/alcune-considerazioni-sul-caricamento.html
+---
+
+Java mette a disposizione dell'utente/programmatore due metodi principali per il caricamento di una classe:<br /><ul><li>l'utilizzo dei metodi statici definiti in <span style="font-style: italic;">java.lang.Class</span></li><li>l'utilizzo di un<span style="font-style: italic;"><span style="font-style: italic;"><span style="font-style: italic;"> ClassLoader</span></span></span></li></ul>In entrambi i casi è necessario conoscere il nome della classe che si vuole caricare dinamicamente. Le differenze fra l'utilizzo di <span style="font-style: italic;">Class.forName(..)</span> e <span style="font-style: italic;">ClassLoader.loadClass(..)</span> sono sostanzialmente le seguenti:<br /><ul><li><span style="font-style: italic;">Class.forName(..)</span> richiama tutti gli inizializzatori statici della classe caricata, mentre <span style="font-style: italic;">ClassLoader.loadClass(..)</span> ritarda gli inizializzatori statici fino al momento in cui la classe non viene concretamente utilizzata;</li><li>l'utilizzo di un class loader consente una personalizzazione maggiore nel processo di caricamento delle classi;</li><li>l'utilizzo di <span style="font-style: italic;">ClassLoader.loadClass(..)</span> memorizza la classe caricata nella cache del class loader che effettivamente carica la classe (che potrebbe essere un parent loader), mentre <span style="font-style: italic;">Class.forName(..)</span> memorizza la classe nella cache del class loader corrente.</li></ul>In generale, se occorre avere il controllo sul processo di risoluzione/caricamento di una classe, è necessario implementare tale controllo all'interno di uno specifico class loader.<br /><br />Si tenga presente che molti application server (es. Tomcat, JBoss, ecc.) utilizzano un proprio schema di classloader al fine di fornire spazi <span style="font-style: italic;">protetti</span> alle classi dell'utente e per consentire un hot-deployment delle stesse. Infatti, all'interno di una JVM una classe è univocamente identificata dal suo nome e dal class loader che l'ha caricata, ne consegue che fornendo un class loader per ogni <span style="font-style: italic;">applicazione</span> all'interno di un container si può consentire l'esecuzione di più classi con lo stesso nome e comportamento differente. Inoltre, grazie all'uso di classloader separati (quindi con cache separati) è possibile caricare immediatamente la nuova versione di una applicazione senza bisogno di riavviare il container stesso.

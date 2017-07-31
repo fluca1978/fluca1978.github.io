@@ -9,13 +9,11 @@
       {% for cat in page.tags %}
          {% if cat == page.tags[0] %}
             <strong>{{ cat  }}</strong>
-            {% else %}
+         {% else %}
             ,
            {{ cat  }}
-            {% endif %}
+         {% endif %}
 
      {% endfor %}
-
-      </strong>
   </div>
 {% endif %}

@@ -1,0 +1,15 @@
+---
+layout: post
+title: WhiteCat & Maven
+date: '2011-06-13T19:00:00.000+02:00'
+author: Luca Ferrari
+tags:
+- maven
+- WhiteCat
+- java
+modified_time: '2011-06-14T17:56:58.681+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1595102163536457096
+blogger_orig_url: http://fluca1978.blogspot.com/2011/06/whitecat-maven.html
+---
+
+<div style="text-align: justify;">In the last days I spent a few hours <a href="http://www.blogger.com/goog_596031540">refactoring</a><a href="http://whitecat.git.sourceforge.net/git/gitweb.cgi?p=whitecat/whitecat;a=commit;h=b8691d518f269ff4333b0cadba1f6b75d6e12dac"> the WhiteCat source tree</a> in order to be compliant with <a href="http://maven.apache.org/">Apache Maven</a>. Now it is possible to download the tree and have Maven to compile and run the test suite without having to worry about manually set up dependencies and jar files.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">To compile the tree just type</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;"><br />mvn compile<br /></div><div style="text-align: justify;">while to run all the tests just run</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;"><br />mvn test</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">It is worth noting that this refactoring has allowed me to discovered a few bugs that have been fixed.</div>

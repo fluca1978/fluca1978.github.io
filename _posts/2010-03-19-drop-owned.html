@@ -1,0 +1,13 @@
+---
+layout: post
+title: Drop owned
+date: '2010-03-19T17:00:00.000+01:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2010-03-19T17:00:00.556+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-9095231603044869195
+blogger_orig_url: http://fluca1978.blogspot.com/2010/03/drop-owned.html
+---
+
+<div style="text-align: justify;">A volte è necessario eliminare da un database una serie di tabelle apparteneneti ad un determinato utente. Una soluzione è quella di interrogare il catalogo di sistema, <i>pg_class</i> in particolare, per trovare tutti gli oggetti assegnati ad un utente. Tuttavia PostgreSQL contiene anche il comodo comando <i>DROP OWNED</i> che consente di eliminare in un sol colpo tutti gli oggetti che appartengono ad un dato utente. Inutile dirlo, il comando è molto pericoloso, e quindi a volte è bene riflettere sulle sue implicazioni. </div>

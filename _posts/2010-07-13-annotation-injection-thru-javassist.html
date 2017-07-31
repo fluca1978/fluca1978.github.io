@@ -1,0 +1,14 @@
+---
+layout: post
+title: Annotation injection thru Javassist
+date: '2010-07-13T21:40:00.000+02:00'
+author: Luca Ferrari
+tags:
+- WhiteCat
+- java
+modified_time: '2010-07-13T21:40:00.467+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-210723828647939220
+blogger_orig_url: http://fluca1978.blogspot.com/2010/07/annotation-injection-thru-javassist.html
+---
+
+<div style="text-align: justify;">Today I have found an introspection problem within the Javassist library, I'm not sure is a problem of the library or of the bytecode manipulation. I found the problem while working around WhiteCat, that injects Java annotation into ordinary classes at run-time. Of course the injection works fine, but it is like the annotation is no more visible in an "ordinary" way. In fact, doing introspection against a manipulated class, I found that the annotations are there, but with a class name like <i>$Proxy<n></n></i>. Why is this problematic? Simply because it does not allow for a class-to-class comparison when working with annotations, and more important it does not allow introspection against the annotation itself (e.g., to get the annotations of an annotation).</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">The solution in order to do regular introspection is the following:</div><ol style="text-align: justify;"><li>get the annotation and its <i>toString()</i> value;</li><li>manipulate the string value in order to get the annotation fully qualified name;</li><li>load the annotation class from its name thru reflection;</li><li>work on the obtained class.</li></ol><div style="text-align: justify;">Not really clean, but good enough for WhiteCat to work. </div>

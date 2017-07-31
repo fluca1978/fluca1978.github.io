@@ -1,0 +1,16 @@
+---
+layout: post
+title: Un ComboBox per selezionare le viste di una applicazione RCP
+date: '2009-12-16T13:09:00.003+01:00'
+author: Luca Ferrari
+tags:
+- eclipse
+- swt
+- rcp
+- java
+modified_time: '2010-01-20T17:52:18.097+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4459446899985129825
+blogger_orig_url: http://fluca1978.blogspot.com/2009/12/un-combobox-per-selezionare-le-viste-di.html
+---
+
+In una applicazione RCP che sto sviluppando mi è capitato di avere molte viste, ciascuna che deve essere associabile ad una serie di permessi. Per permettere ad un utente amministratore di selezionare a quali viste concedere quali permessi, ho creato un semplice <span style="font-style: italic;">wrapper</span> attorno ad un combo che contiene l'array delle viste disponibili e la loro descrizione. Il codice è abbastanza banale, ma potrebbe tornare utile in altre applicazioni.<br /><br />public class ViewsCombo {<br /><br />  /**<br />   * The combo that will be displayed.<br />   */<br />  private Combo combo = null;<br /><br /><br />  /**<br />   * The available views in the system.<br />   */<br />  private IViewDescriptor[] availableViews = null;<br /><br />  /**<br />   * Initializes the combo and the map to contain the views.<br />   * @param parent<br />   */<br />  public ViewsCombo( Composite parent, String viewIDToSelect ){<br />  super();<br />  // create the combo<br />  this.combo = new Combo( parent, SWT.READ_ONLY );<br /><br />  // fill the combo with the data<br />  this.fillComboAndMap();<br /><br />  // select a view if specified<br />  if( viewIDToSelect != null )<br />      for( int i = 0; i < availableviews ="  (IViewDescriptor[])">

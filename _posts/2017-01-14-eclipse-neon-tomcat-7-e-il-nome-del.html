@@ -1,0 +1,14 @@
+---
+layout: post
+title: Eclipse Neon, Tomcat 7 e il nome del server non editabile...
+date: '2017-01-14T18:01:00.000+01:00'
+author: Luca Ferrari
+tags:
+- eclipse
+- java
+modified_time: '2017-01-14T18:01:02.584+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7516179608378802264
+blogger_orig_url: http://fluca1978.blogspot.com/2017/01/eclipse-neon-tomcat-7-e-il-nome-del.html
+---
+
+<div style="text-align: justify;">Sono inciampato in un piccolo bug di Eclipse Neon 1: ero impossibilitato a creare qualunque server Tomcat 7 perchè non mi era possibile inserire il nome del server, come invece avveniva correttamente per le altre versioni di Tomcat (sia inferiori che maggiori).</div><div style="text-align: justify;">La soluzione, nel mio caso, è stata quella di rimuovere i due file</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">org.eclipse.jst.server.tomcat.core.prefs</span></div><div style="text-align: justify;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">org.eclipse.wst.server.core.prefs</span></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">dalla directory<span style="font-family: &quot;Courier New&quot;,Courier,monospace;"> .metadata/.plugins/org.eclipse.core.runtime/.settings </span>dentro al workspace.</div><div style="text-align: justify;">Ovviamente tutto fatto ad Eclipse spento (e con backup di tali file).</div>

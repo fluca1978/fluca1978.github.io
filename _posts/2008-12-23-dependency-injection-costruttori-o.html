@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Dependency Injection: costruttori o setter?'
+date: '2008-12-23T08:44:00.000+01:00'
+author: Luca Ferrari
+tags:
+- università
+- programmazione
+- java
+modified_time: '2008-12-23T14:42:52.193+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-539517092884592993
+blogger_orig_url: http://fluca1978.blogspot.com/2008/12/dependency-injection-costruttori-o.html
+---
+
+La Dependency Injection (DI) viene spesso realizzata mediante uno o più parametri passati al costruttore di un oggetto, ad esempio se una classe ha bisogno di sapere il suo DAO, quest'ultimo può essere passato al costruttore dell'oggetto.<br />Esiste un lungo dibattito su cosa sia meglio fare per permettere la DI, in particolare se sia meglio usare un costruttore o dei metodi setter. Il vantaggio nell'uso di un costruttore consiste nel fatto che l'oggetto ottenuto è sempre inizializzato correttamente, e quindi non è possibile lasciare in uno stato <span style="font-style: italic;">parziale</span> l'oggetto (ossia tutte le sue dipendenze devono essergli iniettate prima che l'oggetto sia costruito). Il vantaggio nell'uso dei setter è quello di avere la possibilità di riconfigurare l'oggetto in ogni momento, ma si corre il rischio di lasciare l'oggetto non inizializzato correttamente. Da quanto appena detto si evince che l'uso dei costruttori è generalmente quello migliore e quindi quello più consigliato.<br />Tuttavia esiste un problema nell'uso del costruttore per DI che si verifica nel caso in cui l'oggetto che si sta costruendo abbia molte dipendenze, o abbia necessità di ricevere molti parametri: la signature del costruttore diventa inevitabilmente lunga e quindi di difficile utilizzo e comprensione. Si noti poi che non è consigliato implementare dei setter da usare nel costruttore per realizzare, in un sol colpo, entrambi i metodi di DI, poiché i setter saranno (generalmente) polimorfici, e l'uso di metodi polimorfici nei costruttori è fortemente sconsigliato.<br />Quindi che soluzione adottare? L'unica che mi sento di consigliare è di usare il costruttore quando si hanno pochi parametri (3,4 al massimo) e di passare a metodi setter per un numero di parametri maggiore. E' comunque bene dare la priorità al costruttore, specificando nella sua signature tutti i parametri DI di maggior importanza, così che l'oggetto non possa essere costruito senza di essi. Infine, occorre informare l'utente in modo chiaro e preciso attraverso la documentazione di tutte le dipendenze e della loro importanza per l'inizializzazione dell'oggetto. Una possibile soluzione per forzare una completa inizializzazione dell'oggetto mantenendo la signature del costruttore corta, o implementando i setter, consiste nell'uso di un costruttore privato e di un metodo factory per ottenere l'istanza. In questo modo il metodo factory può utilizzare tutti i setter per inizializzare opportunamente l'oggetto da restituire.

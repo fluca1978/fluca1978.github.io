@@ -1,0 +1,14 @@
+---
+layout: post
+title: Perl and regexps are too much verbose (!)
+date: '2017-06-16T18:50:00.000+02:00'
+author: Luca Ferrari
+tags:
+- perl
+- planet-perl-ironman
+modified_time: '2017-06-16T18:50:06.505+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5225862525130652297
+blogger_orig_url: http://fluca1978.blogspot.com/2017/06/perl-and-regexps-are-too-much-verbose.html
+---
+
+<div style="text-align: justify;">A colleague asked me a quick Perl way to check if a string contains only a predefined set of chars excluding a few ones.<br /><i>Easy pal!</i><br /><span class="underline">Regexp to the rescue!</span><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Then I was asked for a way that did no use a regular expression, because "you know, <span class="underline">regular expression can be somehow verbose</span>".<br />Gosh!<br />My answer was simply "<i>you don't use regexps a lot!</i>".<br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">I don't believe I have to explain to any (Perl) programmer that regexps have been designed to express in short a whole set of choices,<br />more in general an <i>alphabet</i> (in the most wider concept).<br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">But let's move on, and after showing a quick and dirty one liner such as:<br /></div><div style="text-align: justify;"><br /></div><div class="org-src-container" style="text-align: justify;"><br /><pre class="src src-perl">perl -E 'say "Wrong $_" unless ( /^[0-9]+$/ ); ' -F<br /></pre></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">I got another strange sentence as "yeah, but I don't like Perl too much, it is somehow verbose as a language".<br />And again, my answer was: "<i>you don't use it regularly!</i>".<br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">It is clear Perl was seen in the wrong way, since both the language as well as regular expressions can be really short, as well as<br />a one liner…<br />No other comments required!<br /></div>

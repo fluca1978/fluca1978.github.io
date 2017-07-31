@@ -6,6 +6,8 @@ permalink: /about/
 
 **I'm a software developer living in Italy with my beautiful wife, my great son, and my two (female) cats.**
 
+![fluca1978](/images/main/lucaMain.png)
+
 I've always been fascinated by computers since the age of movies like *War Games*.
 My very first computer was the very popular [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64) that my father bought to me and placed
 into a wardrobe with an old CRT television. I wrote a few programs using the [BASIC](https://en.wikipedia.org/wiki/Commodore_BASIC) language, and did not found it very fun.
@@ -33,6 +35,7 @@ So here's a brief description about *me*.
 - [Me by Username](#username)
 - [Me by Projects](#projects)
 - [Me by Blog](#blog)
+- [Me by Emacs or Vi](#emacs)
 - [Me by Social Networks](#social)
 - [Me by Beliefs](#believings)
 
@@ -42,7 +45,7 @@ So here's a brief description about *me*.
 There was a time when I thought achievements were really important.
 Today I look back and truly believe
 that is much more important to *demonstrate my value on the field, not on a piece of paper*.
-By the way, if you are interested, the following is an uncomplete list.
+By the way, if you are interested, the following is an partial list.
 
 In the academic world:
 
@@ -51,17 +54,21 @@ In the academic world:
 * Adjunct Professor, [Nipissing University](http://www.nipissingu.ca/), years 2011-2014
 * lecturer at the University of Modena and Reggio Emilia for several courses including `Java, OOP, operating systems`, years 2003-2006
 * lecturer at local high schools for `HTML, Javascript, networking`, years 2009-2014`
+* BSD Certification, year 2013
 
 In the computer science world:
 
 * co-founder of the [Italian PostgreSQL Users Group](http://www.itpug.org), president between 2013-2015
 * [BSD Magazine](https://bsdmag.org/) writer and reviewer
-* lecturer at several PGDay.IT and LinuxDay events
+* speaker at several [PGDay.IT](http://www.pgday.it) and LinuxDay events
 
 In the archery world (when I was young):
 
 * regional champion FITA, FIELD, INDOOR (several times)
 * medals at the  national championships, twice bronze individual: 1994, 1996; silver and bronze team: 1994
+
+
+You could also be interested in the [papers page](/papers).
 
 ## Me by Skills
 <a name="skills"></a>
@@ -71,72 +78,79 @@ Not a complete enumeration, but this is what I use on an almost regular basis:
 * **Java** - 15+ years;
 * **Perl** - 15+ years;
 * **PostgreSQL** - 10+ years;
-* **Linux** - 18+ years
-* **Emacs** - 18+ years (it was my default editor since day one and yes, I don't know `vi`)
-* **Git**, **Fossil** - 5+ years, and of course I know and I used older systems
-* **SQLite** - 2+ years
-* **BSD** - 5+ years
+* **Linux** - 18+ years;
+* **Emacs** - 18+ years (it was my default editor since day one and yes, I don't know `vi`);
+* **Git**, **Fossil** - 5+ years, and of course I know and I used older systems;
+* **SQLite** - 2+ years;
+* **BSD** - 5+ years;
+* **PHP** - 9+ years;
 
 
 There was a time when I was more a *sysadmin* than a developer, and back in those days I used:
 
-* **FreNAS** - a good solution for home and business storages
-* **pfSense** - as main firewall solution
-* **netflow** - lot of data to shut up users
+* **FreNAS** - a good solution for home and business storages;
+* **pfSense** - as main firewall solution;
+* **netflow** - lot of data to shut up users;
+* **OpenLDAP**, **Samba**, **NFS**, **Netatalk** - because you have to manage a lot of different systems;
 
 And on an irregular basis, i.e., not for production but for personal use:
 
-* **C++** and **Qt** - no production experience, let's say I can manage them
-* **Digikam** and **Gimp** - because we all need to keep clean our phot collection
-* **VirtualBox** - a good virtualization solution for testing other systems
+* **C++** and **Qt** - no production experience, let's say I can manage them;
+* **Digikam** and **Gimp** - because we all need to keep clean our photo collection;
+* **VirtualBox** - a good virtualization solution for testing other systems;
+* **LibreOffice**, **Org-mode**, **LaTeX** - because my documents should look good;
 
 
-Feel free to search for `fluca1978` on the forums, mailing list, IRC to validate the above.
+Feel free to search for **`fluca1978`** on the forums, mailing lists, IRC channles to validate the above.
+
 
 ## Me by Username
 <a name="username"></a>
 
-My public username is **`fluca1978`** and it has been since a lot, allowing for you to scout the net searching for my very first steps.
+My public username is **`fluca1978`** and it has been for a while, allowing for you to scout the net searching for my very first steps.
 I strongly believe in keeping the username the same to let other people know my achievements and experience, as well as a way to prove
 how long I was around on a particular subject.
 
 The choice of the username has a particular meaning. When I was a child and was learning to write, I used to sign my homeworks with
-`F.Luca`, where of course the capital `F` was for **F**errari. Having fun on me, my parents were used to read the whole string without themseparating dot, composing therefore `FLuca` and calling me with such nickname.
+`F.Luca`, where of course the capital `F` was for **F**errari. Having fun on me, my parents were used to read the whole string without the separating dot, making therefore it `FLuca` and calling me with such nickname.
 When it was time to set up my first internet account, as you can imagine, there was no combination of name and surname available for me, so I switched to old nickname, but there was no available `fluca` as well: in both cases I had to add a postfix number to say my account from another. Therefore I decided to place my year of birth, `1978`, which interestingly is the minimal and only set of numbers that I need to write my whole `d-m-y` birthday.
 
 And that is how **`fluca1978`** took the field. Since then I changed a lot of account managers and service providers, so chances are you can find my username tied to different services, but you can be sure that account is mine.
 
 Interestingly, I waited for my [archery career to stop before having a fully customized quiver](http://fluca1978.blogspot.it/2009/01/dragoon-took-field.html) with my nickname on it. Please consider this does not include the number because, well, in archery the nickname does not care.
 
-![fluca quiver](/images/quiver.jpg)
+![fluca quiver](/images/main/quiver.jpg)
 
 ## Me by Projects
 <a name="projects"></a>
 
-Nothing really interesting here.
+
 Today I have very little time to start-up a project from scratch, and so I try to help (a little) existings ones.
-In the past I did mess with:
-
-* [`Aglets`](http://aglets.sourceforge.net/) a Java based mobile agent platform.
-
-* `Blackcat` it was my master degree thesis, renamed `RoleX` because university did not feel comfortable with animal names! There is no
-repository or source code available (because I'm too lazy to pick it back from a backup). The idea was that of doing Java class runtime
-manipulation on the fly as performed by other more useful tools (like persistence frameworks). Several research publications exist on the subject.
-
-* [`WhiteCat`](https://github.com/fluca1978/WhiteCat) the evolution of `BlackCat`, again Java bytecode manipulation on the fly. Several research publications exist on the subject.
-
-* [`flap`](https://github.com/fluca1978/flap) a didactical mobile agent platform written in Java used to teach mobility do students.
-
-* [`JFK`](https://github.com/fluca1978/JFK) trying to port *signals and slots* the Qt way to Java, or better a rudimental way to implement function pointers (because they don't scare you, right?).
-
-More in general I tend to keep all my projects on [GitHub](https://github.com/fluca1978), so go [check there!](https://github.com/fluca1978).
+That is why I like to participat in *Hacktoberfest* or *CPAN PR*, that allow me to contribute and learn without having to waste time.
+For a detailed view on what I can consider *projects* see the [projects page](/projects).
 
 
 ## Me by Blog
 <a name="blog"></a>
 
 In the blog you will find random thoughts pretty much on computer science related topics.
-I do write sometime personal things, but tend not to do it very often.
+I do write sometime personal things, but not very often.
+
+The main language for this blog will be *english*, but please consider it is not my main language, so be aware of errors,
+typos and false-friends ahead!
+I will write in italian stuff that does make sense only in such language, i.e., localized material, but not technical stuff.
+
+
+## Me by Emacs or Vi
+<a name="emacs"></a>
+
+In the case you are interested in the *holy-war* of computer science, here it is my list of choices:
+
+- Emacs or Vi? **Emacs** since day one;
+- Gnome or KDE? **KDE** since version 1;
+- Firefox or ... ? **Firefox**;
+- Thunderbird or ... ? **KMail** when I was using a mail client, today I read all my emails via web;
+- Bash or Bourne? **zsh** as interactive, **Bourne** for scripting (one day I will learn *pdksh*!);
 
 ## Me by Social Networks
 <a name="social"></a>

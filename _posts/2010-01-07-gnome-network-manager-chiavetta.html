@@ -1,0 +1,14 @@
+---
+layout: post
+title: Gnome Network Manager, chiavetta internet 3 e /etc/resolv.conf
+date: '2010-01-07T23:09:00.003+01:00'
+author: Luca Ferrari
+tags:
+- linux
+- gnome
+modified_time: '2010-01-07T23:14:38.644+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-928739705222486999
+blogger_orig_url: http://fluca1978.blogspot.com/2010/01/gnome-network-manager-chiavetta.html
+---
+
+<div style="text-align: justify;">L'applet <span style="font-style: italic;">network manager</span> di Gnome su una Ubuntu Netbook Remix gestisce egregiamente le chiavette Internet della 3 (modem Huawei E1550), ma c'è un problema per la risoluzione degli host: una volta avviata la connessione il file <span style="font-style: italic;">/etc(resolv.conf</span> risulta vuoto e quindi nessun DNS viene configurato nel sistema.<br />Una possibile soluzione al problema è quella di impostare i DNS da usarsi nel file <span style="font-style: italic;">/etc/resolv.conf</span>  e cambiare gli attributi del file in modo che nessun programma, ivi incluso Network Manager, possa sovrascriverlo:<br /></div><br /><blockquote style="font-style: italic;">chattr +i /etc/resolv.conf </blockquote>

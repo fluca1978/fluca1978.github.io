@@ -1,0 +1,14 @@
+---
+layout: post
+title: Il ruolo delle Materialized-Views
+date: '2009-06-07T16:31:00.002+02:00'
+author: Luca Ferrari
+tags:
+- programmazione
+- postgresql
+modified_time: '2009-06-07T16:42:14.976+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2527048084446684583
+blogger_orig_url: http://fluca1978.blogspot.com/2009/06/il-ruolo-delle-materialized-views.html
+---
+
+Una <span style="font-style: italic;">vista materializzata  </span>(Materialized-View) non è altro che una tabella (solitamente temporanea) che memorizza il risultato di una particolare query su dati di dimensioni evelate. L'idea è quella di anticipare le richieste di risorse di una query estraendo i dati prima che il client effettui la query.<br />Supponendo di avere una tabella molto vasta (qualche milione di righe), e sapendo in anticipo su quali proiezioni di dati i client vogliono lavorare, è possibile estrarre questi dati in una elaborazione batch, e far si che i client accedano a questo sotto-insieme dei dati già estratti.<br />Quali sono i vantaggi?<br />Anzitutto sulla tabella così costruita è possibile costruire indici ad-hoc, e siccome questa tabella non deve essere aggiornata (poiché rappresenta una porzione dei dati sorgenti, e andranno aggiornati solo questi ultimi), anche gli indici non devono essere aggiornati. Ne consegue che in questo caso gli indici rappresentano un caso di puro catalizzatore di accesso.<br />In secondo luogo la tabella così costruita può contenere il risultato di diverse computazioni che altrimenti andrebbero eseguite al volo, con conseguente richiesta di tempo e risorse.<br />Ma le viste materializzate hanno anche degli svantaggi: il primo fra tutti è che si opera su dei dati non aggiornati, e questo richiede infatti una buona progettazione per stabilire ogni quanto la vista deve essere annullata e ricreata (o quantomeno aggiornata). Il secondo svantaggio è la richiesta di spazio. ai dati originali si aggiunge la copia costruita ad-hoc.<br />Non esiste una regola fissa per l'uso delle viste materializzate: occorre analizzare attentamente il carico di lavoro sul database, le query effettuate dal client e le eventuali richieste OLAP (assieme alla loro frequenza). Solo così si sarà in grado di realizzare un sistema con viste materializzate che funzioni.

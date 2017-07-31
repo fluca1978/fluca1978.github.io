@@ -1,0 +1,14 @@
+---
+layout: post
+title: Problemi nell'esportazione di un prodotto RCP per Mac OS X
+date: '2010-03-03T18:30:00.000+01:00'
+author: Luca Ferrari
+tags:
+- eclipse
+- rcp
+modified_time: '2010-03-03T18:30:00.408+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3004301293500504457
+blogger_orig_url: http://fluca1978.blogspot.com/2010/03/problemi-nellesportazione-di-un.html
+---
+
+<div style="text-align: justify;">Come sottolineato in <a href="http://www.eclipse.org/forums/index.php?t=msg&amp;goto=517866&amp;#msg_517866">questo thread del forum ufficiale di RCP</a>, l'esportazione di un prodotto per Mac OS X (Cocoa o Carbon) da una piattaforma di sviluppo Linux genera qualche problema. A dire il vero i problemi li hanno i Mac e il loro file system che non riconosce due file come distinti se il loro nome differisce solo per le maiuscole/minuscole. Comunque l'esportazione del prodotto RCP con i delta pack genera due directory <i>.app</i> all'interno della root finale (la cartella <i>eclipse</i>), una con l'iniziale del nome maiuscola e una con il nome tutto minuscolo. La soluzione sembra essere quella di eliminare la cartella con il nome maiuscolo e usare l'applicazione con il nome minuscolo.</div><div style="text-align: justify;">Oppure si deve cambiare piattaforma di sviluppo e sperare in maggiore fortuna. Certo che dal team di Eclipse mi aspettavo fosse molto piu' semplice e immediato esportare un prodotto RCP per le varie piattaforme.</div>

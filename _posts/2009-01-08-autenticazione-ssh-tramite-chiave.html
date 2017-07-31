@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Autenticazione ssh tramite chiave pubblica: attenzione ai permessi e ai proprietari'
+date: '2009-01-08T09:20:00.000+01:00'
+author: Luca Ferrari
+tags:
+- linux
+modified_time: '2009-01-08T09:35:29.897+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-6208874158725867923
+blogger_orig_url: http://fluca1978.blogspot.com/2009/01/autenticazione-ssh-tramite-chiave.html
+---
+
+Mi è capitato di avere dei problemi con un host e la sua autenticazione ssh tramite chiave pubblica. La procedura per la memorizzazione della chiave era corretta, ma ad ogni tentativo di connessione ssh mi veniva richiesta la password. Ho controllato le impostazioni del server, per verificare che l'autenticazione a chiave pubblica fosse concessa, e infatti lo era. Ho verificato proprietario e permessi della directory .ssh ove la chiave era stata memorizzata, e anche questi erano corretti. Infine, sbirciando fra i log del sistema host, in <span style="font-style: italic;">/var/log/auth</span> ho trovato una riga simile alla seguente:<br /><br />sshd[4405]: Authentication refused: bad ownership or modes for directory /home/luca<br /><br />e infatti controllando, il gruppo del proprietario della home directory era sbagliato. Correggendo il problema l'autenticazione è riuscita.

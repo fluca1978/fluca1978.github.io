@@ -1,0 +1,14 @@
+---
+layout: post
+title: MySQL Workbench e "safe mode"
+date: '2013-11-16T17:22:00.000+01:00'
+author: Luca Ferrari
+tags:
+- mysql
+modified_time: '2013-11-16T17:22:00.183+01:00'
+thumbnail: http://2.bp.blogspot.com/-2nGOhl1bmWc/UoUCOKrvYLI/AAAAAAAABX8/YRs6Nwb4roU/s72-c/mysql.png
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8366345539778617464
+blogger_orig_url: http://fluca1978.blogspot.com/2013/11/mysql-workbench-e-safe-mode.html
+---
+
+<div style="text-align: justify;">MySQL Workbench ha una funzione a mio avviso estremamente irritante: viene impedito l'UPDATE o la DELETE di tuple che non siano referenziate tramite la loro chiave.</div><div style="text-align: justify;">Altri programmi seguono approcci simili, ma piu' razionali. Ne e' un esempio l'autocommit (che anche lo stesso MySQL Workbench implementa): di fatto si richiede all'utente di fare un commit esplicito al termine di uno statement per prevenire l'accidentale perdita/modifica di dati.</div><div style="text-align: justify;">Ma il "safe mode" usato da MySQL Workbench che previene UDPATE/DELETE con query che non referenzino le chiavi e' molto piu' fastidiosa: di fatto si costringe l'utente ad andare nelle impostazioni del programma per cambiarne il comportamento, cosa che non puo' quindi essere agilmente modificata in una sessione di lavoro che preveda piu' query.</div><div style="text-align: justify;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-2nGOhl1bmWc/UoUCOKrvYLI/AAAAAAAABX8/YRs6Nwb4roU/s1600/mysql.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="400" src="http://2.bp.blogspot.com/-2nGOhl1bmWc/UoUCOKrvYLI/AAAAAAAABX8/YRs6Nwb4roU/s400/mysql.png" width="393" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Apprezzo lo sforzo di MySQL di impedire errori accidentali e frettolosi, ma onestamente penso che questa ennesima feature anti-DBA non ponga a favore dell'ecosistema stesso.</div>

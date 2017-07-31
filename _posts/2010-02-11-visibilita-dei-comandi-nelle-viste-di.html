@@ -1,0 +1,15 @@
+---
+layout: post
+title: Visibilità dei comandi nelle viste di Eclipse
+date: '2010-02-11T13:27:00.001+01:00'
+author: Luca Ferrari
+tags:
+- eclipse
+- rcp
+- java
+modified_time: '2010-02-11T13:43:26.757+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2121844677637155712
+blogger_orig_url: http://fluca1978.blogspot.com/2010/02/visibilita-dei-comandi-nelle-viste-di.html
+---
+
+<div style="text-align: justify;">Sto lavorando ad una applicazione RCP che include diverse viste master/slave in forma tabellare: alla selezione di una tupla su una vista master cambia l'output della vista slave. Ogni vista ha una serie di comandi che contribuiscono (sotto forma di pulsanti) alla UI e alcuni di essi, ad esempio <i>modifica</i> devono essere visibili solo quando esiste una selezione attiva nela vista stessa. Il problema è che usando i comandi di visibilità sulla sola selezione non nulla, si ottiene che quando si seleziona qualcosa in una qualunque vista, anche i comandi delle altre viste si attivano. Questo perché la selezione usata in una clausola <i>with</i> ragiona sull'intera pagina attiva, non sulla vista a cui è collegato il comando. Occorre allora forzare un test in parallelo anche sul tipo di componente attivo in quel momento, in modo da verificare che la selezione non sia nulla e il focus sia su una determinata vista. Si deve quindi mettere in <i>AND</i> logico il test sulla proprietà <i>activePartId</i> che deve essere uguale all'identificativo RCP della vista stessa.</div><div style="text-align: justify;">Maggiori dettagli in questo <a href="http://www.eclipse.org/forums/index.php?t=msg&amp;goto=513796&amp;">thread del forum Eclipse</a>.</div>

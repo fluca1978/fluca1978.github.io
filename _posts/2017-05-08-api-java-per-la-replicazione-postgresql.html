@@ -1,0 +1,13 @@
+---
+layout: post
+title: API Java per la replicazione PostgreSQL
+date: '2017-05-08T21:16:00.000+02:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2017-05-08T21:16:05.082+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2161405327605161684
+blogger_orig_url: http://fluca1978.blogspot.com/2017/05/api-java-per-la-replicazione-postgresql.html
+---
+
+Con l'avvento della versione <a href="https://jdbc.postgresql.org/">42 del driver JDBC</a> per utilizzo di applicativi Java su database PostgreSQL è stato fornito<br />il <a href="https://github.com/pgjdbc/pgjdbc/pull/550">supporto alla replicazione</a>.<br />E' stata creata una <a href="https://jdbc.postgresql.org/documentation/head/replication.html">API apposita per la gestione della replicazione</a>, il cui punto di ingresso è <code>getReplicationAPI()</code> sull'oggetto <code>PGConnection</code>, come<br />descritto nella documentazione:<br /><br /><br /><pre class="example">The entire replication API is grouped<br />in org.postgresql.replication.PGReplicationConnection<br />and is available via org.postgresql.PGConnection#getReplicationAPI.<br /></pre><br />Questa feature permette di controllare e gestire la replicazione anche da applicativi esterni (Java).<br />Ahimé il corrispondente driver Perl (<a href="http://search.cpan.org/~turnstep/DBD-Pg-3.6.0/Pg.pm">DBD::Pg</a>) non supporta la gestione della replication, nonostante<br />l'infrastruttura <a href="http://search.cpan.org/~hdp/Class-DBI-Replicated-0.040/lib/Class/DBI/Replicated.pm">DBI consenta una gestione generalizzata della replica</a>. Anche il framework<br />DBIx non mi pare offra una soluzione, seppur esista un "minimale" supporto<br />alla <a href="http://search.cpan.org/~kazuho/DBIx-Replicate-0.04/DBIx-Replicate-0.04/lib/DBIx/Replicate.pm">replica logica a livello di tabella</a>. La cosa strana è che <a href="https://bucardo.org/wiki/Bucardo/Documentation/Overview">Bucardo è un sistema di replica implementato in Perl!</a><br />

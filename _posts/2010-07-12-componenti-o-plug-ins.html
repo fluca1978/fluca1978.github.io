@@ -1,0 +1,15 @@
+---
+layout: post
+title: Componenti o Plug-ins?
+date: '2010-07-12T21:23:00.000+02:00'
+author: Luca Ferrari
+tags:
+- università
+- programmazione
+- java
+modified_time: '2010-07-12T21:23:00.688+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4060705686680206106
+blogger_orig_url: http://fluca1978.blogspot.com/2010/07/componenti-o-plug-ins.html
+---
+
+<div style="text-align: justify;">Qual'è la differenza fra un <i>componente</i> e un <i>plug-in</i>? Molti degli studenti che si laureano non hanno questa nozione, eppure oggi si parla sempre piu' spesso di componenti e plug-ins, possibile che non venga insegnata correttamente? Eppure è piuttosto semplice!</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><b>Componente</b>: un componente è una black box fatta per essere riutilizzata in diversi contesti. Il componente non ha conoscenza del contesto in cui viene applicato. Un esempio di componente potrebbe essere un <i>logger</i> <i>su file</i>: il componente sa cosa deve fare (loggare), non sa però dove viene usato (ad esempio in un programma server, in un client, in una applicazione didattica,...) e può essere esteso (ad esempio per ottenere un logger su database).</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><b>Plug-in</b>: un plug-in è una black box che estende un componente o un altro plug-in, può essere usato in diversi contesti ma deve conoscere i contesti ove verrà usato. Un esempio di plug-in è un menù crafico che permette di accedere a determinate funzioni.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">La principale differenza è proprio nella conoscenza del contesto di utilizzo: il plug-in estende in una direzione specifica e quindi deve sapere I<i>cosa</i> e <i>come</i> estendere un altro sistema.</div>
