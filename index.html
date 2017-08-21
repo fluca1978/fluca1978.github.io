@@ -20,5 +20,9 @@ layout: default
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="button button-primary">read {{ post.title }}</a>
     </article>
-  {% endfor %}
+    {% endfor %}
+
+
+    {% include post_tag_list.html %}
+
 </div>
