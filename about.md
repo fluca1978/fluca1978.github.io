@@ -37,7 +37,7 @@ So here's a brief description about *me*.
 - [Me by Blog](#blog)
 - [Me by Emacs or Vi](#emacs)
 - [Me by Social Networks](#social)
-- [Me by Beliefs](#believings)
+- [Me by Beliefs](#beliefs)
 
 ## Me by Achievements
 <a name="achievements"></a>
