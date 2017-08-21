@@ -1,0 +1,14 @@
+---
+layout: post
+title: SWT CLabel
+date: '2010-11-30T22:40:00.002+01:00'
+author: Luca Ferrari
+tags:
+- swt
+- java
+modified_time: '2010-12-02T14:45:45.152+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3031945074013464594
+blogger_orig_url: http://fluca1978.blogspot.com/2010/11/swt-clabel.html
+---
+
+<div style="text-align: justify;">Come è noto SWT è una libreria che utilizza un approccio totalmente differente rispetto a Swing: in SWT si cerca di utilizzare quanto <i>prima</i> i componenti messi a disposizione del sistema operativo, costruendo poi su questi componenti piu' complessi. Questa differenza è evidente ad esempio se si considera un widget tanto semplice quanto utile: le etichette (label). In Swing una label può essere dotata di una propria immagine, mentre in SWT una <i>Label</i> può avere un testo o una immagine, ma non entrambi. La ragione di ciò è nelle limitazioni del sistema operativo stesso e nell'uso pesante che SWT fa dei componenti nativi. Per ovviare all'inconveniente, SWT utilizza una serie di widget <i>custom</i> i cui nomi tipicamente iniziano con una 'C' (per evitare conflitti nello spazio dei nomi), come ad esempio <a href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.platform.doc.isv/reference/api/org/eclipse/swt/custom/CLabel.html"><i>CLabel</i></a>. Osservando la gerarchia di una CLabel si nota come questa di fatto erediti da un Canvas, ossia da una zona che può essere disegnata arbitrariamente, mentre la piu' povera <a href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.platform.doc.isv/reference/api/org/eclipse/swt/custom/CLabel.html"><i>Label</i></a> eredita direttamente da <i>Control</i>, e quindi non prevede personalizzazioni particolari. La differenza di gerarchia fra i due componenti evidenzia l'approccio SWT: Label sfrutta tutte e sole le caratteristiche del sistema operativo, mentre CLabel disegna da se i componenti che servono e li dispone nel modo che ritiene piu' opportuno (immagine a fianco del testo).</div>

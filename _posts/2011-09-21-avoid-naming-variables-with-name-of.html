@@ -1,0 +1,14 @@
+---
+layout: post
+title: Avoid naming variables with the name of their type
+date: '2011-09-21T22:25:00.001+02:00'
+author: Luca Ferrari
+tags:
+- programmazione
+- programming best practice
+modified_time: '2012-03-06T13:42:04.339+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4122973373056728561
+blogger_orig_url: http://fluca1978.blogspot.com/2011/09/avoid-naming-variables-with-name-of.html
+---
+
+<div style="text-align: justify;">Often you can see code where variables are named after their type, such as for instance:<br /><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CrudDAO crudDAO = new CrudDAO();</span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String&nbsp; string&nbsp; = "Hello";</span><br /><br />and so on, you get the idea. While this makes sense if you are writing an "Hello World" program, it does not scale when you have complex and long listing sources. In particular it becomes harder to refactor such code, because if you want to change such variable types, you have to change their names too. While this can be performed by an automatic refactoring tool, it almost always requires a manual intervention. Therefore, choose mnemonic names that have a correct meaning regardless of the specific type they belongs too, such as:<br /><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CrudDAO dao&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = new CrudDAO();</span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String&nbsp; message&nbsp; = "Hello";</span><br /><br />In the above code, it becomes very easy to change the type of the "dao" variable to another instance letting it representing what it means: a Data Access Object. Similarly, if the "message" variable is changed to a Char array, you don't have to change its name to reflect such change, since the name is much more meaningful than a simple "string".</div>

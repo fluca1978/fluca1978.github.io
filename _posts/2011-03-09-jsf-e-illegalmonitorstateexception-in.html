@@ -1,0 +1,14 @@
+---
+layout: post
+title: JSF e IllegalMonitorStateException in forwarding
+date: '2011-03-09T19:31:00.000+01:00'
+author: Luca Ferrari
+tags:
+- jsf
+- java
+modified_time: '2011-03-09T19:31:24.836+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4803646707595186833
+blogger_orig_url: http://fluca1978.blogspot.com/2011/03/jsf-e-illegalmonitorstateexception-in.html
+---
+
+<div style="text-align: justify;">Ci sono casi nei quali il puro uso di JSF non è sufficiente: ad esempio quando si vuole inviare un file o uno stream in download attraverso il browser si deve interagire con la richiesta/risposta della classica HttpServlet. In questo caso potrebbe capitare di ottenere il corretto funzionamento del front-end (ossia del browser) ma di trovare una eccezione <i>IllegalMonitorStateException </i>riferita un <i>doForward(..)</i> sul servlet engine. In sostanza quello che avviene è che la servlet invia un risultato ma poi il sistema JSF (e la relativa servlet), non essendo a conoscenza di questa risposta "on-demand" tenta di inviarne una propria. Il servlet engine si accorge di aver già&nbsp; mandato una intestazione e dei dati (quelli forniti manualmente) e quindi si scatena l'eccezione di cui sopra. La soluzione è abbastanza semplice: si deve invocare il metodo <i>responseComplete()</i> sul <i>FacesContext</i> corrente una volta che si sia finito di inviare la risposta manualmente.</div>

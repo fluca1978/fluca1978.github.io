@@ -1,0 +1,13 @@
+---
+layout: post
+title: Importazioni di dati da file CSV
+date: '2008-04-23T08:21:00.001+02:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2008-04-23T08:27:06.100+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8481327693084692353
+blogger_orig_url: http://fluca1978.blogspot.com/2008/04/importazioni-di-dati-da-file-csv.html
+---
+
+Il client <span style="font-style: italic;">psql</span> consente di importare dei dati da file CSV in modo molto comodo e veloce.<br />Si supponga di voler caricare due campi da un file CSV, ad esempio un codice e una descrizione, in una tabella <span style="font-style: italic;">articoli(codice, descrizione</span>), sarà usare il comando <span style="font-style: italic;">copy</span> per ottenere l'importazione:<br /><br /><span style="font-style: italic;">\copy articoli(codice,descrizione) from articoli.csv with delimiter ';'</span><br /><br />Il precedente comando copia le righe del file CSV, direttamente nei record della tabella, considerando che i valori siano separati dal ';' e che i record siano distinti da una andata a capo.

@@ -1,0 +1,15 @@
+---
+layout: post
+title: SWT Virtual Table, libpango e lo strano crash dell'applicazione...
+date: '2010-06-30T19:49:00.000+02:00'
+author: Luca Ferrari
+tags:
+- eclipse
+- swt
+- rcp
+modified_time: '2010-06-30T19:49:00.257+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4204810476998130165
+blogger_orig_url: http://fluca1978.blogspot.com/2010/06/swt-virtual-table-libpango-e-lo-strano.html
+---
+
+<div style="text-align: justify;">Dopo un sacco di tempo speso nel debugging di una applicazione RCP, sono riuscito a scoprire la causa, abbastanza subdola, di uno strano crash che sembrava essere dovuto da <i>libpango</i>.</div><div style="text-align: justify;">La mia applicazione utilizza una serie di tabelle SWT in modalità <i>virtual</i>, quindi con un rendering delle righe fatta su richiesta a seconda della visualizzazione del componente grafico. E qui entra in gioco <i>libpango</i> che si occupa della visualizzazione del testo in Gnome (e quindi su sistemi *nix). Ogni tanto ahimé capitava che l'applicazione andasse in crash con il blocco totale della JVM e uno stack <i>libpango</i> seguito da un dump completo della memoria.</div><div style="text-align: justify;">Ebbene ecco la causa:</div><ol style="text-align: justify;"><li>essendo la tabella in modalità <i>virtual</i>, ogni volta che doveva disegnare una nuova riga si entra in uno stack nativo (SWT si appoggia ai componenti nativi grafici)</li><li>la tabella richiama un handler Java per ottenere i dati da visualizzare</li><li>nel mio caso l'handler utilizza JDBC/Spring per recuperare un dato da un database</li><li>la connettività genera un'eccezione</li><li>l'eccezione produce un errore nello stack nativo, che a sua volta produce un crash nella libreria <i>libpango</i> e quindi il blocco della JVM</li></ol><div style="text-align: justify;">Rimuovendo l'eccezione nell'handler Java (ovvero gestendo opportunamente gli errori) sono giunto alla eliminazione del crash.&nbsp;</div><div style="text-align: justify;">Ovviamente, come si evince dalla trattazione, scoprire questo problema <a href="http://www.eclipse.org/forums/index.php?t=msg&amp;goto=543487&amp;#msg_543487">non è stato per niente banale a causa dello stack nativo</a> e del suo wrapping attorno al vero problema lato Java che si veniva a generare.</div>

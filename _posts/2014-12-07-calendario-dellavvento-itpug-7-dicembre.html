@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Calendario dell''Avvento ITPUG: 7 Dicembre'
+date: '2014-12-07T18:11:00.004+01:00'
+author: Luca Ferrari
+tags:
+- itpug
+- calendario avvento
+- postgresql
+modified_time: '2014-12-07T18:11:44.149+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5528113503871373305
+blogger_orig_url: http://fluca1978.blogspot.com/2014/12/calendario-dellavvento-itpug-7-dicembre.html
+---
+
+<div style="text-align: justify;">Il client <i>psql</i> permette di inviare l'output delle query su file, cosa  abbastanza utile per generare al volo dei report csv, html, LaTeX, ecc.  Ma oltre a questo psql include il flag <i>-L</i> (log appunto) che consente di  replicare ogni output su un file di log.<br />In sostanza se si aggiunge  il flag -L alla linea di comando normale di psql, specificando un file  di log, si avrà che ogni query e il relativo output saranno mandati in  copia anche su quel file, indipendentemente da dove l'utente abbia  rediretto l'output.<br />Da notare che il log non rispetta i comandi di allineamento, quindi l'output nel log è sempre "allineato".<br />Inoltre  il log riporta anche le query fatte, comprese le interrogazioni verso  il catalogo di sistema (\d e similari), che a loro volta però vanno  abilitate con -E.<br />Infine il log è (ovviamente) in append anche fra piu' sessioni, quindi il file rischia di crescere molto rapidamente.</div>

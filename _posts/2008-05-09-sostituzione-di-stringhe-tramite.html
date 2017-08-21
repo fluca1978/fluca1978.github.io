@@ -1,0 +1,13 @@
+---
+layout: post
+title: Sostituzione di stringhe tramite espressione regolare
+date: '2008-05-09T12:29:00.000+02:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2008-05-21T09:34:16.843+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4758840434925946926
+blogger_orig_url: http://fluca1978.blogspot.com/2008/05/sostituzione-di-stringhe-tramite.html
+---
+
+PostgreSQL mette a disposizione una comoda funzione, <span style="font-style: italic;">regexp_replace</span>, che come la sua cugina <span style="font-style: italic;">replace</span> consente di cambiare una stringa con un'altra facendo un azione di pattern matching basato su espressione regolare POSIX.<br /><br />Supponiamo di dover cambiare tutti i campi <span style="font-style: italic;">codice</span> di una tabella ove i codici finiscano con la stringa ABCDEFG oppure DEFG, sia in minuscolo che in maiuscolo. Una soluzione può essere la seguente:<br /><br /><pre>update myTable set codice = regexp_replace( upper(codice), '(ABC)*DEFG$', '')<br />where upper(codice) ~ '(ABC)*DEFG$'</pre>dove si ricercano i record che finiscono con <span style="font-style: italic;">ABCDEFG </span>oppure solo <span style="font-style: italic;">DEFG</span> e si sostituisce l'occorenza trovata con una stringa vuota. Per riuscire a fare la sostituzione sia nel caso di maiuscole/minuscole, si noti come il codice viene comunque trasformato in maiuscolo (tramite <span style="font-style: italic;">upper</span>) e come si confronti la stringa con una espressione regolare in maiuscolo.<br /><br />Va notato che nel caso la stringa da sostituire sia presente più di una volta, come ade esempio <span style="font-style: italic;">DEFGDEFG</span>, è necessario usare un quantificatore nell'espressione regolare, che quindi diventa:<br /><br /><pre>update myTable set codice = regexp_replace( upper(codice), '(ABC)*(DEFG)+$', '')<br />where upper(codice) ~ '(ABC)*(DEFG)+$'</pre>in questo caso viene sostituita ogni occorrenza (da una a più) della stringa <span style="font-style: italic;">DEFG</span>.<br /><br />Ovviamente è bene eseguire questo update all'interno di una transazione.

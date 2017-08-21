@@ -1,0 +1,13 @@
+---
+layout: post
+title: Rimozione dei caratteri di andata a capo in un campo testo
+date: '2008-04-07T15:14:00.001+02:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2008-04-07T15:40:36.087+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-6036375908174218218
+blogger_orig_url: http://fluca1978.blogspot.com/2008/04/rimozione-dei-caratteri-di-andata-capo.html
+---
+
+Mi sono trovato a lavorare con un database ove risiedevano dei dati importati manualmente tramite un altro programma. Una tabella in particolare aveva un campo di tipo <span style="font-style: italic;">text</span> che inglobava, al suo interno, anche dei caratteri di andata a capo (nello specifico <span style="font-style: italic;">\r\n</span>). Questo rappresentava un problema quando si cercava di fare un'estrazione (ad esempio CSV) poiché il numero delle righe prodotte e il loro contenuto veniva sfalsato.<br /><br />Fortunamente PostgreSQL mette a disposizione una comoda funzione,  che consente di cambiare una stringa esatta di testo in un'altra, restituendo quest'ultima. In questo modo è possibile allora eseguire un semplice <span style="font-style: italic;">update</span> della tabella per rimuovere i caratteri di andata a capo.<br /><br />Supponendo che la tabella in questione si chiami <span style="font-style: italic;">varie</span> e che la colonna contentente il testo da pulire sia <span style="font-style: italic;">note</span> allora la seguente query risolve il problema:<br /><br /><span style="font-style: italic;">update varie set note = replace(note, E'\r\n', ' ');<br /><span style="font-style: italic;"><br /></span></span>Da notare l'uso della <span style="font-style: italic;">E</span> per indicare che la stringa che segue contiene dei caratteri sottoposti ad escaping. Ovviamente è bene fare comunque un backup della tabella prima della modifica!

@@ -1,0 +1,16 @@
+---
+layout: post
+title: Compilazione incrementale Ant usando AspectJ in Eclipse
+date: '2008-11-14T11:22:00.000+01:00'
+author: Luca Ferrari
+tags:
+- eclipse
+- aspectj
+- java
+modified_time: '2008-11-17T08:53:12.952+01:00'
+thumbnail: http://1.bp.blogspot.com/_yhEX77VFKnM/SR1SDSmsWhI/AAAAAAAAALE/3VSOZdundGE/s72-c/eclipse.png
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2892109851323645911
+blogger_orig_url: http://fluca1978.blogspot.com/2008/11/compilazione-incrementale-ant-usando.html
+---
+
+Dopo aver aggiornato i tools di sviluppo di AspectJ per Ecplise (AJDT) alla versione 1.6.1, mi sono trovato una <span style="font-style: italic;">brutta</span> sorpresa nella compilazione tramite Ant (task <span style="font-style: italic;">iajc</span>): la compilazione incrementale non funziona più se non si specifica un parametro <span style="font-style: italic;">sourceRoots</span> che è praticamente equivalente al precedente parametro che indica la directory che contiene i sorgenti. Ma ahimé nemmeno così la compilazione incrementale può funzionare, e infatti si ottiene la schermata di Eclipse che segue:<br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://1.bp.blogspot.com/_yhEX77VFKnM/SR1SDSmsWhI/AAAAAAAAALE/3VSOZdundGE/s1600-h/eclipse.png"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px; height: 59px;" src="http://1.bp.blogspot.com/_yhEX77VFKnM/SR1SDSmsWhI/AAAAAAAAALE/3VSOZdundGE/s320/eclipse.png" alt="" id="BLOGGER_PHOTO_ID_5268457355580561938" border="0" /></a><br />Il fatto è che Ant non può sapere quali file sono stati modificati, e quindi quali sorgenti debbano essere applicati dal <span style="font-style: italic;">weaver</span>, percui di fatto ant rimane in attesa come processo attendendo di ricompilare nuovamente il set dei sorgenti. Quindi il task <span style="font-style: italic;">iacj</span> diventa una sorta di processo che non termina mai e che addende sempre input dall'utente per ricompilare. Non esiste quindi nessuna soluzione apparente per usare ant in incremental mode all'interno di Eclipse, percui ci si deve rivolgere al compilare degli AJDT per avere una compilazione incrementale.

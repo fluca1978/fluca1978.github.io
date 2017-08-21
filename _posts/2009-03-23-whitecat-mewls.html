@@ -1,0 +1,16 @@
+---
+layout: post
+title: WhiteCat mewls
+date: '2009-03-23T12:42:00.004+01:00'
+author: Luca Ferrari
+tags:
+- università
+- research
+- WhiteCat
+- java
+modified_time: '2009-03-23T12:55:23.150+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8404243875809105175
+blogger_orig_url: http://fluca1978.blogspot.com/2009/03/whitecat-mewls.html
+---
+
+After 6 months since its creation, the WhiteCat approach is becoming more concrete day by day. I'm proud to say that a paper I wrote with the collaboration and support of <a href="http://www.nipissingu.ca/faculty/haibinz/">Dr. Haibin Zhu</a>, has been accepted to <a href="http://cisedu.us/cis/cts/09/main/callForPapers.jsp">IEEE CTS 2009</a> with a really good revision. During my academic life I've never seen a paper accepted as it is with a lot of accomplishment, and this is what happen with the four revisors assigned to the WhiteCat paper.<br /><br />During the writing of this paper, the development of the frameork has continued and the framework is now improved. Most notably changes and improvements are the followings:<br /><ul><li>the RoleEngine has changed name, and it is now called RoleBooster. The motivation behind this is that the word <span style="font-style: italic;">engine</span> could be misleading, and since the idea is to have a <span style="font-style: italic;">boosting</span> of interaction and behaviour capabilities (thru roles), this name is more appropriate;</li><li>the agent proxy now can be identified thru an unique identifier (that in the simpler case is a sequence number), automatically generated at the time of the proxy creation. Such identifier is copyied thru proxy manipulations, so that after a role assumption a proxy will have the same identity. The meaning of this is to allow a client (e.g., an agent) to know that two different proxies refers to the same agent (i.e., they have the same identity);</li><li>an AOP-based notification system has been developed. It is now possible to register an event listener to a proxy and be notified about role assumptions/releases (i.e., proxy manipulations). The idea behind this is to allow agents to be notified about the needing of a proxy update due to a bytecode manipulation;</li><li>the proxy update mechanism has been completed. Now there is a central map that stores the last version available of each proxy (indexed by the proxy identity). When a proxy update is required, the proxy is extracted from this map. Proxies are inserted in the map after a succesfull bytecode manipulation by an aspect.</li></ul>A lot of work has been done, and there's a lot to do yet!<br />Stay tuned for updates!

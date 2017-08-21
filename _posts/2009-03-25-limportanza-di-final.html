@@ -1,0 +1,15 @@
+---
+layout: post
+title: L'importanza di final
+date: '2009-03-25T14:20:00.002+01:00'
+author: Luca Ferrari
+tags:
+- università
+- programmazione
+- java
+modified_time: '2009-03-25T14:29:02.929+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3354719884226390092
+blogger_orig_url: http://fluca1978.blogspot.com/2009/03/limportanza-di-final.html
+---
+
+La parola chiave <span style="font-style: italic;">final</span> in Java viene utilizzata per rendere "blindata" l'implementazione di un metodo o di una variabile. Nel caso di una variabile questa non potrà essere modificata successivamente, mentre nel caso di metodi questi non potranno essere resi polimorfici nelle varie sottoclassi.<br />Java per default considera ogni metodo come <span style="font-style: italic;">virtual</span>, ovvero potenzialmente polimorfico, sempre che non vengano definiti come <span style="font-style: italic;">final</span>.<br />L'utilizzo di <span style="font-style: italic;">final</span> è suggerito come una "best-practice", poiché consente di blindare meglio le classi e non fornire possibili punti di estensione permanenti. Ma non finisce qui: l'utilizzo di <span style="font-style: italic;">final</span> garantisce ad un ottimizzatore che il metodo non sarà soggetto a dispatching dinamico: il metodo può essere messo <span style="font-style: italic;">in-line</span> senza nessun problema, con guadagno in performance (un metodo virtual non può essere messo in-line perché un caricamento di classi successive - on demand - potrebbe invalidare l'operazione di in-lining).<br />Rispettando anche i principi dell'XP e quindi non essendo spaventati da un eventuale refactory, è bene usare <span style="font-style: italic;">final</span> di default in tutti i metodi.<br /><br />Devo ammettere che una delle cose che mi è sempre piaciuta in Java è proprio il fatto di considerare i metodi come potenzialmente polimorfici. In effetti, programmando OOP, penso che sia plausibile che gli sviluppatori vogliono "naturalmente" fornire un modo per estendere le proprie librerie. Si hanno quindi due approcci esattamente opposti: Java che considera tutto potenzialmente polimorfico, e C++ / C# che considera tutto come non polimorfico. Mentre quindi in Java occorre specificare cosa non deve essere polimorfico, in C# si deve specificare cosa deve essere polimorfico. Da qui entrano anche in gioco le preferenze personali per uno o l'altro metodo. Io personalmente preferisco quello adottato da Java, anche se in ambito di ottimizzazione è più comodo quello C#. Perchè? Perché il metodo Java è quello che trovo più OOP di tutti, e dopotutto l'ottimizzazione preventiva è una enorme fonte di errori e disastri!

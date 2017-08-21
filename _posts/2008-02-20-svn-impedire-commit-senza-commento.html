@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'SVN: impedire commit senza commento'
+date: '2008-02-20T14:53:00.000+01:00'
+author: Luca Ferrari
+tags:
+- linux
+- svn
+modified_time: '2008-02-20T15:02:35.190+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5742554657244322276
+blogger_orig_url: http://fluca1978.blogspot.com/2008/02/svn-impedire-commit-senza-commento.html
+---
+
+SVN presenta una serie di <span style="font-style: italic;">hooks</span> per gestire le fasi di pre and post commit, cosa che risulta molto comoda ad esempio per verificare determinati requisiti prima del commit vero e proprio o fornire segnalazioni (ad es. e-mail) a commit avvenuto.<br /><br />Per impedire che gli utenti inseriscano dei commit senza commento (o con commento troppo corto) è possibile inserire il seguente controllo nel file <span style="font-style: italic;">hooks/pre-commit</span>:<br /><br /><pre>REPOS="$1"<br />TXN="$2"<br /><br />SVNLOOK=`which svnlook`<br /><br /># check how many characters the user has placed in the comment<br />MESSAGE_TEXT=`$SVNLOOK log -t "$TXN" "$REPOS" `<br />COMMENT_LENGTH=`echo $MESSAGE_TEXT | grep "[a-zA-Z0-9]" | wc -c  `<br />MIN_COMMENT_LENGHT_ALLOWED=12<br /><br />if [ $COMMENT_LENGTH -le $MIN_COMMENT_LENGHT_ALLOWED ]<br />then<br />   echo "*** ATTENZIONE ***" >&amp;2<br />   echo "Per ovvie ragioni non e' piu' possibile effettuare un commit con messaggio nullo o troppo corto." >&amp;2<br />   echo "Per favore, prenditi il tempo che occorre e scrivi un buon commento, servira' a comprendere meglio" >&amp;2<br />   echo "le modifiche che hai apportato." >&amp;2<br />   echo "Inoltre, se stai correggendo un errore/bug, includi alcune informazioni di test " >&amp;2<br />   echo "(ad esempio un lotto di test) che possano essere utili per controllare l'errore " >&amp;2<br />   echo "e per testare eventuali altre modifiche. " >&amp;2<br />   echo "" >&amp;2<br />   echo "Il testo da te inserito { $MESSAGE_TEXT } ha una lunghezza insufficiente: $COMMENT_LENGTH" >&amp;2<br />   echo "" >&amp;2<br />   exit 1<br />fi</pre><br />Quello che avviene è piuttosto semplice:<br /><ol><li>con svnlook si ottiene il messaggio di commit inserito dall'utente (si noti che il commit non è ancora stato confermato);</li><li>si ottiene la lunghezza del messaggio di commit;</li><li>se la lunghezza del messaggio è inferiore ad una lunghezza specificata, si provvede a notificare l'utente del problema e si termina in modo anormale lo script.</li></ol>Si noti che l'avviso all'utente viene notificato attraverso lo standard error, e che lo script termina con un codice di errore non zero, ad indicare ad svn che il commit non puo' essere accettato. Per accettare il commit occorre infatti che lo script pre-commit termini con un codice di uscita pari a zero.

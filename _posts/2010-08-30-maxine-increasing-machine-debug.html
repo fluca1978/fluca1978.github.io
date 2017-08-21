@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'Maxine: increasing the machine debug messages'
+date: '2010-08-30T21:52:00.001+02:00'
+author: Luca Ferrari
+tags:
+- maxine
+- java
+modified_time: '2010-08-30T21:52:00.870+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-9115938016630204727
+blogger_orig_url: http://fluca1978.blogspot.com/2010/08/maxine-increasing-machine-debug.html
+---
+
+<div style="text-align: justify;">It is possible to increase the messages produced by the virtual machine while in the native code editing the file <i>Native/share/log.h</i> and changing the macro value</div><br /><div style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">#define log_ALL 0 // log disabled</span></div><br />to a true value<br /><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace; font-size: x-small;">#define log_ALL 1 // log enable</span>

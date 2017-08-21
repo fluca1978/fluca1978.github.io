@@ -1,0 +1,15 @@
+---
+layout: post
+title: Emacs PHP class template generator
+date: '2012-10-07T16:04:00.002+02:00'
+author: Luca Ferrari
+tags:
+- emacs
+- lisp
+- php
+modified_time: '2012-10-07T16:04:48.130+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3917136413172613508
+blogger_orig_url: http://fluca1978.blogspot.com/2012/10/emacs-php-class-template-generator.html
+---
+
+<div style="text-align: justify;">I use GNU Emacs as my default for a lot of stuff, including developing in PHP. Unluckily the great <i>php-mode</i> does not include a lot of common stuff to handle with OOP PHP programming. So I decided to develop a <a href="https://github.com/fluca1978/fluca1978-coding-bits/blob/master/emacs-lisp/fluca1978-php.el">PHP class template generator</a>, a lisp function that prompts for the class name (that will be capitalized and will be stored in a file with the same name) and for an optional comment, and then generates a class skeleton in a new buffer, saving the result to a file. Actually there are two versions of the function, the base one <i>php-class</i> executes the other <i>php-class-in-path</i> with the current working directory as path. The path is used to let Emacs know where to save the new buffer. In both cases, if a file with that name is already existent, the function aborts.</div><div style="text-align: justify;">Therefore, calling <i>M-x php-class</i> and inserting a class name will make a new buffer appearing, with the class skeleton and a new file with such class will be saved.</div>

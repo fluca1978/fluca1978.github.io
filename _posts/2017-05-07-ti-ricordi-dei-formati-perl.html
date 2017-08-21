@@ -1,0 +1,13 @@
+---
+layout: post
+title: Ti ricordi dei formati Perl?
+date: '2017-05-07T18:32:00.000+02:00'
+author: Luca Ferrari
+tags:
+- perl
+modified_time: '2017-05-07T18:32:12.409+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-864460032888748810
+blogger_orig_url: http://fluca1978.blogspot.com/2017/05/ti-ricordi-dei-formati-perl.html
+---
+
+Chi si ricorda della variabile <i>$~</i>?<br /><code>perlvar</code> viene in aiuto:<br /><br /><br /><pre class="example">HANDLE-&gt;format_name(EXPR)<br />$FORMAT_NAME<br />$~      The name of the current report format for the currently selected<br />        output channel. The default format name is the same as the<br />        filehandle name. For example, the default format name for the<br />        "STDOUT" filehandle is just "STDOUT".<br /></pre><br />Da <i>piccolo</i> usavo molto i formati Perl, anche se li trovavo poco leggibili. Probabilmente<br />proveniendo dal mondo della carta stampata su modulo continuo avevo l'abitudine mentale di<br />voler "immaginare" l'output in formato tabellare (non saprei pensare ad altro<br />utilizzo dei formati).<br />Ecco quindi che spesso i miei programmi assumevano la forma:<br /><br /><br /><pre class="example">format most_called_format=<br />|@&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;|@&gt;&gt;&gt;&gt;&gt;&gt;|<br />$number,                  $call<br />.<br /></pre><br />Ormai, almeno per me (ma penso anche per moltissimi sviluppatori Perl), i formati non sono altro<br />che un ricordo!<br />

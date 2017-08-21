@@ -1,0 +1,14 @@
+---
+layout: post
+title: CMake e sostituzione di variabili nei sorgenti
+date: '2012-05-25T14:30:00.000+02:00'
+author: Luca Ferrari
+tags:
+- c++
+- cmake
+modified_time: '2012-05-25T14:30:02.157+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8755946993855962159
+blogger_orig_url: http://fluca1978.blogspot.com/2012/05/cmake-e-sostituzione-di-variabili-nei.html
+---
+
+<div style="text-align: justify;">Se si sta compilando un progetto tramite CMake e si vuole avere la sostituzione di una variabile all'interno di sorgenti (che quindi devono essere compilati) è possibile usare le direttive <i>set</i> assieme a <i>configure_file</i> che con semplici passi consentono di ottenere lo scopo.</div><div style="text-align: justify;">Ad esempio, si supponga di voler specificare un percorso come variabile definita al momento della compilazione: il file che contiene la variabile non ancora sostituito è <i>config.h.in</i> e deve essere modificato nel file <i>generated/config.h</i>:</div><ul><li>nel file <i>CMakeLists.txt</i> occorre impostare una variabile, ad esempio <i>XML_PATH</i> con il valore desiderato:</li></ul><div style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">set( XML_PATH "\"/tmp/roles.xml\"" )<br />configure_file( config.h.in ${CMAKE_BINARY_DIR}/generated/config.h )</span></div><br /><ul><li>sempre nel file <i>CMakeLists.txt</i> occorre indicare al compilatore di usare il file generato da CMake stesso invece che quello originale (senza la sostituzione della variabile):</li></ul><br /><br /><br /><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">include_directories( ${KDE4_INCLUDES} . ${CMAKE_BINARY_DIR}/generated/ )</span></span><br /><br /><br /><br /><br /><ul><li>&nbsp;nel file che deve essere sottoposto a espansione di variabile si deve usare la sintassi speciale <i>@NOME-VARIABILE-CMAKE@</i>:</li></ul><div style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">#define XML_SYSTEM_ROLES_REPOSITORY_PATH @XML_PATH@</span></div><br /><br /><br />

@@ -1,0 +1,17 @@
+---
+layout: post
+title: 'FreeBSD vs Linux: chi è il piu'' grasso?'
+date: '2011-08-19T17:00:00.000+02:00'
+author: Luca Ferrari
+tags:
+- linux
+- freebsd
+modified_time: '2011-08-19T17:00:11.242+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5562039527490998883
+blogger_orig_url: http://fluca1978.blogspot.com/2011/08/freebsd-vs-linux-chi-e-il-piu-grasso.html
+---
+
+<div style="text-align: justify;">Non è mia intenzione dare un confronto tecnico e dettagliato dei due sistemi operativi, perché non sarebbe possibile (FreeBSD è un sistema completa, Linux un kernel) e anche perché non voglio influenzare nessuno con le mie opinioni.</div><div style="text-align: justify;">Però un confronto della code base dei due progetti è possibile e anche abbastanza semplice da fare (grazie a numerosi tools automatici). Ebbene confrontando il kernel 3.0.3 di Linux con il sistema 8.2 di FreeBSD si ottengono i seguenti risultati:</div><div style="text-align: justify;"><br /></div><ul style="text-align: justify;"><li>linee di codice: Linux ~ 9.8 milioni; FreeBSD ~ 10.1 milioni</li>
+ <li>linee di commento: Linux ~ 2.1 milioni ; FreeBSD ~ 2.6 milioni</li>
+ <li>file: Linux ~ 32 mila ; FreeBSD ~ 34 mila</li>
+ </ul><div style="text-align: justify;">Ne consegue che FreeBSD è il sistema piu' grosso, in tutti i sensi. Da notare però che il code-style è differente nei due progetti, e infatti FreeBSD "ruba" qualche linea di codice poiché la dichirazione delle funzioni ha una signature che si estende sempre piu' righe (sempre una con il tipo di ritorno e spesso i parametri sono in stile ANSI-C), mentre Linux tende ad usare una riga sola. </div><div style="text-align: justify;">Tanto per dare un termine di paragone, si pensi che un progetto come PostgreSQL ha un code base di circa 1 milione di linee (formattate come FreeBSD)!</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Cosa si evince da questi numeri? Assolutamente nulla se non la dimensione pachidermica dei due sistemi e l'impossibilità per un normale umano di conoscere ogni angolo e ogni pezzo di codice di anche solo uno dei due kernel. Ad ogni modo si tenga presente che la dimensione non sempre conta, e quindi avere progetti "grassi" non implica che questi siano per forza lenti o inadeguati; l'unica cosa che ciò implica realmente è che è sempre piu' complicato mantenere una tale base di codice (diff, peer review, ecc.).</div>

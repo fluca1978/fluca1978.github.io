@@ -1,0 +1,15 @@
+---
+layout: post
+title: Che ore sono? Come Windows può forzare un jet-lag in Unix!
+date: '2011-09-24T23:00:00.001+02:00'
+author: Luca Ferrari
+tags:
+- windows
+- linux
+- freebsd
+modified_time: '2011-09-29T07:59:26.053+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8965735176081371751
+blogger_orig_url: http://fluca1978.blogspot.com/2011/09/che-ore-sono-come-windows-puo-forzare.html
+---
+
+<div style="text-align: justify;">Sui sistemi dual boot Windows/Linux e/o Windows/Unix puo' capitare che all'avvio del sistema *nix alcuni file e directory risultino avere una data di creazione nel futuro, nonostante la data del sistema *nix sia impostata correttamente. Tipicamente la differenza è solo relativa all'orario, che si trova di alcune ore nel futuro. La motivazione dietro a questo problema risiede nel modo in cui Windows gestisce l'orologio di sistema: il sistema Microsoft impone infatti che l'orologio sia impostato come ora <i>local</i>. I sistemi *nix invece all'avvio impostano il time zone corretto prima di far partire tutti i servizi. Quello che succede è quindi che al boot di un sistema *nix l'orologio si trova in modalità <i>local</i>, quindi con un timezone non impostato. Il sistema *nix provvede alla creazione degli pseudo-device, /proc, ecc. con l'ora sbagliata, e poi, appena applica il timezone, si trova a correggere l'orario. Riporto un link ad un <a href="http://forums.freebsd.org/showthread.php?t=26431">interessante thread</a> che spiega questo problema.</div>
