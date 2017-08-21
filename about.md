@@ -23,7 +23,7 @@ At my fourth year of university I did switch totally to `Linux`, keeping around 
 
 My first job, luckily, allowed me to manage a few Linux servers, so I had the chance to improve my skills on such system.
 After a few years I met [OpenBSD](http://www.openbsd.org) and [FreeBSD](http://www.freebsd.org) and I switched to the Unix culture.
-Today I use both Linux and BSD as my own operating systems.
+Today I use both Linux and BSD as my own operating systems, with the former being the leading OS.
 
 Being a Linux/BSD user meant to me I embraced the *Open Source* culture to the point I believe it is the **only sane way of producing software**.
 Of course this does not mean I will do and accept only Open Source jobs and tasks, I can work comfortably even in environments where the code (and/or data) must be kept not-public.
@@ -79,11 +79,25 @@ Not a complete enumeration, but this is what I use on an almost regular basis:
 * **Perl** - 15+ years;
 * **PostgreSQL** - 10+ years;
 * **Linux** - 18+ years;
-* **Emacs** - 18+ years (it was my default editor since day one and yes, I don't know `vi`);
+* **Emacs** - 18+ years (it was my default editor since day one and yes, I don't know `vi`!);
 * **Git**, **Fossil** - 5+ years, and of course I know and I used older systems;
 * **SQLite** - 2+ years;
 * **BSD** - 5+ years;
 * **PHP** - 9+ years;
+* **SVN**, **CVS** - 5+ years both;
+
+Of course, I do not declare myself a *guru* of any of the above, but let's say I'm not scared to sit in front of any of them.
+
+
+
+On an irregular basis, i.e., not for production but for personal use:
+
+* **C++** and **Qt** - no production experience, let's say I can manage them and got inspiration from such a great library;
+* **Digikam** and **Gimp** - because we all need to keep clean our photo collection;
+* **VirtualBox** - a good virtualization solution for testing other systems;
+* **LibreOffice**, **Org-mode**, **LaTeX** - because my documents should look good;
+* **Redmine** - a very rich issue tracking and activity manager tool I recommend and use;
+* **Eclipse RCP** - up to version 3, it was a very inspiring ecosystem and the **SWT** was light years ahead of the Java model (*AWT* and *Swing*);
 
 
 There was a time when I was more a *sysadmin* than a developer, and back in those days I used:
@@ -92,14 +106,15 @@ There was a time when I was more a *sysadmin* than a developer, and back in thos
 * **pfSense** - as main firewall solution;
 * **netflow** - lot of data to shut up users;
 * **OpenLDAP**, **Samba**, **NFS**, **Netatalk** - because you have to manage a lot of different systems;
+* **Jabber** - because your users need to share an emoticon;
+* **Wireshark** (even when it was named *Ethereal*) and **tcpdump**, because your network does not always do what you think. Thanks God
+then came **netflow**;
+* a lot of Unix daemons including *dhcp*, *sendmail*, *postfix*, *cups* and a lot of stuff like that to make your network appearing serious;
+* **Zyxel** appliances including routers, wi-fi spot, firewall, modem and alike;
 
-And on an irregular basis, i.e., not for production but for personal use:
 
-* **C++** and **Qt** - no production experience, let's say I can manage them;
-* **Digikam** and **Gimp** - because we all need to keep clean our photo collection;
-* **VirtualBox** - a good virtualization solution for testing other systems;
-* **LibreOffice**, **Org-mode**, **LaTeX** - because my documents should look good;
-
+Last but not least, I believe I'm *one out of few people* knowking the **Dataflex 3.1d** ecosystem, or ehm, I would not call
+an ecosystem, so let's say I've spent around 10 years developing on such ancient platform.
 
 Feel free to search for **`fluca1978`** on the forums, mailing lists, IRC channles to validate the above.
 
@@ -127,19 +142,21 @@ Interestingly, I waited for my [archery career to stop before having a fully cus
 
 Today I have very little time to start-up a project from scratch, and so I try to help (a little) existings ones.
 That is why I like to participat in *Hacktoberfest* or *CPAN PR*, that allow me to contribute and learn without having to waste time.
+
 For a detailed view on what I can consider *projects* see the [projects page](/projects).
 
 
 ## Me by Blog
 <a name="blog"></a>
 
-In the blog you will find random thoughts pretty much on computer science related topics.
+In this blog you will find random thoughts pretty much on computer science related topics.
 I do write sometime personal things, but not very often.
 
 The main language for this blog will be *english*, but please consider it is not my main language, so be aware of errors,
 typos and false-friends ahead!
 I will write in italian stuff that does make sense only in such language, i.e., localized material, but not technical stuff.
 
+As of today, I've merged all the content of my previous blog into this one, so this is the right place to read on.
 
 ## Me by Emacs or Vi
 <a name="emacs"></a>
@@ -148,17 +165,23 @@ In the case you are interested in the *holy-war* of computer science, here it is
 
 - Emacs or Vi? **Emacs** since day one;
 - Gnome or KDE? **KDE** since version 1;
-- Firefox or ... ? **Firefox**;
+- Firefox or ... ? **Firefox**, there was a time I used **Konqueror**, but I believe the former is better and ported to much more platforms;
 - Thunderbird or ... ? **KMail** when I was using a mail client, today I read all my emails via web;
 - Bash or Bourne? **zsh** as interactive, **Bourne** for scripting (one day I will learn *pdksh*!);
+- Linux or BSD? **Linux** at work, **FreeBSD** in the spare time, with seldom usage of **OpenBSD**;
+- Gimp or Photoshop? **Gimp**, even if my parents were masters at using the latter;
 
 ## Me by Social Networks
 <a name="social"></a>
 
 No way!
 
-I do not use social networks,
+I do not use social networks, or better, I seldom use them.
+The fact is that I believe they are evil and so
 I don't like them, so if you need to get in touch with me *drop me an email or a phone call*.
+
+Please note that this also mean I don't do any effort to keep my social profiles up-to-date, and this includes
+[LinkedIn profile](https://www.linkedin.com/in/fluca1978).
 
 ## Me by Beliefs
 <a name="beliefs"></a>
@@ -175,4 +198,4 @@ I'm catholic, but not a blind believer.
 
 ## Contact me
 
-[fluca1978@gmail.com](mailto:fluca1978@gmail.com)
+Drop an email to [fluca1978 (at) gmail (dot) com](mailto:fluca1978@gmail.com)
