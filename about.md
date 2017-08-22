@@ -46,7 +46,7 @@ So here's a brief description about *me*.
 There was a time when I thought achievements were really important.
 Today I look back and truly believe
 that is much more important to *demonstrate my value on the field, not on a piece of paper*.
-By the way, if you are interested, the following is an partial list.
+By the way, if you are interested, the following is a partial list.
 
 In the academic world:
 
