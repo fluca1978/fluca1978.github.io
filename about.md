@@ -174,6 +174,8 @@ In the case you are interested in the *holy-war* of computer science, here it is
 - Linux or BSD? **Linux** at work, **FreeBSD** in the spare time, with seldom usage of **OpenBSD**;
 - Gimp or Photoshop? **Gimp**, even if my parents were masters at using the latter;
 - Perl or Python? **Perl**, for whole life! It is not I don't like Python, it is just I cannot find anywhere else the same culture and approach that Perl has;
+- PostgreSQL or MySQL? **PostgreSQL** because I believe it is much more superior and not driven by business;
+- Apple or ... ? **or**, period. Having managed several Apple workstation in a mixed network I can say I don't like the way Apple does thing, even if they are cute on eyes;
 
 ## Me by Social Networks
 <a name="social"></a>
@@ -235,6 +237,7 @@ and *Fujifilm FP-14* passport camera;
 - *lpr, printcap and friends*, yes, printing was not fun at all;
 - *PCL 5* to drive printers, something can make you fall asleep on the keyboard;
 - *Forte for Java*, the father of *Netbeans*, also *Eclipse 2* and *JBuilder*;
+- *PCMCIA* modem with antenna, somethig that required minutes to get online and seconds to get offline;
 - *[Perl 5.6](https://perldoc.perl.org/perl56delta.html)* even if I was using it as v5.4;
 - *[Simon the Sorcerer](https://en.wikipedia.org/wiki/Simon_the_Sorcerer)*, *[Duke Nukem](https://en.wikipedia.org/wiki/Duke_Nukem) 1, 2, 3D*;
 
