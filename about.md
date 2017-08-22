@@ -37,6 +37,7 @@ So here's a brief description about *me*.
 - [Me by Blog](#blog)
 - [Me by Emacs or Vi](#emacs)
 - [Me by Social Networks](#social)
+- [Me by Ages](#ages)
 - [Me by Beliefs](#beliefs)
 
 ## Me by Achievements
@@ -156,7 +157,9 @@ The main language for this blog will be *english*, but please consider it is not
 typos and false-friends ahead!
 I will write in italian stuff that does make sense only in such language, i.e., localized material, but not technical stuff.
 
-As of today, I've merged all the content of my previous blog into this one, so this is the right place to read on.
+As of today, I've merged all the content of my previous blog into this one, so this is the right place to read on. However, converting
+different post formats made most of them hard to read, especially for code and indentation, so please be patient while reading
+old blog posts.
 
 ## Me by Emacs or Vi
 <a name="emacs"></a>
@@ -170,6 +173,7 @@ In the case you are interested in the *holy-war* of computer science, here it is
 - Bash or Bourne? **zsh** as interactive, **Bourne** for scripting (one day I will learn *pdksh*!);
 - Linux or BSD? **Linux** at work, **FreeBSD** in the spare time, with seldom usage of **OpenBSD**;
 - Gimp or Photoshop? **Gimp**, even if my parents were masters at using the latter;
+- Perl or Python? **Perl**, for whole life! It is not I don't like Python, it is just I cannot find anywhere else the same culture and approach that Perl has;
 
 ## Me by Social Networks
 <a name="social"></a>
@@ -180,8 +184,62 @@ I do not use social networks, or better, I seldom use them.
 The fact is that I believe they are evil and so
 I don't like them, so if you need to get in touch with me *drop me an email or a phone call*.
 
-Please note that this also mean I don't do any effort to keep my social profiles up-to-date, and this includes
+Please note that this also mean I don't do any effort to keep my social profiles up-to-date, and this includes my
 [LinkedIn profile](https://www.linkedin.com/in/fluca1978).
+
+
+## Me by Ages
+<a name="ages"></a>
+
+I don't think I'm old, but I've seen and experienced a lot of things that are now pretty much ancient.
+So, just for the records, here it is a short list that could give you some information about my background.
+
+### In Life
+- *[Daytona 500](http://www.arcade-museum.com/game_detail.php?game_id=13328)*;
+- *[BMX Bike](https://en.wikipedia.org/wiki/BMX_bike)* not owned, I didn't like it;
+- *Black and White CRT Television* with an orientable antenna;
+- *[Fiat 131 Supermirafiori](https://it.wikipedia.org/wiki/Fiat_131)* owned by my father,
+*[Volkswagen Scirocco First Generation](https://en.wikipedia.org/wiki/Volkswagen_Scirocco)* owned by my mother,
+*[Peugeot 504](https://en.wikipedia.org/wiki/Peugeot_504)* one white and one blue owned by my parents,
+*[Fiat 900](https://it.wikipedia.org/wiki/Fiat_900)* by my grandpa;
+- *[Minolta 7000](https://en.wikipedia.org/wiki/Minolta_Maxxum_7000)* my first reflex camera,
+*Polaroid 636* instant camera
+and *Fujifilm FP-14* passport camera;
+- *Termojolly* portable heater, still owning and working;
+- *Leonino* mountain bike;
+- *[NEC G8](http://www.imei.info/phonedatabase/265-nec-g8/)*, my first mobile phone and its successor *G9*
+
+
+### In the Archery World
+- *Hoyt TD/4 Medalist* frosted riser. Please note it's not a typo: it was not the Gold Medalist, just the Medalist one;
+- *Hoyt Radian without bushings* the first commercial release of this great riser;
+- *score boards written with pencil*, and it was a lot more fun than today;
+- *black, white, gray field targets*, as well as *FITA targets without the X* and *Las Vegas* used only for 18 mt compounds;
+- *Oneida* compound (never tried, I'm a recurve man and I'm not going to change my mind);
+- aluminium arrows all way long and with the nock peek at the end;
+- *Beiter nocks* when Beiter was doing only nocks, clicker and button;
+
+
+### In the Computer Science World
+- *Commodore 64* first and last releases, as well as *Commodore 128*;
+- *[GEOS](https://en.wikipedia.org/wiki/GEOS_(8-bit_operating_system))*
+- *[Zilog Z80](https://en.wikipedia.org/wiki/Zilog_Z80)* diskless, and I don't remember how many memory it had;
+- *Intel 8088*;
+- *MS-DOS 6.0* and *6.2*;
+- *Red Hat 5.2* and *Mandrake 6*;
+- *IEEE 802.3 on coaxial cable*, a real mess when the cleaning people did hurt the plug;
+- *U.S. Robotics* external modem, the only way to get connected to the Internet from a Linux box;
+- *Ethereal*, later renamed *Wireshark*;
+- *Sun UltraSparc II* with Solaris 2.8 (if my memory serves me well);
+- *HP diskless X-Terminal* but I don't remember which one;
+- *lpr, printcap and friends*, yes, printing was not fun at all;
+- *PCL 5* to drive printers, something can make you fall asleep on the keyboard;
+- *Forte for Java*, the father of *Netbeans*, also *Eclipse 2* and *JBuilder*;
+- *[Perl 5.6](https://perldoc.perl.org/perl56delta.html)* even if I was using it as v5.4;
+- *[Simon the Sorcerer](https://en.wikipedia.org/wiki/Simon_the_Sorcerer)*, *[Duke Nukem](https://en.wikipedia.org/wiki/Duke_Nukem) 1, 2, 3D*;
+
+
+
 
 ## Me by Beliefs
 <a name="beliefs"></a>
