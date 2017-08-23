@@ -38,6 +38,7 @@ So here's a brief description about *me*.
 - [Me by Emacs or Vi](#emacs)
 - [Me by Social Networks](#social)
 - [Me by Ages](#ages)
+- [Me by Television](#television)
 - [Me by Beliefs](#beliefs)
 
 ## Me by Achievements
@@ -243,6 +244,32 @@ and *Fujifilm FP-14* passport camera;
 
 
 
+## Me by Television
+<a name="television"></a>
+
+I'm not a film maniac, but there a few shows that drove me crazy.
+I don't say these are my favourites, rather are those I would never refuse to watch over and over.
+
+### Television
+- *The Nanny*;
+- *A-Team*;
+- *Automan*;
+- *Supercar*;
+- *The Simpsons*;
+- *Friends* (the only one show I truly watched from the beginning to the end);
+
+### Film
+- *Ghostbusters*;
+- *Murder by Death*;
+- *The Duel*;
+- *Big Fish*;
+- *Matrix* (mainly the first of the trilogy);
+- *Big Trouble in Little China*;
+- *The Crow*;
+- *They Call Me Trinity*, *Trinity is Still My Name*, *Odds and Evens*, *Crime Busters*, *Even Angels Eat Beans*;
+- *Wall Street*;
+- *Hudson Hawk*;
+- *Trading Places*, known as "Una Poltrona per Due";
 
 ## Me by Beliefs
 <a name="beliefs"></a>
