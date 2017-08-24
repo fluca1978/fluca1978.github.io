@@ -42,8 +42,9 @@ So here's a brief description about *me*.
 - [Me by Television](#television)
 - [Me by Beliefs](#beliefs)
 
-## Me by Achievements
 <a name="achievements"></a>
+## Me by Achievements
+
 
 There was a time when I thought achievements were really important.
 Today I look back and truly believe
@@ -73,8 +74,9 @@ In the archery world (when I was young):
 
 You could also be interested in the [papers page](/papers).
 
-## Me by Skills
 <a name="skills"></a>
+## Me by Skills
+
 
 Not a complete enumeration, but this is what I use on an almost regular basis:
 
@@ -122,8 +124,10 @@ an ecosystem, so let's say I've spent around 10 years developing on such ancient
 Feel free to search for **`fluca1978`** on the forums, mailing lists, IRC channles to validate the above.
 
 
-## Me by Username
+
 <a name="username"></a>
+## Me by Username
+
 
 My public username is **`fluca1978`** and it has been for a while, allowing for you to scout the net searching for my very first steps.
 I strongly believe in keeping the username the same to let other people know my achievements and experience, as well as a way to prove
@@ -139,8 +143,11 @@ Interestingly, I waited for my [archery career to stop before having a fully cus
 
 ![fluca quiver](/images/main/quiver.jpg)
 
-## Me by Projects
+
+
 <a name="projects"></a>
+## Me by Projects
+
 
 
 Today I have very little time to start-up a project from scratch, and so I try to help (a little) existings ones.
@@ -149,8 +156,10 @@ That is why I like to participat in *Hacktoberfest* or *CPAN PR*, that allow me 
 For a detailed view on what I can consider *projects* see the [projects page](/projects).
 
 
-## Me by Blog
+
 <a name="blog"></a>
+## Me by Blog
+
 
 In this blog you will find random thoughts pretty much on computer science related topics.
 I do write sometime personal things, but not very often.
@@ -163,8 +172,10 @@ As of today, I've merged all the content of my previous blog into this one, so t
 different post formats made most of them hard to read, especially for code and indentation, so please be patient while reading
 old blog posts.
 
-## Me by Emacs or Vi
+
 <a name="emacs"></a>
+## Me by Emacs or Vi
+
 
 In the case you are interested in the *holy-war* of computer science, here it is my list of choices:
 
@@ -179,8 +190,10 @@ In the case you are interested in the *holy-war* of computer science, here it is
 - PostgreSQL or MySQL? **PostgreSQL** because I believe it is much more superior and not driven by business;
 - Apple or ... ? **or**, period. Having managed several Apple workstation in a mixed network I can say I don't like the way Apple does thing, even if they are cute on eyes;
 
-## Me by Social Networks
+
 <a name="social"></a>
+## Me by Social Networks
+
 
 No way!
 
@@ -192,8 +205,9 @@ Please note that this also mean I don't do any effort to keep my social profiles
 [LinkedIn profile](https://www.linkedin.com/in/fluca1978).
 
 
-## Me by Ages
 <a name="ages"></a>
+## Me by Ages
+
 
 I don't think I'm old, but I've seen and experienced a lot of things that are now pretty much ancient.
 So, just for the records, here it is a short list that could give you some information about my background.
@@ -258,9 +272,9 @@ What I run pretty much everyday on my music device player:
 - *Nickelback*;
 - *Puddle of Mudd*;
 
-
-## Me by Television
 <a name="television"></a>
+## Me by Television
+
 
 I'm not a film maniac, but there a few shows that drove me crazy.
 I don't say these are my favourites, rather are those I would never refuse to watch over and over.
@@ -286,8 +300,9 @@ I don't say these are my favourites, rather are those I would never refuse to wa
 - *Hudson Hawk*;
 - *Trading Places*, known as "Una Poltrona per Due";
 
-## Me by Beliefs
 <a name="beliefs"></a>
+## Me by Beliefs
+
 
 I do believe in *Open Source*.
 
