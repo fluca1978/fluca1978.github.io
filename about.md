@@ -8,6 +8,30 @@ permalink: /about/
 
 ![fluca1978](/images/main/lucaMain.png)
 
+
+## tl;dr
+Looking at me by different views:
+
+- [Me by Computer](#science)
+- [Me by Achievements](#achievements)
+- [Me by Skills](#skills)
+- [Me by Username](#username)
+- [Me by Projects](#projects)
+- [Me by Blog](#blog)
+- [Me by Emacs or Vi](#emacs)
+- [Me by Social Networks](#social)
+- [Me by Ages](#ages)
+- [Me by Music](#music)
+- [Me by Television](#television)
+- [Me by Beliefs](#beliefs)
+
+
+
+
+<a name="computer"></a>
+## Me by Computer Science
+
+
 I've always been fascinated by computers since the age of movies like *War Games*.
 My very first computer was the very popular [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64) that my father bought to me and placed
 into a wardrobe with an old CRT television. I wrote a few programs using the [BASIC](https://en.wikipedia.org/wiki/Commodore_BASIC) language, and did not found it very fun.
@@ -28,19 +52,6 @@ Today I use both Linux and BSD as my own operating systems, with the former bein
 Being a Linux/BSD user meant to me I embraced the *Open Source* culture to the point I believe it is the **only sane way of producing software**.
 Of course this does not mean I will do and accept only Open Source jobs and tasks, I can work comfortably even in environments where the code (and/or data) must be kept not-public.
 
-So here's a brief description about *me*.
-
-- [Me by Achievements](#achievements)
-- [Me by Skills](#skills)
-- [Me by Username](#username)
-- [Me by Projects](#projects)
-- [Me by Blog](#blog)
-- [Me by Emacs or Vi](#emacs)
-- [Me by Social Networks](#social)
-- [Me by Ages](#ages)
-- [Me by Music](#music)
-- [Me by Television](#television)
-- [Me by Beliefs](#beliefs)
 
 <a name="achievements"></a>
 ## Me by Achievements
