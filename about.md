@@ -100,7 +100,7 @@ Not a complete enumeration, but this is what I use on an almost regular basis:
 * **SQLite** - 2+ years;
 * **BSD** - 5+ years;
 * **PHP** - 9+ years;
-* **SVN**, **CVS** - 5+ years both;
+
 
 Of course, I do not declare myself a *guru* of any of the above, but let's say I'm not scared to sit in front of any of them.
 
@@ -108,12 +108,12 @@ Of course, I do not declare myself a *guru* of any of the above, but let's say I
 
 On an irregular basis, i.e., not for production but for personal use:
 
-* **C++** and **Qt** - no production experience, let's say I can manage them and got inspiration from such a great library;
+* **C++** and **Qt** - no production experience, let's say I can manage them and got inspiration from such a great language and library;
 * **Digikam** and **Gimp** - because we all need to keep clean our photo collection;
 * **VirtualBox** - a good virtualization solution for testing other systems;
 * **LibreOffice**, **Org-mode**, **LaTeX** - because my documents should look good;
 * **Redmine** - a very rich issue tracking and activity manager tool I recommend and use;
-* **Eclipse RCP** - up to version 3, it was a very inspiring ecosystem and the **SWT** was light years ahead of the Java model (*AWT* and *Swing*);
+* **Eclipse RCP** - up to version 3, it was a very inspiring ecosystem and the **SWT** was light-years ahead of othee Java models (*AWT* and *Swing*);
 
 
 There was a time when I was more a *sysadmin* than a developer, and back in those days I used:
