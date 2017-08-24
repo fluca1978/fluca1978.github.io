@@ -38,6 +38,7 @@ So here's a brief description about *me*.
 - [Me by Emacs or Vi](#emacs)
 - [Me by Social Networks](#social)
 - [Me by Ages](#ages)
+- [Me by Music](#music)
 - [Me by Television](#television)
 - [Me by Beliefs](#beliefs)
 
@@ -242,6 +243,20 @@ and *Fujifilm FP-14* passport camera;
 - *[Perl 5.6](https://perldoc.perl.org/perl56delta.html)* even if I was using it as v5.4;
 - *[Simon the Sorcerer](https://en.wikipedia.org/wiki/Simon_the_Sorcerer)*, *[Duke Nukem](https://en.wikipedia.org/wiki/Duke_Nukem) 1, 2, 3D*;
 
+
+<a name="music"></a>
+## Me by Music
+
+What I run pretty much everyday on my music device player:
+
+- *Depeche Mode*;
+- *Soundgarden* and *Audioslave*;
+- *Guns'n Roses* (the original band);
+- *AC/DC* (with Brian Johnson);
+- *Madonna*;
+- *Alanis Morrissette*;
+- *Nickelback*;
+- *Puddle of Mudd*;
 
 
 ## Me by Television
