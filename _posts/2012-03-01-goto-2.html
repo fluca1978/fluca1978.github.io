@@ -1,0 +1,15 @@
+---
+layout: post
+title: goto (2)
+date: '2012-03-01T19:47:00.000+01:00'
+author: Luca Ferrari
+tags:
+- università
+- programmazione
+- freebsd
+modified_time: '2012-03-01T19:47:00.313+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4546627210304003278
+blogger_orig_url: http://fluca1978.blogspot.com/2012/03/goto-2.html
+---
+
+<div style="text-align: justify;">L'istruzione C <i>goto</i> è, come spesso si sente dire, sconsigliata in ogni contesto. Come mostrato in un mio <a href="http://fluca1978.blogspot.com/2008/09/goto.html">vecchio post</a>, il kernel di Linux include migliaia di istruzioni <i>goto</i>. Ebbene l'esecuzione della stessa ricerca all'interno del<i> </i>solo ramo <i>sys</i> di un kernel FreeBSD (8.2-RELEASE) mostra un totale di 20898 istruzioni <i>goto</i>! La cifra è grosso modo il doppio del corrispondente di un kernel Linux.</div><div style="text-align: justify;">Ovviamente la cosa non deve trarre in inganno, non si è davanti ad un esempio di cattiva programmazione: le istruzioni goto si trovano infatti maggiormente nel codice specifico delle varie architetture supportate. Esse rappresentano un modo sintetico ed efficace di salto incondizionato.</div>

@@ -1,0 +1,13 @@
+---
+layout: post
+title: Do we really need UPDATE/DELETE with LIMIT?
+date: '2012-11-27T17:29:00.000+01:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2012-11-27T17:29:00.138+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3407484862465810281
+blogger_orig_url: http://fluca1978.blogspot.com/2012/11/do-we-really-need-updatedelete-with.html
+---
+
+<div style="text-align: justify;">Reading <a href="http://planet.postgresql.org/">Planet PostgreSQL</a> last day I found a strange <a href="http://pgolub.wordpress.com/2012/11/23/do-we-need-limit-clause-in-update-and-delete-statements-for-postgresql/">poll</a> about the need to place a LIMIT statement in an UPDATE/DELETE query.</div><div style="text-align: justify;">My answer to such question is simply NO, and I placed also a comment on the blog of the proposing author, but I cannot find it anymore...</div><div style="text-align: justify;">In order to better understand why I do not believe this feature is required, let's consider a sample query:</div><div style="text-align: justify;"><br /></div><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;">UPDATE accounts&nbsp;</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;">SET active = 'f'&nbsp;</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;">LIMIT 100;</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">The idea is to disable the first 100 accounts. This query is fully supported in MySQL.</div><div style="text-align: justify;">What is clear to me is that such a query is defective by design: you are using a LIMIT statement on a wrong design of the data and or of the unique constraints on such data.&nbsp;</div><div style="text-align: justify;">The right way to do it is by using a WHERE statement that filters the data you are going to manipulate. While I see that LIMIT is a quick trick to do the job, it is the wrong one since it allows DBAs to implement data in any almost unstructered way being able to manipulate them later using a kind of indexing.</div><div style="text-align: justify;">It is true, however, that such a scenario could be useful when importing and handling legacy data, that could come from other old systems and with wrong constraints, but once the database is fully reimplemented the need for such a feature is almost inutily in my opinion.</div>

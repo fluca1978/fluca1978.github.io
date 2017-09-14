@@ -1,0 +1,14 @@
+---
+layout: post
+title: BlockSite
+date: '2008-09-30T08:51:00.000+02:00'
+author: Luca Ferrari
+tags:
+- firefox
+- web
+modified_time: '2008-09-30T08:57:10.261+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8620777129228942076
+blogger_orig_url: http://fluca1978.blogspot.com/2008/09/blocksite.html
+---
+
+Mi è capitato di dover fare una installazione di computer ad una fiera, dove solo una parte all'interno di un sito doveva essere visibile. Solitamente quando era necessario bloccare determinati sit usavo il trucco di impostare nel browser web un proxy fittizio e di imporre il non utilizzo del proxy per i domini sbloccati. Ma per rendere accessibile solo la parte di un sito ho dovuto installare una estensione apposita di Mozilla Firefox: <a href="https://addons.mozilla.org/en-US/firefox/addon/3145">BlockSite</a>. Tramite questo strumento è possibile impostare una lista di URL come whitelist o blacklist (nel mio caso whitelist), e quindi stabilire effettivamente quali URL possono essere accessibili e quali bloccati.<br />Nel mio caso specifico è stato sufficiente impostare nelle preferenze di BlockSite gli URL da sbloccare (whitelist) senza specificare nulla nella blacklist (quindi avendo bloccati tutti i siti), e di rimuovere il warning utente per i siti bloccati (questo per non infastidire i navigatori). Il risultato è che chiunque provi a navigare al di fuori della whitelist non ci riesce, e nessun errore viene visualizzato: semplicemente il browser web non si <span style="font-style: italic;">sposta</span> dalla pagina correntemente caricata (quindi dall'URL in whitelist).

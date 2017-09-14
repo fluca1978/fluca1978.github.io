@@ -1,0 +1,13 @@
+---
+layout: post
+title: L'importanza dell'operatore qq
+date: '2017-05-10T18:33:00.000+02:00'
+author: Luca Ferrari
+tags:
+- perl
+modified_time: '2017-05-10T18:33:23.093+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2516342076390214630
+blogger_orig_url: http://fluca1978.blogspot.com/2017/05/limportanza-delloperatore-qq.html
+---
+
+Non si finisce mai di imparare!<br />Guardando uno <a href="http://bucardo.org/downloads/split_postgres_dump">script Perl per la gestione di backup testuali PostgreSQL</a><br />sono rimast incuriosito dall'uso massivo di <code>printf</code> legato all'operatore <code>qq</code>:<br /><i>A double-quoted, interpolated string</i>. Ebbene una utilita' di questo operatore<br />è nell'utilizzo delle virgolette doppie, che non devono ovviamente essere<br />legate a sequenze di escape. Quindi invece che scrivere:<br /><br /><br /><pre class="example">printf "Un esempio di stringa \"%s\" ", 'quotata';<br /></pre><br />si può scrivere la versione molto piu' semplice e leggibile<br /><br /><br /><pre class="example">printf qq( Un esempio di stringa "%s" ), 'quotata';<br /></pre><br />Sembra una banalità, ma non essendo abituato ad usare <code>qq</code> come invece<br />lo sono per <code>q</code> e <code>qw</code>, non mi sono mai posto il problema di come<br />semplificare ulteriormente le mie stringhe con doppi apici.<br /><br /><br />Ora diventerò anche io un avido utilizzatore di <code>qq</code>!<br />

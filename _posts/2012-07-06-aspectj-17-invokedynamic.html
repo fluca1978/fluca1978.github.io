@@ -1,0 +1,14 @@
+---
+layout: post
+title: AspectJ 1.7 & invokedynamic
+date: '2012-07-06T16:30:00.000+02:00'
+author: Luca Ferrari
+tags:
+- aspectj
+- java
+modified_time: '2012-07-06T16:30:00.577+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8054568778286709769
+blogger_orig_url: http://fluca1978.blogspot.com/2012/07/aspectj-17-invokedynamic.html
+---
+
+<div style="text-align: justify;">E' stato <a href="http://andrewclement.blogspot.com/2012/07/aspectj-170-released.html">appena rilasciato AspectJ 1.7</a> che allinea il compilatore (weaver) alla versione 3.7 di Eclipse e presto raggiungerà la versione di Juno (4.x). E' interessante notare che il numero di versione, <i>.7</i>, corrisponde alla major release di Java, la 7 appunto, che il nuovo compilatore supporta. In particolare si sta lavorando molto per supportare la nuova istruzione <i>invokedynamic</i> di Java 7, anche se ancora non ci sono dei join points definiti.</div><div style="text-align: justify;">Questa istruzione permette a Java di invocare un metodo su un tipo di oggetto non specificato, aprendo quindi la strada all'integrazione con i linguaggi di scripting. Infatti Kava è sempre stato un linguaggio staticamente tipizzato, e tutte le versione di <i>invokeXXX</i> (come <i>invokevirtual</i>) hanno sempre compreso un tipo sul quale chiamare il metodo oltre alle informazioni dei tipi parametrici e di ritorno. Con la nuova istruzione invece i tipi non sono presenti, di fatto si usa un trucco simile ai puntatori <i>void*</i> di C: nel constant pool si inserisce un <i>MethodHandle</i> che viene linkato alla prima invocazione, lasciando così il bytecode "libero" da tipizzazioni preventive.</div>

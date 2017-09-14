@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'Eclipse Product: interactive splash screen non visibile nel prodotto esportato'
+date: '2010-06-29T18:29:00.000+02:00'
+author: Luca Ferrari
+tags:
+- eclipse
+- rcp
+modified_time: '2010-06-29T18:29:00.668+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-41626777306035569
+blogger_orig_url: http://fluca1978.blogspot.com/2010/06/eclipse-product-interactive-splash.html
+---
+
+<div style="text-align: justify;">Dopo diverse prove e controprove sono finalmente riuscito a capire come mai un mio prodotto RCP non mostrava lo splash screen interattivo nella sua versione esportata mentre lo mostrava se lanciavo direttamente il prodotto dall'IDE. <a href="http://www.eclipse.org/forums/index.php?t=msg&amp;goto=543058&amp;#msg_543058">Il problema è dovuto all'assenza del nome del plugin che definisce lo splash screen</a>, che nel mio caso coincideva con il plugin principale del prodotto stesso. In una simile condizione, l'avvio tramite IDE va a richiamare in automatico lo splash screen poiché trovato all'interno del plug-in stesso, mentre il prodotto finito non sa da quale plug-in prelevare lo splash screen e quindi non lo visualizza. Certo sarebbe molto piu' semplice uniformare il meccanismo di caricamento e risoluzione fra IDE e prodotto finito, o quantomeno inserire dei warning per simili sviste....</div>

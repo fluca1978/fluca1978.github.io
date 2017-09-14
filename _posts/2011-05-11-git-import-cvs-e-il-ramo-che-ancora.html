@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Git: import CVS e il ramo che ancora deve nascere...'
+date: '2011-05-11T19:05:00.002+02:00'
+author: Luca Ferrari
+tags:
+- git
+modified_time: '2011-05-11T19:05:00.311+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-6570128577727567538
+blogger_orig_url: http://fluca1978.blogspot.com/2011/05/git-import-cvs-e-il-ramo-che-ancora.html
+---
+
+<div style="text-align: justify;">Git e' un ottimo sistema di controllo delle versioni, con una filosofia totalmente differente rispetto a CVS (si potrebbe anche affermare che Git nasce dall'odio per CVS...). Non c'e' quindi da stupirsi quando l'uso combinato di Git e CVS possa dare qualche grattacapo inaspettato. A me e' capitato un problema eseguendo un cvs import di un repository cvs "pulito":<br /><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">fatal: refs/heads/origin: not a valid SHA1</span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">fatal: master: not a valid SHA1</span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">fatal: You are on a branch yet to be born</span><br /><br /><br />Ebbene dopo diversi tentativi ho trovato la soluzione: cancellare la directory <i>$HOME/.cvsps</i> e la directory <i>.git</i> e rieffettuare l'import del modulo.</div>

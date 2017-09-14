@@ -1,0 +1,14 @@
+---
+layout: post
+title: FreeNAS & ports
+date: '2012-01-03T17:26:00.002+01:00'
+author: Luca Ferrari
+tags:
+- freenas
+- freebsd
+modified_time: '2012-01-05T15:17:36.844+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4724306071127408054
+blogger_orig_url: http://fluca1978.blogspot.com/2012/01/freenas-ports.html
+---
+
+<div style="text-align: justify;">Installare l'albero dei ports su FreeNAS quando questo efettua il boot da una chiavetta USB potrebbe non essere così semplice come si può pensare, perché il filesystem di sistema è limitato e alcune locazioni sono montate in sola lettura. Io personalmente ho optato per la seguente strategia:</div><ul><li>creare uno spazio temporaneo di lavoro per portsnap:</li></ul><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;">zfs create RPOOL/ports-tmp</div><ul style="text-align: justify;"><li> scaricare l'albero dei ports</li></ul><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;">portsnap -d /mnt/RPOOL/ports-tmp fetch</div><ul style="text-align: justify;"><li>creare lo spazio finale dei ports</li></ul><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;">zfs create RPOOL/ports</div><ul style="text-align: justify;"><li>decomprimere l'albero dei port </li></ul><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;">portsnap -d /mnt/RPOOL/ports-tmp -p /mnt/RPOOL/ports extract</div><div style="text-align: justify;"></div><div style="text-align: justify;"><br /><ul><li>rimuovere lo spazio temporaneo</li></ul><div style="font-family: &quot;Courier New&quot;,Courier,monospace;">zfs destroy&nbsp; RPOOL/ports-tmp</div><ul><li>sovrascrivere la configurazione di default dei ports, che si trova nel file <tt style="color: black;">/usr/share/mk/bsd.port.subdir.mk</tt> e che è alla base del sistema di compilazione dei ports. Questo passo è il piu' importante, perché il filesystem /usr è insola lettura in questa installazione. Ci sono due soluzioni: la prima consiste nel linkare la directory a <i>/usr/ports</i>, la seconda nello esportare la directory dei ports come link in <i>/usr</i>. Quindi si deve eseguire uno dei due comandi seguenti:</li></ul><div style="font-family: &quot;Courier New&quot;,Courier,monospace;">set PORTSDIR=/mnt/RPOOL/ports</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace;">ln -s /mnt/RPOOL/ports/ /usr/ports</div><br /><ul></ul><br />E il gioco è fatto. Occorre però prestare attenzione al fatto che <i>/usr </i>rimane in sola lettura, quindi molto del software che si vuole installare non funzionerà a meno di definire una cartella nel NAS vero e proprio e di compilare dai ports usando tale cartella.</div>

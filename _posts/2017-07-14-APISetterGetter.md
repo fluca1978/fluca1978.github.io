@@ -2,7 +2,12 @@
 layout: post
 title:  About API coherence
 author: Luca Ferrari
-categories: api, java, c++, perl, development
+tags:
+- api
+- java
+- c++
+- perl
+- development
 permalink: /:year/:month/:day/:title.html
 ---
 Is the *getter/setter* API coherent across your library?

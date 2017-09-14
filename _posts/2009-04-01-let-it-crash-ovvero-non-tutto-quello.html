@@ -1,0 +1,15 @@
+---
+layout: post
+title: Let it crash! (ovvero non tutto quello che è Exception deve essere gestito
+  da TE!)
+date: '2009-04-01T08:01:00.002+02:00'
+author: Luca Ferrari
+tags:
+- programmazione
+- java
+modified_time: '2009-04-01T08:09:12.438+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-852408453560434358
+blogger_orig_url: http://fluca1978.blogspot.com/2009/04/let-it-crash-ovvero-non-tutto-quello.html
+---
+
+Una delle cose che mi piace di più del linguaggio Java è la severità del suo compilatore, resa particolarmente evidente nel caso delle eccezioni. Purtroppo il meccanismo delle eccezioni spesso non viene capito dai programmatori, che si affannano a costruire dei complessi blocchi <span style="font-style: italic;">try..catch</span> per catturare ogni possibile errore che il proprio codice potrebbe sollevare.<br />Ma questo è sempre corretto?<br />In un'applicazione multi-threading spesso no. Generalmente le applicazioni multithread hanno uno schema gerarchico, con un thread <span style="font-style: italic;">padre</span> che genera i figli per gestire diverse richieste (si pensi al classico server in attesa di connessioni). In uno schema del genere, il processo padre dovrebbe svolgere anche il ruolo di coordinatore e supervisore fra i figli, che si trovano a fare il lavoro sporco. Cosa succede se un'eccezione viene generate in un figlio? La maggior parte dei programmatori tenta di catturare l'eccezione, di gestirla e di ripristinare lo stato del thread (figlio). Ma l'eccezione viene generata nel thread figlio stesso, quindi il thread tenta di auto-gestire l'eccezione.<br />La domanda a questo punto è: il thread figlio è in grado di gestirla? Sa quale sia la decisione migliore? Generalmente no!<br />E' compito del processo coordinatore decidere cosa fare nel caso in cui un figlio termini la sua esecuzione in modo abnorme. Quindi è meglio implementare una logica decisionale nel thread coordinatore piuttosto che nei thread di lavoro. I thread di lavoro dovrebbero essere programmati in stile <span style="font-style: italic;">happy-case</span>, ovvero considerando che tutto vada bene. E se qualcosa andrà male, sarà il coordinatore a decidere cosa fare.<br />Questa rinuncia di autonomia nei thread da lavoro potrebbe incrementare decisamente le prestazioni dell'intera applicazione. Infatti, un thread figlio difficilmente ha la visione complessiva dell'applicazione (stato della memoria, occupazione processore, stato dei pool,...) e quindi non può decidere cosa è meglio per l'applicazione (continuare o morire). Tanto vale allora lasciar(si) terminare e segnalare al chiamante (il processo coordinatore) che qualche cosa è andata storta; sarà lui a prendere la decisione opportuna (ricreare il thread, riconfigurare il pool, ecc.).

@@ -1,0 +1,14 @@
+---
+layout: post
+title: Migrare i bookmarks di Konqueror
+date: '2008-04-14T18:10:00.000+02:00'
+author: Luca Ferrari
+tags:
+- linux
+- kde
+modified_time: '2008-04-14T18:13:13.752+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4689144634259290532
+blogger_orig_url: http://fluca1978.blogspot.com/2008/04/migrare-i-bookmarks-di-konqueror.html
+---
+
+Il web browser Konqueror salva i suoi bookmark in un file XML che risulta molto semplice da migrare (o da backuppare) su una nuova installazione, inclusa quella che viene con il nuovo KDE 4 (che installa i file nella directory <span style="font-style: italic;">~/.kde4</span>).<br /><br />Per disporre dei bookmark nel nuovo KDE 4 è sufficiente impartire il seguente comando:<br /><br /><span style="font-style: italic;">cp ~/.kde/share/apps/konqueror/bookmarks.xml ~/.kde4/share/apps/konqueror</span><br /><br />e riavviare l'istanza di konqueror destinazione.

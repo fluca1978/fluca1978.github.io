@@ -1,0 +1,13 @@
+---
+layout: post
+title: Funzione multi-cursore
+date: '2012-07-06T17:30:00.000+02:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2012-11-30T08:57:09.004+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8639289431546992391
+blogger_orig_url: http://fluca1978.blogspot.com/2012/07/funzione-multi-cursore.html
+---
+
+<div style="text-align: justify;">Qualche giorno fa ho <a href="https://github.com/fluca1978/fluca1978-pg-utils/blob/master/bsdmag/03-server-side-programming/22-multicursors-function.sql">implementato un semplicissimo esempio</a> didattico di una stored procedure che scorre piu' cursori contemporaneamente. PostgreSQL non consente ad una funzione di ritornare piu' cursori, ma consente ad una funzione di restituire un insieme (<i>setof</i>) di riferimenti a cursori, ossia di "handle" che possono essere usati per le operazioni di <i>FETCH</i>. Il trucco quindi consiste nell'aprire i cursori all'interno della stored procedure per poi ritornare i riferimenti al chiamante, che li userà per ottenere le tuple relative.</div>

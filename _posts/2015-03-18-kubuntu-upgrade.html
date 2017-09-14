@@ -1,0 +1,13 @@
+---
+layout: post
+title: Kubuntu upgrade...
+date: '2015-03-18T20:13:00.000+01:00'
+author: Luca Ferrari
+tags:
+- kubuntu
+modified_time: '2015-03-18T20:13:00.303+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4740942380898405409
+blogger_orig_url: http://fluca1978.blogspot.com/2015/03/kubuntu-upgrade.html
+---
+
+<div style="text-align: justify;">Quando programmo un upgrade di sistema con Kubuntu so gia' in partenza che devo aspettarmi qualche casino.</div><div style="text-align: justify;">Non so se sia solo un problema mio, diciamo che non ho mai speso molto tempo per comprendere bene il sistema di upgrade Debian, sta di fatto che nel caso di Kubuntu ho sempre avuto dei problemi.</div><div style="text-align: justify;">Che si tratti di una distribuzione LTS o meno, al termine dell'upgrade ci sono parecchie cose che non funzionano.</div><div style="text-align: justify;">Spesso si tratta del desktop che non parte piu'.</div><div style="text-align: justify;">A volte la stampante non funziona.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Ma con l'ultimo aggiornamento è stato peggio.</div><div style="text-align: justify;">Apparentemente Eclipse non proponeva piu' l'autocompletamento con CTRL-space, ma subito non gli ho dato importanza.</div><div style="text-align: justify;">Molto piu' grave: Perl non funzionava piu'.</div><div style="text-align: justify;">Quello che ho scoperto è che Perl è stato aggiornato dalla versione 5.14.2 alla 5.18.2, peccato che tutte le librerie installate con CPAN fossero in una cartella specifica /usr/local/share/perl/5.14.2 e che ora Perl avesse @INC impostato alla corrispondente 5.18.2, vuota!</div><div style="text-align: justify;">Così ho "invertito" le due cartelle, cosa che mi è sembrata la soluzione piu' rapida e ho lanciato un upgrade completo dalla shell CPAN.</div><div style="text-align: justify;">Nel mentre che attendevo ho scoperto che la combinazione CTRL-space non funzionava anche in Emacs, orrore!</div><div style="text-align: justify;">Ebbene colpa questa volta del selettore della tastiera, che appunto con tale combinazione modificava il layout e la lingua di input. Ecco quindi che disabilitando questa (per me) inutile funzione gli editor hanno ripreso a funzionare correttamente.</div>

@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Sysadmin Panics: changelog, commit, copy-and-paste'
+date: '2013-02-15T20:40:00.000+01:00'
+author: Luca Ferrari
+tags:
+- sysadmin panics
+modified_time: '2013-02-15T20:40:00.106+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4572775502924472639
+blogger_orig_url: http://fluca1978.blogspot.com/2013/02/sysadmin-panics-changelog-commit-copy.html
+---
+
+<div style="text-align: justify;">Per un motivo che non riesco a spiegare esistono ancora su questo pianeta dei sysadmin che usano gli strumenti di controllo delle versioni in modi barbari. Ora, e' vero, gia' e' una gran cosa che usino tali strumenti, ma almeno che spendano una manciata di secondi (si noti, secondi!) in piu' per usare tali strumenti al meglio.</div><div style="text-align: justify;">Capita infatti che alcuni sysadmin in evidente stato confusionale usino gli strumenti di controllo delle versioni come un <i>CHANGELOG</i>: in sostanza associato ad ogni modifica (o peggio ancora in ogni singolo file) questi mantengono un changelog il cui contenuto e' esattamente identico a quello dei loro messaggi di commit.</div><div style="text-align: justify;">Il caso piu' demenziale al quale ho assistito e' stato quello di un sysadmin che sistematicamente inseriva, in cima ad ogni file (!) un changelog delle modifiche appena fatte come ad esempio:</div><div style="text-align: justify;"><blockquote class="tr_bq"><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">31/12/2010: ho fatto foo</span></blockquote></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">per poi fare copia in colla del messaggio (!!) all'interno del messaggio di commit del sistema di revisione. In sostanza quindi leggere i log del sistema di revisione e/o ogni singolo file produce lo stesso risultato, che e' quello di avere un changelog. Tuttavia questo richiede sforzo doppio da parte del sysadmin...e francamente non ho mai trovato nessun programmatore fare una simile cosa, penso perche' dotato di maggiore comprensione degli strumenti.</div><div style="text-align: justify;">Se quello che si vuole e' veramente avere un log anche all'interno dei file in questione si abbia almeno la decenza di usare le variabili auto-magiche che il proprio ambiente di revisione mette (sicuramente) a disposizione.</div>

@@ -1,0 +1,14 @@
+---
+layout: post
+title: Backup semplice con git
+date: '2010-02-04T18:22:00.000+01:00'
+author: Luca Ferrari
+tags:
+- linux
+- git
+modified_time: '2010-02-04T18:22:55.549+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1193652099751965051
+blogger_orig_url: http://fluca1978.blogspot.com/2010/02/backup-semplice-con-git.html
+---
+
+Utilizzo git per tutti i miei progetti importanti, e come ogni buon utente che si rispetti, tendo a non fare mai backup del mio albero dei sorgenti (se non in momenti assolutamente inutili, come le vacanze di Natale!). Ebbene git puo' semplificare la creazione di una copia di scorta <i>live</i> dell'albero dei sorgenti: è sufficiente creare un repository <i>remoto</i> da aggiornare di tanto in tanto.<br />Detto fatto! Sulla mia chiavetta usb ho clonato i repository che mi interessano con:<br /><br /><i>git clone /sviluppo/java/eclipseWorkspace/mioProgetto</i><br /><br />dopodiché devo solo dare un bel<br /><br /><i>git pull origin</i><br /><br />dalla directory della chiavetta usb che contiene i progetti da aggiornare. Così sulla mia pendrive ho sempre una copia quasi aggiornata (con tanto di storia) del mio albero dei sorgenti.

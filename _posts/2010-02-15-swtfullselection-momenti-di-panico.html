@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'SWT.FULL_SELECTION: momenti di panico nella migrazione di un prodotto'
+date: '2010-02-15T18:30:00.000+01:00'
+author: Luca Ferrari
+tags:
+- eclipse
+- swt
+- rcp
+modified_time: '2010-02-15T18:30:00.319+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4197131146146449867
+blogger_orig_url: http://fluca1978.blogspot.com/2010/02/swtfullselection-momenti-di-panico.html
+---
+
+<div style="text-align: justify;">Le tabelle SWT hanno un comportamento abbastanza curioso: di default su piattaforma Linux consentono la selezione di una tupla cliccando su uno qualunque degli elementi visualizzati, mentre su piattaforma Microsoft Windows no. Ho scoperto questo dopo aver migrato un prodotto da Linux a Windows: all'avvio del programma su Windows tutto sembrava regolare, fino a quando non mi sono accorto di essere incapace di selezionare qualunque tupla di una qualunque tabella. Dopo vari esperimenti, aggiornamenti di JVM, ri-esportazione del prodotto, clean dell'intero progetto, il panico ha iniziato a prendere il sopravvento. Poi per caso ho scoperto di riuscire a selezionare la prima cella di ogni riga, e che quello corrispondeva alla selezione dell'intera riga. Avendo ripreso lucidità ho fatto qualche indagine arrivando a scoprire che esiste un particolare flag di SWT, <i>SWT.FULL_SELECTION</i>, che abilita la selezione di una tupla di una tabella indipendentemente dalla cella sulla quale si effettua il click del mouse.</div><div style="text-align: justify;">Comportamento abbastanza bizzarro!</div>

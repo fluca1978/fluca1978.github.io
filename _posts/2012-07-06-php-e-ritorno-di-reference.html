@@ -1,0 +1,14 @@
+---
+layout: post
+title: PHP e ritorno di reference
+date: '2012-07-06T15:00:00.000+02:00'
+author: Luca Ferrari
+tags:
+- programmazione
+- php
+modified_time: '2012-07-06T15:00:18.411+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3654835364574932244
+blogger_orig_url: http://fluca1978.blogspot.com/2012/07/php-e-ritorno-di-reference.html
+---
+
+<div style="text-align: justify;">Ammetto di non aver studiato molto i reference di PHP, ma sono incappato in una stranezza: un metodo che ritorna un reference (quindi tramite operatore <i>&amp;</i>) deve essere usato in un contesto di assegnamento per riferimento, altrimenti si ha sempre la copia.</div><div style="text-align: justify;">In altre parole:</div><div style="text-align: justify;"><br /></div><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;">function &amp; arrayReference(){ ... }</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;">$arrayRef = arrayReference(); </div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">è sbagliato, poiché il metodo ritorna un riferimento, ma questo viene poi usato in un "assegnamento per copia" (la cosa mi ricorda molto il C++). Il modo corretto di procedre è:</div><div style="text-align: justify;"><br /></div><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;">function &amp; arrayReference(){ ... }</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: justify;">$arrayRef = &amp; arrayReference();</div>

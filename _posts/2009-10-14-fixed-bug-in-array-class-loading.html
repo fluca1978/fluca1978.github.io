@@ -1,0 +1,14 @@
+---
+layout: post
+title: Fixed a bug in the array class loading
+date: '2009-10-14T17:43:00.001+02:00'
+author: Luca Ferrari
+tags:
+- aglets
+- java
+modified_time: '2009-10-14T17:45:52.077+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5956177294884760357
+blogger_orig_url: http://fluca1978.blogspot.com/2009/10/fixed-bug-in-array-class-loading.html
+---
+
+Thanks to the effort of a friend of mine, Fernando, involved in the Aglets development, a bug about the class loading of an array of objects have been fixed. Today I commited the new code to the git repository.<br />The bug caused an agent, using an array of objects, to be not loaded well after a migration; the problem was that the Aglets class loader was unable to load the class of the array and instantiate, consequently, the array itself. This happened with a recent JVM (e.g., 1.6) and not with older ones, due to some minor changes in the new JVM array handling.

@@ -1,0 +1,14 @@
+---
+layout: post
+title: pfSense e default drop all su static route
+date: '2010-03-25T18:30:00.001+01:00'
+author: Luca Ferrari
+tags:
+- pfsense
+modified_time: '2010-05-07T12:46:20.544+02:00'
+thumbnail: http://2.bp.blogspot.com/_yhEX77VFKnM/S6sZokTOpuI/AAAAAAAAAWY/2p62DXIL0Hs/s72-c/wiki14.png
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-571322906794147820
+blogger_orig_url: http://fluca1978.blogspot.com/2010/03/pfsense-e-default-drop-all-su-static.html
+---
+
+<div style="text-align: justify;">Ho montato un firewall pfSense dotato di regole di static routing sulla stessa interfaccia: i pacchetti destinati alla rete X venivano smistati in ingresso e uscita dall'interfaccia LAN del firewall. Eppure i pacchetti non passavano, e dopo qualche secondo la connessione veniva interrotta. Il problema è nello <i>state analyzer</i> del firewall, che dopo qualche secondo si accorge del traffico da e per l'interfaccia LAN e blocca la connessione. La soluzione è quella di abilitare la voce <i>Bypass firewall rules for traffic on the same interface</i> dal menu' <i>System-&gt;Advanced</i>. In questo modo pf non considera lo stato dei pacchetti che viaggiano sulla medesima interfaccia e non getta la connessione.</div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_yhEX77VFKnM/S6sZokTOpuI/AAAAAAAAAWY/2p62DXIL0Hs/s1600/wiki14.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="42" src="http://2.bp.blogspot.com/_yhEX77VFKnM/S6sZokTOpuI/AAAAAAAAAWY/2p62DXIL0Hs/s400/wiki14.png" width="400" /></a></div>

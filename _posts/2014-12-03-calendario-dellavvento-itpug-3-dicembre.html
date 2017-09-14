@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Calendario dell''Avvento ITPUG: 3 Dicembre'
+date: '2014-12-03T20:37:00.000+01:00'
+author: Luca Ferrari
+tags:
+- itpug
+- calendario avvento
+- postgresql
+modified_time: '2014-12-03T20:37:01.271+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5330755177389246574
+blogger_orig_url: http://fluca1978.blogspot.com/2014/12/calendario-dellavvento-itpug-3-dicembre.html
+---
+
+<div style="text-align: justify;">psql è il mio client preferito per PostgreSQL, specialmente perché<br />sono un amante della command line.<br />Una funzione secondo me piuttosto utile di psql è il single-step mode:<br />se abilitato psql forza la richiesta di una conferma prima<br />dell'esecuzione di ogni istruzione SQL. Non è propriamente come<br />racchiudere il comando in una transazione, quanto piu' come eseguire<br />ogni istruzione in modo condizionale.<br />Ciò aiuta ad esempio l'esecuzione di script complessi per verificare<br />cosa si sta per eseguire.<br />Abilitare il single-step può essere fatto in due modi:<br />1) con il flag -s sulla linea di comando<br />2) con la variabile <i>SINGLESTEP</i> come segue<br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">\set SINGLESTEP 'on'</span><br />(e analogamente 'off' per disabilitare la funzione)<br /><br />La cosa utile del single-step è che procede alla sostituzione delle<br />variabili prima della richiesta della conferma. Supponiamo di avere uno script come il seguente:<br /><br /><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">CREATE TABLE foo(<br />&nbsp; &nbsp; &nbsp; &nbsp;pk serial not null,<br />&nbsp; &nbsp; &nbsp; &nbsp;value integer default 0,<br />&nbsp; &nbsp; &nbsp; &nbsp;PRIMARY KEY(pk)<br />);<br /><br />INSERT INTO foo(value) VALUES(1);<br />INSERT INTO foo(value) VALUES(2);<br />INSERT INTO foo(value) VALUES(3);<br />INSERT INTO foo(value) VALUES(:var1);</span></span><br /><br />e di avviare psql, impostando il single-step e il valore della variabile var1:<br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><br /># \set var1 '4'<br /># \set SINGLESTEP 'on'<br /># \i script.sql</span><br /><br />durante l'esecuzione dello script si avrà che:<br /><br /><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">***(Single step mode: verify command)**********************</span></span></div><div class="a3s" id=":tu" style="text-align: justify;"><wbr></wbr><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">*********************<br />INSERT INTO foo(value) VALUES(4);<br />***(press return to proceed or enter x and return to cancel)********************<br /></span></span><br />Quindi non solo viene richiesta conferma dell'esecuzione del comando,<br />ma si mostra anche il valore espanso della variabile.<br /></div>

@@ -1,0 +1,13 @@
+---
+layout: post
+title: OpenSolaris e scheda di rete Atheros AR8121
+date: '2009-12-28T16:59:00.002+01:00'
+author: Luca Ferrari
+tags:
+- opensolaris
+modified_time: '2009-12-28T17:08:07.526+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7472947042910734588
+blogger_orig_url: http://fluca1978.blogspot.com/2009/12/opensolaris-e-scheda-di-rete-atheros.html
+---
+
+La prima installazione di OpenSolaris 2009.11 sul mio portatile mi ha portato ad una situazione dove solo la scheda di rete Wireless era funzionante, mentre quella wired (Atheros AR8121) risultata dispersa. Nemmeno l'utility dei driver era in grado di fornirmi il driver per la suddetta scheda. Dopo qualche ricerca ho trovato che il pacchetto che fornire i driver per la mia scheda è <span style="font-style: italic;">SUNWatge</span>, dove ovviamente <span style="font-style: italic;">at</span> sta per Atheros mentre <span style="font-style: italic;">ge</span> per gigabit ethernet. Il problema è che OpenSolairs 2009.11 è al ramo di sviluppo snv 111, mentre il pacchetto di cui sopra richiede il 130.<br />E' stato quindi necessario installare l'aggiornamento dal repository di sviluppo di OpenSolaris, facendo avanzare il sistema fino a snv 130, per poi poter installare il driver della scheda di rete. Per fare questo ho anzitutto aggiunto il repository di sviluppo, l'ho impostato come repository di default, ed ho ordinato un <span style="font-style: italic;">image-update</span> del sistema.

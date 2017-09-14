@@ -1,0 +1,14 @@
+---
+layout: post
+title: Nebula Table Combo
+date: '2010-12-14T20:02:00.000+01:00'
+author: Luca Ferrari
+tags:
+- swt
+- java
+modified_time: '2010-12-14T20:02:00.339+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4285157919612516943
+blogger_orig_url: http://fluca1978.blogspot.com/2010/12/nebula-table-combo.html
+---
+
+<div style="text-align: justify;">Usare il Table Combo di Nebula è un'operazione tutto sommato semplice, anche se manca un po' di documentazione a riguardo. Mostro di seguito i passi necessari all'utilizzo del widget, che nel caso della mia applicazione visualizzano una semplice tabella con ID/Descrizione di elementi.</div><div style="text-align: justify;">Anzitutto occorre inizializzare il componento e definire le colonne (se si omette questo passo si avrà un combo che visualizza solo una delle colonne). Successivamente si decide se visualizzare o meno le intestazioni di colonna e infine si stabilisce quale colonna (con indice numerato partendo da zero) si deve rendere visibile nel combo quando questo è <i>chiuso</i>. Il seguente pezzo di codice illustra quanto appena descritto:</div><br /><div style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">&nbsp;&nbsp;&nbsp; // create the combo with the right style<br />&nbsp;&nbsp;&nbsp; this.combo = new TableCombo( this ,&nbsp; SWT.READ_ONLY );<br /><br />&nbsp;&nbsp;&nbsp; // say I want two columns<br />&nbsp;&nbsp;&nbsp; this.combo.defineColumns( new String[]{ "ID", "Descrizione" }&nbsp; );<br />&nbsp;&nbsp;&nbsp; this.combo.setShowTableHeader( true );<br />&nbsp;&nbsp;&nbsp; // the description is the column used for the selection<br />&nbsp;&nbsp;&nbsp; this.combo.setDisplayColumnIndex( 1 );</span></div><br /><div style="text-align: justify;">Successivamente occorre inserire gli elementi nel combo, tenendo presente che occorrerà passare una coppia di stringhe in un unico oggetto array:</div><br /><br /><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">TableItem tableItem = new TableItem( this.combo.getTable(), SWT.NONE );</span><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">&nbsp;</span></span><br /><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">tableItem.setText(&nbsp;</span></span><br /><span style="font-size: x-small;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new String[]{ newElement.getId(), newElement.getDescription() } );</span></span>

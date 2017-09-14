@@ -1,0 +1,15 @@
+---
+layout: post
+title: SWT vs JFace
+date: '2010-07-07T21:00:00.001+02:00'
+author: Luca Ferrari
+tags:
+- eclipse
+- swt
+- java
+modified_time: '2010-07-07T21:00:02.358+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5945841057176004531
+blogger_orig_url: http://fluca1978.blogspot.com/2010/07/swt-vs-jface.html
+---
+
+<div style="text-align: justify;">Il titolo di questo post è sbagliato: non può esserci competizione fra SWT e JFace, ma solo collaborazione!</div><div style="text-align: justify;">E' comunque opportuno spiegare cosa siano SWT e JFace poiché noto che c'è molta confusione sull'argomento, specialmente per chi proviene dal mondo Swing (praticamente tutti gli sviluppatori Java).</div><div style="text-align: justify;">SWT è una libreria grafica ad alte prestazioni. In sostanza è un wrapper JNI attorno ai componenti grafici del sistema operativo, quindi attorno a componenti nativi. Questo confluisce le caratteristiche principali di SWT: le prestazioni (al pari del sistema operativo) e il look and feel (del sistema operativo). Per sistema operativo si intende in realtà la shell grafica, e quindi ad esempio Gnome per *nix, Carbon per Mac OSX e così via. Tuttavia SWT è una libreria di basso livello, ossia non fornisce le caratteristiche tipiche della programmazione ad oggetti, ma funziona solo come wrapper attorno ai componenti grafici nativi. In altre parole una tabella SWT non è capace di interpretare un albero di oggetti da visualizzare, ma solo un array di stringhe di testo da inserire ognuna nella propria cella. Questo fa storcere il naso a chi vuole lavorare con modelli complessi e vuole le astrazioni tipiche dell'OOP. Ecco allora che arriva JFace, che altro non è che un wrapper Java attorno a SWT e che consente la programmazione attraverso modelli, handler, eventi specifici.&nbsp;</div><div style="text-align: justify;">Sostanzialmente quindi SWT fornisce solo il livello grafico di basso livello, ed è compito del programmatore stabilire come tradurre i propri oggetti in testo da visualizzare, mentre JFace è una libreria ad oggetti che consente di lavorare agevolmente con gli oggetti del proprio business model da tradurre in visualizzazione grafica.</div><div style="text-align: justify;">Tornando all'esempio della tabella, SWT accetta un array di stringhe di testo da posizionare nelle celle, e quindi è compito del programmatore scorrere il modello per trasformare tutto in un sol colpo in un formato testo. In JFace invece si hanno degli oggetti (detti <i>provider</i>) che consentono di scorrere il modello in maniera piu' agevole (ad esempio conoscendo l'indice della tupla) e di fornire un pezzo alla volta la forma testuale da visualizzare. Ovviamente le prestazioni sono pressoché identiche, la separazione dei due flussi è solo concettuale.&nbsp;</div><div style="text-align: justify;">JFace implementa un MVC molto piu' simile a quello di Swing, ma il cuore del sistema resta sempre e solo SWT.</div>

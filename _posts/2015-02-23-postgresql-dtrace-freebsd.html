@@ -1,0 +1,14 @@
+---
+layout: post
+title: PostgreSQL & DTrace @ FreeBSD
+date: '2015-02-23T21:34:00.002+01:00'
+author: Luca Ferrari
+tags:
+- postgresql
+- freebsd
+modified_time: '2015-02-23T21:37:16.524+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5073474578062293130
+blogger_orig_url: http://fluca1978.blogspot.com/2015/02/postgresql-dtrace-freebsd.html
+---
+
+<div style="text-align: justify;">Tempo fa mi ero scontrato, o meglio scornato, con la compilazione di <i>DTrace</i> e <i>PostgreSQL</i> (o meglio, la compilazione di <i>PostgreSQL</i> con DTrace) su FreeBSD. L'ultima volta, dopo aver <a href="http://www.postgresql.org/message-id/54986F6C.1010704@gmail.com">riportato i problemi nella lista pg-hackers</a>, avevo anche aperto un <a href="https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=196053">bug</a> sul tracker di FreeBSD.</div><div style="text-align: justify;">Ad oggi il problema non sembra ancora essere risolto, forse che non sia così interessante usare DTrace + PostgreSQL + FreeBSD?<br /><br />Pare comunque esserci una soluzione da provare, legata al caricamento dinamico dei moduli di DTrace nel sistema prima di iniziare la compilazione. </div>

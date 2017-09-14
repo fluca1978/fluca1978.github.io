@@ -3,16 +3,26 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:10 %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      {% if post.blogger_orig_url %}
+      {% else %}
       <div class="entry">
-        {{ post.excerpt }}
+          {{ post.excerpt }}
       </div>
+      {% endif %}
+
+
+
+      {% include post_categories.html %}
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="button button-primary">read {{ post.title }}</a>
     </article>
-  {% endfor %}
+    {% endfor %}
+
+
+    {% include post_tag_list.html %}
+
 </div>

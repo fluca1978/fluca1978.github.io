@@ -1,0 +1,14 @@
+---
+layout: post
+title: GEOM naming
+date: '2012-11-07T19:48:00.000+01:00'
+author: Luca Ferrari
+tags:
+- freebsd
+modified_time: '2012-11-07T19:48:00.236+01:00'
+thumbnail: http://1.bp.blogspot.com/-w0BabDLJGus/UJpYIbz99hI/AAAAAAAAAyY/i6Wcg2Wcpa0/s72-c/geom1.png
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8567484545720395214
+blogger_orig_url: http://fluca1978.blogspot.com/2012/11/geom-naming.html
+---
+
+<div style="text-align: justify;">As far as I can understand reading the documentation and looking at the FreeBSD GEOM source tree, the naming scheme is as follows:</div><ul style="text-align: justify;"><li>each transformation specification is written upper-case;</li><li>each transformation class is written lower-case;</li><li>each module that defines and implements a class lacks the initial <i>g</i>;</li><li>usually each device that is perceived as a provider uses the module name as a way of indicating the service, such has using an extension or being under a folder with the module name if the <i>/dev</i> directory;</li><li>each file in the above module has the <i>g_</i> prefix, followed by the class name (lower-case) and an optional suffix with a leading underscore.</li></ul><div style="text-align: justify;">So for instance, in the case of the disk encryption we have that:</div><ul style="text-align: justify;"><li><i>GELI</i> (upper-case) specifies the transformation, that is the contract for the service;</li><li><i>geli</i> (lower-case) is the class implementation, that is the code that implements the above contract;</li><li><i>eli</i> is the module that contains the source code, that is the folder in the source tree;</li><li><i>eli</i> is the extension of an encrypted device (e.g., <i>/dev/da0s1e.eli</i>); </li><li>each file in the above source tree is named <i>g_eli</i> with an optional suffix. </li></ul><div style="text-align: justify;">As another example consider the mirroring facilities:</div><ul style="text-align: justify;"><li><i>GMIRROR</i> is the transformation;</li><li><i>gmirror</i> is the class implementation;</li><li><i>mirror</i> is the module that contains the source code for the class implementation; </li><li>usually mirrors are under <i>/dev/mirror</i>;</li><li>each file is named <i>g_mirror</i> and something more.</li></ul><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-w0BabDLJGus/UJpYIbz99hI/AAAAAAAAAyY/i6Wcg2Wcpa0/s1600/geom1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="65" src="http://1.bp.blogspot.com/-w0BabDLJGus/UJpYIbz99hI/AAAAAAAAAyY/i6Wcg2Wcpa0/s400/geom1.png" width="400" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-eKdVa-3vDe8/UJpXhnMVKbI/AAAAAAAAAyQ/fk5lj8sBx1k/s1600/geom.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><br /></a></div><br />

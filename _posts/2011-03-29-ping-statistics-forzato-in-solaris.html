@@ -1,0 +1,13 @@
+---
+layout: post
+title: Ping statistics forzato in Solaris?
+date: '2011-03-29T22:20:00.000+02:00'
+author: Luca Ferrari
+tags:
+- opensolaris
+modified_time: '2011-03-29T22:20:00.234+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-6122522762255141101
+blogger_orig_url: http://fluca1978.blogspot.com/2011/03/ping-statistics-forzato-in-solaris.html
+---
+
+<div style="text-align: justify;">Generalmente sono una persona pratica e pragmatica, ed e' per questo motivo che sono rimasto sconvolto da <a href="http://blogs.sun.com/jbeck/entry/machine_that_goes_ping">una modifica al comando ping(1) di Solaris</a>. Brevemente: il comando ping di Solaris invia un singolo pacchetto all'host di destinazione, a differenza del ping di una distribuzione Linux che entra automaticamente in statistic mode inviando pacchetti all'infinito. Ebbene, qualcuno, stanco di dover sempre digitare lo switch -s su Solaris per abilitare un ping continuo ha pensato bene di fare una modifica al programma per abilitare di default questa funzionalita'. La modifica prevede che se nell'ambiente di sistema esiste una determinata variabile (impostata a qualunque valore non nullo) ping eseguira' in modalita' non statistica. La cosa e' sorprendetemente stupida! Anzitutto si costringono gli utenti a inserire una variabile di sistema (consumo di memoria) quando un alias del comando sarebbe sufficiente. In secondo luogo cosi' facendo si rischia di modificare il comportamento del comando anche negli script che si ritrovano tale variabile esportata. Ora, e' vero che chi usi ping negli script senza un count (conteggio del numero di pacchetti) e' un'idiota, ma programmi molto vecchi potrebbero risentire negativamente di questa funzionalita'. Insomma, perfino il DOS ha un ping migliore di quello proposto da Solaris!</div>
