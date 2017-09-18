@@ -1,0 +1,13 @@
+---
+layout: post
+title: Ancoa sul "caso" PostgreSQL e Uber...
+date: '2017-05-05T18:13:00.000+02:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2017-05-05T18:13:03.371+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4959066969423853296
+blogger_orig_url: http://fluca1978.blogspot.com/2017/05/ancoa-sul-caso-postgresql-e-uber.html
+---
+
+Chi si ricorda il caso di Uber che, dopo <i>attenta valutazione</i> decise di <a href="https://eng.uber.com/mysql-migration/">passare a MySQL e abbandonare PostgreSQL</a>?<br />I commenti sulla vicenda si sono sprecati, e la community PostgreSQL ha da subito mostrato<br />un approccio costruttivo alla vicenda sezionando e spiegando in dettaglio<br />come le <i>limitazioni</i> presentate da Uber erano in realtà scelte progettuali e/o<br />ostacoli superabili con estensioni (si veda per esempio <a href="https://blog.2ndquadrant.com/thoughts-on-ubers-list-of-postgres-limitations/">il post di Simon Riggs</a>).<br /><br /><br />Ora Christophe Pettus ha <a href="http://thebuild.com/presentations/uber-perconalive-2017.pdf">prodotto una presentazione molto interessante e dettagliata<br /></a> che riassume quanto affermato da Uber e come questo, seppur vero in teoria, non sia mai stato documentato opportunamente e,<br />soprattutto, non sia mai stato valutato adeguatamente.<br />Non voglio difendere PostgreSQL a spada tratta, penso che una compagnia come Uber abbia sicuramente<br />personale qualificato per prendere la decisione migliore, anche se come spiegato nella presentazione<br />di cui sopra spesso si è fatta confusione confrontando cose differenti negli stessi ambiti (ad esempio<br />la replica, comparando <i>la logical replication</i> con la <i>streaming replication</i>).<br />

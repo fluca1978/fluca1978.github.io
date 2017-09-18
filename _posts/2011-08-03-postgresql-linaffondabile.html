@@ -1,0 +1,13 @@
+---
+layout: post
+title: PostgreSQL l'inaffondabile
+date: '2011-08-03T16:33:00.000+02:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2011-08-03T16:33:13.634+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5842021935385746628
+blogger_orig_url: http://fluca1978.blogspot.com/2011/08/postgresql-linaffondabile.html
+---
+
+<div style="text-align: justify;">E' sempre difficile convincere i non utenti PostgreSQL delle capacità di questo fantastico prodotto, penso che la pigrizia e la paura di cambiare siano i motivi che frenano il passaggio a PostgreSQL. Se ogni database facesse bene il proprio mestiere e implementasse correttamente la teoria (transazioni, WAL, rollback, replica,...) e gli standard i prodotti sarebbero realmente interscambiabili, ma si sa che il mondo non è fatto di cose uguali.</div><div style="text-align: justify;">Fa molto piacere allora trovare dei messaggi come <a href="http://archives.postgresql.org/pgsql-advocacy/2011-04/msg00086.php">questo</a> che riportano il caso di diversi database colpiti dalla stessa sventura, nello stesso momento, nello stesso luogo e con gli stessi DBA (e quindi con le stesse competenze). Sembra che PostgreSQL sia così buono da permettere realmente di dormire sonni tranquilli:</div><blockquote><br /><pre>Complete power failure<br />(the stand-by generator took fire) in one small datacenter (around 500<br />machines). We had Oracle, SQL Server, DB2, MySQL, Progress, and of<br />course PostgreSQL. The only database engine that restarted with no<br />operation required was PostgreSQL. There were very minimal problems with<br />Oracle (typing recover on some instances), but we had quite a few<br />problems with the other engines.</pre></blockquote>

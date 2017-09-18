@@ -1,0 +1,13 @@
+---
+layout: post
+title: Un brutto ma veloce meccanismo di interpolazione di stringhe in Perl
+date: '2017-01-03T16:29:00.000+01:00'
+author: Luca Ferrari
+tags:
+- perl
+modified_time: '2017-01-03T16:29:14.263+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2910618498783269114
+blogger_orig_url: http://fluca1978.blogspot.com/2017/01/un-brutto-ma-veloce-meccanismo-di.html
+---
+
+Ecco un meccanismo semplice e veloce, quanto brutto, per fare una interpolazione di stringa in Perl via <i>nome</i> dei parametri invece che posizione. L'idea è quella di associare i parametri in un hash con le chiavi relative, e poi effettuare una sostituzione tramite regexp sulla stringa per sostituire i parametri ovunque appaiano.<br />La stringa di inizio/fine interpolazione può essere ovviamente qualunque sequenza sensata, nell'esempio che segue ho usato quella dell'interpolazione Ruby.<br /><br />      <br /><div><span style="font-family: monospace;"><span style="background-color: white; color: black;">#!/usr/bin/env perl </span><br /><br />use v5.10; <br /><br />my $params = { <br /> &nbsp;&nbsp;&nbsp;foo =&gt; "this is foo" <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, bar =&gt; 'this is bar' <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, baz =&gt; 'this is baz' <br />}; <br /><br /><br />my $string = "Here is a string that needs to substitute variables #{foo} and #{bar} and last #{b<br />az}!"; <br /><br />( my $result = $string ) =~ s/\#{(\w+)}/$params-&gt;{$1}/ge; <br /><br />say $result;<br /></span></div><div><span style="font-family: monospace;"><br /></span></div><div><br />Come si può notare ogni parametro da interpolare è racchiuso fra la stringa <i>#{</i> e <i>]</i>, con il nome relativo al parametro. Quindi <i>#{foo}</i> viene poi sostuito con il valore di <i>$params-&gt;{foo}</i>. Per fare questo si utilizza un backreference nella cattura della parola <i>\w+</i> racchiusa come primo parametro <i>$1</i> nell'espressione regolare. <br /><br />Ecco un esempio piu' utile di questa interpolazione:<br /><br />       <br /><div><span style="font-family: monospace;"><span style="background-color: white; color: black;">my $params = { &nbsp;</span><br /> &nbsp;&nbsp;&nbsp;username =&gt; 'luca' <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, server =&gt; 'remote.node.com' <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, port =&gt; 22 <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, protocol =&gt; 'ssh' <br />}; <br /><br /><br />my $connection_string = "#{protocol}://#{username}@#{server}:#{port}"; <br /><br />( my $url = $connection_string ) =~ s/\#{(\w+)}/$params-&gt;{$1}/ge;</span></div><br />che produce come risultato finale <i>ssh://luca@remote.node.com:22</i></div>

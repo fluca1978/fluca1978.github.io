@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'FreeNAS: backup via rsync'
+date: '2012-01-24T19:48:00.000+01:00'
+author: Luca Ferrari
+tags:
+- freenas
+modified_time: '2012-01-24T19:48:00.632+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1326198447798009331
+blogger_orig_url: http://fluca1978.blogspot.com/2012/01/freenas-backup-via-rsync.html
+---
+
+<div style="text-align: justify;">FreeNAS è veramente un ottimo prodotto, altamente performante. Purtroppo manca di una funzione fondamentale di ogni buon server che si rispetti: la possibilità di poter fare backup da macchine remote. Mi spiego meglio: FreeNAS esporta (condivide) il suo spazio storage verso altre macchine, permette anche di sincronizzarsi via <i>rsync</i> con altre macchine FreeNAS ma non permette (da web GUI) di avviare un processo <i>rsync</i> verso una macchina non FreeNAS. Ovviamente è possibile agire da riga di comando, anche se nel caso in cui si abbia un avvio da stick USB servano alcuni accorgimenti. In particolare, essendo il file system di root montato in sola lettura, non sarà possibile memorizzare le chiavi ssh degli host ai quali ci si vuole connettere, cosa indispensabile per gli script automatizzati. Il trucco consiste quindi nel montare il file system root in lettura scrittura, generare le chiavi ssh e collegarsi ad ogni host remoto, e successivamente rimontare il file system in sola lettura. Anche gli script wrapper per <i>rsync</i> (a patto che si usino degli script - scelta consigliata) devono essere memorizzati in una posizione accessibile in lettura/scrittura (oppure nel file system principale, che verrà rimontato in sola lettura e quindi impedirà agli script di essere modificati successivamente); io ad esempio ho creato un dataset "nascosto" (ossia non condiviso) appunto per gli script. Dopodiché si potrà procedere con la web GUI per inserire l'esecuzione dello script al momento voluto.</div>

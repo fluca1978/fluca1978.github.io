@@ -1,0 +1,15 @@
+---
+layout: post
+title: Mappare le singole proprietà degli oggetti su un database
+date: '2008-11-04T08:38:00.001+01:00'
+author: Luca Ferrari
+tags:
+- programmazione
+- postgresql
+- php
+modified_time: '2008-12-15T15:17:16.317+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7262107295765753105
+blogger_orig_url: http://fluca1978.blogspot.com/2008/11/mappare-le-singole-propriet-degli.html
+---
+
+In questi giorni sto lavorando ad una applicazione PHP che mappa degli oggetti su dei dati che risiedono su un database relazionale. Nulla di nuovo, nulla di sconvolgente, si tratta di un normale mapping ORM. Il problema è che l'applicazione è lenta, anzi lentissima, per quelle che sono le capacità del server e della rete su cui gira.<br />Il primo passo per me è stato analizzare i log di PostgreSQL (il database server che ospita i dati) per cercare di capire che tipo di query venivano lanciate. Ebbene ho trovato una serie di <span style="font-style: italic;">micro-query</span> ripetute in modo massivo, e analizzando il codice ho trovato che ogni singolo dato di un oggetto veniva sempre riletto dal database ogni volta che veniva acceduto. In sostanza quindi ogni operazione di <span style="font-style: italic;">get</span> forzava un reload del singolo dato dal database, e quindi il traffico di query, tutte piccole e poco ottimizate (e ottimizzabili) diventava enorme. La mappatura ORM prevede quindi di non tenere in memoria le proprietà di un oggetto ma di ricaricarle ogni volta che queste vengano richieste direttamente dal database. E' evidente che in quest'ottica i singoli metodi <span style="font-style: italic;">get</span> non possono essere ottimizzati, ma si può procedere ad una velocizzazione delle operazioni per metodi <span style="font-style: italic;">getAll</span> su più proprietà dello stesso oggetto. In sostanza si tratta di creare metodi wrapper attorno a più operazioni di <span style="font-style: italic;">get</span>, facendo eseguire però una singola operazione sul database. Se ad esempio si hanno i metodi <span style="font-style: italic;">getNome</span> e <span style="font-style: italic;">getCognome</span>, considerando che nell'applicazione molto spesso occorrono entrambi i dati, si può costruire una funzione <span style="font-style: italic;">getNomeCognome</span> che restituisca un array con entrambi i dati. Al suo interno la funzione non farà affidamento sui due servizi <span style="font-style: italic;">getNome</span> e <span style="font-style: italic;">getCognome</span>, perché questo significherebbe creare due query sul database, bensì effettuerà una query unica verso il database. Sfruttando quindi questi metodi <span style="font-style: italic;">get-combinati</span> si possono ottenere tutti i dati che servono al flusso dell'applicazione con query uniche e quindi riducendo il traffico di rete e la latenza del database.

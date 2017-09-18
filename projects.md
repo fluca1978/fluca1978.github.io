@@ -7,6 +7,9 @@ permalink: /projects/
 
 Nothing really interesting here.
 Today I have very little time to start-up a project from scratch, and so I try to help (a little) existings ones.
+
+# Coding
+
 In the past I did mess with:
 
 * [`Aglets`](http://aglets.sourceforge.net/) a Java based mobile agent platform.
@@ -22,3 +25,69 @@ manipulation on the fly as performed by other more useful tools (like persistenc
 * [`JFK`](https://github.com/fluca1978/JFK) trying to port *signals and slots* the Qt way to Java, or better a rudimental way to implement function pointers (because they don't scare you, right?).
 
 More in general I tend to keep all my projects on [GitHub](https://github.com/fluca1978), so go [check there!](https://github.com/fluca1978).
+
+
+I did participate in the **CPAN Pull Request Challenge** 2015 and **Hacktoberfest 2016**. I really encourage anyone else in participating in projects like those because they can teach you a lot and your time will not be wasted onto a not-so-used piece of code.
+
+I co-founded and directed the **[Italian PostgreSQL Users' Group (ITPUG)](http://www.itpug.org)** and have actively organized almost all [PGDay.IT](http://www.pgday.it) events, introducing (not by myself) also the concept of *ITPUG Lab*.
+
+# Conferences, Seminars, etc.
+
+Where I was learning, where I was teaching.
+
+## As a teacher
+
+- Open Space **ITPUG Lab**, PGDay.IT 2013 and 2015
+- Seminar **Introduzione a PostgreSQL (parte 1 e 2)**, PGDay.IT 2012, Prato
+- Ligthning Talk **From ISAM to PostgreSQL**, PGDay.IT 2011, Prato
+- Seminar **Pl/Java: estendere un database PostgreSQL con Java**, PGDay.IT 2010, Roma
+- Seminar **PostgreSQL: un database OpenSource di classe enterprise**, CONFSL 2010, Cagliari
+- Seminar **Java & PostgreSQL: da JDBC a Pl/Java passando per org.postgresql.Driver**, CONFSL 2010, Cagliari
+- Seminar **Immagini digitali**, 2009, Sassuolo
+- Seminar **PostgreSQL: il database OpenSource piu' avanzato al mondo**, PGDay.IT 2009, Università degli Studi di Pisa
+- Seminar **Connettività PostgreSQL da Java**, PGDay.IT 2009, Università degli Studi di Pisa
+- Talk **PostgreSQL: il database OpenSource piu' avanzato al mondo**, Linux Day 2008, Modena
+- Talk **PostgreSQL & Java**, PGDay.EU 2008, Prato
+- Talk **org.postgresql.Driver: il driver JDBC di PostgreSQL**, PGDay.IT 2007, Prato
+- Lecturer **Programmazione JDBC**, PGDay.IT 2007, Prato
+- Lecturer **Paradigma ad agenti mobili: Tecnologie e Implementazioni**, 2006, University of Modena and Reggio Emilia (ICT PhD School)
+- Lecturer **Tecnologie ad agenti mobili**,2005, University of Modena and Reggio Emilia
+- Lecturer **J2SE 5: l'evoluzione di Java**, 2004, University of Modena and Reggio Emilia
+- Seminar **The Java language**, 2004, University of Modena and Reggio Emilia
+- Lecturer **Java, AWT & Swing**, 2003, OT Consulting
+
+## As a student
+
+ - **Devops Day**, 2014, Bologna
+ - **Eclipse Day Florence**, 2012, Firenze
+ - **QtDay**, Gennaio 2012, Firenze
+ - **Sicurezza nella applicazioni Web**, 2001
+ - **Java Day**, 2010
+ - **PHP, PostgreSQL e Smarty per la costruzione di applicazioni gestionali web**, 2008
+ - **Adobe incontra il mondo della ceramica. Un utilizzo specifico per il settore ceramico**, 2006
+ - **Il linguaggio C# e la filosofia .NET**, 2005, University of Modena and Reggio Emilia
+ - **The seventh European Agent Systems Summer School (EASSS05)**, 2005, Utrecht, Olanda
+ - **Mobile Agents for Ubiquitous Computing**, prof. Ichiro Satoh, 2005, University of Modena and Reggio Emilia
+ - **Constructing Agent Systems**, prof. Marcin Paprzycky, 2005, University of Modena and Reggio Emilia
+ - **Introduction to distributed Java: J2EE and CORBA**,  Markus Aleksy, Ralf Gitzel and Martin Schader, Las Vegas, 2004
+ - **Linux: problematiche dei sistemi embedded e real-time**, 2003, University of Modena and Reggio Emilia
+
+# Academic
+
+Talking about past academic projects, I've been member of the followings:
+
+- **MENSA (Methodologies for the Engineering of complex Software systems: Agent-based approach)**, years 2007-2008;
+- **IS-MANET: Infrastrutture per reti ad-hoc mobili**, progetto CNR-MIUR, years 2003-2005;
+- **Fiducia e Diritto nella società dell’Informazione: Promozione e Tutela Giuridica della Fiducia nel Mercato, nelle Istituzioni e nell’Infrastruttura Tecnologica**, progetto PRIN del MIUR, years 2004-2005.
+- **LAICA: Laboratorio di Ambient Intelligence per una Città Amica**, progetto europeo in collaborazione con il comune di Reggio Emilia, years 2005-2006.
+
+
+# Committees
+
+ - Program Committee **Workshop on Adaptative Collaboration (AC) 2011**, The 2011 International Conference on Collaboration Technologies and Systems (CTS 2011)
+ - Review Committee **Special Session on Role Base Collaboration CTS 2010** The 2008 IEEE International Conference on Systems, Man, and Cybernetics
+ - Review Committee **Special Session on Role-Based Collaboration**, The 2008 IEEE International Conference on Systems, Man, and Cybernetics, 12-15 Ottobre 2008, Singapore, China
+ - review Committee track **Trust, Recommendations, Evidence and other Collaboration Know-how (TRECK)**,  20th ACM Symposium on Applied Computing (SAC) 2005
+ - Program Committee **WETICE 2004: The IEEE 13th International Workshops on Enabling Technologies: Infrastructure for Collaborative Enterprises (WETICE)**, Modena, Italy, June 2004
+ - Local Committee **PGDay.IT**, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2015, 2016
+ - Local Committee **PGDay.EU**, 2008

@@ -1,0 +1,16 @@
+---
+layout: post
+title: Emacs shell e sequenze di escape
+date: '2012-10-11T18:00:00.000+02:00'
+author: Luca Ferrari
+tags:
+- emacs
+- linux
+- freebsd
+modified_time: '2012-10-11T18:00:09.532+02:00'
+thumbnail: http://1.bp.blogspot.com/-r_IBLLL5ldE/UHWa4tjAOcI/AAAAAAAAArE/bstymtGbhkc/s72-c/emacs1.png
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1038280131233942025
+blogger_orig_url: http://fluca1978.blogspot.com/2012/10/emacs-shell-e-sequenze-di-escape.html
+---
+
+<div style="text-align: justify;">Se non si e' ancora usato il comando <i>M-x shell</i> è ora di provarlo! In sostanza viene aperta una shell (con in default un terminale di tipo "dumb") direttamente dentro ad Emacs. Il problema è che questo terminale non interpreta correttamente le sequenze di escape che fanno apparire il testo colorato nell'output dei comandi, come ad esempio <i>ls:</i></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-r_IBLLL5ldE/UHWa4tjAOcI/AAAAAAAAArE/bstymtGbhkc/s1600/emacs1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="18" src="http://1.bp.blogspot.com/-r_IBLLL5ldE/UHWa4tjAOcI/AAAAAAAAArE/bstymtGbhkc/s400/emacs1.png" width="400" /></a></div><br /><div style="text-align: justify;">E' possibile migliorare l'aspetto dicendo ad Emacs di "interpretare" le sequenze di escape mediante la funzione <i>ansi-color-for-comint-mode-on</i> (e la sua duale <i>-off</i> che disattiva questo comportamento). L'output del terminale verra' quindi interpretato correttamente come in una "normale" shell.</div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-cbviBPJOfu4/UHWa54WhCwI/AAAAAAAAArQ/Q14c3CzjuWg/s1600/emacs3.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="46" src="http://2.bp.blogspot.com/-cbviBPJOfu4/UHWa54WhCwI/AAAAAAAAArQ/Q14c3CzjuWg/s400/emacs3.png" width="400" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-0FOS1h5nt7Q/UHWa6vbYgFI/AAAAAAAAArY/drilBWccBqQ/s1600/emacs4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="37" src="http://1.bp.blogspot.com/-0FOS1h5nt7Q/UHWa6vbYgFI/AAAAAAAAArY/drilBWccBqQ/s400/emacs4.png" width="400" /></a></div><br /><div style="text-align: justify;">Per avere il comportamento abilitato in default occorre lanciare la funzione di cui sopra come hook per il modo <i>shell</i>.</div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-vrwYjDPRzBk/UHWa7UGDAQI/AAAAAAAAArc/1TtvbbQENTg/s1600/emacs6.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="38" src="http://3.bp.blogspot.com/-vrwYjDPRzBk/UHWa7UGDAQI/AAAAAAAAArc/1TtvbbQENTg/s400/emacs6.png" width="400" /></a></div><br />

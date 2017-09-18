@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'JSF: istruzioni ECL condizionali'
+date: '2011-01-28T21:05:00.000+01:00'
+author: Luca Ferrari
+tags:
+- jsf
+- java
+modified_time: '2011-01-28T21:05:00.326+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4873845873314096315
+blogger_orig_url: http://fluca1978.blogspot.com/2011/01/jsf-istruzioni-ecl-condizionali.html
+---
+
+Il tag <i>outputTest</i> della tag lig JSF consente l'utilizzo di istruzioni condizionali, e quindi e' possibile scrivere qualcosa del genere:<br /><br />&lt;h:outputLabel&nbsp;value="#{&nbsp;(user.administrator)&nbsp;?<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'admin'&nbsp;:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'utente misero'&nbsp;}&nbsp;&nbsp;"&nbsp;&gt;<br /><br /><br /><br />Ove si controlla se l'utente e' amministratore e a seconda del relativo livello si stampa un messaggio informativo opportuno.

@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'Coerenza dei nomi: un esempio (cattivo) basato su PHP'
+date: '2016-08-05T20:15:00.000+02:00'
+author: Luca Ferrari
+tags:
+- programmazione
+- php
+- programming best practice
+modified_time: '2016-08-05T20:15:01.666+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5749787304519540136
+blogger_orig_url: http://fluca1978.blogspot.com/2016/08/coerenza-dei-nomi-un-esempio-cattivo.html
+---
+
+<div style="text-align: justify;">La coerenza nel nome delle variabili e delle funzioni è molto importante, me ne rendo conto ogni giorno di piu' e soprattutto sono capace ogni giorno di notare errori anche grossolani nelle implementazioni dei vari linguaggi di programmazione.</div><div style="text-align: justify;">Uno degli errori, amio avviso, clamorosi nella implementazione di PHP è l'incoerenza dei nomi delle funzioni <span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">empty() </span>e <span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">is_null()</span>. Mentre l'ultima finisce ha un mnemonico che si legge intuitivamente in un test booleano, la prima no. Mi capita quindi abbastanza spesso di scrivere del codice come:</div><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br /></span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">if ( is_empty( $foo ) ){ ... }</span><br /><br /><div style="text-align: justify;">che ovviamente è sbagliato poichè la funzione è empty(). Da cosa nasce questa incoerenza? E' abbastanza semplice da capire: "null" in PHP è parola chiave e quindi la funzione relativa non poteva chiamarsi semplicemente null(), da qui l'esigenza di aggiungere il prefisso "is_". Ma questo doveva portare a trattare la duale funzione empty() con la stessa regola del nome, anche se "empty" non è (al momento) parola chiave. Dopotutto, come Perl Best Practice insegna, è bene che le condizioni booleane abbiano un nome che inizia con "is" o "has", e sicuramente è piu' facile da leggere "if is empty" che non "if empty".</div>

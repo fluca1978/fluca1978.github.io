@@ -2,7 +2,9 @@
 layout: post
 title:  When your data is Back To The Future!
 author: Luca Ferrari
-categories: perl, programming
+tags:
+- perl
+- programming
 permalink: /:year/:month/:day/:title.html
 ---
 Are your constraints preventing data moving back and forth time?

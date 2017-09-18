@@ -1,0 +1,15 @@
+---
+layout: post
+title: Kubuntu 10.04 & Network Management Disabled
+date: '2010-10-01T22:41:00.001+02:00'
+author: Luca Ferrari
+tags:
+- kubuntu
+- linux
+- kde
+modified_time: '2010-10-01T22:41:00.180+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5033907465413696311
+blogger_orig_url: http://fluca1978.blogspot.com/2010/10/kubuntu-1004-network-management.html
+---
+
+Una cosa piuttosto noiosa del network manager di KDE (KNetworkManager) è l'incapacità di ripristinare la funzionalità delle schede di rete, soprattutto quelle wireless, qualora il sistema venga sospeso o vada in stand-by.<br />Quando il network manager continua, insistentemente, a riportare che il network management è disabilitato, la soluzione consiste nel:<br /><br />- editare il file /var/lib/NetworkManager/NetworkManager.state impostando lo stato del networking da disabilitato ad abilitato (NetworkingEnabled=true)<br />- riavviare il servizio di network management con service network-manager restart

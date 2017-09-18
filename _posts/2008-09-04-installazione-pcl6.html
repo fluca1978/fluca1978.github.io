@@ -1,0 +1,13 @@
+---
+layout: post
+title: Installazione pcl6
+date: '2008-09-04T23:20:00.000+02:00'
+author: Luca Ferrari
+tags:
+- linux
+modified_time: '2008-09-04T23:28:26.769+02:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3597669595393194932
+blogger_orig_url: http://fluca1978.blogspot.com/2008/09/installazione-pcl6.html
+---
+
+Il pacchetto GhostPDL contiene un programma molto utile:<span style="font-style: italic;"> pcl6</span>. Questo comando funziona da interprete per file PCL, ossia file che contengono comandi nel linguaggio delle stampanti HP. Tramite questo comando è possibile convertire file pcl in file pdf/postscript. La sua installazione però non è sempre semplice, poiché il pacchetto non viene distribuito sotto forma binaria e deve quindi essere compilato da zero.<br />Nel mio caso si trattava di installare pcl6 su un sistema Ubuntu 8.04. Una volta scaricato il pacchetto, e installati gli strumenti e le librerie per la compilazione, ho provveduto alla classica compilazione tramite <span style="font-style: italic;">make</span>, che è terminata senza errori. Al seguito di <span style="font-style: italic;">make install</span> mi sono ritrovato il comando <span style="font-style: italic;">pcl6</span> fra gli eseguibili, e l'ho messo subito alla prova. Ahimé il comando non funzionava lamentandosi di un errore nell'interprete e uscendo con codice -1. Svariate ricerche su Internet non mi hanno fornito la soluzione, fino a quando ho capito che il funzionamento di <span style="font-style: italic;">pcl6</span> dipendeva dalla presenza nel sistema dei font URW. E' stato quindi necessario ricompilare il pacchetto avendo scaricato anche i fonts, e in particolare i passi sono stati i seguenti:<br /><ol><li>scompattare il pacchetto ghostpdl;</li><li>scompattare il pacchetto dei fonti e copiare la directory ottenuta dentro a quella in cui si è scompattato ghostpdl, avendo cura di rinominare tale directory togliendo i numeri di versione;</li><li>lanciare dalla directory di ghostpdl il comando <span style="font-style: italic;">make fonts</span> e verificare che tutto proceda bene. Alla fine i fonts verranno installati nella cartella <span style="font-style: italic;">/windows/fonts</span>;</li><li>lanciare il comando <span style="font-style: italic;">make product</span>;</li><li>installare il pacchetto compilato con <span style="font-style: italic;">make install</span>.</li></ol>A questo punto il comando <span style="font-style: italic;">pcl6</span> ha iniziato a funzionare regolarmente nel sistema.

@@ -1,0 +1,15 @@
+---
+layout: post
+title: Scrolling automatico di una immagine SWT
+date: '2010-01-20T17:44:00.002+01:00'
+author: Luca Ferrari
+tags:
+- eclipse
+- swt
+- java
+modified_time: '2010-01-20T17:51:04.174+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3724713044140730633
+blogger_orig_url: http://fluca1978.blogspot.com/2010/01/scrolling-automatico-di-una-immagine.html
+---
+
+<div style="text-align: justify;">E' stata abbastanza dura riuscire a creare una <span style="font-style: italic;">view</span> di Eclipse che potesse fare lo scrolling di una immagine in automatico. Mentre in Swing esiste il poliedrico componente <span style="font-style: italic;">ScrollPane</span>, capace di fare scrolling automatico su praticamente ogni componente (ivi incluse le immagini), nel caso di SWT l'affare si complica.<br />Anzitutto occorre creare un <span style="font-style: italic;">canvas</span> capace di visualizzare l'immagine, e quindi con associato un <span style="font-style: italic;">paint listener</span> che reagisca agli eventi di rivisualizzazione e disegni l'immagine al suo interno. Attenzione: l'immagine deve essere disegnata sempre nello stesso punto (ad esempio alle coordinate 0,0) poiché non è il canvas a muovere l'immagine ma lo scrolled composite che conterrà il canvas. Terminata la costruzione del canvas, si procede al wrapping dello stesso in uno <span style="font-style: italic;">ScrolledComposite</span> che si preoccuperà di muovere il canvas contenuto. Purtroppo c'è un po' di lavoro in piu' da fare: lo scrolled composite deve avere esplicitamente settato il suo contenuto (il canvas).<br />Da un punto di vista di codice, questo si traduce nel seguente frammento di inizializzazione della vista Eclipse:<br /></div><br /><pre>  public void createPartControl(Composite parent) {<br />  <br /> // create a scrolling composite<br /> ScrolledComposite scroller = new ScrolledComposite(parent, SWT.V_SCROLL | SWT.H_SCROLL );<br /> <br /> // now create a canvas for this view<br /> this.canvas = new Canvas( scroller, SWT.NONE );<br /> scroller.setContent( this.canvas );<br /> <br /> <br /> // this canvas must show the image when loaded<br /> <br /> this.canvas.addPaintListener( new PaintListener(){<br /><br /><br />     @Override<br />     public void paintControl(PaintEvent event) {<br />  if( image != null )<br />      event.gc.drawImage(image, 0, 0 );<br />     }<br />    <br /> });<br /> <br /><br />       ...<br />   }<br /></pre>

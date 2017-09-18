@@ -1,0 +1,13 @@
+---
+layout: post
+title: Dump di una query
+date: '2008-02-21T17:37:00.000+01:00'
+author: Luca Ferrari
+tags:
+- postgresql
+modified_time: '2008-02-21T17:46:45.636+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-85806002761086713
+blogger_orig_url: http://fluca1978.blogspot.com/2008/02/dump-di-una-query.html
+---
+
+Capita spesso di voler estrarre i dati da un database, tramite una query semplice o complessa, e di voler importare tali dati in un altro database. L'operazione può essere eseguita in modo piuttosto semplice dal client testuale <span style="font-style: italic;">psql</span>.<br /><br />La prima cosa da determinare è il tipo di query che fornisca come output i dati nell'ordine e con il layout (distribuzione delle colonne) desiderato. Una volta fatto questo, è sufficiente collegarsi al database sorgente, eseguire la query scrivendo i risultati su file, e far rileggere tale file dal database destinazione.<br /><br />Sul database sorgente, tramite <span style="font-style: italic;">psql</span>, occorrerà dare i seguenti comandi:<br /><br /><span style="font-style: italic;">\a</span><br /><span style="font-style: italic;">\f ';'</span><br /><span style="font-style: italic;">\t</span><br /><span style="font-style: italic;">\o query.sql</span><br /><br />ed eseguire quindi la query. I comandi impartiti a psql servono ad eliminare l'output formattato (\a), a impostare il separatore di colonna con un ';' (\f), a mostrare solo i dati senza intestazioni e numero totale di righe visualizzate (\t) e a scrivere automaticamente l'output della query sul file <span style="font-style: italic;">query.sql</span>.<br /><br />A questo punto è possibile collegarsi al database destinazione e ordinare la lettura e l'inserimento dei dati contenuti nel file <span style="font-style: italic;">query.sql</span>. Per fare questo si può usare il comando <span style="font-style: italic;">\copy, </span>ad esempio, supponendo di voler caricare i dati nella tabella <span style="font-style: italic;">myTable</span> si può impartire il comando:<br /><br /><span style="font-style: italic;">\copy myTable(col1,col2) from 'query.sql' with delimiter ';'</span><br /><br />Si noti che viene specificato il file di origine (query.sql) e il delimitatore di colonna (;). Si noti inoltre come vengano specificate le colonne nelle quali i dati devono essere inseriti (col1, col2) in myTable. E' importante specificare le colonne ogni qual volta il dump dei dati non rispecchi esattamente il layout della tabella stessa, oppure se esistono colonne di tipo serial sulle quali non si vuole agire.

@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'PHP e variabili di istanza: un errore da principianti!'
+date: '2009-03-16T08:40:00.003+01:00'
+author: Luca Ferrari
+tags:
+- programmazione
+- php
+modified_time: '2009-03-16T08:54:51.448+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7940356746910837132
+blogger_orig_url: http://fluca1978.blogspot.com/2009/03/php-e-variabili-di-istanza-un-errore-da.html
+---
+
+Qualche giorno ho perso diverso tempo cercando di capire quale problema avesse una applicazione PHP, per poi scoprire che ho <span style="font-style: italic;">mescolato</span> mentalmente le regole di Java e PHP.<br />In sostanza avevo una classe che definiva delle variabili di istanza che venivano poi usate in un metodo come segue:<br /><br /><pre>class MyClass{<br />  private $ORDER_BY_NAME = " ORDER BY name ";<br /><br />  public function doQuery(){<br />       ...<br /> $sql .= $ORDER_BY_NAME;<br />       ...<br />  }<br />}<br /></pre><br />Come si può notare io usavo la variabile di istanza seguendo le regole Java, ovvero <span style="font-style: italic;">ricerca della variabile nell'oggetto qualora non sia già definito nella funzione (o nel blocco di codice)</span>. Ebbene, questo in PHP non funziona, è bensì necessario dereferenziare automaticamente la variabile passando attraverso l'oggetto:<br /><br /><br /><pre>class MyClass{<br />  private $ORDER_BY_NAME = " ORDER BY name ";<br /><br />  public function doQuery(){<br />       ...<br /> $sql .= <span style="font-weight: bold;">$this-></span>ORDER_BY_NAME;<br />       ...<br />  }<br />}</pre><br />Un vero errore da principianti!<br />E dire che solitamente uso sempre i qualificatori <span style="font-style: italic;">this</span>, <span style="font-style: italic;">super</span>, ecc. proprio per identificare meglio la visibilità delle variabili e non incorrere in simili errori.<br />Insomma, una distrazione che mi è costata diverso tempo.

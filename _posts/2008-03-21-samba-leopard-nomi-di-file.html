@@ -1,0 +1,13 @@
+---
+layout: post
+title: 'Samba & Leopard: nomi di file'
+date: '2008-03-21T18:15:00.000+01:00'
+author: Luca Ferrari
+tags:
+- linux
+modified_time: '2008-03-21T18:22:47.762+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-9008535667656023070
+blogger_orig_url: http://fluca1978.blogspot.com/2008/03/samba-leopard-nomi-di-file.html
+---
+
+Mac OS X è dotato di un filesystem (HFS) di tipo <span style="font-style: italic;">case insensitive</span> (quindi che non distingue fra nomi di file maiuscoli e minuscoli) ma <span style="font-style: italic;">case preserving</span> (quindi che tiene traccia di come il file è stato nominato). Questo produce notevoli problemi quando si inseriscono gli stessi nomi di file in maiuscolo/minuscolo.<br /><br />La mia personale esperienza ha portato a diversi problemi nell'interoperabilità con Samba, soprattutto ove sia attiva l'opzione<br /><br /><span style="font-style: italic;">                                       preserve case = no<br />                                       default case = lower<br /><br /></span>che consente di registrare i file senza tenere conto di maiuscole/minuscole, convertendo i nomi sempre in minuscolo (lower). Purtroppo una simile opzione fa si che spostando un file dal Finder ad una cartella Samba, questo sparisca se contiene lettere maiuscole. La ragione di ciò sta nel fatto che il file, una volta spostato su Samba, viene rinominato in minuscolo, e il finder non lo riconosce più, facendolo sparire. La risoluzione del problema è abbastanza semplice: basta abilitare l'opzione <span style="font-style: italic;">preserve case</span>, così da fare in modo che file registrati con lettere maiuscole/minuscole non siano rinominati.

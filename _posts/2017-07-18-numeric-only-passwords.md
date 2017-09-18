@@ -2,7 +2,7 @@
 layout: post
 title:  Using numeric only passwords and pins
 author: Luca Ferrari
-categories:
+tags:
 - security
 - password
 - development

@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'java: No such file or directory (!)'
+date: '2017-01-03T16:11:00.004+01:00'
+author: Luca Ferrari
+tags:
+- kubuntu
+- java
+modified_time: '2017-01-03T16:11:42.017+01:00'
+blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2780481685438063361
+blogger_orig_url: http://fluca1978.blogspot.com/2017/01/java-no-such-file-or-directory.html
+---
+
+<div style="text-align: justify;">Ci sono applicazioni che richiedono un JDK per eseguire correttamente, così l'unica cosa che si può fare è quella di scaricare dal sito Oracle una qualche versione, installarla, configurare JAVA_HOME o qualcosa di simile (a seconda dell'applicazione) e lanciare il programma desiderato.</div><div style="text-align: justify;">Abbastanza semplice, no?</div><div style="text-align: justify;">Eppure oggi ho dovuto combattere con una installazione della JDK 1.8 (111) e un errore abbastanza subdolo riportato dalla shell:</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">/opt/jdk1.8.0_111/bin/java: No such file or directory</span></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">quando ovviamente il file era al suo posto, eseguibile e pronto a servire il sistema.</div><div style="text-align: justify;">Inizialmente ero protato a pensare ad un classico problema di permessi, ma come ho già scritto il file era correttamente eseguibile. Forse un problema di exec sul filesystem? No, nemmeno questo.</div><div style="text-align: justify;">Dopo un po' di ricerca ho scoperto che il mio pc mancava di una libreria, e quindi ben presto si è fatto un passo avanti:</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">sudo apt-get install libc6-i386</span></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">ma questo ancora non era sufficiente a far funzionare tutto l'ambiente, specialmente quello grafico, e così ho dovuto installare anche</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">sudo apt-get install libxrender1:i386 libxtst6:i386 libxi6:i386</span></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">e finalmente ho un jdk funzionante perfettamente.</div><div style="text-align: justify;">Certo che il primo errore, quello riportato dalla shell, è piuttosto fuorviante!</div>
