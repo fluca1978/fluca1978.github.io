@@ -7,7 +7,7 @@ tags:
 - programming
 permalink: /:year/:month/:day/:title.html
 ---
-A very short introduction to class declaration and definition in Perl 6.
+A very short introduction to class declaration and definition in Perl 6. Let's see twigils, inheritance, methods, constructors and containers.
 
 ## Perl6: beginning with classes
 -----
@@ -79,12 +79,14 @@ my $me = Person.new( name => 'Luca', surname => 'Ferrari', age => 39 );
 $me.surname() = 'FERRARI';
 ```
 
-while the following is still wrong:
+while the following is wrong:
 
 ```perl
 my $me = Person.new( name => 'Luca', surname => 'Ferrari', age => 39 );
 $me.surname( 'FERRARI' );
 ```
+
+The truth is that the member is not accessed via an *lvalue method*, more on this later, in the meantime assume it is like this.
 
 What if our members have been declared private? No accessor will be generated in this case:
 
@@ -242,3 +244,33 @@ say "Father: " ~ $baby.father.say;
 ```
 
 Note that the baby inherits all methods from the parent person class, that is what we expected.
+
+
+### Containers
+
+In the above I wrote that accessing a writable member was like using an *lvalue method*, that is not true in Perl 6.
+In fact, in Perl 6 each variable (within a class or not) holds a *pointer* to a container, and the container in turn
+holds the value of the variable.
+**When you call an accessor to a member, it always returns the *container* of the member itself**. So when you define the
+member as ```is rw``` what you are truly stating is that the **container must be writable**, not the member itself.
+And this leads to how things work:
+
+```perl
+$f.name = 'Luca';
+```
+
+means that the method ```name``` returns the ```$!name``` container, that is writable, and therefore the assignment puts a new value
+into the container. The next time you will call the ```name``` method, the container will be accessed again and the new value will
+be presented.
+
+It is something like the following C code pseudo-code:
+
+```c
+// ...
+char* name(){ return &name; }
+// ...
+*( f.name() ) = 'LUCA';
+```
+
+This concept (containers) is true for all varialbles in Perl 6, not only applies to classes and members.
+For more information, [read here](https://docs.perl6.org/language/containers#What_is_a_variable?).
