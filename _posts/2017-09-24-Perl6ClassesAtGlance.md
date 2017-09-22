@@ -159,14 +159,86 @@ which will convert to the following Java code:
 
 ```java
  public String say(){
+   // return $!surname ~ " " ~ $!name ~ " aged " ~ $!age;
    return this.surname + " " + this.name + " aged " + this.age;
  }
 
  // or ...
   public String say(){
+    // return $.surname ~ " " ~ $.name ~ " aged " ~ $!age;
    return this.getSurname() + " " + this.getName() + " aged " + this.age;
  }
 ```
 
 Therefore, when working within the class itself, the **$.** twigil means **use the accessor to get the member value** while the **$!** means **access the member directly**. Of course, in the case of ```age``` there is no accessor at all, so the only way to access it is using the **$!** twigil (within the class).
 Outside the class, the only **accessor available are always named as the member and are by default read-only (i.e., getter), but can be converted to lvalue method (i.e., methods you can assign a value) if the special *is rw* trait has been applied**.
+
+
+With respect to the ```BUILD``` submethod you can also add some consistency check, for instance preventing to build a person with a negative age:
+
+```perl
+ submethod BUILD( :$!name, :$!surname, :$!age ){
+     $!age = 0 if ( $!age < 0 );
+ }
+```
+
+Let's continue with methods: as you can imagine you can always add methods to a class, and methods can call other methods to perform thei task.
+Within a class, the special bareword **self** allows for calling a method, so for instance you can introduce the method ```happy_birthday```
+as follows:
+
+```perl
+class Person {
+    has $.name    is rw;
+    has $.surname is rw;
+    has $!age;
+
+    # ... other methods as above
+
+    method increase_age {
+        $!age++;
+    }
+
+    method happy_birthday {
+        "Happy Birthday $!name !".say;
+        self.increase_age;
+        "you are now $!age years old !".say;
+    }
+}
+
+```
+
+As you can see, the ```self.increase_age``` resolvs to invoking the other method, something similar when in other languages you
+do ```this.increase_age()```. Note also that the twigils are interpolated within strings.
+
+
+### Inheritance
+
+Allow me to quickly expand the example code with a little inheritance, just to show how to use it in Perl 6. Let's define a *baby* class,
+that is the child and extends a person, in the sense it is a "small person". A baby has all the features of a person and was born
+from a mother and a father, so something as simple as:
+
+```perl
+class Baby is Person {
+    has Person $.mother is required;
+    has Person $.father is required;
+}
+
+```
+
+This is a good definition, since both *mother* and *father* are read-only and must be specified at build time (unluckily this is not fully true in real life, being the mother the only really required, but let's keep the example simple!).
+Now you can consume your class using objects as follows:
+
+```perl
+my $father = Person.new( name => 'John', surname => 'Richardson', age => 30 );
+my $mother = Person.new( name => 'Sandra', surname => 'Loreston', age => 30 );
+my $baby   = Baby.new( name => 'Luca', surname => 'Richardson', age => 2,
+                         mother => $mother,
+                         father => $father );
+
+say $baby.say;
+say "Mother: " ~ $baby.mother.say;
+say "Father: " ~ $baby.father.say;
+
+```
+
+Note that the baby inherits all methods from the parent person class, that is what we expected.
