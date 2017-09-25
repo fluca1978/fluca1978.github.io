@@ -13,9 +13,9 @@ What is the simplest way to use Perl 6? ```rakudobrew``` is an excellent system!
 -----
 If you are a Perl programmer you probably have already used [perlbrew](https://perlbrew.pl/). If you havent' already used ```perlbrew```
 go use it, it is a wonderful project that allows you to let several Perl 5 distributions to live on the same machine and, to some extent,
-to be used without need to mess with the main (*sysadmin locked*) instance.
+to be used without need to mess with the main (*sysadmin locked*) instance (and it does support also *cperl*)..
 
-[rakudobrew](https://github.com/tadzik/rakudobrew) is the same for the *Rakudo/Perl 6* pair (and it does support also *cperl*).
+[rakudobrew](https://github.com/tadzik/rakudobrew) is the same for the *Rakudo/Perl 6* pair.
 With ```rakudobrew``` using a Perl 6 distribution is as easy as:
 
 ```shell
