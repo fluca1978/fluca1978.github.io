@@ -52,6 +52,9 @@ for the ```nuke``` command and, more in general, for every command that requires
 10. [*rakudobrew general command help*](https://github.com/tadzik/rakudobrew/pull/125): solves a ticket and also provides a kind of *platform*
 for specifying command help. The idea is to use ```Pod::Usage``` to *read* the POD documentation at the very end of the script itself,
 so that it can provide *sub command help* in a more accurate way.
+11. [*sqitch italian translation*](https://github.com/theory/sqitch/pull/357): this is, well, quite trivial, even if required
+a lot of time to translate the whole set of messages of this great database management application. This is, so far, the second or third
+translation I try and the first one that I complete!
 
 
 Here you can [check my Hacktoberfest status](https://hacktoberfestchecker.herokuapp.com/?username=fluca1978).
