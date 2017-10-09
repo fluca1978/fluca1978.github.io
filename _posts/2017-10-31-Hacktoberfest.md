@@ -5,6 +5,7 @@ author: Luca Ferrari
 tags:
 - Hacktoberfest
 - Open Source
+- Perl
 permalink: /:year/:month/:day/:title.html
 ---
 Another small contribution to the Open Source world!
@@ -55,6 +56,10 @@ so that it can provide *sub command help* in a more accurate way.
 11. [*sqitch italian translation*](https://github.com/theory/sqitch/pull/357): this is, well, quite trivial, even if required
 a lot of time to translate the whole set of messages of this great database management application. This is, so far, the second or third
 translation I try and the first one that I complete!
+12. [*rakudobrew minor changes*](https://github.com/tadzik/rakudobrew/pull/126): this started as a simple adjusting of the ```run```
+subroutine, but then submitting a PR with a single commit seemed a little stupid to me, so I tried to apply a few small rules of
+*best practices* such as avoiding ```return undef```, checking that a list return was applied in list context and ensuring
+un-interpolable strings whenever possible.
 
 
 Here you can [check my Hacktoberfest status](https://hacktoberfestchecker.herokuapp.com/?username=fluca1978).
