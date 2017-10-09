@@ -49,6 +49,9 @@ in order to simplify the code for handling error situations.
 provide better information to the user configuration depending on the shell she is using.
 9. [*rakudobrew nuke help*](https://github.com/tadzik/rakudobrew/pull/124): solves some ticket complaining providing help
 for the ```nuke``` command and, more in general, for every command that requires a specific version to be passed as command line argument.
+10. [*rakudobrew general command help*](https://github.com/tadzik/rakudobrew/pull/125): solves a ticket and also provides a kind of *platform*
+for specifying command help. The idea is to use ```Pod::Usage``` to *read* the POD documentation at the very end of the script itself,
+so that it can provide *sub command help* in a more accurate way.
 
 
 Here you can [check my Hacktoberfest status](https://hacktoberfestchecker.herokuapp.com/?username=fluca1978).
@@ -58,3 +61,7 @@ to overtake some git problems and, on the other hand, this experience made me a 
 It is interesting also to note that, differently from the past year, I did not *rebase* my branches. It is not that my commits are
 perfect, it is just that my [Fossil](https://www.fossil-scm.org/index.html/doc/trunk/www/index.wiki) experience teached me to value
 every single  commit and remember my mistakes. And I believe there's nothing wrong in showing to the world my mistakes, what it does matter, after all, is the *full diff* that can lead to the contribution.
+
+One thing I have to admit this Hacktoberfest did to me is that **it took me back to my desk, at eveningn, developing some new feature**. That was
+a thing I did not do anymore, I try to sped the less time as possible in front of my computer when at home, but this time I did enjoy being back
+at evening, with my cat near me (unluckily it was not enough cold to start up my fireplace, that would make it a perfect hacking session).
