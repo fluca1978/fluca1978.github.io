@@ -60,6 +60,7 @@ translation I try and the first one that I complete!
 subroutine, but then submitting a PR with a single commit seemed a little stupid to me, so I tried to apply a few small rules of
 *best practices* such as avoiding ```return undef```, checking that a list return was applied in list context and ensuring
 un-interpolable strings whenever possible.
+13. [*Perl 6 documentation*](https://github.com/perl6/doc/pull/1594): a short and sweet introduction to *precedence dropping*, something I foundmyself difficult to learn and therefore I thought it was useful for other developers to find already cited.
 
 
 Here you can [check my Hacktoberfest status](https://hacktoberfestchecker.herokuapp.com/?username=fluca1978).
