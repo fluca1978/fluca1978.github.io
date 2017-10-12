@@ -61,7 +61,9 @@ subroutine, but then submitting a PR with a single commit seemed a little stupid
 *best practices* such as avoiding ```return undef```, checking that a list return was applied in list context and ensuring
 un-interpolable strings whenever possible.
 13. [*Perl 6 documentation*](https://github.com/perl6/doc/pull/1594): a short and sweet introduction to *precedence dropping*, something I foundmyself difficult to learn and therefore I thought it was useful for other developers to find already cited.
-
+14. [*shame on me for Perl6 documentation!*](https://github.com/perl6/doc/pull/1601): after the previous PR has been merged I noted that the
+web page for the *syntax* documentation was rendering wrong: I mispelled a ```head2``` POD title to ```head 2``` and nobody noticed! So this
+is not a real PR that counts, rather a quick and dirty fix for a horrible mistake I did introduced!
 
 Here you can [check my Hacktoberfest status](https://hacktoberfestchecker.herokuapp.com/?username=fluca1978).
 
@@ -74,3 +76,15 @@ every single  commit and remember my mistakes. And I believe there's nothing wro
 One thing I have to admit this Hacktoberfest did to me is that **it took me back to my desk, at eveningn, developing some new feature**. That was
 a thing I did not do anymore, I try to sped the less time as possible in front of my computer when at home, but this time I did enjoy being back
 at evening, with my cat near me (unluckily it was not enough cold to start up my fireplace, that would make it a perfect hacking session).
+
+
+But wait a minute: how did all the above go?
+Well, the first PRs to be evaluated have been, of course, the Perl 6 documentation ones and that reminded me how important and organized
+the documentation is. Well, I have to admit I was happy to see [how strict it was the process to get the PR accepted](https://github.com/perl6/doc/pull/1594/commits/69d7951fc52efc455c3885677c95a7f121fed40d) while looking at the documentation
+did not make me feel the same. I mean, the documentation seems somehow less structured with regard to the Perl 5 one, but
+with such a PR process it will catch up very quickly. Also please note that whithin three hours the repository passed from my [requeste numbered 1594](https://github.com/perl6/doc/pull/1594) to the fixing one [numbered 1601](https://github.com/perl6/doc/pull/1601), that is the project is
+really alive!
+
+The [Sqitch translation PR](https://github.com/theory/sqitch/pull/357) provided me the *commit-bit* to the repository, and that is something somehow scarying because (i) I have to keep the translation up to date and (ii) I have the possibility to mess up the official repository with a wrong push!
+
+The Perlbrew project merged quite quickly a couple of PRs: the [clone modules command](https://github.com/gugod/App-perlbrew/pull/564),  [sorting of Perl versions from the newest to the oldest](https://github.com/gugod/App-perlbrew/pull/565) and [keeping 'yes' and 'force' coherent](https://github.com/gugod/App-perlbrew/pull/570).
