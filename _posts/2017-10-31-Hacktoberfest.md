@@ -6,6 +6,7 @@ tags:
 - Hacktoberfest
 - Open Source
 - Perl
+- Sqitch
 permalink: /:year/:month/:day/:title.html
 ---
 Another small contribution to the Open Source world!
@@ -87,4 +88,20 @@ really alive!
 
 The [Sqitch translation PR](https://github.com/theory/sqitch/pull/357) provided me the *commit-bit* to the repository, and that is something somehow scarying because (i) I have to keep the translation up to date and (ii) I have the possibility to mess up the official repository with a wrong push!
 
-The Perlbrew project merged quite quickly a couple of PRs: the [clone modules command](https://github.com/gugod/App-perlbrew/pull/564),  [sorting of Perl versions from the newest to the oldest](https://github.com/gugod/App-perlbrew/pull/565) and [keeping 'yes' and 'force' coherent](https://github.com/gugod/App-perlbrew/pull/570).
+The Perlbrew project slowly merged the followings: the [clone modules command](https://github.com/gugod/App-perlbrew/pull/564),  [sorting of Perl versions from the newest to the oldest](https://github.com/gugod/App-perlbrew/pull/565), [keeping 'yes' and 'force' coherent](https://github.com/gugod/App-perlbrew/pull/570), [callable function to manage download return code](https://github.com/gugod/App-perlbrew/pull/571).
+
+Therefore, so far, the situation is:
+
+1. [*perlbrew clone-modules*](https://github.com/gugod/App-perlbrew/pull/564) **merged!**
+2. [*perlbrew sort list and available versions*](https://github.com/gugod/App-perlbrew/pull/565) **merged!**
+3. [*perlbrew show installation date*](https://github.com/gugod/App-perlbrew/pull/566) **merged!**
+4. [*perlbrew installer*](https://github.com/gugod/App-perlbrew/pull/568) *waiting*
+5. [*perlbrew shell profile instructions*](https://github.com/gugod/App-perlbrew/pull/569) **merged!**
+6. [*perlbrew force and yes*](https://github.com/gugod/App-perlbrew/pull/570) **merged!**
+7. [*perlbrew download failure*](https://github.com/gugod/App-perlbrew/pull/571) **merged!**
+8. [*rakudobrew shell configuration*](https://github.com/tadzik/rakudobrew/pull/123) **merged!**
+9. [*rakudobrew nuke help*](https://github.com/tadzik/rakudobrew/pull/124) *waiting*
+10. [*rakudobrew general command help*](https://github.com/tadzik/rakudobrew/pull/125) *waiting*
+11. [*sqitch italian translation*](https://github.com/theory/sqitch/pull/357) **merged and repo invitation!**
+12. [*rakudobrew minor changes*](https://github.com/tadzik/rakudobrew/pull/126) *waiting*
+13. and 14. [*Perl 6 documentation*](https://github.com/perl6/doc/pull/1594) and [*shame on me for Perl6 documentation!*](https://github.com/perl6/doc/pull/1601) **merged!**
