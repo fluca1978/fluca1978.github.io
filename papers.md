@@ -92,6 +92,11 @@ bibliography entry searching the web.
  pp. 243-263,
  April 2004
 
+## Free Ebooks
+- L. Ferrari
+**[23 years of FreeDOS](http://www.freedos.org/ebook/)**,
+invited chapter
+
 ## Online Journals
 
 - L. Ferrari,
