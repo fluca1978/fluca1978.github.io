@@ -14,7 +14,7 @@ Another small contribution to the Open Source world!
 ## Hacktoberfest 2017
 -----
 
-This is the second year I take place in the **[Hacktoberfest](https://hacktoberfest.digitalocean.com/)**, and I'm really proud to what I've donewithout any regard to the fact that my Pull Requests have been accepted or not.
+This is the second year I take place in the **[Hacktoberfest](https://hacktoberfest.digitalocean.com/)**, and I'm really proud to what I've done without any regard to the fact that my Pull Requests have been accepted or not.
 
 So what is *Hacktoberfest*?
 Well, it is a contest that takes place during the month of October and involves any developer around the world that have time, and most notably
@@ -98,7 +98,7 @@ Therefore, so far, the situation is:
 1. [*perlbrew clone-modules*](https://github.com/gugod/App-perlbrew/pull/564) **merged!**
 2. [*perlbrew sort list and available versions*](https://github.com/gugod/App-perlbrew/pull/565) **merged!**
 3. [*perlbrew show installation date*](https://github.com/gugod/App-perlbrew/pull/566) **merged!**
-4. [*perlbrew installer*](https://github.com/gugod/App-perlbrew/pull/568) *waiting*
+4. [*perlbrew installer*](https://github.com/gugod/App-perlbrew/pull/568) *merged*
 5. [*perlbrew shell profile instructions*](https://github.com/gugod/App-perlbrew/pull/569) **merged!**
 6. [*perlbrew force and yes*](https://github.com/gugod/App-perlbrew/pull/570) **merged!**
 7. [*perlbrew download failure*](https://github.com/gugod/App-perlbrew/pull/571) **merged!**
