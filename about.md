@@ -287,7 +287,7 @@ What I run pretty much everyday on my music device player:
 ## Me by Television
 
 
-I'm not a film maniac, but there a few shows that drove me crazy.
+I'm not a film maniac, but there were a few shows that drove me crazy.
 I don't say these are my favourites, rather are those I would never refuse to watch over and over.
 
 ### Television
