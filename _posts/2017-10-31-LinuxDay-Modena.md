@@ -31,7 +31,7 @@ In particular, the advocacy one was deprecable.
 
 The first talk was by professor [Renzo Davoli](http://www.cs.unibo.it/~renzo/), a well known person in the italian open source community.
 His talk was about advocating Open Source, but *it was a real disaster and a mess of trivial old concepts about Open Source*.
-Despite the not-so-fun lemon presentation (not joking) and the pomodoro-field joke, there was no point in assisting such presentation, because it seemed to me the presentation itself did not have any real aim at all!
+Despite the not-so-fun lemon presentation (not joking) and the pomodoro-field joke, there was no point in attending such presentation, because it seemed to me the presentation itself did not have any real aim at all!
 
 Really, in 2017 do we still need to present Bill Gates, Steve Jobs and friend as *bad guys*?
 Do we still need to say that rich people is so rich because has stolen on Free Software?
@@ -48,4 +48,4 @@ The talk was more interesting than the previous two, since it reported some conc
 
 After that I had to leave, so I don't know how the day continued, but I know for sure people did a great job organizing labs.
 
-As a sidenote, I really still don't see the point in /Django girls/ and similar feminism activities: hacking is a culture, not a gender. If people continues to emphasize the need for de-genderizing it, we will remain dominated by a wrong gender culture.
+As a sidenote, I really still don't see the point in *Django girls* and similar feminism activities: **hacking is a culture, without a gender**. If people continues to emphasize the need for de-genderizing it, we will remain dominated by a wrong gender culture.
