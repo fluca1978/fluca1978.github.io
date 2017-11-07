@@ -1,69 +1,34 @@
 ---
 layout: post
-title:  "PostgreSQL & FreeBSD: using the rc(8) to configure another instance"
+title:  "Multicorn PostgreSQL FDW on FreeBSD"
 author: Luca Ferrari
 tags:
 - PostgreSQL
 - FreeBSD
 permalink: /:year/:month/:day/:title.html
 ---
-The rc(8) startup system is a clean and powerful way to manage services, but if you need to test a secondary PostgreSQL instance
-on a FreeBSD machine, having to deal with ~pg_ctl~ can become annoying. Here there is a simple and dirty trick to
-configure a secondary PostgreSQL service(8).
+Installing Multicorn Foreign Data Wrapper on FreeBSD is not always as easy as it seems...
 
-## PostgreSQL & FreeBSD: using the rc(8) to configure another instance
+## Multicorn PostgreSQL FDW on FreeBSD
 -----
-When dealing with multiple PostgreSQL instances on the same machine you often have a situation where one instance is a kind of *master*, i.e., it is managed by the `service(8)` facility, while the others need some extra care with command line and `pg_ctl`.
+I had to fight against [Multicorn](http://multicorn.org/) Foreign Data Wrappers because installing them on FreeBSD is not ideal.
+It is worth noting that the platform has not released a new stable version since February 2016, while the [commit logs](https://github.com/Kozea/Multicorn/commits/master) shows active development in order to be compatible with PostgreSQL 10.
 
-In this post I show how to quickly get a new service to handle a secondary instance of PostgreSQL via `service(8)` in a real transparent way.
+So what are problems installing Multicorn on FreeBSD? It is simple: **Multicorn has not been made for FreeBSD and therefore the toolchain is not portable**.
+In particular, in order to install it you have to:
+1. use `gmake` instead of `make`;
+2. change the she-bang line of `prefly-check.sh` which refers to *Bash*. Yes, really, *Bash*!
+   Therefore change the first line from `#!/bin/bash` to `#!/usr/local/bin/bash`;
+3. install package `python-distutils`, for instance `py27-python-distutils-extra-2.39`, which in turn installs `setuptools` that is required by `multicorn`.
 
-**WARNING: this a dirty way of doing things, and if you mess up with variables you risk to damage your main instance, so please test it
-carefully and be sure to understand script shells, variables, and `rc(8)`!**
+With the above, Multicorn can be installed, but there's another trick to be aware of: the [FDW Users' Guide](http://multicorn.org/foreign-data-wrappers/) reports to use in pretty much all the examples the `wrapper_multicorn` as FDW, but that is wrong.
+The correct FDW to use is `multicorn`, as can be seen by the code within [multicorn.sql](https://github.com/Kozea/Multicorn/blob/master/sql/multicorn.sql):
 
-In a *plain* installation, the main instance managed by `service(8)` is named, guess what, `postgresql`, so that in order to start (or restart or whatever) you can do the following:
-
-```shell
-% sudo service postgresql start
+```sql
+CREATE FOREIGN DATA WRAPPER multicorn
 ```
+So when you create a server with `CREATE SERVER` do use `multicorn` as `FOREIGN DATA WRAPPER`.
 
-Now, imagine the secondary instance you want to deal with will be named **`postgresql_replica`** (yes, underscores are admitted!).
-In order to be able to do the following:
-
-```shell
-% sudo service postgresql_replica start
-```
-
-you have to follow these steps:
-
-1. configure the `postgresql_replica` rc variabiles in `/etc/rc.conf`, something like the following could suffice:
-```shell
-postgresql_replica_enable="YES"
-postgresql_replica_data="/mnt/data3/pgdata"
-```
-**Be very careful about the data directory, that has not to be the same of the main instance!**
-
-2. **copy** the `/usr/local/etc/rc.d/postgresql` file into `/usr/local/etc/rc.d/postgresql_replica` one. Please note, do not link the two, hard copy the latter because it requires changes that are incompatible with the main instance.
-
-3. edit the `/usr/local/etc/rc.d/postgresql_replica` so that each variable is evaluated with the `postgresql_replica_*` rc variables.
-For instance:
-
-```shell
-command=/usr/local/bin/pg_ctl
-
-. /etc/rc.subr
-
-load_rc_config postgresql_replica
-
-postgresql_enable=${postgresql_replica_enable:-"NO"}
-postgresql_flags=${postgresql_replica_flags:-"-w -s -m fast"}
-postgresql_user=${postgresql_replica_user:-"postgres"}
-eval postgresql_data=${postgresql_replica_data:-"~${postgresql_user}/data96"}
-postgresql_class=${postgresql_replica_class:-"default"}
-postgresql_initdb_flags=${postgresql_replica_initdb_flags:-"--encoding=utf-8 --lc-collate=C"}
-
-name=postgresql_replica
-rcvar=postgresql_replica_enable
-extra_commands="reload initdb"
-```
-
-As you can see, all the righthand variables changed from `postgresql` to `postgresql_replica`, as well as the configuration loaded that is now the same name `postgresql_replica`. This does suffice to start the `postgresql_replica` service and do the other common stuff.
+With the above tricks I was able to run the file system FDW, as well as the Git one (which is pretty much un-documented).
+Unluckily, the GoogleFDW is both undocumented and not working, due to the [need for a Google API and Custom Search that I reported to the module author](https://github.com/Kozea/Multicorn/issues/199) after a little "debugging" (or kind of).
+I also asked to the ITPUG mailing list for someone proficient in Python for a Pull Request, maybe the ITPUG will be able to contribute!
