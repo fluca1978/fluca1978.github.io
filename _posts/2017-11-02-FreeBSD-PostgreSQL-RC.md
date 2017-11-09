@@ -17,7 +17,7 @@ It is worth noting that the platform has not released a new stable version since
 So what are problems installing Multicorn on FreeBSD? It is simple: **Multicorn has not been made for FreeBSD and therefore the toolchain is not portable**.
 In particular, in order to install it you have to:
 1. use `gmake` instead of `make`;
-2. change the she-bang line of `prefly-check.sh` which refers to *Bash*. Yes, really, *Bash*!
+2. change the she-bang line of `preflight-check.sh` which refers to *Bash*. Yes, really, *Bash*!
    Therefore change the first line from `#!/bin/bash` to `#!/usr/local/bin/bash`;
 3. install package `python-distutils`, for instance `py27-python-distutils-extra-2.39`, which in turn installs `setuptools` that is required by `multicorn`.
 
