@@ -89,6 +89,6 @@ And the positive credits for the above are that I started using **Sofia as my pr
 
 Olivia is not a *starred cat* of mine, rather I believe is the most important cat in my wife's life experience.
 
-Olivia gained home access xis months later than Sofia, and therefore it is the very second cat to my son. After an initial debate, Sofia and Olivia found an agreement on *house sharing* and today they appear as true sisters.
+Olivia gained home access six months later than Sofia, and therefore it is the very second cat to my son. After an initial debate, Sofia and Olivia found an agreement on *house sharing* and today they appear as true sisters.
 
 Olivia has some very interesting behavior, and threrefore I could not take her into account in my day-to-day activity. But even if really deserving photos, being a very beautiful cat, *my brain does have place for a-one cat at time*, therefore I gave credits to Olivia **naming my main computer system  after her**. 
