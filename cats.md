@@ -30,7 +30,7 @@ Duchessa was a real predator, eating any sort of tasty animal she was able to ca
 
 ![Duchessag](/images/main/duchessa.png)
 
-Credits for the above photo are to the **best photographer I ever met**, formerly known as **my father**, and has won several competitions. You have to understand it back when the digital photography was just a dream, and being able to shoot at great distance a moving animal was a real challenge.
+Credits for the above photo are to the **best photographer I ever met**, publicly known as **my father**, who  has won several competitions with such photo. You have to understand it was back when the digital photography was just a dream, and being able to shoot at great distance a moving animal was a real challenge.
 
 Duchessa died due to an accident when I was a middle-school student.
 
@@ -51,7 +51,7 @@ Anyway, the source tree and build system kept the original `BlackCat` name and I
 
 ## Carmensita (aka *Puccia*)
 
-Carmensita, also known as *Puccia*, was the sister of Puccio, a long fur black and white cat.
+Carmensita, also known as *Puccia*, was the sister of Puccio, a long-fur black-and-white cat.
 
 She totally replaced Puccio after he disappear, becoming my mate during the cold afternoons I spent studying and working for my PhD. I remember she coming to me from wherever she was just because I called her name, most likely an obedient and devote dog, than a cat.
 
@@ -61,22 +61,34 @@ My tribute to her was similar to the one I did for Puccio: when I left universit
 
 ![Puccia](/images/main/whitecat.png)
 
-So far, I can state that **BlackCat was a tribute to Puccio, being him black for the most**, while **Whitecat was a tribute for Puccia being her white for the most**.
+So far, I can state that **BlackCat was a tribute to Puccio, being him black for the most**, while **Whitecat was a tribute to Puccia being her white for the most**.
 
 
 ## Sofia
 
-It takes more than five years to make my brain accept the idea of interacting with other cats. I suspect that after a *generational cat* you commited almost for life, there was a kind of natural resistance.
+It takes more than five years to make my brain accept the idea of interacting with other cats.
+I suspect it was due to my previous commitment to a *generational cat* (Puccia), and so there I had some subconcious resistance in accepting new cats.
 
-Anyway, with the great experience with Duchessa, I decided (according to my great wife) that even our son needed a cat.
+
+Anyway, with the Duchessa experience in mind, I and my wife agreed in the need for our son to experience true contact with a cat.
 
 Entering Sofia.
-Sofia is the first **fully black** cat that ever lived with me.
+
+Sofia is the first **true black cat** in my life so far.
 Sofia is also the very first cat of my son.
 
-Maybe because this situation reminds me myself and Duchessa, maybe because Sofia appears to me as very elegant with her velvet black fur, or maybe because there's just a strong tie between us, she is a very important cat in my life.
+Maybe because this situation reminds me Duchessa, maybe because Sofia appears to me as very elegant with her velvet black fur, or maybe because there's just a strong tie between us, she is a very important cat in my life.
 
-And the positive credits for the above are that I started using **Sofia as my profile image for both my web site and account (mail, GitHub, and so on)**.
+And the positive credits for the above are that I started using **Sofia as my profile image for both my web site and account (mail, phone, GitHub, etc.)**.
 
 
 ![Sofia](/images/main/sofia.png)
+
+
+## Olivia
+
+Olivia is not a *starred cat* of mine, rather I believe is the most important cat in my wife's life experience.
+
+Olivia gained home access xis months later than Sofia, and therefore it is the very second cat to my son. After an initial debate, Sofia and Olivia found an agreement on *house sharing* and today they appear as true sisters.
+
+Olivia has some very interesting behavior, and threrefore I could not take her into account in my day-to-day activity. But even if really deserving photos, being a very beautiful cat, *my brain does have place for a-one cat at time*, therefore I gave credits to Olivia **naming my main computer system  after her**. 
