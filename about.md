@@ -24,6 +24,7 @@ Looking at me by different views:
 - [Me by Music](#music)
 - [Me by Television](#television)
 - [Me by Beliefs](#beliefs)
+- [Me by Cats](#cats)
 
 
 
@@ -324,6 +325,12 @@ I do believe in *humanity*, *honesty* and *personal values*.
 I do believe in *free culture*, in the sense that everyone should help each other to learn new things without secrets or speculation.
 
 I'm catholic, but not a blind believer.
+
+
+<a name="cats"></a>
+## Me by Cats
+
+Long story short: see the [cats page](/cats)!
 
 ## Contact me
 
