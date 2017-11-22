@@ -41,7 +41,7 @@ What about all the other projects that are using *more free* licences such as *B
 What about data ownership and the continuos data mining done by searching engines and e-commerce sites?
 If we *insist in presenting Open Source as a religious debate, we are going to catch nothing more than blindly believers*.
 
-Then there was a lightining talk about an enterpreneur presenting his own experience in collaborating with Microsoft. That was quite itneresting, expcet that I would have expected him to present some way of comparing the experience in the Open Source world (or with Open Source tools).
+Then there was a lightining talk about an enterpreneur presenting his own experience in collaborating with Microsoft. That was quite interesting, expcet that I would have expected him to present some way of comparing the experience in the Open Source world (or with Open Source tools).
 
 The last talk I attended was by [Italo Vignoli](http://www.italovignoli.com/), an important member (founder?) of the Libre Office project.
 The talk was more interesting than the previous two, since it reported some concrete problem in using non-open standards for documents and, mostnotably, reported some real number about the size (as lines and bytes) of the same document.
