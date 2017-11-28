@@ -114,23 +114,28 @@ button.button-primary:focus {
     *Header
 */
 
+/*
+ * Title bar for a post
+ */
 .intro-header {
     border-top: 5px solid white;
     // main color in the header bar
-  background-color:$mono-color;
-
+    background-color:$mono-color;
+//    background-color: $darkGray;
 }
 
+/*
+ * Subtitle in the post (not linkable part)
+ */
 .intro-header .post-heading {
   padding: 100px 0 50px;
   color: $white;
-
 }
 
 .intro-header .post-heading h1 {
     color:$white;
     font-size: 36px;
-    line-height: 1.5;
+   line-height: 1.5;
     font-family:$raleway ;
 }
 
