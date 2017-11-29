@@ -62,3 +62,6 @@ Later, when I can check the options the user has entered for this particular run
 
 As trivial as it can be, I use this approach quite often.
 **Of course this does not substitute a more complex and feature rich *logging* mechanism**, rather it proposes a quick idiom to handle message to a log (always) and the standard output (if verbosity mode is on).
+
+
+As a result of this post, I decided to try to manipulate the `IO::Tee` module to place an `add` method in order to allow for someone to add an handle after the object has been created. Please see the [Pull Request #2 here](https://github.com/neilb/IO-Tee/pull/2).
