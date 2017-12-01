@@ -100,9 +100,13 @@ invited chapter
 ## Online Journals
 
 - L. Ferrari,
+**Using PostgreSQL Foreign Data Wrappers to keep track of files**,
+`BSD Magazine`,
+Volume 11, n. 11, issue 11/2017(99)
+- L. Ferrari,
 **Reacting to Panic**,
 `BSD Magazine`,
-Volume 6 n.3 2013, issue 03/2013(44)
+Volume 6 n .3 2013, issue 03/2013(44)
 - L. Ferrari,
 **PostgreSQL: Users and Permissions Managements**,
 `BSD Magazine`,
