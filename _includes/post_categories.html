@@ -3,15 +3,22 @@
 {% if categories_counter >= 1 %}
 
 
-  <div class="categories">
-      Tags:
+<div class="categories">
+    Tags:
 
-      {% for cat in post.tags %}
-         {% if cat == post.tags[0] %}
-            <strong>{{ cat  }}</strong>
-         {% else %}
-            ,
-           {{ cat  }}
+    {% for cat in post.tags %}
+    {% if cat == post.tags[0] %}
+
+    <strong>
+        <a class="tag" href="/#{{ cat | slugify }}">
+            {{ cat  }}
+        </a>
+    </strong>
+    {% else %}
+    ,
+    <a class="tag" href="/#{{ cat | slugify }}">
+        {{ cat  }}
+    </a>
          {% endif %}
 
      {% endfor %}
