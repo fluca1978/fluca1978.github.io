@@ -17,6 +17,7 @@ Last saturday I spent a few hours attending the **[Italian C++ Day](http://www.i
 I have to say it was really a nice event, and most important, a very stimulating one.
 
 ![me attending the italian c++ day in modena](https://pbs.twimg.com/media/DQB8j90VwAEGL5A.jpg:large)
+![me attending the italian c++ day in modena bis](https://pbs.twimg.com/media/DQCQqxtVwAAQt2e.jpg)
 
 While it is surely true I don't develop any C++ code since a few years, and therefore I'm a little un-trained in reading such code, I really appreciated the contents and the speakers that seemed to me enough professional and clear for even a non-C++ coder to listen. The topics, despite the titles, were really interesting.
 
