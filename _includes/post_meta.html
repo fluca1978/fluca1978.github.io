@@ -1,0 +1,10 @@
+<div class="categories">
+
+    The article <strong> {{page.title}}</strong>
+    has been posted by <a href="{{ site.baseurl }}/about">
+        <strong>{{page.author}}</strong>
+    </a>
+    on {{ page.date | date: "%B %e, %Y" }}
+
+    {% include categories.html %}
+</div>

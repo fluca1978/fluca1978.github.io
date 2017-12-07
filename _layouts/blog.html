@@ -19,25 +19,20 @@
   <body>
 
       <div class="intro-header">
-          <div class="container">
-              {% include header_nav.html %}
-              <div class="post-heading">
-            <h1>{{page.title}}</h1>
-            <span class="meta">Posted by <a href="{{ site.baseurl }}/about"> <strong>{{page.author}}</strong>
-            </a> on {{ page.date | date: "%B %e, %Y" }}
-            <br/>
-            <a href="{{ site.baseurl }}/">
-                { Return to <strong>HOME</strong> }
-            </a>
-            </span>
-        </div>
+          <div class="wrapper-masthead">
+              <div class="container">
+                  {% include header_nav.html %}
 
+
+
+              </div>
+          </div>
       </div>
-    </div>
 
 
-    <div id="main" role="main" class="container">
-      {{ content }}
+
+      <div id="main" role="main" class="container">
+          {{ content }}
     </div>
 
     <div class="wrapper-footer">
