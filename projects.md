@@ -58,11 +58,13 @@ Where I was learning, where I was teaching.
 
 ## As a student
 
+ - **C++ Day 2017**, 2017, Modena
+ - **Linux Day**, 2008, 2012, 2017, Modena
  - **Devops Day**, 2014, Bologna
  - **Eclipse Day Florence**, 2012, Firenze
- - **QtDay**, Gennaio 2012, Firenze
+ - **QtDay**, 2012, Firenze
  - **Sicurezza nella applicazioni Web**, 2001
- - **Java Day**, 2010
+ - **Java Day**, 2010, Roma
  - **PHP, PostgreSQL e Smarty per la costruzione di applicazioni gestionali web**, 2008
  - **Adobe incontra il mondo della ceramica. Un utilizzo specifico per il settore ceramico**, 2006
  - **Il linguaggio C# e la filosofia .NET**, 2005, University of Modena and Reggio Emilia
