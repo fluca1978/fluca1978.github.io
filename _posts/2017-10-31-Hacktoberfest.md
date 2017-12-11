@@ -108,4 +108,4 @@ Therefore, so far, the situation is:
 11. [*sqitch italian translation*](https://github.com/theory/sqitch/pull/357) **merged and repo invitation!**
 12. [*rakudobrew minor changes*](https://github.com/tadzik/rakudobrew/pull/126) *waiting*
 13. and 14. [*Perl 6 documentation*](https://github.com/perl6/doc/pull/1594) and [*shame on me for Perl6 documentation!*](https://github.com/perl6/doc/pull/1601) **merged!**
-15. [*Perlbrew reverse sorting customization*](https://github.com/gugod/App-perlbrew/pull/575): *waiting*
+15. [*Perlbrew reverse sorting customization*](https://github.com/gugod/App-perlbrew/pull/575): *merged*
