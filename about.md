@@ -184,6 +184,8 @@ As of today, I've merged all the content of my previous blog into this one, so t
 different post formats made most of them hard to read, especially for code and indentation, so please be patient while reading
 old blog posts.
 
+I've written a [specific post about how much did I blog up to December 2017](/2017/12/12/HowManyBlogPosts.html).
+
 
 <a name="emacs"></a>
 ## Me by Emacs or Vi
