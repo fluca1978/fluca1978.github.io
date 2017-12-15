@@ -12,7 +12,7 @@ bibliography entry searching the web.
 
 
 
-## Journals
+# Journals
 - L. Ferrari,
  H. Zhu,
  **Autonomous Role Discovery for Collaborating Agents**,
@@ -74,7 +74,7 @@ bibliography entry searching the web.
  volume 54/1,
  pp.73-98
 
-## Book Chapters
+# Book Chapters
 - Luca Ferrari et al.,
  **Uncoupling Coordination: Tuple-based Models for Mobility**,
  chapter of the book `Mobile Middleware (CRC Press, London-UK)`,
@@ -92,12 +92,12 @@ bibliography entry searching the web.
  pp. 243-263,
  April 2004
 
-## Free Ebooks
+# Free Ebooks
 - L. Ferrari
 **[23 years of FreeDOS](http://www.freedos.org/ebook/)**,
 invited chapter
 
-## Online Journals
+# Online Journals
 
 - L. Ferrari,
 **Using PostgreSQL Foreign Data Wrappers to keep track of files**,
@@ -170,7 +170,7 @@ Volume 5, n.8, issue 08/2012(37) 1898-9144
  Volume 5 n. 1,
  issue 01/2012(30) 1898-9144
 
-## International Conference Proceedings
+# International Conference Proceedings
 ### 2011
 - L.Ferrari,
  H. Zhu,
@@ -320,7 +320,7 @@ Volume 5, n.8, issue 08/2012(37) 1898-9144
  Oxford,
  U.K.
 
-## National Conference Proceedings
+# National Conference Proceedings
 
 ### 2004
 - Luca Ferrari et al.,
