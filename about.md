@@ -26,7 +26,7 @@ Looking at me by different views:
 - [Me by Beliefs](#beliefs)
 - [Me by Cats](#cats)
 
-
+You could also be interested in my [Projects page](/projects.md) and **[Papers page](/papers.md)**.
 
 
 <a name="computer"></a>
