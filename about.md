@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: about me
 permalink: /about/
 ---
 
@@ -30,7 +30,7 @@ Looking at me by different views:
 
 
 <a name="computer"></a>
-# Me by **Computer Science**
+# Me by *Computer Science*
 
 
 I've always been fascinated by computers since the age of movies like *War Games*.
@@ -55,7 +55,7 @@ Of course this does not mean I will do and accept only Open Source jobs and task
 
 
 <a name="achievements"></a>
-# Me by **Achievements**
+# Me by *Achievements*
 
 
 There was a time when I thought achievements were really important.
@@ -87,7 +87,7 @@ In the archery world (when I was young):
 You could also be interested in the [papers page](/papers).
 
 <a name="skills"></a>
-# Me by **Skills**
+# Me by *Skills*
 
 
 Not a complete enumeration, but this is what I use on an almost regular basis:
@@ -138,7 +138,7 @@ Feel free to search for **`fluca1978`** on the forums, mailing lists, IRC channl
 
 
 <a name="username"></a>
-# Me by **Username**
+# Me by *Username*
 
 
 My public username is **`fluca1978`** and it has been for a while, allowing for you to scout the net searching for my very first steps.
@@ -158,7 +158,7 @@ Interestingly, I waited for my [archery career to stop before having a fully cus
 
 
 <a name="projects"></a>
-# Me by **Projects**
+# Me by *Projects*
 
 
 
@@ -170,7 +170,7 @@ For a detailed view on what I can consider *projects* see the [projects page](/p
 
 
 <a name="blog"></a>
-# Me by **Blog**
+# Me by *Blog*
 
 
 In this blog you will find random thoughts pretty much on computer science related topics.
@@ -188,7 +188,7 @@ I've written a [specific post about how much did I blog up to December 2017](/20
 
 
 <a name="emacs"></a>
-# Me by **Emacs or Vi**
+# Me by *Emacs or Vi*
 
 
 In the case you are interested in the *holy-war* of computer science, here it is my list of choices:
@@ -206,7 +206,7 @@ In the case you are interested in the *holy-war* of computer science, here it is
 
 
 <a name="social"></a>
-# Me by **Social Networks**
+# Me by *Social Networks*
 
 
 No way!
@@ -220,7 +220,7 @@ Please note that this also mean I don't do any effort to keep my social profiles
 
 
 <a name="ages"></a>
-# Me by **Ages**
+# Me by *Ages*
 
 
 I don't think I'm old, but I've seen and experienced a lot of things that are now pretty much ancient.
@@ -273,7 +273,7 @@ and *Fujifilm FP-14* passport camera;
 
 
 <a name="music"></a>
-# Me by **Music**
+# Me by *Music*
 
 What I run pretty much everyday on my music device player:
 
@@ -287,7 +287,7 @@ What I run pretty much everyday on my music device player:
 - *Puddle of Mudd*;
 
 <a name="television"></a>
-# Me by **Television**
+# Me by *Television*
 
 
 I'm not a film maniac, but there were a few shows that drove me crazy.
@@ -315,7 +315,7 @@ I don't say these are my favourites, rather are those I would never refuse to wa
 - *Trading Places*, known as "Una Poltrona per Due";
 
 <a name="beliefs"></a>
-# Me by **Beliefs**
+# Me by *Beliefs*
 
 
 I do believe in *Open Source*.
@@ -330,7 +330,7 @@ I'm catholic, but not a blind believer.
 
 
 <a name="cats"></a>
-# Me by **Cats**
+# Me by *Cats*
 
 Long story short: see the [cats page](/cats)!
 
