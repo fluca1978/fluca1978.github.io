@@ -45,7 +45,7 @@ The following is an excerpt summary year by year. As readers can see, there is n
 - in 2014 I have written 70  posts
 - in 2015 I have written 46  posts
 - in 2016 I have written 83  posts
-- in 2017 I have written 148 posts
+- in 2017 I have written 148+ posts (as of this same blog post, obviously)
 
 
 I've created a [simple and dirty Perl 5 script to produce some Gnuplot output year by year](https://github.com/fluca1978/fluca1978-coding-bits/blob/master/perl/jekyll_post_count.pl). In the following, you will see such graphical representations, but again please consider there is no particular trend (or at least none I'm aware of).
