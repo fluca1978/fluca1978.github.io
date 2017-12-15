@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My very first Perl 6 commit on *doc*"
+title:  "My very first Perl 6 commit on doc"
 author: Luca Ferrari
 tags:
 - perl6
