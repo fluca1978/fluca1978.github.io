@@ -34,7 +34,7 @@ Credits for the above photo are to the **best photographer I ever met**, publicl
 
 Duchessa died due to an accident when I was a middle-school student.
 
-**When I went public on the net with my first blog, I placed such photo on the top of the site to emphasize my feelings for Duchessa*.
+*When I went public on the net with my first blog, I placed such photo on the top of the site to emphasize my feelings for Duchessa*.
 
 
 ## Miguel (aka *Puccio*)
@@ -66,16 +66,16 @@ So far, I can state that **BlackCat was a tribute to Puccio, being him black for
 
 ## Sofia
 
-It takes more than five years to make my brain accept the idea of interacting with other cats.
-I suspect it was due to my previous commitment to a *generational cat* (Puccia), and so there I had some subconcious resistance in accepting new cats.
+It takes more than five years to make my brain accepting the idea of interacting with other cats.
+I suspect it was due to my previous commitment to a *generational cat* (Puccia), and so  I had some subconcious resistance in accepting new cats.
 
 
-Anyway, with the Duchessa experience in mind, I and my wife agreed in the need for our son to experience true contact with a cat.
+Anyway, with the Duchessa experience in mind, me and my wife agreed in the need for our son to experience true contact with a cat.
 
 Entering Sofia.
 
 Sofia is the first **true black cat** in my life so far.
-Sofia is also the very first cat of my son.
+**Sofia is also the _very first cat_ of my son**.
 
 Maybe because this situation reminds me Duchessa, maybe because Sofia appears to me as very elegant with her velvet black fur, or maybe because there's just a strong tie between us, she is a very important cat in my life.
 
@@ -89,6 +89,6 @@ And the positive credits for the above are that I started using **Sofia as my pr
 
 Olivia is not a *starred cat* of mine, rather I believe is the most important cat in my wife's life experience.
 
-Olivia gained home access six months later than Sofia, and therefore it is the very second cat to my son. After an initial debate, Sofia and Olivia found an agreement on *house sharing* and today they appear as true sisters.
+Olivia gained home access six months later than Sofia, and therefore it is the very second cat to my son. After an initial debate, Sofia and Olivia found an agreement on *house sharing* and today they appear much more as true sisters rather than roomates.
 
-Olivia has some very interesting behavior, and threrefore I could not take her into account in my day-to-day activity. But even if really deserving photos, being a very beautiful cat, *my brain does have place for a-one cat at time*, therefore I gave credits to Olivia **naming my main computer system  after her**. 
+Olivia has some very interesting behavior, and threrefore I could not avoid taking her into account in my day-to-day activity. But even if really deserving photos, being a very beautiful cat, *my brain does have place for a-one cat at time*, therefore I gave credits to Olivia **naming my main computer system  after her**.
