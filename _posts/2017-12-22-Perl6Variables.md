@@ -49,7 +49,7 @@ that produces again a different output for the `@src` and `@dst` lists:
       [1 2 3 4 5 6 7 8 9 10 90 91 92]
 
 Of course, Perl 6 does allow to make two different variables pointing to the very same object, and that is called **binding**.
-The operator is `[:=](https://docs.perl6.org/language/operators#index-entry-Binding_operator)` and it is important to note that **it is a compile time operator**.
+The operator is `:=` [and is documented here](https://docs.perl6.org/language/operators#index-entry-Binding_operator) and it is important to note that **it is a compile time operator**.
 Let's see that in action:
 
 ```perl
