@@ -11,8 +11,7 @@ permalink: /:year/:month/:day/:title.html
 ---
 Another small contribution to the Open Source world!
 
-## Hacktoberfest 2017
------
+# Hacktoberfest 2017
 
 This is the second year I take place in the **[Hacktoberfest](https://hacktoberfest.digitalocean.com/)**, and I'm really proud to what I've done without any regard to the fact that my Pull Requests have been accepted or not.
 
@@ -21,7 +20,7 @@ Well, it is a contest that takes place during the month of October and involves 
 the **will to contribute to Open Source**. The idea is simple: place at least four Pull Request on [github](https://github.com)
 before October ends and you're done!
 
-[Last year](https://fluca1978.github.io/hacktoberfest/) I was a tiny and scared developer, well I've already performed a few CPAN-PR
+[Last year](https://fluca1978.github.io/#hacktoberfest/) I was a tiny and scared developer, well I've already performed a few CPAN-PR
 but I was not able to contribute really aggressively to other people's projects. Anyway, [I did 9 PRs and got the shrew](https://fluca1978.github.io/hacktoberfest-shrew/).
 
 This year I decided to work more intensively to help projects I care and I like.
