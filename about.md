@@ -25,6 +25,7 @@ Looking at me by different views:
 - [Me by Television](#television)
 - [Me by Beliefs](#beliefs)
 - [Me by Cats](#cats)
+- [Me by University](#university)
 
 You could also be interested in my [Projects page](/projects.md) and **[Papers page](/papers.md)**.
 
@@ -333,6 +334,14 @@ I'm catholic, but not a blind believer.
 # Me by *Cats*
 
 Long story short: see the [cats page](/cats)!
+
+<a name="university"></a>
+# Me by *University*
+
+Uhm, it's a long story, may be one day I'll write it down.
+However, I did attend the University of Modena and Reggio Emilia from *1997 to 2002 as a student* (yes, I was one of the first students using the "new" engineering department), from *2002 to 2006 as a PhD student and lecturer*.
+If you have been around in those years, chances are we have met.
+
 
 # Contact me
 
