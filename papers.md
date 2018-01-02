@@ -100,6 +100,10 @@ invited chapter
 # Online Journals
 
 - L. Ferrari,
+**Page Checksum protecion in PostgreSQL**,
+`BSD Magazine`,
+Volume 11, n. 12, issue 12/2017(100)
+- L. Ferrari,
 **Using PostgreSQL Foreign Data Wrappers to keep track of files**,
 `BSD Magazine`,
 Volume 11, n. 11, issue 11/2017(99)
