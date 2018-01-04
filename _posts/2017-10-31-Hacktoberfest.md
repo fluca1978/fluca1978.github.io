@@ -7,6 +7,7 @@ tags:
 - Open Source
 - Perl
 - Sqitch
+- perlsphere
 permalink: /:year/:month/:day/:title.html
 ---
 Another small contribution to the Open Source world!
