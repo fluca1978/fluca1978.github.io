@@ -5,6 +5,7 @@ author: Luca Ferrari
 tags:
 - Hacktoberfest
 - Open Source
+- perlsphere
 permalink: /:year/:month/:day/:title.html
 ---
 Just before Christmas I got my shrew!
