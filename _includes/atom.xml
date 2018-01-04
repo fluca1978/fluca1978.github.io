@@ -1,6 +1,6 @@
   <!-- category: {{ include.cat }}  -->
   {% for post in site.posts %}
-  {% if post.tags contains include.cat %}
+  {% if post.tags contains include.tag %}
   <entry>
         <title>{{ post.title }}</title>
         <link href="{{ site.production_url }}{{ post.url }}"/>

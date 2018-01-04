@@ -3,5 +3,5 @@ layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    {% include atom.xml cat='planet-postgresql-org' %}
+    {% include atom.xml tag = 'planet-postgresql-org' %}
 </feed>
