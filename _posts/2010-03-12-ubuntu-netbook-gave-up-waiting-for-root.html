@@ -8,6 +8,12 @@ tags:
 modified_time: '2010-03-12T08:53:56.332+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-6371180284352912928
 blogger_orig_url: http://fluca1978.blogspot.com/2010/03/ubuntu-netbook-gave-up-waiting-for-root.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Qualche giorno fa ho avuto una amara sorpresa accendendo il mio netbook con Ubuntu 9.1: il sistema risultava inchiodato, schermo nero, nessun messaggio, nessun errore. Ho deciso quindi di editare la stanza di grub in questione rimuovendo il flag <i>quiet</i> per vedere cosa il computer stesse facendo durante il boot, e alla fine mi sono trovato lanciato in una shell <i>busybox</i> perché il sistema non riusciva a trovare la root. Ebbene la soluzione a questo problema mi è venuta in mente osservando questo <a href="https://bugs.launchpad.net/ubuntu/+source/linux/+bug/290153">bug</a>: in sostanza ho rimosso dalla stanza di grub la linea con <i>search</i>, ho rimosso l'uuid del disco root e l'ho sostituito con la partizione su cui risiedeva la root (per me <i>/dev/sda1</i>) e ho aggiunto il parametro <i>rootdelay=90</i>. Questa volta il boot ha funzionato, dopodiché ho provveduto a fare un upgrade del sistema e il problema si è rimosso completamente.</div>

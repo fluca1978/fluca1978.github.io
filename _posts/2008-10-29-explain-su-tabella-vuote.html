@@ -8,6 +8,12 @@ tags:
 modified_time: '2008-10-29T17:30:29.460+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-299327066423692080
 blogger_orig_url: http://fluca1978.blogspot.com/2008/10/explain-su-tabella-vuote.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Mi sono accorto per caso, preparando le slide del LinuxDay 2008, che l'EXPLAIN di PostgreSQL si comporta in modo strano quando la tabella è vuota.<br />Ad esempio:<br /><br /><pre># create table test(id serial, descrizione character varying(20));<br /><br /># explain  select * from test;<br />                      QUERY PLAN<br />--------------------------------------------------------<br />Seq Scan on test  (cost=0.00..18.80 rows=880 width=62)<br /><br /># analyze verbose test;<br />INFO: analyzing "public.test"<br />INFO: "test": scanned 0 of 0 pages, containing 0 live rows and 0 dead rows; 0<br />rows in sample, 0 estimated total rows<br />ANALYZE<br /><br /># explain select * from test;<br />                  QUERY PLAN<br />--------------------------------------------------------<br />Seq Scan on test ?(cost=0.00..18.80 rows=880 width=62)<br />(1 row)<br /><br /># select count(*) from test;<br />count<br />-------<br /> 0<br />(1 row)<br /></pre><br />quindi la tabella è vuota, e anche se ci si esegue un ANALYZE su di essa, l'ottimizzatore continua a sostenere che 880 righe possono essere ottenute da essa. Mi sono poi accorto che nel caso di tabella vuota non viene inserita nessuna statistica in <span style="font-style: italic;">pg_stats</span>, e quindi l'ottimizzatore non ha modo di capire che la tabella sia vuota (o meglio potrebbe capirlo solo dal fatto che non esiste una statistica in <span style="font-style: italic;">pg_stats</span>, ma questo può anche ricondurre ad un caso di tabella non analizzata). L'ottimizzatore tenta quindi di fare una stima delle tuple che potrebbe essere contenute nella tabella, dipendentemente dalla dimensione della pagina dati e dalla dimensione della tupla stessa.

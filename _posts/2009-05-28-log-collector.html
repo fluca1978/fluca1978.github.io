@@ -8,6 +8,12 @@ tags:
 modified_time: '2009-05-28T12:57:05.739+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3418375256116651015
 blogger_orig_url: http://fluca1978.blogspot.com/2009/05/log-collector.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 PostgreSQL permettere di effettuare il log delle attività del database principalmente in due modi: il primo è tramite il classico <span style="font-style: italic;">syslog</span>, il secondo è tramite un <span style="font-style: italic;">log collector</span>. Quest'ultimo è un processo specializzato con il quale tutti i backend comunicano, e il cui unico scopo è quello di inserire su log le informazioni ricevute. L'uso del log collector consente di avere un log molto piu' pulito e completo rispetto a quello ottenuto con syslog, anche perché il primo puo' facilmente loggare informazioni circa il mancato caricamento di un modulo (ad esempio di linguaggio) o altro.<br />Il log collector viene abilitato agendo sul parametro di configurazione di postgresql.conf:<br /><br /><div style="text-align: center; font-style: italic;">logging_collector = on<br /></div><div style="text-align: center;">(richiede il riavvio del cluster)<br /><br /></div>Da questo momento il log collector è attivo e inizierà a memorizzare i log secondo le impostazioni fornite nel file postgresql.conf. E' possibile notare la differenza nel run-time nel caso di abilitazione o meno del log collector: con il log collector attivo la lista dei processi postgresql aumenta di una unità (il collector appunto).<br />Qualora poi le informazioni diventino troppe, o si voglia forzare una rotazione dei file di log, è possibile da un terminare invocare la funzione <span style="font-style: italic;">pg_rotate_logfile()</span>:<br /><span style="font-style: italic;"><br /></span><div style="text-align: center;"><span style="font-style: italic;">select pg_rotate_logfile();</span><br /><span style="font-style: italic;"></span></div><span style="font-style: italic;"><br /></span>e ottenere la creazione di un nuovo file di log.<span style="font-style: italic;"><br /></span>

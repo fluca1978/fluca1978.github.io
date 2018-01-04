@@ -10,6 +10,12 @@ modified_time: '2017-01-29T10:13:03.538+01:00'
 thumbnail: https://2.bp.blogspot.com/-EKuHgSVXowI/WIry-HeqkrI/AAAAAAAAEwo/1Ipgya4ehkEnGVTGZagIZwOAcm_53oicQCLcB/s72-c/Untitled.png
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7289112778286689025
 blogger_orig_url: http://fluca1978.blogspot.com/2017/01/prompt-con-orario.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Io non uso mai dei prompt shell multi-riga, li trovo scomodi dal punto di vista visivo.<br />Inoltre non ho mai utilizzato il "tempo" (ora, minuti, secondi) nel prompt stesso. Ultimante ho cambiato idea su quest'ultimo punto: anche se apparentemente inutile può risultare conveniente avere un "timestamp" di quanto è stato eseguito un comando in una data shell.<br />Questo permette ad esempio di sapere quando si è fatta l'ultima sincronizzazione remota con rsync, oppure di sapere indicativamente quanto è durato un comando lanciato prima di andare a prendere un caffé...<br /><br />Nella mi configurazione di zshell ho i seguenti due prompt:<br /><br /><br /><i><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">PROMPT="%{$fg_bold[yellow]%}[%{$reset_color%}%{$fg_bold[blue]%}%n%{$reset_color%}%{$fg[yellow]%}@%{$reset_color%}%{$fg_bold[white]%}%m%{$reset_color%} %{$fg_bold[green]%}%*%{$reset_color%}%{$fg_bold[yellow]%}]%{$reset_color%}%{$fg_bold[red]%}%%%{$reset_color%} "<br />&nbsp;</span></i><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-EKuHgSVXowI/WIry-HeqkrI/AAAAAAAAEwo/1Ipgya4ehkEnGVTGZagIZwOAcm_53oicQCLcB/s1600/Untitled.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="32" src="https://2.bp.blogspot.com/-EKuHgSVXowI/WIry-HeqkrI/AAAAAAAAEwo/1Ipgya4ehkEnGVTGZagIZwOAcm_53oicQCLcB/s640/Untitled.png" width="640" /></a></div><i><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">RPROMPT="%{$reset_color%}%{$fg_bold[magenta]%}%~%{$reset_color%}"</span></i><br /><br /><br />A sinistra viene visualizzato lo username, l'hostname e l'orario, oltre al prompt "%"; a destra viene riportata la directory locale (CWD).<br />Questo permette di tenere il prompt a sinistra sempre costante e allineato, mentre la cartella di lavoro viene sempre visualizzata in fondo alla riga corrente.<br />

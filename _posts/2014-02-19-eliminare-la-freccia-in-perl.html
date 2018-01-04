@@ -8,6 +8,12 @@ tags:
 modified_time: '2014-02-19T19:00:02.200+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1054858255684096014
 blogger_orig_url: http://fluca1978.blogspot.com/2014/02/eliminare-la-freccia-in-perl.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Perl utilizza l'operatore '-&gt;' (freccia) per la dereferenziazione esplicita dei riferimenti.</div><div style="text-align: justify;">Spesso accade che i neofiti di Perl restino confusi da quando l'operatore '-&gt;' puo' essere rimosso dalle espressioni. Si consideri il seguente esempio:</div><br />my $array_ref = [ [ qw(a b c)], [qw(1 2 3)] ];<br /><br />say "The first cells are " . $array_ref-&gt;[0]-&gt;[0] . " and " . $array_ref-&gt;[1][0];<br /><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Non vi e' alcuna ragione per usare la doppia freccia, come riportato&nbsp; nell'ultimo accesso al primo elemento del secondo array.</div><div style="text-align: justify;">Ma perche'?</div><div style="text-align: justify;">In Perl non e' possibile definire array di array, o piu' in generale, strutture dati complesse senza passare attraverso i riferimenti. Ne consegue che dopo la prima '-&gt;', che dereferenzia un riferimento, se ci si trova una espressione di indicizzazione Perl sa che deve trattarla come una ulteriore dereferenziazione.</div><div style="text-align: justify;">Quando Perl trova $array_ref-&gt;[1] sa che deve trattarla come una dereferenziazione (operatore '-&gt;') seguita dall'accesso ad un array; se le cose si fermano qui tutto bene, ma se si aggiunge un altro accesso ad array (o hash) Perl sa per certo che questo e' possibile solo tramite riferimento, e quindi la dereferenziazione e' implicita.</div>

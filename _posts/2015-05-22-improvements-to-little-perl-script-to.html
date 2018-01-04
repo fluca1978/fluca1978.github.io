@@ -8,6 +8,12 @@ tags:
 modified_time: '2015-05-22T22:27:53.176+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5292846273716344235
 blogger_orig_url: http://fluca1978.blogspot.com/2015/05/improvements-to-little-perl-script-to.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">I made a few changes to my little Perl script that finds duplicated files on a set of directories.</div><div style="text-align: justify;">I always wanted to use File::Find::Rule, and this has been an appropriate context for plugging the module in so that the code now looks as follows:</div><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">die "\nPlease specify one or more directories\n" unless ( @ARGV );</span></span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;"><br /></span></span> <span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">my $files = {};</span></span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">File::Find::Rule-&gt;file()</span></span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">-&gt;nonempty()</span></span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">-&gt;exec( sub{ push @{ $files-&gt;{ digest_file( $_[2], "SHA-1" ) } }, $_[2]; } )</span></span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">-&gt;in( @ARGV );</span></span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;"><br /></span></span> <span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">while ( my ($sha1, $files) = each %$files ){</span></span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">say "\n\n#Duplicated files: \n\t#rm " . join( "\n\t#rm ", @$files ) if ( @$files &gt;= 1 );</span></span><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">}</span></span><br /><br /><div style="text-align: justify;">As you can see I've also removed a few tests for the arguments, since I rely on the in() method to check that every entry in @ARGV is a directory.</div>

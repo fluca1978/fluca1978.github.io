@@ -8,6 +8,12 @@ tags:
 modified_time: '2008-04-09T12:10:39.671+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-468982689449944159
 blogger_orig_url: http://fluca1978.blogspot.com/2008/04/samba-connection-denied-due-to-security.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Se il server Samba ha un livello di sicurezza ad utente (<span style="font-style: italic;">security = user</span>) e si sta cercando di impostare una share pubblica (<span style="font-style: italic;">guest ok = yes</span>), l'errore in oggetto può verificarsi se l'utente con il quale si accede (guest) ha dei problemi sul server. Occorre verificare le seguenti cose:<br /><ul><li>verificare che nel file <span style="font-style: italic;">smb.conf</span> siano attive le opzioni</li></ul><div style="text-align: center;"><span style="font-style: italic;">map to guest = Bad User</span><br /><span style="font-style: italic;">guest account = guest.samba</span><br /><br /><div style="text-align: right;">(essendo <span style="font-style: italic;">guest.samba</span> l'utente scelto come guest per le connessioni SMB anonime, solitamente tale utente è <span style="font-style: italic;">guest</span>)<br /><div style="text-align: left;"><ul><li>aggiungere l'utente <span style="font-style: italic;">guest</span> (anche se quello inserito come <span style="font-style: italic;">guest account</span> ha uno username differente) alla lista di utenti Samba, mettendolo senza password:</li></ul><div style="text-align: center;"><span style="font-style: italic;">smbpasswd -n -a guest<br /><br /></span><div style="text-align: left;">A questo punto la connessione al server Samba in forma anonima dovrebbe essere possibile.<br /><span style="font-style: italic;"></span></div></div></div></div></div>

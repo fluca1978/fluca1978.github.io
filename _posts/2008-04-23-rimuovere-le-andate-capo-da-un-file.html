@@ -9,6 +9,12 @@ modified_time: '2008-12-12T08:24:37.694+01:00'
 thumbnail: http://3.bp.blogspot.com/_yhEX77VFKnM/SA7cLR-x4GI/AAAAAAAAAHU/Dv-3KHGc0dY/s72-c/postgresql1.png
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-6079663186660728345
 blogger_orig_url: http://fluca1978.blogspot.com/2008/04/rimuovere-le-andate-capo-da-un-file.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 A volte capita che un file excel contenga delle celle magari importate da altri software con dei caratteri di andata a capo ('\n' o peggio ancora '\r\n'). Rimuoverli è spesso molto complesso, e la loro permanenza potrebbe pregiudicare l'utilizzo delle celle come input per importazioni di dati (ad esempio tramite file CSV). Fortunatamente OpenOffice consente di risolvere il problema eliminando i caratteri di andata a capo mediante una sostituzione di espressione regolare.<br /><br />E' necessario aprire il file in OpenOffice, selezionare dal menù <span style="font-style: italic;">Edit</span> la voce <span style="font-style: italic;">Find and Replace</span> e dalla finestra di dialogo che si apre abilitare il match su espressioni regolari avendo cura di sostituire '\n' con '\n' stesso. In questo modo OpenOffice sostituisce le andate a capo <span style="font-style: italic;">nascoste</span> rimuovendole. Successivamente è possibile fare la stessa cosa per gli altri tipi di caratteri che si vogliono eliminare.<br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_yhEX77VFKnM/SA7cLR-x4GI/AAAAAAAAAHU/Dv-3KHGc0dY/s1600-h/postgresql1.png"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://3.bp.blogspot.com/_yhEX77VFKnM/SA7cLR-x4GI/AAAAAAAAAHU/Dv-3KHGc0dY/s320/postgresql1.png" alt="" id="BLOGGER_PHOTO_ID_5192329506768150626" border="0" /></a>

@@ -9,6 +9,12 @@ tags:
 modified_time: '2013-09-03T22:51:00.258+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3871011727764148707
 blogger_orig_url: http://fluca1978.blogspot.com/2013/09/etags-su-progetti-grandi.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Solitamente uso <i>etags</i> unito ad Emacs per sfogliare il codice sorgente di progetti anche di grosse dimensioni. Tuttavia indicizzando la code base di <i>FreeBSD</i> mi sono trovato degli strani errori di riferimento: di fatto Emacs saltava nel punto sbagliato portandomi da un tag all'altro apparentemente senza senso.</div><div style="text-align: justify;">Ho poi scoperto, grazie all'aiuto sulla mailing list Emacs, che sbagliavo l'invocazione della generazione dei tag:</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">cd /usr/src &amp;&amp; find . -name '*.[ch]' -print0 | xargs -0 etags</span></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">questo comando sfrutta la capacità di <i>xargs</i> di lanciare piu' job in parallelo, e quindi ci si trovava ad avere dei processi <i>etags</i> concorrenti fra loro che sovrascrivevano le modifiche in modo conflittuale.</div><div style="text-align: justify;">Siccome <i>etags</i> consente di leggere direttamente da standard input i file da indicizzare, il seguente comando risulta piu' lungo ma accurato nei risultati:</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">cd /usr/src &amp;&amp; find . -name '*.[ch]' | etags - </span></div>

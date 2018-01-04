@@ -9,6 +9,12 @@ tags:
 modified_time: '2010-06-11T23:30:10.865+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2845123130021436203
 blogger_orig_url: http://fluca1978.blogspot.com/2010/06/pfsense-e-migrazione-dhcp.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">pfSense è un'ottima distribuzione firewall, ma che anziché basarsi sui file di configurazione classici dei demoni e dei servizi, salva la propria configurazione in un file XML che viene letto e interpretato dalla interfaccia PHP/Web e che viene poi tradotta nei file di configurazione di ogni servizio.&nbsp;</div><div style="text-align: justify;">Se da un lato questo è utile, dall'altro la migrazione da una piattaforma diversa da pfSense ad una pfSense richiede un editing manuale della configurazione o la conversione dei file di configurazione in un formato XML-compatibile. Io ho creato un piccolo e semplice script Perl che consente di migrare le porzioni di mapping statico ARP-IP di un file dhcpd.conf nel formato XML. <a href="http://forum.pfsense.org/index.php/topic,25610.0.html">Lo script è pubblico e disponibile direttamente nel forum di pfSense.</a></div>

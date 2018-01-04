@@ -9,6 +9,12 @@ tags:
 modified_time: '2011-01-13T22:07:41.586+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3775309943370115463
 blogger_orig_url: http://fluca1978.blogspot.com/2011/01/eclipse-equinox-specificare-quale-jvm.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">La configurazione di Eclipse/OSGi avviene tramite un file di proprieta' di avvio, solitamente denominato eclipse.ini (da notare l'orrendo retaggio .ini tipico della configurazione Microsoft Windows!) che contiene una lista di proprieta' lette dal launcher nativo OSGi /Equinoxusato dalla piattaforma Eclipse stessa. <br />Una opzione molto importante per l'avvio di Eclipse (IDE) e' la virtual machine da utilizzare per eseguire l'IDE stesso. Sembra banale, ma nell'epoca degli aggiornamenti software automatici, e' molto facile perdere il controllo su quale JVM/JDK viene usata per eseguire diverse applicazioni, specialmente se si considera che Eclipse non tiene conto di variabili di ambiente (es. la classica JAVA_HOME). Specificare la JVM da usare per l'avvio di Eclipse (IDE) e' molto semplice: si deve inserire una riga con l'opzione -vm e sulla riga seguente il path completo all'eseguibile java da usare, come ad esempio:<br /><span style="font-size: x-small;"><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">-vm </span><br style="font-family: &quot;Courier New&quot;,Courier,monospace;" /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">/sviluppo/java/jdk1.6.0_23/bin/java</span></span><br /><br />Da notare che questa opzione deve essere specificata prima della riga -vmargs, poiche' tutte le righe che seguono l'opzione -vmargs verranno trattate come parametri da passare alla virtual machine stessa. E' anche possibile specificare l'opzione su riga di comando, nel qual caso occorre inserire il path dell'eseguibile fra apici doppi.</div>

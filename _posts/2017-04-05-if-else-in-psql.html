@@ -8,6 +8,12 @@ tags:
 modified_time: '2017-04-05T21:17:13.220+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3040332291515831905
 blogger_orig_url: http://fluca1978.blogspot.com/2017/04/if-else-in-psql.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;"><a href="https://www.depesz.com/2017/04/03/waiting-for-postgresql-10-support-if-elif-else-endif-in-psql-scripting/">Un articolo interessante</a> che punta ad un commit di Tom Lane (e altri) per l'introduzione in <code>psql</code> di un costrutto if-else, ovvero <code>\if</code>, <code>\elif</code>, <code>\else</code>.</div><div style="text-align: justify;">Mi torna subito alla mente Larry Wall in Programming Perl: soltanto un Algol-er potrebbe usare una parola chiave che è <i>file</i> scritto al contrario.</div><div style="text-align: justify;">Ad ogni modo la modifica, che verrà introdotta con PostgreSQL 10, permette l'uso di costrutti condizionali basilari in <code>psql</code>. Si presti attenzione</div><div style="text-align: justify;">che questi non sostituiscono i costrutti condizionali di <code>plpgsql</code>, ma si inseriscono direttamente nell'interprete SQL base fornito a corredo di</div><div style="text-align: justify;">praticamente ogni installazione.</div><div style="text-align: justify;">Sarà quindi possibile realizzare script automatici piu' complessi da dare in pasto al nostro fidato amico <code>psql</code>.</div>

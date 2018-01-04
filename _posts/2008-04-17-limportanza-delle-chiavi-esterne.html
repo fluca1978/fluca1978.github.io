@@ -9,6 +9,12 @@ tags:
 modified_time: '2008-04-17T17:32:20.515+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8781732072536210188
 blogger_orig_url: http://fluca1978.blogspot.com/2008/04/limportanza-delle-chiavi-esterne.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Mi sono trovato a lavorare su un database PostgreSQL progettato da altre persone, e purtroppo ho notato come questo non implementava nessun meccanismo di foreign key. Ovviamente questo non è per via di PostgreSQL, che anzi supporta in modo eccellente i vincoli di integrità referenziali.<br /><br />Perché è importante implementare i vincoli di integrità referenziale? Diciamo che in linea di massima, se la propria applicazione (PHP, Java, C, ...) implementa bene la logica di gestione dei dati, allora le foreign key non sono strettamente necessarie. Almeno a prima vista. Ebbene si, perché non bisogna scordarsi che un RDBMS è un sistema a se stante, un motore per la gestione dei dati che può essere interrogato e usato anche senza un applicativo (o addirittura da applicativi differenti). Ecco allora che se si accede alla base di dati tramite l'interfaccia del proprio RDBMS, o tramite un applicativo implementato <span style="font-style: italic;">male</span>, si rischia di incappare in incoerenza dei dati, cancellazioni sbagliate e distruzione dei dati stessi.<br /><br />Le foreign key, come pure i vincoli di tipo <span style="font-style: italic;">check</span> e altri simili, sono importantissimi perché consentono di mantenere la base di dati coerente indipendentemente dal modo in cui i dati stessi sono acceduti. Un RDBMS è uno strumento potentissimo in questo, le sue caratteristiche devono essere sfruttate a pieno, specialmente su sistemi di produzione.

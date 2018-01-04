@@ -8,6 +8,12 @@ tags:
 modified_time: '2014-01-02T20:47:00.298+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7989141678647704960
 blogger_orig_url: http://fluca1978.blogspot.com/2014/01/raid-redundant-array-of-idiots.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">RAID, ovvero <a href="http://en.wikipedia.org/wiki/RAID#RAID_6">Redundant Array of Inexpensive Disks</a>.</div><div style="text-align: justify;">Una sigla che tempo fa solo i sysadmin di alto livello conoscevano, e ora un acronimo che si trova sulla confezione di parecchie motherboard di fascia commodity.</div><div style="text-align: justify;">Ne ho configurati tanti di sistemi RAID, sempre a livello enterprise. I primi software, perché l'I(nexpensive) è troppo spesso sinonimo di <i>gratis</i>. Poi sono arrivati i controller hardware, tanto costosi quanto veloci e affidabili. Sia chiaro, non mi sono mai pentito di un RAID software e, complice la fortuna, non ho mai avuto dei problemi che un <i>softraid</i> (ora <i>md</i>) o un <i>GEOM </i>non sia stato in grado di risolvere. E se oggi dovessi fare un RAID nuovo valuterei il software come primo investimento.</div><div style="text-align: justify;">Ma questo post non è relativo a ciò che io penso del RAID, quanto alla esperienza accumulata vedendo sysadmins configurare RAID in modo piuttosto sconclusionato.</div><div style="text-align: justify;">Pazienza fare il RAID fra dischi di taglio differente, dopotutto con un po' di lavoro su MBR ci si riesce ancora. Ma usare dischi di velocità differenti è veramente da virtuosi!&nbsp;</div><div style="text-align: justify;">Per non parlare di quando si tenta di fare un RAID con il numero sbagliato di dischi, o con troppi dischi di spare (comprare 8 dischi per fare un RAID con due dischi di spare, ad esempio). O di quando si pensa che un RAID 5 sia robusto quanto un RAID 6 e, per pura assunzione matematica, un RAID 10 è il top perché è semplicemente quello con il numero piu' alto...</div><div style="text-align: justify;">E per finire: configurare una serie di dischi in un modo RAID per poi trovarsi con molto meno spazio di quello stimato. E pensare pure di aver fatto le cose giuste senza rendersi conto che si è solo sbagliato livello di RAID.</div><br />

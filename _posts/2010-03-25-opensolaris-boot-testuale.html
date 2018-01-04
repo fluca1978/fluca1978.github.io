@@ -8,6 +8,12 @@ tags:
 modified_time: '2010-03-25T18:40:00.195+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4026052822882168942
 blogger_orig_url: http://fluca1978.blogspot.com/2010/03/opensolaris-boot-testuale.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">In certi casi puo' essere necessario osservare cosa il sistema sta facendo al boot, e per questo occorre intervenire sulla configurazione di Grub di OpenSolaris. Le cose da fare sono le seguenti:</div><ol style="text-align: justify;"><li>entrare nella modalità editing di Grub (e) o editare il file di avvio;</li><li>rimuovere la linea con <i>splashimage</i></li><li>rimuovere la linea con <i>foreground</i></li><li>rimuovere la linea con <i>background</i></li><li>posizionarsi sulla linea che contiene la dicitura <i>kernel</i> e cambiare l'ultimo argomento <i>console</i> settandone il valore da <i>graphic</i> a <i>text</i></li><li>effettuare il boot (b)<i> </i></li></ol>

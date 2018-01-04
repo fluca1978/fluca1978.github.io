@@ -8,6 +8,12 @@ tags:
 modified_time: '2008-07-04T15:08:54.251+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8289109770453267533
 blogger_orig_url: http://fluca1978.blogspot.com/2008/07/squidguard-creare-una-lista-di.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Se si utilizza <span style="font-style: italic;">squidGuard</span> come redirector per <span style="font-style: italic;">squid</span>, è possibile inserire una serie di domini e siti da bloccare (ridirezionare). Questo può risultare utile ad esempio per impedire sprechi di banda verso siti che offrono contenuti multimediali.<br />I passi da seguire sono semplici:<br /><ol><li>entrare nella cartella <span style="font-style: italic;">/var/lib/squidguard/db/blacklists</span> (o dove risiedono i file di blacklist), creare una cartella (ad esempio <span style="font-style: italic;">generic</span>) e entrare in tale directory;</li><li>creare un file di testo dal nome <span style="font-style: italic;">domains</span> e al suo interno inserire, uno per riga, i domini e i siti da bloccare; </li><li>lanciare il comando <span style="font-style: italic;">squidGuard -C all</span> per la rigenerazione dei database (in questo caso tutti);</li><li>cambiare i permessi della directory appena creata e dei suoi file assegnando utente e gruppo usati dal proxy server (nel mio caso <span style="font-style: italic;">proxy</span>). Questo passaggio è fondamentale, altrimenti si vedrà morire squid inaspettatamente dopo alcuni secondi dal suo riavvio;</li><li>riavviare squid.<br /></li></ol>

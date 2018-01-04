@@ -9,6 +9,12 @@ tags:
 modified_time: '2010-12-03T16:44:00.850+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7039295617290351768
 blogger_orig_url: http://fluca1978.blogspot.com/2010/12/compilazione-di-nebula.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Visto che i download binari di <a href="http://www.eclipse.org/nebula/">Nebula</a> continuano a non essere accessibili per via del refactoring, l'unica alternativa per usare i widget di questo fantastico progetto è quello di compilarli "manualmente". Per compilare i widget occorre avere CVS (per il dowload del codice), <a href="http://maven.apache.org/">Maven</a> per la compilazione e poi un po' di pazienza (tutto sommato il build è veloce).</div><div style="text-align: justify;">I passi da seguire sono i seguenti:</div><ul><li>creare una cartella che conterrà tutto il progetto;</li><li>effettuare il login anonimo al server CVS</li></ul><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: center;"><span style="font-size: x-small;">cvs -d :pserver:anonymous@dev.eclipse.org:/cvsroot/technology login</span></div><br /><ul><li>scaricare l'albero dei sorgenti e dei progetti di Nebula:</li></ul><div style="font-family: &quot;Courier New&quot;,Courier,monospace; text-align: center;"><span style="font-size: x-small;">cvs&nbsp; -d ':pserver:anonymous@dev.eclipse.org:/cvsroot/technology' co org.eclipse.swt.nebula</span></div><br /><ul style="text-align: justify;"><li>e infine compilare i progetti <i>org.eclipse.swt.nebula.nebula-incubation </i>(ancora non stabili) e <i>org.eclipse.swt.nebula.nebula-release</i> (stabili): occorre entrare nella directory di ogni progetto e dare il comando <i>mvn install</i>. Ogni progetto avrà poi una cartella <i>target</i> che conterrà il jar finale.</li></ul>

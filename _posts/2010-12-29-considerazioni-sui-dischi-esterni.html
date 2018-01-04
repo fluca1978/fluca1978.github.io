@@ -7,6 +7,12 @@ tags:
 modified_time: '2010-12-29T10:43:19.702+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-341365347487288588
 blogger_orig_url: http://fluca1978.blogspot.com/2010/12/considerazioni-sui-dischi-esterni.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Qualche giorno fa mi sono trovato davanti alla scelta di come formattare il mio nuovo hard disk portatile. Pur essendo un accanito utente Linux, mi trovo a volte a dover usare altri sistemi, primo fra tutti Windows, e quindi ho bisogno che i miei dati siano leggibili (e scrivibili) indipendentemente dal sistema operativo. E' quindi da escludere un file system della famiglia <i>ext</i>: nonostante esistano programmi per leggere partizioni ext da Windows, tale sistema non viene riconosciuto dalla maggior parte dei dispositivi multimediali in commercio. <i>Fat</i> è quindi la scelta di portabilità piu' indicata, ma non quella corretta per me, che devo memorizzare file ben piu' grandi di 5 GB. Ho quindi deciso di formattare con il New (?) Technology File System (NTFS), file system leggibile e scrivibile da Windows e Linux, leggibile da Solaris e da OSX. Purtroppo però il driver Linux di questo file system ha prestazioni pessime: formattare un container TrueCrypt significa partire da una banda di 30 MB/s circa per poi arenarsi attorno a 5 MB/s. La stessa formattazione fatta da un sistema Windows parte con una banda di 35 MB/s e si assesta intorno ai 23 MB/s. In generale poi le prestazioni in scrittura, su entrambi i sistemi, sono basse, probabilmente dovute al journaling di questo file system. Ovviamente queste prove non rappresentano un benchmarking effettivo, ma le prove sono state effettuate varie volte sempre con i medesimi risultati.</div>

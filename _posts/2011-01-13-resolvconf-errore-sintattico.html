@@ -8,6 +8,12 @@ tags:
 modified_time: '2011-01-13T22:08:48.134+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2017417138057508257
 blogger_orig_url: http://fluca1978.blogspot.com/2011/01/resolvconf-errore-sintattico.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Il file <i>/etc/resolv.conf</i> istruisce il resolver di un sistema Unix su quali DNS contattare per la risoluzione dei nomi di host. Una direttiva di tale file, "search", indica quale dominio appendere in default per un nome host semplice (o meglio per un nome che non viene risolto correttamente). Per un errore di battitura, ho inserito una direttiva search con un nome di dominio racchiuso fra doppi apici. I doppi apici non vengono interpolati, e quindi il dominio inserito comprendeva gli apici come carattere valido da risolvere, con conseguente impossibilita' da parte del resolver di risolvere qualunque nome di host non qualificato.</div>

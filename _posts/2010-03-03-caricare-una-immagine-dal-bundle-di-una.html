@@ -9,6 +9,12 @@ tags:
 modified_time: '2010-03-03T19:00:00.782+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4504330224776481484
 blogger_orig_url: http://fluca1978.blogspot.com/2010/03/caricare-una-immagine-dal-bundle-di-una.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Il caricamento di una immagine contenuta in un bundle ma non nell'<i>ImageRepository</i> di una applicazione RCP non è un'operazione così banale come si potrebbe pensare, soprattutto se quello che serve non è tanto l'immagine ma i byte legati ad essa. In questo caso occorre infatti avere la possibilità di aprire uno stream verso l'immagine, e quindi si deve poter recuperare esattamente la posizione dell'immagine su disco.</div><div style="text-align: justify;">Il primo passo è quello di ottenere il <i>bundleimg</i> corrente, e da esso ottenere l'URL dell'immagine con percorso assoluto "relativamente" al bundle stesso. In altre parole, se l'immagine si trova nella cartella  del bundle, il percorso deve essere reso relativo ovvero deve diventare <i>/img</i>. L'URL così ottenuta è in una forma strana, come ad esempio:</div><blockquote>bundleentry://33.fwk43086831/img/logo.png</blockquote><div style="text-align: justify;">Questo URL deve essere tradotto in una forma che abbia senso, ovvero in un percorso valido per il file system: questo viene fatto mediante il <i>FileLocator</i>. Ottenuto quindi l'URL effettivo (valido per il file system) dell'immagine, è possibile costruire un <i>File</i> e da esso un <i>FileInputStream</i> per ottenere i byte dell'immagine stessa.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">In sostanza il codice risulta come il seguente:</div><br /><i>Bundle bundle = Platform.getBundle( your.package.Activator.PLUGIN_ID );</i><br /><i>URL url = bundle.getEntry(DEFAULT_LOGO_IMAGE_FILE_NAME);<br />URL fileURL = FileLocator.toFileURL( url );<br />File dummyImage = new File( fileURL.getPath() );<br />InputStream is = new FileInputStream(dummyImage);<br />byte[] bytes = new byte[ is.available() ];</i><br /><i>is.read( bytes );</i>

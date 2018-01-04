@@ -8,6 +8,12 @@ tags:
 modified_time: '2010-05-08T15:00:01.558+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1296143387997704720
 blogger_orig_url: http://fluca1978.blogspot.com/2010/05/pfsense-vpn-failed-to-get-sainfo.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Qualora dovesse apparire nei log di pfSense il messaggio <i>Failed to get sainfo</i> quando si tenta di avviare un tunnel VPN occorre ricontrollare la fase 2 della creazione del tunnel. Se tutti i parametri della fase 2 combaciano fra i due concentratori VPN, allora è probabile che ci sia un problema nella definizione delle reti locale/remote o della relativa sottomaschera di rete.</div><div style="text-align: justify;">Per individuare con esattezza l'errore occorre disabilitare <i>IPSEC</i> nella relativa schermata di configurazione, effettuare il login shell sulla macchina pfSense ed avvaire il comando:</div><blockquote><i>racoon -F -d -v -f /var/etc/racoon.conf</i></blockquote><div style="text-align: justify;">che altro non fa che avviare ipsec con le informazioni di configurazione. A questo punto, quando si inizia a creare il tunnel si vedrà un messaggio simile al seguente:</div><blockquote><i>&nbsp;010-05-07 10:23:08: DEBUG: getsainfo pass #2</i><br /><i>2010-05-07 10:23:08: DEBUG: check and compare ids : value mismatch (IPv4_subnet)</i></blockquote><div style="text-align: justify;">che indica che le due reti definite fra i due endpoint sono differenti da quelle che ci si aspetta nel tunnel.</div><div style="text-align: justify;">Una volta corretto il problema, è possibile testare il tunnel direttamente dalla macchina pfSense con il comando:</div><blockquote><i>ping -S <ip_macchina_pfsense> <ip_remoto_oltre_il_tunnel></ip_remoto_oltre_il_tunnel></ip_macchina_pfsense></i></blockquote>

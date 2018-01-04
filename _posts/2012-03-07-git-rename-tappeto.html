@@ -9,6 +9,12 @@ tags:
 modified_time: '2012-03-07T19:23:00.037+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1800949471707927864
 blogger_orig_url: http://fluca1978.blogspot.com/2012/03/git-rename-tappeto.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Mi capita spesso di impostare un repository git su un computer che non uso abitualmente; dopotutto il bello di git è proprio questo essere <i>distribuito</i>. Una delle cose che però scordo sempre, nella fretta, è di impostare lo username e l'e-mail che apparirà nei commit. Siccome tipicamente lavoro "da solo" su un repository, faccio abbastanza presto a rinominare tutti i commit sbagliati: il comando <i>filter-branch</i> consente infatti di agire sui commit di un ramo di sviluppo. Nel mio caso tutto si riduce ad un semplice:</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;"><br /></span></div><div style="font-family: &quot;Courier New&quot;,Courier,monospace;"><span style="font-size: x-small;">git filter-branch --commit-filter '<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GIT_COMMITTER_NAME="Luca Ferrari";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GIT_AUTHOR_NAME="Luca Ferrari";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GIT_COMMITTER_EMAIL="email";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GIT_AUTHOR_EMAIL="email";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; git commit-tree "$@";<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ' HEAD</span></div><br /><div style="text-align: justify;">Il trucco ovviamente funziona per commit non ancora resi pubblici. Il comando <i>filter-branch</i> consente anche di individuare particolari commit (ad esempio solo quelli sbagliati invece che tutti) e quindi di agire solo su tali.</div>

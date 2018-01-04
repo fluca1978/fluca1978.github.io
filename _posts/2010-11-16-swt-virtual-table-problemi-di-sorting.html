@@ -10,6 +10,12 @@ tags:
 modified_time: '2010-11-25T12:59:03.180+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7345706776323711703
 blogger_orig_url: http://fluca1978.blogspot.com/2010/11/swt-virtual-table-problemi-di-sorting.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Le tablle Virtual in SWT sono sicuramente un componente tanto potente quanto fragile, lo dimostrano due problemi che ho incontrato nello sviluppo di una applicazione che mi hanno fatto deistere dal continuare ad usarle, almeno per il momento. Il mio ovviamente si tratta di un caso particolare: non sempre è possibile rinunciare alle tablle virtual a favore di quelle normali!</div><div style="text-align: justify;">Il primo problema riguarda l'<a href="http://www.eclipse.org/forums/index.php?t=msg&amp;goto=633866">update degli indici</a>: sembra ci sia un <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=328628">bug</a> che richiede l'update di indici fuori dallo schermo, con conseguente caricamento dei dati necessari, e si può facilmente intuire come in una applicazione database oriented (come la mia) questo sia un consumo eccessivo di risorse che non giustifica l'uso di SWT.VIRTUAL.</div><div style="text-align: justify;">Il secondo problema riguarda il <a href="http://www.eclipse.org/forums/index.php?t=msg&amp;goto=639456&amp;S=b9a80daa8a8a2134a070e5875b67d26f#msg_639456">sorting effettuato tramite comparators</a>: se la tabella viene gestita come Virtual (anche se in effetti viene usata come tabella normale), il sistema potrebbe passare un elemento <i>null</i> al metodo di comparazione del <i>Comparator</i>. Il problema non è tanto difendersi da un oggetto null in ingresso, cosa sicuramente banale, ma il fatto che una comparazione fra due entità di cui una null non può essere fatta, poiché questo impedisce la determinazione del corretto indice di inserimento nella table viewer.</div>

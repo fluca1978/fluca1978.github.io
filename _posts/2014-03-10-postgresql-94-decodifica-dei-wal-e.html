@@ -8,6 +8,12 @@ tags:
 modified_time: '2014-03-10T22:04:00.218+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3670889634832752289
 blogger_orig_url: http://fluca1978.blogspot.com/2014/03/postgresql-94-decodifica-dei-wal-e.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Ricordo che al <a href="http://2012.pgday.it/">PGDay.IT del 2012</a> il keynote (Simon Riggs) parlava di una feature che sarebbe stata introdotta in PostgreSQL riguardo la decodifica dei WAL in formato logico, ossia umanamente leggibile (istruzioni SQL o qualcosa di simile). Era stato detto che ci sarebbe voluto diverso tempo per implementare tutti i pezzi di questa conversione da binario a testuale, ma che era un passo fondamentale per la crescita di PostgreSQL.</div><div style="text-align: justify;">Ebbene nella nuova versione, la 9.4, alla quale gli sviluppatori stanno lavorando, e' stata introdotta una patch che permette di convertire i WAL in formato testuale.</div><div style="text-align: justify;"><a href="http://www.depesz.com/2014/03/06/waiting-for-9-4-introduce-logical-decoding/">Qui</a> si trova un primo esempio, piuttosto impressionante , della funzionalita' di decodifica dei WAL.</div><div style="text-align: justify;">Da notare che l'esempio sopra riportato cita anche i "replication slots", un'altra feature aggiunta per l'imminente 9.4. L'idea e' semplice ed elegante: mentre prima il master non aveva alcuna conoscenza dello stato di replica degli slave, che quindi potevano andare off-line per molto tempo e rimanere "troppo indietro" rispetto al master, dalla 9.4 il master terra' lo stato di replicazione di ogni slave agganciato (uno slot appunto). Questo permettera' al master di conservare tutti e soli i WAL richiesti dagli slave, anche se non disponibili per molto tempo, senza costringere il DBA a indovinare quanti WAL mantenere (keep segmentes) o l'implementazione di un continuos archiving.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">La 9.4 promette molte altre feature, ma quelle di cui sopra in fatto di replica sono sicuramente molto significative.</div>

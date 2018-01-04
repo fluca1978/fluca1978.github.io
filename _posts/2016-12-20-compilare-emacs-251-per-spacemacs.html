@@ -9,6 +9,12 @@ tags:
 modified_time: '2016-12-20T16:47:22.443+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-815013530278647402
 blogger_orig_url: http://fluca1978.blogspot.com/2016/12/compilare-emacs-251-per-spacemacs.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Se si tenta di compilare Emacs 25.1 su una Kubuntu 16.10 si potrebbe avere un errore di segmentation fault.</div><div style="text-align: justify;">La soluzione e' abbastanza semplice: occorre impostare un flag del compilatore e ritentare.</div><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">./configure --prefix=/opt/emacs25.1 <b>CFLAGS=-no-pie</b></span><br /><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Il flag no-pie produce un eseguibile che non puo' essere posizionato arbitrariamente, e questa e' una misura di sicurezza per evitare exploit sulla memoria.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Se poi si usa Spacemacs, una nuova installazione risolve diversi problemi e consente anche di far funzionare tutti i layer correttamente (ad esempio con PHP avevo alcuni problemi legati ai font-face), ma per un uso ottimale occorre che sia presente la <span style="font-family: &quot;Courier New&quot;,Courier,monospace;">libxml2</span> (-dev) affinche' si possa compilare anche il supporto alla documentazione. Ovviamente quest'ultimo punto non dipende da Spacemacs.</div>

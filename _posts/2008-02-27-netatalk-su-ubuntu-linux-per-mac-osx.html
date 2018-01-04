@@ -8,6 +8,12 @@ tags:
 modified_time: '2008-02-27T17:54:29.190+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-533778518475149150
 blogger_orig_url: http://fluca1978.blogspot.com/2008/02/netatalk-su-ubuntu-linux-per-mac-osx.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Il nuovo OSX non accetta in alcun modo l'autenticazione su un server Netatalk usando password in chiaro. Se da un lato questo è un bene per la protezione degli utenti e delle loro credenziali, dall'altro è una seccatura per l'installazione di default di Ubuntu, che per motivi di licenza non prevede la suite di cifratura supportata dai Mac OSX. E' quindi necessario ricompilare ed installare a mano il pacchetto Netatalk con i seguenti comandi (Ubuntu 7.1):<br /><br /># cd /usr/local/src/<br /># mkdir netatalk<br /># cd netatalk<br /># aptitude install devscripts cracklib2-dev dpkg-dev libssl-dev<br /># apt-get source netatalk<br /># apt-get source netatalk<br /># DEB_BUILD_OPTIONS=ssl sudo dpkg-buildpackage -us -uc<br /># debi<br /><br />e la nuova versione di netatalk con il supporto per i nuovi Mac OSX è abilitato.

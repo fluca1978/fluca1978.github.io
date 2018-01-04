@@ -9,6 +9,12 @@ tags:
 modified_time: '2008-10-03T10:08:58.897+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1509803097044403809
 blogger_orig_url: http://fluca1978.blogspot.com/2008/10/problema-lettura-file-di-propriet-in.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Qualche giorno fa ho ripristinato il workspace di Eclipse 3.3 per una nuova installazione di Eclipse 3.4, ma il riavvio di un progetto Java mi ha causato qualche problema. In particolare mi sono trovato la seguente eccezione:<br /><br /><pre class="jive-pre"><code class="jive-code jive-java">java.lang.ClassCastException: org.apache.xerces.dom.DeferredCommentImpl cannot be cast to org.w3c.dom.Element<br />ERROR - Cannot load properties from the specified file <./conf/login.prop> java.lang.ClassCastException: org.apache.xerces.dom.DeferredCommentImpl cannot be cast to org.w3c.dom.Element<br /><br /> at java.util.XMLUtils.importProperties(XMLUtils.java:97)<br /> at java.util.XMLUtils.load(XMLUtils.java:69)<br /> at java.util.Properties.loadFromXML(Properties.java:852)<br /> at g2.utility.HRPMProperties.<init>(HRPMProperties.java:78)<br /> at g2.utility.HRPMProperties.getInstance(HRPMProperties.java:94)<br /> at g2.gui.workers.ApplicationSwingWorker.<init>(ApplicationSwingWorker.java:36)<br /> at g2.main.Main.main(Main.java:37)<br /></code></pre><br />leggendo un file di proprietà Java in formato XML. Ho ricontrollato il classpath e le librerie erano tutte al loro posto, quindi mi è stato un po' difficile individuare il problema. Ho aggiornato Xerces, ho provato a copiarne diverse versioni ma niente. Infine qualcuno sul <a href="http://forums.sun.com/thread.jspa?messageID=10450314">forum della Sun mi ha indicato la soluzione</a>: Java 6 viene distribuito con la sua versione di Xerces, e quindi forzare l'utilizzo di una versione differente può creare alcuni problemi di compatibilità. Basta rimuovere allora i package di Xerces dal classpath per risolvere il problema.

@@ -8,6 +8,12 @@ tags:
 modified_time: '2008-06-10T12:23:37.186+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3934023667200118947
 blogger_orig_url: http://fluca1978.blogspot.com/2008/06/demone-dhcpd-su-ubuntu-trovare-gli.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Una cosa abbastanza strana nell'installazione del demone DHCP in Ubuntu Linux è che lo script di avvio del demone utilizza l'opzione <span style="font-style: italic;">-q</span>, che impedisce ai messaggi di errore di essere visualizzati. In altre parole, se c'è un errore nel file di configurazione <span style="font-style: italic;">dhcpd.conf</span>, al riavvio/reload della configurazione non verrà mostrato il punto dove si ha l'errore, ma solo il fatto che è presente un errore (generico).<br /><br />E' sufficiente editare il file <span style="font-style: italic;">/etc/init.d/dhcpd3-server</span> e, all'interno della funzione  rimuovere il flag <span style="font-style: italic;">test_config()-q</span> dalla linea che invoca il demone <span style="font-style: italic;">dhcpd3</span>, facendola corrispondere alla seguente:<br /><br /><div style="text-align: center;"><span style="font-style: italic;">/usr/sbin/dhcpd3 -t -cf $CONFIG_FILE</span><br /></div>

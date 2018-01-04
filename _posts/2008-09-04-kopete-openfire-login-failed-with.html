@@ -9,6 +9,12 @@ tags:
 modified_time: '2008-09-04T23:18:58.630+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-498363211302647446
 blogger_orig_url: http://fluca1978.blogspot.com/2008/09/kopete-openfire-login-failed-with.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 A few times happened that I was unable to log-in my OpenFire server with a Kopete client. The error message reported by Kopete was useles at all: <span style="font-style: italic;">Login failed with unknow reason</span>.<br />Even starting Kopete from the command line, and observing the messages reported didn't help me at all, but I was sure that the account was working, since I was able to log-in with another Jabber client (e.g. PSI).<br />At last I found an hint in the OpenFire server logs, in particular in the Warn section of the logs: the Kopete client was sending to the server a wrong/bad server name, and thus the server was refusing the connection. For example, if the server is called <span style="font-style: italic;">myserver.mydomain.com</span> and the Kopete client is configured to connect to <span style="font-style: italic;">myserver</span>, it will not work. It does not matter if you manually specify the server ip address, either overriding the name of the server in the Jabber ID or placing it directly in such ID, the server will refuse the connection. In my case, for instance, I was trying to log-in with the Jabber ID:<br /><div style="text-align: center;"><span style="font-style: italic;">luca.ferrari@myserver</span><br /></div>and my computer could resolv <span style="font-style: italic;">myserver</span> (i.e., it is not a DNS problem). Once I substituted the Jabber ID with the following:<br /><div style="text-align: center;"><span style="font-style: italic;">luca.ferrari@myserver.mydomain.com</span><br /></div>I was able again to connect to the server. In conclusion, Kopete requires you to specify the same server string that you put in the OpenFire server configuration, or the server will refuse the client to connect to the server.

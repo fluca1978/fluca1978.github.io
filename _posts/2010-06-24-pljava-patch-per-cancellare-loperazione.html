@@ -9,6 +9,12 @@ tags:
 modified_time: '2010-06-24T19:00:01.617+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7841838666268568172
 blogger_orig_url: http://fluca1978.blogspot.com/2010/06/pljava-patch-per-cancellare-loperazione.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Lo scorso weekend ho lavorato un po' sul codice di Pl/Java per studiare se fosse possibile cancellare una operazione in atto (statement) tramite un oggetto di tipo TriggerData. Dai test che ho effettuato posso affermare di aver raggiunto lo scopo! La <a href="http://pgfoundry.org/tracker/index.php?func=detail&amp;aid=1010848&amp;group_id=1000038&amp;atid=336">patch</a> aggiunge un paio di metodi all'interfaccia <i>TriggerData</i>, in particolare <i>cancelCurrentStatement</i> e <i>isCurrentStatementCancelled</i>. Questi due metodi vanno ad impostare un flag che ordina poi all'oggetto <i>TriggerData</i> di resituire un valore che viene interpretato come NULL al backend PostgreSQL. Così facendo si ottiene che il backend annulla l'operazione corrente.&nbsp;</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">La patch non si conclude qui: ho anche fatto in modo che eventuali ResultSet ottenuti dopo che l'operazione è stata impostata come "cacellata" siano sempre e solo in lettura. I ResultSet ottenuti prima saranno in lettura/scrittura (ovviamente si parla di quelli <i>new</i>) ma ciò non costituisce un problema visto che poi l'operazione verrà comunque cancellata dal backend. Avere però un ResultSet in sola lettura aiuta a mantenere coerente l'interfaccia verso l'utente.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">La patch è inserita nella coda e la si può trovare <a href="http://pgfoundry.org/tracker/index.php?func=detail&amp;aid=1010848&amp;group_id=1000038&amp;atid=336">qui</a>, dove è anche disponibile un semplice trigger per testarne il funzionamento.</div>

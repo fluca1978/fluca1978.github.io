@@ -8,6 +8,12 @@ tags:
 modified_time: '2008-03-26T10:07:19.276+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1005417198291783252
 blogger_orig_url: http://fluca1978.blogspot.com/2008/03/rimuovere-file-esterni-al-database.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Capita a volte di aver memorizzato dei record nel database contenenti percorsi di file sul filesystem (ad esempio immagini) e di voler cancellare i record e i relativi file. Ci sono varie soluzioni a questo problema, una delle quali consiste nell'effettuare una query SQL che produca una serie di comandi shell per la rimozione di ogni singolo file, dopodiché si procede all'esecuzione di tali comandi e alla rimozione dei record.<br />In sostanza:<br /><ul><li>occorre redirigere l'output della query non formattato su file, quindi da  occorre dare i comandi<span style="font-style: italic;"> \a \t \o comandi.sh</span></li><li>si effettua la query concatenando i comandi da eseguire. Ad esempio:</li></ul><div style="text-align: center;"><span style="font-style: italic;">select 'rm path/*/' ||  '/' || id_elemento || '.png' </span><br /><span style="font-style: italic;"><br />from elementi where upload_name like'path/%';</span><br /></div><br />Come si può notare questa query produce una serie di tuple in uscita che effettuano un semplice <span style="font-style: italic;">rm</span> del file con nome <span style="font-style: italic;">id_elemento</span><span style="font-style: italic;">.png  </span>nel percorso <span style="font-style: italic;">path</span>.<br /><ul><li>eseguire il file <span style="font-style: italic;">comandi.sh</span> da shell</li><li>cancellare le tuple selezionate nel database<br /></li></ul>

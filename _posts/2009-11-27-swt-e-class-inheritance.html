@@ -11,6 +11,12 @@ tags:
 modified_time: '2010-01-20T17:52:42.057+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3508695623653754789
 blogger_orig_url: http://fluca1978.blogspot.com/2009/11/swt-e-class-inheritance.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 I widget SWT non consentono l'eredità: al loro interno esiste un metodo (<span style="font-style: italic;">checkSubclass()</span>) che effettua dei controlli per garantire che una sottoclasse non venga utilizzata in una applicazione.<br />Ovviamente questa è una restrizione a run-time, di fatto i componenti possono essere derivati da altri anche se poi non risulteranno utilizzabili a run-time.<br />Le motivazioni di questa scelta progettuale risiedono nella preferenza della <span style="font-style: italic;">composizione</span> rispetto all'<span style="font-style: italic;">ereditarietà</span>, e mi fa molto piacere vedere che esistano dei framework che si spingono in questa direzione.<br />Tuttavia ogni tanto è piu' comodo derivare widget da altri piuttosto che usare la composizione (che costringe l'utilizzo di interfacce e la costruzione di API wrapper), ma questo dovrebbe avvenire solo per widget per cui sia garantita la portabilità. Se non si vuole poi implementare la propria logica di controllo nel metodo <span style="font-style: italic;">checkSubclass()</span> è necessario inserire i widgets in un package <span style="font-style: italic;">org.eclipse.swt.widgets</span>.

@@ -8,6 +8,12 @@ tags:
 modified_time: '2010-07-02T18:46:00.218+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7901433395932985424
 blogger_orig_url: http://fluca1978.blogspot.com/2010/07/pfsense-openvpn-verify-error.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Se pfSense rifiuta una conessione OpenVPN con certificati fornendo un <i>VERIFY ERROR</i> simile al seguente:<br /><br /><br /><pre style="display: inline; margin-top: 0pt;">VERIFY ERROR: depth=1, error=self signed certificate in certificate chain:&nbsp;</pre><br /><pre style="display: inline; margin-top: 0pt;">/C=IT/ST=Italy/L=Sassuolo/O=MySite/CN=MySite_CA/emailAddress=xxx@xxx</pre><br /><br />significa che si è fatta confusione con i certificati e che si sta usando il certificato del server al posto del classico <i>ca.crt</i> (certificato che garantisce quello del server) nella configurazione del client OpenVPN. <br /><br /><br /><br /><pre style="display: inline; margin-top: 0pt;">&nbsp;</pre><br /><pre style="display: inline; margin-top: 0pt;">&nbsp;</pre>

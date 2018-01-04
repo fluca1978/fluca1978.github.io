@@ -11,6 +11,12 @@ modified_time: '2011-09-30T18:34:00.137+02:00'
 thumbnail: http://4.bp.blogspot.com/-fpk50t2fl2M/ToWqRU17TyI/AAAAAAAAAg8/1Q39wx8EUhY/s72-c/qt4.png
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4727176971047394435
 blogger_orig_url: http://fluca1978.blogspot.com/2011/09/qt-general-purpose-database-connection.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Oggi ho inserito nel <a href="http://developer.qt.nokia.com/wiki/DatabaseConnectionDialog">Wiki Qt una pagina</a> che mostra una dialog window generale per gestire una connessione ad un database. La dialog presenta all'utente una combo box con i tipi di database supportati (nomi dei driver) e una serie di campi che l'utente deve compilare per impostare le proprieta' di connessione (username, password, porta, host, ecc.).&nbsp;</div><div style="text-align: justify;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-fpk50t2fl2M/ToWqRU17TyI/AAAAAAAAAg8/1Q39wx8EUhY/s1600/qt4.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="315" src="http://4.bp.blogspot.com/-fpk50t2fl2M/ToWqRU17TyI/AAAAAAAAAg8/1Q39wx8EUhY/s320/qt4.png" width="320" /></a></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">La dialog non attiva il pulsante di connessione fino a quando tutti i dati sono compilati e presenta anche una stringa URL riassuntiva della connessione (ovviamente senza la password!).</div><div style="text-align: justify;">La dialog emette un <i>signal</i> con la connessione stabilita qualora questa avvenga con successo.&nbsp;</div><div style="text-align: justify;">Infine la dialog supporta la modalità <i>auto-connect</i>: i campi possono essere precompilati prima che la dialog sia visualizzata (es. da valori di default) e se si specifica l'auto-connect mode allora la dialog tenta immediatamente la connessione, che se avviene con successo non viene nemmeno mostrata all'utente. Di conseguenza è possibile associare la dialog ad una azione di connessione al database che chieda informazioni all'utente solo se i dati di connessione sono incompleti o sbagliati.</div>

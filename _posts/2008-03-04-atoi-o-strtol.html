@@ -9,6 +9,12 @@ tags:
 modified_time: '2008-04-04T18:05:32.096+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2208655332243396603
 blogger_orig_url: http://fluca1978.blogspot.com/2008/03/atoi-o-strtol.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Nel corso di <a href="http://agentgroup.ing.unimo.it/didattica/soNOD/soNOD.html">Sistemi Operativi</a> dell'Università di Modena e Reggio Emilia gli studenti devono spesso realizzare programmi C (per Unix) che accettino argomenti da riga di comando. Spesso tali argomenti devono essere convertiti in numeri, e per questo agli studenti viene illustrato il funzionamento della funzione atoi(3). Il problema è che la funzione atoi(3), come da pagina di manuale <font style="font-style: italic;">non rileva errori di conversione</font>.<br />Sarebbe molto più corretto spingere gli studenti ad usare l'alternativa e più sicura strtol(3), che se non altro rileva gli errori.<br /><br /><br />Quindi, in un programma C, supponendo di voler convertire il secondo parametro passato sulla linea di comando, si avrebbe che:<br /><br /><font size="2"><font face="arial">val = atoi( argv[2] );  </font></font><br /><br />deve essere sostituito da:<br /><font size="2"> <font face="arial">errno = 0;<br /></font><font face="arial">val = strtol( argv[2], (char**) NULL, 10 );<br /></font> <font face="arial">if( errno > 0 &amp;&amp; val == 0 )<br /></font><font face="arial">   perror("\nErrore di conversione numerica\n");</font></font><br /><br /><br />Certo, il blocco di codice riportato qui sopra risulta di ben lunga più lungo che l'uso della semplice atoi(3), ma consente anche un controllo migliore e più raffinato. Inoltre abitua gli studenti a lavorare con gli strumenti corretti da subito.

@@ -8,6 +8,12 @@ tags:
 modified_time: '2011-02-25T20:31:00.472+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-409512359414276241
 blogger_orig_url: http://fluca1978.blogspot.com/2011/02/freebsd-gmirror-e-array-degradato.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 gmirror è un ottimo strumento per la costruzione di array RAID 1 in software. Qualora un array sia segnalato come degradato, la soluzione è quella di inserire (o reinserire) il disco che deve entrare a far parte dell'array. Purtroppo gmirror impedisce l'inserimento di un nuovo provider se uno o piu' dischi risultano mancanti nell'array. La ragione di ciò è che gmirror non etichetta i dischi usando il loro nome di device, bensì con le informazioni salvate sul disco stesso (e visibili con <i>gmirror dump <provider></provider></i>). Ne consegue che il sistema riconosce l'array ma trova che alcuni componenti sono mancanti. Non sapendo quale manca, il sistema impedisce l'inserimento di un disco nell'array per evitare di inserire il disco sopra&nbsp; a se stesso. La soluzione è quella di istruire gmirror sull'esecuzione di futuri comandi particolari, e quindi con <i>gmirror forget</i> si istruisce il sistema a non curarsi dei dischi mancanti. Successivamente è possibile fare l'insert del disco nell'array.

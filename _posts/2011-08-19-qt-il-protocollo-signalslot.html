@@ -10,7 +10,13 @@ tags:
 modified_time: '2011-08-19T13:39:10.585+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-902929435613425116
 blogger_orig_url: http://fluca1978.blogspot.com/2011/08/qt-il-protocollo-signalslot.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Il compilatore moc produce un file speciale, <span style="font-style: italic;">moc_nomeclasse.cpp</span> (e il relativo compilato), per ogni file sorgente che includa segnali e/o slot. Analizzare e debuggare il codice in esecuzione è un buon esercizio per comprendere cosa il sistema Qt faccia dietro alle quinte.<br />Per questo ho creato due classi molto semplici, una <span style="font-style: italic;">Signal</span> con tre semplici segnali:<br /><br /><span style="font-style: italic;">void integerSignal(int emittingValue);</span><br /><span style="font-style: italic;">void voidSignal();</span><br /><span style="font-style: italic;">void floatSignal(float emittingFloatValue);</span><br /><br />e una classe <span style="font-style: italic;">Slot</span> con i relativi slot (e le loro semplici implementazioni):<br /><br /><style type="text/css">
   p, li { white-space: pre-wrap; } 

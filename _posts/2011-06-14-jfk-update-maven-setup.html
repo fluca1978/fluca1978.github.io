@@ -10,6 +10,12 @@ tags:
 modified_time: '2011-06-14T21:33:00.348+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-640410671960827713
 blogger_orig_url: http://fluca1978.blogspot.com/2011/06/jfk-update-maven-setup.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">After a few <a href="https://github.com/fluca1978/JFK/commit/e3c164d49d5e50c42f90b9d142ef64ddc77c175c">commits</a> to make JFK available as an <a href="http://ant.apache.org/">Apache Ant</a> based project&nbsp; I decided to <a href="https://github.com/fluca1978/JFK/commit/c2d782b52dc1f1545d01b53858131dc1252799d3">switch</a> to the more useful <a href="http://maven.apache.org/">Apache Maven</a>. Now JFK has a Maven <i>pom.xml</i> file that allows for compilation, downloading of dependencies and test execution.<br />To compile the project just type:<br />&nbsp;&nbsp; <br />&nbsp;<span style="font-family: &quot;Courier New&quot;,Courier,monospace;">&nbsp; mvn compile</span><br /><br />and the system will start download dependencies and all required jars to compile the project. To run the tests just type:<br /><br />&nbsp;<span style="font-family: &quot;Courier New&quot;,Courier,monospace;">&nbsp;&nbsp; mvn test</span><br /><br />Note that within this commit the repository layout has changed in order to respect the Maven structure; in particular:<br /></div><ul style="text-align: justify;"><li>-the "<i>src</i>" folder now has "main" for the JFK code and "<i>test</i>" for the test suite;</li><li>the "<i>src/main/resource</i>" folder is the one that contains the log4j and spring configuration XML files;</li><li>the above XML files have changed name: "<i>jfk.log4j.xml</i>" and "<i>jfk.spring-beans.xml</i>"</li></ul><br /><div style="text-align: justify;"><br /></div>

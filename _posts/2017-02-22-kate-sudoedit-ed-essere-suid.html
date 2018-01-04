@@ -8,6 +8,12 @@ tags:
 modified_time: '2017-02-22T19:06:02.493+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1222564996224976975
 blogger_orig_url: http://fluca1978.blogspot.com/2017/02/kate-sudoedit-ed-essere-suid.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Nelle prossime versione Kate (e anche KEdit mi pare di capire) non permetterà piu' di essere eseguito in modalità SUID, ovvero con permessi di root abilitati. Questo prevenie molti inconvenienti legati piu' all'antico stack di X Windows invece che a KDE stesso.</div><div style="text-align: justify;">Ora, come si potrà fare a editare file dove occorrano permessi elevati? La soluzione pare essere quella di usare una combinazione di <a href="https://blog.martin-graesslin.com/blog/2017/02/editing-files-as-root/">warning e sudoedit</a>.</div><div style="text-align: justify;">Sebbene la soluzione sia interessante e quantomeno mirata alla buona educazione degli utenti, vedo alcuni problemi legati alla scelta di "sudoedit" stesso. Ci sono infatti sistemi che stanno/hanno abbandonato sudo a favore di qualcosa piu' compatto e installabile nella base (ad esempio OpenBSD e doas(1)). Legarsi quindi ad un programma esterno, seppur diffuso, rischia quindi di diventare una difficoltà per il porting su altre piattaforme.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Ah, giusto come nota, per gli utenti Emacs si può utilizzare TRAMP con url /sudo::/path/to/file (richiede un accesso SSH alla macchina, che è un po' un collo di bottiglia iniziale, ma tutto sommato sicuramente valido).</div>

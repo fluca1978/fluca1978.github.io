@@ -8,6 +8,12 @@ tags:
 modified_time: '2008-09-10T17:51:18.051+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1949322787181305375
 blogger_orig_url: http://fluca1978.blogspot.com/2008/09/vmware-ubuntu-804.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Installare VMWare su una macchina Ubuntu 8.04 non è sempre facile, specialmente se la macchina aveva già installato una versione precedente del pacchetto vmware-server. Il problema è che il pacchetto di Ubuntu non è stato ancora aggiornato alla nuova versione del kernel, e quindi l'unica soluzione è di scaricare il binario da VMWare stessa. Ma qui sorge un altro problema: l'installazione tramite lo script <span style="font-style: italic;">vmware-install.pl</span> non inizia nemmeno e da un errore relativo all'impossibilità di eseguire <span style="font-style: italic;">vmware-uninstall</span>. E rimuovere i pacchetti non è sufficiente, occorre proprio cancellare manualmente le directory .vmware che si trovano nelle home degli utenti, oltre a /etc/vmware affinché lo script di installazione riprenda il suo lavoro.<br />Dopodiché basta seguire le<a href="http://ubuntuforums.org/showthread.php?t=779934"> guide Ubuntu </a>per completare l'opera.

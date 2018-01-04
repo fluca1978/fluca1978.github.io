@@ -9,6 +9,12 @@ tags:
 modified_time: '2010-05-21T15:40:00.349+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4332535628530449837
 blogger_orig_url: http://fluca1978.blogspot.com/2010/05/freebsd-mount-di-share-smb.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Il mount di share samba (SMBFS) in FreeBSD è radicalmente differente da quanto avviene su un sistema Linux. Anzitutto non è presente il classico programma <i>smbmount</i>, bensì il suo sostituto <i>mount_smbfs</i>. Fosse solo la differenza sul nome il gioco sarebbe facile: qualsiasi script scritto in modo decente sarebbe facilmente portabile. Però cambiano anche le opzioni e il modo di interagire con username e password.</div><div style="text-align: justify;">Anzitutto occorre creare un file ~/.nsmb oppure il file globale (valido per tutto il sistema) /etc/nsmb all'interno del quale mettere i parametri di connessione alle varie share. Se all'inizio questo sistema sembra un po' scomodo, alla lunga si rivela molto utile. L'unica accortezza da seguire è quella di mettere sempre, in tale file, i nomi delle share, dei server e degli utenti in maiuscolo. Le altre opzioni, password, ecc., devono invece essere case sensitive.</div><div style="text-align: justify;">Quindi tale file deve includere una o piu' sezioni del tipo:</div><blockquote><i><br /></i><br /><i>[SERVER:SHARE:USER]</i><br /><i>password=myPassword</i></blockquote><div style="text-align: justify;"><br /></div><div style="text-align: justify;">dove ovviamente <i>SERVER</i> corrisponde al nome netbios del server, <i>SHARE</i> al nome della share e <i>USER</i> (opzionale) al nome dell'utente usato per la connessione.</div><div style="text-align: justify;">Infine è possibile montare la share con il comando:</div><blockquote><i><br /></i><br /><i>mount_smbfs //user@server/share /mountpoint</i></blockquote>

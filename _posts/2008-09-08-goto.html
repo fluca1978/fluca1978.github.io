@@ -11,6 +11,12 @@ tags:
 modified_time: '2008-09-08T13:48:32.585+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3031284959143478422
 blogger_orig_url: http://fluca1978.blogspot.com/2008/09/goto.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Praticamente nessun corso di programmazione incentiva l'uso dell'istruzione <span style="font-style: italic;">goto</span>, poiché essa può generare salti di codice che rendono difficile la lettura e, soprattutto, la manutenzione del codice sorgente.<br />Che io ricordi, nei corsi universitari si tendeva addirittura a penalizzare gli studenti che facessero uso del <span style="font-style: italic;">goto</span>.<br />Ora, siccome penso che un ottimo esempio di codice C sia rappresentato dal kernel di Linux, ho fatto il seguente semplice test sull'albero dei sorgenti 2.6.24:<br /><br /><div style="text-align: center; font-style: italic;">find . -name *.c -type f -print0 | xargs -0 -r grep -E "goto (.)*;" | wc -l<br /></div><br />e come risultato ho ottenuto 49628!<br />Ciò significa che nel kernel di Linux ci sono 49628 istruzioni <span style="font-style: italic;">goto</span>. Che sia forse il caso di rivedere l'utilità di questa istruzione e di insegnare agli studenti ad utilizzare quando necessario?

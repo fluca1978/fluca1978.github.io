@@ -8,6 +8,12 @@ tags:
 modified_time: '2010-01-07T10:43:40.900+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-7424620530137077662
 blogger_orig_url: http://fluca1978.blogspot.com/2010/01/query-per-eliminare-gli-oggetti-di-un.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Usando il catalogo di sistema è possibile ottenere l'elenco degli oggetti di un determinato utente nel sistema (e nello schema), e da queste è possibile costruire le query da eseguire (una ad una) per eliminare tali oggetti:<br /><br /><span style="font-style: italic;"></span><blockquote><span style="font-style: italic;">SELECT 'DROP  ' ||  case when relkind ='r' THEN 'TABLE' WHEN relkind='S' THEN 'SEQUENCE' WHEN relkind='v' THEN 'VIEW' END || ' ' || relname || ' CASCADE;' FROM pg_class  JOIN pg_authid ON pg_class.relowner = pg_authid.oid  WHERE rolname='luca';</span></blockquote><br /><br />La query riportata qui sopra elenca tutti gli oggetti di proprietà dell'utente <span style="font-style: italic;">luca</span> e provvede a creare automaticamente delle query del tipo DROP per i vari elementi. Da notare che viene automaticamente riconosciuto, tramite l'attritubo pg_class.relkind il tipo di un oggetto, e quindi vengono generate query DROP TABLE come DROP SEQUENCE e DROP VIEW. Ovviamente è possibile estendere la query per ottenere l'eliminazione di altri tipi di oggetti.<br /><br />E' sufficiente redirigere l'output di questa query verso un file di testo per poi procedere all'eliminazione di tutte le tabelle/oggetti selezionati.

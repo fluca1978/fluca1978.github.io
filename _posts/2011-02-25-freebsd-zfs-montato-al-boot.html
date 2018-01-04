@@ -9,6 +9,12 @@ tags:
 modified_time: '2011-02-25T18:28:00.232+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3996465758020335020
 blogger_orig_url: http://fluca1978.blogspot.com/2011/02/freebsd-zfs-montato-al-boot.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Sui sistemi FreeBSD è possibile creare pool e filesystem ZFS in modo esattamente identico a quello di OpenSolaris e derivati. Se i file system sono di <i>sistema</i> (es. /etc) allora il loro mount deve essere specificato nel file /etc/fstab; se invece i filesystem sono <i>accessori</i> il mount può essere ancora specificato nel file /etc/fstab, ma risulta piu' comodo inserire l'opzione</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><i>zfs_enable="YES"</i></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">nel file <i>/etc/rc.conf</i> che corrisponde al comando</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"><i>zfs mount -a</i></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">ossia monta automaticamente tutti i filesystem configurati ZFS.</div>

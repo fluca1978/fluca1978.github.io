@@ -9,6 +9,12 @@ tags:
 modified_time: '2009-04-03T08:31:08.922+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4609168170673144204
 blogger_orig_url: http://fluca1978.blogspot.com/2009/04/jit-vs-optimizer.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Mi capita spesso di sentir parlare di compilatori JIT (Just In Time) e Optimizer (ottimizzatori) e mi accorgo che spesso i due sono trattati allo stesso modo, seppur siano differenti. La differenza maggiormente evidente è che un JIT compiler compila il corpo di un metodo in codice nativo al primo accesso al metodo stesso, mentre un optimizer (ri)compila il metodo in codice nativo quando lo ritiente opportuno (ovvero quando si può verificare una vera e propria ottimizzazione).<br />Per comprendere meglio, si consideri il generico metodo <span style="font-style: italic;">foo()</span> che viene richiamato dall'applicazione. Il JIT compiler compilerà <span style="font-style: italic;">foo()</span> in codice nativo al suo primo accesso, mentre un optimizer lo ricompilerà solo quando il numero di accessi al metodo sarà tale da far migliorare le prestazioni. In altre parole, l'optimizer analizza il codice in esecuzione e decide se, in base al numero di chiamate di <span style="font-style: italic;">foo()</span> questo sia un metodo molto utilizzato (metodo <span style="font-style: italic;">hot</span>) e quindi possa necessitare di ottimizzazioni (in particolare una ricompilazione in codice macchina) per le successive (si pensa frequenti) invocazioni.<br />Chiaramente entrambi i compilatori possono generare differenti ottimizzazioni, quali rimozione di codice inusato (dead code), srotolamento dei cicli, copy propagation, ecc. Ma la differenza sostanziale fra i due tipi di compilatori è nella decisione che viene presa circa la compilazione di un metodo in codice nativo.<br />Chiaramente si nota poi come un compilatore <span style="font-style: italic;">optimizer</span> debba avere anche un supporto adattativo, ossia debba essere in grado di comprendere quando è ora di compilare un metodo. Per fare questo, occorre un qualche meccanismo di memorizzazione delle statistiche run-time di un sistema JVM.

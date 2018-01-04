@@ -10,6 +10,12 @@ modified_time: '2013-04-04T22:30:00.055+02:00'
 thumbnail: http://1.bp.blogspot.com/-3kTOReAjZy8/UVwR6kYAPMI/AAAAAAAABFY/CcEPbmeW-G4/s72-c/make2.png
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4565425664218322961
 blogger_orig_url: http://fluca1978.blogspot.com/2013/04/make-love-not-war.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Adoro la cultura Unix!<br />E adoro la possibilita' di inserire degli "<i>easter egg</i>" nei programmi, ovvero delle piccole sorprese, il piu' delle volte mirate a far sorridere l'utente o il sysadmin.<br /><br />Ecco allora che il super-comando make, se invocato con il target speciale "<i>love</i>", risponde con il classico slogan. La versione GNU dei sistemi Linux e' invece piu' seria e rigorosa, e risponde con un messaggio di errore poiche' il target "love" non esiste...</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;"></div><div style="text-align: justify;"></div><div style="text-align: justify;"></div><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-3kTOReAjZy8/UVwR6kYAPMI/AAAAAAAABFY/CcEPbmeW-G4/s1600/make2.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="56" src="http://1.bp.blogspot.com/-3kTOReAjZy8/UVwR6kYAPMI/AAAAAAAABFY/CcEPbmeW-G4/s320/make2.png" width="320" />&nbsp;</a></div><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-b3NTJpxMn6M/UVwR6v7pRrI/AAAAAAAABFc/JTC1LxN5frQ/s1600/make1.png" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-b3NTJpxMn6M/UVwR6v7pRrI/AAAAAAAABFc/JTC1LxN5frQ/s1600/make1.png" /></a> </div><div class="separator" style="clear: both; text-align: center;"><br /></div><div style="text-align: justify;"></div><div style="text-align: justify;"></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Se si controlla il sorgente del <i>make</i> Unix, in particolare in <i>job.c</i>, si trova il seguente pezzo di codice che, ovviamente, spiega il funzionamento:</div><div style="text-align: justify;"><br /></div><pre>#ifndef WITHOUT_OLD_JOKE<br />                    if (strcmp(gn-&gt;name,"love") == 0)<br />                               (*abortProc)("Not war.");<br />                     else<br />#endif</pre>

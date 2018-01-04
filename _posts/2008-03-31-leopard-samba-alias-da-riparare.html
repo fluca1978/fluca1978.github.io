@@ -8,6 +8,12 @@ tags:
 modified_time: '2008-03-31T19:50:39.989+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2967696304214284018
 blogger_orig_url: http://fluca1978.blogspot.com/2008/03/leopard-samba-alias-da-riparare.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Leopard non sembra proprio un sistema <span style="font-style: italic;">cooperativo</span>: oltre ai problemi trovati con Netatalk (vedi miei precedenti post) ci sono anche dei problemi con Samba. Nonostante le opzioni per seguire i link simbolici di Samba, Leopard si rifiuta di seguire i link in una share Samba reclamando che l'alias è danneggiato e deve essere riparato.<br /><br />Una possibile soluzione al problema consiste nel disabilitare le <span style="font-style: italic;">estensioni unix</span> in Samba (<span style="font-style: italic;">unix extension = no</span>). Penso che il problema sia che con tali estensioni abilitate il server Samba comunica al Mac OSX che il file in analisi è un link (QUERY_FILE_UNIX_LINK), e che quindi OSX lo interpreti come un alias senza riuscire a risolvere la destinazione (e quindi senza fidarsi di dove Samba lo rimanda). Disabilitando tali estensioni, il Mac OSX è costretto a fidarsi di Samba e a seguire il symlink nel path appropriato.

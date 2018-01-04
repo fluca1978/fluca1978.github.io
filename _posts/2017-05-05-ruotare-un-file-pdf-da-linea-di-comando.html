@@ -8,6 +8,12 @@ tags:
 modified_time: '2017-05-05T18:27:04.582+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1257226285059342971
 blogger_orig_url: http://fluca1978.blogspot.com/2017/05/ruotare-un-file-pdf-da-linea-di-comando.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 A volte mi trovo con dei documenti PDF ruotati sottosopra causa una cattiva acquisizione.<br />Come fare per modificarli? Niente di piu' facile con <code>pdftk</code>:<br /><br /><br /><div class="org-src-container"><br /><pre class="src src-sh">% pdftk fileSbagliato.pdf cat 1-enddown output ok.pdf<br /></pre></div><br />Con il comando qui sopra si prende il file ruotato male, denominato <code>fileSbagliato.pdf</code><br />e lo si ruota di 180 gradi salvando il risultato in <code>ok.pdf</code>. La rotazione avviene<br />mediante il comando <code>cat</code> (<i>concatenate</i>) che accetta tre argomenti (vedere <code>pdftk(1)</code>):<br /><br /><ul class="org-ul"><li>la pagina iniziale;<br /></li><li>la pagina finale o la speciale stringa <i>end</i> per indicare l'ultima pagina senza conoscerne il numero;<br /></li><li>una strnga che indica l'eventuale rotazione (se necessaria), con valori come <i>north</i>, <i>down</i>, <i>east</i>, <i>left</i>, ecc.<br /></li></ul><br />Quindi la stringa <i>1-enddown</i> si spessa in <i>1</i>, <i>end</i> e <i>down</i> ovvero "dalla prima pagina alla fine, ruotando di <i>down</i> sottosopra<br />gradi ogni pagina.<br />

@@ -10,6 +10,12 @@ modified_time: '2010-08-24T22:00:00.931+02:00'
 thumbnail: http://3.bp.blogspot.com/_yhEX77VFKnM/THPQVVywKZI/AAAAAAAAAcA/8Bt6wxSX52g/s72-c/max-eclipse24.png
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-6081230942054169163
 blogger_orig_url: http://fluca1978.blogspot.com/2010/08/eclipse-helios-e-kde-45.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Dopo l'aggiornamento al KDE 4.5 sulla mia Ku buntu 10.04 Eclipse Helios (3.6) ha iniziato ad andare in crash. Sostanzialmente ogni qual volta si espandeva una directory o un package con molti file/classi l'IDE usciva bruscamente. Questo è un <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=320487">bug che anche io ho segnalato</a>, la soluzione per il momento consiste nel disabilitare il controllo sulla malloc/free (è proprio una free sbagliata a causare il crash) esportando la variabile MALLOC_CHECK_ con valore zero. Nel caso si avvi il programma da terminale o da script è semplice esportare la variabile, qualora invece lo si avvia tramite icona del desktop è necessario inserire il valore della variabile prima del comando vero e proprio di Eclipse come mostrato nella figura seguente.</div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_yhEX77VFKnM/THPQVVywKZI/AAAAAAAAAcA/8Bt6wxSX52g/s1600/max-eclipse24.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="400" src="http://3.bp.blogspot.com/_yhEX77VFKnM/THPQVVywKZI/AAAAAAAAAcA/8Bt6wxSX52g/s400/max-eclipse24.png" width="385" /></a></div>

@@ -8,6 +8,12 @@ tags:
 modified_time: '2016-04-20T17:46:02.916+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-3785686384927924024
 blogger_orig_url: http://fluca1978.blogspot.com/2016/04/sysadmin-panics-history.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Uno dei metodi migliori per imparare una cosa è l'emulazione, ovvero il tentativo di ripetizione di un insieme di operazioni.</div><div style="text-align: justify;">Capita allora di incontrare qualche sysadmin che, forse imbarazzato dal chiedere spiegazioni o aiuto, inizia a emulare i comandi dati da un altro sysadmin nella speranza di riuscire a fare le stesse cose.</div><div style="text-align: justify;">Capita anche che si voglia non condividere la soluzione ad un problema, e quindi non si voglia essere emulati.</div><div style="text-align: justify;">A me capitò di essere "spiato" attraverso una delle funzioni piu' stupide e banali: la shell history.</div><div style="text-align: justify;">E' presto detto: io inserivo dei comandi attraverso il mio utente, tali comandi rimanevano nel ring della shell history e un altro sysadmin, mediante superutente, leggeva i miei comandi. Addirittura in tail come fosse un log.</div><div style="text-align: justify;">La cosa ovviamente mi mandò su tutte le furio, ed ecco che linkare la history a /dev/null e azzerare il numero di entries fu' la mia reazione immediata. Per poi trovarmi i settaggi rimodificati al login successivo.</div><div style="text-align: justify;">Ovviamente non si può molto contro un superutente, ed ecco quindi che viene in mio soccorso ancora una volta Emacs: dired e un qualche package per terminale e la battaglia fu' presto vinta.</div>

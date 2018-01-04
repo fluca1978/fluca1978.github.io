@@ -8,6 +8,12 @@ tags:
 modified_time: '2011-12-18T16:40:01.122+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1610979575942528196
 blogger_orig_url: http://fluca1978.blogspot.com/2011/12/freebsd-gmirror-e-gpt.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Con l'imminente uscita di FreeBSD 9 alcuni utenti hanno lamentato problemi nell'utilizzo di <i>gmirror</i>, il tool userland di GEOM che consente il mirroring dei provider (dischi). Il problema e la <a href="http://forums.freebsd.org/showthread.php?t=28348">confusione</a> nasce dal fatto che FreeBSD 9 utilizza GPT come sistema di partizionamento di default per la versione 9, mentre usava il classico e antico MBR per le versioni precedenti. Qual'è quindi la differenza? Nello schema MBR la tabella delle partizioni viene salvata all'inizio del disco, nei primi 512 bytes. Per non sovrascrivere la tabella delle partizioni, GEOM salva le proprie informazioni (label) alla fine del disco.&nbsp;</div><div style="text-align: justify;">GPT, al contrario di MBR, salva anch'esso le proprie informazioni (tabella delle partizioni) alla fine del disco, e quindi puo' nascere conflitto fra GPT e GEOM. Conflitto che porta a confusione, a tal punto che anche <a href="http://blather.michaelwlucas.com/archives/1071">Mr. Lucas, nel suo blog</a>, scrive la soluzione al problema. Soluzione che è molto semplice, grazie all'eleganza di GEOM: basta infatti ricordarsi che un provider non è solo un disco fisico, ma anche una singola partizione, e il gioco è fatto! Si tratta quindi di mettere in mirroring non gli hard disk, ma le singole partizioni (cosa peraltro sensata e che ricorda il <i>md</i> di Linux)! Si avrà quindi un disco (o meglio almeno due!) con una GPT alla fine e tante partizioni, ciascuna con una label GEOM alla fine.</div>

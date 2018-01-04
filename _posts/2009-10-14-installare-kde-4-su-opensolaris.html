@@ -9,6 +9,12 @@ tags:
 modified_time: '2009-10-14T17:42:47.295+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2841750173661870591
 blogger_orig_url: http://fluca1978.blogspot.com/2009/10/installare-kde-4-su-opensolaris.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 OpenSolaris è un sistema che mi sta affascinando ogni giorno di piu', ma da buon utente KDE mi trovo un po' spaesato con il desktop GNOME (il default su OpenSolaris), così ho cercato le istruzioni per installare il mio desktop preferito.<br />Inizialmente mi sono imbattuto nella pagina ufficiale di <a href="http://techbase.kde.org/Projects/KDE_on_Solaris/OpenSolaris">KDE su OpenSolaris</a>, ma ahimé senza successo. Il problema, mi verrà spiegato poi, è che il repository IPS indicato non e' piu' disponibile, e quindi ho dovuto ripiegare su una versione di un altro repository.<br />I comandi da lanciare nel terminale di un OpenSolaris 2009.06 sono i seguenti:<br /><br /><span style="font-style: italic;">pfexec pkg set-authority -O http://solaris.bionicmutton.org:10000 bionicmutton</span><br /><span style="font-style: italic;">pfexec pkg refresh</span><br /><span style="font-style: italic;">pfexec pkg install qt</span><br /><span style="font-style: italic;">pfexec pkg install KDEBase-apps KDEgdm-integration</span>

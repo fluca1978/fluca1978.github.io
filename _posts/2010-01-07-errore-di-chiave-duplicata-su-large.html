@@ -8,6 +8,12 @@ tags:
 modified_time: '2010-01-07T14:39:27.985+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-14429244004093518
 blogger_orig_url: http://fluca1978.blogspot.com/2010/01/errore-di-chiave-duplicata-su-large.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 PostgreSQL memorizza i large objects (bytea) in una tabella <a href="http://www.postgresql.org/docs/current/static/catalog-pg-largeobject.html"><span style="font-style: italic;">pg_largeobject</span></a>, che come si intuisce dal suffisso appartiene al catalogo di sistema. Come riportato dal manuale, la tabella memorizza l'oid dell'oggetto (ottenuto alla sua creazione) e i dati effettivi dell'oggetto.<br />Potrebbe capitare, a seguito di diversi restore dello stesso database, che PostgreSQL produca l'errore<br /><br /><pre>ERROR:  duplicate key violates unique constraint "pg_largeobject_loid_pn_index"</pre><br />che indica che si sta cercando di inserire due volte lo stesso large object. Questo perché la tabella che memorizza i dati (e l'oid dell'oggetto) non appartiene al singolo database ma all'intero sistema (altrimenti non dovrebbe mai capitare una duplicate key in seguito ad un drop/create del database).<br />In questa situazione è necessario svuotare la tabella dei large object (completamente o parzialmente) con una istruzione di DELETE.<br /><pre><br /></pre>

@@ -9,6 +9,12 @@ tags:
 modified_time: '2008-03-26T14:09:12.246+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-5115155095808978961
 blogger_orig_url: http://fluca1978.blogspot.com/2008/03/registrazione-del-driver-jdbc-di.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Solitamente i driver JDBC vengono caricati in una applicazione Java mediante reflection (tipicamente con <span style="font-style: italic;">Class.forName(..)</span>) e successivamente devono essere registrati con il <span style="font-style: italic;">DriverManager</span>, un repository di driver disponibili per i differenti URL (e quindi database) disponibili.<br /><br />Il driver JDBC di PostgreSQL non richiede il passaggio di registrazione presso il <span style="font-style: italic;">DriverManager</span>, e infatti effettua automaticamente la registrazione di se stesso presso il driver manager, come facilmente visibile dal codice sorgente di <span style="font-style: italic;">org.postgresql.Driver</span>:<br /><br /><pre>   static<br />   {<br />       try<br />       {<br />           // moved the registerDriver from the constructor to here<br />           // because some clients call the driver themselves (I know, as<br />           // my early jdbc work did - and that was based on other examples).<br />           // Placing it here, means that the driver is registered once only.<br />           java.sql.DriverManager.registerDriver(new Driver());<br />       }<br />       catch (SQLException e)<br />       {<br />           e.printStackTrace();<br />       }<br />   }</pre><br />Come si nota il driver registra presso il driver manager una nuova istanza di se stesso (un'istanza sempre diversa, anche da quella che l'applicazione userà). Come si intuisce dai commenti, il fatto che la registrazione del driver sia effettuata a livello statico (ossia al caricamento della classe) implica che la registrazione venga fatta in automatico una sola volta, la prima in cui la classe viene messa in funzione (tipicamente con <span style="font-style: italic;">Class.forName(..)</span> o più tardi nel caso si sia utilizzato un class loader). Non è quindi richiesto al codice utente di registrare il driver presso il driver manager.

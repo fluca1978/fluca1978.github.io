@@ -8,6 +8,12 @@ tags:
 modified_time: '2010-10-07T21:00:01.099+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-4415283928828577562
 blogger_orig_url: http://fluca1978.blogspot.com/2010/10/ottenere-informazioni-su-generics-run.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="margin: 12px 0px; text-indent: 0px;">Un problema con il quale mi sono scontrato spesso è quello di rilevare i tipi parametrici usati in una dichiarazione generics a run-time. Senza spendere troppe parole, basti sapere che Java nel suo package <span style="font-style: italic;">reflect, </span>prevede un super-tipo <span style="font-style: italic;">Type</span> che corrisponde a tutti i tipi possibili Java, sia oggetti che primitivi. Una sottoclasse particolare di un tipo è un tipo parametrico, identificato da <span style="font-style: italic;">ParameterizedType</span>. Tale tipo contiene la definizione di un tipo generico, con tanto di identificatore simbolico e classe usata per definire il tipo. Tuttavia la reflection normale di Java non è sufficiente per ottenere la definizione parametrica a run-time: occorre passare attraverso la definizione esplicita di <span style="font-style: italic;">Class</span> con informazioni generiche. Ecco quindi che, da un qualunque tipo, è possibile risalire al primo parametro generics usato nella sua definizione con il seguente semplice metodo:</div><div style="margin: 12px 0px; text-indent: 0px;"><br /></div><div style="margin: 12px 0px; text-indent: 0px;"><span style="font-family: &quot;Courier New&quot;,Courier,monospace; font-size: x-small;">public final Class getModelTypeOfThisDAO() {<br />&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // get the superclass definition as a generic one<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ParameterizedType genericSuperClass = (ParameterizedType) this.getClass().getGenericSuperclass();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // now get the first argument of the class<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return (Class) genericSuperClass.getActualTypeArguments()[0];<br />}</span> </div>

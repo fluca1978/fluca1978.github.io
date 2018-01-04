@@ -8,6 +8,12 @@ tags:
 modified_time: '2008-08-01T10:47:05.461+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1278907242613204008
 blogger_orig_url: http://fluca1978.blogspot.com/2008/08/cancellare-i-file-piu-vecchi-di-una.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Molto spesso gli utenti che utilizzano degli spazi condivisi pubblici su dei server si scordano di cancellare i file che non servono piu', lasciando quindi <span style="font-style: italic;">intasato</span> il server stesso e consumando spazio che altri utenti potrebbero usare. Quando lo spazio server pubblico viene usato come pura area di scambio, è possibile impostare un job con cron che cancelli i file e le cartelle più vecchie di un certo numero di giorni (e quindi presumibilmente non piu' utili). Il seguente script si basa su <span style="font-style: italic;">find</span> e su <span style="font-style: italic;">xargs</span> e cancella i file piu' vecchi del numero di giorni specificato come parametro.<br /><br /><pre>#!/bin/bash<br /><br /># Programma per cancellare file e directory piu' vecchi di un tot. di giorni.<br /># $1 = directory radice dalla quale partire<br /># $2 = numero di giorni per la vecchiaia (di default 180)<br /><br />SOURCE_DIR=$1<br />AGE=180<br />FIND_CMD=`which find`<br />RM_CMD=`which rm`<br />RM_OPTS="-f"<br />XARGS_CMD=`which xargs`<br />XARGS_OPTS="-0"<br /><br />if [ $# -ge 2 ]<br />then<br />   AGE=$2<br />fi<br /><br /><br /># controllo parametri<br />if [ ! -d $SOURCE_DIR ]<br />then<br />   echo "Il percorso specificato $SOURCE_DIR non punta ad una directory"<br />   exit 1<br />fi<br /><br />AGE=`expr $AGE + 0`<br />if [ $? -ne 0 ]<br />then<br />   echo "L'anzianita' dei file (in giorni) non e' un numero ma $AGE"<br />   exit 2<br />fi<br /><br /><br /><br /># effettuo la pulizia<br />AGE="+$AGE"<br />$FIND_CMD "$SOURCE_DIR" -xdev -mtime $AGE -type f -print0 | $XARGS_CMD $XARGS_OPTS $RM_CMD $RM_OPTS<br />echo "Fatto <$?>"<br /></pre>

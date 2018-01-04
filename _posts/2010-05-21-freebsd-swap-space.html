@@ -8,6 +8,12 @@ tags:
 modified_time: '2010-05-21T18:30:01.500+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-6626995277276580757
 blogger_orig_url: http://fluca1978.blogspot.com/2010/05/freebsd-swap-space.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Ho scoperto sulla mia pelle che FreeBSD è molto piu' ingordo di memoria (e di conseguenza di swap space) che un sistema Linux. Negli ultimi anni mi ero abituato infatti a ridurre al minimo l'area di swap dei sistemi Linux, visto che bene o male tutti i processi riuscivano ad eseguire senza toccare quasi lo swap. Invece qualche giorno fa, su una macchina FreeBSD 8 con 2GB di RAM e 1 GB di swap sono stato letteralmente sbalzato fuori dal sistema che non riusciva piu' a swappare.</div><div style="text-align: justify;">La soluzione nel mio caso è stata semplice: avendo ancora dello spazio disco disponibile ho deciso di creare una nuova partizione di swap ben piu' grossa. Avrei potuto optare per un file di swap, ma non ho mai apprezzato molto l'uso dei file di swap preferendo di gran lunga l'uso di una intera partizione.</div><div style="text-align: justify;">Decido quindi di avviare <i>sysinstall</i> per configurare le mie partizioni, dapprima con <i>fdisk</i> e poi con <i>bsdlabel</i> ma la partizione non appare disponibile. Allora mi rimbocco le maniche e uso gli stessi comandi da linea di comando, ma ancora nulla: la partizione non viene etichettata correttamente. Devo quindi usare il live cd, riavviare, ed editare le partizioni a sistema "fermo", e il trucco funziona! All'avvio però il sistema appare senza area di swap! Indago un po' e scopro che il poliedrico <i>sysinstall</i> non aveva editato <i>/etc/fstab</i>, che quindi puntava ancora alla vecchia partizione di swap che nel frattempo avevo rimosso. Aggiustando manualmente la tavola delle partizioni da montare ha risolto tutti i problemi.</div>

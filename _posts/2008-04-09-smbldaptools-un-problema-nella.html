@@ -8,6 +8,12 @@ tags:
 modified_time: '2008-04-09T11:57:42.895+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-2165561343618078899
 blogger_orig_url: http://fluca1978.blogspot.com/2008/04/smbldaptools-un-problema-nella.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Usando gli <span style="font-style: italic;">smbldap_tools</span> su una Ubuntu 7.1 mi sono trovato nell'impossibilità di gestire i gruppi (e conseguentemente gli utenti); l'errore riportato era sempre del tipo<br /><br /><span style="font-style: italic;">No suche object at /usr/share/perl5/smbldap_tools.pm line 406.<br /><br /></span>Il problema ho verificato essere nella stringa usata per la ricerca della categoria gruppi nell'albero LDAP. In sostanza lo script ricerca un gruppo con etichetta <span style="font-style: italic;">Groups</span>, quando invece il gruppo è stato posizionato (dagli stessi tools di Ubuntu) con etichetta <span style="font-style: italic;">Group</span>. E' sufficiente allora forzare il gruppo manualmente nello script (sicuramente esistono soluzioni più eleganti, ma non ho avuto il tempo di cercarle) come segue:<br /><br /><span style="font-style: italic;">$config{groupsdn}=~s/Groups/Group/;</span><br /><br />per far funzionare correttamente i tools.

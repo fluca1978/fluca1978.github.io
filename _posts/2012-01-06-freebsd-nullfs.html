@@ -9,6 +9,12 @@ tags:
 modified_time: '2012-01-11T08:13:11.201+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-9204354227376312981
 blogger_orig_url: http://fluca1978.blogspot.com/2012/01/freebsd-nullfs.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Ho trovato il mio primo impiego pratico del <i>nullfs</i> di FreeBSD. Il <i>nullfs</i> consente di esportare un filesystem in modalità stacked (uno sopra all'altro). </div><div style="text-align: justify;">Nel mio caso  ho montato il sistema dei <a href="http://fluca1978.blogspot.com/2012/01/freenas-ports.html">ports di un FreeNAS con installazione su chiave USB</a> (e quindi file system in sola lettura):</div><br /><div style="font-family: &quot;Courier New&quot;,Courier,monospace;">mount -uw /</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace;">mkdir /usr/ports</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace;">mount -ur /</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace;">mount -t nullfs /mnt/RPOOL/ports/ /usr/ports</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace;">mount</div><div style="font-family: &quot;Courier New&quot;,Courier,monospace;"></div><div style="font-family: &quot;Courier New&quot;,Courier,monospace;">...</div><b><span style="font-family: &quot;Courier New&quot;,Courier,monospace;">/mnt/RPOOL/ports on /usr/ports (nullfs, local)</span></b>

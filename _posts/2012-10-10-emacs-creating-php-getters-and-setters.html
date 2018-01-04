@@ -10,6 +10,12 @@ tags:
 modified_time: '2012-10-10T15:59:00.655+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-140198454457043990
 blogger_orig_url: http://fluca1978.blogspot.com/2012/10/emacs-creating-php-getters-and-setters.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Following the initial work on the GNU Emacs and PHP class generator,&nbsp; I developed a <a href="https://github.com/fluca1978/fluca1978-coding-bits/blob/master/emacs-lisp/fluca1978-php.el">lisp function</a> to create the getter/setter methods, and since I was developing, I thought it would be much more powerful to have the definition of the whole property. The function <i>php-prop</i> does all the stuff: it prompts the user for a property name (that is the name of the internal variable) and for an optional comment to place on the property. After that the function places a <i>private</i> property at the cursor current point, and then scans the current class for a getter and a setter for the same property. If one or both of the previous methods are not found, the function generates the code for them at the very end of the class. The function also places comments in doxygen format using also the current username and e-mail (that have to be set in the Emacs configuration).&nbsp;</div><div style="text-align: justify;">Loading the function allows you to insert a PHP property just hitting <i>M-x php-prop</i>.</div>

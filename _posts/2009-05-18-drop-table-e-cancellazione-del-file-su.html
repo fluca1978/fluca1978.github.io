@@ -8,6 +8,12 @@ tags:
 modified_time: '2009-05-18T12:49:20.706+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-8523718998736074446
 blogger_orig_url: http://fluca1978.blogspot.com/2009/05/drop-table-e-cancellazione-del-file-su.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Quando si esegue un drop table, PostgreSQL azzera il file fisico su disco corrispondente alla tabella specificata (pg_class.relfilenode) ma non cancella il file da disco. La ragione di ciò è nell'evitare di avere diverse possibili corse critiche, come ad esempio un riassegnamento di quel relfilenode ad un'altra tabella appena creata. In sostanza PostgreSQL tiene da parte una lista di file node disponibili per essere riciclati, e nel caso una drop table sia seguita da una create table, riutilizza il file node già allocato. In questo modo non si deve chiedere al sistema operativo di ricreare il file su disco, risparmiando tempo e risorse.<br />Ovviamente però potrebbe capitare che il file non sia mai piu' riciclato, ed è per questo che PostgreSQL quando giunge al prossimo checkpoint verifica la lista dei relfilenode riutilizzabili, e rimuove fisicamente da disco quelli che non stati riassegnati.

@@ -10,6 +10,12 @@ tags:
 modified_time: '2010-04-02T17:00:01.574+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-6237912018866188690
 blogger_orig_url: http://fluca1978.blogspot.com/2010/04/webcalendar-impedire-linserimento-di-un.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 WebCalendar è un ottimo strumento per la gestione rapida degli appuntamenti condivisi, tuttavia a volte è opportuno limitare l'inserimento degli appuntamenti in un range predefinito di date. La modifica piu' rapida e semplice per ottenere questo consiste nel modificare il file <i>edit_entry.php</i>, repsonsabile dell'editazione/inserimento di una entry nel calendario: se tale file PHP impedisce all'utente di editare un nuovo appuntamento allora il gioco è fatto.<br /><br />Per questo motivo basta modificare il codice del file in questione, inserendo il seguente blocco per il calcolo della data attuale (che viene passata al file con il metodo GET) e la creazione di un avviso qualora si sfori oltre al range stabilito:<br /><br /><br /><pre>&lt;?php<br /><br />// non abilito date successive a $endDate o precedenti $startDate.<br /><br />if( ! isset($_GET['id']) ){<br /><br />    $thisyear = (int) ( $date / 10000 );<br /><br />    $thismonth = ( $date / 100 ) % 100;<br /><br />    $thisday = $date % 100;<br /><br />$startDate = date( 'm/d/y', mktime(3,0,0, "04", "06", "2010") );<br /><br />$endDate   = date( 'm/d/y', mktime(3,0,0, "07", "06", "2010") );<br /><br />$nextDate  = date( 'm/d/y', mktime ( 3, 0, 0, $thismonth, $thisday , $thisyear ) );<br /><br />if( $nextDate &gt; $endDate  || $nextDate &lt; $startDate ){<br /><br />    $can_edit = false;<br /><br />    echo "&lt;H3 align=center&gt;ATTENZIONE: non sono ammessi appuntamenti fuori dal range ($startDate - $endDate)&lt;/H3&gt;";<br /><br />    echo "&lt;P align=center&gt;Non puoi inserire appuntamenti nel giorno selezionato ($nextDate)&lt;/P&gt;";<br /><br />}<br /><br />}<br /><br />?&gt;<br /><br /><br /><br /><br /><br /><br /><br />&lt;?php<br /><br /><br /><br /> if ( $can_edit ) { // qui continua il codice normale di webcalendar<br /></pre>

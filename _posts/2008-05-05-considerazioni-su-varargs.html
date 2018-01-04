@@ -9,6 +9,12 @@ tags:
 modified_time: '2008-05-05T18:16:35.849+02:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1051002118502155819
 blogger_orig_url: http://fluca1978.blogspot.com/2008/05/considerazioni-su-varargs.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Con l'avvento di Java 5 sono comparse le funzioni <span style="font-style: italic;">varargs</span>, ossia metodi che accettano un numero indefinito di parametri. In questo post non mi soffermo sui dettagli tecnici, bensì su alcune considerazioni concettuali.<br /><br />Mediante <span style="font-style: italic;">varargs</span> molti programmatori hanno erroneamente capito che per passare un numero qualsiasi ed eterogeneo di parametri si dovesse dichiarare un metodo come <span style="font-style: italic;">varargs</span>. FALSO! Esistono molti modi per passare più di un parametro ad un metodo, primo fra tutti l'uso di una mappa o dictionary (ad esempio <span style="font-style: italic;">Properties</span>), che risulta più compatto, più leggibile, uniforme, estendibile e altrettanto efficiente. Inoltre va considerato che tipicamente un metodo dovrebbe avere 3-4 parametri, per motivi di leggibilità ed efficienza, e quindi mi sento di sconsigliare l'utilizzo di metodi <span style="font-style: italic;">varargs</span> ove non strettamente indispensabile, preferendo a questi metodi che accettino <span style="font-style: italic;">contenitori  </span>di parametri (come appunto i dizionari).

@@ -9,6 +9,12 @@ tags:
 modified_time: '2010-12-14T19:50:00.205+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-1658283586860854477
 blogger_orig_url: http://fluca1978.blogspot.com/2010/12/pljava-e-transazioni-distribuite.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 Al <a href="http://2010.pgday.it/programma-talks">PGDay 2010 </a>ho presentato un tutorial su PL/Java, una estensione Java ai linguaggi procedurali possibili in PostgreSQL. Alla fine del tutorial mi è stata rivolta una domanda interessante relativa ad un problema che non mi ero mai posto, e alla quale ho dato la risposta piu' logica secondo le mie conoscenze di PostgreSQL, di Java e di PL/Java.<br />Il quesito riguardava l'utilizzo di PL/java per comandare un ambiente enterprise ed eventualmente avviare una transazione distribuita. Cosa succede in questo caso? La risposta è semplice: PL/Java esegue all'interno del processo backend di PostgreSQL e quindi la transazione è confinata all'interno del backend stesso. Il processo backend non sa nulla di quello che PL/Java, che tuttavia esegue come processo esterno, sta facendo, e quindi non c'è modo di collegare la transazione/statement di PostgreSQL ad una eventuale transazione distribuita orchestrata da PL/Java. E' il programmatore PL/Java che deve farsi carico di tutto quanto.<br />Ad ogni modo, ho voluto chiarire questa faccenda sulla mailing list di PL/Java, <a href="http://postgresql.1045698.n5.nabble.com/pljava-itpug-italy-2010-td3302751.html">qui</a> si trova la discussione ufficiale.

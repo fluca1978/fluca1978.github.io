@@ -9,6 +9,12 @@ tags:
 modified_time: '2011-01-13T22:09:54.217+01:00'
 blogger_id: tag:blogger.com,1999:blog-1836481905487384887.post-475282101594254991
 blogger_orig_url: http://fluca1978.blogspot.com/2011/01/mi-sono-trovato-nella-strana-e.html
+
+permalink: /:year/:month/:day/:title.html
 ---
+
+
+<h1>~</h1>
+
 
 <div style="text-align: justify;">Mi sono trovato nella strana e interessante situazione di dover collegare la mia macchina Linux in una rete ove e' presente un server WINS. Wins e' un (assurdo) protocollo di comunicazione fra postazioni Microsoft Windows, sostanzialmente fa le veci di un DNS per la risoluzione dei nomi NetBios. Inutile dire che Unix non necessita di una simile complicazione, ma per l'interoperabilita' e' necessario che Samba consenta la connessione al server WINS. A complicare ancora di piu' la cosa vi era il fatto che il server di fatto si trovava in una sottorete distinta da quella della mia macchina e che le macchine Windows che dovevo in realta' raggiungere non erano nemmeno "dominate" dal server WINS in questione. In altre parole un semplice nmblookup contro il server WINS non risolveva i nomi NetBios che cercavo di ottenere, mentre una query ricorsiva come<br /><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace; font-size: x-small;">nmblookup -U -R 1.2.3.4 nome-netbios</span><br /><br />(con 1.2.3.4 indirizzo IP del server WINS)<br />funzionava correttamente. Due sono le opzioni da configurare in Samba affinche' la risoluzione dei nomi corrispondente al sopra citato invio ricorsivo funzioni:<br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace; font-size: x-small;"><br />&nbsp;wins server = 1.2.3.4<br />&nbsp;wins proxy = yes<br />&nbsp;name resolve order = wins lmhosts host bcast</span><br /><br />che rispettivamente abilitano il server WINS da interrogare in prima istanza, istrumentano i comandi Samba per inviare query ricorsive e forzano il processo di risoluzione dei nomi NetBios a partire prima dal server WINS, passando poi per i classici file degli host e infine via broadcast sulla rete.<br /><br />Se poi si vuole anche abilitare la risoluzione dei nomi NetBios come nomi host normali (e quindi si vuole ad esempio pingare un nome host NetBios) occorre modificare il file nsswitch.conf inserendo nella riga hosts anche la direttiva wins:<br /><br /><span style="font-family: &quot;Courier New&quot;,Courier,monospace; font-size: x-small;">hosts:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; files mdns4_minimal [NOTFOUND=return] dns wins mdns4</span><br /></div>
