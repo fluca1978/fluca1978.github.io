@@ -4,6 +4,7 @@ title:  "Creating many (really many) users in PostgreSQL"
 author: Luca Ferrari
 tags:
 - postgresql
+- planet-postgresql-org
 permalink: /:year/:month/:day/:title.html
 ---
 
