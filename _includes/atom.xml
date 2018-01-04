@@ -1,4 +1,13 @@
-  <!-- category: {{ include.cat }}  -->
+<title type='text'>{{ site.name }}</title>
+<subtitle type='html'></subtitle>
+<link href="{{ site.baseurl }}" />
+<author>
+  <name>Luca Ferrari </name>
+  <email>{{ site.email }}</email>
+</author>
+
+
+<!-- category: {{ include.cat }}  -->
   {% for post in site.posts %}
   {% if post.tags contains include.tag %}
   <entry>
