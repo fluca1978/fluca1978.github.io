@@ -4,10 +4,11 @@
 <author>
   <name>Luca Ferrari </name>
   <email>{{ site.email }}</email>
+  <uri>{{ site.baseurl }}</uri>
 </author>
 
 
-<!-- category: {{ include.cat }}  -->
+<!-- category: {{ include.tag }}  -->
   {% for post in site.posts %}
   {% if post.tags contains include.tag %}
   <entry>
@@ -15,7 +16,7 @@
         <link href="{{ site.production_url }}{{ post.url }}"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <id>{{ site.production_url }}{{ post.id }}</id>
-        <content type="html">{{ post.content | xml_escape | truncatewords: 100 }}</content>
+        <content type="html">{{ post.content | xml_escape | truncatewords: 300 }}</content>
     </entry>
     {% endif %}
 {% endfor %}
