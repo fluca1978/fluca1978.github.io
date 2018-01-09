@@ -14,7 +14,17 @@ But the intimate approach with such feline strongly influenced my mindset at the
 
 During my life several cats lived with me and my family, but only a few of them did get a special place into my life. Therfore, I tried to recognize the great value they added, as well as the influence, on my life.
 
+As a computer geek, back in the time when I was using an email client to manage all my incoming emails (and it was **KMail**, for the record), I changed the reply and forward quotes to appear like the following:
 
+*reply quote*
+
+    On 4 July 2009 your cat, walking on the keyboard, wrote:
+
+and *forward quote*
+
+    On 6 September 2010 Luca's cat found this was interering:
+
+just to emphasize how I was committed to *cats*! Today I read pretty much all my email via the web, and I never find out another client to allow me to customize the reply and forward quotes so far, so my email replies are more boring.
 
 For the records, here is a chronological list of my personal *starred cats*, so far. This does not mean that all the other cats do mean less to me, it is just the cats listed here are those I recognize myself the most with.
 
