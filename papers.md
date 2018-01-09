@@ -7,7 +7,7 @@ permalink: /papers/
 
 This is an almost complete list of all my papers, both on my research activity as well as other computer science activity.
 
-Please note I've placed the special placeholder *et al.* on papers I don't like to post here author names, but you can easily find the complete
+Please note I've used the special placeholder *et al.* on papers I don't like to post here author names, but you can easily find the complete
 bibliography entry searching the web.
 
 
@@ -93,7 +93,7 @@ bibliography entry searching the web.
  April 2004
 
 # Free Ebooks
-- L. Ferrari
+- L. Ferrari et al.,
 **[23 years of FreeDOS](http://www.freedos.org/ebook/)**,
 invited chapter
 
