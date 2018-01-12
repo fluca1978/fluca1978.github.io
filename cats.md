@@ -12,7 +12,9 @@ Nothing special here: I grew up with always at least a cat on my side.
 But the intimate approach with such feline strongly influenced my mindset at the point I sometime believe I'm myself a cat.
 **It is not just an intimate feeling with cats, it is that I recognize myself in their behavior.**
 
-During my life several cats lived with me and my family, but only a few of them did get a special place into my life. Therfore, I tried to recognize the great value they added, as well as the influence, on my life.
+During my life several cats lived with me and my family, but only a few of them did get a special place into my life.
+That's why I want to publicly state about their role and importance for me.
+
 
 As a computer geek, back in the time when I was using an email client to manage all my incoming emails (and it was **KMail**, for the record), I changed the reply and forward quotes to appear like the following:
 
@@ -44,7 +46,7 @@ Credits for the above photo are to the **best photographer I ever met**, publicl
 
 Duchessa died due to an accident when I was a middle-school student.
 
-*When I went public on the net with my first blog, I placed such photo on the top of the site to emphasize my feelings for Duchessa*.
+*When I went public on the net with my first blog, I placed her photo on the top of the site to emphasize my feelings for Duchessa*.
 
 
 ## Miguel (aka *Puccio*)
@@ -85,11 +87,11 @@ Anyway, with the Duchessa experience in mind, me and my wife agreed in the need 
 Entering Sofia.
 
 Sofia is the first **true black cat** in my life so far.
-**Sofia is also the _very first cat_ of my son**.
+**Sofia is also my son  _very first cat_**.
 
 Maybe because this situation reminds me Duchessa, maybe because Sofia appears to me as very elegant with her velvet black fur, or maybe because there's just a strong tie between us, she is a very important cat in my life.
 
-And the positive credits for the above are that I started using **Sofia as my profile image for both my web site and account (mail, phone, GitHub, etc.)**.
+And the positive credits for the above are that I began using **Sofia as my profile image for pretty much everything from my web site to my accounts (mail, phone, GitHub, etc.)**.
 
 
 ![Sofia](/images/main/sofia.png)
