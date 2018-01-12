@@ -36,8 +36,8 @@ The script does perform some other actions, like computing the *SHA1* hash for t
 
 Let's implement a simple Perl 6 script: [here there's `backup-time.p6`](https://github.com/fluca1978/fluca1978-coding-bits/blob/master/perl6/backup_time.p6).
 It does not perform exactly the same things the shell counterpart does, but the main engine works. It is not shorter than the shell counterpart, but it is surely shorter than a Perl 5 compatible version mainly due to:
-1. the `[IO::Path](https://docs.perl6.org/type/IO::Path)` role;
-2. the `[DateTime](https://docs.perl6.org/type/DateTime)` builtin and `where` checks.
+1. the [`IO::Path`](https://docs.perl6.org/type/IO::Path) role;
+2. the [`DateTime`](https://docs.perl6.org/type/DateTime) builtin and `where` checks.
 
 Allow me to explain the code line by line.
 First of all the `MAIN` declaration:
@@ -58,28 +58,36 @@ As a sidenote, **while it is true that `where` allows to quickly and early check
 The script then reduces to a single `for` loop against the list of arguments:
 
 ```perl
-    my $now = DateTime.now;
-    # for each entry compute the name
-    for @backup_entries -> $entry {
-        my $archive_name = $backup_dir.IO.add: '%s-%s-%04d-%02d-%02dT%02d%02d'.sprintf(
-                                                     ( $entry.IO.d ?? 'DIRECTORY' !! 'FILE' ),
-                                                     $entry.IO.basename,
-                                                     $now.year,
-                                                     $now.month,
-                                                     $now.day,
-                                                     $now.hour,
-                                                     $now.minute );
+my $now = DateTime.now;
+# for each entry compute the name
+for @backup_entries -> $entry {
+    my $archive_name =
+        $backup_dir.IO.add: '%s-%s-%04d-%02d-%02dT%02d%02d'.sprintf(
+                            ( $entry.IO.d ?? 'DIRECTORY' !! 'FILE' ),
+                            $entry.IO.basename,
+                            $now.year,
+                            $now.month,
+                            $now.day,
+                            $now.hour,
+                            $now.minute );
 
-        "== Backup %s\n\t  [%s]\n\t->[%s]".sprintf( ( $entry.IO.d ?? 'DIRECTORY' !! 'FILE' ), $entry.IO.basename, $archive_name ).say;
-        if $entry.IO.d {
-            my $current_tar = run 'tar', 'cjvf', $archive_name ~ '.tar.bz2', $entry, :out, :err;
-            ( $current_tar.exitcode == 0 ?? 'OK' !! 'KO' ).say;
-        }
-        else {
-            my $ok = $entry.IO.copy( $archive_name );
-            ( $ok ?? 'OK' !! 'KO' ).say;
-        }
+    "== Backup %s\n\t  [%s]\n\t->[%s]".sprintf( ( $entry.IO.d ?? 'DIRECTORY' !! 'FILE' ),
+                                                $entry.IO.basename,
+                                                $archive_name ).say;
+    if $entry.IO.d {
+        my $current_tar = run 'tar',
+                              'cjvf',
+                              $archive_name ~ '.tar.bz2',
+                              $entry,
+                              :out,
+                              :err;
+        ( $current_tar.exitcode == 0 ?? 'OK' !! 'KO' ).say;
     }
+    else {
+        my $ok = $entry.IO.copy( $archive_name );
+        ( $ok ?? 'OK' !! 'KO' ).say;
+    }
+}
 ```
 
 The `$archive_name` is a two step made name: first it is created via a `sprintf` call to interpolate the `DateTime` object, prepend the name with either `DIRECTORY` or `FILE` depending on the type of the current `$entry` and the result is `add`ed (i.e., concatenated) to the `$backup_dir` so to build up a full backup name for the archive to be created.
