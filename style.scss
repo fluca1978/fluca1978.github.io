@@ -30,6 +30,14 @@ body {
   width: 100%;
 }
 
+.container-header {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
@@ -213,7 +221,7 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; 
+  margin-top: 23px;
   font-family: $helveticaNeue;
   font-size: 18px;
 
@@ -230,7 +238,7 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-    
+
     &:hover, &:active {
       color: darken($navbar-hover-color,20);
     }
