@@ -39,7 +39,7 @@ As of December 2017 I also do little contributions to the **[Perl 6 documentatio
 
 Where I was learning, where I was teaching.
 
-## As a teacher
+## As a lecturer
 
 - Open Space **ITPUG Lab**, PGDay.IT 2013 and 2015
 - Seminar **Introduzione a PostgreSQL (parte 1 e 2)**, PGDay.IT 2012, Prato
