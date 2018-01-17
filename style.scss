@@ -191,7 +191,9 @@ img {
 
 .site-info {
   float: left;
-
+//  background-image: url(#{$avatar_small});
+//  background-repeat: no-repeat;
+//  margin-left: 80px;
   @include mobile {
     float: none;
     display: block;
