@@ -4,7 +4,6 @@ title:  "Perl 6 subst vs substr"
 author: Luca Ferrari
 tags:
 - perl6
-
 permalink: /:year/:month/:day/:title.html
 ---
 

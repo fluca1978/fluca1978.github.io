@@ -1,0 +1,22 @@
+{% assign main_category = post.tags[0] | downcase | replace: ' ', ''  %}
+{% assign main_category_image = '/images/main/post_categories/' | append: main_category | append: '.png' %}
+{% assign default_category_image = '/images/main/posts/blog-post.png' %}
+{% assign main_category_image_ok = false %}
+
+{% comment %}
+usare main_category per indicare il file direttamente su disco?
+{% endcomment %}
+
+{% for image_file in site.static_files %}
+{% if image_file.path == main_category_image %}
+{% assign main_category_image_ok = true %}
+{% endif %}
+{% endfor %}
+
+
+{% if main_category_image_ok == true %}
+
+<img src="{{ main_category_image }}" />
+{% else %}
+<img src="{{ default_category_image }}" />
+{% endif %}

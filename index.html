@@ -6,32 +6,46 @@ layout: default
   {% for post in site.posts limit:10 %}
     <article class="post">
 
-        <h1>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        </h1>
+
+
 
         {% if post.blogger_orig_url %}
         {% else %}
-        <div class="entry">
+
+        <div class="entry" >
+            <h1 >
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                    {% include post_categories_icon.html %}
+                    {{ post.title }}
+                </a>
+            </h1>
+
             {{ post.excerpt }}
             <div class="categories">
                 {{ post.date | date: "written sometime in %B %Y" }}
             </div>
 
-      </div>
+            {% comment %}
+            all avalaible categories
+            {% endcomment %}
+            {% include post_categories.html %}
 
-      {% endif %}
+
+        </div>
+
+        {% endif %}
 
 
 
-      {% include post_categories.html %}
-<!--
-      <a href="{{ site.baseurl }}{{ post.url }}" class="button button-primary">read {{ post.title }}</a>
--->
     </article>
     {% endfor %}
 
 
+
+
+    {% comment %}
+    all available posts sort by tag
+    {% endcomment %}
     {% include post_tag_list.html %}
 
 </div>

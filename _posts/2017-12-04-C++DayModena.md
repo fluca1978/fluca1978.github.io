@@ -3,8 +3,8 @@ layout: post
 title:  "Italian C++ Day Modena"
 author: Luca Ferrari
 tags:
-- c++
 - conferences
+- c++
 permalink: /:year/:month/:day/:title.html
 ---
 I attented the last *Italian C++ Day* in Modena. Here's my short report about it.
