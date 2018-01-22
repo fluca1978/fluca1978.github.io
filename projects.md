@@ -62,6 +62,7 @@ Where I was learning, where I was teaching.
 
 ## As a student
 
+ - **Modena Tech Summit 2018**, 2018, Modena
  - **C++ Day 2017**, 2017, Modena
  - **Linux Day**, 2008, 2012, 2017, Modena
  - **Devops Day**, 2014, Bologna
