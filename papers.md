@@ -100,6 +100,14 @@ invited chapter
 # Online Journals
 
 - L. Ferrari,
+**Managing Multiple Perl 5 Installations with Perlbrew**,
+`BSD Magazine`,
+Volume 12, n.01, issue 01/2018(101)
+- L. Ferrari et al.,
+**What's next for Feature Development in FreeNAS/TrueNAS** (interview with Kris Moore),
+`BSD Magazine`,
+Volume 12, n.01, issue 01/2018(101)
+- L. Ferrari,
 **Page Checksum protecion in PostgreSQL**,
 `BSD Magazine`,
 Volume 11, n. 12, issue 12/2017(100)
