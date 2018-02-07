@@ -115,7 +115,7 @@ On an irregular basis, i.e., not for production but for personal use:
 * **VirtualBox** - a good virtualization solution for testing other systems;
 * **LibreOffice**, **Org-mode**, **LaTeX** - because my documents should look good;
 * **Redmine** - a very rich issue tracking and activity manager tool I recommend and use;
-* **Eclipse RCP** - up to version 3, it was a very inspiring ecosystem and the **SWT** was light-years ahead of othee Java models (*AWT* and *Swing*);
+* **Eclipse RCP** - up to version 3, it was a very inspiring ecosystem and the **SWT** was light-years ahead of other Java models (*AWT* and *Swing*);
 
 
 There was a time when I was more a *sysadmin* than a developer, and back in those days I used:
