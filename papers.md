@@ -100,6 +100,10 @@ invited chapter
 # Online Journals
 
 - L. Ferrari,
+**Table Level Security in PostgreSQL**,
+`BSD Magazine`,
+Volume 12, n.02, issue 02/2018(102)
+- L. Ferrari,
 **Managing Multiple Perl 5 Installations with Perlbrew**,
 `BSD Magazine`,
 Volume 12, n.01, issue 01/2018(101)
