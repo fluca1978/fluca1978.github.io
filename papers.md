@@ -99,6 +99,11 @@ invited chapter
 
 # Online Journals
 
+
+- L. Ferrari,
+**How to Manage Multiple Perl 6 Installation with Rakudobrew**,
+`BSD Magazine`,
+Volume 12, n.03, issue 03/2018(103)
 - L. Ferrari,
 **Table Level Security in PostgreSQL**,
 `BSD Magazine`,
