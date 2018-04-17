@@ -5,7 +5,7 @@ author: Luca Ferrari
 tags:
 - postgresql
 - planet-postgresql-org
-- planet-postgresql-it
+- itpug
 permalink: /:year/:month/:day/:title.html
 ---
 The local Linux Users' Group ConoscereLinux is delivering a six-part course on PostgreSQL 10. Guess who's lecturing...
