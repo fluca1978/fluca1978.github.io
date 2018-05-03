@@ -19,7 +19,7 @@ It is possible to use a specific version of Perl without having to change the sy
 
 To know which `perl` executable the server will run it is possible to use the `Config` module for a little introspection:
 
-```sq
+```sql
 # DO LANGUAGE plperlu
 $PERL$
 
