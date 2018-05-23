@@ -39,7 +39,7 @@ Where I was learning, where I was teaching.
 
 ## As a lecturer
 
-- Seminar **PostgreSQL - il database piu' avanzato del pianeta**, [ConoscereLinux Linux Users' Group Modena](https://conoscerelinux.org/courses/postgresql/), 2018 (6 lessons)
+- Seminar **PostgreSQL - il database piu' avanzato del pianeta**, [ConoscereLinux Linux Users' Group Modena](https://conoscerelinux.org/courses/postgresql/), 2018 (7 lessons)
 - Open Space **ITPUG Lab**, PGDay.IT 2013 and 2015
 - Seminar **Introduzione a PostgreSQL (parte 1 e 2)**, PGDay.IT 2012, Prato
 - Ligthning Talk **From ISAM to PostgreSQL**, PGDay.IT 2011, Prato
