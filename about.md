@@ -152,7 +152,7 @@ When it was time to set up my first internet account, as you can imagine, there 
 
 And that is how **`fluca1978`** took the field. Since then I changed a lot of account managers and service providers, so chances are you can find my username tied to different services, but you can be sure that account is mine.
 
-Interestingly, I waited for my [archery career to stop before having a fully customized quiver](http://fluca1978.blogspot.it/2009/01/dragoon-took-field.html) with my nickname on it. Please consider this does not include the number because, well, in archery the nickname does not care.
+Interestingly, I waited for my [archery career to stop before having a fully customized quiver](https://fluca1978.github.io/2009/01/03/dragoon-took-field.html) with my nickname on it. Please consider this does not include the number because, well, in archery the nickname does not care.
 
 ![fluca quiver](/images/main/quiver.jpg)
 
