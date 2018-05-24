@@ -23,3 +23,5 @@ Chances are there will be a /replication/ instance coming up sooner or later!
 ![pg_chocolate_1](/images/posts/pg_chocolate/pg_chocolate_1.jpg)
 ![pg_chocolate_2](/images/posts/pg_chocolate/pg_chocolate_2.jpg)
 
+
+As a side note, **I really have to thank my friend Max** for patiently drive me home and, most notably, for coming up with the idea of this course. A special thank to the Modena Linux User Group [ConoscereLinux](https://conoscerelinux.org/) and its president **Luca** for hosting the course and help me arranging the material.
