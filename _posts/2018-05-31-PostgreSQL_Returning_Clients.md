@@ -6,7 +6,7 @@ tags:
 - postgresql
 - planet-postgresql-org
 - java
-- perl 5
+- perl5
 permalink: /:year/:month/:day/:title.html
 ---
 PostgreSQL statements support the ~RETURNING~ predicate that allows a statement that manipulates tuples to return a set of column of such tuples. It is easy to use such statements on a client-basis to get back data not available when the query has been written.
