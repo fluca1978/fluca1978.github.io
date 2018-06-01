@@ -276,7 +276,7 @@ and *Fujifilm FP-14* passport camera;
 <a name="music"></a>
 # Me by *Music*
 
-What I run pretty much everyday on my music device player:
+What I play  everyday on my music device:
 
 - *Depeche Mode*;
 - *Soundgarden* and *Audioslave*;
