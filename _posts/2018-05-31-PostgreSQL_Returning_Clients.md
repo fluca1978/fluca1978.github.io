@@ -13,14 +13,14 @@ PostgreSQL statements support the ~RETURNING~ predicate that allows a statement 
 
 # Statements with RETURNING: Perl and Java clients
 
-Statements such as ~INSERT~, ~DELETE~ and ~UPDATE~ can have a ~RETURNING~ predicate that allows to get back the data that the statement has manipulated. On a theoretical point of view, it is like the following two statements are executed:
+Statements such as `INSERT`, `DELETE` and `UPDATE` can have a `RETURNING` predicate that allows to get back the data that the statement has manipulated. On a theoretical point of view, it is like the following two statements are executed:
 
 ```sql
 INSERT|UPDATE|DELETE tuples;
 SELECT above_tuples;
 ```
 
-From within the database connection, such ~RETURNING~ statement can be very useful to *see* which tuples have been modified, and from a client perspective it can be used to get random and serial-based data.
+From within the database connection, such `RETURNING` statement can be very useful to *see* which tuples have been modified, and from a client perspective it can be used to get random and serial-based data.
 Consider a simple table defined as follows:
 
 ```sql
@@ -39,9 +39,9 @@ SELECT random()
 FROM generate_series( 1, 10 );
 ```
 
-The above query inserts 10 tuples with ~rv~ set to a random value and ~pk~ set to the next value of the associated sequence. In other words, it is not possible to know in advance what values have been inserted.
+The above query inserts 10 tuples with `rv` set to a random value and `pk` set to the next value of the associated sequence. In other words, it is not possible to know in advance what values have been inserted.
 
-Thanks to ~RETURNING~ this knowledge is pushed back to the client, and can be consumed as a normal result set, that means as if the client issued a ~SELECT~ statement.
+Thanks to `RETURNING` this knowledge is pushed back to the client, and can be consumed as a normal result set, that means as if the client issued a `SELECT` statement.
 
 As a simple example, consider [the following Perl client](https://github.com/fluca1978/fluca1978-pg-utils/blob/master/examples/clients/perl/returning.pl):
 
