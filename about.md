@@ -70,7 +70,7 @@ In the academic world:
 * PhD in Computer Science, University of Modena and Reggio Emilia, year 2005
 * Adjunct Professor, [Nipissing University](http://www.nipissingu.ca/), years 2011-2014
 * lecturer at the University of Modena and Reggio Emilia for several courses including `Java, OOP, operating systems`, years 2003-2006
-* lecturer at local high schools for `HTML, Javascript, networking`, years 2009-2014`
+* lecturer at local high schools for `HTML, Javascript, networking`, years 2009-2014
 * BSD Certification, year 2013
 
 In the computer science world:
