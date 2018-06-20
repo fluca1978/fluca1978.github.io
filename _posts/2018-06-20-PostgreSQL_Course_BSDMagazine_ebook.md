@@ -4,6 +4,7 @@ title:  "PostgreSQL BSD Magazine course ebook"
 author: Luca Ferrari
 tags:
 - postgresql
+- itpug
 permalink: /:year/:month/:day/:title.html
 ---
 I'm preparing another short course on PostgreSQL, this time online with written material.
