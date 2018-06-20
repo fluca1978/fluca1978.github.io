@@ -82,7 +82,7 @@ bibliography entry searching the web.
  May 2006
 - L. Ferrari et al.,
  **Role-based Approaches for Engineering Interactions in Largescale Multi-Agent Systems**,
- *invited* chapter of the book `Software Engineering for Multi-Agent Systems II`,
+ *invited* chapter of the book `Software Engineering for Multi-Agent Systems II**,
  Pereira de Lucena,
  Garcia,
  Romanovsky,
@@ -91,6 +91,11 @@ bibliography entry searching the web.
  Lecture Notes in Computer Science n. 2940,
  pp. 243-263,
  April 2004
+
+# Ebooks
+- L. Ferrari,
+**[Improve your PostgreSQL Skills](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/)
+ebook edited out of an online course material for [BSD Magazine](http://bsdmag.org)
 
 # Free Ebooks
 - L. Ferrari et al.,
