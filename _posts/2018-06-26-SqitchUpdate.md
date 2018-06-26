@@ -5,6 +5,7 @@ author: Luca Ferrari
 tags:
 - sqitch
 - planet-postgresql-org
+- itpug
 permalink: /:year/:month/:day/:title.html
 ---
 Sqitch has nothing particular to do with PostgreSQL, except it does support our beloved database!
