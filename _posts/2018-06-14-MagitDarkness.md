@@ -27,7 +27,7 @@ nothing to commit (create/copy files and use "git add" to track)
 fatal: your current branch 'master' does not have any commits yet
 ```
 
-but what about the very situation in ~magit~?
+but what about the very situation in `magit`?
 Here's a screenshot for the above repository:
 
 ![magit_initial_repository](/images/posts/magit_initial_repository.png)
