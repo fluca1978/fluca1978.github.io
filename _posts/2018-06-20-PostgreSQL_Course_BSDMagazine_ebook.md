@@ -7,7 +7,7 @@ tags:
 - itpug
 permalink: /:year/:month/:day/:title.html
 ---
-I'm preparing another short course on PostgreSQL, this time online with written material.
+I've completed another short course on PostgreSQL, this time online with written material.
 
 
 # PostgreSQL BSD Magazine course ebook is now available!
