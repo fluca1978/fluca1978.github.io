@@ -34,18 +34,19 @@ Looking at me by different views:
 
 I've always been fascinated by computers since the age of movies like *War Games*.
 My very first computer was the very popular [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64) that my father bought to me and placed
-into a wardrobe with an old CRT television. I wrote a few programs using the [BASIC](https://en.wikipedia.org/wiki/Commodore_BASIC) language, and did not found it very fun.
+into a wardrobe with an old CRT television. I wrote a few programs using the [BASIC](https://en.wikipedia.org/wiki/Commodore_BASIC) language, and did not found it very fun: spending so much time to get a bouncing ball on the screen seemed a waste of time.
 
 A few years later my grandpa gave me an [Intel 8088](https://en.wikipedia.org/wiki/Intel_8088) based PC with a green monitor and, of course, a version of [MS-DOS](https://en.wikipedia.org/wiki/MS-DOS). I remember doing a recursive `dir` on the 50MB disk running for a couple of seconds!
 
-I grew up and got an [Intel 486](https://en.wikipedia.org/wiki/Intel_80486) DX personal computer that I used to do some homework while attending school. After that a few [Intel Celeron](https://en.wikipedia.org/wiki/Celeron) PCs took place on my desk, then it came a laptop, and a lot of other hardware I really don't remember.
+I grew up and got an [Intel 486](https://en.wikipedia.org/wiki/Intel_80486) DX personal computer that I used to do some homework while attending school. I remember doing some spreadsheets related to my archery performances, as well as using it to print out sight notes.
+After that a few [Intel Celeron](https://en.wikipedia.org/wiki/Celeron) PCs took place on my desk, then it came a laptop, and a lot of other hardware I really don't remember.
 
-I attended the *computer science* course at my local university, where I was (badly) introduce to `Unix`, or better to `Linux`. I felt in love with the philosophy of the system: you were not limited in any way, you could just type and do whatever you wanted piping a few commands.
+I attended the *computer science* course at my local university, where I was (badly) introduced to `Unix`, or better to `Linux`. I felt in love with the philosophy of the system: you were not limited in any way, you could just type and do whatever you wanted piping a few commands.
 
 My first Linux distro was a *Red Hat 5.2*, and since I was still not aware of the `root` concept (in the sense that Microsoft did not have to teach you such concept), I had to install it over and over again because I was jamming a few configuration files...
 At my fourth year of university I did switch totally to `Linux`, keeping around a bootable [Microsoft Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) for those games and programs I was not aware to find a substitute.
 
-My first job, luckily, allowed me to manage a few Linux servers, so I had the chance to improve my skills on such system.
+My first job, luckily, required me to manage a few Linux servers, so I had the chance to improve my skills on such system.
 After a few years I met [OpenBSD](http://www.openbsd.org) and [FreeBSD](http://www.freebsd.org) and I switched to the Unix culture.
 Today I use both Linux and BSD as my own operating systems, with the former being the leading OS.
 
@@ -179,7 +180,7 @@ The main language for this blog will be *english*, but please consider it is not
 typos and false-friends ahead!
 I will write in italian stuff that does make sense only in such language, i.e., localized material, but not technical stuff.
 
-As of today, I've merged all the content of my previous blog into this one, so this is the right place to read on. However, converting
+I've merged all the content of my previous blog into this one, so this is the right place to read on. However, converting
 different post formats made most of them hard to read, especially for code and indentation, so please be patient while reading
 old blog posts.
 
