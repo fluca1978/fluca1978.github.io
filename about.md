@@ -12,7 +12,7 @@ permalink: /about/
 ## tl;dr
 Looking at me by different views:
 
-- [Me by Computer](#science)
+- [Me by Computer Science](#science)
 - [Me by Achievements](#achievements)
 - [Me by Skills](#skills)
 - [Me by Username](#username)
@@ -98,9 +98,9 @@ Not a complete enumeration, but this is what I use on an almost regular basis:
 * **PostgreSQL** - 10+ years;
 * **Linux** - 18+ years;
 * **Emacs** - 18+ years (it was my default editor since day one and yes, I don't know `vi`!);
-* **Git**, **Fossil** - 5+ years, and of course I know and I used older systems;
-* **SQLite** - 2+ years;
-* **BSD** - 5+ years;
+* **Git** - 5+ years, with a couple of years over **Fossil**;  of course I used also other systems;
+* **SQLite** - 4+ years;
+* **BSD** - 6+ years;
 * **PHP** - 9+ years;
 
 
@@ -128,11 +128,11 @@ There was a time when I was more a *sysadmin* than a developer, and back in thos
 * **Wireshark** (even when it was named *Ethereal*) and **tcpdump**, because your network does not always do what you think. Thanks God
 then came **netflow**;
 * a lot of Unix daemons including *dhcp*, *sendmail*, *postfix*, *cups* and a lot of stuff like that to make your network appearing serious;
-* **Zyxel** appliances including routers, wi-fi spot, firewall, modem and alike;
+* **Zyxel** appliances including routers, wi-fi spots, firewalls, modems and alike;
 
 
 Last but not least, I believe I'm *one out of few people* knowking the **Dataflex 3.1d** ecosystem, or ehm, I would not call
-an ecosystem, so let's say I've spent around 10 years developing on such ancient platform.
+an ecosystem, so let's say I've spent around 10 years developing on such ancient platform. If you have such a system, chances are I can help you get out your data in a more portable way!
 
 Feel free to search for **`fluca1978`** on the forums, mailing lists, IRC channles to validate the above.
 
@@ -200,6 +200,7 @@ In the case you are interested in the *holy-war* of computer science, here it is
 - Thunderbird or ... ? **KMail** when I was using a mail client, today I read all my emails via web;
 - Bash or Bourne? **zsh** as interactive, **Bourne** for scripting (one day I will learn *pdksh*!);
 - Linux or BSD? **Linux** at work, **FreeBSD** in the spare time, with seldom usage of **OpenBSD**;
+- Windows or ... ? Isn't it clear from the above line that I do not use Microsoft Windows any more? Really, I cannot help you on any version of Windows more recent than XP!
 - Gimp or Photoshop? **Gimp**, even if my parents were masters at using the latter;
 - Perl or Python? **Perl**, for whole life! It is not I don't like Python, it is just I cannot find anywhere else the same culture and approach that Perl has;
 - PostgreSQL or MySQL? **PostgreSQL** because I believe it is much more superior and not driven by business;
