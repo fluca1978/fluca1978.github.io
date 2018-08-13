@@ -13,10 +13,10 @@ permalink: /about/
 Looking at me by different views:
 
 - [Me by Computer Science](#science)
-- [Me by Achievements](#achievements)
+- [Me by Achievements](#achievements) (see also the **[Papers page](/papers.md)**)
 - [Me by Skills](#skills)
 - [Me by Username](#username)
-- [Me by Projects](#projects)
+- [Me by Projects](#projects) ([detailed projects page](/projects.md))
 - [Me by Blog](#blog)
 - [Me by Emacs or Vi](#emacs)
 - [Me by Social Networks](#social)
@@ -26,8 +26,6 @@ Looking at me by different views:
 - [Me by Beliefs](#beliefs)
 - [Me by Cats](#cats)
 - [Me by University](#university)
-
-You could also be interested in my [Projects page](/projects.md) and **[Papers page](/papers.md)**.
 
 
 <a name="computer"></a>
