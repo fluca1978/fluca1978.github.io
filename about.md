@@ -6,7 +6,7 @@ permalink: /about/
 
 **I'm a software developer living in Italy with my beautiful wife, my great son, and my two (female) cats.**
 
-![fluca1978](/images/main/lucaMain.png)
+![fluca1978](/images/main/lucaMainOlivia.png)
 
 
 ## tl;dr
