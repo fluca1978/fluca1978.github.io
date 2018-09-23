@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "pgenv get configuration!""
+title:  "pgenv get configuration!"
 author: Luca Ferrari
 tags:
 - postgresql
