@@ -37,3 +37,56 @@ In this [pull request](https://github.com/theory/pgtap/pull/177) I implemented a
 - `is_child_of` and its counterpart `isnt_child_of` to know if a table is the n-th child of another table.
 
 In particular the last two set of functions has been implemented using the recursive CTEs feature of PostgreSQL, that drop support to version 8.4 and not before.
+
+
+### `pgTap` *col_is_pk()* variants
+
+Anothe issue that caught my attention was [about adding some new overloaded variants of the function `col_is_pk()`](https://github.com/theory/pgtap/issues/133), that seemed a quite easy task. Therefore I created [a pull request to do exactly that job](https://github.com/theory/pgtap/pull/178), but while implementing it I found out that there was a potential clash between having arguments of type `name` and of type `text` (because essentially a `name` is a `char[63]`). This made failing tests in ambigous situations like:
+
+```sql
+SELECT col_is_pk( 'public', 'table', 'pk' );
+```
+
+because the server cannot choose between using a `col_is_pk( name, name, name )` and a `col_is_pk( text, text, tex )`.
+By the way, I did a little refactoring and submitted the pull request, but oh gosh! I was testing on *decent* and *recent* versions of PostgreSQL, and the test suite was failing against 8.4 because of the introduction of `format()`. The point is I did not liked at all code like:
+
+```sql
+'Column ' ||quote_ident($1) || '.' ||quote_ident($2) || '(' || quote_ident($3)|| ') must be a primary key'
+```
+
+and thanks to `format()` (let's call it an SQL-like `printf(3)` for PostgreSQL, it could be rewritten in a very more readable way:
+
+```sql
+format( 'Column %I.%I(%I) must be a primary key', $1, $2, $3 );
+```
+
+The problem is that `format()` has been introduced in PostgreSQL 9.1, so all prior versions were failing. Argh! Shame on me, I swallowed the string concatenation and did another commit to fix it back.
+But while doing all this stuff, I decided to take advantage of default arguments. Why having two almost identical representation of the same overloaded function? As an example:
+
+```sql
+CREATE OR REPLACE FUNCTION
+col_is_pk( name, name, name, text )
+-- implementation
+
+CREATE OR REPLACE FUNCTION
+col_is_pk( name, name, name )
+-- implementation
+```
+
+The `text` last argument is the test description, that is not mandatory. But instead of having two functions, let's use a single one with a default to null optional argument. The implementation pattern looks like:
+
+```sql
+CREATE OR REPLACE FUNCTION
+col_is_pk( name, name, name, text DEFAULT NULL )
+-- implementation
+   coalesce( $4, 'Column bla blah must be a primary key' )
+```
+
+So, if the optional `$4` text argument is provided, it is used, otherwise the `coalesce` function returns the default description.
+
+
+### `www.itpug.org` trophey patches
+
+Yeah, these are really simply patches I did because the maintainer was responsive that day, not because I'm still involved with the user group or have changed my mind about it. Essentially:
+- [a little text over here and there](https://github.com/ITPUG/www.itpug.org/pull/5)
+- [removal of the italian planet](https://github.com/ITPUG/www.itpug.org/pull/6), since it was not working anymore (and this commits to the fact ITPUG does not seem to be interested in keeping a planet, neither a blog update).
