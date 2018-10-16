@@ -90,3 +90,15 @@ So, if the optional `$4` text argument is provided, it is used, otherwise the `c
 Yeah, these are really simply patches I did because the maintainer was responsive that day, not because I'm still involved with the user group or have changed my mind about it. Essentially:
 - [a little text over here and there](https://github.com/ITPUG/www.itpug.org/pull/5)
 - [removal of the italian planet](https://github.com/ITPUG/www.itpug.org/pull/6), since it was not working anymore (and this commits to the fact ITPUG does not seem to be interested in keeping a planet, neither a blog update).
+
+
+### `pgenv` patching feature
+
+This [pull request](https://github.com/theory/pgenv/pull/20) was a proposal for allowing `pgenv` to automagically patch the source tree it is going to build. Before this patch, there was [some discussion](https://github.com/theory/pgenv/issues/18) about how to instrument `pgenv` for patching the source tree, and at that moment the script was doing a *direct patching* hardcoded into the script itself.
+
+My proposal was to use an *index* file, that in turn contained a list of individual patches to apply on the source tree. But in order to let the user and the system to be as much flexible as possible, I decided to provide several optional indexes based on a PostgreSQL-version and Operating System combination, so that the user and the `pgenv` maintainers could choose how to distribute their patches and build a *patch-archive* different from any OS and/or PostgreSQL version or part of it.
+
+
+## What I learned this year
+
+This year was a little harder than the previous ones. Partially, it was because I committed to regularly propose my pull requests, that translates into a "less idea" principle. Second, because I tried to implement something more useful, dealing with new projects like `pgTap`. And it was from `pgTap` that I started learning how to deal with Continuos Integration and Travis.
