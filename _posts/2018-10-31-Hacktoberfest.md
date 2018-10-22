@@ -98,6 +98,12 @@ This [pull request](https://github.com/theory/pgenv/pull/20) was a proposal for 
 
 My proposal was to use an *index* file, that in turn contained a list of individual patches to apply on the source tree. But in order to let the user and the system to be as much flexible as possible, I decided to provide several optional indexes based on a PostgreSQL-version and Operating System combination, so that the user and the `pgenv` maintainers could choose how to distribute their patches and build a *patch-archive* different from any OS and/or PostgreSQL version or part of it.
 
+### `pgenv` message verbosity
+
+This [pull request](https://github.com/theory/pgenv/pull/22) is a proposal for making `pgenv` configurable with regard to the amount of messages it does print. In particular the idea came into my mind from an [issue](https://github.com/theory/pgenv/issues/21) asking for some more configuration. The idea is that almost every message printed out by the program is now printed via a specific function, named `pgenv_message`, that prints to *stderr* and only if the `PGENV_VERBOSITY` variable has a level of verbosity greater or equal to that of the message.
+
+This, of course, makes the usage of `pgenv_debug` obsolete, so that every call to `pgenv_debug` has been replaced to calls to `pgenv_message` with a level of `'debug'`.
+
 
 ## What I learned this year
 
