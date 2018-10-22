@@ -104,6 +104,11 @@ This [pull request](https://github.com/theory/pgenv/pull/22) is a proposal for m
 
 This, of course, makes the usage of `pgenv_debug` obsolete, so that every call to `pgenv_debug` has been replaced to calls to `pgenv_message` with a level of `'debug'`.
 
+### `perlbrew` clone-modules fix
+
+This is related to some odd behavior of the command `clone-modules` that I implemented in the last year Hacktoberfest.
+The problem was that such command was expecting two version numbers to perform the cloning, a source and a destination, but only the destination was effectively used, while the source was always erronously set to the currently running instance. This [pull request](https://github.com/gugod/App-perlbrew/pull/640) introduced the fix and also some extra check to avoid waste of time and resources while doing the cloning.
+
 
 ## What I learned this year
 
