@@ -20,7 +20,9 @@ Here is a short list about my Pull Requests and how they gone. The [overall stat
 In the last couple of weeks I spent some time working on `pgenv`, a PostgreSQL binary manager.
 The idea behind `pgenv` is to build, select (use) and control a single instance of PostgreSQL on the local machine, allowing the user to keep more instances available at her fingertips.
 Well, why not allow for building more than instance at the time?
-This is what [this pull request is all about](https://github.com/theory/pgenv/pull/17): the `build` command accepts a list of PostgreSQL versions to build, so that it is possible to specify something like:
+This is what [this pull request is all about](https://github.com/theory/pgenv/pull/17): the `build** command accepts a list of PostgreSQL versions to build, so that it is possible to specify something like:
+
+**I [closed](https://github.com/theory/pgenv/pull/17#issuecomment-425923970) this pull request because, after a discussion, we decided it was not so useful.**
 
 ```sh
 % pgenv build 10.5 11beta4 9.6.5
@@ -39,7 +41,7 @@ In this [pull request](https://github.com/theory/pgtap/pull/177) I implemented a
 In particular the last two set of functions has been implemented using the recursive CTEs feature of PostgreSQL, that drop support to version 8.4 and not before.
 
 
-### `pgTap` *col_is_pk()* variants
+### `pgTap` `col_is_pk()` variants
 
 Anothe issue that caught my attention was [about adding some new overloaded variants of the function `col_is_pk()`](https://github.com/theory/pgtap/issues/133), that seemed a quite easy task. Therefore I created [a pull request to do exactly that job](https://github.com/theory/pgtap/pull/178), but while implementing it I found out that there was a potential clash between having arguments of type `name` and of type `text` (because essentially a `name` is a `char[63]`). This made failing tests in ambigous situations like:
 
@@ -96,7 +98,9 @@ Yeah, these are really simply patches I did because the maintainer was responsiv
 
 This [pull request](https://github.com/theory/pgenv/pull/20) was a proposal for allowing `pgenv` to automagically patch the source tree it is going to build. Before this patch, there was [some discussion](https://github.com/theory/pgenv/issues/18) about how to instrument `pgenv` for patching the source tree, and at that moment the script was doing a *direct patching* hardcoded into the script itself.
 
-My proposal was to use an *index* file, that in turn contained a list of individual patches to apply on the source tree. But in order to let the user and the system to be as much flexible as possible, I decided to provide several optional indexes based on a PostgreSQL-version and Operating System combination, so that the user and the `pgenv` maintainers could choose how to distribute their patches and build a *patch-archive* different from any OS and/or PostgreSQL version or part of it.
+My proposal was to use an *index* file, that in turn contained a list of individual patches to apply on the source tree. But in order to let the user and the system to be as much flexible as possible, I decided to provide several optional indexes based on a PostgreSQL-version and Operating System combination, so that the user and the `pgenv` maintainers could choose how to distribute their patches and build a *patch-archive** different from any OS and/or PostgreSQL version or part of it.
+
+**I [squashed this pull request](https://github.com/theory/pgenv/commit/865064af3782c5117303346a51a8c76bf06c5bb8) on October 25th**!
 
 ### `pgenv` message verbosity
 
