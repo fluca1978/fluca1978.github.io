@@ -114,6 +114,13 @@ This is related to some odd behavior of the command `clone-modules` that I imple
 The problem was that such command was expecting two version numbers to perform the cloning, a source and a destination, but only the destination was effectively used, while the source was always erronously set to the currently running instance. This [pull request](https://github.com/gugod/App-perlbrew/pull/640) introduced the fix and also some extra check to avoid waste of time and resources while doing the cloning.
 
 
+### `perlbrew` build-git command
+
+As requested in an [issue by Robert T.](https://github.com/theory/pgenv/issues/25) `pgenv` should gain the capability to build the current *development* version, that is the currently checkout out source tree.
+
+Therefore I thinked about it for a couple of days and introduced the special version `dev` and the related command, so that `pgenv` was [able to fetch and build sources from the official git repository](https://github.com/theory/pgenv/pull/26). I pushed in the wild a little too fast, so I had to make some other commits later on.
+
+
 ## What I learned this year
 
 This year was a little harder than the previous ones. Partially, it was because I committed to regularly propose my pull requests, that translates into a "less idea" principle. Second, because I tried to implement something more useful, dealing with new projects like `pgTap`. And it was from `pgTap` that I started learning how to deal with Continuos Integration and Travis.
