@@ -13,7 +13,7 @@ Another year, another october, another Hacktoberfest!
 
 ## Glance at my Pull Request
 
-Here is a short list about my Pull Requests and how they gone. The [overall status can be cheked as usual](https://hacktoberfestchecker.herokuapp.com/?username=fluca1978).
+Here is a short list about my Pull Requests and how they gone. The [overall status can be cheked as usual](https://hacktoberfestchecker.herokuapp.com/user/fluca1978).
 
 ### `pgenv` multiple build support
 
