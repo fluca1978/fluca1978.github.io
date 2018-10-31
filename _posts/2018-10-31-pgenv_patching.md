@@ -5,6 +5,7 @@ author: Luca Ferrari
 tags:
 - postgresql
 - planet-postgresql-org
+- pgenv
 permalink: /:year/:month/:day/:title.html
 ---
 `pgenv` does now support a customizable *patching* feature that allows the user to define which patches to apply when an instance is built.
