@@ -114,7 +114,7 @@ This is related to some odd behavior of the command `clone-modules` that I imple
 The problem was that such command was expecting two version numbers to perform the cloning, a source and a destination, but only the destination was effectively used, while the source was always erronously set to the currently running instance. This [pull request](https://github.com/gugod/App-perlbrew/pull/640) introduced the fix and also some extra check to avoid waste of time and resources while doing the cloning.
 
 
-### `perlbrew` build-git command
+### `pgenv` build-git command
 
 As requested in an [issue by Robert T.](https://github.com/theory/pgenv/issues/25) `pgenv` should gain the capability to build the current *development* version, that is the currently checkout out source tree.
 
