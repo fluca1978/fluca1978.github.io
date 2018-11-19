@@ -113,6 +113,8 @@ This, of course, makes the usage of `pgenv_debug` obsolete, so that every call t
 This is related to some odd behavior of the command `clone-modules` that I implemented in the last year Hacktoberfest.
 The problem was that such command was expecting two version numbers to perform the cloning, a source and a destination, but only the destination was effectively used, while the source was always erronously set to the currently running instance. This [pull request](https://github.com/gugod/App-perlbrew/pull/640) introduced the fix and also some extra check to avoid waste of time and resources while doing the cloning.
 
+The Pull Request was merged on November the 18th, but it contained a big, no wait, a huge mistake by me: I removed the `list-modules` command support because I was thinking it was no more used. Thanks the author was not drunk like me when evaluating such branch!
+
 
 ### `pgenv` build-git command
 
