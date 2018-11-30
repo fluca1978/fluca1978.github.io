@@ -10,6 +10,20 @@ This is an almost complete list of all my papers, both on my research activity a
 Please note I've used the special placeholder *et al.* on papers I don't like to post here author names, but you can easily find the complete
 bibliography entry searching the web.
 
+# Books
+
+L. Ferrari, **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide)**, Packt Publishing
+
+## Ebooks
+- L. Ferrari,
+**[Improve your PostgreSQL Skills](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/)**
+ebook edited out of an online course material for [BSD Magazine](http://bsdmag.org)
+
+## Free Ebooks
+- L. Ferrari et al.,
+**[23 years of FreeDOS](http://www.freedos.org/ebook/)**,
+invited chapter
+
 
 
 # Journals
@@ -92,15 +106,6 @@ bibliography entry searching the web.
  pp. 243-263,
  April 2004
 
-# Ebooks
-- L. Ferrari,
-**[Improve your PostgreSQL Skills](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/)
-ebook edited out of an online course material for [BSD Magazine](http://bsdmag.org)
-
-# Free Ebooks
-- L. Ferrari et al.,
-**[23 years of FreeDOS](http://www.freedos.org/ebook/)**,
-invited chapter
 
 # Online Journals
 
