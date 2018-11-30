@@ -3,7 +3,7 @@ layout: post
 title:  "Find transactions that are locked (and who to blame for!)"
 author: Luca Ferrari
 tags:
-- PostgreSQL
+- postgresql
 permalink: /:year/:month/:day/:title.html
 ---
 Have you ever wonder about what transaction (and user) is blocking another transaction? In other words, who to blame for keeping the database locked in any part? Here's a short and dirty way to dig a little into the problem.

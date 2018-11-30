@@ -3,7 +3,7 @@ layout: post
 title:  "xmin and ON_ERROR_ROLLBACK"
 author: Luca Ferrari
 tags:
-- PostgreSQL
+- postgresql
 permalink: /:year/:month/:day/:title.html
 ---
 I hit what I thought it was a strange MVCC behavior, and of course PostgreSQL was right, just I was using the wrong option...

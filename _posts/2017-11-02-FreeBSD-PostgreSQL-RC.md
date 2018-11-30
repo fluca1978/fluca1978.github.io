@@ -3,7 +3,7 @@ layout: post
 title:  "Multicorn PostgreSQL FDW on FreeBSD"
 author: Luca Ferrari
 tags:
-- PostgreSQL
+- postgresql
 - FreeBSD
 permalink: /:year/:month/:day/:title.html
 ---

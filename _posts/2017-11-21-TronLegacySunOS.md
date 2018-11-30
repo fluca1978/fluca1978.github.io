@@ -3,7 +3,7 @@ layout: post
 title:  "TRON Legacy: the console prompt"
 author: Luca Ferrari
 tags:
-- PostgreSQL
+- Linux
 permalink: /:year/:month/:day/:title.html
 ---
 If you ever watched *TRON Legacy* you would have seen the console prompt and the commands on the terminal...
