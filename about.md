@@ -92,22 +92,22 @@ You could also be interested in the [papers page](/papers).
 
 Not a complete enumeration, but this is what I use on an almost regular basis:
 
-* **Java** - 15+ years;
 * **Perl** - 15+ years;
+* **Java** - 15+ years;
 * **PostgreSQL** - 10+ years;
 * **Linux** - 18+ years;
-* **Emacs** - 18+ years (it was my default editor since day one and yes, I don't know `vi`!);
+* **Emacs** - 18+ years (it was my **default editor since day one** and yes, I don't know `vi`!);
 * **Git** - 5+ years, with a couple of years over **Fossil**;  of course I used also other systems;
 * **SQLite** - 4+ years;
 * **BSD** - 6+ years;
-* **PHP** - 9+ years;
+* **PHP** - 10+ years;
 
 
 Of course, I do not declare myself a *guru* of any of the above, but let's say I'm not scared to sit in front of any of them.
 
 
 
-On an irregular basis, i.e., not for production but for personal use:
+On an irregular basis, i.e., not for production but for personal use, I deal also with:
 
 * **C++** and **Qt** - no production experience, let's say I can manage them and got inspiration from such a great language and library;
 * **Digikam** and **Gimp** - because we all need to keep clean our photo collection;
