@@ -1,25 +1,36 @@
 {% if site.footer-links.dribbble %}<a href="https://dribbble.com/{{ site.footer-links.dribbble }}"><i class="icon-dribbble icon-2x"></i></a>{% endif %}
 {% if site.footer-links.email %}<a href="mailto:{{ site.footer-links.email }}">
-    <i class="far fa-envelope fa-3x"></i></a>
+    <i class="far fa-envelope fa-3x" title="Email me!"></i></a>
 {% endif %}
 
 
 {% if site.footer-links.github %}<a href="https://github.com/{{ site.footer-links.github }}">
-    <i class="fab fa-github fa-3x"></i></a>{% endif %}
+        <i class="fab fa-github fa-3x" title="GitHub"></i>
+</a>{% endif %}
 {% if site.footer-links.gitlab %}
     <a href="https://gitlab.com/{{ site.footer-links.gitlab }}">
-        <i class="fab fa-gitlab fa-3x"></i></a>
+        <i class="fab fa-gitlab fa-3x" title="GitLab">
+
+        </i></a>
     {% endif %}
 
 
-    {% if site.footer-links.linkedin %}<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"><i class="fab fa-linkedin fa-3x"></i></a>{% endif %}
+    {% if site.footer-links.linkedin %}
+    <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">
+        <i class="fab fa-linkedin fa-3x" title="LinkedIn"></i>
+    </a>{% endif %}
 
-        {% if site.footer-links.amazon %}<a href="https://www.amazon.com/{{ site.footer-links.amazon }}">
-            <i class="fab fa-amazon fa-3x"></i>
+    {% if site.footer-links.amazon %}
+    <a href="https://www.amazon.com/{{ site.footer-links.amazon }}">
+            <i class="fab fa-amazon fa-3x" title="Amazon Author">
 </i></a>{% endif %}
 
 
-        {% if site.footer-links.rss %}<a href="{{ site.baseurl }}/feed.xml"><i class="icon-rss icon-2x"></i></a>{% endif %}
+    {% if site.footer-links.rss %}
+    <a href="{{ site.baseurl }}/feed.xml">
+        <i class="icon-rss icon-2x"></i></a>{% endif %}
 
-        {% if site.footer-links.youtube %}<a href="https://youtube.com/{{ site.footer-links.youtube }}"><i class="fab fa-youtube fa-3x"></i></a>{% endif %}
-
+    {% if site.footer-links.youtube %}
+    <a href="https://youtube.com/{{ site.footer-links.youtube }}">
+        <i class="fab fa-youtube fa-3x" title="YouTube" ></i>
+    </a>{% endif %}
