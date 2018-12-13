@@ -8,12 +8,20 @@ permalink: /projects/
 Nothing really interesting here.
 Today I have very little time to start-up a project from scratch, and so I try to help (a little) existings ones.
 
+<center>
+<img src="/images/main/sofiaComputer.jpg" width="400" alt="Sofia" />
+</center>
+
 # Books
 
 I'm the author of **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide)!**
 
 <br/>
-[![PostgreSQL-11-ServerSideProgramming-cover-image](/images/posts/pg11ssp/cover.png)](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide)
+<center>
+<a href="https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide">
+<img src="/images/posts/pg11ssp/cover.png" alt="PostgreSQL-11-ServerSideProgramming-cover-image" />
+</a>
+</center>
 <br/>
 
 I've also an ebook collected with lectures I've done on PostgreSQL for [BSD Magazine](http://bsdmag.org) under the name of **[Improve your PostgreSQL Skills ebook](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/)**.
