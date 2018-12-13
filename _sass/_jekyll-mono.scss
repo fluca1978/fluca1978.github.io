@@ -46,6 +46,8 @@
 	   //font-style: italic;
 	   text-align: justified;
      width: 100%;
+
+
  }
 
 
@@ -364,4 +366,21 @@ button.button-primary:focus {
     font-size: 16px;
 	  color: black;
     width: 100%;
+}
+
+
+
+.svg-icon {
+    a {
+        text-decoration: none;
+    	  cursor: pointer;
+        padding: 5px 5px 0;
+        color: $violet;
+        &:hover{
+            color: $orange;
+        }
+    }
+
+    background-color: $lightGray;
+    width: 120%;
 }
