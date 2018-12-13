@@ -18,8 +18,8 @@ I'm the author of **[PostgreSQL 11 Server Side Programming Quick Start Guide](ht
 
 <br/>
 <center>
-<a href="https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide">
-<img src="/images/posts/pg11ssp/cover.png" alt="PostgreSQL-11-ServerSideProgramming-cover-image" />
+<a href="https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide" target="_blank_">
+<img src="/images/posts/pg11ssp/cover.png" alt="PostgreSQL-11-ServerSideProgramming-cover-image" width="20%"/>
 </a>
 </center>
 <br/>
@@ -42,11 +42,11 @@ In the past I did mess with:
 
 
 
-I did participate in the **CPAN Pull Request Challenge** 2015 and **Hacktoberfest 2016 and 2017**. I really encourage anyone else in participating in projects like those because they can teach you a lot and your time will not be wasted onto a not-so-used piece of code.
+I did participate in the **CPAN Pull Request Challenge** 2015 and **Hacktoberfest 2016, 2017 and 2018**. I really encourage anyone else in participating in projects like those because they can teach you a lot and your time will not be wasted onto a not-so-used piece of code.
 
-I co-founded and directed the **[Italian PostgreSQL Users' Group (ITPUG)](http://www.itpug.org)** and have actively organized almost all [PGDay.IT](http://www.pgday.it) events up to the 2016 edition, also introducing (not by myself)  the concept of *ITPUG Lab*.
+I co-founded and directed the **[Italian PostgreSQL Users' Group (ITPUG)](http://www.itpug.org)** and have actively organized almost all [PGDay.IT](http://www.pgday.it) events up to the 2016 edition, also introducing (not by myself)  the concept of **[ITPUG Lab](https://vimeo.com/82178862)**.
 
-As of December 2017 I also do little contributions to the **[Perl 6 documentation repository](https://github.com/perl6/doc)**.
+Since December 2017 I do little contributions to the **[Perl 6 documentation repository](https://github.com/perl6/doc)**.
 
 As of 2018 I do contribute to **[`pgenv`](https://github.com/theory/pgenv)** PostgreSQL version manager and installer.
 
@@ -62,7 +62,7 @@ Where I was learning, where I was teaching.
 
 - On-line course **Improve your PostgreSQL Skills**, [BSD Magazine](https://bsdmag.org/course/course-10-improve-your-postgresql-skills/), 2018, 5 modules
 - Seminar **PostgreSQL - il database piu' avanzato del pianeta**, [ConoscereLinux Linux Users' Group Modena](https://conoscerelinux.org/courses/postgresql/), 2018 (7 lessons)
-- Open Space **ITPUG Lab**, PGDay.IT 2013 and 2015
+- Open Space **ITPUG Lab**, [PGDay.IT 2013](https://2013.pgday.it/index.php/programma/itpuglab/index.html) and [2015](https://2015.pgday.it/itpuglab.html)
 - Seminar **Introduzione a PostgreSQL (parte 1 e 2)**, PGDay.IT 2012, Prato
 - Ligthning Talk **From ISAM to PostgreSQL**, PGDay.IT 2011, Prato
 - Seminar **Pl/Java: estendere un database PostgreSQL con Java**, PGDay.IT 2010, Roma

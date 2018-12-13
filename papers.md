@@ -14,6 +14,10 @@ bibliography entry searching the web.
 
 L. Ferrari, **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide)**, Packt Publishing
 
+<a href="https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide" target="_blank_">
+<img src="/images/posts/pg11ssp/cover.png" alt="PostgreSQL-11-ServerSideProgramming-cover-image" width="15%"/>
+</a>
+
 ## Ebooks
 - L. Ferrari,
 **[Improve your PostgreSQL Skills](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/)**
