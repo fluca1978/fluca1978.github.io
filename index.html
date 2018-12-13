@@ -7,12 +7,8 @@ layout: default
 -->
 
 <div class="posts">
-  {% for post in site.posts limit:10 %}
+    {% for post in paginator.posts %}
     <article class="post">
-
-
-
-
         {% if post.blogger_orig_url %}
         {% else %}
 
@@ -51,5 +47,40 @@ layout: default
     all available posts sort by tag removed because too long!
     {% endcomment %}
 
+
+
+
+<br/>
+<!-- Pagination links -->
+<div class="paginator">
+    <center>
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="paginator_previous">
+        <i class="fas fa-arrow-circle-left fa-3x"></i>
+        Newer articles
+    </a>
+    {% else %}
+    <span class="paginator_previous" >
+        You are viewing the {{ paginator.per_page }} newest posts
+    </span>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="paginator_next">
+        <i class="fas fa-arrow-circle-right fa-3x"></i>
+        Older articles
+    </a>
+    {% else %}
+    <span class="paginator_next" >
+        You are viewing the {{ paginator.per_page }} oldest posts
+    </span>
+    {% endif %}
+    <br/>
+    <span class="paginator_info ">
+        There are {{ paginator.total_posts }} total articles on this blog,
+        you are viewing page {{ paginator.page }} of {{ paginator.total_pages }}.
+    </span>
+    </center>
+
+</div>
 
 </div>

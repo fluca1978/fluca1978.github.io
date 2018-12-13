@@ -334,3 +334,34 @@ button.button-primary:focus {
   // add the background of the other avatar
   background-image: url(#{$avatar_back});
 }
+
+.paginator_info {
+    color: $mono-color;
+    font-size: 16px;
+	  text-align: justified;
+	  font-style: italic;
+}
+
+.paginator_previous {
+    color: $mono-color;
+    font-size: 16px;
+	  text-align: left;
+    padding: 10px 5px 0;
+	  font-style: bold;
+	  margin: 0 30px;
+}
+
+.paginator_next {
+    color: $mono-color;
+    font-size: 16px;
+	  text-align: right;
+    padding: 10px 5px 0;
+	  font-style: bold;
+	  margin: 0 30px;
+}
+
+.paginator {
+    font-size: 16px;
+	  color: black;
+    width: 100%;
+}
