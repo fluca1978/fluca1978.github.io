@@ -44,7 +44,7 @@ In the past I did mess with:
 
 I did participate in the **CPAN Pull Request Challenge** 2015 and **Hacktoberfest 2016 and 2017**. I really encourage anyone else in participating in projects like those because they can teach you a lot and your time will not be wasted onto a not-so-used piece of code.
 
-I co-founded and directed the **[Italian PostgreSQL Users' Group (ITPUG)](http://www.itpug.org)** and have actively organized almost all [PGDay.IT](http://www.pgday.it) events up to the 2016 edition, also introducing (not by myself) also the concept of *ITPUG Lab*.
+I co-founded and directed the **[Italian PostgreSQL Users' Group (ITPUG)](http://www.itpug.org)** and have actively organized almost all [PGDay.IT](http://www.pgday.it) events up to the 2016 edition, also introducing (not by myself)  the concept of *ITPUG Lab*.
 
 As of December 2017 I also do little contributions to the **[Perl 6 documentation repository](https://github.com/perl6/doc)**.
 
