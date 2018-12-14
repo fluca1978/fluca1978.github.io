@@ -6,7 +6,9 @@ permalink: /about/
 
 **I'm a software developer living in Italy with my beautiful wife, my great son, and my two (female) cats.**
 
-<img src="/images/main/lucaMainOlivia.png" alt="me" />
+<center>
+<img src="/images/main/lucaMainOlivia.png" alt="me" width="80%"/>
+</center>
 
 
 ## tl;dr
@@ -78,11 +80,18 @@ In the computer science world:
 * [BSD Magazine](https://bsdmag.org/) writer and reviewer
 * speaker at several [PGDay.IT](http://www.pgday.it) and LinuxDay events
 
+<center>
+<img src="/images/main/luca_2013.png" alt="me a few years ago (2013)" />
+</center>
+
 In the archery world (when I was young):
 
 * regional champion FITA, FIELD, INDOOR (several times)
 * medals at the  national championships, twice bronze individual: 1994, 1996; silver and bronze team: 1994
 
+<center>
+<img src="/images/main/luca_archery.png" alt="archery" />
+</center>
 
 You could also be interested in the [papers page](/papers).
 
@@ -153,7 +162,9 @@ And that is how **`fluca1978`** took the field. Since then I changed a lot of ac
 
 Interestingly, I waited for my [archery career to stop before having a fully customized quiver](https://fluca1978.github.io/2009/01/03/dragoon-took-field.html) with my nickname on it. Please consider this does not include the number because, well, in archery the nickname does not care.
 
-![fluca quiver](/images/main/quiver.jpg)
+<center>
+<img src="/images/main/quiver.jpg" alt="quiver" />
+</center>
 
 
 
