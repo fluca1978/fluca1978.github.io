@@ -22,7 +22,8 @@
         a {
          color: $mono-color;
          &:hover{
-           color: darken($mono-color,20);
+             color: darken($mono-color,20);
+             //color: $orange;
          }
      }
  }

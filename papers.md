@@ -1,27 +1,34 @@
 ---
 layout: page
-title: Papers
+title: Publications
 permalink: /papers/
 ---
 
 
-This is an almost complete list of all my papers, both on my research activity as well as other computer science activity.
+This is an almost complete list of all my publications, including papers on my research activity as well as other computer science activity.
 
-Please note I've used the special placeholder *et al.* on papers I don't like to post here author names, but you can easily find the complete
-bibliography entry searching the web.
+Please note I've used the special placeholder *et al.* on publications I don't like to post here author names, but you can easily find the complete bibliography entry searching the web.
 
 # Books
 
 L. Ferrari, **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide)**, Packt Publishing
 
+<center>
 <a href="https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide" target="_blank_">
-<img src="/images/posts/pg11ssp/cover.png" alt="PostgreSQL-11-ServerSideProgramming-cover-image" width="15%"/>
+<img src="/images/posts/pg11ssp/cover.png" alt="PostgreSQL-11-ServerSideProgramming-cover-image" width="30%"/>
 </a>
+</center>
 
 ## Ebooks
 - L. Ferrari,
 **[Improve your PostgreSQL Skills](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/)**
 ebook edited out of an online course material for [BSD Magazine](http://bsdmag.org)
+
+<center>
+<a href="https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/" >
+<img src="https://3d2ixy3hf5o5dllmr3zqz2qc-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/bsdworkshop.jpg" width="15%" />
+</a>
+</center>
 
 ## Free Ebooks
 - L. Ferrari et al.,

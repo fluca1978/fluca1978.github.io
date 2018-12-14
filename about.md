@@ -203,7 +203,7 @@ In the case you are interested in the *holy-war* of computer science, here it is
 - Gimp or Photoshop? **Gimp**, even if my parents were masters at using the latter;
 - Perl or Python? **Perl**, for whole life! It is not I don't like Python, it is just I cannot find anywhere else the same culture and approach that Perl has;
 - PostgreSQL or MySQL? **PostgreSQL** because I believe it is much more superior and not driven by business;
-- Apple or ... ? **or**, period. Having managed several Apple workstation in a mixed network I can say I don't like the way Apple does thing, even if they are cute on eyes;
+- Apple or ... ? **or**, period. Having managed several Apple workstation in a mixed network I can say I don't like the way Apple does things, even if they are cute on eyes;
 
 
 <a name="social"></a>
