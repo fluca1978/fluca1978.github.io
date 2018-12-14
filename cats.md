@@ -6,7 +6,8 @@ permalink: /cats/
 
 **Am I a cat trapped into an human body?**
 
-# Me, Myself and my Cats
+Me, Myself and my Cats
+---
 
 Nothing special here: I grew up with always at least a cat on my side.
 But the intimate approach with such feline strongly influenced my mindset at the point I sometime believe I'm myself a cat.
@@ -32,7 +33,7 @@ For the records, here is a chronological list of my personal *starred cats*, so 
 
 
 
-## Duchessa
+# Duchessa
 
 Duchessa was **my very first cat**, the one that grown up with me since I was a little two-years old human being.
 
@@ -49,7 +50,7 @@ Duchessa died due to an accident when I was a middle-school student.
 *When I went public on the net with my first blog, I placed her photo on the top of the site to emphasize my feelings for Duchessa*.
 
 
-## Miguel (aka *Puccio*)
+# Miguel (aka *Puccio*)
 
 Miguel, also known as *Puccio*, was a male black and white cat that lived with us along with his sister.
 I don't know exactly why, but Puccio trusted myself the most, and I clearly remember he miewling each time he saw me.
@@ -58,10 +59,12 @@ Unluckily, Puccio disappear in the spring of the 2002, when I was approaching my
 Threfore, **I decided to name my source code tree as `BlackCat` in his honor (even if was not fully black!)**, university forced me to namely switch to *RoleX* because my tutors did not like the idea of having an animal as project name (no matter they were stoling a famous clock brand name).
 Anyway, the source tree and build system kept the original `BlackCat` name and I also elaborate a web site image as main logo of the documentation and, of course, of the GUI.
 
-![Puccio](/images/main/blackcat.png)
+<center>
+<img src="/images/main/blackcat.png" alt="Puccio" />
+</center>
 
 
-## Carmensita (aka *Puccia*)
+# Carmensita (aka *Puccia*)
 
 Carmensita, also known as *Puccia*, was the sister of Puccio, a long-fur black-and-white cat.
 
@@ -71,12 +74,15 @@ I often refer to Puccia as a **generational cat** since she entered my family wh
 
 My tribute to her was similar to the one I did for Puccio: when I left university and worked on my own for another research project, **I named the whole project (and not just the source tree) WhiteCat**, producing also a logo of her sleeping on our terrace edge.
 
-![Puccia](/images/main/whitecat.png)
+<center>
+<img src="/images/main/whitecat.png" alt="Carmensita (a.k.a. Puccia)" style="background-color: gray;"/>
+</center>
+
 
 So far, I can state that **BlackCat was a tribute to Puccio, being him black for the most**, while **Whitecat was a tribute to Puccia being her white for the most**.
 
 
-## Sofia
+# Sofia
 
 It takes more than five years to make my brain accepting the idea of interacting with other cats.
 I suspect it was due to my previous commitment to a *generational cat* (Puccia), and so  I had some subconcious resistance in accepting new cats.
@@ -87,17 +93,18 @@ Anyway, with the Duchessa experience in mind, me and my wife agreed in the need 
 Entering Sofia.
 
 Sofia is the first **true black cat** in my life so far.
-**Sofia is also my son  _very first cat_**.
+**Sofia is also my son's  _very first cat_**.
 
 Maybe because this situation reminds me Duchessa, maybe because Sofia appears to me as very elegant with her velvet black fur, or maybe because there's just a strong tie between us, she is a very important cat in my life.
 
-And the positive credits for the above are that I began using **Sofia as my profile image for pretty much everything from my web site to my accounts (mail, phone, GitHub, etc.)**.
+And the positive credits for the above are that I began using **Sofia as my profile image for pretty much everything from my web site to my other accounts (mail, phone, GitHub, etc.)**.
+
+<center>
+<img src="/images/main/sofia.png" alt="Sofia" />
+</center>
 
 
-![Sofia](/images/main/sofia.png)
-
-
-## Olivia
+# Olivia
 
 Olivia is not a *starred cat* of mine, rather I believe is the most important cat in my wife's life experience.
 
@@ -109,3 +116,9 @@ Olivia has some very interesting behavior, and threrefore I could not avoid taki
 % hostname
 olivia
 ```
+
+You can see Olivia in one of her curious behvaiors here:
+
+<center>
+<img src="/images/main/lucaMainOlivia.png" alt="Oliva" width="50%"/>
+</center>
