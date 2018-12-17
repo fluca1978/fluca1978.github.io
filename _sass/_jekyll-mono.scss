@@ -42,12 +42,11 @@
  * Licence
  */
  .licence {
-     font-size: 16px;
-	   color: black;
+     font-siz: 12px;
+	   color: $white;
 	   //font-style: italic;
 	   text-align: justified;
      width: 100%;
-
 
  }
 
@@ -376,12 +375,17 @@ button.button-primary:focus {
         text-decoration: none;
     	  cursor: pointer;
         padding: 5px 5px 0;
-        color: $violet;
+        color: $white;
         &:hover{
-            color: $orange;
+            color: darken( $navbar-hover-color, 20 );
         }
     }
 
-    background-color: $lightGray;
     width: 120%;
+}
+
+
+.wrapper-footer {
+    background-color: $mono-color;
+    color: $white;
 }
