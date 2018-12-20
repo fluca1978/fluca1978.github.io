@@ -5,6 +5,7 @@ author: Luca Ferrari
 tags:
 - perl6
 - postgresql
+- planet-postgresql-org
 permalink: /:year/:month/:day/:title.html
 ---
 While writing a program in Perl 6 I had the need to correctly parse and analyze diffefent PostgreSQL version strings. I wrote a simple and minimal class to the aim, and refactored so it can escape in the wild.
