@@ -10,9 +10,10 @@ permalink: /:year/:month/:day/:title.html
 ---
 While writing a program in Perl 6 I had the need to correctly parse and analyze diffefent PostgreSQL version strings. I wrote a simple and minimal class to the aim, and refactored so it can escape in the wild.
 
-# PGVersion: a class to manage PostgreSQL Version (strings) within a Perl 6 Program
+PGVersion: a class to manage PostgreSQL Version (strings) within a Perl 6 Program
+---
 
-As you probably already know, PostgreSQL has changed its versioning number scheme from a `major.major.minor` approach to a concise `major.minor` one. Both are simple enought to be evaulated with a regular expression, but I found myself wrinting the same logic over and over, so I decided to write a minimal class to do the job for me and provide several information.
+As you probably already know, PostgreSQL has changed its versioning number scheme from a `major.major.minor` approach to a concise `major.minor` one. Both are simple enought to be evaluated with a regular expression, but I found myself wrinting the same logic over and over, so I decided to write a minimal class to do the job for me and provide several information.
 <br/>
 Oh, and this is Perl 6 (that I'm still learning!).
 <BR/>
