@@ -195,7 +195,7 @@ I've merged all the content of my previous blog into this one, so this is the ri
 different post formats made most of them hard to read, especially for code and indentation, so please be patient while reading
 old blog posts.
 
-I've written a [specific post about how much did I blog up to December 2017](/2017/12/12/HowManyBlogPosts.html).
+There is a **specific page with some [stats](/stats)** about the activity of the blog, and a [specific post with some notes about the activity.](/2017/12/12/HowManyBlogPosts.html).
 
 
 <a name="emacs"></a>
