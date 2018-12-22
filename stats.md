@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  "fluca1978's activity"
+permalink: /stats/
 ---
 
 Statistic Data about my Blog and Other Stuff
