@@ -50,8 +50,8 @@ Since December 2017 I do little contributions to the **[Perl 6 documentation rep
 
 As of 2018 I do contribute to **[`pgenv`](https://github.com/theory/pgenv)** PostgreSQL version manager and installer.
 
-*More in general I tend to keep all my projects on [GitHub](https://github.com/fluca1978), so go [check there!](https://github.com/fluca1978)*.
-I also have an account on [GitLab](https://gitlab.com/fluca1978) and I'm considering moving to that hosting service.
+*More in general I tend to keep all my projects on [GitHub](https://github.com/{{ site.footer-links.github }}), so go [check there!](https://github.com/{{ site.footer-links.github }})*.
+I also have an account on [GitLab](https://gitlab.com/{{ site.footer-links.gitlab }}) and I'm considering moving to that hosting service.
 
 
 # Conferences, Seminars, etc.
