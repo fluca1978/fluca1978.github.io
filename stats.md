@@ -34,7 +34,7 @@ I've also an [account on Gitlab](https://gitlab.com/{{ site.footer-links.gitlab 
 - year 2018 :   47 total posts;
 
 
-Such data is obtained via a [dirty Perl script](https://github.com/fluca1978/fluca1978-coding-bits/blob/master/perl/jekyll_post_count.pl).
+Such data is obtained via a [dirty Perl script](https://github.com/fluca1978/fluca1978-coding-bits/blob/master/perl/jekyll_post_count.pl), that from the post filename generates a Gnuplot script that, in turn, generates a graph image.
 
 
 
