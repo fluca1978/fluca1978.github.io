@@ -15,7 +15,7 @@ These numbers are work in progress, of course.
 
 <img src="http://ghchart.rshah.org/5c55aa/fluca1978" alt="Luca's activity on GitHub" />
 
-I've also an [account on Gitlab]( https://gitlab.com/fluca1978), check there.
+I've also an [account on Gitlab](https://gitlab.com/fluca1978), check there.
 
 
 # Statistic Data About this Blog
