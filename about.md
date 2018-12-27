@@ -19,7 +19,7 @@ Looking at me by different views:
 - [Me by Skills](#skills)
 - [Me by Username](#username)
 - [Me by Projects](#projects) ([detailed projects page](/projects.md))
-- [Me by Blog](#blog)
+- [Me by Blog](#blog) ([stats](/stats))
 - [Me by Emacs or Vi](#emacs)
 - [Me by Social Networks](#social)
 - [Me by Ages](#ages)
