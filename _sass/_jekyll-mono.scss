@@ -18,7 +18,9 @@
     }
 }
 
- .post {
+.post {
+
+
         a {
          color: $mono-color;
          &:hover{
@@ -29,9 +31,11 @@
  }
 
  .post-heading {
+
         a {
          color: $hl-color;
          &:hover{
+
              color: darken($hl-color,20);
          }
 
@@ -388,4 +392,60 @@ button.button-primary:focus {
 .wrapper-footer {
     background-color: $mono-color;
     color: $white;
+}
+
+
+
+
+nav ul li {
+    list-style:none;
+    display:inline-block;
+    //margin:0 50px;
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    -ms-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease;
+    cursor:pointer;
+}
+
+.nav_link:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    //color:#c8e0f4;
+}
+
+/*
+nav ul li span {
+    display:block;
+    font-size:18px;
+    //text-transform:uppercase;
+    text-align: center;
+    color: $mono-color;
+    font-weight:600;
+}
+
+nav ul li span:hover {
+    display:block;
+    font-size:18px;
+    //text-transform:uppercase;
+    text-align: center;
+    color: white;
+    font-weight:600;
+}
+*/
+
+.site-info {
+    list-style:none;
+    display:inline-block;
+    margin:0 50px;
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    -ms-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease;
+    cursor:pointer;
 }
