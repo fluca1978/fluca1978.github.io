@@ -204,7 +204,7 @@ There is a **specific page with some [stats](/stats)** about the activity of the
 
 In the case you are interested in the *holy-war* of computer science, here it is my list of choices:
 
-- Emacs or Vi? **Emacs** since day one;
+- Emacs or Vi? **Emacs** since day one. This also means I don't see the excitement behind projects like *Atom.io* or *Sublime Text* as well;
 - Gnome or KDE? **KDE** since version 1;
 - Firefox or ... ? **Firefox**, there was a time I used **Konqueror**, but I believe the former is better and ported to much more platforms;
 - Thunderbird or ... ? **KMail** when I was using a mail client, today I read all my emails via web;
@@ -223,9 +223,12 @@ In the case you are interested in the *holy-war* of computer science, here it is
 
 No way!
 
-I do not use social networks, or better, I seldom use them.
+I do not use *famous* social networks, or better, I seldom use them.
 The fact is that I believe they are evil and so
-I don't like them, so if you need to get in touch with me *drop me an email or a phone call*.
+I don't like them. 
+
+If you need to get in touch with me *drop me an email or a phone call*.
+
 
 Please note that this also mean I don't do any effort to keep my social profiles up-to-date, and this includes my
 [LinkedIn profile](https://www.linkedin.com/in/fluca1978).
@@ -302,7 +305,7 @@ What I play  everyday on my music device:
 # Me by *Television*
 
 
-I'm not a film maniac, but there were a few shows that drove me crazy.
+I'm not a television addicted, but there were a few shows that drove me crazy.
 I don't say these are my favourites, rather are those I would never refuse to watch over and over.
 
 ### Television
