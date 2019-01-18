@@ -9,8 +9,7 @@ permalink: /:year/:month/:day/:title.html
 ---
 I needed to push data from a Microsoft SQL Server 2005 to our beloved database, so why don't use a FDW to the purpose? It has not been as simple as with other FDW, but works!
 
-PostgreSQL to Microsoft SQL Server Using TDS Foreign Data Wrapper
----
+# PostgreSQL to Microsoft SQL Server Using TDS Foreign Data Wrapper
 
 At work I needed to push data out from a Microsoft SQL Server 2005 to a PostgreSQL 11 instance. *Foreign Data Wrappers* was my first thought! *Perl to the rescue* was my second, but since I had some time, I decided to investigate the first way first.
 
@@ -20,7 +19,7 @@ The scenario was the following:
 - Microsoft SQL Server 2005 running on a Windows Server <something>, surely not something I like to work with and to which I had to connect via remote desktop (argh!).
 
 
-# First Step: get TDS working
+## First Step: get TDS working
 
 After a quick research on the web, I discovered that MSSQL talks the **Table Data Stream** (TDS for short), so I don't need to install an ODBC stack on my Linux box. And luckily, there are binaries for CentOS:
 
@@ -42,7 +41,7 @@ $ tsql -H 192.168.6.53 -p 1433 -U 'fluca1978' -P 'xxxx'
 
 Once I got `tsql` connection working, was time to install the foreign data wrapper.
 
-# Step 2: Install `tds_fdw`
+## Second Step: Install `tds_fdw`
 
 The foreign data wrapper to connect to MSSQL is an FDW that exploits TDS: [tds_fdw](https://github.com/tds-fdw/tds_fdw/). Unluckily, binaries are for older PostgreSQL versions and, moreover, there is [a problem that prevents compilation against PostgreSQL 11](https://github.com/tds-fdw/tds_fdw/issues/192). Luckily there is already a patch, so it is recommended to compile the current HEAD:
 
@@ -78,7 +77,7 @@ $ sudo make install
 cd '/usr/pgsql-11/lib/bitcode' && /usr/lib64/llvm5.0/bin/llvm-lto -thinlto -thinlto-action=thinlink -o tds_fdw.index.bc tds_fdw/src/tds_fdw.bc tds_fdw/src/options.bc tds_fdw/src/deparse.bc
 ```
 
-# Step 3: Use the FDW
+## Third Step: Use the FDW
 
 With the foreign data wrapper in place, it is now time to create PostgreSQL objects. **I recommend using `notice` as a message level because it can provide valuable information about the connection to the foreign server!** In my case, it helped me understand that the *showplan* was something I needed to grant permission on to my MSSQL user, otherwise the conenction will fail with a generic "See the server log", which made me discover that Microsoft is not very good at logging!
 
@@ -112,7 +111,7 @@ OPTIONS (
 );
 ```
 
-# Step 4: Use
+## Final Step: and here we go!
 
 If everything goes ok, it is possible to query `mssql_people` and get some `notice` messages about retrieving data:
 
