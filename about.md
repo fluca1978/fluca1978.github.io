@@ -347,7 +347,8 @@ I'm catholic, but not a blind believer.
 <a name="cats"></a>
 # Me by *Cats*
 
-Long story short: see the [cats page](/cats)!
+Long story short: there has always been a cat (or two!) in my life.
+For more details, see the [cats page](/cats)!
 
 <a name="university"></a>
 # Me by *University*
