@@ -282,9 +282,13 @@ and *Fujifilm FP-14* passport camera;
 - *lpr, printcap and friends*, yes, printing was not fun at all;
 - *PCL 5* to drive printers, something can make you fall asleep on the keyboard;
 - *Forte for Java*, the father of *Netbeans*, also *Eclipse 2* and *JBuilder*;
+- [Squid](http://www.squid-cache.org/) proxy;
+- [Pegasus Mail](http://www.pmail.com/) and [The Bat!](https://www.ritlabs.com/en/products/thebat/), only tried a couple of times;
+- [FVWM 95](http://toastytech.com/guis/xnetscape.png) and [Window Maker](http://www.linuxfocus.org/common/images/article128/wprefs24.jpg);
 - *PCMCIA* modem with antenna, somethig that required minutes to get online and seconds to get offline;
 - *[Perl 5.6](https://perldoc.perl.org/perl56delta.html)* even if I was using it as v5.4;
-- *[Simon the Sorcerer](https://en.wikipedia.org/wiki/Simon_the_Sorcerer)*, *[Duke Nukem](https://en.wikipedia.org/wiki/Duke_Nukem) 1, 2, 3D*;
+- *[Simon the Sorcerer](https://en.wikipedia.org/wiki/Simon_the_Sorcerer)*, *[Duke Nukem](https://en.wikipedia.org/wiki/Duke_Nukem) 1, 2, 3D*, [Commander Keen (and my favourite *Keen Dreams*)](https://en.wikipedia.org/wiki/Commander_Keen_in_Keen_Dreams);
+- IBM [Jikes Compiler](http://jikes.sourceforge.net/) as well as [Jikes Research Virtual Machine](https://www.jikesrvm.org/).
 
 
 <a name="music"></a>
