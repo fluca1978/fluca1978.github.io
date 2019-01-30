@@ -286,6 +286,8 @@ and *Fujifilm FP-14* passport camera;
 - [Pegasus Mail](http://www.pmail.com/) and [The Bat!](https://www.ritlabs.com/en/products/thebat/), only tried a couple of times;
 - [FVWM 95](http://toastytech.com/guis/xnetscape.png) and [Window Maker](http://www.linuxfocus.org/common/images/article128/wprefs24.jpg);
 - *PCMCIA* modem with antenna, somethig that required minutes to get online and seconds to get offline;
+- *[Anzio](https://www.anzio.com/content/anzio)* as a *telnet* client, that I quickly replaced with *[PuTTY](https://www.putty.org/)* as an *SSH client*, letting my boss to still use telnet;
+- *[Vypress Messenger](http://www.vypress.com/lan_instant_messenger/)* used only for that short time of the year I had to boot on Microsoft Windows;
 - *[Perl 5.6](https://perldoc.perl.org/perl56delta.html)* even if I was using it as v5.4;
 - *[Simon the Sorcerer](https://en.wikipedia.org/wiki/Simon_the_Sorcerer)*, *[Duke Nukem](https://en.wikipedia.org/wiki/Duke_Nukem) 1, 2, 3D*, [Commander Keen (and my favourite *Keen Dreams*)](https://en.wikipedia.org/wiki/Commander_Keen_in_Keen_Dreams);
 - IBM [Jikes Compiler](http://jikes.sourceforge.net/) as well as [Jikes Research Virtual Machine](https://www.jikesrvm.org/).
