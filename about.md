@@ -210,11 +210,11 @@ In the case you are interested in the *holy-war* of computer science, here it is
 - Thunderbird or ... ? **KMail** when I was using a mail client, today I read all my emails via web;
 - Bash or Bourne? **zsh** as interactive, **Bourne** for scripting (one day I will learn *pdksh*!);
 - Linux or BSD? **Linux** at work, **FreeBSD** in the spare time, with seldom usage of **OpenBSD**;
+- Windows or ... ? Isn't it clear from the above line that I do not use Microsoft Windows any more? Really, I cannot help you on any version of Windows more recent than XP!
+- Apple or ... ? **or**, period. Having managed several Apple workstation in a mixed network I can say I don't like the way Apple does things, even if they are cute on eyes;
 - Perl or Python? **Perl**, for whole life! It is not I don't like Python, it is just I cannot find anywhere else the same culture and approach that Perl has;
 - PostgreSQL or MySQL? **PostgreSQL** because I believe it is much more superior and not driven by business;
 - Gimp or Photoshop? **Gimp**, even if my parents were masters at using the latter;
-- Windows or ... ? Isn't it clear from the above line that I do not use Microsoft Windows any more? Really, I cannot help you on any version of Windows more recent than XP!
-- Apple or ... ? **or**, period. Having managed several Apple workstation in a mixed network I can say I don't like the way Apple does things, even if they are cute on eyes;
 
 
 <a name="social"></a>
