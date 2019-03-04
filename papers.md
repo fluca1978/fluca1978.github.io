@@ -120,7 +120,10 @@ invited chapter
 
 # Online Journals
 
-
+- L.Ferrari,
+**Managing Multiple PostgreSQL Installations with `pgenv`**,
+`Haikin9`,
+[Volume 13, No. 11](https://hakin9.org/product/practical-devops/)
 - L. Ferrari,
 **How to Manage Multiple Perl 6 Installation with Rakudobrew**,
 `BSD Magazine`,
