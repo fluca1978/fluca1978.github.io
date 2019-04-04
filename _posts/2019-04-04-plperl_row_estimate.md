@@ -8,7 +8,7 @@ tags:
 - perl5
 permalink: /:year/:month/:day/:title.html
 ---
-After having read the interesting post by [Laurenz Albe](https://www.cybertec-postgresql.com/en/count-made-fast/#comment-4409216441) on how to use ~EXPLAIN~ to get a quick estimate of a query count, I decided to implement the same feature in Perl.
+After having read the interesting post by [Laurenz Albe](https://www.cybertec-postgresql.com/en/count-made-fast/#comment-4409216441) on how to use `EXPLAIN` to get a quick estimate of a query count, I decided to implement the same feature in Perl.
 
 # Estimating row count from explain output...in Perl!
 
