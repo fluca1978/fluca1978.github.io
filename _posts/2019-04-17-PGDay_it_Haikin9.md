@@ -13,7 +13,9 @@ A few months ago I worked to improve the great `pgenv` tool by *theory*. Today, 
 # An article about pgenv
 
 ### tl;dr
-I proposed a talk about [`pgenv`](https://github.com/theory/pgenv), a Bash tool to manage several [PostgreSQL](http://www.postgresql.org) instances on the same local machine. *My talk has been rejected*, and I hate to waste what I have already prepared, so *I decided to transform my talk in an article, that has been quickly accepted on [Haikin9 Devops Issue](https://hakin9.org/product/practical-devops/)*!
+I proposed a talk about [`pgenv`](https://github.com/theory/pgenv), a Bash tool to manage several [PostgreSQL](http://www.postgresql.org) instances on the same local machine, to the Italian PGDay 2019. 
+<br/>
+*My talk has been rejected*, and I hate to waste what I have already prepared, so *I decided to transform my talk in an article, that has been quickly accepted on [Haikin9 Devops Issue](https://hakin9.org/product/practical-devops/)*!
 
 <br/>
 <br/>
