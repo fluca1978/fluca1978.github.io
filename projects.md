@@ -100,6 +100,13 @@ Where I was learning, where I was teaching.
  - **Introduction to distributed Java: J2EE and CORBA**,  Markus Aleksy, Ralf Gitzel and Martin Schader, Las Vegas, 2004
  - **Linux: problematiche dei sistemi embedded e real-time**, 2003, University of Modena and Reggio Emilia
 
+## As a Teacher
+- teacher for **Networking and Web** classes, Elsa Morante, years 2009-2010, 2010-2011, 2013-2014;
+- teacher for **Project Management** classes, Elsa Morante, years 2009-2010, 2010-2011, 2013-2014;
+- assistant professor for **Operating Systems**, University of Modena and Reggio Emilia, years 2003-2004, 2004-2005;
+- assistant professor for **Java and OOP Fundamentals**, University of Modena and Reggio Emilia, years 2004-2005;
+
+
 # Academic
 
 Talking about past academic projects, I've been member of the followings:
