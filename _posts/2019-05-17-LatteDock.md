@@ -78,6 +78,7 @@ I do believe *Latte Dock* is really a great piece of software and is really cute
 So far, the only things that Latte made me think about are:
 1. an *icon-only* task manager;
 2. an *auto-hide** panel.
+<br/>
 Therefore my actual Plasma panel looks like the following:
 
 <center>
