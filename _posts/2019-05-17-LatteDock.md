@@ -63,7 +63,7 @@ However, after a few days of using, I changed the layout to the more comfortable
 3. dialogs don't recognize the size of the dock, and sometimes they undergo the panel which, when a dialog is shown, pops up. This makes some interactions annoying, unless you switch from the default *dodge active* mode to *auto-hide*;
 4. having a zoomable centered panel has the drawback that menus and alike are shown in a more *random* position across the screen, with the side effects that the mouse could be pointing the middle of screen itself and thus resulting in a wrong selection.
 5. it tends to forgot icons in the launcher section. After a reboot some of my favourite applications (and related icons) are missing, I don't know why;
-6. sometimes the launcher duplicates icons of running applications, as if there were two active instances. As an example, below you can see *Emacs* running on a single instance but reported with two identical icons;
+6. sometimes the launcher duplicates icons of running applications, as if there were two active instances. As an example, below you can see *Emacs* running on a single instance but reported with two identical icons; I suspect it could be tied to non-KDE applications mainly.
 
 
 <center>
