@@ -44,6 +44,12 @@ I placed on the dock all the main icons that were present on the deck of my old 
 
 So here are my first impressions after a week of usage of Latte.
 
+However, after a few days of using, I changed the layout to the more comfortable, in my opinion, *Plasma* one. Here it is a short video of how it appears on my home computer:
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t5wCQvuU_pU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
 ### Advanatges of using Latte Dock
 
 1. the panel is automatically configured to hide itself, and this makes the application whole screen sized improving the visual space for every window. While this can be achieved also with the Plasma panel, making the latter auto-hide makes the applications to switch before full screen mode and almost-full-screen when the panel pops up;
@@ -56,7 +62,15 @@ So here are my first impressions after a week of usage of Latte.
 2. hiding the panel makes more room for application windows but, at the same time, removes some useful information from the desktop like the clock, the number of windows opened and so on. Keeping a top panel for those icons and information is not a solution, since it vanish the hiding of the panel and the gained space on the monitor anyway;
 3. dialogs don't recognize the size of the dock, and sometimes they undergo the panel which, when a dialog is shown, pops up. This makes some interactions annoying, unless you switch from the default *dodge active* mode to *auto-hide*;
 4. having a zoomable centered panel has the drawback that menus and alike are shown in a more *random* position across the screen, with the side effects that the mouse could be pointing the middle of screen itself and thus resulting in a wrong selection.
+5. it tends to forgot icons in the launcher section. After a reboot some of my favourite applications (and related icons) are missing, I don't know why;
+6. sometimes the launcher duplicates icons of running applications, as if there were two active instances. As an example, below you can see *Emacs* running on a single instance but reported with two identical icons; I suspect it could be tied to non-KDE applications mainly.
 
+
+<center>
+<img src="/images/posts/latte/lattedock3.png" />
+</center>
+
+It is clear that some of the above drawbacks, e.g., 5 and 6, depends on my lack of knowledge about Latte Dock configuration rather than bugs, but they make harder for me to switch to this panel.
 
 # Conclusions
 
@@ -64,6 +78,7 @@ I do believe *Latte Dock* is really a great piece of software and is really cute
 So far, the only things that Latte made me think about are:
 1. an *icon-only* task manager;
 2. an *auto-hide** panel.
+<br/>
 Therefore my actual Plasma panel looks like the following:
 
 <center>
