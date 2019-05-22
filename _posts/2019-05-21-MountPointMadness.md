@@ -18,7 +18,15 @@ As you probably know I use Linux, *Kubuntu* for what it matters (and it does mat
 <br/>
 Anyway, in order to see what is lying around, I tend to test here and there some distros, and so it turned out now I've a backup computer running Fedora.
 <br/>
-Today I plugged in the Fedora machine my USB stick, and found it mounted at `/run/media/luca/FLUCA`, that is `/run/media/$USERNAME/$LABEL` instead of what I was expecting, such as `/media/luca/FLUCA** how Kubuntu does.
+Today I plugged in the Fedora machine my USB stick, and found it mounted at 
+<br/>
+`/run/media/luca/FLUCA`
+<br/>
+that is `/run/media/$USERNAME/$LABEL` instead of what I was expecting, such as 
+<br/>
+`/media/luca/FLUCA` 
+<br/>
+how Kubuntu does.
 <br/>
 **Uhm...some `udev` rules in the middle? No way!**
 <br/>
