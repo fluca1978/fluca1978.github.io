@@ -39,11 +39,14 @@ Such data is obtained via a [dirty Perl script](https://github.com/fluca1978/flu
 
 
 
+### Top Ten Post Categories
+![TOP10](/images/posts/graphs/tags.png)
 
 
 
 
-
+### 2019
+![2019](/images/posts/graphs/2019.png)
 
 
 ### 2018
