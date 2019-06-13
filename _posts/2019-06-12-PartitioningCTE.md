@@ -16,7 +16,7 @@ PostgreSQL 10 introduced the native partitioning, and since that I'm using nativ
 <br/>
 But how to get a quick overview of the partition status? I mean, knowing which partition is growing the more?
 <br/>
-In the beginning I was thinking to write a function to do that task, quickly finding myself iterating recursively over `pg_inherits`, the table that *links* partitions to their parents. But the keyword here is *recursively*: PostgreSQL provides *recursive Common Table Expression*, and a quick search revelead I was right: it is possible to do it with a single CTE. Taking inspiration from [this mailing list message](https://www.postgresql.org/message-id/otalb9%245ma%241%40blaine.gmane.org), here it is a simple CTE to get a partition status (you can find it on my [GitHub repository](https://github.com/fluca1978/fluca1978-pg-utils/blob/master/examples/partitioning_status.sql)):
+In the beginning I was thinking to write a function to do that task, quickly finding myself iterating recursively over `pg_inherits`, the table that *links* partitions to their parents. But the keyword here is *recursively*: PostgreSQL provides *recursive Common Table Expression*, and a quick search revelead I was right: it is possible to do it with a single CTE. Taking inspiration from [this mailing list message](https://www.postgresql.org/message-id/otalb9%245ma%241%40blaine.gmane.org), here it is a simple CTE to get a partition status (you can find it on my [GitHub repository](https://github.com/fluca1978/fluca1978-pg-utils/blob/master/examples/partitioning_report.sql)):
 
 ```sql
 WITH RECURSIVE inheritance_tree AS (
