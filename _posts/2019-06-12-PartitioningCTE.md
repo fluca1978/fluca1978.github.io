@@ -22,7 +22,7 @@ In the beginning I was thinking to write a function to do that task, quickly fin
 WITH RECURSIVE inheritance_tree AS (
      SELECT   c.oid AS table_oid
             , c.relname  AS table_name
-            , NULL::text AS table_parent_name
+            , NULL::name AS table_parent_name
             , c.relispartition AS is_partition
      FROM pg_class c
      JOIN pg_namespace n ON n.oid = c.relnamespace
@@ -89,3 +89,8 @@ sub_partitioning_values |
 That states table `y2018` is child of table `root`, accepts values `'2018'` and is partitioned by list, and children are partitioned by month. On the other hand, `y2018m10` is not partitioned anymore and is child of `y2018'`.
 <br/>
 That's a quick glance at the partitioning status in the cluster! Of course, it is possible to improve on this to get more information or restrict it depending on your needs.
+
+<br/>
+<br/>
+## UPDATE 2019-06-15
+As per discussion reported on the [`bugs` mailing list](https://www.postgresql.org/message-id/97aa6131-7f79-a29b-1bb3-7e87b2f4f50c@lardiere.net) the query I originally proposed was tricky: while it was working on v11, it was not on upcoming v12 and the reason [was that I was erronously casting `NULL` to `text` in the non-recursive term and then *unioning* with a `name` in the recursive part](https://github.com/fluca1978/fluca1978-pg-utils/commit/487fb04210e4e3dd31703ae6de18a08b7b3aae17). Thanks to the [explaination by Tom Lane](https://www.postgresql.org/message-id/27731.1560525569%40sss.pgh.pa.us) I was able not only to fix the query, but to gain some more knowledge about PostgreSQL!
