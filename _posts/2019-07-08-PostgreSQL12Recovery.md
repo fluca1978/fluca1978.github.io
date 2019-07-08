@@ -1,0 +1,102 @@
+---
+layout: post
+title:  "PostgreSQL & recovery.conf"
+author: Luca Ferrari
+tags:
+- postgresql
+- planet-postgresql-org
+
+permalink: /:year/:month/:day/:title.html
+---
+The coming version of PostgreSQL, 12, will loose the `recovery.conf` file. It will get some time to get used to!
+
+# PostgreSQL & recovery.conf
+
+According to the documentation for the upcoming version *12*, the **`recovery.conf` file has gone!**
+The release note states it clearly: [the server will not start if `recovery.conf` is in place](https://www.postgresql.org/docs/12/release-12.html#id-1.11.6.5.4) and all the configuration parameters have moved to the classic `postgresql.conf` (or included files).
+<br/>
+<br/>
+The [change proposal is quite old](https://www.postgresql.org/message-id/flat/CANP8+jLO5fmfudbB1b1iw3pTdOK1HBM=xMTaRfOa5zpDVcqzew@mail.gmail.com), but represents a [deep change in the way PostgreSQL handles the server startup and recovery](https://git.postgresql.org/gitweb/?p=postgresql.git;a=commitdiff;h=2dedf4d9a899b36d1a8ed29be5efbd1b31a8fe85) and could take a while to get all the software out there to handle it too.
+<br/>
+<br/>
+*Please note that since PostgreSQL 12 is still in beta, things could change a little*, even if the discussion and the implementation is nearly ended.
+<br/>
+<br/>
+
+[Two files can be created to instrument a standby node](https://www.postgresql.org/docs/12/runtime-config-wal.html#RUNTIME-CONFIG-WAL-ARCHIVE-RECOVERY):
+- `standby.signal` if present in the `PGDATA` directory the host will work as a standby, that is it will wait for new incoming WAL segments and replay them for the rest of its life;
+- `recovery.signal` if present will stop the WAL replaying as soon as all the WALs have been consumed or the `recovery_target` parameter has been reached.
+
+<br/>
+It is interesting to note that `standby.signal` takes precedence on `recovery.signal`, meaning that if both file exists the node will act as a standby. **Both files may be empty, they act now as as *triggering* files rather than configuration files** (here the change in the suffix).
+<br/>
+<br/>
+So, what is the rationale for this change? There are several reasons, including the not needing for a duplication of configuration files. But what I like the most is that having the parameters into the *trunk* configuration **make them good candidate to be changed via an [`ALTER SYSTEM` and the `postgresql.auto.conf` machinery](https://www.postgresql.org/docs/12/sql-altersystem.html)** (see later for an example).
+
+<br/>
+<br/>
+While all recovery parameters have been kept the same, the `trigger_file` one has been [renamed to `promote_trigger_file`](https://www.postgresql.org/docs/12/runtime-config-replication.html#GUC-PROMOTE-TRIGGER-FILE) to clearly emphasize its meaning.
+<br/>
+<br/>
+The above is not the only big difference in recovery handling: now it is no more possible to specify multiple `recovery_target_xxx` variables and "hope" to get the server to do it right (selecting the last one, effectively). The administrator is required to do a better job in selecting precisely which target to recover to! Last, also the timeline defaults to recover to the last one and not the current one.
+<br/>
+As you can expect, `pg_basebackup` has been changed accordingly and therefore the `--write-recovery-conf` option (`-R`) now only puts a `standby.signal` file within the `PGDATA` directory. Settings are now appended to `postgresql.auto.conf`.
+<br/>
+<br/>
+<br/>
+So, a lot of changes in the way the cluster manages the recovery/stand-by modes, and I hope all the automated backup software out there will respond properly.
+
+
+## Contexts
+
+Contexts of the included setting GUCs have not changed so far:
+
+```sql
+template1=# SELECT name, context FROM pg_settings WHERE category like '% Archiv%';
+          name           |  context   
+-------------------------|------------
+ archive_cleanup_command | sighup
+ archive_command         | sighup
+ archive_mode            | postmaster
+ archive_timeout         | sighup
+ recovery_end_command    | sighup
+ restore_command         | postmaster
+```
+
+
+## What happens if you keep around `recovery.conf`?
+
+Let's try it:
+
+```shell
+% sudo -u postgres touch /pgdata/12beta2/recovery.conf
+% sudo -u postgres pg_ctl -D /pgdata/12beta2  start
+...
+FATAL:  using recovery command file "recovery.conf" is not supported
+LOG:  startup process (PID 5837) exited with exit code 1
+LOG:  aborting startup due to startup process failure
+LOG:  database system is shut down
+```
+
+as already detailed, the database refuses to start.
+
+## What does happen when you issue an `ALTER SYSTEM`?
+Easy pal, configuration is put on `postgresql.auto.conf`:
+
+```sql
+% psql -U postgres template1
+psql (12beta2)
+Type "help" for help.
+
+template1=# ALTER SYSTEM SET restore_command TO 'cp %p %f';
+ALTER SYSTEM
+```
+
+that results in:
+
+```shell
+% sudo cat /pgdata/12beta2/postgresql.auto.conf
+# Do not edit this file manually!
+# It will be overwritten by the ALTER SYSTEM command.
+restore_command = 'cp %p %f'
+```
