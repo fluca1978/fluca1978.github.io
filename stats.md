@@ -12,14 +12,14 @@ In the case it can be interesting, here are some raw statistical information abo
 <br/>
 These numbers are work in progress, of course.
 
-# Stats about GitHub activity
+# Statistic Data About *GitHub* Activity
 
 <img src="http://ghchart.rshah.org/5c55aa/fluca1978" alt="Luca's activity on GitHub" />
 
 I've also an [account on Gitlab](https://gitlab.com/{{ site.footer-links.gitlab }}), check there.
 
 
-# Statistic Data About this Blog
+# Statistic Data About this *Blog*
 
 - year 2019 :   32 posts as of 2019-07-09;
 - year 2018 :   47 total posts;
