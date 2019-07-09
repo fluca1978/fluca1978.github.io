@@ -324,10 +324,11 @@ I don't say these are my favourites, rather are those I would never refuse to wa
 ### Television
 - *The Nanny*;
 - *A-Team*;
-- *Automan*;
+- *Automan* (when I was a child);
 - *Supercar*;
 - *The Simpsons*;
 - *Friends* (the only one show I truly watched from the beginning to the end);
+- *According to Jim*;
 
 ### Film
 - *Ghostbusters*;
@@ -341,6 +342,8 @@ I don't say these are my favourites, rather are those I would never refuse to wa
 - *Wall Street*;
 - *Hudson Hawk*;
 - *Trading Places*, known as "Una Poltrona per Due";
+- *Rocky I, II, III, IV, V*;
+- *The Proposal*;
 
 <a name="beliefs"></a>
 # Me by *Beliefs*
