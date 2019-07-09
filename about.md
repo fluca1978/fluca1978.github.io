@@ -357,7 +357,7 @@ I do believe in *humanity*, *honesty* and *personal values*.
 
 I do believe in *free culture*, in the sense that everyone should help each other to learn new things without secrets or speculation.
 
-I'm catholic, but not a blind believer.
+I'm not sure I'm catholic anymore, surely I'm not (and never was) a *blind believer*.
 
 
 <a name="cats"></a>
