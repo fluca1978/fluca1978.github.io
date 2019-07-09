@@ -28,6 +28,13 @@ Looking at me by different views:
 - [Me by Beliefs](#beliefs)
 - [Me by Cats](#cats)
 - [Me by University](#university)
+- [Me and the Dolphins](#dolphins)
+
+
+<center>
+<img src="/images/main/lucaDolphins.png" alt="me" />
+</center>
+
 
 
 <a name="computer"></a>
@@ -363,6 +370,16 @@ Uhm, it's a long story, may be one day I'll write it down.
 However, I did attend the University of Modena and Reggio Emilia from *1997 to 2002 as a student* (yes, I was one of the first students using the "new" engineering department), from *2002 to 2006 as a PhD student and lecturer*.
 If you have been around in those years, chances are we have met.
 
+
+<a name="dolphins"></a>
+# Me and the *Dolphins*
+
+I've swimmed with the dolphins twice, and **it is one of the most exciting experience I've done**.
+Both time I swimmed at the Malta Marine Park, and as far as I can tell it is a place where these great mammals are treated very well.
+
+The first time I've swimmed was after the *EuroBSD Conference* in 2013, that took place in Malta. Reading a magazine on the flight, I learnt about the Marine Park, so I dedicated one day to go visit it and asked for a swim. Unluckily, it was required to book your swim slot in advance, but I was lucky enough to get a chance.
+
+The experience was so incredible that on my tenth wedding anniversary I took my wife and son to do the same experience, and they have been both enthusiast!
 
 # Contact me
 
