@@ -101,6 +101,46 @@ Job for postgresql-11.service failed because the control process exited with err
 
 For a reason I don't really know, it seems that `systemd` keeps track that it hasn't started the service, and that the latter is in failed mode. The solution was to manually stop the cluster via `pg_ctl` and that asks `systemd` to start it again, and this time it gets running.
 
+# Fixing the problem with `systemd**: the right approach
+<br/>
+**updated on 2019-07-22**
+<br/>
+
+As pointed out by *Andrew Gierth* in a comment, editing the `systemd` unit service file is not the right approach to configure services. Here it is the right approach, so that my changes do not get overwritten by `systemd`:
+1) run `systemctl edit postgresql-11`;
+2) add a line with `Environment=PGDATA=/data/pgdata` within the `Service` section:
+```shell
+[Service]
+Environment=PGDATA=/data/pgdata
+```
+3) inspect the service with `systemctl status postgresql-11`, that will show the following:
+
+```shell
+$ systemctl status postgresql-11
+● postgresql-11.service - PostgreSQL 11 database server
+   Loaded: loaded (/usr/lib/systemd/system/postgresql-11.service; enabled; vendor preset: disabled)
+  Drop-In: /etc/systemd/system/postgresql-11.service.d
+           └─override.conf
+   Active: active (running) since lun 2019-07-22 15:43:50 CEST; 31s ago
+     Docs: https://www.postgresql.org/docs/11/static/
+ Main PID: 16114 (postmaster)
+   CGroup: /system.slice/postgresql-11.service
+           ├─16114 /usr/pgsql-11/bin/postmaster -D /postgres/data
+           ├─16116 postgres: logger   
+           ├─16118 postgres: checkpointer   
+           ├─16119 postgres: background writer   
+           ├─16120 postgres: walwriter   
+           ├─16121 postgres: autovacuum launcher   
+           ├─16122 postgres: stats collector   
+           ├─16123 postgres: pg_cron scheduler   
+           └─16124 postgres: logical replication launcher   
+```
+
+The important part in the above is the **Drop-In** line that points to a freshly created directory `/etc/systemd/system/postgresql-11.service.d` with a single file, `override.conf` that contains the new `PGDATA` definition. In other words, `systemd` keeps the service units under its own control, and you have to create an `override.conf` file to place other variable values.
+
 # Conclusions
 
-Seems to me that the whole problem could have been avoided without having `yum` to upgrade the service file overwriting my changes. There could be a way to avoid that, and I think that would be the default option (as seems to be in FreeBSD).
+Not knowing your tools, `systemd` in this case, can lead to panic when they do not behave as you expect.
+Unluckily, there are too many little details to know about every different system, and I wish `systemd` becomes a little less rude and at least warns the user that his files are going to be overriden.
+<br/>
+While the unit file states, in its beginning, to not modify the file, it is not clear what is the best approach to use to re-define variables (include or override file?).
