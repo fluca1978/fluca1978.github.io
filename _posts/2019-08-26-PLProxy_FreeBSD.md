@@ -28,7 +28,7 @@ My pull request is inspired and borrows changes from other two pull requests:
 - [pr-31](https://github.com/plproxy/plproxy/pull/31) and credits to [Laurenz Albe](https://github.com/laurenz);
 - [pr-33](https://github.com/plproxy/plproxy/pull/33) that has been merged into mine, and credits to [Christoph Berg](https://github.com/df7cb).
 <br/>
-Then I added a compiler flag to adjust headers on FreeBSD 12, as well as dropped an old Bison syntax since this should be safe enough on modern PostgreSQL (at least 9.6 and higher**.
+Then I added a compiler flag to adjust headers on FreeBSD 12, as well as dropped an old Bison syntax since this should be safe enough on modern PostgreSQL (at least 9.6 and higher.
 Some bit here and there to make all tests to pass against PostgreSQL 11, and everything seems right now.
 <br/>
 **It is important to warn that [my version](https://github.com/plproxy/plproxy/pull/37) is not *production ready* because it should be reviewed by at least one PL/Proxy developer**.
