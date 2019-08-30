@@ -18,7 +18,7 @@ Three days ago [PgBouncer 1.11](https://pgbouncer.github.io/changelog.html#pgbou
 [`SCRAM`](https://www.postgresql.org/docs/11/auth-password.html) is currently the most secure way to use password for PostgreSQL authentication and has been around since version ~10~ (so nearly two years). `SCRAM` support for PgBouncer has been a /wanted feature/ for a while, since not having it prevented users of this great tool to use `SCRAM` on the clusters.
 <br/>
 <br/>
-Luckily, now this has been implemented and [the configuration of the PgBouncer account](https://pgbouncer.github.io/config.html#authentication-file-format** is similar to the plain and ~md5~, so it is very simple.
+Luckily, now this has been implemented and [the configuration of the PgBouncer account](https://pgbouncer.github.io/config.html#authentication-file-format)** is similar to the plain and ~md5~, so it is very simple.
 <br/>
 <br/>
 I really love PgBouncer and, with this addition, I can now upgrade my servers to /SCRAM/!
