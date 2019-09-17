@@ -5,6 +5,7 @@
   <name>Luca Ferrari </name>
   <email>{{ site.email }}</email>
   <uri>{{ site.baseurl }}</uri>
+  <link href="{{ site.baseurl }}" />
 </author>
 
 
