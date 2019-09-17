@@ -1,11 +1,11 @@
 <title type='text'>{{ site.name }}</title>
 <subtitle type='html'></subtitle>
-<link href="{{ site.baseurl }}" />
+<link href="{{ site.url }}" />
 <author>
   <name>Luca Ferrari </name>
   <email>{{ site.email }}</email>
-  <uri>{{ site.baseurl }}</uri>
-  <link href="{{ site.baseurl }}" />
+  <uri>{{ site.url }}</uri>
+  <link href="{{ site.url }}" />
 </author>
 
 
@@ -14,9 +14,9 @@
   {% if post.tags contains include.tag %}
   <entry>
         <title>{{ post.title }}</title>
-        <link href="{{ site.production_url }}{{ post.url }}"/>
+        <link href="{{ site.url }}{{ post.url }}"/>
         <updated>{{ post.date | date_to_xmlschema }}</updated>
-        <id>{{ site.production_url }}{{ post.id }}</id>
+        <id>{{ site.url }}{{ post.id }}</id>
         <content type="html">{{ post.content | xml_escape | truncatewords: 300 }}</content>
     </entry>
     {% endif %}
