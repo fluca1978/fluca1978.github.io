@@ -4,7 +4,8 @@ title: about me
 permalink: /about/
 ---
 
-**I'm a software developer living in Italy with my beautiful wife, my great son, and my two (female) cats.**
+**I'm a software developer living in Italy with my beautiful wife, my great son, 
+two (female) cats and one (female) dog.**
 
 <center>
 <img src="/images/main/lucaMainOlivia.png" alt="me" width="80%"/>
