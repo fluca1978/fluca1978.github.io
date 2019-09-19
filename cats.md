@@ -108,9 +108,9 @@ And the positive credits for the above are that I began using **Sofia as my prof
 
 Olivia is not a *starred cat* of mine, rather I believe is the most important cat in my wife's life experience.
 
-Olivia gained home access six months later than Sofia, and therefore it is the very second cat to my son. After an initial debate, Sofia and Olivia found an agreement on *house sharing* and today they appear much more as true sisters rather than roomates.
+Olivia gained home access nine months later than Sofia, and therefore she is the very second cat to my son. After an initial debate, Sofia and Olivia found an agreement on *house sharing* and today they appear much more as **true sisters rather than roomates*.
 
-Olivia has some very interesting behavior, and threrefore I could not avoid taking her into account in my day-to-day activity. But even if really deserving photos, being a very beautiful cat, *my brain does have place for a-one cat at time*, therefore I gave credits to Olivia **naming my main computer system  after her**.
+Olivia has some very interesting behavior, and threrefore I could not avoid taking her into account in my day-to-day activity. But even if really deserving photos, being a very beautiful cat, *my brain does have place for a-one cat at time (Sofia)*, therefore I gave credits to Olivia **naming my main computer system after her**.
 
 ```shell
 % hostname
