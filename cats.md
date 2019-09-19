@@ -122,3 +122,23 @@ You can see Olivia in one of her curious behvaiors here:
 <center>
 <img src="/images/main/lucaMainOlivia.png" alt="Oliva" width="50%"/>
 </center>
+
+
+
+
+Me, Myself and My Dogs
+---
+
+So far, I've had three dogs, all small in size. While I have to admit that dogs are much more interactive and friendly than cats, I still like cats the most.
+
+The first dog has been **Jack**, a black and white basset-like dog. It was a really nice dog, very calm and friendly. I remember, back in those days, he was walking around the neighbour to the local butcher, and then coming back with a bone in his mouth.
+
+Then, a lot of years later, **Flipper** gain access to home. He was a really beautiful *hard-fur basset*, son of the running world champion. He was my father's dog, even if he was tied to my mother for the most of the time.
+
+The last arrived, mostly due to the will of my wife and son, has been **Franzina** (*fringy*).
+I really don't like the name, but since she is used to it we decided to keep it. 
+We saved her out of the kennel, and she is in love with my wife and my son. I guess I have to become used to the fact that all animals in my family are no more *mines*...
+
+<center>
+<img src="/images/main/franzina.png" alt="Franzina" width="50%"/>
+</center>
