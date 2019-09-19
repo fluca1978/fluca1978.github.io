@@ -66,9 +66,11 @@ Anyway, the source tree and build system kept the original `BlackCat` name and I
 
 # Carmensita (aka *Puccia*)
 
-Carmensita, also known as *Puccia*, was the sister of Puccio, a long-fur black-and-white cat.
+Carmensita, also known as *Puccia*, was the natural sister of Puccio, a long-fur black-and-white cat.
 
-She totally replaced Puccio after he disappear, becoming my mate during the cold afternoons I spent studying and working for my PhD. I remember she coming to me from wherever she was just because I called her name, most likely an obedient and devote dog, than a cat.
+She totally replaced Puccio after he disappear, becoming my mate during the cold afternoons I spent studying and working for my PhD. While I was at my desk, no matter if reading a book or working on computer, she was used to ump on the top of the desk and place her head on my left arm, keeping such position for a long time sleep. Of course, I was not moving my left arm too much in order to not disturb her!
+
+I also remember myself just spelling her name loudly, and she appearing from wherever she was in a couple of minutes or even less, most like a devote dog than a cat.
 
 I often refer to Puccia as a **generational cat** since she entered my family when I was finishing the high school and died after my marriage, covering therefore a long period over which my life changed (I got the driving licence, I graduated, got a PhD, a job, and a wife).
 
@@ -80,6 +82,16 @@ My tribute to her was similar to the one I did for Puccio: when I left universit
 
 
 So far, I can state that **BlackCat was a tribute to Puccio, being him black for the most**, while **Whitecat was a tribute to Puccia being her white for the most**.
+
+## Miguel and Carmensita additional credits
+
+Having been so much important cats, my whole family began to credits them in different ways.
+
+My father was used to sign his emails with `PP`, formerly `Pover Puccia` (`Poor Puccia`), an exclamation I was used to say while looking at her sleeping in total piece on the couch.
+
+Me and my mom designed and delivered a **cat's crib**: we found old figures and placed them in their outside dedicated terrace, so that you could walk around our garden seing cats sleeping near the figures.
+
+Today my virtual machines are named after them, so I have `miguel` (my main database host) and `carmensita` (my main backup host) and I do use those virtual machines in professional training.
 
 
 # Sofia
@@ -132,13 +144,17 @@ Me, Myself and My Dogs
 So far, I've had three dogs, all small in size. While I have to admit that dogs are much more interactive and friendly than cats, I still like cats the most.
 
 The first dog has been **Jack**, a black and white basset-like dog. It was a really nice dog, very calm and friendly. I remember, back in those days, he was walking around the neighbour to the local butcher, and then coming back with a bone in his mouth.
+My father gave special credits to Jack using his picture as his own avatar over the network.
 
 Then, a lot of years later, **Flipper** gain access to home. He was a really beautiful *hard-fur basset*, son of the running world champion. He was my father's dog, even if he was tied to my mother for the most of the time.
+My mother gave special credits to Flipper keeping a giant photo of him in her photo shop.
 
 The last arrived, mostly due to the will of my wife and son, has been **Franzina** (*fringy*).
 I really don't like the name, but since she is used to it we decided to keep it. 
-We saved her out of the kennel, and she is in love with my wife and my son. I guess I have to become used to the fact that all animals in my family are no more *mines*...
 
 <center>
 <img src="/images/main/franzina.png" alt="Franzina" width="50%"/>
 </center>
+
+We saved her out of the kennel, and she is in love with my wife and my son. 
+Damn, I guess myself has been demoted to *"the one who buys food"* and my son and wife are the "nice members" of the family. At least, this is the perception that I have about our animals!
