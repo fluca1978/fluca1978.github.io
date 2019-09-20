@@ -28,6 +28,7 @@ Looking at me by different views:
 - [Me by Television](#television)
 - [Me by Beliefs](#beliefs)
 - [Me by Cats](#cats)
+- [Me by Dogs](#dogs)
 - [Me by University](#university)
 - [Me and the Dolphins](#dolphins)
 
@@ -366,6 +367,14 @@ I'm not sure I'm catholic anymore, surely I'm not (and never was) a *blind belie
 
 Long story short: there has always been a cat (or two!) in my life.
 For more details, see the [cats page](/cats)!
+
+
+<a name="dogs"></a>
+# Me by *Dogs*
+
+I'm not a *doggy-person*, I do love cats but don't get impressed by dogs. However, I had also a few dogs that, as you can imagine, were (and are) an important part of my life.
+For a brief story, see the [dogs page](/dogs).
+
 
 <a name="university"></a>
 # Me by *University*

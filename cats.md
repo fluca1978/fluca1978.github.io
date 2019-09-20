@@ -9,11 +9,11 @@ permalink: /cats/
 Me, Myself and my Cats
 ---
 
-Nothing special here: I grew up with always at least a cat on my side.
+Nothing special here: I grew up with a cat, or two, on my side.
 But the intimate approach with such feline strongly influenced my mindset at the point I sometime believe I'm myself a cat.
 **It is not just an intimate feeling with cats, it is that I recognize myself in their behavior.**
 
-During my life several cats lived with me and my family, but only a few of them did get a special place into my life.
+During my life several cats, more than twelve, lived with me and my family, but only a few of them did get a special place into my life.
 That's why I want to publicly state about their role and importance for me.
 
 
@@ -41,7 +41,7 @@ I clearly remember her appearing each time I was crying, gently pulling my hair 
 Duchessa was a real predator, eating any sort of tasty animal she was able to catch (especially rats and birds).
 
 
-![Duchessag](/images/main/duchessa.png)
+![Duchessa](/images/main/duchessa.png)
 
 Credits for the above photo are to the **best photographer I ever met**, publicly known as **my father**, who  has won several competitions with such photo. You have to understand it was back when the digital photography was just a dream, and being able to shoot at great distance a moving animal was a real challenge.
 
@@ -50,7 +50,9 @@ Duchessa died due to an accident when I was a middle-school student.
 *When I went public on the net with my first blog, I placed her photo on the top of the site to emphasize my feelings for Duchessa*.
 
 
-# Miguel (aka *Puccio*)
+# Miguel & Carmensita
+
+## Miguel (aka *Puccio*)
 
 Miguel, also known as *Puccio*, was a male black and white cat that lived with us along with his sister.
 I don't know exactly why, but Puccio trusted myself the most, and I clearly remember he miewling each time he saw me.
@@ -64,7 +66,7 @@ Anyway, the source tree and build system kept the original `BlackCat` name and I
 </center>
 
 
-# Carmensita (aka *Puccia*)
+## Carmensita (aka *Puccia*)
 
 Carmensita, also known as *Puccia*, was the natural sister of Puccio, a long-fur black-and-white cat.
 
@@ -77,15 +79,24 @@ I often refer to Puccia as a **generational cat** since she entered my family wh
 My tribute to her was similar to the one I did for Puccio: when I left university and worked on my own for another research project, **I named the whole project (and not just the source tree) WhiteCat**, producing also a logo of her sleeping on our terrace edge.
 
 <center>
-<img src="/images/main/whitecat.png" alt="Carmensita (a.k.a. Puccia)" style="background-color: gray;"/>
+<img src="/images/main/whitecat.png" alt="WhiteCat Logo" style="background-color: gray;"/>
 </center>
 
 
+Here you can see Carmensita doing one of her favourite activities:
+
+<center>
+<img src="/images/main/carmensita.png" alt="Carmensita (a.k.a. Puccia)" />
+</center>
+
+
+
+## Credits
+
 So far, I can state that **BlackCat was a tribute to Puccio, being him black for the most**, while **Whitecat was a tribute to Puccia being her white for the most**.
 
-## Miguel and Carmensita additional credits
 
-Having been so much important cats, my whole family began to credits them in different ways.
+However, having been so much important cats, my whole family began to credits them in different ways.
 
 My father was used to sign his emails with `PP`, formerly `Pover Puccia` (`Poor Puccia`), an exclamation I was used to say while looking at her sleeping in total piece on the couch.
 
@@ -138,23 +149,6 @@ You can see Olivia in one of her curious behvaiors here:
 
 
 
-Me, Myself and My Dogs
----
+## What about Dogs?
 
-So far, I've had three dogs, all small in size. While I have to admit that dogs are much more interactive and friendly than cats, I still like cats the most.
-
-The first dog has been **Jack**, a black and white basset-like dog. It was a really nice dog, very calm and friendly. I remember, back in those days, he was walking around the neighbour to the local butcher, and then coming back with a bone in his mouth.
-My father gave special credits to Jack using his picture as his own avatar over the network.
-
-Then, a lot of years later, **Flipper** gain access to home. He was a really beautiful *hard-fur basset*, son of the running world champion. He was my father's dog, even if he was tied to my mother for the most of the time.
-My mother gave special credits to Flipper keeping a giant photo of him in her photo shop.
-
-The last arrived, mostly due to the will of my wife and son, has been **Franzina** (*fringy*).
-I really don't like the name, but since she is used to it we decided to keep it. 
-
-<center>
-<img src="/images/main/franzina.png" alt="Franzina" width="50%"/>
-</center>
-
-We saved her out of the kennel, and she is in love with my wife and my son. 
-Damn, I guess myself has been demoted to *"the one who buys food"* and my son and wife are the "nice members" of the family. At least, this is the perception that I have about our animals!
+Yes, I had also a few dogs in my life, see the [dogs page for more details](/dogs).
