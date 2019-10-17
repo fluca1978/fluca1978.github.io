@@ -24,3 +24,10 @@ The problem was easy to fix, and required a single `#ifdef` statement to make [c
 ### `pgbackrest expire --dry-run`
 
 This is a very complex, at least to me, [pull request](https://github.com/pgbackrest/pgbackrest/pull/853) and tryies to implement a *test only* (dry-run) version of the `expire` command. It is based on initial work on [another pull request of mine](https://github.com/pgbackrest/pgbackrest/pull/840) that was the *connecting way* with the development team.
+
+
+### `pgenv` commands implementations
+
+As a request by an user, most notably a well known Perl user, I decided to implement two different commands in `pgenv`:
+- `pgenv alias` [that allows to label PostgreSQL versions with mnemonic names](https://github.com/theory/pgenv/pull/36);
+- `pgenv rebuild` [that allows to rebuild an already installed version](https://github.com/theory/pgenv/pull/37).
