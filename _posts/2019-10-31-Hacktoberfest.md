@@ -35,7 +35,7 @@ As a request by an user, most notably a well known Perl user, I decided to imple
 <br/>
 Then, I decided to try to figure out some more enhancements to `pgenv`:
 - `pgenv psql` [that allows you to run the right version of `psql`](https://github.com/theory/pgenv/pull/38) for the running PostgreSQL cluster;
-- [scripts to be ran once an event happens](https://github.com/theory/pgenv/pull/39**.
+- [scripts to be ran once an event happens](https://github.com/theory/pgenv/pull/39).
 
 
 ### ITPUG Website
