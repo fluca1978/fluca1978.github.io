@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "org.hibernate.AssertionFailure: null identifier**
+title:  "org.hibernate.AssertionFailure: null identifier"
 author: Luca Ferrari
 tags:
 - java
