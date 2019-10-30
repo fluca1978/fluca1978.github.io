@@ -18,7 +18,7 @@ Here is a short list about my Pull Requests and how they gone. The [overall stat
 ## `pg_proctab` on FreeBSD
 
 While preparing material for a PostgreSQL professional course, I found [pg_proctab](https://github.com/markwkm/pg_proctab).
-Since my default PostgreSQL machine runs on FreeBSD, and `pg_proctab` did not compile on such an operating system, I decided to try to make it work. So [here it is my attempt at making it compiling on FreeBSD](https://github.com/markwkm/pg_proctab/pull/5).
+Since my default PostgreSQL machine runs on FreeBSD, and `pg_proctab` did not compile on such an operating system, I decided to try to make it work. So [here it is my attempt at making it compiling on FreeBSD](https://github.com/markwkm/pg_proctab/pull/5). After several days, I realized that probably the project on GitHub was not under the radar, and in fact it was just a mirro, so I pushed the *Merge Request* on[GitLab too](https://gitlab.com/pg_proctab/pg_proctab/merge_requests/1).
 
 
 ## `pgBackRest` command `expire` with `--dry-run`
