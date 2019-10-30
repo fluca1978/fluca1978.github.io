@@ -19,6 +19,7 @@ In the case of FreeBSD machines, `pkgng` is the module to use, but in the past I
 
 
 ```yaml
+{% raw %}
 - name: PostgreSQL 11
   become: yes
   with_items:
@@ -29,6 +30,7 @@ In the case of FreeBSD machines, `pkgng` is the module to use, but in the past I
   pkgng:
     name: postgresql11-{{ item }}
     state: latest
+{% endraw %}    
 ```
 
 However, there is a very scarign warning message when running the above:
@@ -57,6 +59,7 @@ That's easy to fix, but also annoying (at least to me), because I have to change
 So far, the better solution I've found that helps me keep readibility is to use a variable to hold the PostgreSQL version I want and the list of packages I need:
 
 ```yaml
+{% raw %}
 vars:
   pg_version: 11
   pg_components:
@@ -72,4 +75,5 @@ tasks:
       pkgng:
         name: "{{ pg_components }}"
         state: latest
+{% endraw %}        
 ```
