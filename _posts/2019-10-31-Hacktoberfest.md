@@ -35,7 +35,8 @@ As usual, I did some improvements to `pgenv`:
 - [implement a `psql` command](https://github.com/theory/pgenv/pull/38), something I then closed by myself to substitute with the actual implementation of a *warning* about the user's `PATH`. The idea was to provide the user with the actual PostgreSQL executables related to the in-use cluster;
 - [supports scripts](https://github.com/theory/pgenv/pull/39) allowing the user to define custom scripts to be executed at different phases during the build/start-up of a cluster.
 
-## `pgconf.eu`` and `www.itpug.org`
+## `pgconf.eu` and `www.itpug.org`
 
 Well, this is a kind of troophy patch that happened to be just because I simply don't understand the way ITPUG is handling the spread of PostgreSQL (and Open Source) in Italy.
 In October PostgreSQL 12 was released, and the [official web site for the ITPUG community did not mention that](https://github.com/ITPUG/www.itpug.org/pull/32).
+
