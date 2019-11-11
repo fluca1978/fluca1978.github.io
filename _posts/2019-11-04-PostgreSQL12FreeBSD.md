@@ -5,6 +5,7 @@ author: Luca Ferrari
 tags:
 - postgresql
 - planet-postgresql-org
+- freebsd
 
 permalink: /:year/:month/:day/:title.html
 ---
