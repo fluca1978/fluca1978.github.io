@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Developers On Fire Interview"
+title:  "Developer On Fire Interview"
 author: Luca Ferrari
 tags:
 - opensource
@@ -10,11 +10,11 @@ tags:
 
 permalink: /:year/:month/:day/:title.html
 ---
-On October 22nd I was interviewed by Dave Rael for "Developers On Fire" podcast.
+On October 22nd I was interviewed by Dave Rael for "Developer On Fire" podcast.
 
-# Developers On Fire Interview
+# Developer On Fire Interview
 
-I was contacted by Dave Rael, who is the author of [Developers on Fire podcast](https://developeronfire.com/podcast/episode-449-luca-ferrari-focused-practice). He is a very smart and kindly guy, and I think the work is doing with his podcast is simply amazing.
+I was contacted by Dave Rael, who is the author of [Developer on Fire podcast](https://developeronfire.com/podcast/episode-449-luca-ferrari-focused-practice). He is a very smart and kindly guy, and I think the work is doing with his podcast is simply amazing.
 <br/>
 <br/>
 He told me someone suggested my name as a possible target for the podcast, and I was really proud about it. However, I was too busy back at that time, so I kindly asked Dave to delay the interview at the end of October, and he agreeded.
