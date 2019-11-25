@@ -44,21 +44,21 @@ Looking at me by different views:
 
 
 I've always been fascinated by computers since the age of movies like *War Games*.
-My very first computer was the very popular [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64) that my father bought to me and placed
-into a wardrobe with an old CRT television. I wrote a few programs using the [BASIC](https://en.wikipedia.org/wiki/Commodore_BASIC) language, and did not found it very fun: spending so much time to get a bouncing ball on the screen seemed a waste of time.
+My very first computer was the very popular [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64){:target="_blank"} that my father bought to me and placed
+into a wardrobe with an old CRT television. I wrote a few programs using the [BASIC](https://en.wikipedia.org/wiki/Commodore_BASIC){:target="_blank"} language, and did not found it very fun: spending so much time to get a bouncing ball on the screen seemed a waste of time.
 
-A few years later my grandpa gave me an [Intel 8088](https://en.wikipedia.org/wiki/Intel_8088) based PC with a green monitor and, of course, a version of [MS-DOS](https://en.wikipedia.org/wiki/MS-DOS). I remember doing a recursive `dir` on the 50MB disk running for a couple of seconds!
+A few years later my grandpa gave me an [Intel 8088](https://en.wikipedia.org/wiki/Intel_8088){:target="_blank"} based PC with a green monitor and, of course, a version of [MS-DOS](https://en.wikipedia.org/wiki/MS-DOS){:target="_blank"}. I remember doing a recursive `dir` on the 50MB disk running for a couple of seconds!
 
-I grew up and got an [Intel 486](https://en.wikipedia.org/wiki/Intel_80486) DX personal computer that I used to do some homework while attending school. I remember doing some spreadsheets related to my archery performances, as well as using it to print out sight notes.
-After that a few [Intel Celeron](https://en.wikipedia.org/wiki/Celeron) PCs took place on my desk, then it came a laptop, and a lot of other hardware I really don't remember.
+I grew up and got an [Intel 486](https://en.wikipedia.org/wiki/Intel_80486){:target="_blank"} DX personal computer that I used to do some homework while attending school. I remember doing some spreadsheets related to my archery performances, as well as using it to print out sight notes.
+After that a few [Intel Celeron](https://en.wikipedia.org/wiki/Celeron){:target="_blank"} PCs took place on my desk, then it came a laptop, and a lot of other hardware I really don't remember.
 
 I attended the *computer science* course at my local university, where I was (badly) introduced to `Unix`, or better to `Linux`. I felt in love with the philosophy of the system: you were not limited in any way, you could just type and do whatever you wanted piping a few commands.
 
 My first Linux distro was a *Red Hat 5.2*, and since I was still not aware of the `root` concept (in the sense that Microsoft did not have to teach you such concept), I had to install it over and over again because I was jamming a few configuration files...
-At my fourth year of university I did switch totally to `Linux`, keeping around a bootable [Microsoft Windows](https://en.wikipedia.org/wiki/Microsoft_Windows) for those games and programs I was not aware to find a substitute.
+At my fourth year of university I did switch totally to `Linux`, keeping around a bootable [Microsoft Windows](https://en.wikipedia.org/wiki/Microsoft_Windows){:target="_blank"} for those games and programs I was not aware to find a substitute.
 
 My first job, luckily, required me to manage a few Linux servers, so I had the chance to improve my skills on such system.
-After a few years I met [OpenBSD](http://www.openbsd.org) and [FreeBSD](http://www.freebsd.org) and I switched to the Unix culture.
+After a few years I met [OpenBSD](http://www.openbsd.org){:target="_blank"} and [FreeBSD](http://www.freebsd.org){:target="_blank"} and I switched to the Unix culture.
 Today I use both Linux and BSD as my own operating systems, with the former being the leading OS.
 
 Being a Linux/BSD user meant to me I embraced the *Open Source* culture to the point I believe it is the **only sane way of producing software**.
@@ -78,16 +78,16 @@ In the academic world:
 
 * Master Degree in Computer Science, University of Modena and Reggio Emilia, final vote `110/110 with honours`, year 2002
 * PhD in Computer Science, University of Modena and Reggio Emilia, year 2005
-* Adjunct Professor, [Nipissing University](http://www.nipissingu.ca/), years 2011-2014
+* Adjunct Professor, [Nipissing University](http://www.nipissingu.ca/){:target="_blank"}, years 2011-2014
 * lecturer at the University of Modena and Reggio Emilia for several courses including `Java, OOP, operating systems`, years 2003-2006
 * lecturer at local high schools for `HTML, Javascript, networking`, years 2009-2014
 * BSD Certification, year 2013
 
 In the computer science world:
 
-* co-founder of the [Italian PostgreSQL Users Group](http://www.itpug.org), president between 2013-2015
-* [BSD Magazine](https://bsdmag.org/) writer and reviewer
-* speaker at several [PGDay.IT](http://www.pgday.it) and LinuxDay events
+* co-founder of the [Italian PostgreSQL Users Group](http://www.itpug.org){:target="_blank"}, president between 2013-2015
+* [BSD Magazine](https://bsdmag.org/){:target="_blank"} writer and reviewer
+* speaker at several [PGDay.IT](http://www.pgday.it){:target="_blank"} and LinuxDay events
 
 <center>
 <img src="/images/main/luca_2013.png" alt="me a few years ago (2013)" />
@@ -240,7 +240,7 @@ If you need to get in touch with me *drop me an email or a phone call*.
 
 
 Please note that this also mean I don't do any effort to keep my social profiles up-to-date, and this includes my
-[LinkedIn profile](https://www.linkedin.com/in/fluca1978).
+[LinkedIn profile](https://www.linkedin.com/in/fluca1978){:target="_blank"}.
 
 
 <a name="ages"></a>
@@ -251,14 +251,14 @@ I don't think I'm old, but I've seen and experienced a lot of things that are no
 So, just for the records, here it is a short list that could give you some information about my background.
 
 ### In Life
-- *[Daytona 500](http://www.arcade-museum.com/game_detail.php?game_id=13328)*;
-- *[BMX Bike](https://en.wikipedia.org/wiki/BMX_bike)* not owned, I didn't like it;
+- *[Daytona 500](http://www.arcade-museum.com/game_detail.php?game_id=13328){:target="_blank"}*;
+- *[BMX Bike](https://en.wikipedia.org/wiki/BMX_bike){:target="_blank"}* not owned, I didn't like it;
 - *Black and White CRT Television* with an orientable antenna;
-- *[Fiat 131 Supermirafiori](https://it.wikipedia.org/wiki/Fiat_131)* owned by my father,
-*[Volkswagen Scirocco First Generation](https://en.wikipedia.org/wiki/Volkswagen_Scirocco)* owned by my mother,
-*[Peugeot 504](https://en.wikipedia.org/wiki/Peugeot_504)* one white and one blue owned by my parents,
-*[Fiat 900](https://it.wikipedia.org/wiki/Fiat_900)* by my grandpa;
-- *[Minolta 7000](https://en.wikipedia.org/wiki/Minolta_Maxxum_7000)* my first reflex camera,
+- *[Fiat 131 Supermirafiori](https://it.wikipedia.org/wiki/Fiat_131){:target="_blank"}* owned by my father,
+*[Volkswagen Scirocco First Generation](https://en.wikipedia.org/wiki/Volkswagen_Scirocco){:target="_blank"}* owned by my mother,
+*[Peugeot 504](https://en.wikipedia.org/wiki/Peugeot_504){:target="_blank"}* one white and one blue owned by my parents,
+*[Fiat 900](https://it.wikipedia.org/wiki/Fiat_900){:target="_blank"}* by my grandpa;
+- *[Minolta 7000](https://en.wikipedia.org/wiki/Minolta_Maxxum_7000){:target="_blank"}* my first reflex camera,
 *Polaroid 636* instant camera
 and *Fujifilm FP-14* passport camera;
 - *Termojolly* portable heater, still owning and working;
@@ -278,8 +278,8 @@ and *Fujifilm FP-14* passport camera;
 
 ### In the Computer Science World
 - *Commodore 64* first and last releases, as well as *Commodore 128*;
-- *[GEOS](https://en.wikipedia.org/wiki/GEOS_(8-bit_operating_system))*
-- *[Zilog Z80](https://en.wikipedia.org/wiki/Zilog_Z80)* diskless, and I don't remember how many memory it had;
+- *[GEOS](https://en.wikipedia.org/wiki/GEOS_(8-bit_operating_system)){:target="_blank"}*
+- *[Zilog Z80](https://en.wikipedia.org/wiki/Zilog_Z80){:target="_blank"}* diskless, and I don't remember how many memory it had;
 - *Intel 8088*;
 - *MS-DOS 6.0* and *6.2*;
 - *Red Hat 5.2* and *Mandrake 6*;
@@ -291,15 +291,15 @@ and *Fujifilm FP-14* passport camera;
 - *lpr, printcap and friends*, yes, printing was not fun at all;
 - *PCL 5* to drive printers, something can make you fall asleep on the keyboard;
 - *Forte for Java*, the father of *Netbeans*, also *Eclipse 2* and *JBuilder*;
-- [Squid](http://www.squid-cache.org/) proxy;
-- [Pegasus Mail](http://www.pmail.com/) and [The Bat!](https://www.ritlabs.com/en/products/thebat/), only tried a couple of times;
-- [FVWM 95](http://toastytech.com/guis/xnetscape.png) and [Window Maker](http://www.linuxfocus.org/common/images/article128/wprefs24.jpg);
+- [Squid](http://www.squid-cache.org/){:target="_blank"} proxy;
+- [Pegasus Mail](http://www.pmail.com/){:target="_blank"} and [The Bat!](https://www.ritlabs.com/en/products/thebat/){:target="_blank"}, only tried a couple of times;
+- [FVWM 95](http://toastytech.com/guis/xnetscape.png){:target="_blank"} and [Window Maker](http://www.linuxfocus.org/common/images/article128/wprefs24.jpg){:target="_blank"};
 - *PCMCIA* modem with antenna, somethig that required minutes to get online and seconds to get offline;
-- *[Anzio](https://www.anzio.com/content/anzio)* as a *telnet* client, that I quickly replaced with *[PuTTY](https://www.putty.org/)* as an *SSH client*, laughing at my boss who remained used to telnet;
-- *[Vypress Messenger](http://www.vypress.com/lan_instant_messenger/)* used only for that short time of the year I had to boot on Microsoft Windows;
-- *[Perl 5.6](https://perldoc.perl.org/perl56delta.html)* even if I was using it as v5.4;
-- *[Simon the Sorcerer](https://en.wikipedia.org/wiki/Simon_the_Sorcerer)*, *[Duke Nukem](https://en.wikipedia.org/wiki/Duke_Nukem) 1, 2, 3D*, [Commander Keen (and my favourite *Keen Dreams*)](https://en.wikipedia.org/wiki/Commander_Keen_in_Keen_Dreams);
-- IBM [Jikes Compiler](http://jikes.sourceforge.net/) as well as [Jikes Research Virtual Machine](https://www.jikesrvm.org/).
+- *[Anzio](https://www.anzio.com/content/anzio){:target="_blank"}* as a *telnet* client, that I quickly replaced with *[PuTTY](https://www.putty.org/){:target="_blank"}* as an *SSH client*, laughing at my boss who remained used to telnet;
+- *[Vypress Messenger](http://www.vypress.com/lan_instant_messenger/){:target="_blank"}* used only for that short time of the year I had to boot on Microsoft Windows;
+- *[Perl 5.6](https://perldoc.perl.org/perl56delta.html){:target="_blank"}* even if I was using it as v5.4;
+- *[Simon the Sorcerer](https://en.wikipedia.org/wiki/Simon_the_Sorcerer){:target="_blank"}*, *[Duke Nukem](https://en.wikipedia.org/wiki/Duke_Nukem){:target="_blank"} 1, 2, 3D*, [Commander Keen (and my favourite *Keen Dreams*)](https://en.wikipedia.org/wiki/Commander_Keen_in_Keen_Dreams){:target="_blank"};
+- IBM [Jikes Compiler](http://jikes.sourceforge.net/){:target="_blank"} as well as [Jikes Research Virtual Machine](https://www.jikesrvm.org/){:target="_blank"}.
 
 
 <a name="music"></a>
