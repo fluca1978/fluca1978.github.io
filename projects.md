@@ -14,7 +14,7 @@ Today I have very little time to start-up a project from scratch, and so I try t
 
 # Books
 
-I'm the author of **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide)!**
+I'm the author of **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide){:target="_blank"}!**
 
 <br/>
 <center>
@@ -24,21 +24,21 @@ I'm the author of **[PostgreSQL 11 Server Side Programming Quick Start Guide](ht
 </center>
 <br/>
 
-I've also an ebook collected with lectures I've done on PostgreSQL for [BSD Magazine](http://bsdmag.org) under the name of **[Improve your PostgreSQL Skills ebook](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/)**.
+I've also an ebook collected with lectures I've done on PostgreSQL for [BSD Magazine](http://bsdmag.org) under the name of **[Improve your PostgreSQL Skills ebook](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/){:target="_blank"}**.
 
 # Coding
 
 In the past I did mess with:
 
-* [`Aglets`](http://aglets.sourceforge.net/) a Java based Mobile Agent Platform (MAF).
+* [`Aglets`](http://aglets.sourceforge.net/){:target="_blank"} a Java based Mobile Agent Platform (MAF).
 
 * `Blackcat` it was my master degree thesis, renamed `RoleX` because university did not feel comfortable with animal names! There is no repository or source code available (because I'm too lazy to pick it back from a backup). The idea was that of doing Java class runtime manipulation on the fly as performed by other more useful tools (like persistence frameworks). Several research publications exist on the subject.
 
-* [`WhiteCat`](https://github.com/fluca1978/WhiteCat) the evolution of `BlackCat`, again Java bytecode manipulation on the fly. Several research publications exist on the subject.
+* [`WhiteCat`](https://github.com/fluca1978/WhiteCat){:target="_blank"} the evolution of `BlackCat`, again Java bytecode manipulation on the fly. Several research publications exist on the subject.
 
-* [`flap`](https://github.com/fluca1978/flap) a didactical Mobile Agent Platform written in Java used to teach mobility do students.
+* [`flap`](https://github.com/fluca1978/flap){:target="_blank"} a didactical Mobile Agent Platform written in Java used to teach mobility do students.
 
-* [`JFK`](https://github.com/fluca1978/JFK) trying to port *signals and slots* the Qt way to Java, or better a rudimental way to implement function pointers (because they don't scare you, right?).
+* [`JFK`](https://github.com/fluca1978/JFK){:target="_blank"} trying to port *signals and slots* the Qt way to Java, or better a rudimental way to implement function pointers (because they don't scare you, right?).
 
 
 
