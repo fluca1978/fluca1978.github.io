@@ -113,6 +113,7 @@ Where I was learning, where I was teaching.
 
 Talking about past academic projects, I've been member of the followings:
 
+- **[TRAFAIR](http://trafair.eu/){:target="_blank"}** (Understanding traffic flows to improve air quality), years 2018-2020;
 - **MENSA (Methodologies for the Engineering of complex Software systems: Agent-based approach)**, years 2007-2008;
 - **IS-MANET: Infrastrutture per reti ad-hoc mobili**, progetto CNR-MIUR, years 2003-2005;
 - **Fiducia e Diritto nella società dell’Informazione: Promozione e Tutela Giuridica della Fiducia nel Mercato, nelle Istituzioni e nell’Infrastruttura Tecnologica**, progetto PRIN del MIUR, years 2004-2005.
