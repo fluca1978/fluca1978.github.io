@@ -25,9 +25,16 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1400px;
   padding: 0 10px;
   width: 100%;
+}
+
+.container-blog  {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
 }
 
 .container-header {
@@ -255,6 +262,38 @@ nav {
 //
 // .main
 //
+
+.post_table_container {
+    margin: 0 auto;
+    max-width: 1680px;
+    padding: 0 10px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.post_table_article_left {
+    border: 4px solid $post_border;
+    background-color: $background_post_left;
+    padding: 0 10px;
+}
+
+.post_table_article_first {
+    border: 6px solid $post_border;
+    background-color: $background_post_first;
+    padding: 0 10px;
+}
+
+.table_posts {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+.post_table_article_right {
+    border: 4px solid $post_border;
+    background-color: $background_post_right;
+    padding: 0 10px;
+}
+
 
 .posts > .post {
   padding-bottom: 2em;

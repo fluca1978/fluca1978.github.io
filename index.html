@@ -6,14 +6,47 @@ layout: default
      <img src="http://ghchart.rshah.org/5c55aa/fluca1978" alt="Luca's activity on GitHub" />
 -->
 
-<div class="posts">
+{% assign postcounter = 0 %}
+{% assign rowcounter  = 0 %}
+<div class="post_table_container">
+    <table class="table_posts" >
     {% for post in paginator.posts %}
+
+        {% assign loopindex = forloop.index | modulo: 2 %}
+        {% assign postcounter = postcounter | plus:1    %}
+
+
+
+    {% if loopindex == 0 %}
+        <tr>
+            {% assign rowcounter = rowcounter | plus:1   %}
+            {% assign rowmodulo  = rowcounter | modulo:2 %}
+            {% if rowmodulo == 0 %}
+            {% assign left_style  = 'post_table_article_left' %}
+            {% assign right_style = 'post_table_article_right' %}
+            {% else %}
+            {% assign left_style  = 'post_table_article_right' %}
+            {% assign right_style = 'post_table_article_left' %}
+            {% endif %}
+            {% endif %}
+
+        {% if postcounter == 1 %}
+        <td colspan="2" class="post_table_article_first" >
+            {% else %}
+            {% if loopindex == 0 %}
+            <td class="{{ left_style }}">
+                {% else %}
+                <td class="{{ right_style }}">
+            {% endif %}
+        {% endif %}
+
     <article class="post">
         {% if post.blogger_orig_url %}
         {% else %}
 
         <div class="entry" >
-            <h1 >
+            <h1>
+                {{ loopindex }} {{ postcounter }}
                 <a href="{{ site.baseurl }}{{ post.url }}">
                     {% include post_categories_icon.html %}
                     {{ post.title }}
@@ -38,7 +71,16 @@ layout: default
 
 
     </article>
+
+
+            </td>
+    {% if loopindex == 1 %}
+    </tr>
+        {% endif %}
+
     {% endfor %}
+    </table>
+</div>
 
 
 
