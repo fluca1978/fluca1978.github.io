@@ -47,10 +47,18 @@ body {
 //    max-width: 1280px;
     padding: 0 10px;
     width: 100%;
-    position: fixed;
+//    position: fixed;
     height: 7em;
     transition: background-color 0.4s ease-out;
     background-color: $mono-color;
+}
+
+.navbar {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    transition: background-color 0.4s ease-out;
+    background-color: red;
 }
 
 
@@ -219,18 +227,20 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: white;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 48px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .site-description {
   margin: -5px 0 0 0;
   color: $white;
-  font-size: 16px;
+  font-size: 32px;
+  text-align: center;
 
   @include mobile {
     margin: 3px 0;
@@ -392,3 +402,4 @@ footer {
 
 @import "highlights";
 @import "jekyll-mono";
+@import "bootstrap";
