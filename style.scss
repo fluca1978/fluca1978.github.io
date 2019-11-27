@@ -21,6 +21,11 @@ body {
   background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
+
+}
+
+.page {
+    margin-top: 150px;
 }
 
 .container {
@@ -39,9 +44,13 @@ body {
 
 .container-header {
     margin: 0 auto;
-    max-width: 1280px;
+//    max-width: 1280px;
     padding: 0 10px;
     width: 100%;
+    position: fixed;
+    height: 7em;
+    transition: background-color 0.4s ease-out;
+    background-color: $mono-color;
 }
 
 
@@ -228,15 +237,22 @@ img {
   }
 }
 
+// #navbar {
+//     position: fixed;
+//     top: 0px;
+//     width: 100%;
+// }​
+
 nav {
   float: right;
-  margin-top: 23px;
+  margin-top: 5px;
   font-family: $helveticaNeue;
   font-size: 18px;
+//  position: fixed;
 
   @include mobile {
     float: none;
-    margin-top: 9px;
+    margin-top: 5px;
     display: block;
     font-size: 16px;
   }
