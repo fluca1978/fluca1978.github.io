@@ -286,6 +286,12 @@ nav {
 .table_posts {
     border-spacing: 10px;
     border-collapse: separate;
+
+    // hightlight table cells when mouse hover
+    td:hover {
+        background: $post_highlight_color !important;
+    }
+
 }
 
 .post_table_article_right {
@@ -293,6 +299,7 @@ nav {
     background-color: $background_post_right;
     padding: 0 10px;
 }
+
 
 
 .posts > .post {
