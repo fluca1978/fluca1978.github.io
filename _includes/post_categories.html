@@ -9,11 +9,9 @@
     {% for cat in post.tags %}
     {% if cat == post.tags[0] %}
 
-    <strong>
-        <a class="tag" href="/#{{ cat | slugify }}">
+        <a class="tag-main" href="/#{{ cat | slugify }}">
             {{ cat  }}
         </a>
-    </strong>
     {% else %}
     ,
     <a class="tag" href="/#{{ cat | slugify }}">

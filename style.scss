@@ -265,7 +265,7 @@ nav {
 
 .post_table_container {
     margin: 0 auto;
-    max-width: 1680px;
+    max-width: 1280px;
     padding: 0 10px;
     width: 100%;
     table-layout: fixed;
@@ -278,20 +278,48 @@ nav {
 }
 
 .post_table_article_first {
-    border: 6px solid $post_border;
+    border: 4px solid $post_border;
     background-color: $background_post_first;
     padding: 0 10px;
 }
+
+
+.categories {
+    color: $mono-color;
+
+    a {
+        color: $mono-color;
+    }
+    a:hover {
+        color: red !important;
+    }
+
+    // first tag, means it is important
+    .tag-main {
+        font-weight: bold;
+    }
+
+     // other categories/tags
+    .tag {
+        font-style: slant;
+    }
+}
+
 
 .table_posts {
     border-spacing: 10px;
     border-collapse: separate;
 
-    // hightlight table cells when mouse hover
+    // highlight table cells when mouse hover
     td:hover {
-        background: $post_highlight_color !important;
-    }
 
+        border: 4px solid red !important;
+        // background: $post_highlight_color !important;
+
+        a > h1 {
+            color: red !important;
+        }
+    }
 }
 
 .post_table_article_right {

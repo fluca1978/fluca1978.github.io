@@ -45,13 +45,13 @@ layout: default
         {% else %}
 
         <div class="entry" >
-            <h1>
-                {{ loopindex }} {{ postcounter }}
-                <a href="{{ site.baseurl }}{{ post.url }}">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+            <h1 align="center" >
                     {% include post_categories_icon.html %}
+                    <br/>
                     {{ post.title }}
-                </a>
             </h1>
+            </a>
 
             {{ post.excerpt }}
             <div class="categories">

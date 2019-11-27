@@ -8,7 +8,7 @@
 
     {% for cat in page.tags %}
     {% if cat == page.tags[0] %}
-    <a class="tag" href="/#{{ cat | slugify }}">
+    <a class="tag-main" href="/#{{ cat | slugify }}">
         <strong>{{ cat  }}</strong>
     </a>
     {% else %}
