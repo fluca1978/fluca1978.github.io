@@ -25,7 +25,7 @@ body {
 }
 
 .page {
-    margin-top: 150px;
+    margin-top: 15px;
 }
 
 .container {
@@ -44,27 +44,18 @@ body {
 
 .container-header {
     margin: 0 auto;
-//    max-width: 1280px;
     padding: 0 10px;
     width: 100%;
-//    position: fixed;
-    height: 7em;
     transition: background-color 0.4s ease-out;
     background-color: $mono-color;
 }
 
-.navbar {
-    margin: 0 auto;
-    padding: 0 10px;
-    width: 100%;
-    transition: background-color 0.4s ease-out;
-    background-color: red;
-}
+
 
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
+  color: $mono-color;
   font-weight: bold;
 
   line-height: 1.7;
@@ -403,3 +394,22 @@ footer {
 @import "highlights";
 @import "jekyll-mono";
 @import "bootstrap";
+
+
+nav.navbar {
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    background-color: $mono-color;
+    // Animation
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+}
+
+
+nav.navbar.shrink {
+    min-height: 35px;
+}
