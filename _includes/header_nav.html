@@ -1,85 +1,85 @@
 <header class="masthead clearfix">
     
     <nav class="navbar  navbar-fixed-top" role="navigation">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="nav navbar-nav navbar-left" >
+                <li class="nav_link" >
+                    <a href="{{ site.baseurl }}/about"  >
+                        <i class="fas fa-user fa-2x nav_link" title="about me"></i>
+                    </a>
 
-        <ul>
-            <li class="nav_link" >
-              <a href="{{ site.baseurl }}/about">
-          <i class="fas fa-user fa-2x" title="about me"></i>
+                </li>
 
+                {% if site.footer-links.email %}
+                <li class="nav_link" >
+                    <a href="mailto:{{ site.footer-links.email }}">
 
-        </a>
-            </li>
-
-        {% if site.footer-links.email %}
-            <li class="nav_link" >
-              <a href="mailto:{{ site.footer-links.email }}">
-
-                 <i class="far fa-envelope fa-2x" title="Email me!"></i>
-               </a>
-           </li>
-       {% endif %}
-
-
-        <li class="nav_link" >
-          <a href="{{ site.baseurl }}/cats" alt="Cats">
-            <i class="fas fa-paw fa-2x" title="Cats"></i>
-          </a>
-        </li>
-
-        <li class="nav_link" >
-          <a href="{{ site.baseurl }}/" alt="BLOG">
-
-              <i class="fas fa-bullhorn fa-2x" title="BLOG"></i>
-            </a>
-        </li>
-
-        <li class="nav_link" >
-            <a href="{{ site.baseurl }}/projects" alt="Projects and Code">
-              <i class="fas fa-laptop fa-2x" title="Projects and Code"></i>
-            </a>
-       </li>
-
-         <li class="nav_link" >
-           <a href="{{ site.baseurl }}/papers" alt="Papers and Publications">
-
-               <i class="fas fa-book fa-2x" title="Papers and Publications"></i>
-             </a>
-        </li>
+                        <i class="far fa-envelope fa-2x" title="Email me!"></i>
+                    </a>
+                </li>
+                {% endif %}
 
 
-        {% if site.footer-links.github %}
-            <li class="nav_link" >
-                <a href="https://github.com/{{ site.footer-links.github }}" target="_blank" >
-                  <i class="fab fa-github fa-2x" title="GitHub"></i>
+                <li class="nav_link" >
+                    <a href="{{ site.baseurl }}/cats" alt="Cats">
+                        <i class="fas fa-paw fa-2x" title="Cats"></i>
+                    </a>
+                </li>
 
-                </a>
-            </li>
-       {% endif %}
-       {% if site.footer-links.gitlab %}
-           <li class="nav_link" >
-               <a href="https://gitlab.com/{{ site.footer-links.gitlab }}" target="_blank" >
-                 <i class="fab fa-gitlab fa-2x" title="GitLab"></i>
-              </a>
-          </li>
-      {% endif %}
+                <li class="nav_link" >
+                    <a href="{{ site.baseurl }}/" alt="BLOG">
+
+                        <i class="fas fa-bullhorn fa-2x" title="BLOG"></i>
+                    </a>
+                </li>
+
+                <li class="nav_link" >
+                    <a href="{{ site.baseurl }}/projects" alt="Projects and Code">
+                        <i class="fas fa-laptop fa-2x" title="Projects and Code"></i>
+                    </a>
+                </li>
+            
+                <li class="nav_link" >
+                    <a href="{{ site.baseurl }}/papers" alt="Papers and Publications">
+
+                        <i class="fas fa-book fa-2x" title="Papers and Publications"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right" > 
+            {% if site.footer-links.github %}
+                <li class="nav_link" >
+                    <a href="https://github.com/{{ site.footer-links.github }}" target="_blank" >
+                        <i class="fab fa-github fa-2x" title="GitHub"></i>
+
+                    </a>
+                </li>
+                {% endif %}
+                {% if site.footer-links.gitlab %}
+                <li class="nav_link" >
+                    <a href="https://gitlab.com/{{ site.footer-links.gitlab }}" target="_blank" >
+                        <i class="fab fa-gitlab fa-2x" title="GitLab"></i>
+                    </a>
+                </li>
+                {% endif %}
 
 
-     {% if site.footer-links.linkedin %}
-         <li class="nav_link" >
-              <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" target="_blank" >
-                   <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
-              </a>
-         </li>
-     {% endif %}
+                {% if site.footer-links.linkedin %}
+                <li class="nav_link" >
+                    <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" target="_blank" >
+                        <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
+                    </a>
+                </li>
+                {% endif %}
 
-     {% if site.footer-links.amazon %}
-         <li class="nav_link" >
-              <a href="https://www.amazon.com/author/{{ site.footer-links.amazon }}" target="_blank" >
-                    <i class="fab fa-amazon fa-2x" title="Amazon Author"></i>
-              </a>
-         </li>
-    {% endif %}
+                {% if site.footer-links.amazon %}
+                <li class="nav_link" >
+                    <a href="https://www.amazon.com/author/{{ site.footer-links.amazon }}" target="_blank" >
+                        <i class="fab fa-amazon fa-2x" title="Amazon Author"></i>
+                    </a>
+                </li>
+                {% endif %}
 
 
     {% if site.footer-links.youtube %}
@@ -97,7 +97,9 @@
             </a>
         </li>
         {% endif %}
+            </ul>
+        </div>
 
-        </ul>
+
     </nav>
 </header>
