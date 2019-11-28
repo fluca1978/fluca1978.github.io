@@ -7,6 +7,9 @@
 
 @import "reset";
 @import "variables";
+@import "highlights";
+@import "jekyll-mono";
+@import "bootstrap";
 
 
 /**************/
@@ -20,7 +23,7 @@ html {
 body {
   background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: $black;
 
 }
 
@@ -53,42 +56,6 @@ body {
 
 
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $mono-color;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-
-h1 {
-  font-size: 30px;
-  color: $h1-color;
-  a {
-    color: inherit;
-  }
-}
-
-h2 {
-  font-size: 24px;
-  color: $h2-color;
-}
-
-h3 {
-  font-size: 20px;
-  color: $h3-color;
-}
-
-h4 {
-  font-size: 18px;
-  color: $h4-color;
-}
 
 p {
   margin: 15px 0;
@@ -391,10 +358,19 @@ footer {
   text-align: center;
 }
 
-@import "highlights";
-@import "jekyll-mono";
-@import "bootstrap";
 
+
+.nav_text {
+    margin: 10px auto;
+    padding: 0 10px;
+    text-align: center;
+    vertical-align: text-bottom;
+    font: 24px $raleway;
+    color: $white;
+    &:hover, &:active {
+        color: darken($green,20);
+    }
+}
 
 nav.navbar {
     margin: 0 auto;
@@ -416,7 +392,7 @@ nav.navbar.shrink {
     min-height: 35px;
     height: 50px;
     background-color: $navbar-shrink-color;
-    .fas,.far,.fab {
+    .fas,.far,.fab, .nav_text {
         font-size: 1em;
     }
 
@@ -434,18 +410,41 @@ nav.navbar.shrink {
 
 
 
-/* .fas { */
-/*     font-size: 2em; */
-/*     color: #ffffff; */
-/*     /\* width:10px; *\/ */
-/*     /\* height:10px; *\/ */
-/*     /\* text-align:center; *\/ */
-/*     /\* padding: 5px; *\/ */
-/*     transition:all 0.4s ease-in-out; */
-/*     background-color: $mono-color; */
-/* } */
+h1, h2, h3, h4, h5, h6 {
+    font-family: $helveticaNeue;
+    color: $mono-color;
+    font-weight: bold;
 
-/* .fas:hover { */
-/*     color: $green; */
-/*     background-color: $mono-color; */
-/* } */
+    line-height: 1.7;
+    margin: 1em 0 15px;
+    padding: 0;
+
+    @include mobile {
+        line-height: 1.4;
+    }
+}
+
+h1 {
+    font-size: 30px;
+    color: $h1-color;
+    a {
+        color: inherit;
+    }
+}
+
+h2 {
+    font-size: 24px;
+    color: $h2-color;
+}
+
+h3 {
+    font-size: 20px;
+    color: $h3-color;
+}
+
+h4 {
+    font-size: 18px;
+    color: $h4-color;
+}
+
+
