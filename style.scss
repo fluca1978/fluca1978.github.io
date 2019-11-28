@@ -367,6 +367,7 @@ footer {
     vertical-align: text-bottom;
     font: 24px $raleway;
     color: $white;
+    cursor: none;
     &:hover, &:active {
         color: darken($green,20);
     }
