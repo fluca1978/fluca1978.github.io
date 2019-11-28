@@ -14,7 +14,7 @@ No way I'm going to connect to an hot-spot that is basing its own security only 
 
 # WIFI & Captive Portals: a Bad Idea!
 
-In this days I'm a guest at a foreign university for an european project, and I've the proof that *system administrators* are every day in a rush to provide services, even in an unsecure way.
+In these days I'm a guest at a foreign university for an european project, and I've the proof that *system administrators* are every day in a rush to provide services, even in an unsecure way.
 <br/>
 The story goes like this: they provide me the `ESSID` of the WiFi network and also the username and password to connect. Uhm, why a *username*?
 <br/>
