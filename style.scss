@@ -365,11 +365,12 @@ footer {
     padding: 0 10px;
     text-align: center;
     vertical-align: text-bottom;
-    font: 24px $raleway;
+    font-size: 24px;
+    font-family: 'Open Sans', Arial, sans-serif;
     color: $white;
     cursor: none;
     &:hover, &:active {
-        color: darken($green,20);
+        color: darken($green,10);
     }
 }
 
