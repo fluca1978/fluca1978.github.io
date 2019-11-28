@@ -17,7 +17,7 @@ $blue: #4183C4;
 $violet: #8476ad;
 $green: #66ff66;
 $green2: #2ddbb3;
-$orange: #ff2222;
+$orange: #ff5555;
 
 
 // Main theme colors
@@ -25,8 +25,9 @@ $orange: #ff2222;
 
 $mono-color:#5c55aa;                // main theme color(header, links, footer icons, buttons, post-title)
 $hl-color: $green;              // header link color (author name and posted on date) for blog post meta
-$navbar-hover-color:$green;        // navbar hover color (site name and navbar links hover color)
-$link-color: $orange;        // normal hyperlink color other than the ones above.
+$navbar-hover-color:$orange;        // navbar hover color (site name and navbar links hover color)
+$navbar-shrink-color: #291188;
+$link-color: #ff2222;        // normal hyperlink color other than the ones above.
 
 
 $background_post_first:  #cceee6;

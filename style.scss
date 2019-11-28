@@ -404,12 +404,48 @@ nav.navbar {
     text-align: center;
     background-color: $mono-color;
     // Animation
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    -ms-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease;
 }
 
 
 nav.navbar.shrink {
     min-height: 35px;
+    height: 50px;
+    background-color: $navbar-shrink-color;
+    .fas,.far,.fab {
+        font-size: 1em;
+    }
+
 }
+
+.navbar-center {
+    text-align: center;
+    display:inline-block;
+    vertical-align: center;
+    float: none;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+
+
+/* .fas { */
+/*     font-size: 2em; */
+/*     color: #ffffff; */
+/*     /\* width:10px; *\/ */
+/*     /\* height:10px; *\/ */
+/*     /\* text-align:center; *\/ */
+/*     /\* padding: 5px; *\/ */
+/*     transition:all 0.4s ease-in-out; */
+/*     background-color: $mono-color; */
+/* } */
+
+/* .fas:hover { */
+/*     color: $green; */
+/*     background-color: $mono-color; */
+/* } */

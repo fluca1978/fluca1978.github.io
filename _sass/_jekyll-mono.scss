@@ -382,6 +382,7 @@ button.button-primary:focus {
         color: $white;
         &:hover{
             color: darken( $navbar-hover-color, 20 );
+            background-color: $mono-color;
         }
     }
 
@@ -397,16 +398,17 @@ button.button-primary:focus {
 
 
 
-nav ul li {
+nav div ul li {
     list-style:none;
     display:inline-block;
     //margin:0 50px;
-    -webkit-transition: all 100ms ease;
-    -moz-transition: all 100ms ease;
-    -ms-transition: all 100ms ease;
-    -o-transition: all 100ms ease;
-    transition: all 100ms ease;
+    -webkit-transition: all 900ms ease;
+    -moz-transition:    all 900ms ease;
+    -ms-transition:     all 900ms ease;
+    -o-transition:      all 900ms ease;
+    transition:         all 900ms ease;
     cursor:pointer;
+
 }
 
 .nav_link:hover {
@@ -415,8 +417,11 @@ nav ul li {
     -o-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
-    //color:#c8e0f4;
+    // background-color: $mono-color;
+    // color:$mono-color;
 }
+
+
 
 /*
 nav ul li span {
