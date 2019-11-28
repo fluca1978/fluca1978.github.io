@@ -3,28 +3,8 @@
     <nav class="navbar  navbar-fixed-top" role="navigation">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
             <ul class="nav navbar-nav navbar-left" >
-                <li class="nav_link" >
-                    <a href="{{ site.baseurl }}/about"  >
-                        <i class="fas fa-user fa-2x nav_link" title="about me"></i>
-                    </a>
-
-                </li>
-
-                {% if site.footer-links.email %}
-                <li class="nav_link" >
-                    <a href="mailto:{{ site.footer-links.email }}">
-
-                        <i class="far fa-envelope fa-2x" title="Email me!"></i>
-                    </a>
-                </li>
-                {% endif %}
 
 
-                <li class="nav_link" >
-                    <a href="{{ site.baseurl }}/cats" alt="Cats">
-                        <i class="fas fa-paw fa-2x" title="Cats"></i>
-                    </a>
-                </li>
 
                 <li class="nav_link" >
                     <a href="{{ site.baseurl }}/" alt="BLOG">
@@ -45,10 +25,35 @@
                         <i class="fas fa-book fa-2x" title="Papers and Publications"></i>
                     </a>
                 </li>
+
+                <li class="nav_link" >
+                    <a href="{{ site.baseurl }}/cats" alt="Cats">
+                        <i class="fas fa-paw fa-2x" title="Cats"></i>
+                    </a>
+                </li>
+                <li class="nav_link" >
+                    <a href="{{ site.baseurl }}/about"  >
+                        <i class="fas fa-user fa-2x nav_link" title="about me"></i>
+                    </a>
+
+                </li>
+
+                {% if site.footer-links.email %}
+                <li class="nav_link" >
+                    <a href="mailto:{{ site.footer-links.email }}">
+
+                        <i class="far fa-envelope fa-2x" title="Email me!"></i>
+                    </a>
+                </li>
+                {% endif %}
+
+
             </ul>
 
-            <ul class="nav navbar-nav navbar-right" > 
-            {% if site.footer-links.github %}
+
+            <ul class="nav navbar-nav navbar-right" >
+                {% if site.footer-links.github %}
+
                 <li class="nav_link" >
                     <a href="https://github.com/{{ site.footer-links.github }}" target="_blank" >
                         <i class="fab fa-github fa-2x" title="GitHub"></i>
