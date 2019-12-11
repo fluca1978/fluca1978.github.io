@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "WIFI & Captive Portals: a Bad Idea!"
+title:  "Open WIFI & Captive Portals: a Bad Idea!"
 author: Luca Ferrari
 tags:
 - linux
@@ -25,7 +25,7 @@ What is the problem with this setup?
 Did you notice I haven't written about an `PSA` key? **The WiFi network is running on plain**!
 <br/>
 <br/>
-I'm sorry pal, having been on the other side of the desk and having deployed captive portals (thanks to [pfSense](http://pfsense.org)), **I'm not going to connect my laptop to tan open network**!
+I'm sorry pal, having been on the other side of the desk and having deployed captive portals (thanks to [pfSense](http://pfsense.org)), **I'm not going to connect my laptop to an open network**!
 <br/>
 No way!
 <br/>
