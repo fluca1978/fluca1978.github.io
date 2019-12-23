@@ -3,7 +3,7 @@ layout: post
 title:  "Windows on Rails (blue screen of death on train)"
 author: Luca Ferrari
 tags:
-- windows
+- microsoft
 
 
 permalink: /:year/:month/:day/:title.html
