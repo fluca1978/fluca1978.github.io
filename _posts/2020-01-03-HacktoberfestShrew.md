@@ -11,7 +11,7 @@ On Christmas Eve I got my 2019 shrew!
 
 # Hacktoberfest 2019: Shrew Arrived!
 
-This is the fourth experience in the [Hacktoberfest contest](/2019/10/31/Hacktoberfest.html), and this year I was much more busy to provide *quantity*, and moreover I tried to improve the *quality* of my Pull Requests.
+This is the fourth experience in the [Hacktoberfest contest](/2019/10/31/Hacktoberfest.html){:target=_blank}, and this year I was much more busy to provide *quantity*, and moreover I tried to improve the *quality* of my Pull Requests.
 <bR/>
 On Christmas Eve I got the shrew: again, **an amazing t-shirt** and a bunch of stickers that my son immediatly stolen!
 
