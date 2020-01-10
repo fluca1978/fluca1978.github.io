@@ -20,5 +20,18 @@ I've also an [account on Gitlab](https://gitlab.com/{{ site.footer-links.gitlab 
 
 # Statistic Data About this *Blog*
 
-{% include stats.html %}
+
+{% include stats/2020.md %}
+{% include stats/2019.md %}
+{% include stats/2018.md %}
+{% include stats/2017.md %}
+{% include stats/2016.md %}
+{% include stats/2015.md %}
+{% include stats/2014.md %}
+{% include stats/2013.md %}
+{% include stats/2012.md %}
+{% include stats/2011.md %}
+{% include stats/2010.md %}
+{% include stats/2009.md %}
+{% include stats/2008.md %}
 
