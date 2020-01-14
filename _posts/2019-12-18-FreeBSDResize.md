@@ -17,7 +17,7 @@ So, it happens sometime, especially when dealing with upgrades, that I run out o
 <br/>
 Now, how can I resize the disk and the filesystem?
 <br/>
-Luckily, this is explained very well [on the officiale FreeBSD handbook](https://www.freebsd.org/doc/handbook/disks-growing.html){:target=_blank}. If you are lucky enough to have to grow a non-root disk, unmounting and proceeding with the following steps is quite straighforward, but in my case I needed to increase the root filesystem, therefore I had to boot from an installation media.
+Luckily, this is explained very well [on the officiale FreeBSD handbook](https://www.freebsd.org/doc/handbook/disks-growing.html){:target="_blank"}. If you are lucky enough to have to grow a non-root disk, unmounting and proceeding with the following steps is quite straighforward, but in my case I needed to increase the root filesystem, therefore I had to boot from an installation media.
 <br/>
 In my case I had the first disk, `ada0` with three partitions:
 - `ada0p1` is the boot partition;
@@ -56,4 +56,4 @@ And, of course, *reboot** the machine.
 
 ## Wait a minute, what about the swap space?
 
-In the [handbook](https://www.freebsd.org/doc/handbook/disks-growing.html){:target=_blank} you will find that there is the need, or at least the suggestion, to disable the swap area before proceeding. I did not do that because I was not using the swap partition, and the process was fine. However, if in doubt, disable the swap partition before deleting it and remember to reactivate it once finished.
+In the [handbook](https://www.freebsd.org/doc/handbook/disks-growing.html){:target="_blank"} you will find that there is the need, or at least the suggestion, to disable the swap area before proceeding. I did not do that because I was not using the swap partition, and the process was fine. However, if in doubt, disable the swap partition before deleting it and remember to reactivate it once finished.

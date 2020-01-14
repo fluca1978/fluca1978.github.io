@@ -14,7 +14,7 @@ I read a blog post about multithreading and found it useful.
 
 # General Rules in Multithreading
 
-Today I've read this [very good blog post about using multithreading in Qt](https://www.kdab.com/the-eight-rules-of-multithreaded-qt/){:target=_blank}, and even if today I don't manage threads by myself, that reminded me my first attempt in understanding and explaining the multithread.
+Today I've read this [very good blog post about using multithreading in Qt](https://www.kdab.com/the-eight-rules-of-multithreaded-qt/){:target="_blank"}, and even if today I don't manage threads by myself, that reminded me my first attempt in understanding and explaining the multithread.
 <br/>
 <br/>
 My first attempt in doing multithread was while studying (by my own) Java. It was Java 1.1, and the language included a very simple interface to multithreading, so it was quite simple to launch an applet that spawn a few threads to do some flash GUI updates.
@@ -45,4 +45,4 @@ I learnt the above on my own experience, luckily while I was still a little stud
 3) *Don’t block the main thread*
 <br/>
 <br/>
-Of course, the above advices does not apply only on GUI applications, but anywhere you have an event-loop based mechanism. In fact, [I developed the `suspend()` method in Aglets](https://sourceforge.net/p/aglets/git/ci/master/tree/){:target=_blank} to emulate the `Thread.sleep()` method, making an agent something more similar to a thread.
+Of course, the above advices does not apply only on GUI applications, but anywhere you have an event-loop based mechanism. In fact, [I developed the `suspend()` method in Aglets](https://sourceforge.net/p/aglets/git/ci/master/tree/){:target="_blank"} to emulate the `Thread.sleep()` method, making an agent something more similar to a thread.

@@ -13,7 +13,7 @@ How hard can it be to get Raku (Perl 6) on FreeBSD?
 
 # Raku On FreeBSD
 
-I wanted to install [Raku](https://raku.org){:target=_blank} on my FreeBSD server, even if it is not listed as a supported platform. After all, how hard can it be?
+I wanted to install [Raku](https://raku.org){:target="_blank"} on my FreeBSD server, even if it is not listed as a supported platform. After all, how hard can it be?
 <br/>
 Unluckily, there's no package or ports about Raku:
 
@@ -67,7 +67,7 @@ make: stopped in /usr/home/luca/rakudo-star-2019.03
 Command failed (status 256): make
 ```
 
-As reported in the [issue I opened](https://github.com/rakudo/star/issues/150){:target=_blank}, the system was running FreeBSD 12.1-p1, with Open JDK 13 and Perl 5.30. 
+As reported in the [issue I opened](https://github.com/rakudo/star/issues/150){:target="_blank"}, the system was running FreeBSD 12.1-p1, with Open JDK 13 and Perl 5.30. 
 <br/>
 *What the hell was the problem?*
 <br/>
@@ -91,7 +91,7 @@ The line with `Killed` made me think about system resources, and effectively sin
 
 ## Incrementing the Swap Space on FreeBSD
 
-This is very well documented on the [handbook](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/adding-swap-space.html){:target=_blank}: the idea is to add some disk space to be used as a swap device.
+This is very well documented on the [handbook](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/adding-swap-space.html){:target="_blank"}: the idea is to add some disk space to be used as a swap device.
 <br/>
 First of all, for the record, I have to admit that my system was running with 1GB of swap:
 
@@ -117,7 +117,7 @@ Having the file in place, it was time to add an entry on `/etc/fstab`:
 md99 none swap sw,file=/postgres/swap0,late  0 0
 ```
 
-As you can see, there's nothing really exciting so far, and I'm following the same suggestions in the [handbook](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/adding-swap-space.html){:target=_blank}. 
+As you can see, there's nothing really exciting so far, and I'm following the same suggestions in the [handbook](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/adding-swap-space.html){:target="_blank"}. 
 <br/>
 Last, it is time to activate the swap space:
 
@@ -180,7 +180,7 @@ Perl 6 (6.d)
 
 Installing Raku (Perl 6) on FreeBSD is straightforward, but you may be warned that you need enough RAM (or swap space) to compile it.
 <br/>
-The [official build instructions](https://rakudo.org/files/star/source){:target=_blank} clearly report that you need at least `1,5 GB` of free memory, so I thougth that with `700 MB` of RAM and `1 GB** of swap I was able to compile, but as shown above, it is better to have more memory available!
+The [official build instructions](https://rakudo.org/files/star/source){:target="_blank"} clearly report that you need at least `1,5 GB` of free memory, so I thougth that with `700 MB` of RAM and `1 GB** of swap I was able to compile, but as shown above, it is better to have more memory available!
 
 <br/>
 <br/>
