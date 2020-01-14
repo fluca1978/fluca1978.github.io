@@ -180,7 +180,7 @@ Perl 6 (6.d)
 
 Installing Raku (Perl 6) on FreeBSD is straightforward, but you may be warned that you need enough RAM (or swap space) to compile it.
 <br/>
-The [official build instructions](https://rakudo.org/files/star/source){:target="_blank"} clearly report that you need at least `1,5 GB` of free memory, so I thougth that with `700 MB` of RAM and `1 GB** of swap I was able to compile, but as shown above, it is better to have more memory available!
+The [official build instructions](https://rakudo.org/files/star/source){:target="_blank"} clearly report that you need at least `1,5 GB` of free memory, so I thougth that with `700 MB` of RAM and `1 GB` of swap I was able to compile, but as shown above, it is better to have more memory available!
 
 <br/>
 <br/>
