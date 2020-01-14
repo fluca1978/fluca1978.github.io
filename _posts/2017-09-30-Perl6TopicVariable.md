@@ -4,7 +4,7 @@ title:  "Perl5 -> Perl 6: about the topic variable"
 author: Luca Ferrari
 tags:
 - raku
-- perl5
+- perl
 - programming
 permalink: /:year/:month/:day/:title.html
 ---

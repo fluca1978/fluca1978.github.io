@@ -3,7 +3,7 @@ layout: post
 title:  "Perl 5 unless"
 author: Luca Ferrari
 tags:
-- perl5
+- perl
 - perl
 permalink: /:year/:month/:day/:title.html
 ---

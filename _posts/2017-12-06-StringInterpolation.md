@@ -4,7 +4,7 @@ title:  "Perl5 -> Perl6: String interpolation"
 author: Luca Ferrari
 tags:
 - raku
-- perl5
+- perl
 - programming
 permalink: /:year/:month/:day/:title.html
 ---

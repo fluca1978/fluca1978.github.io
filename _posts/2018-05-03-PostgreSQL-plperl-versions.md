@@ -5,7 +5,7 @@ author: Luca Ferrari
 tags:
 - postgresql
 - planet-postgresql-org
-- perl5
+- perl
 permalink: /:year/:month/:day/:title.html
 ---
 `plperl` is a great extension for PostgreSQL that allows the execution of Perl 5 code within the database.

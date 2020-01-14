@@ -4,7 +4,7 @@ title:  "Perl5 -> Perl6: sprintf"
 author: Luca Ferrari
 tags:
 - raku
-- perl5
+- perl
 - programming
 permalink: /:year/:month/:day/:title.html
 ---

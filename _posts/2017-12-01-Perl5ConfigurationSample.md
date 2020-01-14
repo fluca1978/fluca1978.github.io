@@ -3,7 +3,7 @@ layout: post
 title:  "Perl5 Configuration loop"
 author: Luca Ferrari
 tags:
-- perl5
+- perl
 - programming
 permalink: /:year/:month/:day/:title.html
 ---

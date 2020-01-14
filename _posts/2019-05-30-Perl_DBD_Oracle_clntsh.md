@@ -3,7 +3,7 @@ layout: post
 title:  "Incompatible libclntsh.so when compiling DBD::Oracle"
 author: Luca Ferrari
 tags:
-- perl5
+- perl
 
 permalink: /:year/:month/:day/:title.html
 ---

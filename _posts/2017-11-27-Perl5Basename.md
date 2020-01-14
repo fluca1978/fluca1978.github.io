@@ -3,7 +3,7 @@ layout: post
 title:  "Perl5 and File::Basename as inline trick"
 author: Luca Ferrari
 tags:
-- perl5
+- perl
 - programming
 permalink: /:year/:month/:day/:title.html
 ---

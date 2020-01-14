@@ -3,7 +3,7 @@ layout: post
 title:  "Perlbrew: added the verbose option"
 author: Luca Ferrari
 tags:
-- perl5
+- perl
 - perlbrew
 permalink: /:year/:month/:day/:title.html
 ---
