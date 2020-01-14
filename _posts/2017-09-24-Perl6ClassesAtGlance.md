@@ -3,7 +3,7 @@ layout: post
 title:  "Perl 6: beginning with classes"
 author: Luca Ferrari
 tags:
-- perl6
+- raku
 - programming
 permalink: /:year/:month/:day/:title.html
 ---

@@ -3,7 +3,7 @@ layout: post
 title:  "Perl5 -> Perl 6: processes"
 author: Luca Ferrari
 tags:
-- perl6
+- raku
 - perl5
 - programming
 permalink: /:year/:month/:day/:title.html

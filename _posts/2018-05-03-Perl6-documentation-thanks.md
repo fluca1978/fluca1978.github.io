@@ -3,7 +3,7 @@ layout: post
 title:  "When your effort is publicly recognized (2)"
 author: Luca Ferrari
 tags:
-- perl6
+- raku
 - git
 - github
 permalink: /:year/:month/:day/:title.html

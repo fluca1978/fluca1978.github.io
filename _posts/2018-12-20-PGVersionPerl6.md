@@ -3,7 +3,7 @@ layout: post
 title:  "PGVersion: a class to manage PostgreSQL Version (strings) within a Perl 6 Program"
 author: Luca Ferrari
 tags:
-- perl6
+- raku
 - postgresql
 - planet-postgresql-org
 permalink: /:year/:month/:day/:title.html

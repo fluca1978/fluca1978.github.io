@@ -3,7 +3,7 @@ layout: post
 title:  "When your effort is recognized..."
 author: Luca Ferrari
 tags:
-- perl6
+- raku
 - opensource
 permalink: /:year/:month/:day/:title.html
 ---

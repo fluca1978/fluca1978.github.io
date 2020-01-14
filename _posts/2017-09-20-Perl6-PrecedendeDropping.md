@@ -3,7 +3,7 @@ layout: post
 title:  "What is precedence dropping call syntax?"
 author: Luca Ferrari
 tags:
-- perl6
+- raku
 - programming
 permalink: /:year/:month/:day/:title.html
 ---

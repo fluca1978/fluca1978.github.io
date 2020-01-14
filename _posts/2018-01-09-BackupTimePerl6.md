@@ -3,7 +3,7 @@ layout: post
 title:  "My Perl 6 version of backup_time"
 author: Luca Ferrari
 tags:
-- perl6
+- raku
 - perlsphere
 permalink: /:year/:month/:day/:title.html
 ---

@@ -3,7 +3,7 @@ layout: post
 title:  "Watching new commits via IRC"
 author: Luca Ferrari
 tags:
-- perl6
+- raku
 - programming
 permalink: /:year/:month/:day/:title.html
 ---
