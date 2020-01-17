@@ -30,8 +30,6 @@ I quickly tried it, and it worked!
 
 <br/>
 <br/>
-<br/>
-<br/>
 In any case, to be really honest, the bug made me switch from SimpleXLS and SimpleXLSX to `PHPOffice`. The bug has been just a spark to the change, the real reason was that with PHPOffice I am now able to use the very same module for different *Excel-like* formats instead of using two different modules. Anyway, I will use SimpleXLS in other projects when a single format is needed.
 
 
