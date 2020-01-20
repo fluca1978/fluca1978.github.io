@@ -26,7 +26,7 @@ Given the `123456789` string, it is required to find all possible algebric sums 
 Having obtained all possible combinations of digits and operators, I then loop against the obtained strings and convert every single digit in an integer number, since `.Int` keeps track of the sign. Then it does suffice to sum every result and see if I come to the final result number of `100`:
 
 ```perl6
-or [X~] map { .Slip },  (@digits Z @operators) {
+for [X~] map { .Slip },  (@digits Z @operators) {
 
     my $expression = .Str.subst( ' ', '', :g );
 
