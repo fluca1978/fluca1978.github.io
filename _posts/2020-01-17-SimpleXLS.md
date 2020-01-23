@@ -21,13 +21,13 @@ As far as I can understand [from the applied patch](https://github.com/shuchkin/
 I have to confess, being this module appropriate for *Microsoft Excel 97*, a file format **22 years old**, I was not really hopeful in a solution at all. I don't want to be harsh, but quite frankly there are out there a lot of other excellent modules that do the very same stuff, and while I like [SimpleXLS](https://github.com/shuchkin/simplexls){:target="_blank"} for being sweet and to the point, I started thinking to use another module.
 <br/>
 <br/>
-However, **in last then 23 hours I got a feedback** and a [new version of the module was released](https://github.com/shuchkin/simplexls/releases/tag/0.9.5){:target="_blank"**. I quickly tried it, and it worked!
+However, **in last then 23 hours I got a feedback** and a [new version of the module was released](https://github.com/shuchkin/simplexls/releases/tag/0.9.5){:target="_blank"}**. 
+
+I quickly tried it, and it worked!
 <br/>
 <br/>
 **I have to really thank the module author** and I cannot emphasize enough how important the Open Source can be! If you don't believe me, go and try yourself to have the same support from a private company and report it back!
 
-<br/>
-<br/>
 <br/>
 <br/>
 In any case, to be really honest, the bug made me switch from SimpleXLS and SimpleXLSX to `PHPOffice`. The bug has been just a spark to the change, the real reason was that with PHPOffice I am now able to use the very same module for different *Excel-like* formats instead of using two different modules. Anyway, I will use SimpleXLS in other projects when a single format is needed.
