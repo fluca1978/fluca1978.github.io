@@ -23,7 +23,43 @@ In the following, the assigned tasks for [Challenge 43](https://perlweeklychalle
 
 Essentially, you have to find the pair number out of a sequence to provide always the sum of 11.
 [My solution](https://github.com/fluca1978/fluca1978-coding-bits/blob/master/perl6/weekly-challenge/pwc_43_1.p6){:target="_blank"} creates an hash of the rings, that is which values are already selected, and an hash `%available-numbers` of the remaing available numbers with a boolean to indicate if the number has already been used.
-The the loop is quite simple: for every ring select the value already set, compute which number is required to get 11 and then see if such value is available in the `%available-numbers`.
+The the loop is quite simple: for every ring select the value already set, compute which number is required to get 11 and then see if such value is available in the `%available-numbers**.
+
+### Update 2020-01-23
+
+While [reading a blog post about this task](http://blogs.perl.org/users/laurent_r/2020/01/perl-weekly-challenge-43-olympic-rings-and-self-descripting-numbers.html){:target="_blank"}, I realized that I had misinterpreted: *the Black ring is always empty and moreover, some rings has cross-dependencies*.
+It appears the task has changed in the middle of the challenge, according to the blog post, however it now has dependencies between rings. Therefore I re-implemented the solution to solve the two-elements rings first, the all the non-black ones, and finally the black one using the numbers of the other rings.
+It looks like:
+
+```perl
+my @solving-order = <Blue Red Yellow Green Black>;
+
+
+for @solving-order -> $color {
+
+    # first try to solve the 2-elements rings
+    if ( %rings{ $color }.elems == 2 ) {
+        my $wanted = 11 - %rings{ $color }[ 0 ];
+        if ( %available-numbers{ $wanted } ) {
+            %rings{ $color }[ 1 ] = $wanted;
+            %available-numbers{ $wanted } = False;
+        }
+    }
+    elsif ( $color !~~ /Black/ ) {
+        %rings{ $color }[ 2 ] = %rings{ %rings{ $color }[ 2 ] }[ 1 ];
+        my $wanted = 11 - %rings{ $color }.grep( * ~~ Int ).sum;
+        %rings{ $color }[ 1 ] = $wanted;
+        %rings<Black>.push: $wanted;
+    }
+}
+
+
+my $wanted = 11 - %rings<Black>.grep( * ~~ Int ).sum;
+%rings<Black>.push( $wanted ) if %available-numbers{ $wanted };
+
+```
+
+Since the rings are walked in a solving order that keeps the black ring as last, it is possible to solve every ring. In the end, the black ring will keep a `Nil` value, so it is quite simple to compute a number that provides the final sum of 11.
 
 ## PWC 43 - Task 2
 
