@@ -34,4 +34,5 @@ I've also an [account on Gitlab](https://gitlab.com/{{ site.footer-links.gitlab 
 {% include stats/2010.md %}
 {% include stats/2009.md %}
 {% include stats/2008.md %}
+{% include stats/credits.md %}
 
