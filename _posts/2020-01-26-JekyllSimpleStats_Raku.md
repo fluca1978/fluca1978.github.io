@@ -46,6 +46,8 @@ In particular, the `--year` parameter accepts either a numberic year or a specia
 <br/>
 <br/>
 Moreover, the program provides a quite extensive online help that can be accessed via the `--help` parameter and has been implemeted by means of a *multi MAIN* entry point.
+<br/>
+Since this version supports partial generation of statistical data, the generated files have been splitted in different files per year. This can be a drawback, since now there's much more stuff to include in the markdown final result, but allows for a fine grain tuning of every report. Moreover, this distinction allows for every single *section* generated to include a *timestamp* about the generation, that can effectively happen at different times.
 
 
 ## Possible Future Development
