@@ -31,10 +31,22 @@ This new version has several new features and drawbacks, so more in general is *
 
 The new version is much more consistent in the file naming, and in particular tends to store all the resulting files and images into a subdirectory *stats*. 
 <br/>
+The program file name itself is much shorter, going from `jekyll_simple_stats.pl` to `jss.p6`.
+<br/>
+
+
 The application accepts only one mandatory argument, that is the *home folder* of the blog, so that all other directories like the images one, the include ones and so on, are automatically computed by the script (let's call it as *convention over configuration*).
 <br/>
 <br/>
 There is another important parameter that allows you to optionally indicate the year you want to generate. This is useful to make the whole generation a lot easier, since you probably don't want to modify every time the stats about past years.
+<br/>
+In particular, the `--year` parameter accepts either a numberic year or a special keyword like:
+- `current` to generate only the current year (as from the system clock);
+- `previous` or `last` to generate only the previous here (useful across the year boundary).
+<br/>
+<br/>
+Moreover, the program provides a quite extensive online help that can be accessed via the `--help` parameter and has been implemeted by means of a *multi MAIN* entry point.
+
 
 ## Possible Future Development
 
