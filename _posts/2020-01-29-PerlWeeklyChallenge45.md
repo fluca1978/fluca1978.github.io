@@ -67,6 +67,25 @@ for 0 .. $columns -> $start {
 I loop over the `$columns` first, and then I do print the current position between all the matrix rows (i.e., between `0 .. $row`, with the latter being increased by the preceeding loop).
 Please note that the matrix could have the last line not completed, so I print a char or an empty char if nothing is defined in that matrix position.
 
+### A Smaller Solution
+
+I was not satisfied about the above solution, and after a while I remembered that strange method that I seldom use: `rotor`. This method splits a list into sublists of the specified size, and with the `:partial` adverb, can include also lists that are not complete. Therefore, the whole first loop can be reduced to:
+
+```perl6
+my @matrix = $message
+               .lc
+               .comb( /\w/ )
+               .rotor: 8, :partial;
+```
+
+that produces the very same `@matrix` as the loop before, and moreover, the `@matrix.elems` corresponds to the number of rows the matrix has. From the above, the printing loop becomes:
+
+```perl6
+for 0 .. $columns -> $start {
+    ( @matrix[ $_ ][ $start ] // '' ).print for 0 .. @matrix.elems;
+}
+```
+
 ## PWC 45 - Task 2
 
 This has been very easy, a single line script: provide a program that prints its own source code.
