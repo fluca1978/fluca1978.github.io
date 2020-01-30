@@ -171,3 +171,5 @@ verbose: loading table pg_partitioned_table
 verbose: checking table pg_partitioned_table (0 rows)
 progress: done (0 inconsistencies, 0 warnings, 0 errors)
 ```
+
+Thanks [EnterpriseDB](https://www.enterprisedb.com/){:target="_blank"} named [pg_catcheck](https://github.com/EnterpriseDB/pg_catcheck){:target="_blank"} for making this tool open source!
