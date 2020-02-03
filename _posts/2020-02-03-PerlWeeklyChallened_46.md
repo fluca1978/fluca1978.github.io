@@ -92,6 +92,34 @@ Of course, being Raku a Perl language there is always a smarter way to do it:
 @chars = [Z] @chars;
 ```
 
+Also, it is possible to note that in order to get the char of a specific column it does suffice to search for a regexp that searches for at least a duplicated character, so the above `for` loop could be shrink to:
+
+```perl6
+for @chars {
+    $decoded ~= $/[0] if / (\w) .* $0 .* /
+}
+```
+
+so that in the end, the whole program results pretty much the following routine:
+
+```perl6
+sub decode( @message ) {
+    my @chars;
+    my $decoded;
+
+    @chars.push: .split( / \s+ /, :skip-empty ) for @message;
+    @chars = [Z] @chars;
+
+    for @chars {
+        $decoded ~= $/[0] if / (\w) .* $0 .* /
+    }
+
+    return $decoded;
+}
+```
+
+*Unluckily, I have already submitted the not so elegant solution propsed before!*
+
 
 
 ## PWC 46 - Task 2
