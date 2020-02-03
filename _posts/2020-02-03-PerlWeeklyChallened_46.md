@@ -72,6 +72,27 @@ because for every character in an array it searches for the same character with 
 Therefore, the solution of the encoded message is **`PerlRaku`**.
 <br/>
 
+### Update
+
+I didn't like the implementation that I submitted to flip the matrix of 90 degrees:
+
+```perl6
+for @message -> $single-line {
+    for $single-line.split( '', :skip-empty ) {
+        next if ! $_.trim;
+        @chars[ $++ ].push: $_;
+    }
+}
+```
+
+Of course, being Raku a Perl language there is always a smarter way to do it:
+
+```perl6
+@chars.push: .split( / \s+ /, :skip-empty ) for @message;
+@chars = [Z] @chars;
+```
+
+
 
 ## PWC 46 - Task 2
 The solution is available [here](https://github.com/fluca1978/fluca1978-coding-bits/perl6/weekly-challenge/pwc_46_2.p6){:target="_blank"}.
