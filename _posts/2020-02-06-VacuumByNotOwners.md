@@ -24,7 +24,7 @@ There is not an ACL flag about `VACUUM`, that means **you cannot `GRANT` someone
 Period.
 <Br/>
 <br/>
-Therefore there is no escape: **in order to run `VACUUM` you must to be either (i) the *object owner* or (ii) *the database owner* or,as you can image, (iii) one of the cluster superuser(s).**
+Therefore there is no escape: **in order to run `VACUUM` you must to be either (i) the *object owner* or (ii) *the database owner* or,as you can imagine, (iii) one of the cluster superuser(s).**
 <br/>
 <br/>
 Why am I insisting on this? Because some friends of mine argued that it is always possible to escape restrictions with functions an `SECURITY DEFINER` options. In this particular case, one could think to define a function that executes `VACUUM`, then apply the `SECURITY DEFINER` option so that the function will run as the object owner, and then provide (i.e., `GRANT`) execution permission to a normal user.
@@ -85,4 +85,4 @@ PL/pgSQL function do_vacuum(text) line 3 at EXECUTE
 
 # Conclusions
 
-**`VACUUM` cannot be wrapper in a transaction nor a routine**, therefore in order to execute it you must be a "special" user, with special simply meaning the owner, or the database owner, or a superuser.
+**`VACUUM` cannot be wrapped in a transaction nor a routine**, therefore in order to execute it you must be a "special" user, with special simply meaning the owner, or the database owner, or a superuser.
