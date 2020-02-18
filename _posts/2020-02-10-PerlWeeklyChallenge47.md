@@ -140,4 +140,22 @@ for 100 .. Inf {
 }
 ```
 
-With a regular expression I got the first and last digit, and then I see with `%%` if the number is divisible by such number, and if so I add it to the `@found` array but only if that number is not already present. Here `$limit` is a `MAIN` argument set to 20 by default.
+With a regular expression I got the first and last digit, and then I see with `%%` if the number is divisible by such number, and if so I add it to the `@found` array but only if that number is not already present. Here `$limit` is a `MAIN** argument set to 20 by default.
+
+
+## Arghhhh!!! Typo in the program I submitted!
+
+**updated on 2020-02-18**
+
+I discovered that my program was not printing out numbers greater than `100`, that was what the task asked me.
+Why? Well, I mistakenly **pushed the `$divisor` instead of the number itself!**
+<br/>
+The right piece of code, therefore, has the following line:
+
+```perl6
+@found.push: $_ if $_ %% $divisor && ! @found.grep: { $_ == $divisor };
+```
+
+*What a shame!*
+<br/>
+The solution is available [here](https://github.com/fluca1978/fluca1978-coding-bits/commit/3c5bab72bf2d605687121b887541596eaa89346a){:target="_blank"}, where I've also added an extra check to avoid division by zero (that cannot happen with the input from the task).
