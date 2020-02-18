@@ -94,3 +94,25 @@ I decided to implement this using `Date` and placing the `formatter` property, t
         "Palindrome: $current-date".say if $current-date.Str ~~ $current-date.Str.flip;
     }
 ```
+
+However, after some thoughts (night was useful!), I realized that such a *brute force* way was too much expensive. Knowing that the date must be palindrome, **it means that given an year we already know what the month and the day will be, and therefore the only thing to do is to check if such a date is good or not**.
+[I then re-implemeted the program as follows](https://github.com/fluca1978/fluca1978-coding-bits/commit/d308f22c96f76f32ae92cbb530b19dfa1d3bc0e5){:target="_blank"}:
+
+
+```perl6
+    for $year-start .. $year-end {
+        $_ ~~ / ^ $<day>=\d ** 2 $<month>=\d ** 2 $ /;
+        my $month = $/<month>.flip;
+        my $day   = $/<day>.flip;
+        next if  $month > 12 || $month == 0;
+        next if $day > 31 || $day == 0;
+        "Palindrome date %02d%02d%04d".sprintf( $month, $day, $_ ).say if try Date.new( :year( $_),
+                                                                                    :month( $month),
+                                                                                    :day( $day ) );
+    }
+```
+
+First, I extract the parts that will become the month and the day from the year string. Then I flip them because I need them reversed to make a palindrome date. It is simple enough to exclude obvious *out of range* values, like a month greater than `12` or a day greater than `31`. This however does not suffice to give me a valida te, so I try to construct a `Date` object, and if I succeed I then have a valid palindrome date.
+<br/>
+Please note the use of `try` within the `if`: `Date` will throw an exception if the construction fails, so I don't want my loop to break if I'm trying a stupid date with out of range values.
+
