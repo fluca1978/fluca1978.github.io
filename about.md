@@ -363,9 +363,9 @@ I'm not sure I'm catholic anymore, surely I'm not (and never was) a *blind belie
 
 
 <a name="cats"></a>
-# Me by *Cats*
+# Me by *Cats**
 
-Long story short: there has always been a cat (or two!) in my life.
+**Long story short: there has always been a cat (or two!) in my life**.
 For more details, see the [cats page](/cats)!
 
 
