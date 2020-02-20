@@ -8,7 +8,8 @@ permalink: /dogs/
 Me, Myself and My Dogs
 ---
 
-So far, I've had three dogs, all small in size. While I have to admit that dogs are much more interactive and friendly than cats, [*I do like cats the most*](/cats)*.
+So far, I've had three dogs, all small in size. While I have to admit that dogs are much more interactive and friendly than cats, **[I do like cats the most](/cats)**.
+
 
 # Jack
 
@@ -34,13 +35,22 @@ My mother gave special credits to Flipper keeping a giant photo of him in her ph
 # Franzina
 
 The last arrived, mostly due to the will of my wife and son, has been **Franzina** (*fringy*).
-I really don't like the name, but since she is used to it we decided to keep it. 
+I really don't like the name, but since she is used to it we  decided to keep it. And with the term *we* I really mean *my wife*.
 
 <center>
 <img src="/images/main/franzina.png" alt="Franzina" width="50%"/>
 </center>
 
 We saved her out of the kennel, and she is in love with my wife and my son. 
-Damn, I guess myself has been demoted to *"the one who buys food"* and my son and wife are the "nice members" of the family. At least, this is the perception that I have about our animals!
 
 Franzina is, of course, my son's first dog.
+
+I was not convinced about getting a dog, and my father comes to mind here: when my mother decided to get Jack hme, my father was so angry he didn't talk to her for two weeks. My wife did the same to me: she went straight in making Franzina entering the house.
+
+And I have to admit, this is one of those rare case *she was right* in doing that. 
+
+Or better, this is one of those rare situations when I admit she was right.
+
+Today, my son is in love with this tiny amount of fleas. My wife, well, you can imagine both her and Franzina not obeying me and staying on the sofa.
+
+Me, well, I'm the poor bastard buying food.
