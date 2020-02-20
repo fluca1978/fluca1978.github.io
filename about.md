@@ -396,4 +396,4 @@ The experience was so incredible that on my tenth wedding anniversary I took my 
 
 # Contact me
 
-Drop an email to [fluca1978 (at) gmail (dot) com](mailto:fluca1978@gmail.com)
+If you want to contact me, please drop and email to [fluca1978 (at) gmail (dot) com](mailto:fluca1978@gmail.com). I usually reply within a couple of days, and as a rule of thumb I do reply to everyone who writes me.
