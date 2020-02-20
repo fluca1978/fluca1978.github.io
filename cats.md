@@ -32,12 +32,35 @@ just to emphasize how I was committed to *cats*! Today I read pretty much all my
 For the records, here is a chronological list of my personal *starred cats*, so far. This does not mean that all the other cats do mean less to me, it is just the cats listed here are those I recognize myself the most with.
 
 
+## Nothing or Double!
+
+I always had one cat at a time, unless for some strange reasons we got two!
+
+We were searching for a new cat to adopt, and it happened that two little sisters were together in the cattery, so my dad decided to bring both of them home.
+
+Can you imagine my feelings? It was like having a huge chocolate ice-cream, except you got it doubled!
+
+Unluckily, both of them were sick and the younger died on a sunny sunday, while me and my father were at an archery competition; my mom take care of her.
+So, the *two cats* setup did not last very long, and we were again with a single cat in the house.
+
+The remaining cat was named *Micia* (*kitty*), we were running out of names!
+Then *Rossini* happened: my trainer found a full red small cat, my father felt in love with him and so he decided to bring him home.
+
+That was the beginning of the *double or nothing* cat setup: since then we always had "cats in pairs". It became natural.
+
+Why are not neither Rossini nor Micia listed in the *hall of fame*? Unluckily both of them died young due car accidents, and while they had been very important, I did not spend much time with them.
+
 
 # Duchessa
 
 Duchessa was **my very first cat**, the one that grown up with me since I was a little two-years old human being.
 
 I clearly remember her appearing each time I was crying, gently pulling my hair with her claws to make me stop and laugh.
+
+I don't have memories of another way of approaching me: it happened my father used to walk around the kitchen bringing me on his shoulders. Being my father 190 cm height, I was pretty much close to the ceiling of the kitchen. Duchessa then used to jump over the kitchen hangings and try to pull my hair with her paws.
+
+Last, I clearly remember she hiding her puppies into my bedroom, even when she was hiding them from me!
+
 Duchessa was a real predator, eating any sort of tasty animal she was able to catch (especially rats and birds).
 
 
