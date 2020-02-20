@@ -372,8 +372,9 @@ For more details, see the [cats page](/cats)!
 <a name="dogs"></a>
 # Me by *Dogs*
 
-I'm not a *doggy-person*, I do love cats but don't get impressed by dogs. However, I had also a few dogs that, as you can imagine, were (and are) an important part of my life.
-For a brief story, see the [dogs page](/dogs).
+I'm not a *dog-person*, **I do love cats and usually don't get very impressed by dogs**. 
+However, a few dogs happened in my life and quickly became an important part of my day-to-day activities.
+For a brief story about such dogs, see the [dogs page](/dogs).
 
 
 <a name="university"></a>
