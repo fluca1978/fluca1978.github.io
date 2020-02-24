@@ -98,6 +98,25 @@ db_block_size integer 8192
 
 shows the same size as PostgreSQL.
 
+
+## From `NUMERIC` to `INT`
+**update of 2020-02-24**
+<br/>
+One possible difference between the two tables, is the `NUMERIC` data type used by Oracle. After inspecting the values, I've seen that the `bytes` column can be handled by an `int4` (normal integer) value type, so I changed it in both Oracle and PostgreSQL. While in Oracle the size remained the same, `312 MB`, in PostgreSQL the size shrinked down to `318 MB` which is much more close to the Oracle one:
+
+```sql
+testdb=> ALTER TABLE vace.my_files ALTER COLUMN bytes SET DATA TYPE int;
+ALTER TABLE
+testdb=> vacuum full vace.my_files;
+VACUUM
+testdb=> SELECT reltuples, relpages, pg_size_pretty( pg_relation_size( 'vace.my_files' ) ) FROM pg_class WHERE relname = 'my_files' AND relkind = 'r';
+  reltuples   | relpages | pg_size_pretty 
+--------------|----------|----------------
+ 1.872529e+06 |    40757 | 318 MB
+(1 row)
+```
+
+
 # Conclusions
 
 **I really don't have any. I know too little about Oracle storage to say why there is this difference in size, and I'm sure this is neither an advantage of Oracle nor a drawback of PostgreSQL. **
