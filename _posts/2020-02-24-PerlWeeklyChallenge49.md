@@ -109,3 +109,8 @@ The `set()` method is somehow simpler: it pushes a new `Pair` object to the end 
 The rest of the code is boilerplate.
 <br/>
 Therefore, my LRU cache uses an array where the first element is the least recently used, and the last element is the most recently used.
+
+### Update 2020-02-24
+
+Of course, there is no need to use `splice()` and friends, but since I was running out of caffeine, I made my life too much complex.
+As shown [in this commit](https://github.com/fluca1978/perlweeklychallenge-club/commit/c60c42d569995cc87f37a2171fe09f153e8ddaf1){:target="_blank"}, it is possible to simply delete the element from the array and append it to a fresh *all-defined* entries list. Similarly, the methods `is-full()` and `make-sapce()` can be removed to avoid code verbosity; I placed them there in a first implementation where I was prototyping the `LRU` object as an hash container.
