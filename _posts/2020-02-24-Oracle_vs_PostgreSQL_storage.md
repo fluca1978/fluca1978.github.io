@@ -94,7 +94,7 @@ SQL> show parameter db_block_size;
 NAME          TYPE    VALUE 
 ------------- ------- ----- 
 db_block_size integer 8192 
-``
+```
 
 shows the same size as PostgreSQL.
 
@@ -119,6 +119,6 @@ testdb=> SELECT reltuples, relpages, pg_size_pretty( pg_relation_size( 'vace.my_
 
 # Conclusions
 
-**I really don't have any. I know too little about Oracle storage to say why there is this difference in size, and I'm sure this is neither an advantage of Oracle nor a drawback of PostgreSQL. **
+**I really don't have any. I know too little about Oracle storage to say why there is this difference in size, and I'm sure this is neither an advantage of Oracle nor a drawback of PostgreSQL.**
 <br/>
 I don't even know if this is the default behavior for any use-case, I hardly think so, but it is interesting to know that even a simple use-case like this can require a little more space on disk.
