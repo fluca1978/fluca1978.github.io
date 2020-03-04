@@ -121,6 +121,13 @@ testdb=> SELECT reltuples, relpages, pg_size_pretty( pg_relation_size( 'my_files
 
 so with six extra megabytes we have now the information replicated on every row. The table increased of around `1.8%` in size but make now computation about how much a file is replicated is straightforward.
 
+### WARNING!
+**edit 2020-03-04**
+<br/>
+As *Adam Brusselback* correctly pointd out in a comment to this blog post, adding the `occurrencies` column to the table does the job only if the table is *immutable* too, that is no more repeated files are added. In the case a file with an already existing `md5sum` is added to the table as a new entry, such last tuple will have the correct number of `occurencies**, but other tuples will still get the last computed value.
+<br/>
+**I didn't mentioned in the beginning of this post that I was doing inspection and computations on an historical table, that is a table where new tuples are not added anymore.**
+
 
 ## A generated column cannot be based on a generate column
 
