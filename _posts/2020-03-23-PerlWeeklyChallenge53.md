@@ -23,11 +23,13 @@ In the following, the assigned tasks for [Challenge 53](https://perlweeklychalle
 
 
 ### CORONAVIRUS
-The situation in Italy is ugly and to some extent desperate: it has been a week since I'm closed into my house with my son and my wife, we cannot move and cannot go outside. Probably the soldiers will become to monitor the streets very soon this week.
+The situation in Italy is ugly and to some extent desperate: it has been a few weeks since I'm closed into my house with my son and my wife, we cannot move and cannot go outside. Probably the soldiers will become to monitor the streets very soon this week.
+<br/>
 <br/>
 I cannot go visiting my mum that lives 10 minutes by car from me, and it is not clear when this emergency status will give us a break.
 <br/>
-So, *Perl Weekly Challenge* is not my first thought right now, but at the same time *it is a way to stay in touch with the Perl community and also to get into the same routine that let me think everything is fine*, at least for the time I spend in front of a Perl script!
+<br/>
+Therefore, *Perl Weekly Challenge* is not my first thought right now, but at the same time *it is a way to stay in touch with the Perl community and also to get into the same routine that let me think everything is fine*, at least for the time I spend in front of a Perl script!
 
 
 <a name="task1"></a>
