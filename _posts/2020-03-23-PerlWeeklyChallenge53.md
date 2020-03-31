@@ -9,7 +9,7 @@ permalink: /:year/:month/:day/:title.html
 ---
 My personal solutions to the Perl Weekly Challenge.
 
-# Perl Weekly Challenge 52: overlapping ranges and nobel numbers
+# Perl Weekly Challenge 53: rotating matrix and vowels
 
 One way to let me improve my knowledge about Raku (aka Perl 6) is to implement programs in it.
 Unluckily, I don't have any production code to implement in Raku yet (sob!).
