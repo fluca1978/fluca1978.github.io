@@ -3,8 +3,8 @@ layout: post
 title:  "ORA-12514 and the mispelled TNS"
 author: Luca Ferrari
 tags:
-- unix
-- jcl
+- oracle
+- java
 permalink: /:year/:month/:day/:title.html
 ---
 The importance of right error messages!
