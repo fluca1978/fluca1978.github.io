@@ -14,6 +14,7 @@ SQL is a language where spaces are not-significant. Or are they?
 Let's see a simple query I had to submit thru `sqlplus`:
 
 
+
 ```sql
 UPDATE foo 
 SET status = 200
@@ -23,7 +24,7 @@ WHERE id IN (
 456,
 ...
 999 );
-``**
+```
 
 Is the above query correct?
 <br/>
