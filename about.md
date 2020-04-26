@@ -108,17 +108,17 @@ You could also be interested in the [papers page](/papers).
 # Me by *Skills*
 
 
-Not a complete enumeration, but this is what I use on an almost regular basis:
+Not a complete enumeration, but this is what I use on an almost regular basis (years are roughly computed since *2020*):
 
-* **Perl** - 15+ years;
-* **Java** - 15+ years;
-* **PostgreSQL** - 10+ years;
-* **Linux** - 18+ years;
-* **Emacs** - 18+ years (it was my **default editor since day one** and yes, I don't know `vi`!);
-* **Git** - 5+ years, with a couple of years over **Fossil**;  of course I used also other systems;
-* **SQLite** - 4+ years;
-* **BSD** - 6+ years;
-* **PHP** - 10+ years;
+* **Perl** - 18+ years;
+* **Java** - 20+ years;
+* **PostgreSQL** - 18+ years;
+* **Linux** - 20+ years;
+* **Emacs** - 20+ years (it was my **default editor since day one** and yes, I don't know `vi`!);
+* **Git** - 15+ years, with a couple of years over **Fossil**;  of course I used also other systems;
+* **SQLite** - 8+ years;
+* **BSD** - 15+ years;
+* **PHP** - 15+ years;
 
 
 Of course, I do not declare myself a *guru* of any of the above, but let's say I'm not scared to sit in front of any of them.
