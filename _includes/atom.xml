@@ -2,7 +2,7 @@
 <subtitle type='html'></subtitle>
 <link href="{{ site.url }}" />
 <author>
-  <name>Luca Ferrari </name>
+  <name>Luca Ferrari</name>
   <email>{{ site.email }}</email>
   <uri>{{ site.url }}</uri>
   <link href="{{ site.url }}" />
@@ -14,10 +14,10 @@
   {% if post.tags contains include.tag %}
   <entry>
         <title>{{ post.title | xml_escape }}</title>
-        <link href="{{ site.url }}{{ post.url }}"/>
+        <link href="{{ site.url }}{{ post.url }}" />
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         <id>{{ site.url }}{{ post.id }}</id>
-        <content type="html">{{ post.content | xml_escape | truncatewords: 300 }}</content>
+        <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endif %}
 {% endfor %}
