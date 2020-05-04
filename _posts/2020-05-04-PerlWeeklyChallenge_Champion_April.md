@@ -7,7 +7,7 @@ tags:
 - perl-weekly-challenge
 permalink: /:year/:month/:day/:title.html
 ---
-I am really proud to have make it to the top on April!
+I am really proud to have made it to the top on April!
 
 # Perl Weekly Challenge: April Champion
 
