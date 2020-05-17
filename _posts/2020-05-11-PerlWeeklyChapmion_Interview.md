@@ -41,3 +41,12 @@ It has been nice to both win the month challenge and be interviewed. I strongly 
 <br/>
 
 You can read the whole [interview here](https://perlweeklychallenge.org/blog/meet-the-champion-2020-04/){:target="_blank"}.
+
+
+<br/>
+<br/>
+<center>
+<a href="https://perlweeklychallenge.org/blog/meet-the-champion-2020-04/" target="_blank">
+<img src="/images/posts/raku/pwc_champion_april_2020_3.png" />
+</a>
+</center>
