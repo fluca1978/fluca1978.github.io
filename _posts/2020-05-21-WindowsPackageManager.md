@@ -3,7 +3,7 @@ layout: post
 title:  "Microsoft Winows Package Manager"
 author: Luca Ferrari
 tags:
-- windows
+- microsoft
 - linux
 permalink: /:year/:month/:day/:title.html
 ---
