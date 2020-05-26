@@ -9,7 +9,7 @@ permalink: /:year/:month/:day/:title.html
 ---
 Since a couple of days there is the availability of a command line tool for Microsoft Windows operating systems.
 
-# Microsoft Winows Package Manager
+# Microsoft Windows Package Manager
 A few days ago a *package manager* for Microsoft Windows has been released as open source: welcome **winget**! And this is not a third party tools, it is the official package manager for the Microsoft Windows set of operating systems.
 <br/>
 Here it is the announce: [Windows Package Manager Preview](https://devblogs.microsoft.com/commandline/windows-package-manager-preview/){:target="_blank"}.
