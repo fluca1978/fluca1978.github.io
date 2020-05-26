@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Microsoft Winows Package Manager"
+title:  "Microsoft Windows Package Manager"
 author: Luca Ferrari
 tags:
 - microsoft
