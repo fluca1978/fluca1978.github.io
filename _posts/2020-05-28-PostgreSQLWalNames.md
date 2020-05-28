@@ -44,9 +44,11 @@ WAL  -> 00000001 0000000C 000000CE
 
 <br/>
 <br/>
+
 > Please consider that the above example is just to show you the concept, but it is better to
 > use the function pg_walfile_name() to get the exact WAL file name from an LSN since WAL switch
 > may lead to incorrect result from the LSN "manual decoding".
+
 <br/>
 <br/>
 The final part of the LSN is the offset within the WAL file, and it does suffice to convert it to `int` to get an idea:
