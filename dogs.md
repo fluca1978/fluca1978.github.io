@@ -45,7 +45,7 @@ We saved her out of the kennel, and she is in love with my wife and my son.
 
 Franzina is, of course, my son's first dog.
 
-I was not convinced about getting a dog, and my father comes to mind here: when my mother decided to get Jack hme, my father was so angry he didn't talk to her for two weeks. My wife did the same to me: she went straight in making Franzina entering the house.
+I was not convinced about getting a dog, and my father comes to mind here: when my mother decided to get Jack home, my father was so angry he didn't talk to her for two weeks. My wife did the same to me: she went straight in making Franzina entering the house.
 
 And I have to admit, this is one of those rare case *she was right* in doing that. 
 
