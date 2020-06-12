@@ -73,11 +73,16 @@ Great! Installing on FreeBSD is now really simple!
 
 In the last few month the porject was deply improved, and I'm not going to quote the whole [release history](https://pgbackrest.org/release.html){:target="_blank"} here. However, there are two major aspects that I found really interesting.
 
+
+### Autoconf
+
+As you probably have noted in the above installation example, [pgbackrest](https://pgbackrest.org/index.html){:target="_blank"} now uses [autoconf](https://www.gnu.org/software/autoconf/){:target="_blank"} to *understand* how to correctly configure the project for the hosting operating system. Autoconf [was introduced in the previous year](https://github.com/pgbackrest/pgbackrest/commit/027c2638719dffa9ba99250085c403e89a2a8a9a){:target="_blank"} as a reaction to a [pull request I opened to compile on FreeBSD](https://github.com/pgbackrest/pgbackrest/pull/690){:target="_blank"}.
+
 ### Migrating to C
 
 [pgbackrest](https://pgbackrest.org/index.html){:target="_blank"} was initially developed mainly in Perl, with little parts written in C to deal with performances and internals of PostgreSQL WAL files format.
 <br/>
-As of January 2020, release `2.21`, the whole codebase is in C. Well, this is not fully true, since the testing and pre-configuration part is still written in Perl, at least to my understanding, but the whole `pgbackrest` production thing is now in C.
+As of January 2020, release `2.21`, the whole codebase is in C. Well, this is not fully true, since the testing and documentation part is still written in Perl, at least to my understanding, but the whole `pgbackrest` production thing is now in C.
 <br/>
 The fact that the application is now written in C makes a clear distinction between `pgbackrest` and other similar backup solutions, that indeed take advantages of existing tools to behave as "glue" between small pieces. Moreover, it means that the backup, and most notably the restore, can run at full speed.
 
