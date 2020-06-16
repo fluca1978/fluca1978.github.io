@@ -331,7 +331,7 @@ I don't say these are my favourites, rather are those I would never refuse to wa
 - *Automan* (when I was a child);
 - *Supercar*;
 - *The Simpsons*;
-- *Friends* (the only one show I truly watched from the beginning to the end);
+- *Friends* (the only one show I truly watched from the beginning to the end, more than one time);
 - *According to Jim*;
 - *McGyver*;
 - *The Big Bang Theory* (not completed yet!);
@@ -380,13 +380,13 @@ For more details, see the [cats page](/cats)!
 
 I'm not a *dog-person*, **I do love cats and usually don't get very impressed by dogs**. 
 However, a few dogs happened in my life and quickly became an important part of my day-to-day activities.
-For a brief story about such dogs, see the [dogs page](/dogs).
+For a brief story see the [dogs page](/dogs).
 
 
 <a name="university"></a>
 # Me by *University*
 
-Uhm, it's a long story, may be one day I'll write it down.
+Uhm, it's a long story, maybe one day I'll write it down.
 However, I did attend the University of Modena and Reggio Emilia from *1997 to 2002 as a student* (yes, I was one of the first students using the "new" engineering department), from *2002 to 2006 as a PhD student and lecturer*.
 If you have been around in those years, chances are we have met.
 
