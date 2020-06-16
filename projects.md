@@ -72,6 +72,8 @@ Where I was learning, where I was teaching.
 
 ## As a lecturer
 
+- *PostgreSQL Interview Series*, Postgres Weekly: **[A chat with Luca Ferrari](https://superhighway.dev/luca-ferrari-interview){:target="_blank"}**
+- *Perl Weekly Challenge*, Champion of April 2020: **[Meet the Champion: April 2020](https://perlweeklychallenge.org/blog/meet-the-champion-2020-04/){:target="_blank"}**
 - **[Developer on Fire episode number 449](https://developeronfire.com/podcast/episode-449-luca-ferrari-focused-practice){:target="_blank"}**, recoded on October 22nd 2019, broadcasted on November 11st 2019;
 - On-line course **Improve your PostgreSQL Skills**, [BSD Magazine](https://bsdmag.org/course/course-10-improve-your-postgresql-skills/){:target="_blank"}, 2018, 5 modules
 - Seminar **PostgreSQL - il database piu' avanzato del pianeta**, [ConoscereLinux Linux Users' Group Modena](https://conoscerelinux.org/courses/postgresql/){:target="_blank"}, 2018 (7 lessons)
