@@ -333,6 +333,8 @@ I don't say these are my favourites, rather are those I would never refuse to wa
 - *The Simpsons*;
 - *Friends* (the only one show I truly watched from the beginning to the end);
 - *According to Jim*;
+- *McGyver*;
+- *The Big Bang Theory* (not completed yet!);
 
 ### Film
 - *Ghostbusters*;
@@ -341,6 +343,7 @@ I don't say these are my favourites, rather are those I would never refuse to wa
 - *Big Fish*;
 - *Matrix* (mainly the first of the trilogy);
 - *Big Trouble in Little China*;
+- *1997 Escape from New York*;
 - *The Crow*;
 - *They Call Me Trinity*, *Trinity is Still My Name*, *Odds and Evens*, *Crime Busters*, *Even Angels Eat Beans*;
 - *Wall Street*;
