@@ -316,6 +316,7 @@ What I play  everyday on my music device:
 - *Alanis Morrissette*;
 - *Nickelback*;
 - *Puddle of Mudd*;
+- *Foo Fighters*;
 
 <a name="television"></a>
 # Me by *Television*
