@@ -56,7 +56,7 @@ After that a few [Intel Celeron](https://en.wikipedia.org/wiki/Celeron){:target=
 I attended the *computer science* course at my local university, where I was (badly) introduced to `Unix`, or better to `Linux`. I felt in love with the philosophy of the system: you were not limited in any way, you could just type and do whatever you wanted piping a few commands.
 
 My first Linux distro was a *Red Hat 5.2*, and since I was still not aware of the `root` concept (in the sense that Microsoft did not have to teach you such concept), I had to install it over and over again because I was jamming a few configuration files...
-At my fourth year of university I did switch totally to `Linux`, keeping around a bootable [Microsoft Windows](https://en.wikipedia.org/wiki/Microsoft_Windows){:target="_blank"} for those games and programs I was not aware to find a substitute.
+At my fourth year of university I did switch totally to `Linux`, keeping around a bootable [Microsoft Windows](https://en.wikipedia.org/wiki/Microsoft_Windows){:target="_blank"} for those games and programs I was not aware of a substitute.
 
 My first job, luckily, required me to manage a few Linux servers, so I had the chance to improve my skills on such system.
 After a few years I met [OpenBSD](http://www.openbsd.org){:target="_blank"} and [FreeBSD](http://www.freebsd.org){:target="_blank"} and I switched to the Unix culture.
