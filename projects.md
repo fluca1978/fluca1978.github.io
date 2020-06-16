@@ -44,14 +44,26 @@ In the past I did mess with:
 
 I did participate in the **CPAN Pull Request Challenge** 2015 and **Hacktoberfest 2016, 2017 and 2018**. I really encourage anyone else in participating in projects like those because they can teach you a lot and your time will not be wasted onto a not-so-used piece of code.
 
-I co-founded and directed the **[Italian PostgreSQL Users' Group (ITPUG)](http://www.itpug.org)** and have actively organized almost all [PGDay.IT](http://www.pgday.it) events up to the 2016 edition, also introducing (not by myself)  the concept of **[ITPUG Lab](https://vimeo.com/82178862)**.
+I co-founded and directed the **[Italian PostgreSQL Users' Group (ITPUG)](http://www.itpug.org){:target="_blank"}** and have actively organized almost all [PGDay.IT](http://www.pgday.it){:target="_blank"} events up to the 2016 edition, also introducing (not by myself)  the concept of **[ITPUG Lab](https://vimeo.com/82178862){:target="_blank"}**.
 
-Since December 2017 I do little contributions to the **[Perl 6 documentation repository](https://github.com/perl6/doc)**.
+Since December 2017 I do little contributions to the **[Perl 6 documentation repository](https://github.com/perl6/doc){:target="_blank"}**.
 
-As of 2018 I do contribute to **[`pgenv`](https://github.com/theory/pgenv)** PostgreSQL version manager and installer.
+As of 2018 I do contribute to **[`pgenv`](https://github.com/theory/pgenv){:target="_blank"}** PostgreSQL version manager and installer.
 
-*More in general I tend to keep all my projects on [GitHub](https://github.com/{{ site.footer-links.github }}), so go [check there!](https://github.com/{{ site.footer-links.github }})*.
-I also have an account on [GitLab](https://gitlab.com/{{ site.footer-links.gitlab }}) and I'm considering moving to that hosting service.
+*More in general I tend to keep all my projects on [GitHub](https://github.com/{{ site.footer-links.github }}){:target="_blank"}, so go [check there!](https://github.com/{{ site.footer-links.github }}){:target="_blank"}*.
+I also have an account on [GitLab](https://gitlab.com/{{ site.footer-links.gitlab }}){:target="_blank"} and I'm considering moving to that hosting service.
+
+
+I have also pushed little contributions, issues, or documentation to open source projects like the followings (in no particular order):
+- [pgenv](https://github.com/theory/pgenv){:target="_blank"}, a Bash PostgreSQL installer and manager;
+- [perlbrew](https://github.com/gugod/www.perlbrew.pl){:target="_blank"}, a Perl environment manager;
+- [pgxnclient](https://github.com/pgxn/pgxnclient){:target="_blank"}, a Python client for the PostgreSQL eXtensible Network;
+- [pgTAP](https://github.com/theory/pgtap){:target="_blank"}, a testing framework for PostgreSQL;
+- [pgBackRest](https://github.com/pgbackrest/pgbackrest){:target="_blank_"}, a PostgreSQL backup and recovery tool;
+- [pgBadger](https://github.com/darold/pgbadger){:target="_blank"}, a dashboard for PostgreSQL log analysis;
+- [rakudobrew](https://github.com/tadzik/rakudobrew){:target="_blank"}, a Perl 6, Raku environment manager;
+- [IO::Tee](https://github.com/neilb/IO-Tee){:target="_blank"}, a `tee` module for Perl;
+- [sqitch](https://github.com/sqitchers/sqitch){:target="_blank"}, a database management tool.
 
 
 # Conferences, Seminars, etc.
@@ -60,10 +72,10 @@ Where I was learning, where I was teaching.
 
 ## As a lecturer
 
-- **[Developer on Fire episode number 449](https://developeronfire.com/podcast/episode-449-luca-ferrari-focused-practice)**, recoded on October 22nd 2019, broadcasted on November 11st 2019;
-- On-line course **Improve your PostgreSQL Skills**, [BSD Magazine](https://bsdmag.org/course/course-10-improve-your-postgresql-skills/), 2018, 5 modules
-- Seminar **PostgreSQL - il database piu' avanzato del pianeta**, [ConoscereLinux Linux Users' Group Modena](https://conoscerelinux.org/courses/postgresql/), 2018 (7 lessons)
-- Open Space **ITPUG Lab**, [PGDay.IT 2013](https://2013.pgday.it/index.php/programma/itpuglab/index.html) and [2015](https://2015.pgday.it/itpuglab.html)
+- **[Developer on Fire episode number 449](https://developeronfire.com/podcast/episode-449-luca-ferrari-focused-practice){:target="_blank"}**, recoded on October 22nd 2019, broadcasted on November 11st 2019;
+- On-line course **Improve your PostgreSQL Skills**, [BSD Magazine](https://bsdmag.org/course/course-10-improve-your-postgresql-skills/){:target="_blank"}, 2018, 5 modules
+- Seminar **PostgreSQL - il database piu' avanzato del pianeta**, [ConoscereLinux Linux Users' Group Modena](https://conoscerelinux.org/courses/postgresql/){:target="_blank"}, 2018 (7 lessons)
+- Open Space **ITPUG Lab**, [PGDay.IT 2013](https://2013.pgday.it/index.php/programma/itpuglab/index.html){:target="_blank"} and [2015](https://2015.pgday.it/itpuglab.html){:target="_blank"}
 - Seminar **Introduzione a PostgreSQL (parte 1 e 2)**, PGDay.IT 2012, Prato
 - Ligthning Talk **From ISAM to PostgreSQL**, PGDay.IT 2011, Prato
 - Seminar **Pl/Java: estendere un database PostgreSQL con Java**, PGDay.IT 2010, Roma
