@@ -31,6 +31,7 @@ Looking at me by different views:
 - [Me by Dogs](#dogs)
 - [Me by University](#university)
 - [Me and the Dolphins](#dolphins)
+- [Me by interviews](#interviews)
 
 
 <center>
@@ -394,6 +395,16 @@ Both time I swimmed at the Malta Marine Park, and as far as I can tell it is a p
 The first time I've swimmed was after the *EuroBSD Conference* in 2013, that took place in Malta. Reading a magazine on the flight, I learnt about the Marine Park, so I dedicated one day to go visit it and asked for a swim. Unluckily, it was required to book your swim slot in advance, but I was lucky enough to get a chance.
 
 The experience was so incredible that on my tenth wedding anniversary I took my wife and son to do the same experience, and they have been both enthusiast!
+
+
+<a name="interviews"></a>
+# Me by *interviews*
+
+I would never expect, but I got a few short interviews, written, spoken and video!
+
+Check the [interviews page](/interviews) for an almost complete list.
+
+
 
 # Contact me
 
