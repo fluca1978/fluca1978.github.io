@@ -50,6 +50,9 @@ I have to say I'm not concentrated at all, I'm really scared this time and I don
 ## PWC 67 - Task 1
 
 The first task resulted to be more complex than it looked like. Given two integers, we have to produc a list of possible combinations of numbers in increasing order.
+
+## First attempt (partially correct)
+
 I decided to go as follows:
 - declare a `@digits` array that contains the *alphabet* of digits I can use;
 - start with the first digit from the alphabet and compose an array of `@combination` numbers up to the required `$n` size;
@@ -107,6 +110,49 @@ sub MAIN( Int :$m where { $m > 2 }  = 5,
 
 <br/>
 Please note that, since I'm changing the content of the `@combination` array, I need to push a new array every time I completed an iteration, that is why I've `Array.new( @combintation)`.
+
+The approach is partially correct because with an increasing number of `$n` it looses values.
+
+## Second attempt
+
+The second attemp was to generate the whole set of numbers made by `$n` digits and trim the result to only those that have an increasing sequence of digits:
+
+```perl6
+for ( 1 x $n ).Int ^..^ ( $m x $n  ).Int {
+    my @digits = $_.comb;
+    next if @digits.elems != $n;
+    next if @digits.grep( * > $m );
+    my $ok = True;
+    $ok = False if ( @digits[ $_  ] >= @digits[ $_ + 1 ] ) for 0 ..^ @digits.elems - 1;
+    @combinations.push: @digits if $ok;
+}
+
+```
+
+I start from `1 x $n` which is to say `111` (`$n = 3`) and finish the loop to `555` (`$m=5`).
+I extract all the digits into the `@digits` array, then check to have a correct length of digits (this can be omitted) and that no one digit is greater than the upper bound `$m` (done with `grep`).
+Last, I check that every digits is not greater or equal of the subsequent one.
+If all the above passes, the `@digits` array can be considered as a valid combination and is pushed into `@combinations` that is then printed.
+
+
+## Third attempt
+
+Based on the second attempt, I tried to remove the `if` with a `next` line. I [asked for help on IRC](https://colabti.org/irclogger/irclogger_log/raku?date=2020-06-29#l276){:target="_blank"} and so the loop becomes:
+
+```perl6
+    for ( 1 x $n ).Int ^..^ ( $m x $n  ).Int {
+        my @digits = $_.comb;
+        next if @digits.elems != $n;
+        next if @digits.grep( * > $m );
+        next if @digits.sort !~~ @digits;
+        next if @digits.unique !~~ @digits;
+
+        @combinations.push: @digits;
+    }
+```
+
+*So the idea is that the array of `@digits` are good if they are made by exactly `$n` numbers, each one less or equal to `$m`, sorted and unique.*
+
 
 <a name="task2"></a>
 ## PWC 67 - Task 2
