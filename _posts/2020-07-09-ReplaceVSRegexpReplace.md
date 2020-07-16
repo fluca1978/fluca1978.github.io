@@ -12,7 +12,7 @@ Some considerations about the usage of `replace` or `regexp_replace`.
 
 # replace vs regexp_replace
 
-While trying to help Stefan Stefanov with his `[pg_spreadsheetml](https://github.com/stefanov-sm/pg_spreadsheetml){:target="_blank"}` I came across something that would have been obvious, but not too much to me.
+While trying to help Stefan Stefanov with his [`pg_spreadsheetml`](https://github.com/stefanov-sm/pg_spreadsheetml){:target="_blank"} I came across something that would have been obvious, but not too much to me.
 <br/>
 The obvious thing is *`replace` is generally faster than `regexp_replace`*.
 <br/>
