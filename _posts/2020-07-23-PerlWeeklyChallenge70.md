@@ -105,3 +105,8 @@ sub MAIN( Int $N where { 2 <= $N <= 5 } ) {
 
 The `@sequence` array contains the bit string representation, and the `parse-base` method provided by the `Str` class converts every value in its integer representation as requested by the task.
 Duplicating the sequence of bits is as easy as doing a `push` of a `reverse` array, `slip` because we don't want to nest lists.
+
+
+## Why not on Monday?
+
+Usually I try to push my solutions on Monday, this week I was away from the computer because last Sunday it was my birthday, and on Monday I went to the swimming pool with my son.
