@@ -82,7 +82,12 @@ In the academic world:
 * Adjunct Professor, [Nipissing University](http://www.nipissingu.ca/){:target="_blank"}, years 2011-2014
 * lecturer at the University of Modena and Reggio Emilia for several courses including `Java, OOP, operating systems`, years 2003-2006
 * lecturer at local high schools for `HTML, Javascript, networking`, years 2009-2014
-* BSD Certification, year 2013
+* BSD Certification, year 2013, converted into *Linux Professional Institute* in 2020, LPI ID `LPI000395663`
+
+<center>
+<img src="/images/main/2020_lpi.png" />
+</center>
+
 
 In the computer science world:
 
