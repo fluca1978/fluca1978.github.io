@@ -125,3 +125,16 @@ It is possible to remove the `grep` intermediate list extraction, since `first` 
 <br/>
 <br/>
 
+Similarly, it is possible to remove the `reverse` too, since `first` can veing its search from the end of the list with the adverb `:end`:
+
+
+<br/>
+<br/>
+```raku
+ my $fnr = $S.substr( 0 .. $index )
+             .comb( '', :skip-empty )
+             .first( { %counting{ $_ }:exists && %counting{ $_ } == 1 }, :end )
+              // '#';
+```
+<br/>
+<br/>
