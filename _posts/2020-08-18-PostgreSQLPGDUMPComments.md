@@ -12,7 +12,7 @@ Who cares about comments? Because you can certainly read your database schema, r
 
 # Who needs comments?
 
-One [friend and colleague Enrico](http://www.pgtraining.com/chi-siamo/enrico-pirozzi){:target="_blank"} told me about one of those *hidden* features of `pg_dump`: **`--no-comments`**.
+My [friend and colleague Enrico](http://www.pgtraining.com/chi-siamo/enrico-pirozzi){:target="_blank"} told me about one of those *hidden* features of `pg_dump`: **`--no-comments`**.
 <br/>
 <br/>
 The option allows you to dump the database (or the part of it) without dumping any *user defined comment*, that is no comment on tables, data types, and nothing you placed with an explicit `COMMENT ON` statement.
