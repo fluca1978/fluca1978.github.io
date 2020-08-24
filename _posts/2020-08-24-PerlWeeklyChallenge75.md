@@ -195,7 +195,13 @@ sub MAIN( *@A
         ( $current-height, $current-width ) = @histograms[ $current-index ].height, 0;
 
 
-        for 0 ..^ @histograms.elems {
+        # go backwards to the first histogram that has a good height
+        my $starting-index = $current-index;
+        while ( $starting-index > 0 &&  @histograms[ $starting-index ].height >= $current-height ) {
+            $starting-index--;
+        }
+
+        for $starting-index ..^ @histograms.elems {
             next if $_ < $current-index && @histograms[ $_ ].height < $current-height;
             if @histograms[ $_ ].height < $current-height {
                 last;
@@ -222,3 +228,71 @@ sub MAIN( *@A
 <br/>
 
 Last, I sort the rectangles depending on their `area` and pick the `first` one (reversed order), so that I can print the biggest one.
+
+
+### Bonus track
+
+The bonus track was to graph the histograms. I did a little more and also emphasized the biggest rectangle.
+To achieve this, I added a `Range` named `$!columns` in the `Rectangle`, so that I can keep track of which columns the rectangle occupies (they need to be contiguos).
+<br/>
+Then I designed a `graph` function that accepts an optional `Rectangle` and displays the stringified version of every histogram, from the highest to the shortest one, selecting a simble to display the rectangle if present.
+
+<br/>
+<br/>
+```raku
+sub graph( Histogram :@histograms, Rectangle :$rectangle? ) {
+    my @lines;
+    my $max-height = max @histograms.map( { .height } );
+
+
+    while ( $max-height > 0 ) {
+        my @line;
+        @line.push: $max-height ~ '| ';
+
+        for @histograms {
+            my $column = .column;
+            my $height = .height;
+            my $to-print = $rectangle
+            && $column ~~ $rectangle.columns
+            && $rectangle.height >= $max-height
+            ?? ' X' !! ' #';
+            @line.push: .height >= $max-height ?? $to-print !! '  ';
+        }
+
+        @lines.push: @line.join;
+        $max-height--;
+    }
+
+    @lines.push: '---' x @histograms.elems;
+    @lines.push: '    ' ~ @histograms.map( { .column } ).join( ' ' );
+    @lines;
+}
+
+```
+<br/>
+<br/>
+
+
+and the construction loop for the `Rectangle` has changed to the following one:
+
+<br/>
+<br/>
+```raku
+for $starting-index ..^ @histograms.elems {
+    next if $_ < $current-index && @histograms[ $_ ].height < $current-height;
+    if @histograms[ $_ ].height < $current-height {
+        last;
+    }
+    else {
+        $current-width++;
+        $start-column = min $_ + 1 , $start-column;
+        $end-column   = max $_ + 1, $end-column;
+    }
+}
+
+@rectangles.push: Rectangle.new( height => $current-height,
+                                 base => $current-width,
+                                 columns => $start-column .. $end-column  );
+```
+<br/>
+<br/>
