@@ -296,3 +296,28 @@ for $starting-index ..^ @histograms.elems {
 ```
 <br/>
 <br/>
+
+The end result is something like:
+
+<br/>
+<br/>
+```shell
+% raku ch-2.p6 3 2 3 5 7 5
+Numbers are 3 2 3 5 7 5
+Rectangle with base 3 and height 5 (3 x 5) 4 5 6
+Following is the graph of the histogram
+7|          #  
+6|          #  
+5|        X X X
+4|        X X X
+3|  #   # X X X
+2|  # # # X X X
+1|  # # # X X X
+------------------
+    1 2 3 4 5 6
+
+```
+<br/>
+<br/>
+
+The part marked with `X` is the biggest rectangle found.
