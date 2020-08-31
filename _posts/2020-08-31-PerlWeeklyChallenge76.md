@@ -202,3 +202,21 @@ Searching words from /usr/share/dict/words into grid grid.txt
 Found 296  words: aol,ada,ali,ara,aral,art,ashe,ats,aug,ben,blu,constitution,coy,dec,dee,dis,dot,ebro,eco,eli,eve,fdr,gaul,gil,gila,goa,gus,han,hay,hays,ing,iso,ian,ila,ines,ira,ito,lara,las,lea,lee,len,lie,liz,los,lot,mali,mel,mia,mir,nsa,nan,oct,ola,ora,pat,patna,rca,rae,rose,saab,sal,sara,set,sid,tao,ted,tia,tide,tod,togo,tom,traci,tracie,tut,ute,uzi,visa,wifi,ace,act,aim,aimed,air,align,all,ani,ant,ante,antes,any,are,arm,arose,art,ash,ashed,asp,ass,aye,baa,baas,ban,bans,bid,bide,blunt,blunts,broad,buff,bur,buries,but,cad,cod,cold,con,cons,constitution,constitutions,cot,coy,croon,cub,cube,cue,cues,depart,departed,die,died,dim,dis,dot,doth,dud,dun,duo,dust,ear,edit,eel,egg,emo,ems,enter,era,euro,eve,eves,fed,fey,fie,filch,for,fore,gal,gals,garlic,gin,goat,goats,goo,got,gram,grieve,grieves,grit,gym,gyms,has,hat,hay,hays,hazard,heed,hem,hie,hit,hod,ios,ice,ices,ids,ion,ions,its,lag,lam,lath,lea,lee,lie,lien,liens,lose,lot,luau,lug,malign,malignant,mall,malls,meh,mes,mid,midst,mod,moo,nab,nay,nit,not,oat,oats,ode,ohm,ohms,old,orb,orc,ore,ought,out,ova,ovary,par,part,parted,pas,pat,pee,pudgiest,qua,quash,quashed,rag,ram,rare,rim,road,roe,rose,rub,rue,rug,run,ruse,ruses,sac,sad,say,see,set,sets,she,shed,shrine,shrines,sic,sin,slag,slug,sob,social,socializing,sol,sot,sow,sows,soy,soya,spa,spas,spasm,spasmodic,succor,succors,tall,tap,tat,tea,teas,tee,tees,the,theorem,theorems,tic,tide,tin,tit,tits,tog,tom,tome,ton,too,tsar,tub,ugh,use,uses,vary,vie,virus,viruses,visa,vow,wig,wigged,yon,yup,zing
 
 ```
+
+### Small Optimizations
+
+There are a few little considerations to make about the above script:
+1) I suppose that each line in the grid has the very same length, so that testing the first row for its length is fine for all the other lines;
+2) it is possible to skip all names and words with a single tick in the dictionary with the following addition into the main loop:
+
+<br/>
+```raku
+    for $word-file-name.IO.lines  {
+        next if .chars < $min-length;
+        next if / \' / ;
+        next if / ^ <[A .. Z]> <[a .. z]>+ $ /;
+        ...
+```
+<br/>
+
+Moreover, I suppose that the `$min-length` is by default set to `3` meaning that all words less than three characters long are not considered at all, and this can speed up a little the comparison.
