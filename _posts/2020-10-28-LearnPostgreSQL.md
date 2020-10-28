@@ -16,7 +16,6 @@ My latest book talking about PostgreSQL
 I'm really excited to introduce you to a new *PostgreSQL book* entitled **Learn PostgreSQL**, written by myself and my good friend *Enrico*.
 
 
-Yesterday my first commercial book in the PostgreSQL landscape was officially published: **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide)!**
 
 <br/>
 <br/>
