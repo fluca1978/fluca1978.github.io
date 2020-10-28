@@ -11,7 +11,18 @@ Please note I've used the special placeholder *et al.* on publications I don't l
 
 # Books
 
-L. Ferrari, **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide)**, Packt Publishing
+L. Ferrari, E. Pirozzi, **[Learn PostgreSQL](https://www.packtpub.com/product/learn-postgresql-12/9781838985288){:target="_blank"}**, Packt Publising, 2020
+
+<center>
+<a href="https://www.packtpub.com/product/learn-postgresql-12/9781838985288" target="_blank">
+<img src="/images/posts/learnpostgresql/cover.png" alt="Learn PostgreSQL book cover" />
+</a>
+</center>
+
+<br/>
+
+
+L. Ferrari, **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide){:target="_blank"}**, Packt Publishing, 2018
 
 <center>
 <a href="https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide" target="_blank_">
@@ -21,11 +32,11 @@ L. Ferrari, **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://
 
 ## Ebooks
 - L. Ferrari,
-**[Improve your PostgreSQL Skills](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/)**
+**[Improve your PostgreSQL Skills](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/){:target="_blank"}**
 ebook edited out of an online course material for [BSD Magazine](http://bsdmag.org)
 
 <center>
-<a href="https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/" >
+<a href="https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/" target="_blank">
 <img src="https://3d2ixy3hf5o5dllmr3zqz2qc-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/bsdworkshop.jpg" width="15%" />
 </a>
 </center>
