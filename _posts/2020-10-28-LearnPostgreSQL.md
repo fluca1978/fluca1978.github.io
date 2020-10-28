@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Learn PotgreSQL - a new book"
+title:  "Learn PostgreSQL - a new book"
 author: Luca Ferrari
 tags:
 - postgresql
@@ -9,7 +9,7 @@ permalink: /:year/:month/:day/:title.html
 ---
 My latest book talking about PostgreSQL
 
-# Learn PotgreSQL - a new book
+# Learn PostgreSQL - a new book
 ---
 
 
