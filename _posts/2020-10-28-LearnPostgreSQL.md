@@ -85,7 +85,13 @@ There is of course much more to describe about the book, but so far I'm still re
 In the meantime you can have a look at the [official repository hosting the code examples](https://github.com/PacktPublishing/Learn-PostgreSQL){:target="_blank"}.
 
 
+## Update
 
+I'm sorry, in the original post I have both mispelled the title, not placed the right image and link.
+<br/>
+*This is what happens when you try to edit a post and your eyes have not recovered yet from the last surgery!*
+<br/>
+This is also why I recorded the video in first place!
 
 
 
