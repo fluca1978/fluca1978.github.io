@@ -239,10 +239,13 @@ In the case you are interested in the *holy-war* of computer science, here it is
 No way!
 
 I do not use *famous* social networks, or better, I seldom use them.
-The fact is that I believe they are evil and so
-I don't like them. 
+The fact is that I believe they are evil and so I don't like them. 
 
 If you need to get in touch with me *drop me an email or a phone call*.
+
+## "So why those  *social* links in your site?"
+
+When I started to publish my technical books, I was *convinced* to push some advertising on social networks, and that is why I've added my social accounts up there. However, I do repeat it again: I don't like social networks and they are not the correct way to contact me!
 
 
 Please note that this also mean I don't do any effort to keep my social profiles up-to-date, and this includes my
