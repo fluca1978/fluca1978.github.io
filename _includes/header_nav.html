@@ -97,6 +97,31 @@
                 </li>
                 {% endif %}
 
+                {% if site.footer-links.instagram %}
+                <li class="nav_link" >
+                    <a href="https://www.instagram.com/{{ site.footer-links.linkedin }}" target="_blank" >
+                        <i class="fab fa-instagram fa-2x" title="Instagram"></i>
+                    </a>
+                </li>
+                {% endif %}
+
+
+                {% if site.footer-links.youtube %}
+                <li class="nav_link" >
+                    <a href="https://youtube.com/user/{{ site.footer-links.youtube }}" target="_blank" >
+                        <i class="fab fa-youtube fa-2x" title="YouTube"></i>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.footer-links.asciinema %}
+                <li class="nav_link" >
+                    <a href="https://asciinema.org/~{{ site.footer-links.asciinema }}" target="_blank" >
+                        <i class="fas fa-play fa-2x" title="Asciinema"></i>
+                    </a>
+                </li>
+                {% endif %}
+
                 {% if site.footer-links.amazon %}
                 <li class="nav_link" >
                     <a href="https://www.amazon.com/author/{{ site.footer-links.amazon }}" target="_blank" >
@@ -106,21 +131,7 @@
                 {% endif %}
 
 
-    {% if site.footer-links.youtube %}
-        <li class="nav_link" >
-            <a href="https://youtube.com/user/{{ site.footer-links.youtube }}" target="_blank" >
-                 <i class="fab fa-youtube fa-2x" title="YouTube"></i>
-            </a>
-        </li>
-        {% endif %}
 
-        {% if site.footer-links.asciinema %}
-        <li class="nav_link" >
-            <a href="https://asciinema.org/~{{ site.footer-links.asciinema }}" target="_blank" >
-                <i class="fas fa-play fa-2x" title="Asciinema"></i>
-            </a>
-        </li>
-        {% endif %}
             </ul>
         </div>
 
