@@ -303,7 +303,7 @@ and *Fujifilm FP-14* passport camera;
 - [Squid](http://www.squid-cache.org/){:target="_blank"} proxy;
 - [Pegasus Mail](http://www.pmail.com/){:target="_blank"} and [The Bat!](https://www.ritlabs.com/en/products/thebat/){:target="_blank"}, only tried a couple of times;
 - [FVWM 95](http://toastytech.com/guis/xnetscape.png){:target="_blank"} and [Window Maker](http://www.linuxfocus.org/common/images/article128/wprefs24.jpg){:target="_blank"};
-- *PCMCIA* modem with antenna, somethig that required minutes to get online and seconds to get offline;
+- *PCMCIA* modem with antenna, something that required minutes to get online and seconds to get offline;
 - *[Anzio](https://www.anzio.com/content/anzio){:target="_blank"}* as a *telnet* client, that I quickly replaced with *[PuTTY](https://www.putty.org/){:target="_blank"}* as an *SSH client*, laughing at my boss who remained used to telnet;
 - *[Vypress Messenger](http://www.vypress.com/lan_instant_messenger/){:target="_blank"}* used only for that short time of the year I had to boot on Microsoft Windows;
 - *[Perl 5.6](https://perldoc.perl.org/perl56delta.html){:target="_blank"}* even if I was using it as v5.4;
