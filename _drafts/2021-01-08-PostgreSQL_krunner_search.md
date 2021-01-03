@@ -100,6 +100,9 @@ and the result will popup in your default web browser (*that is not mandatory to
 <br/>
 
 
+# Konqueror and Web Shortcuts
+
+As already written, `krunner` exploits the Konqueror Web Shortcuts, and in fact [I wrote an article (italian)](https://fluca1978.github.io/2008/01/28/ricerca-diretta-nella-documentazione-di.html){:target="_blank"} back in *2008* about the configuration of Konqueror to access the PostgreSQL documentation. I also asked for that article to appear on the ITPUG official web site, without any success, but this is another story.
 
 
 # Conclusions
