@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "fluca1978's activity"
+title:  "Statistic Data about my Blog and Other Stuff"
 permalink: /stats/
 ---
 
