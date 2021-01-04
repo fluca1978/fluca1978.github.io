@@ -3,6 +3,7 @@ layout: post
 title:  "Firefox and PostgreSQL Documentation Search"
 author: Luca Ferrari
 tags:
+- firefox
 - postgresql
 - planet-postgresql-org
 permalink: /:year/:month/:day/:title.html
