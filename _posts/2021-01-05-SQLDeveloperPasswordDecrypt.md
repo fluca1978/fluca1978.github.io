@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Decrypting password stored in Oracle SQL Developer"
+title:  "Decrypting passwords stored in Oracle SQL Developer"
 author: Luca Ferrari
 tags:
 - oracle
@@ -8,9 +8,9 @@ tags:
 - java
 permalink: /:year/:month/:day/:title.html
 ---
-Is it possible to get it back the encrypted passwords?
+Is it possible to get back the encrypted passwords?
 
-Decrypting password stored in Oracle SQL Developer
+Decrypting passwords stored in Oracle SQL Developer
 ---
 
 Oracle SQL Developer is a Java client used to connect to Oracle databases. The application does allow you to store several connections, each one with a password.
