@@ -31,7 +31,7 @@ Yes, I was **away from keyboard for almost four months** due to an eye surgery, 
 <br/>
 Therefore, I'm not really happy with that, and I'm trying to figure out how to deal with my **new (downgraded) life**.
 <br/>
-And as a try to force my brain to stay focused on something different, I decided to start over the *Perl Weekly Challenge*.
+As a way to force my brain to stay focused on something different, I decided to start over the *Perl Weekly Challenge*.
 <br/>
 This is also why my [blog activity has dropped in the last quarter of 2020](https://fluca1978.github.io/stats/).{:target="_blank"}.
 
