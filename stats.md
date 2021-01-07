@@ -19,7 +19,7 @@ These numbers are work in progress, of course.
 I've also an [account on Gitlab](https://gitlab.com/{{ site.footer-links.gitlab }}), check there.
 
 # Statistic Data About this *Blog*
-
+{% include stats/quick-links.md %}
 {% include stats/2021.md %}
 {% include stats/2020.md %}
 {% include stats/2019.md %}
