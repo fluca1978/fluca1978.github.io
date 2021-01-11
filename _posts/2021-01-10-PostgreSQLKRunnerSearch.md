@@ -30,7 +30,7 @@ First of all, launch krunner by hitting `ALT + F2` or `ALT + <space>`, then clic
 <br/>
 <br/>
 <center>
-<img src="/images/posts/plasma/postgresql_search_engine_1.png" />
+<img src="/images/posts/plasma/postgresql_search_1.png" />
 </center>
 <br/>
 <br/>
@@ -40,7 +40,7 @@ In the dialog window, scroll to the *Web Shortcuts* line and click on the *confi
 <br/>
 <br/>
 <center>
-<img src="/images/posts/plasma/postgresql_search_engine_2.png" />
+<img src="/images/posts/plasma/postgresql_search_2.png" />
 </center>
 <br/>
 <br/>
@@ -50,14 +50,14 @@ In the opened dialog, after having searched for the *key* sequence you want to i
 <br/>
 <br/>
 <center>
-<img src="/images/posts/plasma/postgresql_search_engine_3.png" />
+<img src="/images/posts/plasma/postgresql_search_3.png" />
 </center>
 <br/>
 <br/>
 
 
 
-Fill the dialog as you find appropriate, but with regard to the `Shortcut URL` place `https://www.postgresql.org/search/?q=` and then hit the button on the right to insert the query parameters (`\{@}'), so that the ending result is `https://www.postgresql.org/search/?q=\{@}`.
+Fill the dialog as you find appropriate, but with regard to the `Shortcut URL` place `https://www.postgresql.org/search/?q=` and then hit the button on the right to insert the query parameters (`\{@}`), so that the ending result is `https://www.postgresql.org/search/?q=\{@}`.
 <br/>
 Place a shortcut in the `Shortcuts` entry, separaed by comma, for example `pg`, then `postgres` and last `postgresql`, so that you will be able to inject a search by a short or common character sequence.
 
@@ -65,7 +65,7 @@ Place a shortcut in the `Shortcuts` entry, separaed by comma, for example `pg`, 
 <br/>
 <br/>
 <center>
-<img src="/images/posts/plasma/postgresql_search_engine_5.png" />
+<img src="/images/posts/plasma/postgresql_search_5.png" />
 </center>
 <br/>
 <br/>
@@ -82,7 +82,7 @@ It is now time to test the searching shortcut:
 <br/>
 <br/>
 <center>
-<img src="/images/posts/plasma/postgresql_search_engine_6.png" />
+<img src="/images/posts/plasma/postgresql_search_6.png" />
 </center>
 <br/>
 <br/>
@@ -94,7 +94,7 @@ and the result will popup in your default web browser (*that is not mandatory to
 <br/>
 <br/>
 <center>
-<img src="/images/posts/plasma/postgresql_search_engine_7.png" />
+<img src="/images/posts/plasma/postgresql_search_7.png" />
 </center>
 <br/>
 <br/>
