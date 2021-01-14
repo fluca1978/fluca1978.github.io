@@ -90,3 +90,10 @@ Logging to /home/luca/git/misc/PostgreSQL/pgenv/pgsql/data/server.log
 
 
 Thanks to the addition of `earliest` and `latest` it becomes more intuitive and easy to automate `pgenv` usage, so that you don't have to remember to which version of PostgreSQL you are referring to.
+
+
+# What about `build`?
+Thanks to [this commit](https://github.com/theory/pgenv/commit/95236fd43f8f7af5f1b94e3fe9259397fcb70c46){:target="_blank"}, **it is now possible to issue a `build` command using the same special keywords as above**.
+<br/>
+As an example, specifying `pgenv build latest 13` will install the latest available version in the `13` major release, as well as `pgenv build latest` will install the very last available version among all.
+The word `earliest` works the opposite, even if I believe that building the very oldest PostgreSQL version could be a good way to have fun!
