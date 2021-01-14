@@ -23,7 +23,7 @@ One **ugly** thing that Oracle SQL Plus adopts is a **connection string that inc
 <br/>
 <br/>
 ```
-username:password@server:port/service
+username/password@server:port/service
 ```
 <br/>
 <br/>
