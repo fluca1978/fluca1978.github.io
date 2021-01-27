@@ -3,8 +3,8 @@ layout: post
 title:  "Oracle SQL Developer: Changing Connection Passwords Massively"
 author: Luca Ferrari
 tags:
-- emacs
-- raku
+- oracle
+- sqldeveloper
 permalink: /:year/:month/:day/:title.html
 ---
 A possible way to change all the passwords at once!

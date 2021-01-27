@@ -3,8 +3,8 @@ layout: post
 title:  "Java Map: putIfAbsent"
 author: Luca Ferrari
 tags:
-- emacs
-- raku
+- java
+- programming
 permalink: /:year/:month/:day/:title.html
 ---
 Is this method really worth?
