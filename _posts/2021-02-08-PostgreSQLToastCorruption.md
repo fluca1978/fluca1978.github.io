@@ -7,10 +7,10 @@ tags:
 - planet-postgresql-org
 permalink: /:year/:month/:day/:title.html
 ---
+I wrote a simple function to test for corrupted TOAST data.
 
+# PostgreSQL TOAST Data Corruption (ERROR: unexpected chunk number)
 
-PostgreSQL TOAST Data Corruption (ERROR: unexpected chunk number)
----
 **T**he **O**versize **A**ttribute **S**torage **T**ecnique (TOAST) is a way that allows PostgreSQL to store any kind of attribute within the table.
 <br/>
 PostgreSQL stores data into data pages that have a fixed size, usually `8 kB`; this means there is no room for a variable content (e.g., a string) that grows more than a single data page. To solve the problem, PostgreSQL uses TOAST: when an attribute value is too large to be stored in the table data page, PostgreSQL **transparently** moves the content to an external storage, namely `pg_toast`, where the content is split into *chunks* (parts) and stored as a set ot chunk tuples.
