@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PostgreSQL TOAST Data Corruption (ERROR:  unexpected chunk number)"
+title:  "PostgreSQL TOAST Data Corruption (ERROR: unexpected chunk number)"
 author: Luca Ferrari
 tags:
 - postgresql
@@ -9,7 +9,7 @@ permalink: /:year/:month/:day/:title.html
 ---
 
 
-PostgreSQL TOAST Data Corruption (ERROR:  unexpected chunk number)
+PostgreSQL TOAST Data Corruption (ERROR: unexpected chunk number)
 ---
 **T**he **O**versize **A**ttribute **S**torage **T**ecnique (TOAST) is a way that allows PostgreSQL to store any kind of attribute within the table.
 <br/>
@@ -35,7 +35,7 @@ This article is divided into two parts:
 <br/>
 The code of the functions can be found online [on my Gitlab repository](https://gitlab.com/fluca1978/fluca1978-pg-utils/-/blob/master/examples/toast/find_bad_toast.sql){:target="_blank"}. As usual, any comment and improvement is appreciated.
 <br/>
-Inspiration for this technique comes [from Josh Berkus excellent article](http://www.databasesoup.com/2013/10/de-corrupting-toast-tables.html{:target="_blank"}.
+Inspiration for this technique comes [from Josh Berkus excellent article](http://www.databasesoup.com/2013/10/de-corrupting-toast-tables.html){:target="_blank"}.
 
 # Create an example: corrupt your TOAST data
 
