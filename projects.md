@@ -24,6 +24,16 @@ I'm the author of **[PostgreSQL 11 Server Side Programming Quick Start Guide](ht
 </center>
 <br/>
 
+I am also a co-author of another PostgreSQL book: L. Ferrari, E. Pirozzi, **[Learn PostgreSQL](https://www.packtpub.com/product/learn-postgresql-12/9781838985288){:target="_blank"}**, Packt Publising, 2020
+
+<center>
+<a href="https://www.packtpub.com/product/learn-postgresql-12/9781838985288" target="_blank">
+<img src="/images/posts/learnpostgresql/cover.png" alt="Learn PostgreSQL book cover" />
+</a>
+</center>
+
+
+
 I've also an ebook collected with lectures I've done on PostgreSQL for [BSD Magazine](http://bsdmag.org) under the name of **[Improve your PostgreSQL Skills ebook](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/){:target="_blank"}**.
 
 # Coding
