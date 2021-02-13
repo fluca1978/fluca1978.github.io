@@ -12,7 +12,7 @@ An online event organized by PgTraining.
 
 # PgTraining online webinar on 2021-03-12 (Italian)
 
-[PgTraining](/https://pgtraining.com){:target="_blank"}, the amazin italian group of people that spread the word about PostgreSQL and that I joined in the last years, is organizing an online event (*webinar*) on next 12th April 2021.
+[PgTraining](http://pgtraining.com){:target="_blank"}, the amazin italian group of people that spread the word about PostgreSQL and that I joined in the last years, is organizing an online event (*webinar*) on next 12th April 2021.
 <br/>
 
 <br/>
