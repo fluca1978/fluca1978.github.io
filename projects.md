@@ -88,7 +88,7 @@ Where I was learning, where I was teaching.
 - On-line course **Improve your PostgreSQL Skills**, [BSD Magazine](https://bsdmag.org/course/course-10-improve-your-postgresql-skills/){:target="_blank"}, 2018, 5 modules
 - Seminar **PostgreSQL - il database piu' avanzato del pianeta**, [ConoscereLinux Linux Users' Group Modena](https://conoscerelinux.org/courses/postgresql/){:target="_blank"}, 2018 (7 lessons)
 - Open Space **ITPUG Lab**, [PGDay.IT 2013](https://2013.pgday.it/index.php/programma/itpuglab/index.html){:target="_blank"} and [2015](https://2015.pgday.it/itpuglab.html){:target="_blank"}
-- Seminar **Introduzione a PostgreSQL (parte 1 e 2)**, PGDay.IT 2012, Prato
+- Seminar **Introduzione a PostgreSQL (parte 1 e 2)**, [PGDay.IT 2012](https://2012.pgday.it/programma-della-giornata/introduzione-a-postgresql/index.html){:target="_blank"}, Prato
 - Ligthning Talk **From ISAM to PostgreSQL**, PGDay.IT 2011, Prato
 - Seminar **Pl/Java: estendere un database PostgreSQL con Java**, PGDay.IT 2010, Roma
 - Seminar **PostgreSQL: un database OpenSource di classe enterprise**, CONFSL 2010, Cagliari
