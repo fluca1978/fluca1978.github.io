@@ -120,7 +120,22 @@ sub MAIN( Int $D, Int $N where { $N != 0 } ) {
 <br/>
 
 As you can see, there is much more code involved in the printing phase that in the computing one.
+<br/>
+To shorten the printing phase, it is possible to do something like the following:
 
+<br/>
+<br/>
+```raku
+sub MAIN( Int $D, Int $N where { $N != 0 } ) {
+    my @values = ( $D / $N ).base-repeating( 10 );
+
+    @values[ 0 ].say and exit if ( ! @values[  1 ] );
+    '%s(%s)'.sprintf( @values ).say;
+}
+```
+<br/>
+<br/>
+Therefore, the `printf` approach is used only if there is the repeting part, otherwise a *simple* `say` is used and the program is terminated. Please note the usage of low priority `and` before the `exit`, otherwise the program will terminate without printing anything.
 
 
 
