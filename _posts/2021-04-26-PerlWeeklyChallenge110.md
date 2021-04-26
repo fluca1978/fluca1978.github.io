@@ -46,6 +46,30 @@ sub MAIN( Str $file-name = 'phone.txt' ) {
 <br/>
 
 As you can see, the main idea is to iterate on every file lines, than smart match against *any* of the defined regular expressions.
+<br/>
+However, this can be done better, even without defining a grammar, so I decided to put togethere the parts of the same regular expressions. For example, the length of the phone number is always the same, so I produced two different regular expression: the first to match the number, the second to match any of the prefix.
+<br/>
+Therefore, I had to smart match only against a combination of the two:
+
+<br/>
+<br/>
+```raku
+sub MAIN( Str $file-name = 'phone.txt' ) {
+    my $phone-regexp  = rx/ \d ** 10 /;
+    my $prefix-regexp = rx/
+             <[+]> \d ** 2
+             || <[(]> \d ** 2 <[)]>
+             || \d ** 4
+    /;
+
+
+    my $phone-rx = rx / ^ \s* $prefix-regexp \s+ $phone-regexp $ /;
+    $_.say if $_ ~~ $phone-rx for $file-name.IO.lines;
+
+```
+<br/>
+<br/>
+
 
 
 
