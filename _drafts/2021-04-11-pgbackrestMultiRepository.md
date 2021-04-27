@@ -13,7 +13,7 @@ pgBackRest now supports multiple repositories!
 
 # pgBackRest 2.33 and multi repository
 
-A few days ago a [new release of pgbackrest, the 2.33](https://github.com/pgbackrest/pgbackrest/releases/tag/release%2F2.33){:target="_blank"} has been released. This release improves a lot of things, in particular two of them caught my attention:
+A few weeks ago a [new release of pgbackrest, the 2.33](https://github.com/pgbackrest/pgbackrest/releases/tag/release%2F2.33){:target="_blank"} has been released. This release improves a lot of things, in particular two of them caught my attention:
 - multi repository support;
 - custom configuration path.
 
@@ -59,7 +59,7 @@ Things have changed in version 2.33, since the `configure` command now can instr
 <br/>
 
 
-**The default configuration path remains `/etc/pgbackrest.conf`** but it is now possible to specify a default configuration file path at compile time, so that you don't have to repeat yourself with `--config` at every invocation.
+**The default configuration path remains `/etc/pgbackrest.conf` ** but it is now possible to specify a default configuration file path at compile time, so that you don't have to repeat yourself with `--config` at every invocation.
 
 
 # Multi Repository Support
