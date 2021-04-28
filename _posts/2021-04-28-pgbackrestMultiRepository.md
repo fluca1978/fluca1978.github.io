@@ -4,7 +4,7 @@ title:  "pgBackRest 2.33: multiple repositories (and more)"
 author: Luca Ferrari
 tags:
 - postgresql
-- planet-postgresql-conf
+- planet-postgresql-org
 - pgbackrest
 permalink: /:year/:month/:day/:title.html
 ---
