@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "pgBackRest 2.33 and multi repository"
+title:  "pgBackRest 2.33: multiple repositories (and more)"
 author: Luca Ferrari
 tags:
 - postgresql
@@ -11,7 +11,7 @@ permalink: /:year/:month/:day/:title.html
 pgBackRest now supports multiple repositories! 
 
 
-# pgBackRest 2.33 and multi repository
+# pgBackRest 2.33: multiple repositories (and more)
 
 A few weeks ago a [new release of pgbackrest, the 2.33](https://github.com/pgbackrest/pgbackrest/releases/tag/release%2F2.33){:target="_blank"} has been released. This release improves a lot of things, in particular two of them caught my attention:
 - multi repository support;
@@ -22,7 +22,7 @@ The former allows `pgbackrest` to perform a multiple backup scattared over diffe
 <br/>
 The second improvement fixes a few annoyances with non-Linux operating systems, such as FreeBSD.
 <br/>
-In the following I give a glance at both this improvements.
+In the following I give a glance at both this improvements, in no specific order.
 
 
 # Custom configuration path
@@ -54,7 +54,7 @@ Things have changed in version 2.33, since the `configure` command now can instr
  ...
  --with-configdir=DIR    default configuration path
  ...
-``**
+```
 <br/>
 <br/>
 
