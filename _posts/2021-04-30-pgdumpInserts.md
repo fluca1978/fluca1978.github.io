@@ -4,7 +4,7 @@ title:  "pg_dump and inserts"
 author: Luca Ferrari
 tags:
 - postgresql
-- planet-postgresql-conf
+- planet-postgresql-org
 permalink: /:year/:month/:day/:title.html
 ---
 pg_dump supports a few useful options to export data as a list of INSERTs
