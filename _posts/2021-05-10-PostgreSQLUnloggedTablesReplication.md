@@ -12,6 +12,9 @@ What happens to table that are not logged into WALs when a physical replication 
 
 # To WAL or not to WAL? When unlogged becomes logged...
 
+As many other databases, PostgreSQL allows for a table to be *unlogged*, that in short means "exclude me from the WALs!". Such tables are not crash safe, as well as they are not replicated because the PostgreSQL replication relies on the WALs.
+<br/>
+But what happens when you deal with such tables in a replication scenario? This post tries to provide you some explaination of what is possible and what happens.
 
 ## Creating and populating a database to test
 
