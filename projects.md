@@ -109,6 +109,7 @@ Where I was learning, where I was teaching.
 
 ## As a student
 
+ - **C++ from Zero to Hero**, Introductory course about C++, Associazione culturale *Conoscere Linux* (LUG), 2021, Modena
  - **Flussi di traffico e qualità dell'aria: il progetto *TRAFAIR* e il progetto CLASS**, Workshop a cura dell'Università degli Studi di Modena e Reggio Emilia e del Comune di Modena, 2019, Modena
  - **Modena Tech Summit 2018**, 2018, Modena
  - **C++ Day 2017**, 2017, Modena
