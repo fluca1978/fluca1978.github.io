@@ -3,8 +3,8 @@ layout: post
 title:  "Perl Weekly Challenge 114: palindrome and '1's numbers"
 author: Luca Ferrari
 tags:
-- perlweeklychallenge
 - raku
+- perl-weekly-challenge
 permalink: /:year/:month/:day/:title.html
 ---
 My personal solutions to the Perl Weekly Challenge.
@@ -25,7 +25,7 @@ In the following, the assigned tasks for [Challenge 110](https://perlweeklychall
 
 <a name="task1"></a>
 ## PWC 110 - Task 1
-The first task was abount finding the next palindrome number greater thana  given one.
+The first task was abount finding the next palindrome number greater than a given one.
 <br/>
 It is a quite simple task to me: a number is palindrome if its `flip`ped string representation is the same, so it all means I have to loop over numbers bigger than the current one and see if it is a palindrome.
 
