@@ -55,9 +55,6 @@
                     </a>
                 </li>
 
-                <li class="nav_text" >
-                    Luca Ferrari
-                </li>
 
                     {% if site.footer-links.email %}
                 <li class="nav_link" >
@@ -88,6 +85,15 @@
                 </li>
                 {% endif %}
 
+                {% if site.footer-links.mastodon %}
+                <li class="nav_link" >
+                    <a href="https://fosstodon.org//@{{ site.footer-links.mastodon }}" target="_blank" >
+                        <i class="fab fa-mastodon fa-2x" title="Mastodon"></i>
+                    </a>
+                </li>
+                {% endif %}
+
+
 
                 {% if site.footer-links.linkedin %}
                 <li class="nav_link" >
@@ -110,6 +116,14 @@
                 <li class="nav_link" >
                     <a href="https://youtube.com/user/{{ site.footer-links.youtube }}" target="_blank" >
                         <i class="fab fa-youtube fa-2x" title="YouTube"></i>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if site.footer-links.odysee %}
+                <li class="nav_link" >
+                    <a href="https://odysee.com/{{ site.footer-links.odysee }}" target="_blank" >
+                        <i class="fas fa-play-circle fa-2x" title="Odysee (LBRY)"></i>
                     </a>
                 </li>
                 {% endif %}

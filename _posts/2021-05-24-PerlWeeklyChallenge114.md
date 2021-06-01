@@ -3,8 +3,8 @@ layout: post
 title:  "Perl Weekly Challenge 114: palindrome and '1's numbers"
 author: Luca Ferrari
 tags:
-- perlweeklychallenge
 - raku
+- perl-weekly-challenge
 permalink: /:year/:month/:day/:title.html
 ---
 My personal solutions to the Perl Weekly Challenge.
@@ -24,6 +24,7 @@ In the following, the assigned tasks for [Challenge 110](https://perlweeklychall
 
 
 <a name="task1"></a>
+
 ## PWC 114 - Task 1
 The first task was abount finding the next palindrome number greater thana  given one.
 <br/>

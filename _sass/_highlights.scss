@@ -1,7 +1,7 @@
 
 .highlight {
-      background-color: #eeeeee;
-
+//    background-color: #eeeeee;
+    background-color: #222222;
   padding: 7px 7px 7px 10px;
   //  border: 1px solid #ddd;
   border: 1px solid $mono-color;
@@ -13,8 +13,17 @@
 }
 
 code {
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+    font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+    
 }
+
+.highlighter-rouge {
+    font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+    color: #007700;
+    font-style: bold;
+}
+
+
 
 .highlight .c { color: #586E75 } /* Comment */
 .highlight .err { color: #93A1A1 } /* Error */
