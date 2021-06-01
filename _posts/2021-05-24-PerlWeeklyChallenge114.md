@@ -24,7 +24,7 @@ In the following, the assigned tasks for [Challenge 110](https://perlweeklychall
 
 
 <a name="task1"></a>
-## PWC 110 - Task 1
+## PWC 114 - Task 1
 The first task was abount finding the next palindrome number greater thana  given one.
 <br/>
 It is a quite simple task to me: a number is palindrome if its `flip`ped string representation is the same, so it all means I have to loop over numbers bigger than the current one and see if it is a palindrome.
@@ -45,8 +45,8 @@ Therefore I loop from `$N` (exlcuded), i.e., the given number, to the infinity. 
 Please note the lower precedence `and` in the `say $_ and exit` that avoid `exit` to take precedence on the whole thing and terminate the program without printing anything.
 
 
-<a name="task1"></a>
-## PWC 110 - Task 1
+<a name="task2"></a>
+## PWC 114 - Task 2
 The second task was a kind of one liner too: find out a number that has the same amount of `1` digits in the binary representation, assuming it is bigger than a give value.
 
 <br/>
