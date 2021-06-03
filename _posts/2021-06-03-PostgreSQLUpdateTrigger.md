@@ -258,6 +258,59 @@ The `suppress_redundant_updates_trigger` is defined in the file `utils/adt/trigf
 that essentially compares the old and the new tuple to see if they have the same headers, the same number of attributes, and of course the same content of the memory representation (by means of `memcpm(3)`).
 
 
+## Doing in `plpgsql`
+
+It is possible to implement a basic function in `plpgsql` by means of the `IS DISTINCT FROM` operator:
+
+<br/>
+<br/>
+```sql
+```
+<br/>
+<br/>
+
+and the execution with this trigger in place results in:
+
+<br/>
+<br/>
+```sql
+pgbench=> drop trigger tr_avoid_idempotent_updates on pgbench_accounts;
+DROP TRIGGER
+                                                     
+pgbench=> create trigger tr_avoid_idempotent_updates 
+before update on pgbench_accounts              
+for each row
+execute function f_avoid_idempotent_updates();
+CREATE TRIGGER
+
+
+pgbench=> update pgbench_accounts set filler = filler;
+UPDATE 0
+Time: 167400,098 ms (02:47,400)
+```
+<br/>
+<br/>
+
+and if you track function executions:
+
+<br/>
+<br/>
+```sql
+pgbench=> select * from pg_stat_user_functions ;
+-[ RECORD 1 ]--------------------------
+funcid     | 36672
+schemaname | public
+funcname   | f_avoid_idempotent_updates
+calls      | 10000000
+total_time | 21276.741
+self_time  | 21276.741
+
+```
+<br/>
+<br/>
+that indicates that `21 secs` are spent in doing the trigger analysis, so roughly `0,0021 msecs` spent for each tuple. This is by far much more expensive of the C default function (that was roughly `0.00015 msecs`).
+
+
 # Conclusions
 
 The internal `suppress_redundant_updates_trigger` function can be useful for reducing **both time and bloating** against large batches of `UPDATE`s. 
