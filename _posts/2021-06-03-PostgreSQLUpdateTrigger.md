@@ -309,7 +309,27 @@ self_time  | 21276.741
 <br/>
 <br/>
 that indicates that `21 secs` are spent in doing the trigger analysis, so roughly `0,0021 msecs` spent for each tuple. This is by far much more expensive of the C default function (that was roughly `0.00015 msecs`).
+<br/>
+Similar results are emphasized by the `EXPLAIN ANALYZE` output:
 
+<br/>
+<br/>
+```sql
+pgbench=> EXPLAIN (FORMAT yaml, ANALYZE, TIMING )
+          UPDATE pgbench SET filler = filler;
+...
+  |   Triggers:                                      +
+  |     - Trigger Name: "tr_avoid_idempotent_updates"+
+  |       Relation: "pgbench_accounts"               +
+  |       Time: 23002.383                            +
+  |       Calls: 10000000                            +
+  |   Execution Time: 163343.183
+
+```
+<br/>
+<br/>
+
+Here the `Time` is around `23000 msecs` while with the C native function it was about `1500 msecs`.
 
 # Conclusions
 
