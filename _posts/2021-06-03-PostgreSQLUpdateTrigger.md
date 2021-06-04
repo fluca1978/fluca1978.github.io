@@ -265,6 +265,20 @@ It is possible to implement a basic function in `plpgsql` by means of the `IS DI
 <br/>
 <br/>
 ```sql
+CREATE OR REPLACE FUNCTION
+  f_avoid_idempotent_updates()
+  RETURNS TRIGGER
+AS $CODE$
+BEGIN
+  IF NEW.* IS DISTINCT FROM OLD.* THEN
+    RETURN NEW;
+  ELSE
+    RETURN NULL;
+  END IF;
+END
+  $CODE$
+  LANGUAGE plpgsql;
+
 ```
 <br/>
 <br/>
