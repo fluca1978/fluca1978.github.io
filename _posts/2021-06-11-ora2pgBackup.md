@@ -161,17 +161,17 @@ The result `all.sql` is a file like the following:
 \set ON_ERROR_STOP 1
 \set QUIET         1
 
-\echo Reload of Oracle schema prenotazionerisorse
+\echo Reload of Oracle schema db1
 
-DROP DATABASE IF EXISTS prenotazionerisorse;
-CREATE DATABASE prenotazionerisorse WITH TEMPLATE my_oracle_template;
-\c prenotazionerisorse
+DROP DATABASE IF EXISTS db1;
+CREATE DATABASE db1 WITH TEMPLATE my_oracle_template;
+\c db1
 
 
 CREATE EXTENSION IF NOT EXISTS orafce;
 
 
-\echo Connected to prenotazionerisorse
+\echo Connected to db1
 \echo Starting the loading batch
 \echo
 
