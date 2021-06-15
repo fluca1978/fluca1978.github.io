@@ -21,6 +21,12 @@ In the following, the assigned tasks for [Challenge 117](https://perlweeklychall
 <br/>
 My official solutions are available [on the GitHub repository](https://github.com/fluca1978/perlweeklychallenge-club/tree/master/challenge-117/luca-ferrari){:target="_blank"}.
 
+<br/>
+- [Task 1](#task1)
+- [Task 2](#task2)
+
+
+<a name="task1"></a>
 ## PWC 117 - Task 1
 
 The first task was about finding outmissing numbered lines in a file. Something that can be very helpful if you are programming in Basic!
@@ -47,7 +53,7 @@ sub MAIN( Str $file-name = 'test.txt' ) {
 I do read all the lines, and place them into an hash where the number is the key and the content is the rest of the line.
 Thenm I iterate on all numbers of lines, in particular from 1 to the max value found, and I search for that key in the hash. If the key does not exist, the line is missing.
 
-
+<a name="task2"></a>
 ## PWC 117 - Task 2
 
 This is something I'm not sure I've done right, but essentially is the moves you can get from the root of a triangle structure to the rightmost bottom.
