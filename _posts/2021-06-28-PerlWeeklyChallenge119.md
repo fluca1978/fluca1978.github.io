@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 117: simpler than it seems"
+title:  "Perl Weekly Challenge 119: simpler than it seems"
 author: Luca Ferrari
 tags:
 - raku
