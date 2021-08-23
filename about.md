@@ -32,10 +32,18 @@ Looking at me by different views:
 - [Me by University](#university)
 - [Me and the Dolphins](#dolphins)
 - [Me by interviews](#interviews)
+- [Me by Ghostbusters](#ghostbusters)
 
 
 <center>
-<img src="/images/main/lucaDolphins.png" alt="me" />
+<img src="/images/main/lucaDolphins.png" alt="me swimming with dolphins" />
+<br/>
+<br/>
+<br/>
+
+<img src="/images/main/lucaPackt.jpg" width="60%" alt="me with my published books" />
+</center>
+
 </center>
 
 
@@ -417,6 +425,26 @@ I would never expect, but I got a few short interviews, written, spoken and vide
 
 Check the [interviews page](/interviews) for an almost complete list.
 
+
+
+<a name="ghostbusters"></a>
+# Me by *Ghostbusters*
+
+As you have probably noted, in a picture I've a huge **Ghostbusters logo** behind me. Such logo is a 2016 film logo donated to my son from a friend of ours, Denis.
+<br/>
+Why?
+<br/>
+Well, my son is a great fan of the Ghostbusters movies, with particular regard to the first one.
+<br/>
+I was addicted to Ghostbusters too when I was young, and I remember watching it over and over on VHS. I also tried to build my own proton pack with an old school bag I was not using anymore.
+<br/>
+In 2014 I got stucked at home due to one of my eye surgeries, and I started to watch Ghostbusters with my three years old son. Unluckily, I had the film only in english version, so I played all the ghost-scenes explaining them to my son. I saw he was interested, so I ordered the DVD with the italian language, and he became addicted to!
+<br/>
+What do we mean as *addicted*?
+<br/>
+Well, he had a Ghostbuster logo on his school apron, as well on his rcket case.
+<br/>
+We also have a Ghostbuster logo on the waterproof suit for our dog Franzina!
 
 
 # Contact me

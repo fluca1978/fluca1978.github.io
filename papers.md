@@ -30,6 +30,15 @@ L. Ferrari, **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://
 </a>
 </center>
 
+<br/>
+Here it is a picture of myself in the end of 2020, when the second book I published came out. At that time I was recovering from my last eye-surgery, so I was unable to read any written text:
+<center>
+<br/>
+<img src="/images/main/lucaPackt.jpg" width="30%" />
+<br/>
+</center>
+
+
 ## Ebooks
 - L. Ferrari,
 **[Improve your PostgreSQL Skills](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/){:target="_blank"}**
