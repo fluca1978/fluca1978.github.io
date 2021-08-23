@@ -38,10 +38,6 @@ Looking at me by different views:
 <center>
 <img src="/images/main/lucaDolphins.png" alt="me swimming with dolphins" />
 <br/>
-<br/>
-<br/>
-
-<img src="/images/main/lucaPackt.jpg" width="60%" alt="me with my published books" />
 </center>
 
 </center>
@@ -445,6 +441,16 @@ What do we mean as *addicted*?
 Well, he had a Ghostbuster logo on his school apron, as well on his rcket case.
 <br/>
 We also have a Ghostbuster logo on the waterproof suit for our dog Franzina!
+
+
+<center>
+<br/>
+<br/>
+
+<img src="/images/main/lucaPackt.jpg" width="30%" alt="me with my published books" />
+<br/>
+<br/>
+</center>
 
 
 # Contact me
