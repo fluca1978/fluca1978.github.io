@@ -32,7 +32,7 @@ Looking at me by different views:
 - [Me by University](#university)
 - [Me and the Dolphins](#dolphins)
 - [Me by interviews](#interviews)
-- [Me by Ghostbusters](#ghostbusters)
+- [Me and Ghostbusters](#ghostbusters)
 
 
 <center>
@@ -424,7 +424,7 @@ Check the [interviews page](/interviews) for an almost complete list.
 
 
 <a name="ghostbusters"></a>
-# Me by *Ghostbusters*
+# Me and *Ghostbusters*
 
 As you have probably noted, in a picture I've a huge **Ghostbusters logo** behind me. Such logo is a 2016 film logo donated to my son from a friend of ours, Denis.
 <br/>
