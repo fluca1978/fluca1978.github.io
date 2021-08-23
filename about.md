@@ -19,6 +19,7 @@ Looking at me by different views:
 - [Me by Achievements](#achievements) (see also the **[Papers page](/papers.md)**)
 - [Me by Skills](#skills)
 - [Me by Username](#username)
+- [Me by interviews](#interviews)
 - [Me by Projects](#projects) ([detailed projects page](/projects.md))
 - [Me by Blog](#blog) ([stats](/stats))
 - [Me by Emacs or Vi](#emacs)
@@ -31,7 +32,6 @@ Looking at me by different views:
 - [Me by Dogs](#dogs)
 - [Me by University](#university)
 - [Me and the Dolphins](#dolphins)
-- [Me by interviews](#interviews)
 - [Me and Ghostbusters](#ghostbusters)
 
 
@@ -184,6 +184,17 @@ Interestingly, I waited for my [archery career to stop before having a fully cus
 <center>
 <img src="/images/main/quiver.jpg" alt="quiver" />
 </center>
+
+
+
+
+<a name="interviews"></a>
+# Me by *interviews*
+
+I would never expect, but I got a few short interviews, written, spoken and video!
+
+Check the [interviews page](/interviews) for an almost complete list.
+
 
 
 
@@ -413,13 +424,6 @@ The first time I've swimmed was after the *EuroBSD Conference* in 2013, that too
 
 The experience was so incredible that on my tenth wedding anniversary I took my wife and son to do the same experience, and they have been both enthusiast!
 
-
-<a name="interviews"></a>
-# Me by *interviews*
-
-I would never expect, but I got a few short interviews, written, spoken and video!
-
-Check the [interviews page](/interviews) for an almost complete list.
 
 
 
