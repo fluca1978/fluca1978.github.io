@@ -40,7 +40,6 @@ Looking at me by different views:
 <br/>
 </center>
 
-</center>
 
 
 
