@@ -358,7 +358,7 @@ I don't say these are my favourites, rather are those I would never refuse to wa
 - *Big Trouble in Little China*;
 - *1997 Escape from New York*;
 - *The Crow*;
-- *They Call Me Trinity*, *Trinity is Still My Name*, *Odds and Evens*, *Crime Busters*, *Even Angels Eat Beans*;
+- *They Call Me Trinity*, *Trinity is Still My Name*, *Odds and Evens*, *Crime Busters*, *Even Angels Eat Beans* and more in general pretty much every film with Bud Spencer and Terence Hill or with only one of them;
 - *Wall Street*;
 - *Hudson Hawk*;
 - *Trading Places*, known as "Una Poltrona per Due";
