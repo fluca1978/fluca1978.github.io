@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 129: too much complex?" 
+title:  "Perl Weekly Challenge 129: trees and sums" 
 author: Luca Ferrari
 tags:
 - raku
@@ -9,7 +9,7 @@ permalink: /:year/:month/:day/:title.html
 ---
 My personal solutions to the Perl Weekly Challenge.
 
-# Perl Weekly Challenge 129: to much complex?
+# Perl Weekly Challenge 129: trees and sums
 
 One way to let me improve my knowledge about Raku (aka Perl 6) is to implement programs in it.
 Unluckily, I don't have any production code to implement in Raku yet (sob!).
