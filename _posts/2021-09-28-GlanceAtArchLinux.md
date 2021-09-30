@@ -80,8 +80,103 @@ I'm sure it is great, but why it is asking me to use `-S` at every time? And why
 I mean, if the `-S` *sync* option is the preferred one, why is not enabled by default?
 
 
+## AUR
+
+The [Arch User Repository (AUR)](https://aur.archlinux.org/){:target="_blank"} is a set of user defined *scripts* that build and install third party software that has not been packaged yet (or will not be packaged).
+<br/>
+As an example, the following is the [AUR script `PKGBUILD` for `pgbackrest`](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=pgbackrest){:target="_blank"}:
+
+
+<br/>
+<br/>
+```shell
+# Maintainer: Shalygin Konstantin <k0ste@k0ste.ru>
+# Contributor: Shalygin Konstantin <k0ste@k0ste.ru>
+
+pkgname='pgbackrest'
+pkgver='2.35'
+pkgrel='2'
+pkgdesc='Reliable PostgreSQL Backup & Restore'
+arch=('x86_64')
+url="https://github.com/${pkgname}/${pkgname}"
+license=('MIT')
+depends=('openssl' 'libxml2' 'icu' 'gcc-libs' 'xz' 'zstd' 'perl' 'postgresql-libs' 'libyaml' 'bzip2')
+source=("$pkgname-$pkgver.tar.gz::${url}/archive/release/${pkgver}.tar.gz")
+sha256sums=('ecaf8fc8ec68ac59143a7b4c0c53fded28d1e1396771a9456bb3fdca327e5718')
+backup=("etc/${pkgname}/${pkgname}.conf")
+
+build() {
+  cd "${srcdir}/${pkgname}-release-${pkgver}/src"
+  ./configure \
+    --prefix="/usr"
+  make
+}
+
+package() {
+  cd "${srcdir}/${pkgname}-release-${pkgver}/src"
+  make DESTDIR="${pkgdir}" install
+  install -Dm644 ../LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
+
+```
+<br/>
+<br/>
+
+
+Despite the content, you can see how it does `make` and `install` after a classical run of `configure`. I don't want to over-simplify here, but again this reminds me something we already had: **BSD ports!**
+<br/>
+As an example, the following is the FreeBSD port for the very same `pgbackrest` package:
+
+
+<br/>
+<br/>
+```shell
+PORTNAME=	pgbackrest
+DISTVERSION=	2.33
+CATEGORIES=	databases
+
+MAINTAINER=	schoutm@gmail.com
+COMMENT=	Reliable PostgreSQL Backup & Restore
+
+LICENSE=	MIT
+LICENSE_FILE=	${WRKSRC}/../LICENSE
+
+LIB_DEPENDS=	liblz4.so:archivers/liblz4
+
+USES=		gmake gnome pkgconfig pgsql ssl
+USE_GNOME=	libxml2
+GNU_CONFIGURE=	yes
+
+USE_GITHUB=	yes
+GH_TAGNAME=	release/${DISTVERSION}
+
+WRKSRC_SUBDIR=	src
+
+ALL_TARGET=
+
+CONFIGURE_ARGS=	--with-configdir="${LOCALBASE}/etc/pgbackrest"
+
+OPTIONS_DEFINE=	ZSTD
+
+ZSTD_LIB_DEPENDS=	libzstd.so:archivers/zstd
+ZSTD_CONFIGURE_OFF=	ac_cv_lib_zstd_ZSTD_isError=no
+ZSTD_CONFIGURE_ON=	ac_cv_lib_zstd_ZSTD_isError=yes
+
+post-install:
+	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/pgbackrest
+	${MKDIR} ${STAGEDIR}${PREFIX}/etc/pgbackrest
+
+.include <bsd.port.mk>
+```
+<br/>
+<br/>
+
+
+The difference is that the above is `Makefile`, not a runnable script, but the idea is the very same: have a source to download and build on your system to get the software installed.
+
+
 # Conclusions
 
-As you can see, I don't have any solid point against Arch Linux. It simply does not make me feel comfortable as a BSD system does.
+I truly believ Arch Linux is a very good operating system, simply I don't see the hype in a system that gives me the same stuff I already have on my operating systems (e.g., BSDs) with less effort, same flexibility and, to some extent, a richer documentation.
 <br/>
 That's why I'm not really interested in trying it unless I have enough spare time.
