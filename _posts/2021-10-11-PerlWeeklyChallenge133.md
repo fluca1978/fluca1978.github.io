@@ -120,3 +120,20 @@ sub MAIN( Int $cols where { $cols > 0 } = 5, Int $rows where { $rows > 0 } = 3 )
 <br/>
 
 I used the ugly `"\t"` tabular to quickly format the table when printing, but as you can imagine it would be better to build a more complex `printf` based approach.
+<br/>
+The result of the execution is like the following:
+
+<br/<
+<br/>
+```shell
+% raku ch-2.p6
+  x     |       1       2       3       4       5
+--------|------------------------------------------------
+  1     |       1       2       3       4       5
+  2     |       2       4       6       8       10
+  3     |       3       6       9       12      15
+
+Distinct values: 
+1, 2, 3, 4, 5, 6, 8, 10, 9, 12, 15
+
+```
