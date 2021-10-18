@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 134: in a rush"
+title:  "Perl Weekly Challenge 135: in a rush"
 author: Luca Ferrari
 tags:
 - raku
@@ -9,7 +9,7 @@ permalink: /:year/:month/:day/:title.html
 ---
 My personal solutions to the Perl Weekly Challenge.
 
-# Perl Weekly Challenge 134: in a rush
+# Perl Weekly Challenge 135: in a rush
 
 One way to let me improve my knowledge about Raku (aka Perl 6) is to implement programs in it.
 Unluckily, I don't have any production code to implement in Raku yet (sob!).
@@ -24,7 +24,7 @@ In the following, the assigned tasks for [Challenge 110](https://perlweeklychall
 
 
 <a name="task1"></a>
-## PWC 134 - Task 1
+## PWC 135 - Task 1
 
 The first task was about finding the three middle digits in a given number, assuming it has an odd number of digits. This is implemented as:
 
@@ -50,7 +50,7 @@ The `$remove` variable contains how many character it is need to remove from the
 
 
 <a name="task2"></a>
-## PWC 134 - Task 2
+## PWC 135 - Task 2
 
 The second task was about validating SEDOL strings. It took me more to understand the alghoritm than to implement it.
 
