@@ -11,6 +11,13 @@ Interviews
 
 This is an almost complete list of interviews I have done, or better where I was hosted.
 
+## 2021
+- Packt Publishing Case Studies: **[Luca Ferrari - Co-author of ‘Learn PostgreSQL’](https://authors.packtpub.com/luca-ferrari-case-study/){:target="_blank"}**
+
+<center>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/617935973?h=722f4f7916" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+</center>
+
 ## 2020
 - Packt Publishing Blog: **[Luca Ferrari on his new book and journey with Packt!](https://authors.packtpub.com/luca-ferrari-on-his-new-book-and-journey-with-packt/){:target="_blank"}**
 
