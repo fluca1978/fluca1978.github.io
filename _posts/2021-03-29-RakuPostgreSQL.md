@@ -65,7 +65,7 @@ use DB::Pg;
 
 sub MAIN( Str :$host = 'miguel',
           Str :$username = 'luca',
-          Str :$password = 'secet',
+          Str :$password = 'secret',
           Str :$database = 'testdb' ) {
 
     "Connecting $username @ $host/$database".say;
