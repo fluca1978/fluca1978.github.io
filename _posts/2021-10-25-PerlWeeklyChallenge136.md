@@ -9,7 +9,7 @@ permalink: /:year/:month/:day/:title.html
 ---
 My personal solutions to the Perl Weekly Challenge.
 
-# Perl Weekly Challenge 136: not to hard
+# Perl Weekly Challenge 136: not too hard
 
 It is sad that, after more than two years of me doing Raku, I still don't have any production code project to work on.
 Therefore, in order to keep my coding and Raku-ing (is that a term?) knowdledge, I try to solve every  [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks.
@@ -17,14 +17,27 @@ Therefore, in order to keep my coding and Raku-ing (is that a term?) knowdledge,
 <br/>
 In the following, the assigned tasks for [Challenge 136](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0136/){:target="_blank"}.
 
+<br/>
+- [Task 1](#task1)
+- [Task 2](#task2)
+
+
+
 ## Linux Day 2021
 
 I gave a brief and quick presentation about Raku and how I feel about it. The talk is in italian, and can be seen as an extracted and cut video on [Odysee](https://odysee.com/@fluca1978:d/2021_LINUXDAY_RAKU:7){:target="_blank"}.
 
 
 <br/>
-- [Task 1](#task1)
-- [Task 2](#task2)
+<br/>
+<center>
+<iframe id="lbry-iframe" width="560" height="315" src="https://odysee.com/$/embed/2021_LINUXDAY_RAKU/71d1f405dc6bea384c040da06c0285c17229f6de?r=H6VMSo61DL7wbefVnV8hMQRoNY7ANu89" allowfullscreen></iframe>
+</center>
+<br/>
+<br/>
+
+
+
 
 
 
