@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 132](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0132/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -95,7 +95,7 @@ class HashTable {
 }
 
 sub MAIN() {
-    my  @player_ages = 
+    my  @player_ages =
     [20, "Alex"  ],
     [28, "Joe"   ],
     [38, "Mike"  ],
@@ -104,7 +104,7 @@ sub MAIN() {
     [18, "Simon" ],
     ;
 
-    my  @player_names = 
+    my  @player_names =
         ["Alex", "Stewart"],
         ["Joe",  "Root"   ],
         ["Mike", "Gatting"],

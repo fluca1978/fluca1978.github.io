@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 123: squares and ungly numbers!" 
+title:  "Perl Weekly Challenge 123: squares and ungly numbers!"
 author: Luca Ferrari
 tags:
 - raku
@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 123](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0123/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -39,7 +39,7 @@ sub is-ugly( Int $n ) {
     return True if $n == any( 2, 3, 5 );
 
     return $n %% 2 || $n %% 3 || $n %% 5;
-    
+
 }
 
 sub MAIN( Int $n where { $n > 1 } ) {
@@ -47,10 +47,10 @@ sub MAIN( Int $n where { $n > 1 } ) {
         for 1 .. Inf {
             take $_ if $_ == 1;
             take $_ if is-ugly( $_ );
-        }  
-    } 
+        }
+    }
 
-    
+
     @ugly-numbers[ $n - 1 ].say;
 }
 

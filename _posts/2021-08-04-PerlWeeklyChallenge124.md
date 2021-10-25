@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 124: diffcult women!" 
+title:  "Perl Weekly Challenge 124: diffcult women!"
 author: Luca Ferrari
 tags:
 - raku
@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 124](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0124/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -132,7 +132,7 @@ sub MAIN( *@S where { @S.elems == @S.grep( * ~~ Int ).elems && @S.elems > 0 } ) 
 ```
 <br/>
 <br/>
- 
+
  Initially I do a check on the input `@S` array to ensure is made by integers and only integers. Then I decide how many parts of the sets must be fit computing the size of `@S` and seeing if it is odd or even.
  <br/>
  Initially I started using a `permutations` against the whole array, but it took too much time even if executed in parallel, so I decided to compute an initial sum of the `@S` array, and compute its half: the subsets should tend to such value in order to reduce the difference.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 128: too much complex?" 
+title:  "Perl Weekly Challenge 128: too much complex?"
 author: Luca Ferrari
 tags:
 - raku
@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 128](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0128/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -77,28 +77,28 @@ sub MAIN() {
             next if @zeroes[ $current-row ][ $current-column ] == 0;
             $cols = @zeroes[ $current-row ][ $current-column ];
             $rows = 1;
-            
-            
+
+
             for $current-row + 1 ..^ @zeroes.elems -> $next-row {
                 $rows = 0 and last if @zeroes[ $next-row ][ $current-column ] == 0;
                 $rows++ if @zeroes[ $next-row ][ $current-column ] != 0;
                 $cols = min( $cols, @zeroes[ $next-row ][ $current-column ] );
             }
 
-            
+
             $max = $rows * $cols and @sub-matrix = () if $rows * $cols > $max;
             @sub-matrix.push: [ $rows * $cols, $current-row, $current-column, $current-row + $rows - 1, $current-column + $cols - 1 ] if $rows * $cols > 0 && $rows * $cols >= $max;
 
-            
+
 
 
         }
     }
 
     "{ $_[ 0 ] } zeroes starting from <{ $_[ 1 ] }, { $_[ 2 ]}> to <{ $_[ 3 ] }, { $_[ 4 ]}>".say for @sub-matrix;
-    
 
-    
+
+
 
 }
 ```
@@ -175,7 +175,7 @@ sub MAIN() {
     for 0 ..^ @trains.elems -> $current-train {
         $collisions++ if @trains[ $current-train ].collide( @trains[ $_ ] ) for $current-train + 1 ..^ @trains.elems;
     }
-    
+
     "Required platforms: { $collisions + 1 }".say;
 
 

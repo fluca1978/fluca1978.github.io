@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 121](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0121/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -34,9 +34,9 @@ The first task was (again) about binary representation of numbers: given an inte
 sub MAIN( Int $m where { 0 <= $m <= 255 }
           , Int $n where { 1 <= $n <= 8 } ) {
     my @bits = '%08d'.sprintf( $m.base( 2 ) ).split( '', :skip-empty );
-    
+
     @bits[ * - $n ] = @bits[ * - $n ] == 1 ?? 0 !! 1;
-    
+
     @bits.join.parse-base( 2 ).say;
 }
 ```
@@ -64,9 +64,9 @@ sub find-city-path( @matrix, $row-number, $allow-zero ) {
     my $current-city = 0;
     my $city = -1;
 
-    
+
     for @row -> $distance {
-        
+
         $city++;
         next if $distance == 0 && ! $allow-zero;
 
@@ -74,11 +74,11 @@ sub find-city-path( @matrix, $row-number, $allow-zero ) {
             $current-city = $city;
             $min-distance = $distance;
         }
-        
+
     }
 
-    
-    
+
+
     return [ $min-distance, $current-city ];
 }
 
@@ -103,14 +103,14 @@ sub MAIN() {
     my @path;
     my $cities-left = @matrix[ 0 ].elems;
 
-    
+
     my ( $distance, $city ) = Nil, 0;
     while ( $cities-left > 0 ) {
         ( $distance, $city ) = find-city-path( @matrix, $city, $cities-left == @matrix[ 0 ].elems );
         @path.push: $distance;
         $cities-left--;
-        
-        
+
+
     }
 
     @path.push: 0;

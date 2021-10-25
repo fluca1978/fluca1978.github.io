@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 115](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0115/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -52,7 +52,7 @@ sub MAIN( *@words  where { @words.elems > 0 } ) {
 <a name="task2"></a>
 ## PWC 115 - Task 2
 
-The second task was easier, at glance: given a list of numbers I need to find out the biggest multiple of `2` that can be done with the combination of the given digits. 
+The second task was easier, at glance: given a list of numbers I need to find out the biggest multiple of `2` that can be done with the combination of the given digits.
 <br/>
 I decided to put all the numbers into a list, checking if they are multiple of `2`, and then extract the `max` from the list.
 <br/>

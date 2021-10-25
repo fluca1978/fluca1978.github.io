@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 116](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0116/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -42,7 +42,7 @@ sub MAIN( Int $N where { $N >= 10 } ) {
     my $done = True;
     while $done && $i < @digits.elems {
 
-        
+
 
         # first number ever
         @numbers.push: @digits[ $i ] if ! @numbers;
@@ -95,7 +95,7 @@ My implementation is:
 <br/>
 ```raku
 sub MAIN( Int $N where { $N >= 10 } ) {
-    
+
     my $sum = $N.split( '' ).map( { $_ * $_ } ).sum;
     say 1 and exit if $sum.sqrt == $sum.sqrt.Int;
     say 0;

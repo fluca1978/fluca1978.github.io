@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 133: quick and nested" 
+title:  "Perl Weekly Challenge 133: quick and nested"
 author: Luca Ferrari
 tags:
 - raku
@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 133](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0133/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -49,7 +49,7 @@ sub MAIN( Int $limit where { $limit > 0 } = 5 ) {
     my @digits = 1 .. 9;
     @digits.push: 0;
     my $start =  @digits.join;
-    
+
     my @pandigital = lazy gather {
         for $start ..^ Inf -> $current {
             next if $start ~~ / ^0+ /;
@@ -94,7 +94,7 @@ sub MAIN( Int $cols where { $cols > 0 } = 5, Int $rows where { $rows > 0 } = 3 )
 
 
 
-    
+
     for 1 .. $rows -> $current-row {
         for 1 .. $cols -> $current-col {
             my $value = $current-row * $current-col;
@@ -133,7 +133,7 @@ The result of the execution is like the following:
   2     |       2       4       6       8       10
   3     |       3       6       9       12      15
 
-Distinct values: 
+Distinct values:
 1, 2, 3, 4, 5, 6, 8, 10, 9, 12, 15
 
 ```

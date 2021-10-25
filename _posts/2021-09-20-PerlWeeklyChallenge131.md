@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 131](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0131/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -28,7 +28,7 @@ In the following, the assigned tasks for [Challenge 110](https://perlweeklychall
 
 The first task was about splitting an incoming set of ordered integers into array, so that each array contains consecutive values.
 <br/>
-I decided to use an array `@results` that acts as *an array of arrays* where each embedded array is one of the resulting arrays required by the task. It is quite clear that the first array in `@results` is the first element in the list of input integers. 
+I decided to use an array `@results` that acts as *an array of arrays* where each embedded array is one of the resulting arrays required by the task. It is quite clear that the first array in `@results` is the first element in the list of input integers.
 <br/>
 Then it does suffice to iterate over the array of integers (skipping the first element) and see if *the last element of the last sub-array* has a distance of `1` from the current value. If the distance is `1` the value is pushed into the very last array in the `@results`, otherwise it means a new sub array must be created with the starting element as the current one.
 <br/>
@@ -88,5 +88,3 @@ sub MAIN( Str $delimiters where { $delimiters.chars %% 2 },
 ```
 <br/>
 <br/>
-
-
