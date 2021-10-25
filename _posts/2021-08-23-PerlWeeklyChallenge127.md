@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 127: no need for coffee!" 
+title:  "Perl Weekly Challenge 127: no need for coffee!"
 author: Luca Ferrari
 tags:
 - raku
@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 127](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0127/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -77,7 +77,7 @@ sub MAIN() {
     my @intervals = [ [1,4], [3,5], [6,8], [12, 13], [3,20] ];
 
     my %conflicts;
-    
+
     for 0 ..^ @intervals.elems -> $i {
         %conflicts{ @intervals[ $i ] }++ if is-conflict( $_, @intervals[ $i ] ) for @intervals[ 0 .. $i - 1 ];
     }
@@ -93,7 +93,7 @@ The end result of this script is as follows:
 <br/>
 <br/>
 ```shell
-% raku ch-2.p6 
+% raku ch-2.p6
 3 20 conflicts 2 times
 3 5 conflicts 1 times
 ```

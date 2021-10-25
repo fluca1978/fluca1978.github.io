@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 129: trees and sums" 
+title:  "Perl Weekly Challenge 129: trees and sums"
 author: Luca Ferrari
 tags:
 - raku
@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 129](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0129/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -85,7 +85,7 @@ Each node is initialized with a *deep* `level` from the root, so once I found th
 
 The second task was about summing two linked list starting from the end (rightmost elements) even when the lists are unbalaced and keeping each sum value less than `10`.
 <br/>
-I created a `LL` class that implements a single node in the list, with the `next` field for tracking the rightmost element of the current one. 
+I created a `LL` class that implements a single node in the list, with the `next` field for tracking the rightmost element of the current one.
 <br/>
 To do the sum I created a `pop-last` method that removes and returns the rightmost one element from the list. More in detail, the element is not removed but made un-`available`, but this is an internal detail. Therefore, I cycle for the `max` length of the two lists, that means on all common elements, placing a default `0` value where the element is absent in the list.
 Then I do sum them usin a temporary variable `$sum` and a `$carry` depending on the final result.

@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 114](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0114/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -54,8 +54,8 @@ The second task was a kind of one liner too: find out a number that has the same
 <br/>
 ```raku
 sub MAIN( Int $N where { $N > 0 } ) {
-    say $_ and exit if ( $N.base( 2 ).split( '' ).grep( '1' ).elems 
-                              == $_.base( 2 ).split( '' ).grep( '1' ).elems ) 
+    say $_ and exit if ( $N.base( 2 ).split( '' ).grep( '1' ).elems
+                              == $_.base( 2 ).split( '' ).grep( '1' ).elems )
                                   for $N ^.. Inf;
 
 }

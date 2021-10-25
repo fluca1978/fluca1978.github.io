@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 122](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0122/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -36,7 +36,7 @@ The application is as follows:
 multi sub MAIN( *@N where { @N.elems == @N.grep( * ~~ Int ).elems }) {
     my @average;
     @average.push: (@N[ 0 .. @average.elems - 1 ].sum + $_) / ( @average.elems + 1 ) for @N;
-    
+
 
     @average.say;
 }
@@ -52,7 +52,7 @@ multi sub MAIN() {
         $sum += $_;
         @average.push: $sum / ( @average.elems + 1 );
         "Average trend so far: { @average.say }";
-        
+
     }
 }
  ```

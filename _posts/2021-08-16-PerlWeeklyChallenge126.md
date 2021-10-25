@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 126: counting mines!" 
+title:  "Perl Weekly Challenge 126: counting mines!"
 author: Luca Ferrari
 tags:
 - raku
@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 110](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0110/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 126](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0126/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
@@ -118,7 +118,7 @@ sub MAIN() {
     my $columns = @input[ 0 ].elems;
 
 
-    
+
 
     my ( $current-row, $current-column ) = 0, 0;
     for 0 ..^ $rows -> $current-row {
@@ -134,7 +134,7 @@ sub MAIN() {
 ```
 <br/>
 <br/>
- 
+
 As you can see, the `@input` array contains the mine field, and the first step is to compute the number of rows and columns, than to do a nested loop to print either the mine or the number computed by `compute-mines`.
 <br/>
 The final result is something like the following:
@@ -144,7 +144,7 @@ The final result is something like the following:
 ```shell
 % raku ch-2.p6
 x101x2xxxx
-110224355x
+126224355x
 0013x3x2x2
 111xx41222
 x113x2001x
