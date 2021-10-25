@@ -123,4 +123,24 @@ As an example of output:
 In the above there are `4` solutions, that are displayed as expanded sums in the subsequent lines.
 ```
 
+
+## Another, shorter, implementation of the second task
+
+After lunch, I realized there could be a shorter implementation of this that uses the `grep` filter.
+
+<br/>
+<br/>
+
+``` raku
+my @fibonacci = 1, 1, * + * ... * > $n;
+my @solutions = @fibonacci.unique.combinations.grep( *.sum == $n );
+@solutions.elems.say;
+.join( ' + ' ).say for @solutions;
+```
+<br/>
+<br/>
+
+First, the `@fibonacci` is computed by means of a sequence, and is stopped as soon as we find the first element greater than the expected value.
+<br/>
+Then, I do `grep` considering the `sum` of the array of combinations and look for a value as expected. The rest is the same printing as in the above piece of code.
 ```
