@@ -15,7 +15,7 @@ After an upgrade of my KDE Plasma desktop, I started to see an annoying toolbar 
 <br/>
 <br/>
 <center>
-<img src="/imgaes/posts/KDE/konsole_toolbars_1.png" />
+<img src="/images/posts/KDE/konsole_toolbars_1.png" />
 </center>
 <br/>
 <br/>
@@ -28,7 +28,7 @@ For some reason I don't know, the toolbars are not fully configured within the *
 <br/>
 <br/>
 <center>
-<img src="/imgaes/posts/KDE/konsole_toolbars_2.png" />
+<img src="/images/posts/KDE/konsole_toolbars_2.png" />
 </center>
 <br/>
 <br/>
