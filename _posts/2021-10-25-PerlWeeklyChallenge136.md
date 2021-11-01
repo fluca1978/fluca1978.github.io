@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 136: not too hard"
+title:  "Perl Weekly Challenge 137: palindrome sums on long years"
 author: Luca Ferrari
 tags:
 - raku
@@ -9,138 +9,163 @@ permalink: /:year/:month/:day/:title.html
 ---
 My personal solutions to the Perl Weekly Challenge.
 
-# Perl Weekly Challenge 136: not too hard
+# Perl Weekly Challenge 137: palindrome sums on long years
 
 It is sad that, after more than two years of me doing Raku, I still don't have any production code project to work on.
 Therefore, in order to keep my coding and Raku-ing (is that a term?) knowdledge, I try to solve every  [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks.
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 136](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0136/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 137](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0137/){:target="_blank"}.
 
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)
 
 
-
-## Linux Day 2021
-
-I gave a brief and quick presentation about Raku and how I feel about it. The talk is in italian, and can be seen as an extracted and cut video on [Odysee](https://odysee.com/@fluca1978:d/2021_LINUXDAY_RAKU:7){:target="_blank"}.
-
-
 <br/>
 <br/>
-<center>
-<iframe id="lbry-iframe" width="560" height="315" src="https://odysee.com/$/embed/2021_LINUXDAY_RAKU/71d1f405dc6bea384c040da06c0285c17229f6de?r=H6VMSo61DL7wbefVnV8hMQRoNY7ANu89" allowfullscreen></iframe>
-</center>
+And this week, as for the previous PWC, I had time to quickly implement the tasks also on PostgreSQL `plpgsql` language:
 <br/>
-<br/>
-
+- [Task 1 in plpgsql](#task1pg)
+- [Task 2 in plpgsql](#task2pg)
 
 
 
 
 
 <a name="task1"></a>
-## PWC 136 - Task 1
+## PWC 137 - Task 1
 
-The first task was a one-liner for me: find out if, given two numbers, their Greatest Common Divisor is a power of `2`.
+The first task was about finding out if a given year is a *long year*, meaning an year with *53* weeks instead of the "ordinary" 52. This is a piece of cake using the `Date` builtin class and its `week-number` method:
 
 <br/>
 <br/>
 ```raku
-sub MAIN( Int $m where { $m > 0 }, Int $n where { $n > 0 } ) {
-    ( [gcd] $m, $n ) %% 2 ?? '1'.say !! '0'.say;
+sub MAIN() {
+    for 1900 .. 2100 -> $year {
+        $year.say if Date.new( '%04d-12-31'.sprintf( $year ) ).week-number == 53;
+    }
 }
-
 ```
 <br/>
 <br/>
 
-It work as follows:
-- it computes the Greatest Common Divisor by using the `gcd` built-in operator;
-- is compares the result with the `%%` operator to see if it is a multiple of `2`, that means also if it is a positive power of `2`;
-- the ternary operatory prints out `1` or `0` depending respectively on success or failure.
+It could have also been written in a single line, using the postfix `for`, but the idea remains the same: iterate on every year, build a  `Date` object for the last day of the year, and get the week number via the `week-number` method.
+
 
 
 
 <a name="task2"></a>
-## PWC 136 - Task 2
+## PWC 137 - Task 2
 
-The second task involved somehow the Fibonacci's serie and its sum: given a positive number, find out all available combinations of a trimmed Fibonacci's series in order to match exactly the given sum.
+In this task, given an integer value greater than `19` (that means, with at least two digits), we need to see if it is a *Lychrel* number. The idea is that, given a number, you keep adding it with its palindrome and see if the result is palindrome too. If it is, stop, the number is a Lychrel one, otherwise sum the result to its palindrome and go further.
 
 <br/>
 <br/>
 ```raku
-sub MAIN( Int $n where { $n > 1 } ) {
-    my @fibonacci;
-    @fibonacci.push: 1, 1;
-    my %solutions;
+sub MAIN( Int $n where { 10 <= $n <= 10000 }, Bool :$verbose = False )  {
 
-    # compute a reduced fibonacci sequence up to the sum of the number given
-    @fibonacci.push: @fibonacci[ * - 1 ] + @fibonacci[ * - 2 ]  while $n > ( @fibonacci[ * - 1] + @fibonacci[ * - 2 ]);
+    my ( $result, $iteration ) = $n,0;
+    while ( $result < 10_000_000 && $iteration < 500 ) {
+        $iteration++;
+        $result += $result.split( '' ).reverse.join;
+        if $result == $result.split( '' ).reverse.join {
+            '0'.say;
+            "Found $result after $iteration iterations".say if $verbose;
+            exit;
+        }
+    }
 
-
-    # iterate over all the available numbers, and compute the sum
-    # and if the sum does match, add the array to the hash of solutions
-    # with a stringified key representation
-    %solutions{ $_.join( ' + ') } = $_ if ( ( [+] $_ ) == $n ) for @fibonacci.combinations.unique;
-
-    # print the number of keys
-    say %solutions.keys.elems;
-    # and print all the sums
-    .join( " + " ).say for %solutions.values;
-
+    '1'.say;
+    "Cannot find Lychrel number for $n".say if $verbose;
 }
+```
+<br/>
+<br/>
 
+The `$result` contains the result of summing a number with its palindrome at every step. To get quickly the palindrome of a number I do use `split` to get its digits, `reverse` to reverse the array, and `join` to re-assemble it. It is not the only way, it can be used also `flip` on a `Str`, or other techniques.
+<br/>
+The `$verbose` flag allows for printing of some messages about the sattus of the computations.
+
+
+<a name="task1pg"></a>
+## PWC 137 - Task 1 in PostgreSQL `plpgsql`
+
+The implementation in `plpgsql` is a mirror of the implementation in Raku:
+
+<br/>
+<br/>
+
+``` plpgsql
+CREATE OR REPLACE FUNCTION
+f_long_year()
+RETURNS SETOF int
+AS $CODE$
+DECLARE
+        current_year int;
+BEGIN
+        FOR current_year IN 1900 .. 2100 LOOP
+           IF date_part( 'week', make_Date( current_year, 12, 31 ) ) = 53 THEN
+              RETURN NEXT current_year;
+           END IF;
+        END LOOP;
+
+        RETURN;
+END
+$CODE$
+LANGUAGE plpgsql;
 
 ```
 <br/>
 <br/>
 
-First of all, I compute a reduced `@fibonacci` array of numbers: numbers are pushed to the array only if their Fibonacci sum clause does not result greater than the given number.
+The trick here is to use `date_part`, that is a *magical* function that allows for extracting different information from a date. The date is built with `make_date`, that accepts the year, the month and the day. It is not mandatory, since a string concation is interpreted in the right sense in PostgreSQL, but using  `make_date` makes the function easier to red.
 <br/>
-Then I build an hash `%solutions` indexed with a string representation of the current Fibonacci's sequence of numbers, and with a value of a subset of the Fibonacci's array if the sum of such array is the searched for value.
-<br/>
-Using an hash guarantees that I'm not going to find out duplicated sequences, and therefore it does suffice to print out the number of keys and, optionally, the human readable sums.
-<br/>
-As an example of output:
+It is also important to note that the `for` loop does a `RETURN NEXT`, that is kind of *yeld*: it allows the function to append a new value to the result set and proceed further with the looping. This allows the client to get results as a *stream* and the function to not store all of them while performing the computation.
+
+<a name="task2pg"></a>
+## PWC 137 - Task 2 in PostgreSQL `plpgsql`
+
+The second task is a `plpgsql` re-implementation of the Raku solution.
 
 <br/>
 <br/>
 
-```shell
- % raku ch-2.p6 16
-4
-3 + 5 + 8
-1 + 2 + 5 + 8
-1 + 2 + 13
-3 + 13
+``` plpgsql
+CREATE OR REPLACE FUNCTION
+f_lychrel( n int, verb boolean default false )
+RETURNS smallint
+AS $CODE$
+DECLARE
+        result    bigint := n;
+        iteration int    := 0;
+BEGIN
+        IF n < 10 OR n > 10000 THEN
+           RAISE 'n is out of bounds!';
+        END IF;
+
+        WHILE result < 10000000 AND iteration < 500 LOOP
+              iteration = iteration + 1;
+              result    = result + reverse( result::text )::int;
+              IF result = reverse( result::text )::int THEN
+                 IF verb THEN
+                    RAISE INFO 'Found % after % iterations', result, iteration;
+                 END IF;
+
+                 RETURN 0;
+             END IF;
+
+        END LOOP;
+
+        RETURN 1;
+END
+$CODE$
+LANGUAGE plpgsql;
 
 ```
 <br/>
 <br/>
-In the above there are `4` solutions, that are displayed as expanded sums in the subsequent lines.
-```
 
-
-## Another, shorter, implementation of the second task
-
-After lunch, I realized there could be a shorter implementation of this that uses the `grep` filter.
-
+In the case of `plpgsql` we can exploit the `reverse` function that does the flipping of a given number, converted as a `text` (i.e., a string) and then reconvert the result as a number.
 <br/>
-<br/>
-
-``` raku
-my @fibonacci = 1, 1, * + * ... * > $n;
-my @solutions = @fibonacci.unique.combinations.grep( *.sum == $n );
-@solutions.elems.say;
-.join( ' + ' ).say for @solutions;
-```
-<br/>
-<br/>
-
-First, the `@fibonacci` is computed by means of a sequence, and is stopped as soon as we find the first element greater than the expected value.
-<br/>
-Then, I do `grep` considering the `sum` of the array of combinations and look for a value as expected. The rest is the same printing as in the above piece of code.
-```
+It is interesting to note how the `plpgsql` becomes quickly longer than the Raku implementation, and this is due to the syntax of conditionals but also to the fact that we need to check arguments within the core of the function, instead of being able to declare complex conditions on the argument list.
