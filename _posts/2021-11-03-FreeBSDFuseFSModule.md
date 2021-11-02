@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "FreeBSD 13 and FuseFS: can't load fuse**
+author: Luca Ferrari
+tags:
+- freebsd
+- fusefs
+permalink: /:year/:month/:day/:title.html
+---
+Argh! A FreeBSD module changed its name but not its documentation! 
+
+# FreeBSD 13 and FuseFS: can't load fuse
+
+This is a short and simple post related to FreeBSD 13 and FuseFS. Chances are that when you'll read this, the problem will be already fixed.
+<br/>
+***TLDR*: in the upgrading from FreeBSD 12 to FreeBSd 13 the *fuse* kernel module has been renamed to *fusefs*.** 
+<br/>
+<br/>
+What is the problem, thus?
+<br/>
+When you install something dependent on FuseFS or the latter, you will get some post-install information like the following:
+
+<br/>
+<br/>
+```shell
+=====
+Message from fusefs-libs-2.9.9_2:
+
+--
+Install the FUSE kernel module (kldload fusefs) to use this port.
+=====
+Message from veracrypt-1.24_4:
+
+--
+Veracrypt was installed
+
+1) Veracrypt needs security/sudo port to mount disk volumes. You must modify  
+   /usr/local/etc/sudoers file to add Veracrypt user(s). Don't use root user
+
+2) Please ensure that the fusefs kmod is loaded prior to use:
+
+$ kldload fuse
+
+If you want load fuse.ko on boot time, please add the following to /boot/loader.conf
+
+fusefs_load="YES"
+
+3) Enjoy it
+```
+<br/>
+<br/>
+
+At the point `2` there is the explicit instruction to load the kernal module via `kldload fuse`.
+But the module is called **`fusefs`** since FreeBSD 13, therefore **the right instruction is `kldload fusefs`**.
+<br/>
+It is also important to note that such instruction must be executed by a superuser, either `root` or via `sudo`/`doas`.
+<br/>
+I've posted this oddity [to the FreeBSD forums](https://forums.freebsd.org/threads/fusefs-post-install-instruction-referencing-wrong-module-name.82757/){:target="_blank"} in the hope to help the system to improve and be as much accurate as possible.
+<br/>
+I've also submitted a [bug](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=259612){:target="_blank"}.
