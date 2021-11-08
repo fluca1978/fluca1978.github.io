@@ -3,12 +3,13 @@ layout: post
 title:  "doas vs sudo"
 author: Luca Ferrari
 tags:
-- freebsd
 - openbsd
+- freebsd
 - sudo
 - doas
 permalink: /:year/:month/:day/:title.html
 ---
+What are you using to gain privileges?
 
 # `doas` vs `sudo`
 

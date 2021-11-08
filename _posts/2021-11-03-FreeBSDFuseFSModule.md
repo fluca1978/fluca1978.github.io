@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Veracrypt, FreeBSD 13 and FuseFS: can't load fuse**
+title:  "Veracrypt, FreeBSD 13 and FuseFS: can't load fuse" 
 author: Luca Ferrari
 tags:
 - freebsd
