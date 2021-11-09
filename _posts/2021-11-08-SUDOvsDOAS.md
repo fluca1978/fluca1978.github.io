@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "doas vs sudo"
+title:  "doas or sudo"
 author: Luca Ferrari
 tags:
 - openbsd
@@ -11,7 +11,7 @@ permalink: /:year/:month/:day/:title.html
 ---
 What are you using to gain privileges?
 
-# `doas` vs `sudo`
+# `doas` or `sudo`
 
 Yesterday I saw a poll on the FreeBSD forums: a [survey](https://forums.freebsd.org/threads/sudo-or-doas.82795/page-2#post-540595){:target="_blank"} about the usage of `sudo` or `doas` to execute commands as a privileged user.
 <br/>
