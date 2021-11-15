@@ -182,7 +182,7 @@ BEGIN
     repeating_part_size :=  current_value - 1;
     repeating_part      := substr( rational_part, 1, repeating_part_size );
 
-    RAISE DEBUG 'Inspecting % -> % {%} => % ( %, % )',
+    RAISE DEBUG 'Inspecting % -> % % => % ( %, % )',
       current_value,
       rational_part,
       repeating_part_size,
