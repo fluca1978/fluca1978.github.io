@@ -11,7 +11,7 @@ Please note I've used the special placeholder *et al.* on publications I don't l
 
 # Books
 
-L. Ferrari, E. Pirozzi, **[Learn PostgreSQL](https://www.packtpub.com/product/learn-postgresql-12/9781838985288){:target="_blank"}**, Packt Publising, 2020
+L. Ferrari, E. Pirozzi, **[Learn PostgreSQL](https://www.packtpub.com/product/learn-postgresql-12/9781838985288){:target="_blank"}**, Packt Publising, 2020, *ISBN: 9781838985288*
 
 <center>
 <a href="https://www.packtpub.com/product/learn-postgresql-12/9781838985288" target="_blank">
@@ -22,7 +22,7 @@ L. Ferrari, E. Pirozzi, **[Learn PostgreSQL](https://www.packtpub.com/product/le
 <br/>
 
 
-L. Ferrari, **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide){:target="_blank"}**, Packt Publishing, 2018
+L. Ferrari, **[PostgreSQL 11 Server Side Programming Quick Start Guide](https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide){:target="_blank"}**, Packt Publishing, 2018, *ISBN: 9781789342222*
 
 <center>
 <a href="https://www.packtpub.com/big-data-and-business-intelligence/postgresql-11-server-side-programming-quick-start-guide" target="_blank_">
