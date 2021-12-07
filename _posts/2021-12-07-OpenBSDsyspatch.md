@@ -150,3 +150,21 @@ As far as I understand, that means that the program `reorder_kernel` did not com
 
 The first step is optional, but since `reorder_kernel` could take a long time, I suggest you to do it in order to avoid having to re-run `reorder_kernel`. A reboot, in this case, should not be needed.
 
+<br/>
+To find out what was wrong during the relinking phase, it is possible to inspect a log produced into `/usr/share/relink/kernel/GENERIC/relink.log`, that can also provide instructions on how to fix the problem.
+
+<br/>
+<br/>
+```shell
+% doas cat /usr/share/relink/kernel/GENERIC/relink.log 
+sha256: /var/db/kernel.SHA256: no properly formatted checksum lines found
+sha256: /bsd does not exist in /var/db/kernel.SHA256
+
+Failed to verify /bsd's checksum, therefore a randomly linked kernel (KARL)
+is not being built. KARL can be re-enabled for next boot by issuing as root:
+
+sha256 -h /var/db/kernel.SHA256 /bsd
+
+```
+<br/>
+<br/>
