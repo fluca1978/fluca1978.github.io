@@ -92,9 +92,9 @@ It was asked to find out the first couple of *pentagons* numbers that summed giv
          for %pentagons.keys.sort -> $index-right {
              next if $index-left == $index-right;
 
-
              my ( $sum, $diff ) = %pentagons{ $index-left } + %pentagons{ $index-right },
                                   abs( %pentagons{ $index-left } - %pentagons{ $index-right } );
+
 
              # this is too slow, therefore I use an inverse hash!
              # next if ! %pentagons.values.grep( * ~~ $sum );
@@ -103,7 +103,7 @@ It was asked to find out the first couple of *pentagons* numbers that summed giv
              next if %inverse-pentagons{ $sum }:!exists;
 
              "P( $index-left ) + P( $index-right ) = { %pentagons{ $index-left } } + { %pentagons{ $index-right } } = $sum = P( { %inverse-pentagons{ $sum } } )".say;
-             "P( $index-left ) - P( $index-right ) = { %pentagons{ $index-left } } + { %pentagons{ $index-right } } = $diff = P( {%inverse-pentagons{ $diff } } )".say;
+             "P( $index-left ) - P( $index-right ) = { %pentagons{ $index-left } } + { %pentagons{ $index-right } } = $diff = P( { %inverse-pentagons{ $diff } } )".say;
              exit;
          }
      }
