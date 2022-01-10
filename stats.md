@@ -7,7 +7,7 @@ permalink: /stats/
 Statistic Data about my Blog and Other Stuff
 ---
 
-In the case it can be interesting, here are some raw statistical information about my blog activity and the number of post per year. 
+In the case it can be interesting, here are some raw statistical information about my blog activity and the number of post per year.
 <br/>
 <br/>
 These numbers are work in progress, of course.
@@ -20,6 +20,7 @@ I've also an [account on Gitlab](https://gitlab.com/{{ site.footer-links.gitlab 
 
 # Statistic Data About this *Blog*
 {% include stats/quick-links.md %}
+{% include stats/2022.md %}
 {% include stats/2021.md %}
 {% include stats/2020.md %}
 {% include stats/2019.md %}
@@ -35,4 +36,3 @@ I've also an [account on Gitlab](https://gitlab.com/{{ site.footer-links.gitlab 
 {% include stats/2009.md %}
 {% include stats/2008.md %}
 {% include stats/credits.md %}
-
