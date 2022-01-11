@@ -27,7 +27,7 @@ In the following, the assigned tasks for [Challenge 147](https://perlweeklychall
 And this week, as for the previous PWC, I had time to quickly implement the tasks also on PostgreSQL `plpgsql` language:
 <br/>
 - [Task 1 in plpgsql](#task1pg)
-- [Task 2 in plpgsql](#task2pg)
+- [Task 2 in plpgsql](#task2pg) and a [CTE only solution](#task2pgb)
 
 
 
@@ -344,3 +344,64 @@ Time: 7257,715 ms (00:07,258)
 
 As you can see, this requires a lot more time than the Raku solution, but please note I've run this on a busy server.
 However, in this case SQL results in a much more compact and declarative approach than Raku is, essentially the `EXISTS` query.
+
+
+
+<a name="task2pgb"></a>
+## PWC 147 - Task 2 in PostgreSQL: a CTE only solution
+
+The solution for the second task can be rewritten using only a *recusrive CTE*.
+Instead of using a table, the content of the `pentagons` numbers can be materialized with a recursive common table expression that exploits the very same function `f_pentagon` to compute a single pentagon value.
+<br/>
+But most notably, instead of using a record based approach, as in the function `f_pentagon_pairs`, the query can be expressed as a full join:
+
+<br/>
+<br/>
+
+``` sql
+WITH RECURSIVE pentagons( n, p )
+AS
+(
+        SELECT 1 AS n
+               , f_pentagon( 1 ) AS p
+
+UNION
+        SELECT p.n + 1
+               , f_pentagon( p.n + 1 )
+        FROM pentagons p
+        WHERE p.n < 5000
+)
+
+SELECT format( '%s, %s', l.n, r.n ) AS pentagon_pairs
+FROM pentagons l, pentagons r
+WHERE EXISTS(
+      SELECT *
+      FROM pentagons ps
+      WHERE ps.p = l.p + r.p
+      )
+AND EXISTS (
+    SELECT *
+    FROM pentagons ps
+    WHERE ps.p = abs( l.p - r.p )
+    )
+;
+
+```
+<br/>
+<br/>
+
+The query executes in a little less time than the approach using the table and the record-based function:
+
+<br/>
+<br/>
+
+``` sql
+ pentagon_pairs
+----------------
+ 1020, 2167
+ 2167, 1020
+(2 rows)
+
+Time: 5820,066 ms (00:05,820)
+
+```
