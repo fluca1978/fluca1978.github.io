@@ -14,6 +14,7 @@ It does not happen often, but FreeBSD sometimes needs to get rebooted. Well, in 
 <br/>
 Anyway, my FreeBSD 13 machine was booting slow, spending a lot of time doing some `sendmail` related stuff, in particular what seemed to me a reverse DNS lookup.
 <br/>
+<br/>
 **But I don't use `sendmail` nor any related service on that machine**, so why is that enabled?
 <br/>
 I did not have too much time to dig it, but apparently there are some services that are now turned on by default (or I have done some wrong selection at installation time).
