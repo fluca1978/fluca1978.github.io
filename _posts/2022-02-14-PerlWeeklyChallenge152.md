@@ -22,15 +22,6 @@ In the following, the assigned tasks for [Challenge 152](https://perlweeklychall
 - [Task 2](#task2)
 
 
-<br/>
-
-<br/>
-And this week, as for the previous PWC, I had time to quickly implement the tasks also on PostgreSQL `plpgsql` language:
-<br/>
-- [Task 1 in plpgsql](#task1pg)
-- [Task 2 in plpgsql](#task2pg) and a [CTE only solution](#task2pgb)
-
-
 
 
 
