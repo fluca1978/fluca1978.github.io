@@ -3,8 +3,8 @@ layout: post
 title:  "Perl Weekly Challenge 153: recursive CTEs"
 author: Luca Ferrari
 tags:
-- perlweeklychallenge
 - postgresql
+- perlweeklychallenge
 - planet-postgresql-org
 permalink: /:year/:month/:day/:title.html
 ---
