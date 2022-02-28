@@ -28,6 +28,13 @@ and for other PWC in the past, I've done also a couple of possible implementatio
 - [Task 1 in PostgreSQL](#task1pg)
 - [Task 2 in PostgreSQL](#task2pg)
 
+<br/>
+and for the sake of some Perl 5, let's do some stuff also in PostgreSQL Pl/Perl:
+
+<br/>
+- [Task 1 in PostgreSQL Pl/Perl](#task1plperl)
+- [Task 2 in PostgreSQL Pl/Perl](#task2plperl)
+
 <a name="task1"></a>
 ## PWC 154 - Task 1
 
@@ -215,3 +222,137 @@ LIMIT 10;
 <br/>
 
 I join the function with `generate_series` to get `21` values, and then I simply do a `SELECT distinct` to get the unique values. I limit the result to `10`, as asked by the task and order ascending.
+
+
+<a name="task1plperl"></a>
+## PWC 154 - Task 1 in PostgreSQL Pl/Perl
+
+The idea is to mix and match some SQL stuff with some Perl stuff. I create a table that contains all the excluded permutations, and that is the easy part. Than I declare a Perl function to build up all the permutations of the given string. To achieve this I used `List::Permutor`, that has to be installed as a module so that PostgreSQL can find it.
+Last, a function `find_missing_permutations` builds up an SQL query to mimic the SQL implementation, so to exclude from all the permutations the content of the table.
+
+<br/>
+<br/>
+
+``` sql
+CREATE SCHEMA IF NOT EXISTS pwc154;
+
+CREATE TABLE IF NOT EXISTS
+pwc154.permutations
+(
+  pk int generated always as identity
+  , perm text not null
+  , primary key( pk )
+);
+
+TRUNCATE pwc154.permutations;
+
+INSERT INTO pwc154.permutations( perm )
+VALUES
+( 'PELR' ),
+( 'PREL' ),
+( 'PERL' ),
+( 'PRLE' ),
+( 'PLER' ),
+( 'PLRE' ),
+( 'EPRL' ),
+( 'EPLR' ),
+( 'ERPL' ),
+( 'ERLP' ),
+( 'ELPR' ),
+( 'ELRP' ),
+( 'RPEL' ),
+( 'RPLE' ),
+( 'REPL' ),
+( 'RELP' ),
+( 'RLPE' ),
+( 'RLEP' ),
+( 'LPER' ),
+( 'LPRE' ),
+( 'LEPR' ),
+( 'LRPE' ),
+( 'LREP' )
+;
+
+
+CREATE OR REPLACE FUNCTION pwc154.all_permutations( text )
+RETURNS SETOF text
+AS $CODE$
+ use List::Permutor;
+ my @letters = split( //, $_[ 0 ] );
+ my $engine  = List::Permutor->new( @letters );
+ while ( my @permutation = $engine->next() ) {
+    my $current = join( '', @permutation );
+    return_next( join( '', @permutation ) );
+ }
+
+ return undef;
+$CODE$
+LANGUAGE plperlu;
+
+
+CREATE OR REPLACE FUNCTION pwc154.find_missing_permutations( text )
+RETURNS SETOF text
+AS $CODE$
+  elog( INFO, "SELECT perm FROM pwc154.all_permutations( $_[ 0 ] ) WHERE perm NOT IN ( SELECT perm FROM pwc154.permutations )" );
+  my $result_set = spi_exec_query( "SELECT perm FROM pwc154.all_permutations( " . quote_literal( $_[ 0 ] ) . " ) t(perm) WHERE perm NOT IN ( SELECT perm FROM pwc154.permutations )" );
+  for my $i ( 0 .. $result_set->{ processed } ) {
+      return_next( $result_set->{ rows }[ $i ]->{ perm } );
+  }
+  return undef;
+$CODE$
+language plperl;
+
+```
+<br/>
+<br/>
+
+Note that in order to use an external module, the `all_permutations` function must be run as `plperlu`, that means *untrusted* language within PostgreSQL.
+
+
+
+<a name="task2plperl"></a>
+## PWC 154 - Task 2 in PostgreSQL Pl/Perl
+
+The second task is based on a pile of Perl functions: one computes a single Padovan number using recursion via SQL; the seconda builds all the Padovan numbers up to a given limit. Last an SQL query extracts the first `10` unique numbers.
+
+
+<br/>
+<br/>
+
+``` sql
+CREATE SCHEMA IF NOT EXISTS pwc154;
+
+
+CREATE OR REPLACE FUNCTION
+pwc154.padovan_plperl(  int )
+RETURNS int
+AS $CODE$
+ return 1 if $_[0] <= 2;
+ my ( $a, $b ) = ( $_[ 0 ] - 3, $_[ 0 ] - 2 );
+ my $rs = spi_exec_query( "SELECT pwc154.padovan_plperl( $a ) + pwc154.padovan_plperl( $b ) AS p" );
+ return $rs->{ rows }[ 0 ]->{ p };
+
+$CODE$
+LANGUAGE plperl;
+
+CREATE OR REPLACE FUNCTION
+pwc154.padovans_up_to( int )
+RETURNS SETOF int
+AS $CODE$
+ for my $i ( 0 .. $_[ 0 ] ) {
+     my $rs = spi_exec_query( "SELECT pwc154.padovan_plperl( $i ) AS p" );
+     return_next(  $rs->{ rows }[ 0 ]->{ p } );
+ }
+
+ return undef;
+$CODE$
+LANGUAGE plperl;
+
+
+
+SELECT distinct( p.p )
+FROM pwc154.padovans_up_to( 20 ) p
+ORDER BY 1
+LIMIT 10;
+
+```
