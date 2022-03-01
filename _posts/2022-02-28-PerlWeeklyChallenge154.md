@@ -68,7 +68,7 @@ The idea is really simple:
 ## PWC 154 - Task 2
 
 *Padovan numbers*, something I was not aware of. Essentially, a Padovan number `P(n)` is made by the sum of `P(n-3) + P(n-2)` with the bootstrap terms `P(0) = P(1) = P(2) =1`.
-The task required to get the first ten unique Padovan numbers, that means I don't know how many Padovan numbers I have to compute, and this sounds good for lazyness:
+The task required to get the first ten unique and prime Padovan numbers, that means I don't know how many Padovan numbers I have to compute, and this sounds good for lazyness:
 
 <br/>
 <br/>
@@ -87,7 +87,7 @@ sub MAIN( Int $limit where { $limit > 0 } = 10 ) {
     my @unique-padovan-numbers;
     while ( @unique-padovan-numbers.elems < $limit ) {
         my $current = @padovan-numbers[ $current-index ];
-        while ( @unique-padovan-numbers.grep( $current ) ) {
+        while ( @unique-padovan-numbers.grep( $current ) || ! $current.is-prime  ) {
             $current = @padovan-numbers[ ++$current-index ];
         }
 
@@ -199,29 +199,61 @@ LANGUAGE plpgsql;
 <br/>
 <br/>
 
-As you can see, the function is really simple.
+As you can see, the function is really simple. It is simple also the function to check if a number is prime:
+
 <br/>
-Then I used the function in a CTE, not recursive, with a limit of `20` numbers to be generated. That's because I already know that it is a safe horizon to get the expected results.
+<br/>
+
+``` sql
+CREATE OR REPLACE FUNCTION
+pwc154.is_prime( n int )
+RETURNS bool
+AS $CODE$
+DECLARE
+    i int;
+BEGIN
+    FOR i IN 2 .. n - 1 LOOP
+        IF n % i = 0 THEN
+           RETURN false;
+        END IF;
+    END LOOP;
+
+    RETURN true;
+END
+$CODE$
+LANGUAGE plpgsql;
+
+```
+<br/>
+<br/>
+
+Then I used the functions in a CTE, not recursive, with a limit of `50` numbers to be generated. That's because I already know that it is a safe horizon to get the expected results.
 
 <br/>
 <br/>
 
 ``` sql
 WITH
-padovan_20 AS (
+padovan AS (
    SELECT n, pwc154.padovan( n ) AS p
-   FROM generate_series( 0, 20 ) n
+   FROM generate_series( 0, 50 ) n
 )
-SELECT distinct( p.p )
-FROM padovan_20 p
+, padovan_prime
+AS (
+  SELECT p, pwc154.is_prime( p ) AS prime
+  FROM padovan p
+)
+SELECT distinct( p )
+FROM padovan_prime
+WHERE prime
 ORDER BY 1
-LIMIT 10;
-
+LIMIT 10
+;
 ```
 <br/>
 <br/>
 
-I join the function with `generate_series` to get `21` values, and then I simply do a `SELECT distinct` to get the unique values. I limit the result to `10`, as asked by the task and order ascending.
+I join the function with `generate_series` to get `51` values, and then I simply do a `SELECT distinct` to get the unique values. I limit the result to `10`, as asked by the task and order ascending.
 
 
 <a name="task1plperl"></a>
@@ -336,6 +368,19 @@ $CODE$
 LANGUAGE plperl;
 
 CREATE OR REPLACE FUNCTION
+pwc154.plperl_is_prime( int )
+RETURNS bool
+AS $CODE$
+   for my $i ( 2 .. ( $_[0] - 1 ) ) {
+      return 0 if $_[0] % $i == 0;
+   }
+
+  return 1;
+$CODE$
+LANGUAGE plperl;
+
+
+CREATE OR REPLACE FUNCTION
 pwc154.padovans_up_to( int )
 RETURNS SETOF int
 AS $CODE$
@@ -349,9 +394,9 @@ $CODE$
 LANGUAGE plperl;
 
 
-
 SELECT distinct( p.p )
-FROM pwc154.padovans_up_to( 20 ) p
+FROM pwc154.padovans_up_to( 50 ) p
+WHERE pwc154.plperl_is_prime( p.p ) = true
 ORDER BY 1
 LIMIT 10;
 
