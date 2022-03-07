@@ -24,12 +24,6 @@ In the following, the assigned tasks for [Challenge 155](https://perlweeklychall
 
 
 <br/>
-and for other PWC in the past, I've done also a couple of possible implementations in PostgreSQL:
-<br/>
-- [Task 1 in PostgreSQL](#task1pg)
-- [Task 2 in PostgreSQL](#task2pg)
-
-<br/>
 and for the sake of some Perl 5, let's do some stuff also in PostgreSQL Pl/Perl:
 
 <br/>
