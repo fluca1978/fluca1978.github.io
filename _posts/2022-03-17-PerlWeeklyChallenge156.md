@@ -10,6 +10,7 @@ permalink: /:year/:month/:day/:title.html
 ---
 My personal solutions to the Perl Weekly Challenge.
 
+
 # Perl Weekly Challenge 156: Pernicious weirdness
 
 It is sad that, after more than two years of me doing Raku, I still don't have any production code project to work on.
@@ -191,15 +192,15 @@ my $knapsack = Algorithm::Knapsack->new(
     capacity => $_[0],
     weights  => \@divisors,
 );
- 
+
 $knapsack->compute();
- 
+
 foreach my $solution ($knapsack->solutions()) {
     my @founds = @divisors[ $solution->@* ];
     my $sum = 0;
     $sum += $_ for ( @founds );
     return 0 if $sum == $_[0];
- 
+
 }
 
 
