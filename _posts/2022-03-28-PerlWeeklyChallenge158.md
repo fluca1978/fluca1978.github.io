@@ -294,3 +294,4 @@ WHERE pwc158.is_prime( pwc158.cuban( v ) )
 <br/>
 
 Here I use the SQL `pow` function to compute the difference between the cubes.
+There is the execution of `cuban` twice, and this could be optimized with a CTE.
