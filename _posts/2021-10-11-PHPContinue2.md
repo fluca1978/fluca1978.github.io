@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PHP Warning: \"continue\" targeting switch is equivalent to \"break\". Did you mean to use \"continue 2\"?" 
+title:  "PHP Warning: \"continue\" targeting switch is equivalent to \"break\". Did you mean to use \"continue 2\"?"
 author: Luca Ferrari
 tags:
 - php
@@ -39,12 +39,12 @@ Of course `switch` is not a looping construct, however in  [PHP the `switch` **i
 <br/>
 <br/>
 ```
-Note: In PHP the switch statement is considered a looping structure for the purposes of continue. continue behaves like break (when no arguments are passed) but will raise a warning as this is likely to be a mistake. If a switch is inside a loop, continue 2 will continue with the next iteration of the outer loop. 
+Note: In PHP the switch statement is considered a looping structure for the purposes of continue. continue behaves like break (when no arguments are passed) but will raise a warning as this is likely to be a mistake. If a switch is inside a loop, continue 2 will continue with the next iteration of the outer loop.
 ```
 <br/>
 <br/>
 
-So, not only the `switch` is considered and implemented as a looping block, but PHP considers a `break` a mistake inside a `switch`. Why? Because in a looping structure you probably want to `continue`, not to `break**.
+So, not only the `switch` is considered and implemented as a looping block, but PHP considers a `break` a mistake inside a `switch`. Why? Because in a looping structure you probably want to `continue`, not to `break`.
 <br/>
 **And this is why I don't believe PHP is a sane language:** reading the code you are going to find a keyword `continue`, that to my poor brain means, well, "continue", that however is going to be implemented as a "break".
 <br/>
@@ -81,10 +81,10 @@ The above piece of code produces the following output, because at each iteration
 <br/>
 ```shell
 % php test.php
-1 1-1 
-2 1-1 
-3 1-1 
-4 1-1 
+1 1-1
+2 1-1
+3 1-1
+4 1-1
 ```
 <br/>
 <br/>
@@ -95,22 +95,22 @@ If the `continue 3` is replaced with a `continue 2` the output changes, because 
 <br/>
 ```shell
 % php test.php
-1 1-1 
-1 2-1 
-1 3-1 
-1 4-1 
-2 1-1 
-2 2-1 
-2 3-1 
-2 4-1 
-3 1-1 
-3 2-1 
-3 3-1 
-3 4-1 
-4 1-1 
-4 2-1 
-4 3-1 
-4 4-1 
+1 1-1
+1 2-1
+1 3-1
+1 4-1
+2 1-1
+2 2-1
+2 3-1
+2 4-1
+3 1-1
+3 2-1
+3 3-1
+3 4-1
+4 1-1
+4 2-1
+4 3-1
+4 4-1
 ```
 <br/>
 <br/>
@@ -151,18 +151,18 @@ that produces the following output:
 <br/>
 ```shell
 % php test.php
-Loop 1 
-Two! 
-Four! 
-Loop 2 
-Two! 
-Four! 
-Loop 3 
-Two! 
-Four! 
-Loop 4 
-Two! 
-Four! 
+Loop 1
+Two!
+Four!
+Loop 2
+Two!
+Four!
+Loop 3
+Two!
+Four!
+Loop 4
+Two!
+Four!
 
 ```
 <br/>
