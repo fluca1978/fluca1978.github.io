@@ -19,6 +19,12 @@ So far so good, but my [Simple Jekyll Stat generator](https://github.com/fluca19
 <br/>
 And that made me digging a little to find out what was wrong.
 
+### 2022-04-21 UPDATE
+
+After digging and searching for, I [opened an issue against Rakudo](https://github.com/rakudo/rakudo/issues/4878#issuecomment-1104028574){:target="_blank"}.
+<br/>
+It is worth reading the discussion and the test I've made, that prove that the behavior has changed during time and that this is fine since, it is documented. Even if I think it could be better documented!
+
 ## The code
 
 The code that generated the problem was like the following:
