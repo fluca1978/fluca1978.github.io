@@ -71,6 +71,8 @@ I have also pushed little contributions, issues, or documentation to open source
 - [pgTAP](https://github.com/theory/pgtap){:target="_blank"}, a testing framework for PostgreSQL;
 - [pgBackRest](https://github.com/pgbackrest/pgbackrest){:target="_blank_"}, a PostgreSQL backup and recovery tool;
 - [pgBadger](https://github.com/darold/pgbadger){:target="_blank"}, a dashboard for PostgreSQL log analysis;
+- [pgagroal](https://github.com/agroal/pgagroal){:target="_blank"}, a PostgreSQL connection pooler;
+- [pgmoneta](https://github.com/pgmoneta/pgmoneta){:target="_blank}, a PostgreSQL backup tool;
 - [rakudobrew](https://github.com/tadzik/rakudobrew){:target="_blank"}, a Perl 6, Raku environment manager;
 - [IO::Tee](https://github.com/neilb/IO-Tee){:target="_blank"}, a `tee` module for Perl;
 - [sqitch](https://github.com/sqitchers/sqitch){:target="_blank"}, a database management tool.
@@ -82,6 +84,7 @@ Where I was learning, where I was teaching.
 
 ## As a lecturer
 
+- *PGTraining online event*, free online event on April 29th 2022, I gave a talk about `pgagroal`
 - *Linux Day 2021, Modena*, I gave a talk about `Raku` titled **[Il linguaggio della farfallina](https://odysee.com/@fluca1978:d/2021_LINUXDAY_RAKU:7){:target="_blank"}**
 - *PGTraining online event*, free online event on March 12th 2021, I gave a talk about `PgBackrest` **[pgBackRest](https://gitlab.com/pgtraining/slides/-/blob/master/webinar-20210312/slides/2021_PGTRAINING_PGBACKREST.pdf){:target="_blank"}** (offline recorded video in *italian* [available here](https://vimeo.com/523432651){:target="_blank"})
 - *PostgreSQL Interview Series*, Postgres Weekly: **[A chat with Luca Ferrari](https://superhighway.dev/luca-ferrari-interview){:target="_blank"}**
