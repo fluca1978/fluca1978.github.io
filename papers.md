@@ -44,11 +44,7 @@ Here it is a picture of myself in the end of 2020, when the second book I publis
 **[Improve your PostgreSQL Skills](https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/){:target="_blank"}**
 ebook edited out of an online course material for [BSD Magazine](http://bsdmag.org)
 
-<center>
-<a href="https://bsdmag.org/product/improve-your-postgresql-skills-course-ebook/" target="_blank">
-<img src="https://3d2ixy3hf5o5dllmr3zqz2qc-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/bsdworkshop.jpg" width="15%" />
-</a>
-</center>
+
 
 ## Free Ebooks
 - L. Ferrari et al.,
