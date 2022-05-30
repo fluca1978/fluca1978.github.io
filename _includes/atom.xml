@@ -11,7 +11,7 @@
 
 <!-- category: {{ include.tag }}  -->
   {% for post in site.posts %}
-  {% if post.tags contains include.tag %}
+  {% if include.tag == '*' or post.tags contains include.tag  %}
   <entry>
         <title>{{ post.title | xml_escape }}</title>
         <link href="{{ site.url }}{{ post.url }}" />
