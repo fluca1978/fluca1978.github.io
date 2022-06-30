@@ -37,20 +37,33 @@ My mother gave special credits to Flipper keeping a giant photo of him in her ph
 The last arrived, mostly due to the will of my wife and son, has been **Franzina** (*fringy*).
 I really don't like the name, but since she is used to it we  decided to keep it. And with the term *we* I really mean *my wife*.
 
+<br/>
 <center>
 <img src="/images/main/franzina.png" alt="Franzina" width="50%"/>
 </center>
+<br/>
 
-We saved her out of the kennel, and she is in love with my wife and my son. 
+We saved her out of the kennel, and she is in love with my wife and my son.
 
-Franzina is, of course, my son's first dog.
+**Franzina is, of course, my son's first dog.**
 
 I was not convinced about getting a dog, and my father comes to mind here: when my mother decided to get Jack home, my father was so angry he didn't talk to her for two weeks. My wife did the same to me: she went straight in making Franzina entering the house.
 
-And I have to admit, this is one of those rare case *she was right* in doing that. 
+And I have to admit, this is one of those rare case **she was right** in doing that.
 
-Or better, this is one of those rare situations when I admit she was right.
+*Or better, this is one of those rare situations when I admit she was right.*
 
-Today, my son is in love with this tiny amount of fleas. My wife, well, you can imagine both her and Franzina not obeying me and staying on the sofa.
+<br/>
+<center>
+<img src="/images/main/franzina_3.png" alt="Franzina in the garden" width="50%"/>
+</center>
+<br/>
 
-Me, well, I'm the poor bastard buying food.
+
+Today, my son is in love with this tiny amount of fleas. My wife, well, you can imagine both her and Franzina not obeying me and staying on the sofa, or even worst, on the bed!
+
+<br/>
+
+Me, well, I'm the poor bastard buying food and taking her out in the cold winter mrnings...
+<br/>
+But, if you carefully observe above, you will notice I placed more than photo about Franzina, and that does mean something, or not?
