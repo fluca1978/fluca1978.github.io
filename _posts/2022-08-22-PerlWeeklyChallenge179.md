@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 179: graphs and spelled numbers
+title:  "Perl Weekly Challenge 179: graphs and spelled numbers"
 author: Luca Ferrari
 tags:
 - raku
