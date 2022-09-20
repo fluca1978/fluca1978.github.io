@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Perl Weekly Challenge 182: max and containing paths
+title:  "Perl Weekly Challenge 182: max and containing paths"
 author: Luca Ferrari
 tags:
 - raku
