@@ -19,7 +19,7 @@ tl;dr have a look at me by different point of views:
 - [Me, myself and Achievements](#achievements) (see also the **[Papers page](/papers.md)**)
 - [Me, myself and Skills](#skills)
 - [Me, myself and Username](#username)
-- [Me, myself and interviews](#interviews)
+- [Me, myself and Interviews](#interviews)
 - [Me, myself and Projects](#projects) ([detailed projects page](/projects.md))
 - [Me, myself and Blog](#blog) ([stats](/stats))
 - [Me, myself and Emacs or Vi](#emacs)
@@ -31,8 +31,8 @@ tl;dr have a look at me by different point of views:
 - [Me, myself and Cats](#cats)
 - [Me, myself and Dogs](#dogs)
 - [Me, myself and University](#university)
-- [Me and the Dolphins](#dolphins)
-- [Me and Ghostbusters](#ghostbusters)
+- [Me, myself and the Dolphins](#dolphins)
+- [Me, myself and Ghostbusters](#ghostbusters)
 
 
 <center>
@@ -117,20 +117,23 @@ You could also be interested in the [papers page](/papers).
 # Me, myself and *Skills*
 
 
-Not a complete enumeration, but this is what I use on an almost regular basis (years are roughly computed since *2020*):
+Not a complete enumeration, but this is what I use on an almost regular basis (you can do the math):
 
-* **Perl** - 18+ years;
-* **Java** - 20+ years;
-* **PostgreSQL** - 18+ years;
-* **Linux** - 20+ years;
-* **Emacs** - 20+ years (it was my **default editor since day one** and yes, I don't know `vi`!);
-* **Git** - 15+ years, with a couple of years over **Fossil**;  of course I used also other systems;
-* **SQLite** - 8+ years;
-* **BSD** - 15+ years;
-* **PHP** - 15+ years;
+* **Perl** - since 1999;
+* **Java** - since 1999;
+* **PostgreSQL** - since 2002;
+* **Linux** - since 1998;
+* **Emacs** - since 1998 (it was my **default editor since day one** and yes, I don't know `vi`!);
+* **Git** - since 2009, with a couple of years over **Fossil**;  of course I used also other systems;
+* **SQLite** - since 2015 ;
+* **FreeBSD** and *OpenBSD* - since 2009;
+* **PHP** - since 2008;
+* **C** - well, since I started programming in 1994.
 
 
 Of course, I do not declare myself a *guru* of any of the above, but let's say I'm not scared to sit in front of any of them.
+<br/>
+Please note also that I often jump in or out from any of the above technologies, that means that aprta from **Linux**, **Emacs**, I don't do an every-day job on any of the above.
 
 
 
@@ -188,7 +191,7 @@ Interestingly, I waited for my [archery career to stop before having a fully cus
 
 
 <a name="interviews"></a>
-# Me, myself and *interviews*
+# Me, myself and *Interviews*
 
 I would never expect, but I got a few short interviews, written, spoken and video!
 
