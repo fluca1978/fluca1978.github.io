@@ -4,7 +4,7 @@ title: about me
 permalink: /about/
 ---
 
-**I'm a software developer living in Italy with my beautiful wife, my great son, 
+**I'm a software developer living in Italy with my beautiful wife, my great son,
 two (female) cats and one (female) dog.**
 
 <center>
@@ -12,25 +12,25 @@ two (female) cats and one (female) dog.**
 </center>
 
 
-## tl;dr
-Looking at me by different views:
+## Me, myself and `fluca1978`
+tl;dr have a look at me by different point of views:
 
-- [Me by Computer Science](#science)
-- [Me by Achievements](#achievements) (see also the **[Papers page](/papers.md)**)
-- [Me by Skills](#skills)
-- [Me by Username](#username)
-- [Me by interviews](#interviews)
-- [Me by Projects](#projects) ([detailed projects page](/projects.md))
-- [Me by Blog](#blog) ([stats](/stats))
-- [Me by Emacs or Vi](#emacs)
-- [Me by Social Networks](#social)
-- [Me by Ages](#ages)
-- [Me by Music](#music)
-- [Me by Television](#television)
-- [Me by Beliefs](#beliefs)
-- [Me by Cats](#cats)
-- [Me by Dogs](#dogs)
-- [Me by University](#university)
+- [Me, myself and Computer Science](#science)
+- [Me, myself and Achievements](#achievements) (see also the **[Papers page](/papers.md)**)
+- [Me, myself and Skills](#skills)
+- [Me, myself and Username](#username)
+- [Me, myself and interviews](#interviews)
+- [Me, myself and Projects](#projects) ([detailed projects page](/projects.md))
+- [Me, myself and Blog](#blog) ([stats](/stats))
+- [Me, myself and Emacs or Vi](#emacs)
+- [Me, myself and Social Networks](#social)
+- [Me, myself and Ages](#ages)
+- [Me, myself and Music](#music)
+- [Me, myself and Television](#television)
+- [Me, myself and Beliefs](#beliefs)
+- [Me, myself and Cats](#cats)
+- [Me, myself and Dogs](#dogs)
+- [Me, myself and University](#university)
 - [Me and the Dolphins](#dolphins)
 - [Me and Ghostbusters](#ghostbusters)
 
@@ -44,7 +44,7 @@ Looking at me by different views:
 
 
 <a name="computer"></a>
-# Me by *Computer Science*
+# Me, myself and *Computer Science*
 
 
 I've always been fascinated by computers since the age of movies like *War Games*.
@@ -70,7 +70,7 @@ Of course this does not mean I will do and accept only Open Source jobs and task
 
 
 <a name="achievements"></a>
-# Me by *Achievements*
+# Me, myself and *Achievements*
 
 
 There was a time when I thought achievements were really important.
@@ -114,7 +114,7 @@ In the archery world (when I was young):
 You could also be interested in the [papers page](/papers).
 
 <a name="skills"></a>
-# Me by *Skills*
+# Me, myself and *Skills*
 
 
 Not a complete enumeration, but this is what I use on an almost regular basis (years are roughly computed since *2020*):
@@ -165,7 +165,7 @@ Feel free to search for **`fluca1978`** on the forums, mailing lists, IRC channl
 
 
 <a name="username"></a>
-# Me by *Username*
+# Me, myself and *Username*
 
 
 My public username is **`fluca1978`** and it has been for a while, allowing for you to scout the net searching for my very first steps.
@@ -188,7 +188,7 @@ Interestingly, I waited for my [archery career to stop before having a fully cus
 
 
 <a name="interviews"></a>
-# Me by *interviews*
+# Me, myself and *interviews*
 
 I would never expect, but I got a few short interviews, written, spoken and video!
 
@@ -198,7 +198,7 @@ Check the [interviews page](/interviews) for an almost complete list.
 
 
 <a name="projects"></a>
-# Me by *Projects*
+# Me, myself and *Projects*
 
 
 
@@ -210,7 +210,7 @@ For a detailed view on what I can consider *projects* see the [projects page](/p
 
 
 <a name="blog"></a>
-# Me by *Blog*
+# Me, myself and *Blog*
 
 
 In this blog you will find random thoughts pretty much on computer science related topics.
@@ -228,7 +228,7 @@ There is a **specific page with some [stats](/stats)** about the activity of the
 
 
 <a name="emacs"></a>
-# Me by *Emacs or Vi*
+# Me, myself and *Emacs or Vi*
 
 
 In the case you are interested in the *holy-war* of computer science, here it is my list of choices:
@@ -247,13 +247,13 @@ In the case you are interested in the *holy-war* of computer science, here it is
 
 
 <a name="social"></a>
-# Me by *Social Networks*
+# Me, myself and *Social Networks*
 
 
 No way!
 
 I do not use *famous* social networks, or better, I seldom use them.
-The fact is that I believe they are evil and so I don't like them. 
+The fact is that I believe they are evil and so I don't like them.
 
 If you need to get in touch with me *drop me an email or a phone call*.
 
@@ -267,7 +267,7 @@ Please note that this also mean I don't do any effort to keep my social profiles
 
 
 <a name="ages"></a>
-# Me by *Ages*
+# Me, myself and *Ages*
 
 
 I don't think I'm old, but I've seen and experienced a lot of things that are now pretty much ancient.
@@ -326,7 +326,7 @@ and *Fujifilm FP-14* passport camera;
 
 
 <a name="music"></a>
-# Me by *Music*
+# Me, myself and *Music*
 
 What I play  everyday on my music device:
 
@@ -341,7 +341,7 @@ What I play  everyday on my music device:
 - *Foo Fighters*;
 
 <a name="television"></a>
-# Me by *Television*
+# Me, myself and *Television*
 
 
 I'm not a television addicted, but there were a few shows that drove me crazy.
@@ -376,7 +376,7 @@ I don't say these are my favourites, rather are those I would never refuse to wa
 - *The Proposal*;
 
 <a name="beliefs"></a>
-# Me by *Beliefs*
+# Me, myself and *Beliefs*
 
 
 I do believe in *Open Source*.
@@ -391,22 +391,22 @@ I'm not sure I'm catholic anymore, surely I'm not (and never was) a *blind belie
 
 
 <a name="cats"></a>
-# Me by *Cats*
+# Me, myself and *Cats*
 
 **Long story short: there has always been a cat (or two!) in my life**.
 For more details, see the [cats page](/cats)!
 
 
 <a name="dogs"></a>
-# Me by *Dogs*
+# Me, myself and *Dogs*
 
-I'm not a *dog-person*, **I do love cats and usually don't get very impressed by dogs**. 
+I'm not a *dog-person*, **I do love cats and usually don't get very impressed by dogs**.
 However, a few dogs happened in my life and quickly became an important part of my day-to-day activities.
 For a brief story see the [dogs page](/dogs).
 
 
 <a name="university"></a>
-# Me by *University*
+# Me, myself and *University*
 
 Uhm, it's a long story, maybe one day I'll write it down.
 However, I did attend the University of Modena and Reggio Emilia from *1997 to 2002 as a student* (yes, I was one of the first students using the "new" engineering department), from *2002 to 2006 as a PhD student and lecturer*.
@@ -414,7 +414,7 @@ If you have been around in those years, chances are we have met.
 
 
 <a name="dolphins"></a>
-# Me and the *Dolphins*
+# Me, myself and the *Dolphins*
 
 I've swimmed with the dolphins twice, and **it is one of the most exciting experience I've done**.
 Both time I swimmed at the Malta Marine Park, and as far as I can tell it is a place where these great mammals are treated very well.
@@ -427,7 +427,7 @@ The experience was so incredible that on my tenth wedding anniversary I took my 
 
 
 <a name="ghostbusters"></a>
-# Me and *Ghostbusters*
+# Me, myself and *Ghostbusters*
 
 As you have probably noted, in a picture I've a huge **Ghostbusters logo** behind me. Such logo is a 2016 film logo donated to my son from a friend of ours, Denis.
 <br/>
