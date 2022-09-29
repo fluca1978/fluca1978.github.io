@@ -84,9 +84,9 @@ Where I was learning, where I was teaching.
 
 ## As a lecturer
 
-- *PGTraining online event*, free online event on April 29th 2022, italian speech titled **[Gestione delle connessioni con pgagroal](https://vimeo.com/704626463){:target="_blank"}**, [slides available](https://gitlab.com/pgtraining/slides/-/blob/master/webinar-20220429/2022_PGTRAINING_20220429.pdf){:target="_blank"}
+- *PGTraining online event 2022*, free online event on April 29th 2022, italian speech titled **[Gestione delle connessioni con pgagroal](https://vimeo.com/704626463){:target="_blank"}**, [slides available](https://gitlab.com/pgtraining/slides/-/blob/master/webinar-20220429/2022_PGTRAINING_20220429.pdf){:target="_blank"}
 - *Linux Day 2021, Modena*, I gave a talk about `Raku` titled **[Il linguaggio della farfallina](https://odysee.com/@fluca1978:d/2021_LINUXDAY_RAKU:7){:target="_blank"}**
-- *PGTraining online event*, free online event on March 12th 2021, I gave a talk about `PgBackrest` **[pgBackRest](https://gitlab.com/pgtraining/slides/-/blob/master/webinar-20210312/slides/2021_PGTRAINING_PGBACKREST.pdf){:target="_blank"}** (offline recorded video in *italian* [available here](https://vimeo.com/523432651){:target="_blank"})
+- *PGTraining online event 2021*, free online event on March 12th 2021, I gave a talk about `PgBackrest` **[pgBackRest](https://gitlab.com/pgtraining/slides/-/blob/master/webinar-20210312/slides/2021_PGTRAINING_PGBACKREST.pdf){:target="_blank"}** (offline recorded video in *italian* [available here](https://vimeo.com/523432651){:target="_blank"})
 - *PostgreSQL Interview Series*, Postgres Weekly: **[A chat with Luca Ferrari](https://superhighway.dev/luca-ferrari-interview){:target="_blank"}**
 - *Perl Weekly Challenge*, Champion of April 2020: **[Meet the Champion: April 2020](https://perlweeklychallenge.org/blog/meet-the-champion-2020-04/){:target="_blank"}**
 - **[Developer on Fire episode number 449](https://developeronfire.com/podcast/episode-449-luca-ferrari-focused-practice){:target="_blank"}**, recoded on October 22nd 2019, broadcasted on November 11st 2019;
