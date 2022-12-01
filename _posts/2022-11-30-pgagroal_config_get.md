@@ -3,9 +3,9 @@ layout: post
 title:  "pgagroal: getting run-time configuration"
 author: Luca Ferrari
 tags:
-- pgagroal
 - postgresql
 - planet-postgresql-org
+- pgagroal
 
 permalink: /:year/:month/:day/:title.html
 ---
