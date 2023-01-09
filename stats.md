@@ -1,24 +1,24 @@
 ---
 layout: page
-title:  "Statistic Data about my Blog and Other Stuff"
+title:  "Statistic Data about my Blog and activity"
 permalink: /stats/
 ---
 
-Statistic Data about my Blog and Other Stuff
+Statistic Data about my Blog and activity
 ---
 
-In the case it can be interesting, here are some raw statistical information about my blog activity and the number of post per year.
+Here is some raw statistical information about my blog activity and the number of post per year.
 <br/>
 <br/>
-These numbers are work in progress, of course.
+These numbers are updated with a not well established frequency, therefore the data for the current year could not be accurate.
 
-# Statistic Data About *GitHub* Activity
+# Statistic Data about *GitHub* Activity
 
 <img src="http://ghchart.rshah.org/5c55aa/fluca1978" alt="Luca's activity on GitHub" />
 
 I've also an [account on Gitlab](https://gitlab.com/{{ site.footer-links.gitlab }}), check there.
 
-# Statistic Data About this *Blog*
+# Statistic Data about this *Blog*
 {% include stats/quick-links.md %}
 {% include stats/2023.md %}
 {% include stats/2022.md %}
