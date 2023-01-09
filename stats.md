@@ -20,6 +20,7 @@ I've also an [account on Gitlab](https://gitlab.com/{{ site.footer-links.gitlab 
 
 # Statistic Data About this *Blog*
 {% include stats/quick-links.md %}
+{% include stats/2023.md %}
 {% include stats/2022.md %}
 {% include stats/2021.md %}
 {% include stats/2020.md %}
