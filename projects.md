@@ -46,7 +46,7 @@ In the past I did mess with:
 
 * [`WhiteCat`](https://github.com/fluca1978/WhiteCat){:target="_blank"} the evolution of `BlackCat`, again Java bytecode manipulation on the fly. Several research publications exist on the subject.
 
-* [`flap`](https://github.com/fluca1978/flap){:target="_blank"} a didactical Mobile Agent Platform written in Java used to teach mobility do students.
+* [`flap`](https://github.com/fluca1978/flap){:target="_blank"} a Mobile Agent Platform that I've written in Java to teach to university students the idea behind mobile agents.
 
 * [`JFK`](https://github.com/fluca1978/JFK){:target="_blank"} trying to port *signals and slots* the Qt way to Java, or better a rudimental way to implement function pointers (because they don't scare you, right?).
 
