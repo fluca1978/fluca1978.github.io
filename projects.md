@@ -56,7 +56,7 @@ I did participate in the **CPAN Pull Request Challenge** 2015 and **Hacktoberfes
 
 I co-founded and directed the **[Italian PostgreSQL Users' Group (ITPUG)](http://www.itpug.org){:target="_blank"}** and have actively organized almost all [PGDay.IT](http://www.pgday.it){:target="_blank"} events up to the 2016 edition, also introducing (not by myself)  the concept of **[ITPUG Lab](https://vimeo.com/82178862){:target="_blank"}**.
 
-Since December 2017 I do little contributions to the **[Perl 6 documentation repository](https://github.com/perl6/doc){:target="_blank"}**.
+Since December 2017, and for a few years, I do little contributions to the **[Perl 6 documentation repository](https://github.com/perl6/doc){:target="_blank"}**.
 
 As of 2018 I do contribute to **[`pgenv`](https://github.com/theory/pgenv){:target="_blank"}** PostgreSQL version manager and installer.
 
