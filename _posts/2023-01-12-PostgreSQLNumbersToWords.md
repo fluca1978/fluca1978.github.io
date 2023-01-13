@@ -11,7 +11,7 @@ How to convert a digit into a sentence with the power of Perl.
 
 # From Numbers to Words using Perl (and Lingua::)!
 
-A few days ago I came across some question on Facebook regarding the conversion of a number into its english representation. First of all, I hate Facebook with a passion and **I strongly encourage people that have questions related to PostgreSQL to use mailing lists and IRC channels**.
+A few days ago I came across a question on Facebook regarding the conversion of a number into its english representation. First of all, I hate Facebook with a passion and **I strongly encourage people that have questions related to PostgreSQL to use mailing lists and IRC channels**.
 <br/>
 Despite that, how can we convert a number, let's say `19` to `nineteen`?
 <br/>
