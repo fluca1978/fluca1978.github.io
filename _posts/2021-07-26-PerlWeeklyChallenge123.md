@@ -16,7 +16,7 @@ Unluckily, I don't have any production code to implement in Raku yet (sob!).
 So, why not try solving the [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks?
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 123](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0123/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 123](https://perlweeklychallenge.org/blog/perl-weekly-challenge-123/){:target="_blank"}.
 <br/>
 - [Task 1](#task1)
 - [Task 2](#task2)

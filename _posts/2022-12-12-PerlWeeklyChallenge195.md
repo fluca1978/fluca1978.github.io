@@ -12,7 +12,7 @@ My personal solutions to the Perl Weekly Challenge.
 
 # Perl Weekly Challenge 195: Bags to the rescue!
 
-This post presents my solutions to the [Perl Weekly Challenge 195](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0195/){:target="_blank"}.
+This post presents my solutions to the [Perl Weekly Challenge 195](https://perlweeklychallenge.org/blog/perl-weekly-challenge-195/){:target="_blank"}.
 <br/>
 I keep doing the Perl Weekly Challenge in order to mantain my coding skills in good shape, as well as in order to learn new things, with particular regard to Raku, a language that I love.
 <br/>

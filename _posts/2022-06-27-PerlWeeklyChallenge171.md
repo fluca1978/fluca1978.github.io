@@ -16,7 +16,7 @@ It is sad that, after more than two years of me doing Raku, I still don't have a
 Therefore, in order to keep my coding and Raku-ing (is that a term?) knowdledge, I try to solve every  [Perl Weekly Challenge](https://perlweeklychallenge.org/){:target="_blank"} tasks.
 <br/>
 <br/>
-In the following, the assigned tasks for [Challenge 171](https://perlweeklychallenge.org/blog/perl-weekly-challenge-0171/){:target="_blank"}.
+In the following, the assigned tasks for [Challenge 171](https://perlweeklychallenge.org/blog/perl-weekly-challenge-171/){:target="_blank"}.
 
 <br/>
 - [Task 1](#task1)
