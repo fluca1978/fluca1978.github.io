@@ -17,7 +17,7 @@ Therefore, the initial result is as follows:
 <br/>
 <br/>
 <center>
-<img src="/images/post/emacs/all_the_icons_1.png" />
+<img src="/images/posts/emacs/all_the_icons_1.png" />
 <center>
 <br/>
 <br/>
@@ -28,7 +28,7 @@ The trick to fix this is to **manually** run the command **`M-x all-the-icons-in
 <br/>
 <br/>
 <center>
-<img src="/images/post/emacs/all_the_icons_2.png" />
+<img src="/images/posts/emacs/all_the_icons_2.png" />
 <center>
 <br/>
 <br/>
