@@ -11,6 +11,9 @@ Interviews
 
 This is an almost complete list of interviews I have done, or better where I was hosted.
 
+## 2023
+- PostgreSQL Person of the Week (January, 30th): **[Interview with Luca Ferrari](https://postgresql.life/post/luca_ferrari/){:target="_blank"}**
+
 ## 2021
 - Packt Publishing Case Studies: **[Luca Ferrari - Co-author of ‘Learn PostgreSQL’](https://authors.packtpub.com/luca-ferrari-case-study/){:target="_blank"}**
 
