@@ -42,7 +42,8 @@ This is an almost complete list of interviews I have done, or better where I was
 <center>
 <iframe src="https://player.vimeo.com/video/82178862" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </center>
-- *PGDay.IT 2013*, Miriade: **Intervista a Luca Ferrari** *(cannot find link!)*
+- *PGDay.IT 2013*, Miriade: **[Intervista a Luca Ferrari: cronaca di un PgDay non qualunque](http://blog.miriade.it/2013/11/cronaca-di-un-pgday-non-qualunque.html){:target="_blank"}** *(broken link!)*
+- *PGday.IT 2013*, iXSystems: **[Interview with Luca Ferrari](https://www.ixsystems.com/resources/ix/blog/interview-with-luca-ferrari.html){:target="_blank"}** *(broken link!)*
 
 ## 1992
 - Archery Competition *Torneo Aquila Bianca*, Modena local television: **my very first interview after having winned the tournament** *(cannot find the link!)*
