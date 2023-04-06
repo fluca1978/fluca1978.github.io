@@ -15,7 +15,7 @@ A new feature added to `pgagroal` that allows users to dynamically change the co
 I'm happy since today my contribution to [pgagroal](https://github.com/agroal/pgagroal/){:target="_blank"} has been merged.
 [The last year](https://github.com/agroal/pgagroal/commit/07b79ccd95c2fd709594ea8002c2ea89715adb20){:target="_blank"} I added the `config-get` command to `pgagroal-cli`: such command allowed users to get information about how `pgagroal` was configured.
 
-The natural improvement over the above work would have been the **`config-set`** command, and now `pgagroal-cli` has one!
+The natural improvement over the above work would have been the **`config-set`** command, and now `pgagroal-cli` has one (see [this commit](https://github.com/agroal/pgagroal/commit/29902144832662598ebcc324f627627c1595a319){:target="_blank"} !
 It took me a few months to complete the work, since I was very busy on my day job: I had a working prototype working before Christmas, but then I let it there for *the future me* to have some time to complete the effort. And in the last month, I had some spare time, so I completed it!
 
 ## pgagroal-cli config-set
