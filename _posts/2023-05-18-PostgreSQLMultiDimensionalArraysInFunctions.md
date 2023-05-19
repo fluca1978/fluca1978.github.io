@@ -119,7 +119,7 @@ BEGIN
 	FOR r IN 1 .. array_length( m, 1 ) LOOP
 	    FOR c IN 1 .. array_length( m, 2 ) LOOP
 	    	a := r;
-		    b := c;
+		    b := m[ r ][ c ];
 		    RETURN NEXT;
 	    END LOOP;
 	END LOOP;
