@@ -35,7 +35,7 @@ END
 $CODE$
 LANGUAGE plpgsql
 VOLATILE
-
+;
 ```
 <br/>
 <br/>
@@ -180,3 +180,35 @@ INFO:  i=2, j=2, k=2
 ```
 <br/>
 <br/>
+
+
+
+
+## Using `plpgsql_check` as a possible help
+
+*This is a post update thanks to the comment of **Pavel Stěhule**  on 2023-09-20*.
+
+The [plpgsql_check](https://github.com/okbob/plpgsql_check){:target="_blank"} extension could help in finding out the above described problem.
+Covering `plpgsql_check` here is out of the scope, however this is how the extension can provide some help:
+
+<br/>
+<br/>
+```sql
+testdb=# CREATE EXTENSION plpgsql_check;
+CRATE EXTENSION
+
+testdb=# SELECT message, level FROM plpgsql_check_function_tb( 'a_table()' );
+           message           |     level
+-----------------------------+---------------
+ unmodified OUT variable "i" | warning extra
+ unmodified OUT variable "j" | warning extra
+ unmodified OUT variable "k" | warning extra
+(3 rows)
+
+
+```
+<br/>
+<br/>
+
+
+As you can see, the check does not *understand* the effective problem, that is that the variables are all masked out by the context defined in the `FOR` loops, but at least it reveals that the output variables have not been modified along the function code. Knowing that such variables have not been modified means that what the function is *expecting* to achieve is probably not, and that will trigger some extra check by the developers.
