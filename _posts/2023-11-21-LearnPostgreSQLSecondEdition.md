@@ -13,11 +13,13 @@ Another edition of our complete book is out there!
 
 On the last *Halloween*, the second edition of our book **[Learn PostgreSQL](https://www.amazon.com/Learn-PostgreSQL-manage-scalable-databases/dp/1837635641/ref=sr_1_4?crid=1TCXJ1I4KX16O&keywords=learn+postgresql&qid=1700582950&sprefix=learn+postg%2Caps%2C215&sr=8-4#customerReviews "{target="_blank"}")** has been released!
 
+<br/>
 <center>
 <a href="https://www.packtpub.com/product/learn-postgresql-second-edition/9781837635641">
 <img src="https://content.packt.com/B19640/cover_image_small.jpg" alt="Learn PostgreSQL - second edition" >
 </a>
 </center>
+<br/>
 
 
 I'm very proud of all the work me, and my friend Enrico (co-author), have done to not only and merely update this revision of the book, which now cover **PostgreSQL 16**, but also to provide new content, examples and most notably, a new approach to help readers understanding the concepts expressed in the book.
