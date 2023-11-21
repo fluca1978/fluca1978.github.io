@@ -11,6 +11,17 @@ Please note I've used the special placeholder *et al.* on publications I don't l
 
 # Books
 
+
+L. Ferrari, E. Pirozzi, **[Learn PostgreSQL - second edition]("https://www.packtpub.com/product/learn-postgresql-second-edition/9781837635641"){target="_blank"}**, Packt Publishing, 2023, *ISBN: 9781838985288*
+
+<center>
+<a href="https://www.packtpub.com/product/learn-postgresql-second-edition/9781837635641">
+<img src="https://content.packt.com/B19640/cover_image_small.jpg" alt="Learn PostgreSQL - second edition" >
+</a>
+</center>
+
+
+
 L. Ferrari, E. Pirozzi, **[Learn PostgreSQL](https://www.packtpub.com/product/learn-postgresql-12/9781838985288){:target="_blank"}**, Packt Publising, 2020, *ISBN: 9781838985288*
 
 <center>
