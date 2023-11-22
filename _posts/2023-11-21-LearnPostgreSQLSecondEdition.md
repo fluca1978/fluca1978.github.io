@@ -36,4 +36,7 @@ And after almost a month in the wild, the [reviews for the book confirm my feeli
 
 Similarly to the previous edition, a [GitHub repository with all the main examples, the Docker containers, and other gadgets is available](https://github.com/PacktPublishing/Learn-PostgreSQL-Second-Edition "{target="_blank"}").
 
-And as always, me and Enrico will enjoy any feedback and errata that can help us improve, and other readers to get a better experience.
+As always, me and Enrico will enjoy any feedback and errata that can help us improve, and other readers to get a better experience.
+
+And this post cannot conclude without giving a very warm and special thanks to our technical reviewers *Chris Mair* and *Silvio Trancanella*, who helped us a lot improving the quality and readability of the book.
+I thank also all people at Packt that helped and assisted us during this work.
