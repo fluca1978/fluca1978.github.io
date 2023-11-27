@@ -20,6 +20,7 @@ This week, I solved the following tasks:
 
 <br/>
 - [PWC 245 - Task 1 - Raku](#task1)
+- [PWC 245 - Task 1 - Raku (another implementation)](#task1b)
 - [PWC 245 - Task 2 - Raku](#task2)
 - [PWC 245 - Task 1 in PostgreSQL PL/Perl](#task1plperl)
 - [PWC 245 - Task 2 in PostgreSQL PL/Perl](#task2plperl)
@@ -58,6 +59,31 @@ sub MAIN( :@langs where { @langs.elems == @langs.grep( * ~~ Str ).elems }
 ```
 <br/>
 <br/>
+
+
+<a name="task1b"></a>
+## PWC 245 - Task 1 - Raku Implementation (another approach)
+
+It is possible to use another approach to solve the problem:
+
+<br/>
+<br/>
+```raku
+sub MAIN( :@langs where { @langs.elems == @langs.grep( * ~~ Str ).elems }
+	  , :@popularity where { @popularity.elems == @langs.elems == @popularity.grep( * ~~ Int ).elems } ) {
+
+    ( @langs [Z] @popularity ).sort( { $^b[1] <=> $^a[1] } ).map( *[ 0 ] ).join( ',' ).say;
+}
+
+```
+<br/>
+<br/>
+
+What happens is:
+- `[Z]` merges the arrays on a same index basis. The result is a set of arrays made by a language and its popularity;
+- `sort` does sort every element using the second (i.e., indexed as `1`) element, that is the popularity;
+- `map` returns only the first element of each item, that is the language;
+- `join` and `say` does the printing.
 
 
 
