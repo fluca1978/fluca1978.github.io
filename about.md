@@ -414,6 +414,8 @@ For a brief story see the [dogs page](/dogs).
 Uhm, it's a long story, maybe one day I'll write it down.
 However, I did attend the University of Modena and Reggio Emilia from *1997 to 2002 as a student* (yes, I was one of the first students using the "new" engineering department), from *2002 to 2006 as a PhD student and lecturer*.
 If you have been around in those years, chances are we have met.
+<br/>
+In mid 2023 I joined again the same university, mainly as a software developer.
 
 
 <a name="dolphins"></a>
