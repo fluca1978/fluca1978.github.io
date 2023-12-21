@@ -24,9 +24,13 @@ I'm the author of **[PostgreSQL 11 Server Side Programming Quick Start Guide](ht
 </center>
 <br/>
 
-I am also a co-author of another PostgreSQL book: L. Ferrari, E. Pirozzi, **[Learn PostgreSQL](https://www.packtpub.com/product/learn-postgresql-12/9781838985288){:target="_blank"}**, Packt Publising, 2020
+I am also a co-author of another PostgreSQL book: L. Ferrari, E. Pirozzi, **[Learn PostgreSQL](https://www.packtpub.com/product/learn-postgresql-12/9781838985288){:target="_blank"}**, Packt Publising, 2020 (first edition), 2023 (second edition)
 
 <center>
+<a href="https://www.packtpub.com/product/learn-postgresql-second-edition/9781837635641">
+<img src="https://content.packt.com/B19640/cover_image_small.jpg" alt="Learn PostgreSQL - second edition" >
+</a>
+
 <a href="https://www.packtpub.com/product/learn-postgresql-12/9781838985288" target="_blank">
 <img src="/images/posts/learnpostgresql/cover.png" alt="Learn PostgreSQL book cover" />
 </a>
