@@ -367,7 +367,7 @@ I don't say these are my favourites, rather are those I would never refuse to wa
 - *Murder by Death*;
 - *The Duel*;
 - *Big Fish*;
-- *Matrix* (mainly the first of the trilogy);
+- *Matrix* (mainly the first of the quadrilogy);
 - *Big Trouble in Little China*;
 - *1997 Escape from New York*;
 - *The Crow*;
