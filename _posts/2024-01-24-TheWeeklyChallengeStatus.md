@@ -3,8 +3,8 @@ layout: post
 title:  "How much did I do on The (Perl) Weekly Channelge?"
 author: Luca Ferrari
 tags:
-- perlweeklychallenge
 - perl
+- perlweeklychallenge
 - raku
 permalink: /:year/:month/:day/:title.html
 ---
@@ -33,11 +33,11 @@ With my surprise, I'm within the **third place** of the *Team Leaders* at the ti
 
 <center>
 <br/>
-<img src="images/post/perlweeklychallenge/pwc_team_leaders_2024_01.png" alt="Team Leaders as of January 2024" />
+<img src="/images/posts/perlweeklychallenge/pwc_team_leaders_2024_01.png" alt="Team Leaders as of January 2024" />
 <br/>
 
 <br/>
-<img src="images/post/perlweeklychallenge/pwc_team_leaders_2024_01b.png" />
+<img src="/images/posts/perlweeklychallenge/pwc_team_leaders_2024_01b.png" />
 <br/>
 </center>
 
