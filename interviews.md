@@ -11,6 +11,12 @@ Interviews
 
 This is an almost complete list of interviews I have done, or better where I was hosted.
 
+## 2024
+- Tech Bits: [Learn PostgreSQL](https://www.youtube.com/watch?v=fA2MhUpyM44){:target="_blank"}
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fA2MhUpyM44?si=dT9pHQ2aNrCi9wRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
 ## 2023
 - PostgreSQL Person of the Week (January, 30th): **[Interview with Luca Ferrari](https://postgresql.life/post/luca_ferrari/){:target="_blank"}**
 
