@@ -11,7 +11,7 @@ Me and Enrico talk about out latest book on Doug's Tech Bit show!
 
 # Learn PostgreSQL - second edition - Tech Bits
 
-I'm really glad that me and Enrico were hosted on the great Doug's **Tech Bits** show. You can see the podcast on [YouTube](Biblio/lib/Biblio/Schema/Result/){:target="_blank"}:
+I'm really glad that me and Enrico were hosted on the great Doug's **Tech Bits** show. You can see the podcast on [YouTube](https://www.youtube.com/watch?v=fA2MhUpyM44){:target="_blank"}:
 
 
 
