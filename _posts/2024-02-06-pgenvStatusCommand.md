@@ -12,7 +12,7 @@ A new command in the pgenv script.
 
 # pgenv gains a new command (and contributor!)
 
-`[pgenv](https://github.com/theory/pgenv){:target="_blank"} `, the PostgreSQL binary manager written as a Bourne Again Shell script, has gained a new command: `status`.
+[pgenv](https://github.com/theory/pgenv){:target="_blank"} , the PostgreSQL binary manager written as a Bourne Again Shell script, has gained a new command: `status`.
 
 The idea of this command is to report the status of a selected PostgreSQL instance, mainly if it is running or not.
 [Behind the scenes](https://github.com/theory/pgenv/commit/70af4d4e1de28b41e39c89927c338f23e89b4378){:target="_blank"}  the implementation exploits the `pg_ctl` command for the selected instance, stopping the execution immediatly if the user has no selected any instance.
