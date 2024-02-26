@@ -247,6 +247,43 @@ public class Task1 {
 <br/>
 
 
+The same task can be rewritten using teh **stream** API:
+
+<br/>
+<br/>
+```java
+public class Task1 {
+
+    private final static Logger logger = Logger.getAnonymousLogger();
+
+    @Function( schema = "pwc258",
+	       onNullInput = RETURNS_NULL,
+	       effects = IMMUTABLE )
+    public static final int task1_pljava( int nums[] ) throws SQLException {
+		logger.log( Level.INFO, "Entering task1_pljava" );
+
+		List<Integer> numbers = new LinkedList<Integer>();
+		for ( int current : nums )
+		    numbers.add( current );
+
+		int count = numbers.stream().mapToInt( current -> {
+			if ( String.format( "%d", current ).length() % 2 == 0 )
+			    return 1;
+			else
+			    return 0;
+		    } ).sum();
+
+		return count;
+    }
+}
+
+```
+<br/>
+<br/>
+
+In the above, the list of `numbers` is `mapToInt` and the lambda expression uses the `current` variable placeholder, returning `1` or `0` if the value contains an even number of digits, and then `sum` does the trick.
+
+
 
 <a name="task2pljava"></a>
 ## PWC 258 - Task 2 - PostgreSQL PL/Java Implementation
@@ -286,6 +323,45 @@ public class Task2 {
 ```
 <br/>
 <br/>
+
+The same result can be achieved with the **stream** API:
+
+<br/>
+<br/>
+```java
+public class Task2 {
+
+    private final static Logger logger = Logger.getAnonymousLogger();
+
+    @Function( schema = "pwc258",
+	       onNullInput = RETURNS_NULL,
+	       effects = IMMUTABLE )
+    public static final int task2_pljava( int k, int[] nums ) throws SQLException {
+			logger.log( Level.INFO, "Entering task2_pljava" );
+
+			return IntStream.range( 0, nums.length )
+			    .map( current -> {
+				    int ones  = 0;
+				    for ( String d : Integer.toBinaryString( current ).split( "" ) )
+					if ( d.equals( "1" ) )
+					    ones ++;
+
+
+				    if ( ones  == k )
+						return nums[ current ];
+				    else
+						return 0;
+
+				} ).sum();
+
+    }
+}
+
+```
+<br/>
+<br/>
+
+Here the `IntStream`, an utility stream made only of integers, is used to traverse the indexes of the `nums` array, and every item is mapped to the value at which the index points to, in the case the test pass, or zero in the case of failure. Then the `sum` does the trick.
 
 
 # Python Implementations
