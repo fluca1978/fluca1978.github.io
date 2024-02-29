@@ -5,7 +5,7 @@ author: Luca Ferrari
 tags:
 - postgresql
 - planet-postgresql-org
-- java
+- pljava
 permalink: /:year/:month/:day/:title.html
 ---
 A short recap on some issues when dealing with PL/Java and Rocky Linux.
