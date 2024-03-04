@@ -83,7 +83,7 @@ The idea is to store the `DateTime` object into a `$day` variable that is increa
 <a name="task2"></a>
 ## PWC 259 - Task 2 - Raku Implementation
 
-The task asked to write a parser for a line of text in the form of `{% id param=value param=value %}`.
+The task asked to write a parser for a line of text in a form with an identifier and a set of params (key and value).
 I have not implemented this task in a very accurate way, since it is too much regular expression work for me!
 <br/>
 <br/>
@@ -92,7 +92,7 @@ sub MAIN() {
 
     my %parsed;
 
-    my $line = '{%  youtube video=foobar password=xyz abc=def donald="duck here \"escaped\" " %}';
+	my $line = '...';
 
     my regex id { \w+ };
     my regex option {  $<name>= [ \w+ ] \s* <[=]> $<value>= [ \w+ | \" \w+ \s* .* \" ] };
