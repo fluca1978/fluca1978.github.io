@@ -23,7 +23,7 @@ Before continuing, having a source image as the following one
 
 <center>
 <br/>
-<img src="/images/post/pixelizer/src.png" alt="original image" width="50%" />
+<img src="/images/posts/pixelizer/src.png" alt="original image" width="50%" />
 <br/>
 </center>
 
@@ -31,7 +31,7 @@ must produce something like the following one
 
 <center>
 <br/>
-<img src="/images/post/pixelizer/dst.png" alt="final image" width="50%" />
+<img src="/images/posts/pixelizer/dst.png" alt="final image" width="50%" />
 <br/>
 </center>
 
