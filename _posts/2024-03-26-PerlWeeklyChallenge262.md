@@ -273,6 +273,31 @@ public class Task1 {
 <br/>
 
 
+This can be solved also using *streams*, for example:
+
+<br/>
+<br/>
+```java
+    public static final int task1_pljava( int[] nums ) throws SQLException {
+		final int[] results = new int[]{ 0, 0 };
+
+		Arrays.stream( nums )
+		    .forEach( current -> {
+			    int index = current >= 0 ? 0 : 1;
+			    results[ index ]++;
+			} );
+
+		return results[ 0 ] >= results[ 1 ] ? results[ 0 ] : results[ 1 ];
+
+    }
+```
+<br/>
+<br/>
+
+The idea is:
+- convert the `nums` array to a stream using `Arrays.stream`
+- `forEach` value, placed into `current` I check if the value is positive or not, and extract an `index`, either zero or one
+- increment the location of `results` accordingly, with `results[ 0 ]` that represents the positive values and `results[ 1 ]` that represents negative values.
 
 <a name="task2pljava"></a>
 ## PWC 262 - Task 2 - PostgreSQL PL/Java Implementation
@@ -309,6 +334,48 @@ public class Task2 {
 ```
 <br/>
 <br/>
+
+
+It is possible to implement this with *stream*, for example:
+
+<br/>
+<br/>
+```java
+public class Task2 {
+
+    private final static Logger logger = Logger.getAnonymousLogger();
+
+    @Function( schema = "pwc262",
+	       onNullInput = RETURNS_NULL,
+	       effects = IMMUTABLE )
+    public static final int task2_pljava( final int k, final int[] nums ) throws SQLException {
+
+		final int pairs[] = new int[]{ 0 };
+		IntStream.range( 0, nums.length )
+		    .forEach( i -> {
+			    IntStream.range( i + 1, nums.length )
+				.forEach( j -> {
+					if ( nums[ i ] == nums[ j ]
+					     && ( i * j ) % k == 0 )
+					    pairs[ 0 ]++;
+				    } );
+			} );
+
+
+		return pairs[ 0 ];
+
+    }
+}
+
+```
+<br/>
+<br/>
+
+The idea is as follows:
+- the `pairs` array is a monodimensional array used only to access a counter from within the streams;
+- the outer `IntStream.range` loops on the `i` variable, and `forEach` value opens another stream;
+- the inner `IntStream.range` loops over the `i+1` value on `j` and `forEach` value tests if the array values are the same and satisfy the aim of the task
+- if the current pair is fine, the counter is incremented.
 
 
 # Python Implementations
