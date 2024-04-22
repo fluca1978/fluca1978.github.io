@@ -20,6 +20,10 @@ I wrote about PL/Java in my book **[PostgreSQL 11 Server Side Programming Quick 
 
 As usual within the PostgreSQL ecosystem, PL/Java has [a very rich documentation](https://github.com/tada/pljava/wiki/User-guide){:target="_blank"}.
 
+
+**IMPORTANT (2024-04-22): this article contains a few mistakes, that have been addressed in [my other article](https://fluca1978.github.io/2024/04/22/PLJavaInsightsAndFixes.html), so please ensure to read also the other article!**
+
+
 ## Is it worth?
 
 I had to answer this question over and over: **is it worth using PL/Java for PostgreSQL triggers, functions, procedures and so on?**
