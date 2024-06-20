@@ -12,11 +12,16 @@ A strange email in my inbox...
 
 Today I received the following email:
 
+<hr/>
 <center>
+<br/>
 <br/>
 <img src="/images/posts/be_professional/be_professional_3.png" alt="" />
 <br/>
+<br/>
 </center>
+
+<hr/>
 
 Without having to release any particular delay, I found very curios that this mailing list was alerting me that I was not opening previous emails.
 
