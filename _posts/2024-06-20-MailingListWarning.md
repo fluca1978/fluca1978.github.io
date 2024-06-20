@@ -14,7 +14,7 @@ Today I received the following email:
 
 <center>
 <br/>
-<img src="/images/posts/be_professional/be_professiona_3.png" alt="" />
+<img src="/images/posts/be_professional/be_professional_3.png" alt="" />
 <br/>
 </center>
 
