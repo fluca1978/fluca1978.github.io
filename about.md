@@ -117,17 +117,19 @@ You could also be interested in the [papers page](/papers).
 # Me, myself and *Skills*
 
 
-Not a complete enumeration, but this is what I use on an almost regular basis (you can do the math):
+Not a complete enumeration, but this is what I use on an almost regular basis (you can do the math on your own):
 
 * **Perl** - since 1999;
 * **Java** - since 1999;
 * **PostgreSQL** - since 2002;
-* **Linux** - since 1998;
-* **Emacs** - since 1998 (it was my **default editor since day one** and yes, I don't know `vi`!);
+* **Linux** - since 1997;
+* **Emacs** - since 1997 (it was my **default editor since day one** and yes, I don't know `vi`!);
 * **Git** - since 2009, with a couple of years over **Fossil**;  of course I used also other systems;
-* **SQLite** - since 2015 ;
+* **SQLite** - since 2015;
 * **FreeBSD** and *OpenBSD* - since 2009;
 * **PHP** - since 2008;
+* **Python** - since 2020;
+* **Raku** - since 2020;
 * **C** - well, since I started programming in 1994.
 
 
