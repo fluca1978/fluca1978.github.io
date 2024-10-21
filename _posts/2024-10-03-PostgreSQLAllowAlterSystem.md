@@ -18,7 +18,7 @@ The `allow_alter_system` is a boolean setting that is turned `on` by default, me
 <br/>
 <br/>
 ```sql
-ostgres=# alter system set work_mem to '512MB';
+postgres=# alter system set work_mem to '512MB';
 ERROR:  ALTER SYSTEM is not allowed in this environment
 
 postgres=# show allow_alter_system ;
