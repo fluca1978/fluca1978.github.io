@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "psql \\watch now has a row limit"
+title:  "psql watch now has a row limit"
 author: Luca Ferrari
 tags:
 - postgresql
