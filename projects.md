@@ -86,6 +86,18 @@ I have also pushed little contributions, issues, or documentation to open source
 
 Where I was learning, where I was teaching.
 
+
+## Google Summer of Code
+- *Google Summer of Code 2024*, I was mentor for the rewriting of the I/O subsystem of the `pgagroal` connection pooler.
+
+<center>
+<br/>
+<img src="/images/posts/postgresql/gsoc_2024.png" alt="Google Summer of code certificate" width="50%" />
+<br/>
+</center>
+
+
+
 ## As a lecturer
 
 - *Linux Day 2024, Modena*, I gave the second edition of an introductory talk about `Raku`, titled **[Il linguaggio della farfallina](https://youtu.be/QJ42yFBHgZk?t=9623){:target="_blank"}**
