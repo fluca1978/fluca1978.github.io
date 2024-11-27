@@ -101,7 +101,7 @@ Where I was learning, where I was teaching.
 ## As a lecturer
 
 - *Linux Day 2024, Modena*, I gave the second edition of an introductory talk about `Raku`, titled **[Il linguaggio della farfallina](https://youtu.be/QJ42yFBHgZk?t=9623){:target="_blank"}**
-- *PGTraining online event 2024*, free online event on April 19th 2024, italian speech titled **[Introduzione al linguaggio PL/Java](https://vimeo.com/manage/videos/938072562){:target="_blank"}
+- *PGTraining online event 2024*, free online event on April 19th 2024, italian speech titled **[Introduzione al linguaggio PL/Java](https://vimeo.com/manage/videos/938072562){:target="_blank"}**
 - *PGTraining online event 2023*, free online event on April 14th 2023, italian speech titled **[Il linguaggio PL/Perl](https://vimeo.com/820564361){:target="_blank"}**
 - *PGTraining online event 2022*, free online event on April 29th 2022, italian speech titled **[Gestione delle connessioni con pgagroal](https://vimeo.com/704626463){:target="_blank"}**, [slides available](https://gitlab.com/pgtraining/slides/-/blob/master/webinar-20220429/2022_PGTRAINING_20220429.pdf){:target="_blank"}
 - *Linux Day 2021, Modena*, I gave a talk about `Raku` titled **[Il linguaggio della farfallina](https://odysee.com/@fluca1978:d/2021_LINUXDAY_RAKU:7){:target="_blank"}**
