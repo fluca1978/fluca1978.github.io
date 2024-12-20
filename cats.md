@@ -28,38 +28,46 @@ and *forward quote*
     On 6 September 2010 Luca's cat found this was interering:
 
 just to emphasize how I was committed to *cats*! Today I read pretty much all my email via the web, and I never find out another client to allow me to customize the reply and forward quotes so far, so my email replies are more boring.
+And by the way, the above dates used in the quote examples have not been randomly chosen, but this is another story (or two).
 
-For the records, here is a chronological list of my personal *starred cats*, so far. This does not mean that all the other cats do mean less to me, it is just the cats listed here are those I recognize myself the most with.
+
+
+For the records, here is a chronological list of my personal *starred cats*, so far.
+This does not mean that all the other cats do mean less to me, it is just the cats listed here are those I recognize myself the most with.
 
 
 ## Nothing or Double!
 
-I always had one cat at a time, unless for some strange reasons we got two!
+I always had one cat at a time, unless for some strange reasons I had two!
 
-We were searching for a new cat to adopt, and it happened that two little sisters were together in the cattery, so my dad decided to bring both of them home.
+Back in the days, we were searching for a new cat to adopt, and it happened that two little sisters were together in the cattery, so my dad decided to bring both of them home.
 
 Can you imagine my feelings? It was like having a huge chocolate ice-cream, except you got it doubled!
+It was like a Christmas immediatly followed by another Christmas.
 
-Unluckily, both of them were sick and the younger died on a sunny sunday, while me and my father were at an archery competition; my mom take care of her.
-So, the *two cats* setup did not last very long, and we were again with a single cat in the house.
+Unluckily, both of those cats were sick and the younger died on a sunny sunday, while me and my father were at an archery competition; my mom take care of her. So, the *two cats* setup did not last very long, and we were again with a single cat in the house.
 
-The remaining cat was named *Micia* (*kitty*), we were running out of names!
-Then *Rossini* happened: my trainer found a full red small cat, my father felt in love with him and so he decided to bring him home.
+The remaining cat was named *Micia* (*kitty*), we were running out of names! Come on, I think everyone had a cat named "kitty" at some point in her life...
 
-That was the beginning of the *double or nothing* cat setup: since then we always had "cats in pairs". It became natural.
+Then *Rossini* appeared: my archery trainer found a full red small cat, my father felt in love with him and so he decided to bring him home.
 
-Why are not neither Rossini nor Micia listed in the *hall of fame*? Unluckily both of them died young due car accidents, and while they had been very important, I did not spend much time with them.
+That was the beginning of the **double or nothing** cat setup: since then we always had "cats in pairs". It became natural.
+
+Why are not neither Rossini nor Micia listed in the *hall of fame*?
+Unluckily both of them died young due car accidents, and while they had been very important, I did not have the chance to spend much time with them.
 
 
 # Duchessa
 
 Duchessa was **my very first cat**, the one that grown up with me since I was a little two-years old human being.
+**If I love cats, surely is because of her**.
+Also, let's say I'll be a totally different person if I had not a chance to spend time with Duchessa.
 
 I clearly remember her appearing each time I was crying, gently pulling my hair with her claws to make me stop and laugh.
 
 I don't have memories of another way of approaching me: it happened my father used to walk around the kitchen bringing me on his shoulders. Being my father 190 cm height, I was pretty much close to the ceiling of the kitchen. Duchessa then used to jump over the kitchen hangings and try to pull my hair with her paws.
 
-Last, I clearly remember she hiding her puppies into my bedroom, even when she was hiding them from me!
+Last, *I clearly remember she hiding her puppies into my bedroom*, even when she was hiding them from me!
 
 Duchessa was a real predator, eating any sort of tasty animal she was able to catch (especially rats and birds).
 
