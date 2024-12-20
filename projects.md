@@ -132,6 +132,7 @@ Where I was learning, where I was teaching.
 
 ## As an attendee
 
+ - **Introduction to BSD**, Introductory course, Associazione culturale *Conoscere Linux* (LUG), 2024, Modena
  - **Modena DevFest 2024*, Modena
  - **Compilers: Theory and Practice**, Introductory course, Associazione culturale *Conoscere Linux* (LUG), 2024, Modena
  - **C++ from Zero to Hero**, Introductory course about C++, Associazione culturale *Conoscere Linux* (LUG), 2021, Modena
