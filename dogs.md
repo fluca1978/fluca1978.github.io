@@ -64,6 +64,6 @@ Today, my son is in love with this tiny amount of fleas. My wife, well, you can 
 
 <br/>
 
-Me, well, I'm the poor bastard buying food and taking her out in the cold winter mrnings...
+Me, well, I'm the poor bastard buying food and taking her out in the cold winter mornings...
 <br/>
-But, if you carefully observe above, you will notice I placed more than photo about Franzina, and that does mean something, or not?
+But, if you carefully observe above, you will notice I placed more than one photo about Franzina, and that must mean something, or not?
