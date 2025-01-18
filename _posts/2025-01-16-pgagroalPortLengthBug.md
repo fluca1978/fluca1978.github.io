@@ -14,7 +14,7 @@ How we discovered a trivial bug in pgagroal
 
 This week we found a trivial and silly bug in `[pgagroal](https://github.com/agroal/pgagroal){:target="_blank"}`.
 
-This post is a brief description about such bug, not because it is important on itself, but because the way we discovered it emphatizes how important it is to *randomize* the configuration of a system.
+This post is a brief description about such bug, not because it is important on itself, but because the way we discovered it emphasizes how important it is to *randomize* the configuration of a system.
 It is a well known concept, however we all still tend to fail on this, due also to the lack and time to configure and test all possibilities (thanks God there is automation!).
 
 As it often happens, the bug was caused by a memory allocation problem.
