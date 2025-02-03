@@ -69,6 +69,9 @@ Being a Linux/BSD user meant to me I embraced the *Open Source* culture to the p
 Of course this does not mean I will do and accept only Open Source jobs and tasks, I can work comfortably even in environments where the code (and/or data) must be kept not-public.
 
 
+
+You can check my [BSD Certification](https://cs.lpi.org/caf/Xamman/certification/verify/LPI000395663/sw27ghqmee){:target="_blank"} at the LPI site.
+
 <a name="achievements"></a>
 # Me, myself and *Achievements*
 
