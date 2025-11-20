@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "freeBSD periodic(8)"
+title:  "FreeBSD periodic(8)"
 author: Luca Ferrari
 tags:
 - freebsd
@@ -8,7 +8,7 @@ permalink: /:year/:month/:day/:title.html
 ---
 What is this periodic-thing named often when dealing with freeBSD?
 
-# freeBSD periodic(8)
+# FreeBSD periodic(8)
 
 `periodic` is nothing more than a shell script that **wraps** the execution of other scripts.
 
