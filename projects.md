@@ -145,6 +145,7 @@ Where I was learning, where I was teaching.
 
 ## As an attendee
 
+ - **Bash scripting**, Introductory course, Associazione culturale *Conoscere Linux* (LUG), 2025, Modena
  - **Introduction to BSD**, Introductory course, Associazione culturale *Conoscere Linux* (LUG), 2024, Modena
  - **Modena DevFest 2024*, Modena
  - **Compilers: Theory and Practice**, Introductory course, Associazione culturale *Conoscere Linux* (LUG), 2024, Modena
