@@ -88,6 +88,17 @@ Where I was learning, where I was teaching.
 
 
 ## Google Summer of Code
+
+- *Google Summer of Code 2025*, I was mentor for the security enhancements of the `pgagroal` connection pooler.
+
+<center>
+<br/>
+<img src="/images/posts/postgresql/gsoc_2025.png" alt="Google Summer of code certificate" width="50%" />
+<br/>
+</center>
+
+
+
 - *Google Summer of Code 2024*, I was mentor for the rewriting of the I/O subsystem of the `pgagroal` connection pooler.
 
 <center>
