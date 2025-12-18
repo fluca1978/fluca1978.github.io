@@ -111,7 +111,7 @@ Where I was learning, where I was teaching.
 
 ## As a lecturer
 
-- *Linux Day 2025, Modena*, I gave a lectur about *git* and a speech about *ZFS* titled **[ZFS, il Chuck Norris dei filesystems](https://youtu.be/c5LmOgDyg6U?t=9324){:target="_blank"}**
+- *Linux Day 2025, Modena*, I gave a lectur about *git* and a speech about *ZFS* titled **[ZFS, il Chuck Norris dei filesystems](https://www.youtube.com/watch?v=jxaIB4QS6f4){:target="_blank"}**
 - *PgTraining 2025*, Bolzano, I gave a lectur about the *pgagroal* connection pooler for PostgreSQL
 - *Linux Day 2024, Modena*, I gave the second edition of an introductory talk about `Raku`, titled **[Il linguaggio della farfallina](https://youtu.be/QJ42yFBHgZk?t=9623){:target="_blank"}**
 - *PGTraining online event 2024*, free online event on April 19th 2024, italian speech titled **[Introduzione al linguaggio PL/Java](https://vimeo.com/manage/videos/938072562){:target="_blank"}**
